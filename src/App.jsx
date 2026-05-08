@@ -241,6 +241,90 @@ const GLOBAL_CSS = `
     white-space: pre-wrap; word-break: break-word;
   }
 
+  /* ── WHITE BOOK SOURCE REFERENCE ── */
+  .source-block {
+    margin-bottom: 10px;
+    border: 1px solid var(--border-md);
+    border-radius: 9px; overflow: hidden;
+    background: var(--cream-card, var(--card));
+  }
+  .source-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 13px;
+    background: var(--ink);
+    cursor: pointer; user-select: none;
+  }
+  .source-header-left {
+    display: flex; align-items: center; gap: 8px;
+  }
+  .source-header-icon { font-size: 12px; color: var(--cream, var(--card)); }
+  .source-header-title {
+    font-family: var(--mono); font-size: 9.5px; font-weight: 700;
+    color: var(--cream, var(--card)); letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .source-page-badge {
+    font-family: var(--mono); font-size: 9px; font-weight: 700;
+    padding: 2px 8px; border-radius: 99px;
+    background: rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.85);
+    letter-spacing: 0.05em;
+  }
+  .source-expand-icon {
+    font-size: 10px; color: rgba(255,255,255,0.5);
+    transition: transform 0.2s;
+  }
+  .source-expand-icon.open { transform: rotate(180deg); }
+
+  .source-body { padding: 12px 13px; background: var(--card); }
+  .source-meta-row {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    margin-bottom: 12px; padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .source-meta-item {
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .source-meta-label {
+    font-family: var(--mono); font-size: 8.5px; font-weight: 700;
+    color: var(--ink-muted); letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .source-meta-value {
+    font-size: 12px; font-weight: 600; color: var(--ink);
+  }
+  .source-facts-label {
+    font-family: var(--mono); font-size: 9px; font-weight: 700;
+    color: var(--ink-muted); letter-spacing: 0.1em; text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .source-facts-list {
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .source-fact {
+    display: flex; align-items: flex-start; gap: 8px;
+    padding: 8px 10px; border-radius: 6px;
+    background: var(--bg, #efebe4);
+    border: 1px solid var(--border);
+  }
+  .source-fact-bullet {
+    font-family: var(--mono); font-size: 9px; font-weight: 700;
+    color: var(--ink-muted); flex-shrink: 0; margin-top: 1px;
+  }
+  .source-fact-text {
+    font-size: 11.5px; color: var(--ink-mid); line-height: 1.55;
+  }
+  .source-disclaimer {
+    margin-top: 10px; padding: 7px 10px; border-radius: 6px;
+    background: #fffbeb; border: 1px solid #fcd34d;
+    font-size: 10.5px; color: #92400e; line-height: 1.5;
+  }
+
+  /* result card page badge */
+  .rc-page-badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-family: var(--mono); font-size: 9px;
+    color: var(--ink-muted); margin-top: 4px;
+  }
+
   /* ── FLOATING SYNAPSE BUTTON ── */
   .ddx-fab {
     position: absolute; bottom: 24px; right: 24px; z-index: 20;
@@ -467,6 +551,19 @@ const TEMPLATES = [
     system: "id",
     title: "Community Acquired Pneumonia (CAP)",
     keywords: ["pna","pneumonia","cap","infiltrate","cough","fever","hypoxemia","leukocytosis"],
+    source: {
+      chapter: "Infectious Disease",
+      section: "Community-Acquired Pneumonia (CAP)",
+      pages: "106–107",
+      authors: "Alexandra Miller, Amanda Ward",
+      keyFacts: [
+        "Severe CAP (ATS/IDSA): 1 major criterion (vasopressors or MV) OR ≥3 minor criteria (RR>30, PaO₂/FiO₂<250, multilobar infiltrates, confusion, BUN>19, WBC<4k, plt<100k, T<36°C, hypotension)",
+      "CURB-65: 1 point each for Confusion, Urea>19, RR≥30, BP<90/60, Age≥65 — Score 0-1: outpatient; 2: inpatient; ≥3: consider ICU",
+      "Empiric non-severe CAP: ceftriaxone 1g IV q24h + azithromycin 500mg q24h",
+      "MRSA nares swab: NPV ~98% — negative result supports de-escalating MRSA coverage at 48-72h",
+      "Blood cultures: obtain ONLY if severe CAP, empiric MRSA/PsA coverage, prior MRSA/PsA, or IV abx within 90d"
+      ]
+    },
     assessment: `#Community Acquired Pneumonia (CAP)
 [NEW ONSET / WORSENING] pneumonia consistent with CAP based on new infiltrate on chest imaging with associated [fever / leukocytosis / productive cough / hypoxemia].
 CURB-65 score: ___  |  PSI Class: ___  |  Severity: [ ] Non-Severe  [ ] Severe CAP (ATS/IDSA)
@@ -524,6 +621,19 @@ Supportive:
     system: "pulm",
     title: "COPD Exacerbation (AECOPD)",
     keywords: ["copd","exacerbation","wheezing","dyspnea","hypercapnia","obstructive","bronchitis","aecopd"],
+    source: {
+      chapter: "Pulmonary & Critical Care",
+      section: "COPD Exacerbation",
+      pages: "44–45",
+      authors: "Lauren Nguyen",
+      keyFacts: [
+        "NIV/BiPAP indications: pH <7.35 + PaCO₂ >45, RR >25, or moderate-severe dyspnea — reduces intubation rate, mortality, and ICU LOS",
+      "Steroids: prednisone 40mg PO qday ×5d — no benefit to longer courses; equivalent to IV methylprednisolone",
+      "O₂ target: SpO₂ 88-92% — avoid excess O₂ (risk of hypercapnic worsening via Haldane effect)",
+      "Antibiotics: only if purulent sputum, infectious trigger, or pneumonia — 5-day course",
+      "Short-acting albuterol + ipratropium: first-line bronchodilator combination for AECOPD"
+      ]
+    },
     assessment: `#COPD Exacerbation (AECOPD)
 Acute exacerbation of COPD presenting with [increased dyspnea / increased sputum production / change in sputum color / worsening wheeze].
 Known COPD: [ ] Yes (GOLD Grade ___, GOLD Group ___) [ ] No/Unknown
@@ -586,6 +696,19 @@ INTUBATION (if NIV fails or contraindicated):
     system: "cv",
     title: "Heart Failure Exacerbation (ADHF)",
     keywords: ["chf","heart failure","adhf","fluid overload","dyspnea","edema","bnp","hfref","hfpef","orthopnea"],
+    source: {
+      chapter: "Cardiology",
+      section: "Heart Failure",
+      pages: "22–24",
+      authors: "Frederick Lang, Emily Manning",
+      keyFacts: [
+        "NT-proBNP: ADHF unlikely if <300; likely if >450 (age <50), >900 (age 50-75), >1800 (age >75)",
+      "Diuresis: start 2-2.5× home oral furosemide dose IV; goal UOP 0.5-1 mL/kg/h, net negative 1-2L/day",
+      "GDMT for HFrEF (LVEF ≤40%): ACEi/ARB/ARNI + BB + MRA + SGLT-2 inhibitor — all 4 pillars",
+      "IV iron if ferritin <100 OR ferritin <300 with TSAT <20% — improves outcomes in HFrEF",
+      "Refractory diuresis: add metolazone 2.5-5mg PO 30 min before loop diuretic"
+      ]
+    },
     assessment: `#Acute Decompensated Heart Failure (ADHF)
 Presenting with acute decompensated heart failure — [warm/cold] and [wet/dry] profile.
 Known HF: [ ] Yes (EF ___, last TTE ___, last NTproBNP ___)  [ ] New diagnosis
@@ -649,6 +772,19 @@ CARDIOGENIC SHOCK (if present):
     system: "cv",
     title: "Atrial Fibrillation with RVR",
     keywords: ["afib","atrial fibrillation","rvr","rapid ventricular response","arrhythmia","palpitations","irregular"],
+    source: {
+      chapter: "Cardiology",
+      section: "Atrial Fibrillation & Flutter",
+      pages: "10–11",
+      authors: "Yichi Zhang",
+      keyFacts: [
+        "IV metoprolol: 2.5-5mg over 2 min, repeat q5 min, max 15mg; IV diltiazem 0.25 mg/kg over 2 min (AVOID if LVEF unknown or HFrEF)",
+      "AF >48h or unknown: anticoagulate ≥3 weeks before cardioversion OR TEE to exclude LA thrombus; post-CV anticoagulate ≥4 weeks regardless of CHA₂DS₂-VASc score",
+      "Long-term AC: CHA₂DS₂-VASc ≥2 (males) or ≥3 (females) → DOAC preferred over warfarin",
+      "Pre-excited AF (WPW delta wave): AVOID adenosine, diltiazem, digoxin, IV amiodarone — use procainamide",
+      "Correct K+ >4.0 and Mg2+ >2.0 before cardioversion or antiarrhythmics"
+      ]
+    },
     assessment: `#Atrial Fibrillation with Rapid Ventricular Response (AF with RVR)
 New-onset [or known chronic/paroxysmal] AF with ventricular rate ___ bpm.
 Duration: [ ] <48h  [ ] >48h  [ ] Unknown
@@ -706,6 +842,19 @@ ELECTROLYTES: Correct K+ >4.0 and Mg2+ >2.0 before cardioversion or antiarrhythm
     system: "cv",
     title: "Acute Coronary Syndrome (NSTEMI/STEMI)",
     keywords: ["acs","nstemi","stemi","troponin","chest pain","myocardial infarction","mi","st elevation"],
+    source: {
+      chapter: "Cardiology",
+      section: "Acute Coronary Syndrome",
+      pages: "14–15",
+      authors: "Emily Manning",
+      keyFacts: [
+        "STEMI: new ≥1mm STE in ≥2 contiguous leads (V2-V3: >2.5mm men <40, >2mm men >40, >1.5mm women) OR new LBBB",
+      "Door-to-balloon goal: <90 min for primary PCI; if PCI unavailable within 120 min → fibrinolysis",
+      "Type 2 MI: supply-demand mismatch (sepsis, arrhythmia, anemia, surgery) — must have clear precipitating factor; if not, treat as Type 1",
+      "Early invasive strategy (cath <24h): troponin elevation, new ischemic ECG changes, GRACE ≥140, hemodynamic instability",
+      "hsTnT rule-in (onset ≥3h): ≥52ng/L (F) or ≥34ng/L (M) at 0h AND ≥6ng/L rise at 1h"
+      ]
+    },
     assessment: `#Acute Coronary Syndrome — [STEMI / NSTEMI / UA]
 Troponin: ___  (peak ___). ECG: [STE / STD / TWI / LBBB / normal]
 Onset: ___  |  TIMI Risk Score: ___  |  GRACE Score: ___
@@ -764,6 +913,19 @@ UNIVERSAL:
     system: "cv",
     title: "Syncope",
     keywords: ["syncope","loss of consciousness","LOC","faint","presyncope","near-syncope","vasovagal","cardiac syncope"],
+    source: {
+      chapter: "Cardiology",
+      section: "Syncope",
+      pages: "34",
+      authors: "Alexander Jacobs",
+      keyFacts: [
+        "San Francisco Syncope Rule (SFSR): admit if ≥1 of: non-sinus rhythm or ECG changes, dyspnea, Hct <30%, SBP <90, known HF",
+      "Orthostatic hypotension: SBP drop ≥20mmHg OR DBP drop ≥10mmHg within 3 min of standing",
+      "Syncope etiology: Reflex ~60%, Orthostatic ~15%, Cardiac ~15%, Neurologic <10%",
+      "Head CT/MRI: NOT indicated for routine syncope — only if focal neurological findings",
+      "TTE yield: <1% if no underlying heart disease and normal ECG (use ROMEO criteria)"
+      ]
+    },
     assessment: `#Syncope
 Transient loss of consciousness with self-limited recovery consistent with syncope.
 Suspected etiology: [ ] Reflex/vasovagal  [ ] Orthostatic  [ ] Cardiac  [ ] Unexplained
@@ -820,6 +982,19 @@ ALL PATIENTS:
     system: "pulm",
     title: "Sepsis / Septic Shock",
     keywords: ["sepsis","septic shock","infection","fever","hypotension","lactate","SOFA","vasopressors","bacteremia"],
+    source: {
+      chapter: "Pulmonary & Critical Care",
+      section: "Sepsis & Septic Shock",
+      pages: "55–57",
+      authors: "Lauren Nguyen",
+      keyFacts: [
+        "Sepsis-3: life-threatening organ dysfunction (SOFA ≥2) from dysregulated host response to infection",
+      "Septic shock: vasopressors required to maintain MAP >65 AND lactate >2 despite adequate IVF resuscitation",
+      "Antibiotics: within 1 hour of recognition — each hour of delay ~7.6%/h increase in mortality",
+      "Norepinephrine: first-line vasopressor; add vasopressin 0.04 U/min (fixed, not titrated) when NE ≥5-15 mcg/min",
+      "IVF: 30 mL/kg LR/NS (crystalloid preferred; balanced > NS for large volumes)"
+      ]
+    },
     assessment: `#Sepsis / Septic Shock
 Meets Sepsis-3 definition: life-threatening organ dysfunction (SOFA ≥2) from dysregulated host response to suspected/confirmed infection.
 Suspected source: [ ] Pulmonary  [ ] Urinary  [ ] Skin/soft tissue  [ ] Intraabdominal  [ ] Bloodstream  [ ] Other/Unknown
@@ -887,6 +1062,19 @@ Lactate: ___  |  BP: ___  |  MAP: ___  |  SOFA score: ___  |  qSOFA: ___`,
     system: "pulm",
     title: "Pulmonary Embolism (VTE)",
     keywords: ["pe","pulmonary embolism","dvt","deep vein thrombosis","vte","anticoagulation","dyspnea","pleuritic chest pain","hemoptysis"],
+    source: {
+      chapter: "Pulmonary & Critical Care",
+      section: "VTE Diagnostics & Management",
+      pages: "47–49",
+      authors: "Lauren Nguyen",
+      keyFacts: [
+        "Massive PE (SBP <90): systemic alteplase 100mg IV over 2h if no contraindications; catheter-directed therapy if contraindications to lysis",
+      "Age-adjusted D-dimer (age >50): threshold = age × 10 mcg/L instead of standard 500 mcg/L cutoff",
+      "Apixaban for PE: 10mg BID ×7 days → 5mg BID for ≥3 months (DOAC preferred; no LMWH bridge needed)",
+      "Provoked PE: 3 months anticoagulation; Unprovoked PE: minimum 3 months, individualize extension decision",
+      "Sub-massive PE: anticoagulation cornerstone; PERT activation if available; monitor for decompensation"
+      ]
+    },
     assessment: `#Pulmonary Embolism
 Clinical probability: [ ] Low  [ ] Intermediate  [ ] High  |  Wells Score: ___  |  PERC negative: [ ] Yes  [ ] No
 Confirmed PE: [ ] Subsegmental  [ ] Segmental  [ ] Lobar  [ ] Saddle  |  PE Risk: [ ] Low  [ ] Sub-massive (intermediate)  [ ] Massive
@@ -954,6 +1142,19 @@ DURATION OF ANTICOAGULATION:
     system: "pulm",
     title: "Undifferentiated Shock",
     keywords: ["shock","hypotension","hypoperfusion","distributive","cardiogenic","hypovolemic","obstructive","vasopressors","lactate","MAP"],
+    source: {
+      chapter: "Pulmonary & Critical Care",
+      section: "Shock",
+      pages: "54–55",
+      authors: "Lauren Nguyen",
+      keyFacts: [
+        "Distributive (66%): sepsis, anaphylaxis, adrenal; Hypovolemic (16%): hemorrhage, GI losses; Cardiogenic (16%): AMI/HF; Obstructive (2%): PE, tamponade, tension PTX",
+      "MAP target ≥65 mmHg for all shock subtypes; cardiogenic shock target ≥60 mmHg",
+      "Tension PTX: immediate needle decompression (2nd ICS, MCL) — do NOT wait for CXR",
+      "Massive transfusion: pRBC:FFP:platelets = 1:1:1 for hemorrhagic shock",
+      "Norepinephrine: first-line for distributive shock; avoid dopamine (increased arrhythmia risk vs. norepinephrine)"
+      ]
+    },
     assessment: `#Undifferentiated Shock
 State of tissue hypoperfusion with end-organ dysfunction. BP: ___  HR: ___  MAP: ___  Lactate: ___
 Shock classification pending:
@@ -1026,6 +1227,19 @@ OBSTRUCTIVE:
     system: "gi",
     title: "Upper GI Bleeding (UGIB)",
     keywords: ["ugib","upper gi bleed","gi bleeding","hematemesis","melena","coffeegrounds","esophageal varices","peptic ulcer","bleed"],
+    source: {
+      chapter: "Gastroenterology",
+      section: "GI Bleeding",
+      pages: "60–62",
+      authors: "Hugh Shirley",
+      keyFacts: [
+        "GBS 0-1: outpatient management appropriate; GBS ≥6: high risk, inpatient endoscopy needed",
+      "Transfusion threshold: Hgb <7 (target 7-9); Hgb <8 if known CAD — avoid over-transfusion (raises portal pressure in variceal bleeding)",
+      "Pre-EGD: pantoprazole 80mg bolus → 8mg/h infusion; erythromycin 250mg IV 30-90 min before EGD",
+      "Variceal bleed: octreotide 50mcg bolus → 50mcg/h infusion; ceftriaxone 1g IV q24h ×7d for SBP prophylaxis",
+      "EGD timing: within 24h — no mortality benefit of <6h vs. 6-24h for hemodynamically stable patients"
+      ]
+    },
     assessment: `#Upper GI Bleeding (UGIB)
 Bleeding proximal to the ligament of Treitz presenting with [hematemesis / melena / coffee-ground emesis / hematochezia with brisk bleed].
 Glasgow-Blatchford Score (GBS): ___  (0-1 = low risk; may consider outpatient management)
@@ -1088,6 +1302,19 @@ REFRACTORY BLEED:
     system: "neph",
     title: "Acute Kidney Injury (AKI)",
     keywords: ["aki","acute kidney injury","creatinine","oliguria","uremia","renal failure","hypovolemia","ATN","prerenal","dialysis"],
+    source: {
+      chapter: "Nephrology",
+      section: "Acute Kidney Injury",
+      pages: "87–88",
+      authors: "Felicita Kuperwasser",
+      keyFacts: [
+        "KDIGO Stage 1: Cr ×1.5-1.9 or ↑≥0.3mg/dL within 48h; Stage 2: Cr ×2-2.9; Stage 3: Cr ×3 or ≥4.0 or anuria ×12h",
+      "FENa <1% pre-renal (valid only in oliguria, NOT on diuretics); FEUrea <35% pre-renal (use if on diuretics)",
+      "RRT indications (AEIOU): Acidosis pH <7.0, Electrolytes K+ >6.5 with ECG changes, Intoxication, volume Overload, Uremia (encephalopathy, pericarditis, neuropathy)",
+      "Contrast-induced AKI: no role for N-acetylcysteine; use isotonic IVF pre/post if high risk (CrCl <45, DM, prior AKI)",
+      "Hold ACEi/ARBs and NSAIDs in pre-renal AKI; stop nephrotoxins (aminoglycosides, vancomycin)"
+      ]
+    },
     assessment: `#Acute Kidney Injury (AKI)
 KDIGO Stage: [ ] Stage 1 (Cr ×1.5-1.9 or ↑0.3 mg/dL within 48h or UOP <0.5 mL/kg/h x6-12h)
              [ ] Stage 2 (Cr ×2.0-2.9 or UOP <0.5 mL/kg/h x12h)
@@ -1154,6 +1381,19 @@ Post-renal:
     system: "neph",
     title: "Hyponatremia",
     keywords: ["hyponatremia","hyponatremia","low sodium","siadh","sodium","hypovolemia","free water excess","osmolality","ams seizure sodium"],
+    source: {
+      chapter: "Nephrology",
+      section: "Sodium Disorders",
+      pages: "95–96",
+      authors: "Felicita Kuperwasser",
+      keyFacts: [
+        "SIADH: uOsm >100, uNa >40, euvolemia, serum uric acid <4 mg/dL, BUN <5, FEUa ≥10-12%",
+      "Symptomatic hyponatremia: 3% NaCl 100mL IV bolus × up to 3 times until symptoms resolve or Na↑ by 5 mEq/L; max correction ≤8-10 mEq/L/24h",
+      "ODS high-risk: Na ≤110, hypokalemia, malnutrition, liver disease, alcoholism — limit correction to ≤4-6 mEq/L/24h",
+      "DDAVP clamp 2mcg IV/SQ q6-8h: use if ODS risk or Na correcting too rapidly",
+      "Overcorrection: if Na rises >8 mEq/L/24h → D5W 3 mL/kg/h + DDAVP to re-lower Na"
+      ]
+    },
     assessment: `#Hyponatremia
 Serum Na: ___  |  Rate of change: [ ] Acute (<48h)  [ ] Chronic (≥48h)  [ ] Unknown
 Severity: [ ] Mild (130-135)  [ ] Moderate (125-129)  [ ] Severe (<125)
@@ -1218,6 +1458,19 @@ OVERCORRECTION PREVENTION (Osmotic Demyelination Syndrome — ODS):
     system: "neph",
     title: "Hyperkalemia",
     keywords: ["hyperkalemia","high potassium","k+","peaked t waves","cardiac","ekg changes","renal","ckd","aki","acidosis"],
+    source: {
+      chapter: "Nephrology",
+      section: "Potassium Disorders",
+      pages: "96–97",
+      authors: "Felicita Kuperwasser",
+      keyFacts: [
+        "ECG changes: peaked T-waves → prolonged PR → widened QRS → sine wave → VF/asystole",
+      "Calcium gluconate 1-2g IV over 5-10 min: membrane stabilization only (does NOT lower K+); onset 1-3 min, duration 30-60 min; AVOID if on digoxin",
+      "Insulin 5-10U IV + D50 25-50mL: shifts K+ into cells; onset 15-30 min, duration 4-6h; check glucose q1h",
+      "Sodium zirconium cyclosilicate (Lokelma) 10g TID ×48h: fastest oral K+ elimination (onset ~1h)",
+      "Stop offending agents: ACEi/ARBs, NSAIDs, K+-sparing diuretics, TMP-SMX"
+      ]
+    },
     assessment: `#Hyperkalemia
 Serum K+: ___  (confirm with repeat if suspicion of hemolysis/lab artifact)
 Severity: [ ] Mild (5.1-5.9)  [ ] Moderate (6.0-6.4)  [ ] Severe (≥6.5 or any with ECG changes)
@@ -1282,6 +1535,19 @@ Decreased Renal K+ Excretion (required for persistent hyperK):
     system: "endo",
     title: "Diabetic Ketoacidosis (DKA)",
     keywords: ["dka","diabetic ketoacidosis","hyperglycemia","anion gap","ketoacidosis","glucose","insulin","bicarbonate","acidosis"],
+    source: {
+      chapter: "Endocrinology",
+      section: "Diabetes & Hypoglycemia",
+      pages: "171–172",
+      authors: "Shraddha Damaraju",
+      keyFacts: [
+        "CRITICAL — Do NOT start insulin if K+ <3.3 mEq/L: hold insulin, replace K+ 40 mEq/h until K+ ≥3.5, THEN start insulin (prevents fatal hypokalemia)",
+      "DKA severity: Mild pH 7.25-7.30 / HCO₃ 15-18; Moderate pH 7.00-7.24 / HCO₃ 10-15; Severe pH <7.00 / HCO₃ <10",
+      "Bicarbonate: consider ONLY if pH <7.0 — avoid routine use (worsens cerebral acidosis and hypokalemia)",
+      "Resolution: AG closed AND β-hydroxybutyrate <1 mmol/L — urine ketones unreliable (measures acetoacetate only, not β-OHB)",
+      "Euglycemic DKA: consider if on SGLT-2 inhibitor, pregnancy, or alcohol — glucose may be normal despite true DKA"
+      ]
+    },
     assessment: `#Diabetic Ketoacidosis (DKA)
 Glucose: ___  |  pH: ___  |  HCO3: ___  |  Anion Gap: ___ (corrected for albumin)
 Severity: [ ] Mild (pH 7.25-7.30, AG >10, HCO3 15-18)  [ ] Moderate (pH 7.00-7.24, HCO3 10-15)  [ ] Severe (pH <7.00, HCO3 <10)
@@ -1346,6 +1612,19 @@ IDENTIFY AND TREAT PRECIPITANT`,
     system: "id",
     title: "Cellulitis / SSTI",
     keywords: ["cellulitis","ssti","skin infection","soft tissue","mrsa","wound","erythema","abscess","necrotizing fasciitis","furuncle"],
+    source: {
+      chapter: "Infectious Disease",
+      section: "Skin & Soft Tissue Infections",
+      pages: "110–111",
+      authors: "Alec Ohanian",
+      keyFacts: [
+        "Non-purulent mild cellulitis: cephalexin 500mg QID ×5d — Strep >> Staph; add TMP-SMX DS only if trauma or MRSA risk",
+      "Purulent abscess: I&D is primary treatment — no antibiotics needed if well-drained, immunocompetent, and no systemic signs",
+      "Blood cultures: low yield <10% — obtain only if systemic toxicity, extensive involvement, immunosuppressed, or special exposures (bites, water)",
+      "ALT-70 score: location + age + WBC + HR — use to avoid antibiotics in bilateral lower extremity erythema mimics",
+      "Necrotizing fasciitis: IMMEDIATE surgical debridement + vancomycin + pip-tazo + clindamycin (antitoxin); do NOT delay surgery for imaging"
+      ]
+    },
     assessment: `#Skin & Soft Tissue Infection (Cellulitis / SSTI)
 Location: ___  |  Size/Extent: ___  |  Purulence: [ ] Yes (abscess)  [ ] No (non-purulent)
 Severity: [ ] Mild (local infection, no systemic signs)  [ ] Moderate (systemic signs of infection)  [ ] Severe (systemic sepsis, rapid spread, immunocompromised, deeper involvement)
@@ -1407,6 +1686,19 @@ NECROTIZING FASCIITIS (surgical emergency):
     system: "neuro",
     title: "Altered Mental Status / Delirium",
     keywords: ["ams","altered mental status","delirium","confusion","encephalopathy","agitation","acute confusion","disorientation"],
+    source: {
+      chapter: "Neurology",
+      section: "Altered Mental Status & Delirium",
+      pages: "183–184",
+      authors: "Thomas Ituarte",
+      keyFacts: [
+        "CAM criteria: Acute onset + fluctuating course AND Inattention AND (Disorganized thinking OR Altered LOC) — all 3 required for delirium diagnosis",
+      "FIRST action: fingerstick glucose STAT — immediately reversible and must be excluded before any other workup",
+      "Wernicke's: thiamine 500mg IV TID ×7d BEFORE glucose/dextrose in alcoholic or malnourished patients",
+      "HSV encephalitis: acyclovir 10 mg/kg IV q8h empirically — do NOT wait for MRI or CSF PCR to initiate",
+      "Non-pharmacologic delirium Rx (first-line): reorientation, sleep-wake cycle optimization, early mobilization, minimize anticholinergic medications, remove unnecessary lines/catheters"
+      ]
+    },
     assessment: `#Altered Mental Status (AMS) / Delirium
 Baseline mental status: ___  |  Onset: [ ] Acute (<24h)  [ ] Subacute (days)  [ ] Chronic (weeks-months)
 Delirium subtype: [ ] Hyperactive (agitation, psychosis)  [ ] Hypoactive (lethargy, withdrawal)  [ ] Mixed
@@ -1496,6 +1788,19 @@ ADDITIONAL:
     system: "neuro",
     title: "Alcohol Use Disorder / Withdrawal",
     keywords: ["alcohol withdrawal","etoh","ciwa","seizure","delirium tremens","DTs","benzodiazepine","phenobarbital","aws","alcoholism"],
+    source: {
+      chapter: "Neurology / Psychiatry",
+      section: "Alcohol Use Disorder",
+      pages: "199–200",
+      authors: "Thomas Ituarte",
+      keyFacts: [
+        "AWS timeline: tremor/anxiety 6-24h; seizures 12-48h (can occur without prior CIWA elevation); DTs 24-72h",
+      "Thiamine FIRST: give before any glucose/dextrose — prevents precipitating Wernicke's encephalopathy",
+      "Phenobarbital preferred or add-on for: prior DTs/seizures/ICU withdrawal, CIWA not improving despite >6mg lorazepam/h",
+      "Symptom-triggered BZD dosing (CIWA-guided): preferred over standing doses — reduces total BZD use and treatment duration",
+      "Atropine NOT useful for CHB — similarly BZDs (not antipsychotics) are the definitive treatment for DTs and AWS seizures"
+      ]
+    },
     assessment: `#Alcohol Withdrawal Syndrome (AWS)
 Last drink: ___  |  CIWA-Ar score: ___  |  Daily alcohol consumption: ___
 Prior complicated withdrawal: [ ] Yes (DTs / seizures / ICU admissions)  [ ] No
@@ -1564,6 +1869,19 @@ DELIRIUM TREMENS (DTs) — ICU-level care:
     system: "id",
     title: "Preseptal / Orbital Cellulitis",
     keywords: ["orbital cellulitis","preseptal cellulitis","periorbital cellulitis","eyelid swelling","proptosis","ophthalmoplegia","sinusitis complication","eye infection"],
+    source: {
+      chapter: "Infectious Disease",
+      section: "Orbital & Preseptal Cellulitis",
+      pages: "108",
+      authors: "Alexandra Miller, Amanda Ward",
+      keyFacts: [
+        "Key distinction: Preseptal = eyelid only, no proptosis/ophthalmoplegia; Orbital = posterior to septum, proptosis + painful/restricted EOM + diplopia",
+      "CT orbits AND sinuses with IV contrast: mandatory — cannot distinguish preseptal vs. orbital on clinical exam alone",
+      "Preseptal mild: augmentin 875mg q12h; add TMP-SMX DS if skin trauma or no improvement at 24h; clindamycin NOT recommended (poor GNR coverage)",
+      "Orbital: vancomycin + ceftriaxone 2g IV q12h; add metronidazole if odontogenic/sinogenic source or CNS concern",
+      "Cavernous sinus thrombophlebitis: bilateral involvement + high fever + AMS + CN III/IV/V/VI palsies → MRI brain required"
+      ]
+    },
     assessment: `#Preseptal / Orbital Cellulitis
 Eyelid erythema, edema, and pain consistent with [preseptal (periorbital) / orbital] cellulitis.
 Classification:
@@ -1631,6 +1949,19 @@ DURATION:
     system: "id",
     title: "Deep Neck Space Infections (Ludwig's / Lemierre / Peritonsillar / Retropharyngeal)",
     keywords: ["deep neck infection","ludwig angina","lemierre syndrome","peritonsillar abscess","retropharyngeal abscess","parapharyngeal abscess","neck abscess","odontogenic","airway compromise","trismus","dysphagia"],
+    source: {
+      chapter: "Infectious Disease",
+      section: "Head & Neck Infections",
+      pages: "108",
+      authors: "Alexandra Miller, Amanda Ward",
+      keyFacts: [
+        "Organisms by source: odontogenic → streptococci + oral anaerobes; otogenic → PsA; sinogenic → MRSA",
+      "Empiric by source: odontogenic — amp-sulbactam or CTX+MNZ; otogenic — cefepime+MNZ; sinogenic — vancomycin+CTX+MNZ",
+      "Ludwig's angina: submandibular space, odontogenic source, polymicrobial (viridans strep) — rapid airway compromise; STAT ENT + anesthesia",
+      "Lemierre syndrome: Fusobacterium necrophorum; pharyngitis + IJ septic thrombophlebitis + septic pulmonary emboli; treat with pip-tazo OR CTX+MNZ → anticoagulation",
+      "Airway assessment FIRST in all deep neck infections — prepare surgical airway (cricothyrotomy) as backup"
+      ]
+    },
     assessment: `#Deep Neck Space Infection
 Suspected deep neck space infection based on [neck pain / dysphagia / odynophagia / trismus / drooling / fever / neck swelling / airway symptoms].
 Source: [ ] Odontogenic  [ ] Peritonsillar / tonsillar  [ ] Otogenic  [ ] Sinogenic  [ ] Salivary gland  [ ] Unknown
@@ -1705,6 +2036,19 @@ DURATION:
     system: "id",
     title: "Osteomyelitis",
     keywords: ["osteomyelitis","bone infection","vertebral osteomyelitis","diabetic foot","discitis","bacteremia bone","staph aureus bone"],
+    source: {
+      chapter: "Infectious Disease",
+      section: "Osteomyelitis",
+      pages: "111–112",
+      authors: "Julia Page",
+      keyFacts: [
+        "Bone biopsy: gold standard — obtain BEFORE antibiotics (blood cultures often positive 50-70%); need aerobic + anaerobic + fungal + mycobacterial + histopathology",
+      "MRI with contrast: modality of choice (Sn 90%, Sp 82%); best for vertebral OM; obtain if <2 weeks symptoms or XR non-diagnostic",
+      "Diabetic foot: probing to bone diagnostic (Sn 87%, Sp 83%) — no further imaging needed in DM foot OM",
+      "OVIVA trial (NEJM 2019): oral antibiotics non-inferior to IV for complex bone and joint infections when clinically improving",
+      "Vertebral OM: minimum 6 weeks antibiotics; CT-guided biopsy preferred; TTE to rule out endocarditis as source"
+      ]
+    },
     assessment: `#Osteomyelitis
 Suspected osteomyelitis based on [localized bone pain / fever / erythema / non-healing wound / probe-to-bone positive / imaging findings].
 Classification:
@@ -1773,6 +2117,19 @@ DURATION:
     system: "neuro",
     title: "Bacterial Meningitis / Encephalitis",
     keywords: ["meningitis","encephalitis","CSF","lumbar puncture","bacterial meningitis","HSV encephalitis","nuchal rigidity","fever headache stiff neck","kernig","brudzinski","autoimmune encephalitis"],
+    source: {
+      chapter: "Infectious Disease",
+      section: "Meningitis & Encephalitis",
+      pages: "113",
+      authors: "Thomas Ituarte",
+      keyFacts: [
+        "95% of bacterial meningitis: ≥2 of fever, neck stiffness, AMS, headache (NEJM 2004;351:1849)",
+      "DO NOT delay antibiotics for LP or CT: blood cultures BEFORE antibiotics (positive in 70%); no delay >30 min",
+      "CT before LP only if: immunocompromised, known CNS disease, new seizure, papilledema, AMS, or focal neuro deficit",
+      "Dexamethasone 0.15 mg/kg q6h ×4d: START BEFORE or WITH first antibiotic dose; greatest benefit in S. pneumoniae meningitis",
+      "Duration: N. meningitidis/H. flu 7d; S. pneumoniae 14d; Listeria 21-28d (4-8 wk if immunocompromised)"
+      ]
+    },
     assessment: `#Bacterial Meningitis / Encephalitis
 Suspected meningitis / encephalitis based on fever + [headache / nuchal rigidity / AMS / photophobia / seizure / focal neurologic findings].
 Type: [ ] Bacterial meningitis  [ ] Viral meningitis  [ ] HSV encephalitis  [ ] Autoimmune encephalitis  [ ] Fungal (Cryptococcal)
@@ -1855,6 +2212,19 @@ DURATION (culture-directed):
     system: "gi",
     title: "Clostridioides difficile Infection (CDI)",
     keywords: ["c diff","c. difficile","cdiff","clostridium difficile","diarrhea","colitis","pseudomembranous","antibiotic associated diarrhea","fidaxomicin","vancomycin colitis","toxic megacolon"],
+    source: {
+      chapter: "Infectious Disease",
+      section: "Clostridioides difficile Infection",
+      pages: "114",
+      authors: "Julia Page",
+      keyFacts: [
+        "Severity: Non-severe = WBC <15k AND Cr <1.5; Severe = WBC ≥15k OR Cr ≥1.5; Fulminant = hypotension/shock, ileus, or toxic megacolon",
+      "Fidaxomicin 200mg BID ×10d preferred over vancomycin (lower recurrence rate) for non-severe and severe CDI",
+      "Fulminant: vancomycin 500mg PO/NG q6h + metronidazole 500mg IV q8h; add vancomycin retention enema if ileus; STAT surgical consult",
+      "DO NOT retest within 7 days; DO NOT test for cure (may remain positive ≥6 weeks after clinical resolution)",
+      "Stop non-essential antibiotics: most important single intervention for CDI treatment and prevention"
+      ]
+    },
     assessment: `#Clostridioides difficile Infection (CDI)
 Watery diarrhea (≥3 loose stools/24h) with [positive C. diff testing / prior antibiotic exposure / healthcare exposure].
 Severity classification:
@@ -1924,6 +2294,19 @@ RECURRENT CDI:
     system: "id",
     title: "Urinary Tract Infection / Pyelonephritis",
     keywords: ["uti","urinary tract infection","pyelonephritis","cystitis","dysuria","pyuria","bacteriuria","cauti","urosepsis","kidney infection"],
+    source: {
+      chapter: "Infectious Disease",
+      section: "Urinary Tract Infections",
+      pages: "109",
+      authors: "Hugh Shirley",
+      keyFacts: [
+        "Asymptomatic bacteriuria: do NOT treat (exceptions: pregnancy, <1-2 months post-renal transplant, pre-urologic procedure) — IDSA 2019",
+      "CAUTI: catheter in place >2d + UTI symptoms + ≥10³ CFU/mL from catheter specimen — remove/replace catheter ASAP",
+      "Nitrofurantoin: first-line uncomplicated cystitis ×5d; AVOID if GFR <30 or for pyelonephritis (inadequate tissue levels)",
+      "ESBL-risk: healthcare-associated, prior ESBL, or recurrent infections — use pip-tazo or meropenem empirically",
+      "Test-of-cure urine culture: NOT routine — only if pregnancy, treatment failure, or suspected resistant organism"
+      ]
+    },
     assessment: `#Urinary Tract Infection / Pyelonephritis
 Presenting with [dysuria / frequency / urgency / flank pain / CVA tenderness / fever / pyuria / bacteriuria].
 Classification:
@@ -1994,6 +2377,19 @@ CAUTI:
     system: "cv",
     title: "Infective Endocarditis",
     keywords: ["endocarditis","IE","bacteremia","heart murmur","vegetation","S aureus bacteremia","PWID","mitral valve","aortic valve","duke criteria","splinter hemorrhages","janeway lesions"],
+    source: {
+      chapter: "Infectious Disease",
+      section: "Bloodstream Infections & Endocarditis",
+      pages: "112",
+      authors: "Ethiopia Getachew",
+      keyFacts: [
+        "Duke Criteria: Definite = 2 major OR 1 major + 3 minor OR 5 minor",
+      "S. aureus/S. lugdunensis: NEVER contaminants — daily surveillance cultures until sterile ×48h; always evaluate for source and endocarditis",
+      "MSSA: cefazolin or nafcillin significantly superior to vancomycin — switch from empiric vancomycin when susceptibilities confirm MSSA",
+      "Surgical indications: HF from valve destruction (most common), perivalvular abscess/new AV block, persistent bacteremia >5-7d, fungal IE, vegetation ≥10mm + embolic event",
+      "S. bovis/gallolyticus bacteremia: order colonoscopy — strong association with colorectal malignancy"
+      ]
+    },
     assessment: `#Infective Endocarditis (IE)
 Suspected or confirmed IE based on [persistent bacteremia / new murmur / embolic phenomena / vegetation on echo / fever with valvular risk].
 Duke Criteria: MAJOR: 1) positive blood cultures (typical organism x2 or persistent bacteremia); 2) evidence of endocardial involvement (vegetation/abscess on echo or new valvular regurgitation)
@@ -2067,6 +2463,19 @@ ID CONSULT: mandatory for ALL cases of confirmed or suspected IE`,
     system: "cv",
     title: "Bradycardia / AV Block",
     keywords: ["bradycardia","av block","heart block","complete heart block","CHB","mobitz","sick sinus","syncope","pacing","atropine","sinus bradycardia"],
+    source: {
+      chapter: "Cardiology",
+      section: "ACLS: Bradycardia",
+      pages: "3",
+      authors: "Eli Patt",
+      keyFacts: [
+        "Atropine: 1mg IV q3-5 min (max 3mg); DO NOT use for Mobitz II or CHB — may paradoxically worsen by increasing atrial rate without improving infranodal conduction",
+      "Unstable criteria: hypotension, AMS, ischemic CP, or acute HF — any one of these = initiate treatment immediately",
+      "BB antidote: glucagon 3-10mg IV; CCB antidote: calcium gluconate 3-6g + glucagon; digoxin: digoxin immune FAB (1 vial binds ~0.5mg)",
+      "Mobitz II and wide-complex CHB: often requires transvenous pacing wire even if currently stable — CALL CARDIOLOGY",
+      "Transcutaneous pacing: lorazepam 2mg + dilaudid 2mg IV for sedation; rate 100 BPM, output 100 mA → reduce to minimum capture"
+      ]
+    },
     assessment: `#Bradycardia / AV Block
 HR: ___  BP: ___  Rhythm: ___
 Hemodynamic stability: [ ] Stable  [ ] UNSTABLE (hypotension / AMS / ischemic CP / acute HF / pulmonary edema)
@@ -2142,6 +2551,19 @@ PERMANENT PACEMAKER (PPM) INDICATIONS (Class I):
     system: "cv",
     title: "Ventricular Tachycardia (VT) / Wide Complex Tachycardia",
     keywords: ["ventricular tachycardia","VT","wide complex tachycardia","polymorphic VT","torsades de pointes","TdP","VT storm","monomorphic VT","NSVT","cardiac arrest","cardioversion","amiodarone","lidocaine"],
+    source: {
+      chapter: "Cardiology",
+      section: "Wide Complex Tachycardia",
+      pages: "9",
+      authors: "Elaine Luterstein",
+      keyFacts: [
+        "If any doubt VT vs. SVT with aberrancy: TREAT AS VT — safer and more effective default",
+      "Basel algorithm (93% Sn, 90% Sp): VT if ≥2 of 3 — high-risk substrate (prior MI/EF<35/ICD), lead II time to first peak >40ms, aVR time to first peak >40ms",
+      "AV dissociation: pathognomonic for VT — independent P waves marching through at a different rate from QRS",
+      "TdP: magnesium sulfate 2-4g IV over 10-15 min first-line (even if Mg normal); isoproterenol or overdrive pacing to increase HR; AVOID amiodarone (lengthens QTc)",
+      "VT storm (≥3 VT episodes/24h): propranolol 40mg q6h especially after multiple defibrillations — reduces adrenergic drive"
+      ]
+    },
     assessment: `#Ventricular Tachycardia (VT) / Wide Complex Tachycardia
 HR: ___  BP: ___  Rhythm: [ ] Regular  [ ] Irregular  |  QRS: ___ ms
 Hemodynamic stability: [ ] Stable  [ ] UNSTABLE (hypotension / AMS / pulmonary edema / ischemia)
@@ -2225,6 +2647,19 @@ VT STORM (≥3 sustained VT episodes / 24h):
     system: "cv",
     title: "QTc Prolongation / Torsades de Pointes Risk",
     keywords: ["QTc prolongation","long QT","torsades de pointes","TdP","drug induced QT","hypokalemia","hypomagnesemia","antipsychotic QT","amiodarone QT","sotalol","acquired long QT","congenital LQTS"],
+    source: {
+      chapter: "Cardiology",
+      section: "QTc Prolongation",
+      pages: "12",
+      authors: "Amanda Jowell",
+      keyFacts: [
+        "Stop offending drug if QTc >500ms OR increase in QTc >60ms from baseline",
+      "Highest TdP risk drugs: sotalol, dofetilide, ibutilide; IV haloperidol; methadone; azithromycin/clarithromycin; IV ondansetron; thioridazine",
+      "Amiodarone: oral rarely causes TdP (uniform repolarization delay) — distinct from other Class III agents; IV amiodarone carries more risk",
+      "Electrolyte targets: K+ 4.5-5.0 mEq/L, Mg2+ 2.0-2.5 mg/dL — supratherapeutic repleting to prevent TdP",
+      "Sotalol and dofetilide: require inpatient initiation — QTc check 2h after each dose"
+      ]
+    },
     assessment: `#QTc Prolongation / Torsades de Pointes Risk
 QTc: ___  ms  (Corrected using Bazett formula: QT / √RR interval in seconds)
 Normal: QTc ≤440ms (M), ≤460ms (F)  |  High TdP risk: QTc >500ms OR ΔQTc from baseline >60ms
@@ -2296,6 +2731,19 @@ CONGENITAL LQTS:
     system: "cv",
     title: "Pericarditis / Cardiac Tamponade",
     keywords: ["pericarditis","cardiac tamponade","pericardial effusion","pericardiocentesis","pleuritic chest pain","friction rub","becks triad","pulsus paradoxus","PR depression","ST elevation diffuse","colchicine","NSAIDs","constrictive"],
+    source: {
+      chapter: "Cardiology",
+      section: "Pericardial Disease",
+      pages: "31",
+      authors: "Ore Olakunle",
+      keyFacts: [
+        "Diagnosis (≥2 of 4): pleuritic CP, friction rub, diffuse concave STE + PR depression on ECG, pericardial effusion on TTE",
+      "Colchicine 0.6mg BID ×3 months (no taper) + NSAID: reduces recurrence and treatment failure (COPE + ICAP trials)",
+      "Glucocorticoids first-line: AVOID for idiopathic pericarditis (higher recurrence during taper) — second-line only if NSAID-refractory, uremic, or autoimmune",
+      "Tamponade: effusion SIZE does NOT predict tamponade — RATE of accumulation is what determines hemodynamic impact",
+      "Hospitalize if: fever, large effusion >2cm, immunosuppressed, anticoagulated, trauma, elevated troponin, hemodynamic instability, or no NSAID response ×7d"
+      ]
+    },
     assessment: `#Pericarditis / Cardiac Tamponade
 Presentation: [ ] Pericarditis (chest pain ± friction rub ± ECG changes)  [ ] Pericardial Effusion  [ ] Cardiac Tamponade
 Pericarditis Diagnostic Criteria (≥2 of 4):
@@ -2375,6 +2823,19 @@ CARDIAC TAMPONADE:
     system: "cv",
     title: "Acute Aortic Syndromes (Dissection / IMH / PAU)",
     keywords: ["aortic dissection","aortic syndrome","type A dissection","type B dissection","intramural hematoma","IMH","penetrating aortic ulcer","PAU","tearing chest pain","back pain","pulse deficit","aortic emergency","impulse control"],
+    source: {
+      chapter: "Cardiology",
+      section: "Aortic Disease",
+      pages: "32–33",
+      authors: "Daniel Weiner, Rachel Wittenberg",
+      keyFacts: [
+        "Impulse control targets: HR 60-80 bpm + SBP <120 mmHg — esmolol FIRST (before vasodilators) to prevent reflex tachycardia",
+      "Type A: surgical emergency — mortality ~1-2%/hour without intervention; STAT cardiothoracic surgery",
+      "D-dimer <500 ng/mL: 96% NPV for AAS — useful to rule out in low clinical probability (ADD-RS score 0)",
+      "CXR normal in 50% of AAS — widened mediastinum present in only 1/3; cannot rule out dissection on CXR",
+      "CRITICAL: rule out Type A dissection before anticoagulating or giving thrombolytics if inferior STEMI (RCA involvement by dissection)"
+      ]
+    },
     assessment: `#Acute Aortic Syndrome (Aortic Dissection / Intramural Hematoma / PAU)
 Presentation: severe chest/back/abdominal pain — [ripping / tearing / migrating] quality
 Classification:
@@ -2449,6 +2910,19 @@ TYPE B (DESCENDING):
     system: "cv",
     title: "Hypertensive Emergency",
     keywords: ["hypertensive emergency","hypertensive urgency","HTN emergency","malignant hypertension","end organ damage","papilledema","PRES","nitroprusside","nicardipine","labetalol","flash pulmonary edema","encephalopathy","aortic dissection BP"],
+    source: {
+      chapter: "Cardiology",
+      section: "Hypertensive Emergency",
+      pages: "35",
+      authors: "Rachel Wittenberg",
+      keyFacts: [
+        "BP correction: reduce MAP ≤25% in first hour; target 160/100 within 2-6h; normalize over 24-48h — avoid overcorrection (cerebral/coronary ischemia)",
+      "Pheo/cocaine: alpha blockade FIRST (phentolamine 5-15mg IV) — NEVER give BB first (paradoxical severe HTN from unopposed alpha stimulation)",
+      "Scleroderma renal crisis: ACEi IS the treatment (not contraindicated) — dramatically improves survival",
+      "Ischemic stroke: permissive HTN — do NOT treat unless >220/120; tPA candidates must be <185/110",
+      "Asymptomatic markedly elevated BP: oral meds + outpatient follow-up — avoid aggressive IV treatment (associated with worse outcomes, JAMA IM 2021)"
+      ]
+    },
     assessment: `#Hypertensive Emergency
 BP: ___/___  HR: ___
 Definition: SBP ≥180 OR DBP ≥110-120 mmHg WITH evidence of end-organ damage
@@ -2526,6 +3000,19 @@ ASYMPTOMATIC MARKEDLY ELEVATED BP (no end-organ damage):
     system: "cv",
     title: "Valvular Heart Disease (AS / AR / MR / MS / TR)",
     keywords: ["aortic stenosis","aortic regurgitation","mitral stenosis","mitral regurgitation","tricuspid regurgitation","TAVR","SAVR","valvular disease","murmur","MVR","AVR","structural heart disease","M-TEER","MitraClip"],
+    source: {
+      chapter: "Cardiology",
+      section: "Valvular Heart Disease",
+      pages: "29–30",
+      authors: "Joseph Replogle",
+      keyFacts: [
+        "Severe AS: peak velocity ≥4 m/s OR mean gradient ≥40 mmHg OR AVA ≤1 cm² — classic triad: angina (3-5y), syncope (2-3y), HF (1-2y) without AVR",
+      "TAVR vs SAVR: age <65 → SAVR (durability); age >80 → TAVR; age 65-80 → shared decision (STS-PROM score + anatomy)",
+      "Acute AR: AVOID IABP (worsens regurgitation) and BB (lengthen diastolic regurgitant time) — use nitroprusside + inotropes",
+      "Severe primary MR surgical threshold: symptomatic at any EF OR asymptomatic with EF ≤60% or LVESD ≥40mm",
+      "IE prophylaxis (Class 2a): amoxicillin 2g PO 30-60 min before high-risk dental procedures — prosthetic valves, prior IE, unrepaired CHD, cardiac transplant with valvulopathy"
+      ]
+    },
     assessment: `#Valvular Heart Disease
 Valve(s) involved: [ ] Aortic  [ ] Mitral  [ ] Tricuspid  [ ] Pulmonic  [ ] Multiple
 Lesion type: [ ] Stenosis  [ ] Regurgitation  [ ] Mixed
@@ -2621,6 +3108,19 @@ ALL VALVULAR DISEASE: IE Prophylaxis (amoxicillin 2g PO 30-60 min before dental 
     system: "cv",
     title: "Right Ventricular Failure",
     keywords: ["RV failure","right ventricular failure","right heart failure","RV dysfunction","pulmonary hypertension","cor pulmonale","RV infarct","tricuspid regurgitation","RV strain","JVD","Kussmaul sign","elevated JVP"],
+    source: {
+      chapter: "Cardiology",
+      section: "Right Ventricular Failure",
+      pages: "25",
+      authors: "Frederick Lang",
+      keyFacts: [
+        "RV is preload-dependent but intolerant of fluid overload — excess IVF → RV distension + D-sign (septal shift) → LV underfilling",
+      "Norepinephrine: first-line for RV cardiogenic shock — maintains SVR and RV coronary perfusion pressure",
+      "RV MI (V4R): ST elevation in V4R Sn 88%, Sp 78% — obtain right-sided leads in ALL inferior STEMIs; AVOID nitrates, diuretics, morphine in RV MI",
+      "PAPi (PA pulsatility index) = (PASP - PADP) / RAP — PAPi <0.9 indicates severe RV dysfunction (PA catheter measurement)",
+      "iNO (inhaled nitric oxide): selective pulmonary vasodilator — reduces PVR without systemic hypotension; 20-80 ppm; use in post-cardiac surgery RV failure or severe PAH"
+      ]
+    },
     assessment: `#Right Ventricular (RV) Failure
 RV failure: inability of the RV to maintain adequate preload for LV filling without developing elevated right-sided filling pressures.
 Suspected etiology:
@@ -2703,6 +3203,19 @@ CHRONIC PH / PAH:
     system: "cv",
     title: "Peripheral Artery Disease / Acute Limb Ischemia",
     keywords: ["PAD","peripheral artery disease","claudication","acute limb ischemia","ALI","ABI","ankle brachial index","rest pain","vascular surgery","ischemic ulcer","limb ischemia","arterial occlusion","6 Ps"],
+    source: {
+      chapter: "Cardiology",
+      section: "Peripheral Artery Disease",
+      pages: "36",
+      authors: "Daniel Restifo",
+      keyFacts: [
+        "ABI ≤0.9: diagnostic for PAD (95% Sn, 100% Sp for ≥50% stenosis); ABI ≥1.40 = noncompressible (calcified, DM/ESRD) — use toe-brachial index",
+      "ALI Category III (irreversible): inaudible arterial + venous Doppler, complete motor/sensory loss — amputation only, do NOT attempt reperfusion (fatal hyperK + myoglobinuria)",
+      "Cilostazol 100mg BID: only AHA/ACC-recommended med for claudication exercise capacity; CONTRAINDICATED in HF",
+      "Rivaroxaban 2.5mg BID + ASA: reduces major adverse cardiac AND limb events vs. ASA alone (COMPASS trial — symptomatic PAD or post-revascularization)",
+      "Supervised exercise therapy: as effective as stenting for claudication (CLEVER-RCT) — prescribe before revascularization for claudication"
+      ]
+    },
     assessment: `#Peripheral Artery Disease (PAD) / Acute Limb Ischemia
 Presentation: [ ] Asymptomatic (incidental ABI finding)  [ ] Claudication  [ ] Rest pain  [ ] Non-healing ulcer/gangrene  [ ] Acute limb ischemia
 Onset: [ ] Chronic (PAD)  [ ] ACUTE (<2 weeks) — VASCULAR SURGERY CONSULT STAT if acute
@@ -2819,6 +3332,7 @@ export default function App() {
   const [selected, setSelected] = useState(null);
   const [copied, setCopied] = useState({});
   const [ddxOpen, setDdxOpen] = useState(false);
+  const [sourceOpen, setSourceOpen] = useState(true);
   const [chatInput, setChatInput] = useState("");
   const [messages, setMessages] = useState([]);
   const [ddxLoading, setDdxLoading] = useState(false);
@@ -2994,6 +3508,9 @@ export default function App() {
                   </div>
                   <div className="rc-title">{t.title}</div>
                   <div className="rc-keywords">{t.keywords.slice(0, 5).join(" · ")}</div>
+                  {t.source && (
+                    <div className="rc-page-badge">📖 MGH White Book p.{t.source.pages}</div>
+                  )}
                 </div>
               ))}
             </div>
@@ -3029,6 +3546,60 @@ export default function App() {
                   <div className="tag-row">
                     {selected.keywords.map(k => <span key={k} className="tag-pill">{k}</span>)}
                   </div>
+
+                  {/* WHITE BOOK SOURCE REFERENCE */}
+                  {selected.source && (
+                    <div className="source-block">
+                      <div
+                        className="source-header"
+                        onClick={() => setSourceOpen(o => !o)}
+                      >
+                        <div className="source-header-left">
+                          <span className="source-header-icon">📖</span>
+                          <span className="source-header-title">MGH White Book Source Reference</span>
+                          <span className="source-page-badge">p. {selected.source.pages}</span>
+                        </div>
+                        <span className={`source-expand-icon ${sourceOpen ? "open" : ""}`}>▼</span>
+                      </div>
+
+                      {sourceOpen && (
+                        <div className="source-body">
+                          <div className="source-meta-row">
+                            <div className="source-meta-item">
+                              <span className="source-meta-label">Chapter</span>
+                              <span className="source-meta-value">{selected.source.chapter}</span>
+                            </div>
+                            <div className="source-meta-item">
+                              <span className="source-meta-label">Section</span>
+                              <span className="source-meta-value">{selected.source.section}</span>
+                            </div>
+                            <div className="source-meta-item">
+                              <span className="source-meta-label">Pages</span>
+                              <span className="source-meta-value">{selected.source.pages}</span>
+                            </div>
+                            <div className="source-meta-item">
+                              <span className="source-meta-label">Authors</span>
+                              <span className="source-meta-value">{selected.source.authors}</span>
+                            </div>
+                          </div>
+
+                          <div className="source-facts-label">Key Reference Points to Verify</div>
+                          <div className="source-facts-list">
+                            {selected.source.keyFacts.map((fact, i) => (
+                              <div key={i} className="source-fact">
+                                <span className="source-fact-bullet">{i + 1}</span>
+                                <span className="source-fact-text">{fact}</span>
+                              </div>
+                            ))}
+                          </div>
+
+                          <div className="source-disclaimer">
+                            ⚠️ Cross-reference content against <strong>MGH White Book 2025–26, p. {selected.source.pages}</strong> before clinical use. This tool is an educational aid — always verify against the primary source and exercise independent clinical judgment.
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
 
                   {[
                     { label: "Assessment",           key: "assessment",  content: selected.assessment },
