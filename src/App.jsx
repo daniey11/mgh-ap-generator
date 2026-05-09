@@ -334,145 +334,6 @@ const GLOBAL_CSS = `
     color: var(--ink-muted); margin-top: 4px;
   }
 
-  /* ── PDF DRAWER ── */
-  .pdf-overlay {
-    position: fixed; inset: 0; z-index: 50;
-    background: rgba(0,0,0,0.45);
-    backdrop-filter: blur(3px);
-    animation: fadeIn 0.18s ease;
-  }
-  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
-  .pdf-drawer {
-    position: fixed; top: 0; right: 0; bottom: 0; z-index: 51;
-    width: min(820px, 90vw);
-    display: flex; flex-direction: column;
-    background: var(--card);
-    box-shadow: -8px 0 48px rgba(0,0,0,0.18);
-    animation: slideIn 0.24s cubic-bezier(0.32,0.72,0,1);
-  }
-  @keyframes slideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
-
-  .pdf-drawer-header {
-    display: flex; align-items: center; gap: 12px;
-    padding: 14px 18px;
-    background: var(--ink);
-    flex-shrink: 0;
-  }
-  .pdf-drawer-icon {
-    width: 30px; height: 30px; border-radius: 8px;
-    background: rgba(255,255,255,0.12);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 15px; flex-shrink: 0;
-  }
-  .pdf-drawer-titles { flex: 1; }
-  .pdf-drawer-title {
-    font-family: var(--mono); font-size: 11px; font-weight: 700;
-    color: #fff; letter-spacing: 0.08em; text-transform: uppercase;
-  }
-  .pdf-drawer-subtitle { font-size: 12px; color: rgba(255,255,255,0.55); margin-top: 2px; }
-  .pdf-drawer-page-pill {
-    font-family: var(--mono); font-size: 10px; font-weight: 700;
-    padding: 4px 11px; border-radius: 99px;
-    background: rgba(255,255,255,0.12);
-    border: 1px solid rgba(255,255,255,0.2);
-    color: rgba(255,255,255,0.9);
-    letter-spacing: 0.05em;
-  }
-  .pdf-drawer-close {
-    width: 30px; height: 30px; border-radius: 8px;
-    background: rgba(255,255,255,0.1); border: none;
-    color: rgba(255,255,255,0.7); font-size: 16px;
-    cursor: pointer; display: flex; align-items: center; justify-content: center;
-    transition: all 0.15s; flex-shrink: 0;
-  }
-  .pdf-drawer-close:hover { background: rgba(255,255,255,0.2); color: #fff; }
-
-  .pdf-drawer-toolbar {
-    display: flex; align-items: center; gap: 8px;
-    padding: 8px 14px;
-    background: var(--bg-mid);
-    border-bottom: 1px solid var(--border-md);
-    flex-shrink: 0;
-  }
-  .pdf-page-nav {
-    display: flex; align-items: center; gap: 6px;
-  }
-  .pdf-nav-btn {
-    width: 28px; height: 28px; border-radius: 6px;
-    background: var(--card); border: 1px solid var(--border-md);
-    color: var(--ink-mid); font-size: 13px; cursor: pointer;
-    display: flex; align-items: center; justify-content: center;
-    transition: all 0.15s;
-  }
-  .pdf-nav-btn:hover:not(:disabled) { background: var(--ink); color: var(--card); border-color: var(--ink); }
-  .pdf-nav-btn:disabled { opacity: 0.3; cursor: not-allowed; }
-  .pdf-page-input {
-    width: 52px; padding: 4px 8px; border-radius: 6px;
-    border: 1px solid var(--border-md); background: var(--card);
-    font-family: var(--mono); font-size: 12px; color: var(--ink);
-    text-align: center; outline: none;
-    transition: border-color 0.2s;
-  }
-  .pdf-page-input:focus { border-color: var(--ink-subtle); }
-  .pdf-page-total { font-family: var(--mono); font-size: 11px; color: var(--ink-muted); }
-  .pdf-toolbar-sep { width: 1px; height: 18px; background: var(--border-md); }
-  .pdf-zoom-btn {
-    padding: 4px 10px; border-radius: 6px;
-    background: var(--card); border: 1px solid var(--border-md);
-    color: var(--ink-mid); font-family: var(--mono); font-size: 11px;
-    cursor: pointer; transition: all 0.15s;
-  }
-  .pdf-zoom-btn:hover { background: var(--ink); color: var(--card); border-color: var(--ink); }
-  .pdf-toolbar-note {
-    font-size: 11px; color: var(--ink-muted); margin-left: auto;
-    font-style: italic;
-  }
-
-  .pdf-frame-wrap {
-    flex: 1; overflow: hidden; background: var(--bg-mid);
-    display: flex; align-items: stretch;
-  }
-  .pdf-iframe {
-    width: 100%; height: 100%; border: none;
-  }
-  .pdf-not-found {
-    flex: 1; display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    gap: 14px; padding: 40px;
-    text-align: center;
-  }
-  .pdf-not-found-icon { font-size: 44px; opacity: 0.25; }
-  .pdf-not-found-title { font-size: 16px; font-weight: 600; color: var(--ink); }
-  .pdf-not-found-sub { font-size: 13px; color: var(--ink-muted); line-height: 1.65; max-width: 360px; }
-  .pdf-setup-steps {
-    background: var(--bg); border: 1px solid var(--border-md);
-    border-radius: 10px; padding: 16px 18px;
-    text-align: left; max-width: 420px; width: 100%;
-  }
-  .pdf-setup-title {
-    font-family: var(--mono); font-size: 10px; font-weight: 700;
-    color: var(--ink-muted); letter-spacing: 0.1em; text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-  .pdf-setup-step {
-    display: flex; gap: 10px; align-items: flex-start;
-    font-size: 12.5px; color: var(--ink-mid); line-height: 1.55;
-    margin-bottom: 8px;
-  }
-  .pdf-setup-num {
-    font-family: var(--mono); font-size: 10px; font-weight: 700;
-    width: 20px; height: 20px; border-radius: 99px;
-    background: var(--ink); color: var(--card);
-    display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0; margin-top: 1px;
-  }
-  .pdf-setup-code {
-    font-family: var(--mono); font-size: 11px;
-    background: var(--bg-mid); border: 1px solid var(--border-md);
-    border-radius: 4px; padding: 2px 6px; color: var(--ink);
-  }
-
   /* ── FLOATING SYNAPSE BUTTON ── */
   .ddx-fab {
     position: absolute; bottom: 24px; right: 24px; z-index: 20;
@@ -3481,37 +3342,15 @@ export default function App() {
   const [copied, setCopied] = useState({});
   const [ddxOpen, setDdxOpen] = useState(false);
   const [sourceOpen, setSourceOpen] = useState(true);
-  const [pdfDrawerOpen, setPdfDrawerOpen] = useState(false);
-  const [pdfPage, setPdfPage] = useState(1);
-  const [pdfInputVal, setPdfInputVal] = useState("1");
   const [chatInput, setChatInput] = useState("");
 
   // PDF page offset: White Book printed page N = PDF file page N+3
   const PDF_OFFSET = 3;
-  const PDF_TOTAL  = 270;
 
   const openPdf = (pages) => {
     const firstPage = parseInt(String(pages).split(/[–\-]/)[0].trim(), 10);
-    const filePage  = Math.min(Math.max(firstPage + PDF_OFFSET, 1), PDF_TOTAL);
-    setPdfPage(filePage);
-    setPdfInputVal(String(filePage));
-    setPdfDrawerOpen(true);
-    setPdfFound(true);
-  };
-
-  const navPdfPage = (delta) => {
-    const next = Math.min(Math.max(pdfPage + delta, 1), PDF_TOTAL);
-    setPdfPage(next);
-    setPdfInputVal(String(next));
-  };
-
-  const commitPdfInput = () => {
-    const n = parseInt(pdfInputVal, 10);
-    if (!isNaN(n) && n >= 1 && n <= PDF_TOTAL) {
-      setPdfPage(n);
-    } else {
-      setPdfInputVal(String(pdfPage));
-    }
+    const filePage  = firstPage + PDF_OFFSET;
+    window.open(`/whitebook.pdf#page=${filePage}`, "_blank");
   };
   const [messages, setMessages] = useState([]);
   const [ddxLoading, setDdxLoading] = useState(false);
@@ -3950,97 +3789,6 @@ export default function App() {
           </div>
 
         </main>
-
-        {/* ── PDF DRAWER ── */}
-        {pdfDrawerOpen && (
-          <>
-            <div className="pdf-overlay" onClick={() => setPdfDrawerOpen(false)} />
-            <div className="pdf-drawer">
-
-              {/* drawer header */}
-              <div className="pdf-drawer-header">
-                <div className="pdf-drawer-icon">📖</div>
-                <div className="pdf-drawer-titles">
-                  <div className="pdf-drawer-title">MGH White Book 2025–26</div>
-                  <div className="pdf-drawer-subtitle">
-                    {selected?.source?.chapter} — {selected?.source?.section}
-                  </div>
-                </div>
-                <span className="pdf-drawer-page-pill">
-                  p. {selected?.source?.pages}
-                </span>
-                <button className="pdf-drawer-close" onClick={() => setPdfDrawerOpen(false)}>✕</button>
-              </div>
-
-              {/* toolbar */}
-              <div className="pdf-drawer-toolbar">
-                <div className="pdf-page-nav">
-                  <button className="pdf-nav-btn" onClick={() => navPdfPage(-1)} disabled={pdfPage <= 1}>‹</button>
-                  <input
-                    className="pdf-page-input"
-                    value={pdfInputVal}
-                    onChange={e => setPdfInputVal(e.target.value)}
-                    onBlur={commitPdfInput}
-                    onKeyDown={e => e.key === "Enter" && commitPdfInput()}
-                  />
-                  <span className="pdf-page-total">/ {PDF_TOTAL}</span>
-                  <button className="pdf-nav-btn" onClick={() => navPdfPage(1)} disabled={pdfPage >= PDF_TOTAL}>›</button>
-                </div>
-                <div className="pdf-toolbar-sep" />
-                <button className="pdf-zoom-btn" onClick={() => navPdfPage(-(pdfPage - 1))}>↩ Cover</button>
-                {selected?.source && (
-                  <button
-                    className="pdf-zoom-btn"
-                    onClick={() => openPdf(selected.source.pages)}
-                  >
-                    ↩ p. {selected.source.pages}
-                  </button>
-                )}
-                <span className="pdf-toolbar-note">Place whitebook.pdf in /public folder</span>
-              </div>
-
-              {/* PDF frame */}
-              <div className="pdf-frame-wrap">
-                {pdfFound ? (
-                  <iframe
-                    className="pdf-iframe"
-                    src={`/whitebook.pdf#page=${pdfPage}`}
-                    title="MGH White Book"
-                    onError={() => setPdfFound(false)}
-                  />
-                ) : (
-                  <div className="pdf-not-found">
-                    <div className="pdf-not-found-icon">📄</div>
-                    <div className="pdf-not-found-title">White Book PDF not found</div>
-                    <div className="pdf-not-found-sub">
-                      Place the MGH White Book PDF in your project's <code>/public</code> folder and name it <code>whitebook.pdf</code>
-                    </div>
-                    <div className="pdf-setup-steps">
-                      <div className="pdf-setup-title">Setup Steps</div>
-                      <div className="pdf-setup-step">
-                        <span className="pdf-setup-num">1</span>
-                        <span>Copy <span className="pdf-setup-code">1__MGH_White_Book_2025-26__1_.pdf</span> into your project</span>
-                      </div>
-                      <div className="pdf-setup-step">
-                        <span className="pdf-setup-num">2</span>
-                        <span>Rename it to <span className="pdf-setup-code">whitebook.pdf</span></span>
-                      </div>
-                      <div className="pdf-setup-step">
-                        <span className="pdf-setup-num">3</span>
-                        <span>Place it in the <span className="pdf-setup-code">public/</span> folder alongside <span className="pdf-setup-code">index.html</span></span>
-                      </div>
-                      <div className="pdf-setup-step">
-                        <span className="pdf-setup-num">4</span>
-                        <span>Redeploy — the PDF will be served at <span className="pdf-setup-code">/whitebook.pdf</span></span>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-
-            </div>
-          </>
-        )}
 
       </div>
     </>
