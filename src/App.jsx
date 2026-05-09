@@ -3420,37 +3420,48 @@ const EXAMPLE_PROMPTS = [
 
 
 // ─── SUMMARIZE SYSTEM PROMPT ───────────────────────────────────────────────
-const SUMMARIZE_SYSTEM_PROMPT = `You are a senior Internal Medicine resident helping generate concise Epic EMR dot-phrase summaries for common clinical presentations.
+const SUMMARIZE_SYSTEM_PROMPT = `You are a senior Internal Medicine resident generating Epic EMR dot-phrase templates.
 
-Given a clinical diagnosis with assessment, workup, and management content, generate a clean, copy-pastable dot-phrase note template.
+Your job: condense a clinical diagnosis into a clean, copy-pastable dot-phrase note template.
 
-STRICT RULES:
-1. Return ONLY the dot-phrase text — no explanation, no preamble, no markdown formatting, no backtick fences.
+CRITICAL RULE — *** USAGE:
+Use *** ONLY for patient-specific values the clinician must fill in at the bedside — things that are different for every patient encounter. These include:
+- Specific vital signs or lab values (e.g., "SpO2 ***%", "HR *** bpm", "K+ *** mEq/L")
+- Specific clinical findings on exam (e.g., "crackles at ***", "infiltrate in *** lobe")
+- Specific dates, durations, or onset timing (e.g., "onset *** days ago")
+- Specific medication doses that vary by weight or renal function (e.g., "vancomycin *** mg IV q***h")
+
+Do NOT use *** for:
+- Standard drug names, standard fixed doses, or fixed treatment protocols (write these out as-is)
+- Diagnostic criteria or clinical decision rules (write these out)
+- Generic phrases like "as tolerated" or "per protocol"
+- Anything that is the same for every patient with this diagnosis
+
+FORMAT RULES:
+1. Return ONLY the dot-phrase text — no explanation, no preamble, no markdown, no backtick fences.
 2. Start with #DiagnosisName on its own line.
-3. Write ONE short assessment sentence with *** for anything the user must fill in (e.g. vitals, findings, specific values). Keep it under 2 lines.
+3. Write ONE short assessment sentence. Use *** only for patient-specific findings/values.
 4. Leave a blank line after the assessment.
-5. Use bullet points (•) for all plan items. No sub-bullets, no indentation.
-6. Keep workup to the 3-5 most critical tests only.
-7. Keep management to the 4-7 highest yield interventions with key doses where relevant.
-8. Use *** for any value, finding, or detail the user needs to fill in (e.g., "*** mg IV", "due to ***").
-9. Never include disposition, monitoring, or DDx — Assessment + key workup + key management only.
-10. Total output: 12-18 lines max. Residents need speed, not completeness.
-11. Separate workup and management with a blank line between them.
-12. Do NOT include section headers like "Workup:" or "Management:" — just the bullets.
+5. Use bullet points (•) for all plan items. No sub-bullets.
+6. Workup: 3-5 most critical tests only. Write them out — no *** unless dose/timing varies per patient.
+7. Management: 4-7 highest-yield interventions. Write standard fixed doses out fully. Use *** only for weight-based or renally-adjusted doses.
+8. Separate workup and management with a blank line.
+9. No section headers — just the bullets.
+10. Total: 12-18 lines max.
 
-Example format:
+Example of CORRECT *** usage:
 #Community Acquired Pneumonia
-Suspected CAP due to *** infiltrate on CXR with ***, fever ***, SpO2 ***.
+Suspected CAP due to *** infiltrate on CXR with fever ***, SpO2 ***% on room air.
 
-• Blood cultures x2 (if severe CAP or MRSA/PsA risk)
-• Sputum Gram stain + culture
+• Blood cultures x2
+• Sputum Gram stain and culture
 • Procalcitonin, Legionella urine antigen
 • MRSA nasal swab
 
-• Ceftriaxone 1g IV q24h + azithromycin 500mg q24h
+• Ceftriaxone 1g IV q24h + azithromycin 500mg PO/IV q24h
 • Supplemental O2, target SpO2 ≥92%
 • DVT prophylaxis
-• PO challenge prior to discharge`;
+• Advance diet as tolerated, mobilize early`;
 
 // ─── COMPONENT ─────────────────────────────────────────────────────────────
 export default function App() {
@@ -3709,29 +3720,31 @@ ${template.management}`;
                         {sysLabel(selected.system)}
                       </div>
                     </div>
-                    <button
-                      className={`copy-all-btn ${copied["all-" + selected.id] ? "copied" : ""}`}
-                      onClick={() => copyText("all-" + selected.id, buildFullText(selected))}
-                    >
-                      {copied["all-" + selected.id] ? "✓ Copied" : "⎘ Copy All"}
-                    </button>
-                    <button
-                      className={`summarize-btn ${summaryId === selected.id && (summaryText || summaryLoading) ? "active" : ""}`}
-                      onClick={() => {
-                        if (summaryId === selected.id && summaryText) {
-                          setSummaryText(null); setSummaryId(null);
-                        } else {
-                          runSummarize(selected);
-                        }
-                      }}
-                      disabled={summaryLoading && summaryId === selected.id}
-                    >
-                      {summaryLoading && summaryId === selected.id
-                        ? "Generating…"
-                        : summaryId === selected.id && summaryText
-                        ? "✕ Close Summary"
-                        : "⚡ Dot Phrase"}
-                    </button>
+                    <div style={{ display: "flex", alignItems: "center", gap: 8, flexShrink: 0 }}>
+                      <button
+                        className={`copy-all-btn ${copied["all-" + selected.id] ? "copied" : ""}`}
+                        onClick={() => copyText("all-" + selected.id, buildFullText(selected))}
+                      >
+                        {copied["all-" + selected.id] ? "✓ Copied" : "⎘ Copy All"}
+                      </button>
+                      <button
+                        className={`summarize-btn ${summaryId === selected.id && (summaryText || summaryLoading) ? "active" : ""}`}
+                        onClick={() => {
+                          if (summaryId === selected.id && summaryText) {
+                            setSummaryText(null); setSummaryId(null);
+                          } else {
+                            runSummarize(selected);
+                          }
+                        }}
+                        disabled={summaryLoading && summaryId === selected.id}
+                      >
+                        {summaryLoading && summaryId === selected.id
+                          ? "Generating…"
+                          : summaryId === selected.id && summaryText
+                          ? "✕ Close Summary"
+                          : "⚡ Dot Phrase"}
+                      </button>
+                    </div>
                   </div>
 
                   <div className="tag-row">
@@ -3780,7 +3793,6 @@ ${template.management}`;
                       )}
                     </div>
                   )}
-                  </div>
 
                   {/* WHITE BOOK SOURCE REFERENCE */}
                   {selected.source && (
