@@ -334,6 +334,91 @@ const GLOBAL_CSS = `
     color: var(--ink-muted); margin-top: 4px;
   }
 
+  /* ── SUMMARIZE ── */
+  .summarize-btn {
+    flex-shrink: 0;
+    display: flex; align-items: center; gap: 6px;
+    padding: 7px 13px; border-radius: 8px;
+    border: 1px solid var(--border-md);
+    background: var(--bg);
+    color: var(--ink-mid); font-family: var(--mono);
+    font-size: 11px; cursor: pointer;
+    transition: all 0.15s; white-space: nowrap;
+    box-shadow: var(--shadow-sm);
+  }
+  .summarize-btn:hover:not(:disabled) { background: var(--ink); color: var(--card); border-color: var(--ink); }
+  .summarize-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+  .summarize-btn.active { background: var(--ink); color: var(--card); border-color: var(--ink); }
+
+  .summary-block {
+    margin-bottom: 12px;
+    border: 1.5px solid var(--ink);
+    border-radius: 10px; overflow: hidden;
+    animation: summaryFadeIn 0.2s ease;
+  }
+  @keyframes summaryFadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+  .summary-block-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 13px;
+    background: var(--ink);
+  }
+  .summary-block-title {
+    display: flex; align-items: center; gap: 7px;
+    font-family: var(--mono); font-size: 10.5px; font-weight: 700;
+    color: var(--card); letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .summary-block-actions { display: flex; align-items: center; gap: 6px; }
+  .summary-copy-btn {
+    display: flex; align-items: center; gap: 5px;
+    padding: 4px 10px; border-radius: 6px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.9);
+    font-family: var(--mono); font-size: 9.5px; font-weight: 700;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .summary-copy-btn:hover { background: rgba(255,255,255,0.22); color: #fff; }
+  .summary-copy-btn.copied { background: #16a34a; border-color: #16a34a; color: #fff; }
+  .summary-dismiss-btn {
+    width: 24px; height: 24px; border-radius: 6px;
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.6); font-size: 12px;
+    cursor: pointer; display: flex; align-items: center;
+    justify-content: center; transition: all 0.15s;
+  }
+  .summary-dismiss-btn:hover { background: rgba(255,255,255,0.18); color: #fff; }
+
+  .summary-content {
+    padding: 14px 16px;
+    background: var(--card);
+    font-family: var(--mono); font-size: 12.5px;
+    color: var(--ink); line-height: 1.9;
+    white-space: pre-wrap; word-break: break-word;
+  }
+  .summary-hint {
+    padding: 6px 13px 8px;
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    font-size: 11px; color: var(--ink-muted);
+    font-style: italic;
+  }
+
+  .summary-loading {
+    display: flex; align-items: center; gap: 10px;
+    padding: 14px 16px;
+    background: var(--card);
+  }
+  .summary-loading-dots { display: flex; gap: 4px; }
+  .summary-loading-dots span {
+    width: 5px; height: 5px; border-radius: 99px;
+    background: var(--ink-muted); opacity: 0.35;
+    animation: pulse 1.2s ease-in-out infinite;
+  }
+  .summary-loading-dots span:nth-child(2) { animation-delay: 0.2s; }
+  .summary-loading-dots span:nth-child(3) { animation-delay: 0.4s; }
+  .summary-loading-text { font-size: 12px; color: var(--ink-muted); font-style: italic; }
+
   /* ── FLOATING SYNAPSE BUTTON ── */
   .ddx-fab {
     position: absolute; bottom: 24px; right: 24px; z-index: 20;
@@ -3334,6 +3419,39 @@ const EXAMPLE_PROMPTS = [
 
 
 
+// ─── SUMMARIZE SYSTEM PROMPT ───────────────────────────────────────────────
+const SUMMARIZE_SYSTEM_PROMPT = `You are a senior Internal Medicine resident helping generate concise Epic EMR dot-phrase summaries for common clinical presentations.
+
+Given a clinical diagnosis with assessment, workup, and management content, generate a clean, copy-pastable dot-phrase note template.
+
+STRICT RULES:
+1. Return ONLY the dot-phrase text — no explanation, no preamble, no markdown formatting, no backtick fences.
+2. Start with #DiagnosisName on its own line.
+3. Write ONE short assessment sentence with *** for anything the user must fill in (e.g. vitals, findings, specific values). Keep it under 2 lines.
+4. Leave a blank line after the assessment.
+5. Use bullet points (•) for all plan items. No sub-bullets, no indentation.
+6. Keep workup to the 3-5 most critical tests only.
+7. Keep management to the 4-7 highest yield interventions with key doses where relevant.
+8. Use *** for any value, finding, or detail the user needs to fill in (e.g., "*** mg IV", "due to ***").
+9. Never include disposition, monitoring, or DDx — Assessment + key workup + key management only.
+10. Total output: 12-18 lines max. Residents need speed, not completeness.
+11. Separate workup and management with a blank line between them.
+12. Do NOT include section headers like "Workup:" or "Management:" — just the bullets.
+
+Example format:
+#Community Acquired Pneumonia
+Suspected CAP due to *** infiltrate on CXR with ***, fever ***, SpO2 ***.
+
+• Blood cultures x2 (if severe CAP or MRSA/PsA risk)
+• Sputum Gram stain + culture
+• Procalcitonin, Legionella urine antigen
+• MRSA nasal swab
+
+• Ceftriaxone 1g IV q24h + azithromycin 500mg q24h
+• Supplemental O2, target SpO2 ≥92%
+• DVT prophylaxis
+• PO challenge prior to discharge`;
+
 // ─── COMPONENT ─────────────────────────────────────────────────────────────
 export default function App() {
   const [query, setQuery] = useState("");
@@ -3342,7 +3460,45 @@ export default function App() {
   const [copied, setCopied] = useState({});
   const [ddxOpen, setDdxOpen] = useState(false);
   const [sourceOpen, setSourceOpen] = useState(true);
+  const [summaryText, setSummaryText] = useState(null);
+  const [summaryId, setSummaryId] = useState(null);
+  const [summaryLoading, setSummaryLoading] = useState(false);
   const [chatInput, setChatInput] = useState("");
+
+  const runSummarize = async (template) => {
+    setSummaryLoading(true);
+    setSummaryText(null);
+    setSummaryId(template.id);
+    const prompt = `Diagnosis: ${template.title}
+
+ASSESSMENT:
+${template.assessment}
+
+WORKUP:
+${template.workup}
+
+MANAGEMENT:
+${template.management}`;
+    try {
+      const res = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "claude-sonnet-4-20250514",
+          max_tokens: 1000,
+          system: SUMMARIZE_SYSTEM_PROMPT,
+          messages: [{ role: "user", content: prompt }],
+        }),
+      });
+      const data = await res.json();
+      const text = data.content?.find(b => b.type === "text")?.text?.trim() || "";
+      setSummaryText(text);
+    } catch {
+      setSummaryText("#Error\nCould not generate summary. Please try again.");
+    } finally {
+      setSummaryLoading(false);
+    }
+  };
 
   // PDF page offset: White Book printed page N = PDF file page N+3
   const PDF_OFFSET = 3;
@@ -3559,10 +3715,71 @@ export default function App() {
                     >
                       {copied["all-" + selected.id] ? "✓ Copied" : "⎘ Copy All"}
                     </button>
+                    <button
+                      className={`summarize-btn ${summaryId === selected.id && (summaryText || summaryLoading) ? "active" : ""}`}
+                      onClick={() => {
+                        if (summaryId === selected.id && summaryText) {
+                          setSummaryText(null); setSummaryId(null);
+                        } else {
+                          runSummarize(selected);
+                        }
+                      }}
+                      disabled={summaryLoading && summaryId === selected.id}
+                    >
+                      {summaryLoading && summaryId === selected.id
+                        ? "Generating…"
+                        : summaryId === selected.id && summaryText
+                        ? "✕ Close Summary"
+                        : "⚡ Dot Phrase"}
+                    </button>
                   </div>
 
                   <div className="tag-row">
                     {selected.keywords.map(k => <span key={k} className="tag-pill">{k}</span>)}
+                  </div>
+
+                  {/* SUMMARY BLOCK */}
+                  {summaryId === selected.id && (summaryLoading || summaryText) && (
+                    <div className="summary-block">
+                      <div className="summary-block-header">
+                        <div className="summary-block-title">
+                          ⚡ Dot Phrase Summary
+                        </div>
+                        <div className="summary-block-actions">
+                          {summaryText && (
+                            <button
+                              className={`summary-copy-btn ${copied["summary-" + selected.id] ? "copied" : ""}`}
+                              onClick={() => copyText("summary-" + selected.id, summaryText)}
+                            >
+                              {copied["summary-" + selected.id] ? "✓ Copied" : "⎘ Copy"}
+                            </button>
+                          )}
+                          <button
+                            className="summary-dismiss-btn"
+                            onClick={() => { setSummaryText(null); setSummaryId(null); }}
+                          >✕</button>
+                        </div>
+                      </div>
+
+                      {summaryLoading && summaryId === selected.id && !summaryText && (
+                        <div className="summary-loading">
+                          <div className="summary-loading-dots">
+                            <span /><span /><span />
+                          </div>
+                          <span className="summary-loading-text">Condensing into dot phrase…</span>
+                        </div>
+                      )}
+
+                      {summaryText && (
+                        <>
+                          <pre className="summary-content">{summaryText}</pre>
+                          <div className="summary-hint">
+                            Replace *** with patient-specific values before pasting into Epic.
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  )}
                   </div>
 
                   {/* WHITE BOOK SOURCE REFERENCE */}
