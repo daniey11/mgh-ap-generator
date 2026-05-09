@@ -3477,35 +3477,50 @@ export default function App() {
   const [chatInput, setChatInput] = useState("");
 
   const runSummarize = async (template) => {
+    if (summaryLoading) return;
     setSummaryLoading(true);
     setSummaryText(null);
     setSummaryId(template.id);
-    const prompt = `Diagnosis: ${template.title}
-
-ASSESSMENT:
-${template.assessment}
-
-WORKUP:
-${template.workup}
-
-MANAGEMENT:
-${template.management}`;
     try {
+      const prompt = [
+        `Diagnosis: ${template.title}`,
+        "",
+        "ASSESSMENT:",
+        template.assessment || "",
+        "",
+        "WORKUP:",
+        template.workup || "",
+        "",
+        "MANAGEMENT:",
+        template.management || "",
+      ].join("\n");
+
       const res = await fetch("https://api.anthropic.com/v1/messages", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "anthropic-dangerous-direct-browser-access": "true",
+        },
         body: JSON.stringify({
           model: "claude-sonnet-4-20250514",
-          max_tokens: 1000,
+          max_tokens: 600,
           system: SUMMARIZE_SYSTEM_PROMPT,
           messages: [{ role: "user", content: prompt }],
         }),
       });
+
       const data = await res.json();
+
+      if (!res.ok) {
+        const msg = data?.error?.message || `API error ${res.status}`;
+        throw new Error(msg);
+      }
+
       const text = data.content?.find(b => b.type === "text")?.text?.trim() || "";
+      if (!text) throw new Error("Empty response — please try again.");
       setSummaryText(text);
-    } catch {
-      setSummaryText("#Error\nCould not generate summary. Please try again.");
+    } catch (err) {
+      setSummaryText(`#${template.title} — Error\n${err?.message || "Could not generate summary. Please try again."}`);
     } finally {
       setSummaryLoading(false);
     }
@@ -3587,7 +3602,10 @@ ${template.management}`;
     try {
       const res = await fetch("https://api.anthropic.com/v1/messages", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "anthropic-dangerous-direct-browser-access": "true",
+        },
         body: JSON.stringify({
           model: "claude-sonnet-4-20250514",
           max_tokens: 1000,
