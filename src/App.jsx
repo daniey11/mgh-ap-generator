@@ -621,6 +621,48 @@ const GLOBAL_CSS = `
     border: none; cursor: pointer; transition: color 0.15s;
   }
   .ddx-new-chat-btn:hover { color: var(--ink-muted); }
+
+  /* ── PDF TOAST ─────────────────────────────────────── */
+  .pdf-toast {
+    position: fixed;
+    bottom: 88px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--ink);
+    color: var(--cream);
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 12.5px;
+    line-height: 1.5;
+    max-width: 340px;
+    width: max-content;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: toastIn 0.2s ease;
+  }
+  .pdf-toast a {
+    color: #a8d5ff;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  .pdf-toast-dismiss {
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.5);
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .pdf-toast-dismiss:hover { color: #fff; }
+  @keyframes toastIn {
+    from { opacity: 0; transform: translateX(-50%) translateY(8px); }
+    to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }
 `;
 
 
@@ -6305,10 +6347,32 @@ export default function App() {
   // PDF page offset: White Book printed page N = PDF file page N+3
   const PDF_OFFSET = 3;
 
+  // Toast state for PDF page fallback (cross-browser)
+  const [pdfToast, setPdfToast] = useState(null);
+
   const openPdf = (pages) => {
     const firstPage = parseInt(String(pages).split(/[–\-]/)[0].trim(), 10);
     const filePage  = firstPage + PDF_OFFSET;
-    window.open(`/whitebook.pdf#page=${filePage}`, "_blank");
+    const url = `/whitebook.pdf#page=${filePage}`;
+
+    // Detect mobile — PDF inline viewing and #page= unreliable
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    // Detect Safari — doesn't reliably honor the #page= fragment
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+    // Attempt to open in new tab
+    const newTab = window.open(url, "_blank", "noopener,noreferrer");
+
+    if (!newTab || newTab.closed || typeof newTab.closed === "undefined") {
+      // Popup was blocked — show a fallback direct link
+      setPdfToast({ page: firstPage, url, blocked: true });
+    } else if (isSafari || isMobile) {
+      // Opened successfully but #page= may not auto-navigate — show page hint
+      setPdfToast({ page: firstPage, url, blocked: false });
+    }
+
+    // Auto-dismiss after 7 seconds
+    setTimeout(() => setPdfToast(null), 7000);
   };
   const [messages, setMessages] = useState([]);
   const [ddxLoading, setDdxLoading] = useState(false);
@@ -6680,7 +6744,22 @@ export default function App() {
             </div>
           </div>
 
-          {/* MGH SYNAPSE FLOATING BUTTON */}
+  
+        {/* PDF PAGE TOAST */}
+        {pdfToast && (
+          <div className="pdf-toast">
+            <span>
+              {pdfToast.blocked ? (
+                <>Popup blocked — <a href={pdfToast.url} target="_blank" rel="noopener noreferrer">open PDF (p.{pdfToast.page})</a></>
+              ) : (
+                <>Navigate to <strong>page {pdfToast.page}</strong> in the PDF if it didn&apos;t jump there automatically.</>
+              )}
+            </span>
+            <button className="pdf-toast-dismiss" onClick={() => setPdfToast(null)}>✕</button>
+          </div>
+        )}
+
+        {/* MGH SYNAPSE FLOATING BUTTON */}
           <button
             className={`ddx-fab ${ddxOpen ? "open" : ""}`}
             onClick={() => { setDdxOpen(o => !o); if (!ddxOpen) setTimeout(() => inputRef.current?.focus(), 300); }}
