@@ -6427,7 +6427,7 @@ export default function App() {
         <header className="header">
           <div className="header-logo">
             <div className="header-logo-icon">⚕</div>
-            UCI SYNAPSE
+            MGH SYNAPSE
           </div>
           <div className="header-sep" />
           <div className="header-specialty">
@@ -6680,21 +6680,21 @@ export default function App() {
             </div>
           </div>
 
-          {/* UCI SYNAPSE FLOATING BUTTON */}
+          {/* MGH SYNAPSE FLOATING BUTTON */}
           <button
             className={`ddx-fab ${ddxOpen ? "open" : ""}`}
             onClick={() => { setDdxOpen(o => !o); if (!ddxOpen) setTimeout(() => inputRef.current?.focus(), 300); }}
           >
             <span className="fab-icon">{ddxOpen ? "✕" : "⚕"}</span>
-            {ddxOpen ? "Close" : "UCI Synapse"}
+            {ddxOpen ? "Close" : "MGH Synapse"}
           </button>
 
-          {/* UCI SYNAPSE POP-OUT */}
+          {/* MGH SYNAPSE POP-OUT */}
           <div className={`ddx-popout ${ddxOpen ? "visible" : ""}`}>
             <div className="ddx-panel-header">
               <div className="ddx-panel-avatar">⚕</div>
               <div style={{ flex: 1 }}>
-                <div className="ddx-panel-title">UCI Synapse</div>
+                <div className="ddx-panel-title">MGH Synapse</div>
                 <div className="ddx-panel-subtitle">Describe a presentation · Get ranked differential</div>
               </div>
               <div className="ddx-panel-actions">
@@ -6738,7 +6738,7 @@ export default function App() {
                         <div key={i} className="msg-ai">
                           <div className="msg-ai-header">
                             <div className="ai-avatar">⚕</div>
-                            UCI Synapse
+                            MGH Synapse
                           </div>
                           <div className="ddx-summary-box">
                             <strong>Summary: </strong>{r.summary}
