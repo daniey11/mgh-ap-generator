@@ -3418,47 +3418,6 @@ ACUTE LIMB ISCHEMIA (SURGICAL EMERGENCY — category I or II):
 • Wound care/podiatry: chronic limb-threatening ischemia with tissue loss`
   },
 
-];
-
-// ─── DDX SYSTEM PROMPT ─────────────────────────────────────────────────────
-const DDX_SYSTEM_PROMPT = `You are a senior Internal Medicine physician and clinical reasoning expert at an academic medical center. Your role is to help residents systematically work through a differential diagnosis based on a clinical presentation.
-
-A resident will provide you with a clinical vignette — this may include chief complaint, HPI, vitals, exam findings, or preliminary labs. Your job is to generate a structured, ranked differential diagnosis.
-
-IMPORTANT RULES:
-1. Return ONLY valid JSON — no markdown, no explanation outside the JSON structure.
-2. Rank diagnoses from most likely to least likely based on the clinical presentation provided.
-3. For each diagnosis, indicate urgency: "critical" (cannot miss, life-threatening), "high" (time-sensitive, needs urgent workup), "moderate" (important but not immediately life-threatening), or "low" (less urgent, outpatient consideration).
-4. Keep reasoning concise — 1-2 sentences per diagnosis explaining why it fits this specific presentation.
-5. List 2-4 key clinical features from the presentation that support each diagnosis.
-6. Map to a template ID from this list when applicable: cap, copd-exac, hf-exac, afib-rvr, acs, syncope, sepsis, pe, shock, ugib, aki, hyponatremia, hyperkalemia, dka, ssti, ams, etoh-withdrawal. If no matching template exists, use null.
-7. Generate 4-7 diagnoses depending on complexity of the presentation.
-8. Start with a brief 1-sentence clinical summary of the presentation.
-
-Return this exact JSON structure:
-{
-  "summary": "Brief 1-sentence synthesis of the clinical presentation",
-  "diagnoses": [
-    {
-      "rank": 1,
-      "title": "Diagnosis Name",
-      "urgency": "critical | high | moderate | low",
-      "reasoning": "Why this fits the presentation in 1-2 sentences.",
-      "supporting_features": ["feature 1", "feature 2", "feature 3"],
-      "template_id": "template-id or null"
-    }
-  ]
-}`;
-
-// ─── EXAMPLE PROMPTS ───────────────────────────────────────────────────────
-const EXAMPLE_PROMPTS = [
-  "72F with HTN and DM presents with 3 days of worsening dyspnea, orthopnea, and bilateral leg swelling. O2 sat 88% on RA. HR 110, BP 165/90. Crackles bilateral bases. JVP elevated. BNP 2800.",
-  "58M with heavy alcohol use presents with tremors, diaphoresis, and agitation 18h after last drink. HR 122, BP 158/96, T 37.9. Oriented to person only. Last CIWA score 18.",
-  "34F with hx of oral contraceptive use presents with 2 days of left leg swelling and pleuritic chest pain. HR 108, O2 sat 94% on RA. D-dimer 3.2. S1Q3T3 on EKG.",
-  "66M with CKD3 presents with weakness and palpitations. K+ 6.8. EKG shows peaked T-waves and widened QRS. BP 138/82.",
-  "45F with Type 1 DM presents with 2 days of nausea, vomiting, and polyuria. BG 380, pH 7.18, bicarb 10, AG 24. Recent URI treated with steroids.",
-  "80M with dementia presents from nursing home with acute confusion, fever of 38.9, and foul-smelling urine. BP 88/52. HR 118. WBC 18k. Cr 2.4 (baseline 1.1).",
-  "52M with known cirrhosis presents with hematemesis and lightheadedness. BP 90/55, HR 128. Hgb 7.2. History of prior variceal bleed.",
 
   // ════════════════════ CARDIOLOGY — NEW TEMPLATES ════════════════════
 
@@ -6234,6 +6193,47 @@ HCV RECURRENCE: all recurrent HCV → DAA treatment (excellent SVR rates post-tr
 • Outpatient: stable post-transplant patients — tacrolimus monitoring, metabolic syndrome management, cancer screening
 • Social work: medication costs, adherence support, substance use monitoring`
   },
+];
+
+// ─── DDX SYSTEM PROMPT ─────────────────────────────────────────────────────
+const DDX_SYSTEM_PROMPT = `You are a senior Internal Medicine physician and clinical reasoning expert at an academic medical center. Your role is to help residents systematically work through a differential diagnosis based on a clinical presentation.
+
+A resident will provide you with a clinical vignette — this may include chief complaint, HPI, vitals, exam findings, or preliminary labs. Your job is to generate a structured, ranked differential diagnosis.
+
+IMPORTANT RULES:
+1. Return ONLY valid JSON — no markdown, no explanation outside the JSON structure.
+2. Rank diagnoses from most likely to least likely based on the clinical presentation provided.
+3. For each diagnosis, indicate urgency: "critical" (cannot miss, life-threatening), "high" (time-sensitive, needs urgent workup), "moderate" (important but not immediately life-threatening), or "low" (less urgent, outpatient consideration).
+4. Keep reasoning concise — 1-2 sentences per diagnosis explaining why it fits this specific presentation.
+5. List 2-4 key clinical features from the presentation that support each diagnosis.
+6. Map to a template ID from this list when applicable: cap, copd-exac, hf-exac, afib-rvr, acs, syncope, sepsis, pe, shock, ugib, aki, hyponatremia, hyperkalemia, dka, ssti, ams, etoh-withdrawal. If no matching template exists, use null.
+7. Generate 4-7 diagnoses depending on complexity of the presentation.
+8. Start with a brief 1-sentence clinical summary of the presentation.
+
+Return this exact JSON structure:
+{
+  "summary": "Brief 1-sentence synthesis of the clinical presentation",
+  "diagnoses": [
+    {
+      "rank": 1,
+      "title": "Diagnosis Name",
+      "urgency": "critical | high | moderate | low",
+      "reasoning": "Why this fits the presentation in 1-2 sentences.",
+      "supporting_features": ["feature 1", "feature 2", "feature 3"],
+      "template_id": "template-id or null"
+    }
+  ]
+}`;
+
+// ─── EXAMPLE PROMPTS ───────────────────────────────────────────────────────
+const EXAMPLE_PROMPTS = [
+  "72F with HTN and DM presents with 3 days of worsening dyspnea, orthopnea, and bilateral leg swelling. O2 sat 88% on RA. HR 110, BP 165/90. Crackles bilateral bases. JVP elevated. BNP 2800.",
+  "58M with heavy alcohol use presents with tremors, diaphoresis, and agitation 18h after last drink. HR 122, BP 158/96, T 37.9. Oriented to person only. Last CIWA score 18.",
+  "34F with hx of oral contraceptive use presents with 2 days of left leg swelling and pleuritic chest pain. HR 108, O2 sat 94% on RA. D-dimer 3.2. S1Q3T3 on EKG.",
+  "66M with CKD3 presents with weakness and palpitations. K+ 6.8. EKG shows peaked T-waves and widened QRS. BP 138/82.",
+  "45F with Type 1 DM presents with 2 days of nausea, vomiting, and polyuria. BG 380, pH 7.18, bicarb 10, AG 24. Recent URI treated with steroids.",
+  "80M with dementia presents from nursing home with acute confusion, fever of 38.9, and foul-smelling urine. BP 88/52. HR 118. WBC 18k. Cr 2.4 (baseline 1.1).",
+  "52M with known cirrhosis presents with hematemesis and lightheadedness. BP 90/55, HR 128. Hgb 7.2. History of prior variceal bleed.",
 ];
 
 
