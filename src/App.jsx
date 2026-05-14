@@ -675,7 +675,7 @@ const SYSTEMS = [
   { id: "neph",  label: "Nephrology",              color: "#8b5cf6" },
   { id: "id",    label: "Infectious Disease",      color: "#10b981" },
   { id: "endo",  label: "Endocrinology",           color: "#f97316" },
-  { id: "neuro", "label": "Neurology / Psych",     color: "#06b6d4" },
+  { id: "neuro",  label: "Neurology / Psych",      color: "#06b6d4" },
   { id: "heme",  label: "Hematology",              color: "#ec4899" },
   { id: "onc",   label: "Oncology",                color: "#a16207" },
   { id: "rheum", label: "Rheumatology",            color: "#0891b2" },
