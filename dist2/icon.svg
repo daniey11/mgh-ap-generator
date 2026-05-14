@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+
+  <!-- Outer background -->
+  <rect width="512" height="512" rx="96" fill="#111110"/>
+
+  <!-- Subtle inner glow border -->
+  <rect x="1.5" y="1.5" width="509" height="509" rx="95" fill="none"
+        stroke="rgba(255,255,255,0.06)" stroke-width="3"/>
+
+  <!-- ═══ OPEN BOOK ═══ -->
+
+  <!-- Left page (slight perspective tilt) -->
+  <path d="
+    M 80 148
+    C 80 148, 160 136, 240 160
+    L 240 382
+    C 160 360, 80 372, 80 372
+    Z
+  " fill="#efebe4"/>
+
+  <!-- Left page inner shadow / depth -->
+  <path d="
+    M 80 148
+    C 80 148, 160 136, 240 160
+    L 240 168
+    C 160 144, 80 156, 80 156
+    Z
+  " fill="rgba(0,0,0,0.08)"/>
+
+  <!-- Left page text lines (decorative) -->
+  <g opacity="0.35" stroke="#3c3b38" stroke-linecap="round">
+    <line x1="108" y1="196" x2="214" y2="202" stroke-width="5"/>
+    <line x1="108" y1="216" x2="214" y2="221" stroke-width="5"/>
+    <line x1="108" y1="236" x2="214" y2="240" stroke-width="5"/>
+    <line x1="108" y1="256" x2="190" y2="260" stroke-width="5"/>
+    <line x1="108" y1="280" x2="214" y2="283" stroke-width="5"/>
+    <line x1="108" y1="300" x2="214" y2="303" stroke-width="5"/>
+    <line x1="108" y1="320" x2="172" y2="322" stroke-width="5"/>
+    <line x1="108" y1="344" x2="214" y2="346" stroke-width="5"/>
+  </g>
+
+  <!-- Right page -->
+  <path d="
+    M 432 148
+    C 432 148, 352 136, 272 160
+    L 272 382
+    C 352 360, 432 372, 432 372
+    Z
+  " fill="#efebe4"/>
+
+  <!-- Right page inner shadow -->
+  <path d="
+    M 432 148
+    C 432 148, 352 136, 272 160
+    L 272 168
+    C 352 144, 432 156, 432 156
+    Z
+  " fill="rgba(0,0,0,0.08)"/>
+
+  <!-- Right page text lines -->
+  <g opacity="0.25" stroke="#3c3b38" stroke-linecap="round">
+    <line x1="298" y1="196" x2="404" y2="202" stroke-width="5"/>
+    <line x1="298" y1="216" x2="404" y2="221" stroke-width="5"/>
+    <line x1="298" y1="236" x2="380" y2="240" stroke-width="5"/>
+  </g>
+
+  <!-- ═══ BOOK SPINE (center binding) ═══ -->
+  <rect x="240" y="142" width="32" height="246" rx="4" fill="#e0dbd3"/>
+  <!-- Spine highlight left -->
+  <rect x="240" y="142" width="7" height="246" rx="2" fill="rgba(255,255,255,0.15)"/>
+  <!-- Spine shadow right -->
+  <rect x="265" y="142" width="7" height="246" rx="0" fill="rgba(0,0,0,0.1)"/>
+  <!-- Spine center crease lines -->
+  <line x1="250" y1="142" x2="250" y2="388" stroke="rgba(0,0,0,0.08)" stroke-width="1.5"/>
+  <line x1="256" y1="142" x2="256" y2="388" stroke="rgba(0,0,0,0.05)" stroke-width="1"/>
+  <line x1="262" y1="142" x2="262" y2="388" stroke="rgba(0,0,0,0.08)" stroke-width="1.5"/>
+
+  <!-- Bottom page curve (book thickness) -->
+  <ellipse cx="256" cy="382" rx="176" ry="10" fill="rgba(0,0,0,0.18)"/>
+  <path d="M 80 372 Q 256 388 432 372 L 432 382 Q 256 398 80 382 Z" fill="#c8c3bc"/>
+
+  <!-- ═══ MEDICAL CROSS on right page ═══ -->
+  <!-- Cross background circle (subtle) -->
+  <circle cx="356" cy="298" r="60" fill="rgba(17,17,16,0.06)"/>
+  <!-- Horizontal bar -->
+  <rect x="312" y="284" width="88" height="28" rx="6" fill="#111110" opacity="0.78"/>
+  <!-- Vertical bar -->
+  <rect x="342" y="254" width="28" height="88" rx="6" fill="#111110" opacity="0.78"/>
+  <!-- Cross center overlap (ensures crisp corner) -->
+  <rect x="342" y="284" width="28" height="28" rx="2" fill="#111110" opacity="0.78"/>
+
+  <!-- ═══ SMALL STETHOSCOPE icon (bottom right page, below cross) ═══ -->
+  <g transform="translate(318, 362) scale(0.92)" opacity="0.38">
+    <!-- Stethoscope chest piece circle -->
+    <circle cx="38" cy="8" r="8" fill="none" stroke="#111110" stroke-width="5"/>
+    <!-- Tube left curve up -->
+    <path d="M 8 8 Q 8 32 24 32 Q 38 32 38 16" fill="none" stroke="#111110" stroke-width="5" stroke-linecap="round"/>
+    <!-- Tube right curve up -->
+    <path d="M 68 8 Q 68 32 52 32 Q 38 32 38 16" fill="none" stroke="#111110" stroke-width="5" stroke-linecap="round"/>
+    <!-- Ear pieces left -->
+    <line x1="2" y1="2" x2="8" y2="8" stroke="#111110" stroke-width="5" stroke-linecap="round"/>
+    <!-- Ear pieces right -->
+    <line x1="74" y1="2" x2="68" y2="8" stroke="#111110" stroke-width="5" stroke-linecap="round"/>
+    <!-- Chest piece dot -->
+    <circle cx="38" cy="8" r="3" fill="#111110"/>
+  </g>
+
+  <!-- ═══ "MGH" subtle label on left page ═══ -->
+  <text
+    x="152"
+    y="174"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="18"
+    font-weight="bold"
+    fill="#111110"
+    opacity="0.22"
+    text-anchor="middle"
+    letter-spacing="4"
+  >MGH IM</text>
+
+  <!-- ═══ Book top edge highlight ═══ -->
+  <path d="M 80 148 Q 256 132 432 148 L 432 156 Q 256 140 80 156 Z"
+        fill="rgba(255,255,255,0.12)"/>
+
+</svg>

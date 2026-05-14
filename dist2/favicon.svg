@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Background pill -->
+  <rect width="32" height="32" rx="8" fill="#111110"/>
+
+  <!-- Left book page -->
+  <path d="M6 9 C6 9 10 8.5 14 10 L14 24 C10 22.5 6 23 6 23 Z" fill="#ffffff" opacity="0.9"/>
+  <!-- Left page spine line -->
+  <line x1="6" y1="9" x2="6" y2="23" stroke="#efebe4" stroke-width="0.6" opacity="0.4"/>
+
+  <!-- Right book page -->
+  <path d="M26 9 C26 9 22 8.5 18 10 L18 24 C22 22.5 26 23 26 23 Z" fill="#ffffff" opacity="0.9"/>
+  <!-- Right page spine line -->
+  <line x1="26" y1="9" x2="26" y2="23" stroke="#efebe4" stroke-width="0.6" opacity="0.4"/>
+
+  <!-- Book spine / binding -->
+  <rect x="14" y="9" width="4" height="15" rx="0.5" fill="#e8e3db"/>
+  <!-- Spine shadow lines -->
+  <line x1="15.2" y1="9" x2="15.2" y2="24" stroke="#c2c1bb" stroke-width="0.5"/>
+  <line x1="16.8" y1="9" x2="16.8" y2="24" stroke="#c2c1bb" stroke-width="0.5"/>
+
+  <!-- Medical cross on right page -->
+  <rect x="20" y="13.5" width="3.5" height="1.2" rx="0.5" fill="#111110" opacity="0.7"/>
+  <rect x="21.1" y="12.4" width="1.2" height="3.4" rx="0.5" fill="#111110" opacity="0.7"/>
+
+  <!-- Text lines on left page (decorative) -->
+  <line x1="7.5" y1="13" x2="12.5" y2="13.4" stroke="#c2c1bb" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="7.5" y1="15.2" x2="12.5" y2="15.5" stroke="#c2c1bb" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="7.5" y1="17.4" x2="11" y2="17.7" stroke="#c2c1bb" stroke-width="0.8" stroke-linecap="round"/>
+</svg>
