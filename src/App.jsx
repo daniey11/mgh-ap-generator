@@ -8770,6 +8770,2033 @@ MALIGNANT HYPERTHERMIA (ANESTHETIC EMERGENCY):
 • Dantrolene availability: confirm dantrolene available in ICU pharmacy before need arises (emergency kits at each institution)`
   },
 
+  // ════════════════════ HEMATOLOGY TEMPLATES ════════════════════
+
+  {
+    id: "anemia",
+    system: "heme",
+    title: "Anemia / Pancytopenia Approach",
+    keywords: ["anemia","pancytopenia","iron deficiency","IDA","B12 deficiency","folate","hemolysis","reticulocyte","MCV","anemia of chronic disease","ACD","aplastic anemia","DAT","Coombs","AIHA","thalassemia","macrocytic","microcytic"],
+    source: { chapter: "Hematology", section: "Pancytopenia & Anemia", pages: "124–125", authors: "Ellen Kendall",
+      keyFacts: [
+        "Reticulocyte Index (RI) = retic% × (Hgb/15) / maturation factor (1.0 if Hgb >10; 1.5 if 7-10; 2.0 if <7): RI <2 = underproduction; RI >2 = destruction or blood loss",
+        "Iron deficiency: ferritin <30 (high specificity); ferritin 30-100 with CRP elevation may still be iron deficient (ferritin is acute phase reactant); Fe/TIBC <20% most sensitive",
+        "B12 deficiency: elevated MMA + homocysteine (both elevated); folate deficiency: elevated homocysteine only (normal MMA). Anti-IF Ab + elevated gastrin = pernicious anemia",
+        "Hemolysis panel: LDH ↑ + haptoglobin ↓ + indirect bili ↑ + DAT (Coombs test) — positive DAT = immune-mediated (AIHA); negative DAT = microangiopathic (TMA/DIC) or intrinsic RBC defect",
+        "Pancytopenia alarming causes: blasts on differential (call Hematology), HIT, TMA (schistocytes), catastrophic APLAS — always review peripheral smear"
+      ]
+    },
+    assessment: `#Anemia / Pancytopenia Assessment
+Hgb: *** | Hct: *** | MCV: *** fL | RDW: ***
+WBC: *** | Plt: ***
+Retic count: ***% | Absolute Retic: *** | Reticulocyte Index (RI) = retic% × (Hgb/15) / maturation: ***
+RI interpretation: [ ] <2 (underproduction — bone marrow/production problem)  [ ] ≥2 (destruction/loss — hemolysis or bleeding)
+MCV classification: [ ] Microcytic (<80)  [ ] Normocytic (80-99)  [ ] Macrocytic (≥100)
+Peripheral smear ordered: [ ] Yes  [ ] No (order for all significant anemia)
+Symptoms: fatigue [ ] / dyspnea [ ] / angina [ ] / lightheadedness [ ] / pallor [ ]
+PANCYTOPENIA: ALL 3 cell lines low: [ ] Yes — alarming causes ruled out:
+  Blasts on differential: [ ] Yes (call Hematology)  [ ] No
+  Schistocytes/TMA: [ ] Yes  [ ] No | HIT concern: [ ] Yes  [ ] No`,
+    ddx: `MICROCYTIC ANEMIA (MCV <80):
+• Iron deficiency anemia (IDA): most common — ferritin <30 diagnostic; check TIBC (elevated in IDA); causes: GI blood loss, menorrhagia, malabsorption (celiac), poor dietary intake
+• Anemia of inflammation/chronic disease (ACD): ferritin normal/high (acute phase reactant); TIBC low/normal; Fe/TIBC <20%; concurrent infection, malignancy, autoimmune
+• Thalassemia: Mentzer index (MCV/RBC) <13 suggests thalassemia; Hgb electrophoresis; target cells, basophilic stippling; prevalent in Mediterranean/SE Asian/African populations
+• Sideroblastic: ring sideroblasts on iron stain; caused by alcohol, lead, INH, copper deficiency, MDS
+• Mixed IDA + other (dimorphic): normal MCV but elevated RDW (two populations)
+NORMOCYTIC ANEMIA (MCV 80-99):
+• Acute blood loss (early — before iron depletion)
+• Anemia of chronic kidney disease: EPO deficiency; check Cr/eGFR
+• Hypothyroidism, hypopituitarism: check TSH
+• Early iron/B12/folate deficiency (before MCV changes)
+• Aplastic anemia: pancytopenia + hypocellular marrow; drugs, viruses, autoimmune
+• HEMOLYSIS: LDH ↑, haptoglobin ↓, indirect bili ↑ → DAT positive (AIHA) vs DAT negative (microangiopathic/intrinsic)
+MACROCYTIC ANEMIA (MCV ≥100):
+Megaloblastic (hypersegmented PMNs + macro-ovalocytes):
+• B12 deficiency: elevated MMA + homocysteine; pernicious anemia (anti-IF Ab, ↑gastrin), malabsorption, vegan diet, metformin (rare)
+• Folate deficiency: elevated homocysteine only (MMA normal); poor diet, malabsorption, methotrexate, phenytoin
+Non-megaloblastic:
+• Alcohol (common — direct marrow toxicity + folate deficiency)
+• Liver disease (increased RBC membrane lipid accumulation)
+• Hypothyroidism
+• Medications: hydroxyurea, chemotherapy, methotrexate
+• MDS/early myeloproliferative disorders
+PANCYTOPENIA CAUSES:
+• BM infiltration: malignancy (leukemia, MDS, myeloma, mets), infection (TB, histo), storage disease
+• BM failure: aplastic anemia, PNH, drugs (chemo, NSAIDs, sulfa, chloramphenicol), radiation
+• B12/folate deficiency (ineffective hematopoiesis)
+• Hypersplenism (sequestration): portal HTN, cirrhosis, Gaucher disease
+• Infection: HIV, parvovirus B19, EBV, CMV, sepsis
+• HLH (hemophagocytic lymphohistiocytosis): fever + cytopenia + ferritin >500 (often >10,000) + splenomegaly + hemophagocytosis`,
+    workup: `INITIAL EVALUATION (all anemia):
+• CBC with differential + peripheral smear (most important single test)
+• Reticulocyte count with RI (guides underproduction vs destruction/loss)
+RI <2 (UNDERPRODUCTION — "Anemia Labs"):
+• Iron studies: serum iron, TIBC, ferritin, transferrin saturation (Fe/TIBC)
+• B12, folate (check both)
+• BMP (renal function → ACD/EPO deficiency)
+• TSH (hypothyroidism)
+• LFTs (liver disease — macrocytic)
+• CRP/ESR (elevates ferritin falsely — affects interpretation)
+• If unrevealing: SPEP/SFLC (myeloma), Hgb electrophoresis (hemoglobinopathy), bone marrow biopsy
+RI ≥2 (HEMOLYSIS PANEL):
+• LDH (elevated — most sensitive)
+• Haptoglobin (low/undetectable — most specific for hemolysis)
+• Indirect bilirubin (elevated)
+• Direct antiglobulin test (DAT / Coombs): positive = immune-mediated (AIHA); negative = microangiopathic or intrinsic RBC defect
+• Peripheral smear: schistocytes (TMA/DIC), spherocytes (AIHA/hereditary spherocytosis), sickle cells, target cells
+• Urine dipstick for hemoglobin (intravascular hemolysis)
+FURTHER TESTING BY PATTERN:
+• Positive DAT: autoimmune hemolytic anemia (AIHA) — warm IgG type (steroids first-line) vs cold IgM (rituximab, avoid cold)
+• Negative DAT + schistocytes: microangiopathic hemolytic anemia (TMA) — PLASMIC score for TTP; DIC workup (PT/PTT/fibrinogen/D-dimer)
+• PANCYTOPENIA: add HIV, HBV, HCV, CMV/EBV, parvovirus B19; ANA (SLE); consider Hematology consult + bone marrow biopsy`,
+    management: `IRON DEFICIENCY ANEMIA:
+• Oral iron (first-line): ferrous sulfate 325mg (65mg elemental Fe) PO TID, take on empty stomach; Vit C improves absorption; constipation/dark stools common
+• IV iron: ferric carboxymaltose (FCM) 500-1500mg single infusion; ferumoxytol 510mg × 2 doses; iron sucrose 200mg × multiple doses — preferred if malabsorption, IBD, intolerance to PO, or rapid repletion needed
+• Transfusion (RBC): only if symptomatic anemia with cardiovascular compromise (Hgb <7 general; <8 in CAD/ACS) — does NOT treat the underlying deficiency
+• Duration: continue iron 3-6 months after Hgb normalizes to replete stores
+• If refractory: consider celiac (anti-tTG), GI evaluation, reassess diagnosis
+B12 DEFICIENCY:
+• Oral (mild-moderate, no pernicious anemia): cyanocobalamin 1000-2000 mcg PO qday (high-dose oral can overcome lack of intrinsic factor)
+• Intramuscular (pernicious anemia, severe deficiency, neuro symptoms): cyanocobalamin 1000 mcg IM daily × 7d → weekly × 4 weeks → monthly indefinitely
+• Monitor: Hgb improves within 1-2 weeks; neuro symptoms may take months to improve; recheck B12 + CBC in 2-3 months
+FOLATE DEFICIENCY:
+• Folic acid 1-5mg PO qday × 4 months (or until cause resolved)
+• ALWAYS give B12 first or check B12 before treating (folate repletion can mask B12 deficiency and worsen subacute combined degeneration)
+ANEMIA OF CHRONIC DISEASE:
+• Treat underlying condition (most effective)
+• Iron supplementation: if concurrent IDA (check TSAT <20%)
+• ESA (erythropoiesis-stimulating agent): CKD + Hgb <10 → darbepoetin or epoetin; supplement IV iron concurrently for best response
+• Transfusion: Hgb <7 threshold (or <8 in CAD) — not a routine management tool for ACD
+WARM AIHA (positive DAT, IgG):
+• Prednisone 1-2 mg/kg/day → taper when Hgb responds (usually 2-4 weeks)
+• Refractory: rituximab 375 mg/m² weekly × 4 doses; IVIG 2g/kg × 2 days (short-term bridge)
+• Splenectomy: for chronic refractory; requires vaccinations 2 weeks before`,
+    monitoring: `• CBC every 1-2 weeks during treatment to assess response (Hgb should rise 1-2 g/dL per week with effective treatment)
+• Reticulocyte response: should increase within 5-7 days of initiating appropriate treatment ("reticulocytosis" is a good sign)
+• Iron studies: ferritin at 2-3 months (goal >50-100 ng/mL)
+• B12/folate levels at 2-3 months after treatment initiation
+• For AIHA: haptoglobin, LDH, indirect bili at 1-2 weeks to assess hemolysis response`,
+    disposition: `• Hematology consult: unexplained significant cytopenia, blasts on differential, aplastic anemia, refractory AIHA, suspected MDS or hematologic malignancy, severe hemolysis requiring plasmapheresis
+• GI evaluation: iron deficiency anemia without clear cause in adults ≥45 (colonoscopy + EGD to exclude GI malignancy/celiac)`
+  },
+
+  {
+    id: "sickle-cell",
+    system: "heme",
+    title: "Sickle Cell Disease / Vaso-Occlusive Episode",
+    keywords: ["sickle cell","SCD","HbSS","vaso-occlusive","VOE","acute chest syndrome","sickle crisis","hydroxyurea","exchange transfusion","sickle cell pain","opioids sickle","ACS sickle","stroke sickle","priapism","splenic sequestration"],
+    source: { chapter: "Hematology", section: "Sickle Cell Disease", pages: "126–127", authors: "Oluwaferanmi Bello",
+      keyFacts: [
+        "Vaso-occlusive episode (VOE): no objective signs or labs — patient report is the criterion standard; treat pain with IV opioids within <1 hour of ED arrival per MGH protocol",
+        "Acute Chest Syndrome (ACS): new imaging infiltrate + ANY of: dyspnea, fever, chest pain, cough, or hypoxemia — #2 cause of hospitalization; managed with transfusion ± bronchodilators ± antibiotics",
+        "Transfusion indications: stroke, acute chest, multi-organ failure, splenic sequestration, perioperative — simple transfusion if Hgb <5 or drop >2g from baseline; exchange > simple if hyperviscosity risk",
+        "Long-term therapy: hydroxyurea (↑HbF, reduces VOE by 50%); L-glutamine (FDA 2017); voxelotor (Oxbryta, ↑HbO2 affinity); crizanlizumab (anti-P-selectin); allogeneic BMT only curative option",
+        "Avoid stigmatizing language: terms like 'sickler,' 'frequent flyer,' 'drug-seeking' increase bias and worsen outcomes — use neutral, patient-centered language per JAMA 2022"
+      ]
+    },
+    assessment: `#Sickle Cell Disease — Acute Presentation
+SCD genotype: [ ] HbSS (sickle cell anemia)  [ ] HbSC  [ ] HbSβ-thal  [ ] Other: ***
+Baseline Hgb: *** | Current Hgb: *** | Baseline SpO2: *** | Current SpO2: ***
+VASO-OCCLUSIVE EPISODE (VOE):
+Pain score: *** | Location: *** | Duration: *** | Prior hospitalizations for pain: ***
+Triggers identified: dehydration [ ] / infection [ ] / weather change [ ] / stress [ ] / no clear cause [ ]
+IV opioids given within 1 hour: [ ] Yes (drug/dose: ***)  [ ] No — give now per MGH ED Protocol
+ACUTE CHEST SYNDROME (ACS) screen: new infiltrate [ ] + ANY of: dyspnea [ ] / fever [ ] / chest pain [ ] / cough [ ] / hypoxia [ ]
+Other complications: stroke [ ] / priapism [ ] / splenic sequestration [ ] / aplastic crisis (parvovirus) [ ]
+Hydroxyurea at home: *** mg qday | Last dose: *** | Adherence: ***
+Transfusion history: last transfusion *** | Alloantibodies: *** (critical — check before ordering blood)`,
+    ddx: `ACUTE SCD COMPLICATIONS:
+Vaso-Occlusive Episode (VOE): most common reason for hospitalization; triggered by sickling in microvasculature → pain (bone, chest, abdomen, joints); diagnosis is clinical
+Acute Chest Syndrome (ACS): new CXR infiltrate + fever/respiratory symptoms — can be triggered by VOE, infection, fat embolism; most common cause of death; rapid deterioration possible
+Stroke (ischemic or hemorrhagic): acute neurologic change + SCD → presumed stroke until proven otherwise; exchange transfusion + neurology
+Splenic Sequestration: acute spleen enlargement + Hgb drop >2g; life-threatening in children; rare in adults (auto-splenectomy usually complete by adulthood)
+Aplastic Crisis: parvovirus B19 → temporary cessation of erythropoiesis → severe anemia + reticulocytopenia; usually self-limited (2-3 weeks); may require transfusion
+Priapism: prolonged painful erection >4h; urological emergency — pseudoephedrine 30-60mg PO; aspiration/irrigation with urology; exchange transfusion
+Multi-Organ Failure (MOF): rare, life-threatening; liver/kidney/lung involvement; exchange transfusion
+INFECTIONS IN SCD (functional asplenia risk):
+• Encapsulated organisms: S. pneumoniae, H. influenzae, N. meningitidis — vaccinate; high index for sepsis
+• Parvovirus B19 (aplastic crisis)
+• Salmonella (osteomyelitis — unusual organism)
+• Any infection can trigger ACS or VOE — always assess for precipitating infection`,
+    workup: `ACUTE ADMISSION LABS:
+• CBC with differential: Hgb (compare to baseline), WBC (leukocytosis can reflect infection or stress), retic count (low = aplastic crisis)
+• BMP: renal function (chronic nephropathy common), electrolytes
+• LFTs: hepatic sequestration, biliary sludge/stones (chronic hemolysis), iron overload
+• Reticulocyte count: low retic + severe anemia = aplastic crisis (parvovirus)
+• Type & Screen: ALWAYS with note "Sickle Cell Disease" for extended antigen matching (MUST request sickle cell extended match to minimize alloimmunization)
+• Blood cultures ×2: if febrile (functional asplenia → high-grade bacteremia risk)
+• UA + urine culture: UTI as VOE trigger
+ACS ADDITIONAL:
+• CXR: new/worsening infiltrate; bilateral lower lobe predominance
+• ABG/VBG if SpO2 <94%; pulse oximetry underestimates oxygenation in SCD
+• Blood cultures, respiratory viral panel
+• BNP/echo if cardiac involvement suspected
+STROKE/NEUROLOGIC:
+• CT head immediately; MRI + MRA brain if CT negative; transcranial Doppler (TCD) for stroke risk screening`,
+    management: `ALL INPATIENTS — STANDARD ORDERS:
+• Epic Order Set: "General Adult Sickle Cell Crisis" — use this
+• VTE prophylaxis (high risk — LMWH)
+• O2: supplemental O2 only if SpO2 <92% (avoid hyperoxia)
+• IVF: 100-150 mL/h to maintain hydration (avoid overhydration)
+• NSAIDs: ketorolac ≤5 days (avoid if renal insufficiency); ibuprofen for ongoing pain
+PAIN MANAGEMENT (VOE) — IV OPIOIDS WITHIN 1 HOUR:
+• If unknown baseline: IV morphine 0.1-0.15mg/kg (max 10mg) OR hydromorphone 0.02-0.05mg/kg (max 1.5mg)
+• Once admitted: PCA (patient-controlled analgesia) — discuss with patient and pharmacy
+• Do NOT hold long-acting PO opioids unless on PCA with basal rate
+• Avoid steroids (cause rebound pain crisis on taper)
+• Pruritus: non-sedating antihistamine; continuous naloxone infusion 0.25 mcg/kg/h (compatible with morphine); avoid IV Benadryl (use PO)
+• Aggressive bowel regimen ± methylnaltrexone (opioid-induced constipation)
+• If uncontrolled: chronic pain consult for high-dose PCA titration; consider ketamine
+ACUTE CHEST SYNDROME (ACS):
+• Incentive spirometry, ambulation (prevents splinting)
+• Supplemental O2 to maintain SpO2 >92%
+• Antibiotics: CAP coverage (ceftriaxone + azithromycin) — respiratory infection common trigger
+• Bronchodilators: albuterol if bronchospasm
+• Exchange transfusion (goal HbS <30%, Hgb ~10): if worsening respiratory status, rapidly progressing, or severe ACS — simple transfusion if Hgb <5
+• Incentive spirometry q2h while awake
+TRANSFUSIONS IN SCD:
+• ALWAYS order with "Sickle Cell Disease" indication — extended antigen matching critical (prevents alloimmunization; alloantibodies complicate future transfusions)
+• Simple transfusion: if Hgb <5 or symptomatic anemia with drop >2g from baseline
+• Exchange transfusion (preferred when possible): stroke, severe ACS, MOF — reduces HbS without hyperviscosity risk; reduces alloimmunization risk vs simple
+• Target HbS <30% for acute stroke; <50% for ACS
+• Judicious transfusion (risk: alloimmunization; iron overload after >15-20 units)
+• Iron chelation: if ferritin >1000-1500 ng/mL (deferoxamine IV/SQ or deferasirox PO)
+CHRONIC DISEASE-MODIFYING THERAPY (continue inpatient):
+• Hydroxyurea: continue inpatient dose; ↑HbF → reduces VOE frequency by ~50%; reduces ACS
+• L-glutamine 5g BID: reduces RBC oxidative stress (FDA-approved 2017)
+• Voxelotor (Oxbryta) 1500mg qday: increases HbO2 affinity → reduces sickling; increases Hgb
+• Crizanlizumab (Adakveo) IV monthly: anti-P-selectin → reduces endothelial adhesion → reduces VOE
+• Folic acid: supplement (ongoing hemolysis increases folate requirements)
+• BMT: only curative option; gene therapy (CRISPR-based) for BCL11A under investigation (NEJM 2021)
+STROKE: exchange transfusion + neurology + long-term chronic transfusion program (TCD screening)`,
+    monitoring: `• CBC daily (Hgb, retic) — especially in ACS or aplastic crisis
+• SpO2 continuous in ACS; ABG/VBG for SpO2 <94%
+• Pain score every 2-4h; reassess analgesic efficacy at 30-60 min after IV dose
+• If transfusing: pre- and post-transfusion Hgb; HbS% after exchange transfusion
+• Renal function daily in acute illness (acute nephropathy common)`,
+    disposition: `• Hematology (Sickle Cell Disease specialty team): all admissions — MGH SCD team provides inpatient consultation and follows all admitted SCD patients
+• Exchange transfusion: interventional radiology or apheresis (coordinate with Hematology and Blood Bank)
+• ICU: severe ACS with respiratory failure, multi-organ failure, severe acute stroke, hemodynamic instability`
+  },
+
+  {
+    id: "thrombocytopenia-hit",
+    system: "heme",
+    title: "Thrombocytopenia / ITP / HIT / TTP-TMA",
+    keywords: ["thrombocytopenia","HIT","ITP","TTP","TMA","PLASMIC score","4T score","argatroban","IVIG ITP","prednisone ITP","immune thrombocytopenia","heparin induced","thrombotic microangiopathy","schistocytes","platelet transfusion","rituximab ITP"],
+    source: { chapter: "Hematology", section: "Thrombocytopenia / TMA", pages: "127–128", authors: "Ellen Kendall",
+      keyFacts: [
+        "4T score for HIT: Thrombocytopenia degree + Timing + Thrombosis + other causes (oTher); score 0-3=low prob; 4-5=intermediate; 6-8=high — STOP all heparin and start non-heparin anticoagulant if intermediate/high 4T",
+        "ITP management: plt <30k OR bleeding → prednisone 1-2mg/kg/day ± IVIG 1g/kg (if rapid rise needed, pre-procedure, or refractory); plt threshold for procedures: >50k for most; >100k for neurosurgery",
+        "TTP diagnosis: PLASMIC score (Plt <30k, lysis [LDH ≥2x ULN], no active cancer, no stem cell transplant, MCV <90, INR <1.5, Cr <2) — high score → start plasma exchange BEFORE ADAMTS13 result",
+        "TTP treatment: plasma exchange (PEX) 1-1.5 plasma volumes daily + prednisone + rituximab for acquired TTP (anti-ADAMTS13 Ab); caplacizumab for refractory; do NOT transfuse platelets in TTP (worsens microvascular thrombosis)",
+        "Platelet transfusion: generally <10k (spontaneous bleeding risk); <50k for surgical procedures; <100k for neurosurgery/epidural; avoid in HIT and TTP unless life-threatening hemorrhage"
+      ]
+    },
+    assessment: `#Thrombocytopenia Assessment
+Plt: *** | Nadir: *** | Trend: *** → *** → ***
+Severity: mild (100-150k) [ ] / moderate (50-99k) [ ] / severe (<50k) [ ]
+Bleeding: GI [ ] / GU [ ] / epistaxis [ ] / mucocutaneous [ ] / HA [ ] / no active bleeding [ ]
+Peripheral smear: schistocytes [ ] / normal [ ] — (order STAT: r/o TMA)
+Heparin exposure: UFH/LMWH *** (start date: ***) | HIT concern: calculate 4T score
+HIT 4T SCORE:
+  Thrombocytopenia: >50% fall, nadir ≥20k (2) / 30-50% fall or nadir 10-19k (1) / <30% or <10k (0) = ___
+  Timing: 5-10d or ≤1d if prior heparin in 30d (2) / >10d or timing unclear (1) / <4d no prior (0) = ___
+  Thrombosis: new thrombosis or skin necrosis (2) / progressive/recurrent/suspected (1) / none (0) = ___
+  oTher causes: none apparent (2) / possible (1) / definite other cause (0) = ___
+  TOTAL 4T: ___ (0-3=low; 4-5=intermediate; 6-8=high) → if ≥4: STOP ALL HEPARIN NOW
+PLASMIC SCORE (TTP): Plt<30 (1) / Lysis-LDH≥2xULN (1) / no Active cancer (1) / no sCT (1) / MCV<90 (1) / INR<1.5 (1) / Cr<2 (1) = *** (≥5 = high risk → start PEX)
+ITP suspected: primary [ ] / secondary (SLE/HIV/HCV/drug) [ ]`,
+    ddx: `THROMBOCYTOPENIA — PRODUCTION vs DESTRUCTION vs SEQUESTRATION:
+PRODUCTION (BM failure, hypoproduction):
+• Drug-induced: heparin (#1 drug cause of immune thrombocytopenia → HIT), chemo, NSAIDs, antibiotics, quinine, anti-GPIIb/IIIa
+• Nutritional: B12/folate deficiency, alcohol, copper deficiency
+• Infection: HIV/HCV (suppress megakaryocytes), sepsis (marrow suppression), CMV/EBV/VZV/parvovirus
+• BM disease: MDS, aplastic anemia, BM infiltration (leukemia, lymphoma, mets)
+DESTRUCTION (immune or microangiopathic):
+• ITP: isolated thrombocytopenia + normal smear (no schistocytes) — diagnosis of exclusion
+• HIT (heparin-induced thrombocytopenia): >50% Plt fall 5-10d after heparin; thrombosis risk INCREASES (paradoxically); immune complex activates platelets
+• TMA: schistocytes + MAHA → TTP (ADAMTS13 ↓), HUS (Shiga toxin/complement), DIC, HELLP, malignant HTN, drug-induced
+• APLAS (antiphospholipid antibody syndrome): thrombocytopenia + thrombosis + positive APLAS antibodies
+• Post-transfusion purpura (PTP): severe thrombocytopenia 5-10d post-transfusion
+• Gestational thrombocytopenia: mild, isolated, last trimester — benign (no treatment needed if plt >70k)
+SEQUESTRATION: hypersplenism (cirrhosis/portal HTN), massive transfusion, hypothermia
+HIT vs ITP KEY DISTINCTION:
+• HIT: heparin exposure + paradoxical THROMBOSIS + thrombocytopenia (plt rarely <20k); PF4-heparin ELISA/serotonin release assay (SRA)
+• ITP: NO heparin exposure, NO schistocytes, BLEEDING not thrombosis`,
+    workup: `ALL THROMBOCYTOPENIA:
+• CBC with differential + peripheral smear (most important — schistocytes = TMA)
+• Citrated platelet count (rule out pseudothrombocytopenia — EDTA artifact)
+• BMP, LFTs, LDH, haptoglobin (hemolysis markers)
+• PT/INR, PTT, fibrinogen, D-dimer (DIC workup if clinical concern)
+• HIV, HCV serology (secondary ITP)
+• Pregnancy test (females)
+• ANA, anti-cardiolipin, anti-β2GP1, lupus anticoagulant (if SLE/APLAS concern)
+• DAT (Coombs) — Evans syndrome = ITP + AIHA
+SUSPECTED HIT:
+• 4T score first — if intermediate/high (≥4): STOP all heparin immediately
+• PF4-heparin ELISA: high sensitivity, low specificity; if positive → confirm with serotonin release assay (SRA) — gold standard
+• Do NOT wait for test results before stopping heparin if 4T ≥4
+SUSPECTED TTP:
+• PLASMIC score (see above)
+• ADAMTS13 activity level: <10% = acquired TTP; send STAT (but do not wait for result to start PEX if PLASMIC ≥5)
+• ADAMTS13 inhibitor (anti-ADAMTS13 IgG antibody): confirms acquired TTP
+• Peripheral smear: schistocytes (helmet cells, fragments) — ≥2 per HPF suggests TMA
+ITP WORKUP:
+• Diagnosis of exclusion — rule out TMA, HIT, drug-induced, secondary causes
+• Bone marrow biopsy: consider if age >60, abnormal WBC/RBC, refractory ITP, prior to splenectomy`,
+    management: `ITP TREATMENT:
+• plt ≥30k AND asymptomatic: observation (many patients safe to monitor)
+• plt <30k OR bleeding: treat
+  First-line: prednisone 1-2mg/kg/day × 2-4 weeks then taper (80% response; most relapses occur during taper)
+  IVIG 1g/kg IV over 1-2 days: adds when rapid rise needed (pre-procedure, active bleeding, refractory to steroids); plt rises in 24-72h
+  Anti-D immunoglobulin 75 mcg/kg (WinRho): for Rh-positive non-splenectomized patients; cheaper than IVIG; causes hemolysis (avoid if Hgb <10)
+• Refractory ITP (second-line): rituximab 375 mg/m² weekly × 4 doses; TPO receptor agonists (romiplostim SQ weekly or eltrombopag PO qday); splenectomy (70% durable remission; requires vaccinations 2 weeks prior)
+• Pre-procedure thresholds: plt >50k for most procedures; >100k for neurosurgery/epidural/ophthalmic surgery
+HIT TREATMENT:
+• STOP ALL HEPARIN immediately (including heparin flushes, LMWH, heparin-coated catheters)
+• Start non-heparin anticoagulant IMMEDIATELY (thrombosis risk remains high):
+  - Argatroban 1-2 mcg/kg/min IV (preferred if renal failure; direct IIa inhibitor; monitor PTT 1.5-3× baseline)
+  - Bivalirudin 0.1-0.2 mg/kg/h IV (can use in renal failure; monitor ACT or PTT)
+  - Fondaparinux 2.5-7.5mg SQ qday (subcutaneous; no PTT monitoring)
+• Transition to warfarin ONLY after platelet count recovers to >150k (starting warfarin with active HIT → limb gangrene from protein C depletion)
+• Duration of anticoagulation: HIT with thrombosis → 3-6 months; HIT without thrombosis → ≥1 month (minimum)
+• Do NOT transfuse platelets in HIT (platelet activation → thrombosis)
+TTP TREATMENT:
+• START plasma exchange (PEX) IMMEDIATELY if PLASMIC score ≥5 or strong clinical suspicion — do NOT wait for ADAMTS13 result
+  PEX: 1-1.5 plasma volumes qday with FFP as replacement; daily until plt >150k × 2 days; then every other day × 2; then stop
+• Prednisone 1mg/kg/day: add to PEX for acquired TTP
+• Rituximab 375mg/m² weekly × 4 doses (or low-dose weekly): for acquired TTP with anti-ADAMTS13 Ab — reduces relapses
+• Caplacizumab (anti-VWF; blocks platelet adhesion): for refractory or severe acquired TTP
+• Do NOT transfuse platelets (risk of worsening microvascular thrombosis — only if CNS hemorrhage or life-threatening bleeding)
+ATYPICAL HUS (complement-mediated):
+• Eculizumab (anti-C5 complement inhibitor): 900mg IV weekly × 4 weeks → 1200mg q2 weeks; highly effective; requires meningococcal vaccination before use
+• Plasma exchange: bridge therapy while awaiting eculizumab; inferior to eculizumab for long-term
+PLATELET TRANSFUSION THRESHOLDS:
+• Spontaneous bleeding risk: plt <10k → transfuse
+• Invasive procedure: plt <50k → transfuse
+• CNS surgery/epidural: plt <100k → transfuse
+• Do NOT transfuse in: HIT, TTP (worsens thrombosis) — only exception: life-threatening CNS hemorrhage`,
+    monitoring: `• CBC daily during active treatment; plt trend is key treatment response marker
+• HIT: platelet trend after stopping heparin + anti-Xa level if on argatroban; PTT 4-6h after argatroban dose change
+• TTP: plt count daily during PEX; ADAMTS13 activity at 6-12 months after remission (risk of relapse)
+• ITP: plt at 1 week (prednisone response), then every 2-4 weeks during taper
+• Hemolysis markers (LDH, haptoglobin, indirect bili) every 1-3 days in TMA to assess treatment response`,
+    disposition: `• Hematology consult: all HIT (mandatory — anticoagulation management), all TTP (mandatory — plasma exchange), refractory ITP, plt <20k with active bleeding
+• Apheresis/Blood Bank: plasma exchange for TTP — coordinate immediately with Hematology
+• ICU: CNS hemorrhage, severe bleeding with thrombocytopenia, hemodynamically unstable TTP`
+  },
+
+  {
+    id: "dic",
+    system: "heme",
+    title: "DIC / Coagulopathy / Bleeding Disorders",
+    keywords: ["DIC","disseminated intravascular coagulation","coagulopathy","bleeding","fibrinogen","cryoprecipitate","FFP","hemophilia","von Willebrand disease","vWD","factor VIII","factor IX","coagulation factor","PT INR","PTT","vitamin K","warfarin reversal","bleeding workup"],
+    source: { chapter: "Hematology", section: "Coagulation Disorders / DIC", pages: "129–130", authors: "Anna Crosetti",
+      keyFacts: [
+        "DIC: treat underlying cause first; transfuse plts if <10k (spontaneous) or <30-50k with active bleeding; cryoprecipitate if fibrinogen <100-150; FFP if INR >2; aminocaproic acid (Amicar) generally contraindicated",
+        "PT/INR prolonged + aPTT normal: Factor VII deficiency, early warfarin, liver disease, Vit K deficiency — test extrinsic pathway",
+        "aPTT prolonged + PT normal: Factor VIII, IX (hemophilia A/B), XI, XII deficiency, lupus anticoagulant — test intrinsic pathway; 1:1 mixing study: corrects = factor deficiency; doesn't correct = inhibitor",
+        "von Willebrand disease (vWD): most common inherited bleeding disorder; normal PT/aPTT (may have mild aPTT elevation); ↓ vWF Ag, ↓ vWF activity (ristocetin cofactor), ↓ FVIII — treat with desmopressin (DDAVP) for Type 1; vWF concentrate for Type 2/3",
+        "Hemophilia A (Factor VIII deficiency): aPTT prolonged; target FVIII activity >50% for minor bleed, >80-100% for major bleed/surgery; emicizumab for prophylaxis (bispecific Ab mimicking FVIII)"
+      ]
+    },
+    assessment: `#DIC / Coagulopathy / Bleeding Assessment
+PT/INR: *** | aPTT: *** | Fibrinogen: *** mg/dL | D-dimer: ***
+Plt: *** | Hgb: *** | Schistocytes on smear: [ ] Yes  [ ] No
+DIC CRITERIA (ISTH score): Plt *** + PT prolongation *** + fibrinogen *** + D-dimer ***
+  Score: ≥5 = overt DIC; <5 = non-overt (pre-DIC)
+COAGULOPATHY PATTERN:
+  [ ] ↑PT only (prolonged PT + normal aPTT) → Factor VII, early warfarin, Vit K deficiency
+  [ ] ↑aPTT only (prolonged aPTT + normal PT) → Factors VIII/IX/XI/XII, vWD, lupus anticoagulant
+  [ ] Both ↑PT + ↑aPTT → common pathway (Factors I/II/V/X), DIC, liver disease, warfarin
+  [ ] Both normal + bleeding → platelet dysfunction (vWD, platelet function defect), Factor XIII
+1:1 MIXING STUDY (if aPTT prolonged):
+  Corrects: [ ] Yes (factor deficiency) [ ] No (inhibitor/lupus anticoagulant)
+Known bleeding disorder: *** | Home factor/treatment: ***
+Active bleeding: location *** | Severity: minor [ ] / major [ ] / life-threatening [ ]`,
+    ddx: `COAGULOPATHY BY PATTERN (PT/INR + aPTT table):
+PROLONGED PT ONLY (extrinsic pathway):
+• Factor VII deficiency: most sensitive to early vitamin K deficiency and liver disease
+• Warfarin (early/supratherapeutic): vitamin K-dependent factors II, VII, IX, X; VII has shortest half-life → PT first
+• Liver disease (early): reduced hepatic synthesis (FVII first)
+• Vitamin K deficiency: malnutrition, prolonged antibiotics, malabsorption
+PROLONGED aPTT ONLY (intrinsic pathway):
+• Hemophilia A (Factor VIII def): X-linked recessive; most common severe inherited bleeding disorder
+• Hemophilia B (Factor IX def, Christmas disease): X-linked; milder than A clinically
+• Factor XI deficiency: Ashkenazi Jewish; mild bleeding risk; prolonged aPTT
+• Von Willebrand disease (vWD): most common inherited bleeding disorder overall; FVIII often mildly low
+• Factor XII/PK/HMWK deficiency: prolonged aPTT + NO bleeding risk; Lupus anticoagulant: prolonged aPTT + PROTHROMBOTIC (anti-phospholipid — treat with anticoagulation)
+BOTH PT + aPTT PROLONGED:
+• DIC: consumption of all factors; thrombocytopenia; D-dimer elevated; fibrinogen low
+• Liver disease (advanced): reduced synthesis of all factors except vWF; FVIII elevated (endothelial)
+• Warfarin supratherapeutic: affects all Vit-K-dependent factors
+• Massive transfusion: dilutional coagulopathy + hypothermia + acidosis (lethal triad)
+• Direct thrombin inhibitors (argatroban, dabigatran): affect aPTT and TCT; PT mildly affected
+BOTH NORMAL + BLEEDING:
+• Platelet dysfunction: aspirin, NSAIDs, uremia, von Willebrand disease (Type 1 — mild, aPTT may be normal)
+• Factor XIII deficiency: wound healing problem; rare; normal screening labs; specific assay needed
+DIC PRECIPITANTS (massive coagulation cascade activation):
+• Sepsis (#1) — any source
+• Malignancy: especially acute promyelocytic leukemia (APL), mucin-secreting adenocarcinomas
+• Obstetric: placental abruption, amniotic fluid embolism, HELLP, retained products
+• Trauma, burns, crush injury (tissue factor release)
+• Transfusion reaction (ABO incompatibility)
+• Pancreatitis, liver failure, snake envenomation`,
+    workup: `DIC WORKUP:
+• PT/INR, aPTT, fibrinogen (most sensitive in DIC — falls early), thrombin time
+• D-dimer: elevated (fibrin degradation products); d-dimer alone non-specific
+• CBC: thrombocytopenia (consumption); peripheral smear (schistocytes)
+• ISTH DIC Score: Plt + PT prolongation + fibrinogen + D-dimer (score ≥5 = overt DIC)
+• Factor VIII level: distinguish DIC from liver disease (FVIII made in endothelium not liver → low in DIC, normal/high in liver disease)
+BLEEDING WORKUP (new/unexplained):
+• PT/INR + aPTT + thrombin time (TT)
+• Fibrinogen
+• CBC + smear
+• 1:1 mixing study if aPTT prolonged: mix patient plasma 1:1 with normal plasma → repeat aPTT at 0 and 60 min
+  - Corrects immediately: factor deficiency (VIII, IX, XI)
+  - Does NOT correct: inhibitor (FVIII inhibitor, lupus anticoagulant)
+VON WILLEBRAND WORKUP:
+• vWF Antigen (vWF:Ag): quantifies total vWF protein
+• vWF Activity (ristocetin cofactor assay): functional test of vWF-platelet interaction
+• Factor VIII activity (reduced in vWD because vWF stabilizes FVIII)
+• vWF multimer analysis: distinguishes Types 2A/2B (abnormal multimers)
+HEMOPHILIA WORKUP:
+• aPTT (prolonged), PT (normal), Factor VIII activity (Hemophilia A), Factor IX activity (Hemophilia B)
+• Bethesda assay: if factor level low + mixing study doesn't correct → inhibitor titer`,
+    management: `DIC:
+STEP 1 — TREAT UNDERLYING CAUSE (most important):
+• Sepsis: aggressive antibiotics + source control
+• Obstetric: delivery of fetus/placenta (amniotic fluid embolism, HELLP, retained products)
+• APL: immediate ATRA (all-trans retinoic acid) + arsenic trioxide (ATRA binds coagulopathy immediately)
+STEP 2 — SUPPORTIVE TRANSFUSION (transfuse to correct active bleeding, not lab values alone):
+• Cryoprecipitate: if fibrinogen <100-150 mg/dL (goal >150); each unit raises fibrinogen ~5-10 mg/dL; 10-unit pool typical
+• FFP: if INR >2 (active bleeding or pre-procedure); each unit raises all factor levels ~5-8%
+• Platelets: if plt <10k (spontaneous bleeding risk) or <30-50k (active bleeding/procedure)
+• PRBCs: if Hgb <7 (or <8 in CAD/active ischemia)
+• Aminocaproic acid (Amicar) and tranexamic acid: GENERALLY CONTRAINDICATED in DIC (risk of microvascular thrombosis) — exception: fibrinolysis-dominant DIC (APL, prostatic cancer)
+HEMOPHILIA TREATMENT:
+• Hemophilia A (FVIII deficiency):
+  - Minor bleed (target FVIII >30-50%): recombinant FVIII concentrate per formula [dose = (target − current FVIII%) × weight(kg) / 2]
+  - Major bleed/surgery (target FVIII >80-100%): higher loading + continuous infusion; FVIII t1/2 = 8-12h
+  - DDAVP (desmopressin) 0.3 mcg/kg IV/SQ: releases endothelial FVIII/vWF; works for mild Hemophilia A (baseline FVIII >5%); NOT for Hemophilia B
+  - Emicizumab (Hemlibra): subcutaneous bispecific Ab mimicking FVIII; approved for prophylaxis in Hemophilia A (with or without inhibitor); does NOT normalize aPTT
+• Hemophilia B (FIX deficiency): recombinant FIX concentrate; t1/2 18-24h; dose = (target − current FIX%) × weight(kg)
+• Acquired FVIII inhibitor (anti-FVIII antibody): bypass agents (aPCC [FEIBA] or recombinant FVIIa [NovoSeven]); immunosuppression (prednisone + rituximab) to eradicate inhibitor
+VON WILLEBRAND DISEASE:
+• Type 1 (mild quantitative deficiency, DDAVP-responsive): DDAVP 0.3 mcg/kg IV over 30 min (releases vWF/FVIII from endothelium; repeat every 12-24h; limit 2-3 doses; tachyphylaxis)
+• Type 2/3 (severe or DDAVP non-responsive): vWF/FVIII concentrate (Humate-P or Wilate); dose based on vWF:RCo activity target
+• Antifibrinolytics: aminocaproic acid or tranexamic acid (topical or systemic) — useful adjunct for mucocutaneous bleeding
+VITAMIN K DEFICIENCY / WARFARIN:
+• Non-bleeding: hold warfarin; vitamin K 2.5-5mg PO (onset 6-12h)
+• Life-threatening bleeding (ICH, massive GIB): 4-factor PCC (KCentra) 25-50 U/kg IV + vitamin K 10mg IV (PCC reversal is immediate but lasts only 6-8h; Vit K provides sustained reversal)
+• Less urgent: FFP 2-4 units + vitamin K (FFP dilutes patient — large volume)`,
+    monitoring: `• DIC: PT/aPTT/fibrinogen/D-dimer every 4-6h in acute DIC; plt daily; end-organ function (Cr, LFTs) daily
+• Post-transfusion: CBC 15-30 min after each platelet transfusion; fibrinogen 60 min after cryoprecipitate
+• Hemophilia: factor levels 30-60 min after factor concentrate (peak) and before next dose (trough) to confirm therapeutic range
+• Ongoing bleeding: monitor vital signs continuously; document site-specific hemostasis`,
+    disposition: `• Hematology (mandatory): DIC with active bleeding, acquired FVIII inhibitor, hemophilia with major bleed, all new hereditary bleeding disorder diagnosis
+• ICU: life-threatening DIC (APL crisis, obstetric emergency), intracranial hemorrhage with coagulopathy, hemorrhagic shock
+• Hematology/Hemophilia Center: all hemophilia admissions for expert factor dosing, inhibitor management, and prophylaxis planning`
+  },
+
+  {
+    id: "anticoagulation",
+    system: "heme",
+    title: "Anticoagulation Management (UFH / LMWH / DOACs / Reversal / Bridging)",
+    keywords: ["anticoagulation","heparin","UFH","LMWH","enoxaparin","warfarin","DOAC","apixaban","rivaroxaban","dabigatran","edoxaban","argatroban","reversal anticoagulation","bridging","VTE prophylaxis","INR","anti-Xa","andexanet alfa","idarucizumab","KCentra","PCC"],
+    source: { chapter: "Hematology", section: "Anticoagulation Management", pages: "131–132", authors: "Anna Crosetti",
+      keyFacts: [
+        "DOACs > warfarin for non-valvular AF and most VTE indications (better efficacy, less bleeding, no monitoring); exceptions: mechanical heart valve and moderate-severe mitral stenosis → warfarin",
+        "LMWH preferred over UFH for acute VTE (Cochrane); preferred in active malignancy (apixaban/rivaroxaban comparable to LMWH per NEJM 2020/2018); avoid LMWH if CrCl <30 (use UFH or dose-reduced apixaban/rivaroxaban)",
+        "DOAC reversal: dabigatran → idarucizumab (Praxbind) 5g IV; Factor Xa inhibitors (apixaban/rivaroxaban/edoxaban) → andexanet alfa OR 4-factor PCC 50 U/kg; no reversal for fondaparinux",
+        "Bridging anticoagulation: AF most patients do NOT need bridging (BRIDGE trial); bridge for mechanical MV, AF + CHA2DS2-VASc ≥7, VTE <3 months, severe thrombophilia (Protein C/S/ATIII deficiency, APLAS)",
+        "LMWH monitoring: anti-Xa level 4h after dose (goal 0.6-1.0 for BID therapeutic dosing); routine monitoring NOT needed; check if extremes of weight (BMI ≥40: use 30mg BID), renal failure (CrCl 15-30: reduce dose)"
+      ]
+    },
+    assessment: `#Anticoagulation Management
+Indication: [ ] AF  [ ] VTE (DVT/PE)  [ ] Mechanical valve  [ ] Malignancy-associated VTE  [ ] Other: ***
+Current anticoagulant: *** | Dose: *** | Route: *** | Last dose: ***
+Renal function: CrCl *** mL/min | Weight: *** kg | BMI: *** (>40 → adjust LMWH, avoid DOAC if >150kg)
+INR (if on warfarin): *** | Anti-Xa (if on LMWH, check 4h post-dose): ***
+DOAC levels (if needed — not routine): *** 
+Bleeding risk: CrCl [ ] / age [ ] / GI lesion [ ] / prior bleed [ ] / liver disease [ ]
+REVERSAL NEEDED: [ ] Yes → agent used: *** | Indication for reversal: ***
+BRIDGING NEEDED: [ ] Yes  [ ] No | Procedure type: *** | Last dose before procedure: ***
+PERIOP MANAGEMENT: DOAC stopped ___ days before | Restart ___ days after | Heparin bridge: [ ] Yes  [ ] No`,
+    ddx: `CHOOSING AN ANTICOAGULANT:
+UFH (Unfractionated Heparin):
+• Use when: rapid reversal needed, renal failure (CrCl <30), perioperative (can hold short duration), HIT evaluation pending
+• Mechanism: activates ATIII → inactivates Xa + IIa; t1/2 60-90 min
+• Monitoring: PTT (goal 63-100 based on indication); anti-Xa (0.3-0.7) if baseline PTT elevated or high doses
+LMWH (Enoxaparin):
+• Use when: VTE treatment (LMWH > UFH, Cochrane), malignancy VTE, outpatient bridge
+• Therapeutic: 1mg/kg SQ BID; reduce to 1mg/kg QD if CrCl <30; avoid if <15
+• Prophylaxis: 40mg SQ QD (30mg BID if high VTE risk)
+• Monitor: anti-Xa 4h post-dose if extremes of weight; t1/2 4-6h
+DOACs:
+• Apixaban: 10mg BID × 7d → 5mg BID (VTE); 5mg BID (AF; reduce to 2.5mg BID if ≥2 of: age ≥80, wt ≤60kg, Cr ≥1.5); fewest drug-drug interactions
+• Rivaroxaban: 15mg BID with food × 21d → 20mg qday with evening meal (VTE); 20mg qday (AF); avoid if CrCl <15
+• Dabigatran: 150mg BID (AF, after 5-10d of parenteral); avoid if CrCl <30; more GI bleeding
+• Edoxaban: 60mg qday (VTE/AF); start after 5-10d parenteral; reduce to 30mg if CrCl 15-50 or wt ≤60kg
+WARFARIN:
+• Use when: mechanical heart valve (mandatory), moderate-severe mitral stenosis, antiphospholipid syndrome
+• Goal INR: 2-3 for most; 2.5-3.5 for mechanical MVR or high-risk AVR
+• Start dose: 5mg qday (10mg qday if young, obese, normal LFTs — some centers); adjust every 3-7 days
+SPECIAL POPULATIONS:
+• Active malignancy: DOAC (apixaban/rivaroxaban preferred except GI/GU tumors with intraluminal lesion → LMWH); DOAC > LMWH per NEJM 2020/2018
+• Morbid obesity (BMI ≥45 or wt ≥150kg): avoid DOAC; use warfarin or LMWH with anti-Xa monitoring
+• Pregnancy: LMWH (warfarin teratogenic in first trimester; DOACs contraindicated in pregnancy)`,
+    workup: `• Baseline: CBC, BMP (CrCl), PT/INR, aPTT, LFTs before starting anticoagulation
+• Warfarin initiation: INR every 3-5 days until therapeutic 2 consecutive times → weekly × 4 weeks → monthly if stable
+• LMWH monitoring: anti-Xa 4h post-dose ONLY if: CrCl <30, BMI ≥40, weight <50kg, pregnancy; not routine
+• UFH monitoring: PTT every 6h until therapeutic × 2 → every 24h; CBC daily (HIT watch)
+• DOAC monitoring: NOT routine; check level if overdose, renal function change, compliance concern, or before reversal — lab must know agent and time of last dose
+• Perioperative evaluation: CrCl (DOAC clearance), INR (warfarin), anti-Xa (LMWH), PLT count (HIT screen)`,
+    management: `VENOUS THROMBOEMBOLISM (VTE) TREATMENT:
+• DVT/PE: DOAC preferred (apixaban or rivaroxaban first-line; dabigatran or edoxaban after 5-10d LMWH)
+• Duration: provoked (known cause that resolves) → 3 months; unprovoked → 3 months minimum, consider indefinite; cancer-associated → indefinite while cancer active
+• Massive PE (hemodynamic instability): systemic alteplase 100mg IV over 2h; catheter-directed thrombolysis if contraindications to systemic
+• Submassive PE (RV strain, no hypotension): anticoagulation + monitor closely; consider catheter-directed therapy
+VTE PROPHYLAXIS (inpatient):
+• Medical patients: enoxaparin 40mg SQ QD OR UFH 5000U SQ BID-TID (if CrCl <30 → UFH)
+• Surgical patients: start 12h preop (or 12-24h postop if high bleeding risk); mechanical compression devices (SCDs) for all
+• HIGH VTE RISK (major orthopedic, total hip/knee): extended prophylaxis 28-35 days
+• CONTRAINDICATIONS: active bleeding, plt <50k (relative), epidural anesthesia within 12h (LMWH) or 4h (UFH)
+REVERSAL AGENTS:
+Vitamin K Antagonist (warfarin):
+• Non-urgent: hold warfarin; Vitamin K PO (2.5-5mg) — INR correction in 6-12h
+• Urgent (active serious bleeding or INR >10): 4-factor PCC (KCentra) 25-50 U/kg IV + Vitamin K 10mg IV — fastest reversal
+• Life-threatening: 4-factor PCC + Vitamin K 10mg IV (FFP if PCC not available — large volume, slower)
+UFH: protamine sulfate 1mg per 100 U UFH administered in past 2-3h (max 50mg); 60% reversal for LMWH (most effective if last dose within 8h)
+Dabigatran: idarucizumab (Praxbind) 5g IV (2 × 2.5g vials); complete reversal within minutes
+Factor Xa inhibitors (apixaban, rivaroxaban, edoxaban): andexanet alfa (expensive; call pharmacy) OR 4-factor PCC 50 U/kg (reasonable alternative per ACC guidance)
+PERIOPERATIVE DOAC MANAGEMENT:
+• Low bleeding risk procedure (dental, skin biopsy): stop DOAC morning of procedure; resume same day
+• Intermediate risk: stop 24h before procedure (2 half-lives); restart 24h after if hemostasis achieved
+• High bleeding risk (major surgery): stop 48-72h before; restart 48-72h after
+• Apixaban/rivaroxaban: CrCl dependent — stop 24-48h for CrCl ≥50; 72-96h for CrCl <50
+BRIDGING WITH LMWH (warfarin peri-procedurally):
+• High thrombotic risk (bridge): mechanical MV, AF + CHA2DS2-VASc ≥7, VTE <3 months, protein C/S/ATIII deficiency, APLAS
+• Most AF patients: do NOT bridge (BRIDGE trial — no benefit, higher bleeding risk NEJM 2015)
+• Stop warfarin 5 days before procedure; start LMWH when INR <2; last LMWH 24h before (BID) or 12h before (QD)
+• Restart warfarin evening of procedure; restart LMWH 24h after (low bleed risk) or 48-72h (high bleed risk)`,
+    monitoring: `• Warfarin: INR every 3-7 days during initiation; every 4 weeks when stable (therapeutic range INR 2-3 for most)
+• UFH: PTT every 6h until two consecutive therapeutic levels; then every 24h; CBC daily (HIT surveillance)
+• LMWH: anti-Xa if indicated (CrCl <30, extremes of weight, pregnancy) — 4h after dose; goal 0.5-1.0 (BID), 1.0-1.5 (QD)
+• DOACs: CBC and renal function every 3-6 months; HbA1c/LFTs annually; more frequently if elderly/CKD
+• Bleeding complications: any major bleeding → hold anticoagulation; reassess risk/benefit; hemostasis before resuming`,
+    disposition: `• Hematology/anticoagulation clinic: all new warfarin (loading and INR titration), reversal of life-threatening anticoagulation (call Hematology), HIT management
+• Vascular surgery/IR: massive/submassive PE with hemodynamic compromise (catheter-directed thrombolysis)
+• Pharmacy consult: DOAC dosing in renal failure, drug-drug interactions, andexanet alfa access`
+  },
+
+  {
+    id: "transfusion",
+    system: "heme",
+    title: "Transfusion Medicine / Blood Products / Transfusion Reactions",
+    keywords: ["transfusion","blood products","pRBC","packed red blood cells","platelets","FFP","cryoprecipitate","transfusion reaction","TACO","TRALI","febrile transfusion","hemolytic reaction","transfusion threshold","massive transfusion protocol","MTP","type and screen","crossmatch"],
+    source: { chapter: "Hematology", section: "Transfusion Medicine", pages: "132–133", authors: "Anna Crosetti",
+      keyFacts: [
+        "pRBC threshold: Hgb <7 general population; <7.5 cardiac surgery; <8 CAD or orthopedic surgery; <10 acute MI (NEJM 2023) — restrict strategy proven non-inferior or superior to liberal strategy",
+        "TACO (transfusion-associated circulatory overload): most common serious reaction; dyspnea + hypertension + pulmonary edema during/within 6h of transfusion; treat with diuresis; distinct from TRALI (hypotension + non-cardiogenic pulmonary edema)",
+        "Acute hemolytic transfusion reaction (AHTR): ABO incompatibility; fever + chills + back/flank pain + hemoglobinuria + shock; STOP transfusion immediately; IVF + maintain UOP + notify Blood Bank",
+        "Massive Transfusion Protocol (MTP): >10 units pRBC in 24h or ongoing hemorrhage; pRBC:FFP:Plt = 1:1:1 ratio; tranexamic acid 1g IV within 3h of trauma",
+        "Febrile Non-Hemolytic Transfusion Reaction (FNHTR): fever ≥1°C rise during transfusion + no hemolysis; most common reaction overall; due to leukocyte cytokines; pretreat with acetaminophen; leukoreduction reduces frequency"
+      ]
+    },
+    assessment: `#Transfusion Medicine
+BLOOD PRODUCT ORDERED:
+  [ ] pRBC: Hgb: *** (threshold: <7 general / <8 CAD-ortho / <10 acute MI)
+  [ ] Platelets: Plt: *** (threshold: <10k spontaneous / <50k procedure / <100k neurosurgery)
+  [ ] FFP: INR: *** (threshold: >2 with active bleeding / pre-procedure)
+  [ ] Cryoprecipitate: Fibrinogen: *** mg/dL (threshold: <100-150 with active bleeding)
+Type & Screen done: [ ] Yes  [ ] No | Crossmatch done: [ ] Yes  [ ] No
+Special requirements: Sickle Cell (extended match) [ ] / Leukocyte reduced [ ] / Irradiated [ ] / CMV-neg [ ] / Washed [ ]
+TRANSFUSION REACTION (if applicable):
+Reaction type: *** | Time from start of transfusion: ***
+STOP transfusion: [ ] Yes  [ ] No (STOP ALL REACTIONS immediately)
+Blood Bank notified: [ ] Yes  [ ] No | Return product to Blood Bank: [ ] Yes`,
+    ddx: `BLOOD PRODUCT SELECTION:
+pRBC (Red Blood Cells, ~330mL/unit):
+• 1 unit raises Hgb ~1 g/dL (after 30 min equilibration); rate: over 2-4h (faster if actively bleeding)
+• Processing: all pRBCs are leukocyte-reduced at MGH; irradiation (immunocompromised — prevents TA-GVHD); washing (severe allergic reactions, IgA deficiency)
+• Extended antigen matching: sickle cell, thalassemia, chronically transfused patients
+Platelets:
+• Apheresis (single-donor): 1 apheresis unit = 5-6 random donor units; preferred to reduce alloimmunization
+• Raises plt ~30-50k per unit (expect less in refractory thrombocytopenia)
+• Irradiation required for immunocompromised/oncology patients
+FFP (Fresh Frozen Plasma, ~250mL/unit):
+• Contains all coagulation factors; ABO compatible required
+• 1-2 units: raises all factors ~5-8%; usual dose 2-4 units (15 mL/kg for major correction)
+• Use: coagulopathy with active bleeding; TTP (plasma exchange replacement fluid); HUS; massive transfusion
+Cryoprecipitate (contains fibrinogen, FVIII, vWF, FXIII, fibronectin):
+• 1 unit (pooled 10-unit) raises fibrinogen 5-10 mg/dL per unit; typical dose: 10-unit pool
+• Use: low fibrinogen (<100-150 with bleeding); DIC; hemophilia A (if FVIII concentrate unavailable); vWD
+Other products:
+• PCC (4-factor Prothrombin Complex Concentrate = KCentra): contains Factors II, VII, IX, X; immediate warfarin reversal; preferred over FFP for urgent reversal
+• Albumin (5% or 25%): volume expansion (SBP prophylaxis, large-volume paracentesis, ARDS)
+• Antifibrinolytics (tranexamic acid, aminocaproic acid): reduce fibrinolysis; major trauma, cardiac surgery, heavy menstrual bleeding
+TRANSFUSION REACTION TYPES (ACT):
+Acute Hemolytic Transfusion Reaction (AHTR) — LIFE-THREATENING:
+• Timing: during or within 24h; ABO incompatibility
+• Sx: fever + chills + back/flank pain + hemoglobinuria ("tea-colored urine") + hypotension/shock + DIC
+• Action: STOP TRANSFUSION; IVF 1L NS; maintain UOP >0.5 mL/kg/h; notify Blood Bank immediately; DAT, plasma-free Hgb; coags
+Febrile Non-Hemolytic Reaction (FNHTR) — MOST COMMON:
+• Timing: during or within 4h; temperature rise ≥1°C
+• Sx: fever ± chills; no hemolysis; due to leukocyte cytokines in stored blood
+• Action: STOP transfusion; check for hemolysis (visual, DAT); acetaminophen; can often restart if hemolysis excluded
+Allergic Reaction (urticaria to anaphylaxis):
+• Timing: during transfusion; mild urticaria (common, ~1%) to anaphylaxis
+• Action: STOP; diphenhydramine; epinephrine (if anaphylaxis); check IgA deficiency (IgA-deficient patients → anaphylaxis from anti-IgA Ab)
+TACO (Transfusion-Associated Circulatory Overload) — COMMON, SERIOUS:
+• Timing: within 6h; more common in elderly, fluid overloaded, cardiac disease
+• Sx: dyspnea + orthopnea + hypertension + elevated BNP + CXR (bilateral pulmonary edema) — cardiogenic
+• Action: STOP; diuretics (furosemide 40mg IV); upright positioning; supplemental O2
+TRALI (Transfusion-Related Acute Lung Injury):
+• Timing: within 6h; donor antibodies against recipient leukocytes
+• Sx: acute respiratory distress + bilateral CXR infiltrates + HYPOTENSION + no cardiogenic overload — non-cardiogenic pulmonary edema
+• Action: STOP; supportive (O2, mechanical ventilation if needed); notify Blood Bank (investigate donor); distinct from TACO (TRALI = hypotension; TACO = hypertension)
+Delayed Hemolytic Reaction (DHTR):
+• Timing: 3-10 days post-transfusion; alloantibody below detection pre-transfusion → anamnestic response
+• Sx: unexpected fall in Hgb, mild fever, jaundice; DAT positive
+• Action: no transfusion needed unless symptomatic; report to Blood Bank; document antibody for future transfusions`,
+    workup: `PRE-TRANSFUSION:
+• Type and Screen (T&S): ABO/Rh typing + antibody screen; valid for 3 days from sample collection
+• Type and Crossmatch (T&C): final compatibility test between donor RBC and patient plasma (takes 30-60 min)
+• "Emergency release" group O-negative (Rh-neg) pRBC: if no time for T&C (life-threatening hemorrhage)
+• CBC, metabolic panel, coagulation: baseline before transfusing
+TRANSFUSION REACTION WORKUP:
+1. STOP transfusion immediately (all reactions)
+2. Return blood product to Blood Bank with new patient blood sample
+3. Direct Antiglobulin Test (DAT): positive = antibody-mediated hemolysis
+4. Plasma-free hemoglobin: pink/red plasma = intravascular hemolysis
+5. Urinalysis: hemoglobinuria (tea-colored)
+6. Culture (if fever ≥2°C rise and within 1h): bacterial contamination
+7. Coagulation studies (if AHTR): DIC workup
+8. BNP + CXR (if TACO suspected)
+9. Notify Blood Bank and transfusion service (mandatory for hemolytic reactions)`,
+    management: `TRANSFUSION THRESHOLDS (restrictive strategy preferred):
+• General inpatient: Hgb <7 g/dL (give 1 unit; recheck before giving 2nd)
+• Cardiac surgery: Hgb <7.5 g/dL (JAMA 2023)
+• CAD/orthopedic surgery: Hgb <8 g/dL
+• Acute MI: Hgb <10 g/dL (NEJM 2023 — liberal threshold shown to benefit acute MI patients)
+• Active hemorrhage: transfuse with ongoing bleeding (not Hgb-based); MTP for massive hemorrhage
+MASSIVE TRANSFUSION PROTOCOL (MTP) — Activate for ongoing hemorrhage requiring >10 units pRBC in 24h:
+• Target: pRBC:FFP:Plt = 1:1:1 ratio (decreases coagulopathy and mortality)
+• Tranexamic acid 1g IV over 10 min → 1g over 8h: give within 3h of injury (CRASH-2: reduces mortality)
+• Goal fibrinogen >150 mg/dL: cryoprecipitate 10-unit pool if fibrinogen <150
+• Correct hypothermia + acidosis (lethal triad with coagulopathy)
+• Calcium replacement: packed RBCs contain citrate → chelates ionized calcium → hypocalcemia; give CaCl 1g IV per 4 units pRBC
+• Avoid bicarbonate (worsen ionized hypocalcemia)
+TRANSFUSION REACTION MANAGEMENT:
+AHTR: STOP → IVF → UOP goal 0.5-1 mL/kg/h → Blood Bank notification → coags → ICU if shock
+FNHTR: STOP → rule out hemolysis → acetaminophen → can restart slowly if hemolysis excluded
+Allergic/urticaria: STOP → diphenhydramine 25-50mg IV → if cleared, can restart slowly; pre-medicate future transfusions
+Anaphylaxis: STOP → epinephrine 0.3-0.5mg IM → IVF + vasopressors if needed → check IgA deficiency
+TACO: STOP → furosemide 40mg IV → supplemental O2 → restrict IVF; treat like flash pulmonary edema
+TRALI: STOP → supportive ventilation (intubation if needed) → Report to Blood Bank; investigate donor; no diuretics (hypotension)
+ADMINISTRATION PEARLS:
+• All pRBC transfusions: leukocyte-reduced at MGH (prevents FNHTR, CMV transmission, alloimmunization)
+• Irradiated products: immunocompromised patients (BMT, SCID, selected leukemia) — prevents TA-GVHD
+• CMV-negative products: CMV-negative immunocompromised patients if CMV-negative
+• Washed pRBC: severe IgA deficiency (remove plasma); severe allergic reactions
+• Administer through blood filter (170-230 micron); infuse within 4h of starting`,
+    monitoring: `• Post-transfusion CBC 15-30 min after pRBC: confirm expected Hgb rise (~1g/dL per unit)
+• Post-platelet transfusion: CBC 1h after to check platelet increment (1-h post-count increment <10k = platelet refractoriness → check HLA alloantibodies, ABO compatibility, consider HLA-matched platelets)
+• Post-FFP: PT/INR 1-2h after to assess correction
+• Post-cryoprecipitate: fibrinogen level 60 min after
+• Vital signs every 15 min for first hour of each unit, then every 30 min
+• Any fever during transfusion: stop, check for hemolysis, report to Blood Bank before restarting`,
+    disposition: `• Blood Bank (call x63623, page p21829): all transfusion reactions, special product requests (irradiated, CMV-neg, washed, HLA-matched), massive transfusion protocol activation
+• ICU/MICU: hemolytic transfusion reaction with shock, TRALI with respiratory failure, TACO with respiratory failure
+• Hematology: platelet refractoriness (HLA antibody workup), transfusion-transmitted infection, rare blood group alloantibody issues`
+  },
+
+  // ════════════════════ ONCOLOGY TEMPLATES ════════════════════
+
+  {
+    id: "oncologic-emergencies",
+    system: "onc",
+    title: "Oncologic Emergencies (TLS / MESCC / SVC / Brain Mets / Leukostasis)",
+    keywords: ["tumor lysis syndrome","TLS","spinal cord compression","MESCC","SVC syndrome","superior vena cava","brain metastases","leukostasis","hypercalcemia malignancy","oncologic emergency","rasburicase","allopurinol","dexamethasone spine","leukapheresis","Cairo Bishop criteria"],
+    source: { chapter: "Oncology", section: "Oncologic Emergencies", pages: "146–149", authors: "Emma Kurz, Adam Gross",
+      keyFacts: [
+        "TLS Cairo-Bishop criteria: ≥2 of uric acid ≥8, K ≥6, phos ≥4.5, Ca ≤7 within 3d before/7d after cytotoxic therapy + ≥1 clinical criterion (Cr 1.5× ULN, arrhythmia, or seizure) = clinical TLS; high-risk substrates: Burkitt, ALL/AML with high WBC, bulky DLBCL",
+        "Rasburicase: 0.2 mg/kg IV (3-6mg often sufficient); rapid uric acid clearance; contraindicated in G6PD deficiency (check G6PD before giving — hemolysis risk); discuss with attending and MGH Ellucid policy",
+        "MESCC: back pain + weakness/sensory loss/bowel-bladder dysfunction + malignancy = MESCC until proven otherwise; dexamethasone 10mg IV STAT + MRI entire spine; radiation oncology + neurosurgery urgent consult",
+        "SVC syndrome: CT venography for diagnosis; secure airway first (dyspnea/stridor); radiation or chemotherapy is definitive; intravascular stent for refractory/emergent airway compromise; steroids only for respiratory distress",
+        "Leukostasis (WBC >50-100k in AML/ALL): leukapheresis + hydroxyurea + avoid RBC and platelet transfusions (increases viscosity); single-dose cytarabine may be considered if leukostasis uncontrolled with hydroxyurea"
+      ]
+    },
+    assessment: `#Oncologic Emergency Assessment
+Emergency type:
+[ ] Tumor Lysis Syndrome (TLS)
+[ ] Metastatic Epidural Spinal Cord Compression (MESCC)
+[ ] SVC Syndrome
+[ ] Brain Metastases with elevated ICP
+[ ] Leukostasis / Hyperviscosity
+[ ] Hypercalcemia of Malignancy
+Underlying malignancy: *** | Last treatment: *** | Date: ***
+TLS LABS (Cairo-Bishop): UA: *** | K: *** | Phos: *** | Ca: *** | Cr: *** | LDH: ***
+  TLS risk: high [ ] / intermediate [ ] / low [ ] — see Key Facts
+  Clinical TLS (Cr 1.5× / arrhythmia / seizure): [ ] Yes  [ ] No
+MESCC: back pain [ ] / lower extremity weakness [ ] / bowel-bladder sx [ ] / saddle anesthesia [ ]
+  Dexamethasone 10mg IV given: [ ] Yes  [ ] No → give STAT if suspected
+  MRI full spine ordered: [ ] Yes  [ ] No → order STAT
+SVC: head/neck swelling [ ] / facial plethora [ ] / dyspnea [ ] / arm edema [ ] | Airway: secure [ ]
+LEUKOSTASIS: WBC *** (>50k in AML = high risk) | SOB [ ] / blurry vision [ ] / AMS [ ]
+  Hydroxyurea ordered: *** mg | Leukapheresis requested: [ ] Yes  [ ] No`,
+    ddx: `TUMOR LYSIS SYNDROME (TLS):
+High risk (>5%): ALL/AML with WBC ≥100k, CLL on venetoclax with bulky disease, Burkitt lymphoma, stage 3/4 lymphoblastic NHL, bulky T-cell/DLBCL
+Intermediate risk (1-5%): ALL with WBC <100k, AML with WBC 25-100k, DLBCL, Burkitt (chemo-specific)
+Low risk (<1%): Hodgkin lymphoma, indolent NHL, CML, CLL on alkylating agents, MM, MDS, solid tumors
+High-risk substrate features: WBC >50k, LDH >2× ULN, bulky disease >10cm, elevated uric acid >7.5, AKI/CKD, hypovolemia
+TLS consequences: AKI (uric acid crystals + calcium phosphate precipitation), hyperkalemia (cardiac arrest risk), seizures (hypocalcemia), arrhythmia
+
+METASTATIC EPIDURAL SPINAL CORD COMPRESSION (MESCC):
+Most common primaries: prostate > lung > breast > NHL > renal cell > myeloma > Hodgkin
+Location: thoracic (60%) > lumbar (25%) > cervical (15%); multiple sites in 30%
+Presentation: back pain (almost universal, often weeks before neuro sx) → motor weakness → sensory loss → bowel/bladder dysfunction (late)
+Prognosis: ambulatory status at diagnosis is the strongest predictor of post-treatment ambulatory status — treat urgently
+
+SVC SYNDROME:
+Cause: external SVC compression from mediastinal mass (lung cancer #1 > NHL)
+Symptoms: raised ICP (HA, visual changes), dyspnea/stridor (laryngeal/pharyngeal compression), upper body swelling, arm edema, facial plethora, collateral veins on chest wall
+Emergency features: respiratory distress, stridor, laryngeal edema → AIRWAY first
+
+BRAIN METASTASES:
+Most common primaries: lung (40-50%) > breast > melanoma > RCC > colon
+Vasogenic edema causes most symptoms; may present like stroke (sudden onset)
+
+LEUKOSTASIS / HYPERVISCOSITY:
+AML/ALL leukostasis: blasts >50-100k → pulmonary and CNS microvascular occlusion; urgent cytoreduction
+Hyperviscosity syndrome: Waldenström's (IgM), myeloma, cryoglobulinemia → serum viscosity >4× normal → bleeding, neuro sx, visual changes (retinal vein engorgement)`,
+    workup: `TLS:
+• BMP every 4-8h in high risk (K+, Cr, Ca, phosphorus) — monitor calcium-phosphate product
+• Uric acid every 6-12h; LDH, CBC/differential
+• ECG: hyperkalemia/hypocalcemia monitoring
+• Cairo-Bishop criteria assessment at baseline and during therapy
+MESCC:
+• MRI entire spine with and without contrast STAT (better sensitivity than CT; identifies all sites)
+• Plain films if MRI unavailable/contraindicated (low sensitivity for epidural disease)
+• CT myelogram if MRI contraindicated (gadolinium allergy, pacemaker)
+• ESCC score (grading system for extent of epidural involvement) from imaging
+SVC SYNDROME:
+• CT chest with contrast (CT venography protocol for SVC): defines extent, identifies mass
+• Tissue biopsy: most critical if diagnosis unknown — CT-guided biopsy or bronchoscopy; do NOT delay diagnosis for tissue
+• BM biopsy if lymphoma suspected (avoid thoracic biopsy if possible to obtain histology from safer site)
+BRAIN METASTASES:
+• MRI brain with and without gadolinium contrast: superior to CT for detection
+• CT head if MRI not immediately available; CT better for hemorrhagic mets
+LEUKOSTASIS:
+• CBC: WBC differential (blasts, quantify leukocytes)
+• Blood gas K+ (spurious hyperkalemia from in vitro leukocyte breakdown)
+• Pulse oximetry (falsely low PaO2 from leukocyte O2 consumption in vitro)
+• Serum viscosity (Ostwald tube), SPEP, SFLC (if hyperviscosity from monoclonal protein)
+• CT chest (pulmonary leukostasis) and CT head (CNS leukostasis)`,
+    management: `TUMOR LYSIS SYNDROME:
+Prophylaxis (start before chemotherapy in high/intermediate risk):
+• IVF: D5-½NS or NS at 2-3L/m²/day; maintain UOP ≥100 mL/h; avoid glucose (↑uric acid production); avoid K+ in IVF
+• Allopurinol 300-600mg/day PO (start 2-3 days before chemo, continue through day +1 of chemo)
+  - Reduces uric acid PRODUCTION (not clearance); does not affect existing elevated uric acid
+  - Reduce dose in renal failure; allopurinol ↑levels of 6-MP/azathioprine, cyclophosphamide, MTX
+  - HLA-B*5801 risk (East Asian, Southeast Asian, Black pts) → higher SJS/TEN risk — consider febuxostat alternative
+Treatment (established TLS):
+• Aggressive IVF: NS or D5-½NS at 2-3L/m²/day; loop diuretics PRN to maintain UOP ≥100 mL/h
+• Hyperkalemia: Lokelma (sodium zirconium cyclosilicate) or kayexalate; calcium gluconate for EKG changes
+• Hyperphosphatemia: sevelamer (phosphate binder); delay treating hypocalcemia until phosphorus normalizes (CaPhos precipitation)
+• Hypocalcemia: treat only if symptomatic (tetany/arrhythmia) or SEVERE — risk of CaPhos precipitation
+• Rasburicase 3-6mg IV (discuss with attending + MGH Ellucid): converts uric acid to allantoin (water-soluble); rapid reduction; contraindicated in G6PD deficiency (hemolysis → check G6PD first); anaphylaxis risk
+• Renal replacement therapy: if Ca × Phos product ≥70 mg²/dL², refractory AKI, or life-threatening electrolyte disturbance
+• Urinary alkalinization with NaHCO3: NOT recommended at MGH (risk of calcium-phosphate precipitation in alkaline urine)
+METASTATIC EPIDURAL SPINAL CORD COMPRESSION:
+• Dexamethasone 10mg IV STAT → 4-8mg IV/PO every 6-8h (vasogenic edema reduction)
+• MRI entire spine (often multilevel)
+• Urgent consult: Radiation Oncology + Neurosurgery (same day if motor deficit present)
+• Radiation therapy: definitive treatment for most; stereotactic body RT for oligometastatic disease
+• Surgery first (separation surgery): if ≥5 ESCC score, rapid neurological deterioration, spinal instability, or radioresistant tumor (RCC, melanoma) → stabilization + decompression → postop RT
+• Pain control: ensure adequate analgesia; neurogenic pain may need gabapentin/pregabalin
+• Foley catheter if urinary retention/incontinence
+SVC SYNDROME:
+• SECURE AIRWAY FIRST: if stridor/laryngeal edema → immediate ENT + anesthesia
+• Elevate head of bed 30-45° (reduces upper body venous pressure)
+• Steroids (dexamethasone 8-10mg IV q6-8h): ONLY if respiratory distress; discuss with attending
+• Tissue diagnosis: biopsy first (lung CA vs NHL changes management entirely)
+• Radiation therapy: rapid response in RT-sensitive tumors (lymphoma, SCLC)
+• Chemotherapy: for chemo-sensitive tumors (lymphoma, SCLC, germ cell)
+• Endovascular stent: for refractory symptoms, emergency airway compromise, or prior to obtaining biopsy in unstable patient
+BRAIN METASTASES:
+• Dexamethasone 10mg IV loading dose → 4-8mg IV/PO BID (vasogenic edema)
+• AEDs: NOT for primary seizure prophylaxis (no evidence for prophylactic AEDs in brain mets without prior seizure)
+• Stereotactic radiosurgery (SRS): preferred for limited mets (1-4 lesions, <3cm) — superior neurocognitive outcomes vs whole-brain RT (JCO 2022)
+• Whole-brain radiation therapy (WBRT): multiple mets, leptomeningeal disease; hippocampal avoidance + memantine reduces neurocognitive toxicity
+• Surgery: for accessible single met, life expectancy >3 months, good functional status
+• Avoid anticoagulation if hemorrhagic met (melanoma, RCC, choriocarcinoma have highest hemorrhagic risk)
+LEUKOSTASIS:
+• Leukapheresis STAT: call Hematology + Apheresis; removes blasts rapidly; cytoreduction
+• Hydroxyurea 3-6g PO qday (rapid WBC reduction): start immediately, titrate
+• Avoid RBC and platelet transfusions: INCREASE viscosity → worsen leukostasis (only transfuse if life-threatening anemia/bleeding)
+• Induction chemotherapy: definitive treatment; coordinate with Hematology/Oncology
+• Single-dose cytarabine: consider if leukostasis uncontrolled with hydroxyurea alone
+• Hyperviscosity from monoclonal protein: plasmapheresis (reduces IgM); IVF for volume expansion`,
+    monitoring: `• TLS: BMP every 4-8h during high-risk treatment; ECG for arrhythmia; UOP hourly during aggressive hydration
+• MESCC: repeat neurological exam every 4-8h while on steroids; assess motor function improvement after first dose
+• Leukostasis: CBC every 6-12h until WBC controlled; continuous cardiac monitoring; SpO2 (pulse oximetry preferred over ABG)
+• Brain mets: neurological checks; repeat MRI in 4-6 weeks after SRS to assess response
+• Ca × Phos product: calculate at least daily in TLS (goal <70 mg²/dL²)`,
+    disposition: `• MICU/Oncology ICU: severe TLS (cardiac arrhythmia, severe AKI, refractory electrolyte), acute leukostasis, airway-compromising SVC syndrome
+• Radiation Oncology STAT: MESCC (same-day consultation if any neurological deficit), brain mets with herniation, SVC syndrome
+• Neurosurgery: MESCC with rapid deterioration, spinal instability, or radioresistant tumor; brain mets eligible for surgical resection
+• Hematology/Oncology: ALL oncologic emergencies — coordinate with primary oncology team`
+  },
+
+  {
+    id: "checkpoint-inhibitors",
+    system: "onc",
+    title: "Immune Checkpoint Inhibitors / irAEs / CAR-T Toxicity",
+    keywords: ["checkpoint inhibitor","immunotherapy","irAE","immune related adverse event","pembrolizumab","nivolumab","ipilimumab","atezolizumab","CTLA-4","PD-1","PD-L1","pneumonitis immunotherapy","colitis immunotherapy","myocarditis ICI","CRS","cytokine release syndrome","ICANS","CAR-T","tocilizumab","steroids immunotherapy"],
+    source: { chapter: "Oncology", section: "Immune Checkpoint Inhibitors / CAR-T", pages: "146–148", authors: "Emma Kurz",
+      keyFacts: [
+        "irAE grading drives management: Grade 1 = continue ICI + supportive; Grade 2 = hold ICI + PO steroids 1-2 mg/kg + organ specialist; Grade 3 = hold ICI + IV steroids + admit; Grade 4 = permanently discontinue ICI (except endocrinopathies) + IV steroids",
+        "ICI-myocarditis: rare but potentially fatal; new troponin elevation + ICI exposure = workup (echo, CMR, cardiac biopsy); high-dose steroids (1-2mg/kg) + hold ICI permanently; consider IVIG/abatacept for refractory cases",
+        "Endocrinopathies (hypophysitis, thyroiditis, adrenal insufficiency, DM1): managed with hormone replacement (not steroids for most); do NOT discontinue ICI permanently — patients often remain on ICI with hormone supplementation",
+        "ICI pneumonitis: exclude infection (PCP, bacterial PNA, viral) before steroids; CT shows GGOs or organizing pneumonia pattern; Grade ≥2 → methylprednisolone 1-2 mg/kg/day; Grade 3-4 → infliximab or mycophenolate if steroid-refractory",
+        "CAR-T CRS: fever + hypotension + hypoxia after CAR-T infusion; tocilizumab (anti-IL-6) is first-line for Grade ≥2; steroids for Grade ≥3 or tocilizumab-refractory; consult SIC service (Severe Immunotherapy Complications) at MGH"
+      ]
+    },
+    assessment: `#Immune Checkpoint Inhibitor / irAE Assessment
+ICI agent(s): *** | Indication: *** | Cycles completed: *** | Last dose: ***
+Mechanism: [ ] CTLA-4 inhibitor (ipilimumab)  [ ] PD-1 (pembrolizumab/nivolumab)  [ ] PD-L1 (atezolizumab/durvalumab)  [ ] Combination
+irAE GRADING (for affected organ):
+  Grade 1: mild symptoms, no functional limitation → continue ICI
+  Grade 2: moderate symptoms, some limitation → hold ICI, PO steroids, organ consult
+  Grade 3: severe symptoms, significant limitation → hold ICI, IV steroids, admit
+  Grade 4: life-threatening → permanently D/C ICI (except endocrinopathy), IV steroids
+Suspected irAE organ:
+  [ ] Dermatitis/rash (BSA: ***)  [ ] Colitis (stools/day: ***)  [ ] Pneumonitis (O2: ***)
+  [ ] Hepatitis (ALT/AST: ***)  [ ] Endocrinopathy (TSH: *** / cortisol: ***)
+  [ ] Myocarditis (troponin: *** / EKG: ***)  [ ] Nephritis (Cr: ***)  [ ] Neurologic: ***
+SIC service consulted: [ ] Yes  [ ] No — contact via Hematology/Oncology On Call → Cancer Center → Ellison 16 Onc Team 2 + SIC
+CAR-T TOXICITY:
+Days post-infusion: *** | Product: *** | Tumor target: CD19 / BCMA / other: ***
+CRS grade: 1 (fever) / 2 (fever+HoTN or O2) / 3 (IV pressors or high-flow O2) / 4 (life support) = ***
+Tocilizumab given: [ ] Yes (dose/time: ***)  [ ] No
+ICANS (neurological toxicity): confusion [ ] / tremor [ ] / aphasia [ ] / seizure [ ] | ICE score: ***`,
+    ddx: `irAE MIMICS (must exclude before treating as irAE):
+• Infection: PCP (pneumonitis), CMV/C. diff (colitis), viral hepatitis (hepatitis), sepsis (adrenal insufficiency)
+• Disease progression: tumor flare can mimic inflammation; imaging to assess disease burden
+• Drug interaction: other medications causing end-organ toxicity
+• CTLA-4 (ipilimumab) vs PD-1/PD-L1 toxicity patterns:
+  - CTLA-4 > PD-1 for: colitis, hypophysitis, skin toxicity
+  - PD-1 > CTLA-4 for: pneumonitis, thyroiditis
+  - Combination (ipi/nivo): higher incidence and severity of all irAEs
+irAE BY ORGAN SYSTEM:
+• Skin (30-40%): maculopapular rash, pruritus; vitiligo (melanoma, a/w response); bullous dermatitis; rarely SJS/TEN
+• Colitis (10-20%, higher with anti-CTLA-4): diarrhea + abdominal cramping; CT shows bowel thickening; colonoscopy if Grade ≥2
+• Pneumonitis (3-5%, higher with PD-1): dry cough + dyspnea + GGOs on CT; exclude PCP (beta-glucan, BAL)
+• Hepatitis (5-10%): elevated AST/ALT; rarely jaundice; rule out viral hepatitis; liver biopsy if Grade ≥3
+• Endocrinopathies: thyroiditis (hyper then hypo), hypophysitis (headache + pituitary hormone deficiency), primary AI (adrenal insufficiency), ICI-DM1 (fulminant onset, DKA possible)
+• Myocarditis (<1% but high mortality): chest pain + troponin + EKG changes; echo + cardiac MRI
+• Nephritis (2-5%): elevated Cr without other cause; urinalysis (bland or granular casts); biopsy if Grade ≥3
+• Neurological (rare but serious): inflammatory neuropathy, encephalitis, myasthenia gravis exacerbation
+CAR-T TOXICITY PATTERNS:
+• CRS: fever → hypotension → hypoxia → organ dysfunction; peak day 1-3 post-infusion; IL-6 mediated
+• ICANS (immune effector cell-associated neurotoxicity): confusion/delirium → aphasia → tremor → seizures; mediated by cytokine BBB disruption; ICE score (0-10 point assessment)
+• HLH/MAS: prolonged fever + cytopenia + hyperferritinemia + hemophagocytosis; overlap with Grade 4 CRS`,
+    workup: `irAE WORKUP (organ-specific + infection exclusion):
+• CBC, BMP, LFTs, urinalysis, TSH, free T4, AM cortisol (all admitted ICI patients)
+• Troponin + EKG: for any ICI patient with chest pain, dyspnea, or new arrhythmia
+• CT chest: pneumonitis workup (GGOs, organizing pneumonia pattern)
+• Colonoscopy + biopsy: Grade ≥2 colitis (active acute colitis on pathology)
+• Bronchoscopy + BAL: Grade ≥2 pneumonitis (rule out infection — PCP PCR, cultures)
+• Liver biopsy: Grade ≥3 hepatitis (lobular hepatitis or bile duct injury on pathology)
+• Hormone panel: TSH, free T4, free T3, LH, FSH, ACTH, AM cortisol, prolactin, IGF-1 (hypophysitis)
+• Cosyntropin stim test: adrenal insufficiency suspected
+• Echo + cardiac MRI: myocarditis workup (LVEF, edema pattern, late gadolinium enhancement)
+• Nerve conduction/EMG: inflammatory neuropathy
+CAR-T WORKUP:
+• Ferritin, fibrinogen, D-dimer, LFTs, CBC (CRS/HLH panel — ferritin daily)
+• CRP, IL-6 levels (not always available but guides CRS grading)
+• MRI brain: ICANS (white matter changes, edema)
+• EEG: seizures/non-convulsive status in ICANS`,
+    management: `irAE GENERAL MANAGEMENT FRAMEWORK:
+Grade 1: Continue ICI; supportive care; monitor closely
+Grade 2: HOLD ICI; PO steroids 1-2 mg/kg/day prednisone with 4-6 week taper; organ specialist consult; resume ICI after resolution to Grade ≤1 + steroid dose ≤10mg/day
+Grade 3: HOLD ICI; IV methylprednisolone 1-2 mg/kg/day; admit; organ specialist consult; resume ICI only after careful risk-benefit discussion
+Grade 4: PERMANENTLY DISCONTINUE ICI (exception: endocrinopathies); IV methylprednisolone 1-2 mg/kg/day; organ specialist
+
+ORGAN-SPECIFIC TREATMENTS:
+COLITIS (Grade ≥3 or Grade 2 refractory):
+• Prednisone/methylprednisolone 1-2 mg/kg/day × 4-6 weeks taper
+• Infliximab 5mg/kg IV (anti-TNF): if steroid-refractory at 72h (recheck infectious workup first — infliximab contraindicated in active infection)
+• Vedolizumab: alternative to infliximab; gut-selective; fewer infections
+PNEUMONITIS:
+• Exclude PCP: trimethoprim-sulfamethoxazole if GGOs + ICI (start empirically in severe cases)
+• Methylprednisolone 1-2 mg/kg/day IV + broad antibiotics empirically
+• Infliximab or mycophenolate mofetil: if refractory at 72h
+• PCP prophylaxis: TMP-SMX while on steroids >20mg prednisone for >4 weeks
+HEPATITIS:
+• Grade 2: prednisone 1-2 mg/kg/day PO
+• Grade 3-4: IV methylprednisolone 1-2 mg/kg/day; Mycophenolate 500-1000mg BID (if steroid refractory); azathioprine AVOID (hepatotoxic)
+MYOCARDITIS (MEDICAL EMERGENCY):
+• Permanently D/C ICI immediately
+• IV methylprednisolone 1g/day × 3-5 days → taper
+• Cardiology + SIC service (MGH) urgent consultation
+• ICU monitoring (arrhythmia risk — complete heart block reported)
+• Refractory: IVIG 2g/kg; abatacept (CTLA-4 agonist fusion protein); equine antithymocyte globulin (ATG)
+ENDOCRINOPATHIES:
+• Thyroiditis: thyroid hormone replacement if hypothyroid; methimazole if hyperthyroid phase symptomatic; continue ICI with hormone supplementation
+• Hypophysitis: hydrocortisone replacement + other deficient axes; continue ICI with replacement
+• Primary AI: hydrocortisone (do NOT use high-dose steroids — does not reverse); continue ICI
+• ICI-DM1: insulin (treat like new-onset T1DM); anti-GAD antibody; continue ICI with insulin management
+CAR-T TOXICITY:
+CRS MANAGEMENT (per ASTCT grading):
+• Grade 1 (fever ≥38°C): acetaminophen + supportive; if persistent >3 days → tocilizumab
+• Grade 2 (fever + HoTN not requiring pressors OR low-flow O2): tocilizumab 8mg/kg IV (max 800mg) q8h × up to 4 doses; supportive IVF
+• Grade 3 (IV pressors OR high-flow O2): tocilizumab + dexamethasone 10mg IV q6h
+• Grade 4 (life-sustaining intervention): tocilizumab + high-dose methylprednisolone
+• Do NOT use steroids as first-line for Grade 1-2 (may blunt antitumor response)
+ICANS:
+• Grade 1-2: dexamethasone 10mg IV q6h; seizure prophylaxis (levetiracetam)
+• Grade ≥3: methylprednisolone 1g/day IV × 3 days; ICU level care; EEG monitoring
+• Do NOT give tocilizumab for ICANS (IL-6 does not cross BBB well; may worsen)`,
+    monitoring: `• irAE: LFTs, TSH, BMP, CBC every 1-2 weeks while on ICI; troponin at baseline and with any cardiac symptoms
+• ICI resumption after Grade 3: only with Oncology agreement; Grade 3 pneumonitis and myocarditis = generally do NOT rechallenge
+• CAR-T: vital signs + neuro exam every 4-6h in first 2 weeks post-infusion; ferritin daily; CBC every 1-3 days; CRP every 1-2 days
+• ICE score (ICANS): assess every shift during active neurotoxicity (orientation × 3, command following, naming, writing, attention)`,
+    disposition: `• SIC service (MGH): ALL admitted irAE Grade 3-4; any ICI myocarditis; CRS/ICANS Grade ≥2 — contact Hematology/Oncology On Call → Cancer Center On Call → Ellison 16 Onc Team 2 + SIC
+• ICU: Grade 4 irAE (any organ), ICI myocarditis with hemodynamic compromise, CAR-T CRS Grade ≥3, ICANS Grade ≥3
+• Cardiology: ICI myocarditis (urgent, potentially fatal), new arrhythmia on ICI
+• Organ specialist: all Grade ≥2 organ-specific irAEs (GI, pulm, hepatology, endocrine, neurology as appropriate)`
+  },
+
+  {
+    id: "multiple-myeloma",
+    system: "onc",
+    title: "Multiple Myeloma / Plasma Cell Disorders",
+    keywords: ["multiple myeloma","MGUS","smoldering myeloma","plasma cell","M protein","SPEP","SFLC","free light chain","bone marrow biopsy","bortezomib","lenalidomide","daratumumab","VRd","CyBorD","CRAB criteria","myeloma workup","amyloidosis","proteasome inhibitor","immunomodulatory"],
+    source: { chapter: "Oncology", section: "Plasma Cell Disorders", pages: "140–141", authors: "Eashwar Somasundaram",
+      keyFacts: [
+        "CRAB criteria for myeloma: hyperCalcemia (Ca >11 or >1 above ULN), Renal insufficiency (Cr >2 or CrCl <40), Anemia (Hgb <10 or >2g below LLN), Bone lesions (lytic lesion or osteoporosis with compression fracture) — OR SLiM criteria: ≥60% clonal plasma cells, involved:uninvolved FLC ≥100, >1 focal MRI lesion",
+        "Myeloma workup: SPEP + serum immunofixation + serum free light chains (all required); 24h urine protein electrophoresis; whole-body low-dose CT ± PET/MRI; bone marrow biopsy with FISH (for del17p, t(4;14), gain1q = high risk)",
+        "Induction therapy (transplant-eligible): VRd (bortezomib + lenalidomide + dexamethasone) or DRd (daratumumab + lenalidomide + dex); followed by autologous stem cell transplant (auto-SCT); VRd has 5-yr PFS 58% (SWOG 2017)",
+        "Supportive care: all myeloma patients on proteasome inhibitor or IMiD get VTE prophylaxis (aspirin or LMWH); all get antiviral prophylaxis (acyclovir) for VZV reactivation; bisphosphonate (zoledronic acid 4mg IV monthly) for bone disease",
+        "AL amyloidosis: Congo-red staining shows apple-green birefringence; staging by BNP + troponin + FLC; daratumumab-CyBorD is current first-line; auto-SCT for eligible patients"
+      ]
+    },
+    assessment: `#Multiple Myeloma / Plasma Cell Disorder Assessment
+DIAGNOSIS:
+M-protein type (SPEP/immunofixation): *** | SPEP M-spike: *** g/dL
+Serum FLC: kappa *** / lambda *** | Ratio: *** (normal 0.26-1.65)
+24h urine protein: *** g | Bence Jones protein: ***
+Bone marrow plasma cells: ***% | FISH/cytogenetics: ***
+High-risk features: del17p [ ] / t(4;14) [ ] / t(14;16) [ ] / gain1q [ ] / double/triple hit [ ]
+CRAB CRITERIA:
+  Calcium (>11 or >1 above ULN): *** [ ] Yes  [ ] No
+  Renal (Cr >2 or CrCl <40): *** [ ] Yes  [ ] No
+  Anemia (Hgb <10 or >2g below LLN): *** [ ] Yes  [ ] No
+  Bone lesions (lytic or compression fracture): *** [ ] Yes  [ ] No
+SLiM criteria: plasma cells ≥60% [ ] / FLC ratio ≥100 [ ] / >1 focal MRI lesion [ ]
+Staging: ISS stage *** (I: β2M <3.5 + alb ≥3.5; II: neither I nor III; III: β2M ≥5.5) | R-ISS ***
+Current treatment regimen: *** | Cycle: *** | Last treatment: ***
+Transplant eligible: [ ] Yes  [ ] No | Prior auto-SCT: [ ] Yes (date: ***)`,
+    ddx: `PLASMA CELL DISORDER SPECTRUM:
+MGUS (Monoclonal Gammopathy of Undetermined Significance):
+• <3g/dL M-protein + <10% BM plasma cells + NO CRAB criteria + NO SLiM criteria
+• Risk of progression: ~1%/year; IgG lowest risk, IgA/IgM higher
+• No treatment; annual SPEP + FLC monitoring
+
+Smoldering Multiple Myeloma (SMM):
+• ≥3g/dL serum M-protein OR 10-59% BM plasma cells + NO end-organ damage (CRAB) + NO SLiM biomarkers
+• Intermediate-high risk SMM: lenalidomide therapy beneficial (NEJM 2019 — QUIREDEX trial)
+• Monitoring: every 3-6 months
+
+Multiple Myeloma (MM): requires CRAB criteria OR SLiM biomarkers (see assessment)
+• Requires treatment regardless of CRAB if SLiM criteria met ("ultra-high risk smoldering")
+
+AL Amyloidosis (Primary Amyloid):
+• Misfolded immunoglobulin light chains deposited as amyloid fibrils in organs
+• Organs: heart (restrictive cardiomyopathy, low voltage on EKG, diastolic dysfunction), kidney (nephrotic syndrome), peripheral neuropathy, autonomic neuropathy, macroglossia, periorbital ecchymosis ("raccoon eyes")
+• Diagnosis: Congo-red stain → apple-green birefringence under polarized light (biopsy of affected organ or abdominal fat pad)
+• Mass spectrometry: confirms AL amyloid type (distinguishes from other amyloid types)
+• Staging: Mayo Stage I-IV based on BNP, troponin, and FLC difference
+
+WALDENSTRÖM MACROGLOBULINEMIA:
+• IgM M-protein + lymphoplasmacytic lymphoma in BM + hyperviscosity syndrome
+• MYD88 L265P mutation in >95%; distinguishes from IgM myeloma
+• Symptoms: hyperviscosity (blurred vision, headache, nausea), cytopenias, neuropathy, cryoglobulinemia
+• Treatment: ibrutinib ± rituximab; venetoclax; bendamustine + rituximab`,
+    workup: `MYELOMA WORKUP:
+Labs:
+• "SPEP panel" (order in Epic): quantitative IgG/IgA/IgM + SPEP with reflex immunofixation — quantifies M-protein type and amount
+• Serum free light chains (SFLC) — separate Epic order: most sensitive test (detects LC-only myeloma)
+• 24h urine protein electrophoresis + urine immunofixation: Bence Jones protein (light chain in urine)
+• BMP: Cr (myeloma kidney — cast nephropathy, amyloid), calcium (hypercalcemia)
+• CBC: anemia (normocytic/normochromic from BM replacement)
+• LFTs, LDH, β2-microglobulin, albumin (ISS staging: I = β2M <3.5 + alb ≥3.5; III = β2M ≥5.5)
+• Peripheral smear: rouleaux formation (RBC stacking from high protein — non-specific)
+• Uric acid (TLS risk)
+Imaging:
+• Whole-body low-dose CT: preferred over plain films (better sensitivity for lytic lesions)
+• PET/CT or whole-body MRI: for staging, equivocal lesions, or soft tissue disease
+• MRI spine: for MESCC, cord compression symptoms
+Bone marrow biopsy (coordinate with Hematology):
+• Aspirate + core biopsy; IHC + flow cytometry; cytogenetics + FISH
+• FISH panel: del(17p), t(4;14), t(14;16), t(14;20), gain(1q), del(1p) — high-risk features
+• MGH Rapid Heme Panel: molecular diagnostics
+• AL amyloid evaluation: 10% of myeloma has concurrent amyloid; check BNP + troponin if cardiac concern; abdominal fat pad biopsy (less invasive than organ biopsy for screening)`,
+    management: `TREATMENT SELECTION:
+TRANSPLANT-ELIGIBLE (age ≤70, good functional status):
+Induction (4-6 cycles) → stem cell collection → auto-SCT → maintenance
+• VRd: bortezomib 1.3mg/m² SQ days 1,4,8,11 + lenalidomide 25mg PO days 1-14 + dexamethasone 40mg weekly × 21-day cycles — standard induction (SWOG S0777, NEJM 2017)
+• DRd: daratumumab + lenalidomide + dexamethasone — quadruplet (D-VRd with bortezomib also used, Maia/CASSIOPEIA trials)
+• Auto-SCT: conditioning with high-dose melphalan 200mg/m²; engraftment day +10-14
+• Maintenance: lenalidomide 10mg PO days 1-21 q28d (indefinitely) reduces relapse; bortezomib for high-risk cytogenetics
+TRANSPLANT-INELIGIBLE (age >70 or frail):
+• DRd (daratumumab + lenalidomide + dexamethasone): preferred first-line (MAIA trial, NEJM 2019)
+• VRd (reduced dose): bortezomib 1.3mg/m² weekly + lenalidomide + dex
+• Rd (lenalidomide + dexamethasone): for frail/elderly with reduced tolerance
+RELAPSED/REFRACTORY:
+• Carfilzomib + daratumumab + dexamethasone (KDd): second line
+• Pomalidomide + daratumumab + dexamethasone: lenalidomide-refractory
+• CAR-T (BCMA-targeted: ide-cel [Abecma], cilta-cel [Carvykti]): 4th line+; very high response rates in heavily treated disease
+• Bispecific antibodies (teclistamab, elranatamab): BCMA × CD3; recent FDA approvals for relapsed MM
+SUPPORTIVE CARE (all MM patients):
+• VTE prophylaxis: aspirin 81mg qday (low/standard risk); LMWH (high VTE risk — prior VTE, immobility, high-dose dex, concurrent erythropoietin)
+• Antiviral prophylaxis: acyclovir 400mg BID or valacyclovir 500mg qday (VZV reactivation risk with bortezomib and IMiDs)
+• Bone disease: zoledronic acid 4mg IV over 15 min monthly × 2 years (reduces skeletal events and mortality); dental evaluation before starting (ONJ risk); calcium + Vit D supplementation
+• Anemia: epoetin/darbepoetin if Hgb <10 and receiving chemotherapy; IV iron if TSAT <20%
+• Infection: IVIG if IgG <400mg/dL with recurrent infections
+• Cord compression pain: dexamethasone 10mg IV + radiation oncology consult
+AL AMYLOIDOSIS:
+• Daratumumab-CyBorD (daratumumab + cyclophosphamide + bortezomib + dexamethasone): current standard first-line (NEJM 2021 — ANDROMEDA trial)
+• Auto-SCT: if eligible (age <65, cardiac stage I-IIa, no severe organ dysfunction)
+• Cardiac amyloid: heart failure management; avoid digoxin (high toxicity); use diuretics; transplant evaluation if Stage IIIb
+• Tafamidis: for TTR amyloid (different from AL — wildtype or hereditary TTR mutation)`,
+    monitoring: `• Response assessment: SPEP M-spike + SFLC + 24h urine protein every cycle (sCR = CR + negative FLC; CR = negative immunofixation; VGPR = M-protein ≥90% reduction; PR = ≥50% reduction)
+• Toxicity monitoring: CBC before each cycle (bortezomib → thrombocytopenia; lenalidomide → neutropenia); Cr and calcium monthly; peripheral neuropathy assessment (bortezomib → switch to weekly SQ if grade ≥2 neuropathy)
+• Zoledronic acid: Cr before each dose (hold if Cr rises acutely); jaw exam every 6 months (ONJ); drug holiday after 2 years if in CR
+• MRD (minimal residual disease): assessed by next-generation flow or sequencing on BM at CR; MRD negativity is prognostic for improved PFS/OS`,
+    disposition: `• Hematology/Oncology (Myeloma Service at MGH): all new myeloma diagnoses, treatment decisions, auto-SCT evaluation
+• Nephrology: myeloma kidney (cast nephropathy, AL amyloid nephropathy) — dialysis consideration
+• Cardiology: AL cardiac amyloid (echo + cardiac MRI; advanced heart failure evaluation; transplant)
+• Radiation Oncology: bone pain not controlled medically, solitary plasmacytoma, MESCC`
+  },
+
+  {
+    id: "palliative-care",
+    system: "onc",
+    title: "Palliative Care / Pain Management / Goals of Care",
+    keywords: ["palliative care","pain management","opioid conversion","goals of care","serious illness conversation","code status","MOLST","advance care planning","hospice","morphine equivalent","opioid rotation","breakthrough pain","basal bolus opioid","DNR","CMO","comfort measures","end of life"],
+    source: { chapter: "Geriatrics & Palliative Care", section: "Pain Management / Goals of Care", pages: "153–155", authors: "Adrienne Yang",
+      keyFacts: [
+        "Pain management ladder: mild = non-opioids (APAP, NSAIDs) + adjuvants; moderate = add short-acting PRN opioids; severe = add scheduled long-acting opioid with PRN breakthrough (10-20% of total daily dose [TDD])",
+        "Opioid conversion: morphine PO 30mg = oxycodone PO 20mg = hydromorphone PO 7.5mg = hydromorphone IV 1.5mg = fentanyl patch 25 mcg/h = morphine IV 10mg; reduce new opioid dose by 25-50% when rotating (incomplete cross-tolerance)",
+        "Pain crisis: opioid-naïve → IV morphine 2-5mg or hydromorphone 0.2-0.4mg; opioid-tolerant → calculate 10-20% of TDD as IV bolus; goal 50% pain reduction; reassess in 15-30 min",
+        "Serious illness conversation (SIC): use when 'Would I be surprised if this patient died in the next year?' answer is no; REMAP framework (Reframe, Expect emotion, Map values, Align plan, Propose plan); consult Palliative Care for complex cases",
+        "MOLST (MA Medical Orders for Life-Sustaining Treatment): transferable medical orders for CPR/intubation/hospital transfer/nutrition/dialysis; required before discharge to SNF/rehab for DNR patients; scan into Epic; pink form available on all medical units"
+      ]
+    },
+    assessment: `#Palliative Care / Pain / Goals of Care
+PAIN ASSESSMENT:
+Current pain score: *** | Location: *** | Character: *** | Duration: ***
+Pain type: somatic [ ] / visceral [ ] / neuropathic [ ] / mixed [ ]
+Current opioid regimen: *** mg (basal) + *** mg PRN q*** h
+Total Daily Dose (TDD): *** mg oral morphine equivalents (OME)
+Breakthrough dose needed (10-20% TDD): *** mg | PRN uses/24h: ***
+Non-opioid adjuvants: NSAIDs [ ] / APAP [ ] / gabapentin [ ] / steroids [ ] / antidepressants [ ]
+GOALS OF CARE / ADVANCE CARE PLANNING:
+Code status: Full code [ ] / DNR [ ] / DNI [ ] / DNR-DNI [ ] / CMO [ ] | Documented in Epic: [ ] Yes  [ ] No
+HCP/Surrogate: *** | MOLST completed: [ ] Yes  [ ] No
+Prognosis trigger ("Would I be surprised if patient died in <1 year?"): [ ] No (consider SIC)
+SIC conducted: [ ] Yes  [ ] No | Palliative Care consulted: [ ] Yes  [ ] No
+Diagnosis: serious illness: *** | Functional status (ECOG 0-4 / Karnofsky): ***
+Hospice appropriate: [ ] Discuss (prognosis <6 mo, goals focused on comfort)`,
+    ddx: `TOTAL PAIN FRAMEWORK (physical + psychological + social + spiritual):
+PAIN TYPE IDENTIFICATION:
+• Somatic/musculoskeletal: well-localized, sharp, aching; responds to NSAIDs, opioids; bony mets → palliative XRT
+• Visceral: diffuse, deep, crampy, referred; hepatic capsule stretch (liver mets + steroids), malignant bowel obstruction (MBO)
+• Neuropathic: burning, electric, allodynia, hyperpathia; demyelination or nerve invasion; responds to gabapentinoids, TCAs, SNRIs, opioids (partially)
+• Mixed: most cancer pain is mixed — multimodal approach most effective
+
+CAUSES OF INADEQUATE PAIN CONTROL:
+• Subtherapeutic dosing: inadequate baseline opioid, insufficient PRN availability
+• Wrong pain type (neuropathic pain undertreated with opioids alone)
+• Opioid tolerance (dose escalation needed)
+• Opioid-induced hyperalgesia: high-dose opioids paradoxically worsen pain; rotate opioids
+• Disease progression: new fracture, bowel obstruction, organ involvement
+• Psychosocial contributors: untreated anxiety/depression amplifies pain perception
+• Medication side effects masking as pain: opioid-induced myoclonus, delirium
+
+GOALS OF CARE CONVERSATIONS — WHEN TO HAVE:
+• New serious illness diagnosis (advanced cancer, ESRD, advanced COPD, decompensated ESLD, HF)
+• Functional decline or multiple hospitalizations
+• ICU admission for life-threatening illness
+• Unexpected deterioration in previously stable patient
+• "Surprise question" positive: "Would I be surprised if this patient died in the next year?"
+• Age >80 admitted to hospital without prior code status documentation`,
+    workup: `PAIN WORKUP:
+• Total daily opioid requirement (TDD): review MAR for actual opioid use past 24-48h (not prescribed — what was GIVEN)
+• Imaging: if new pain location or change in pain character → consider CT/MRI to identify new metastasis, fracture, or complication
+• Neuropathic screening: ESAS (Edmonton Symptom Assessment System) or Brief Pain Inventory
+• Side effect assessment: constipation (bowel regimen required with all opioids), nausea, sedation, myoclonus, pruritus
+GOALS OF CARE DOCUMENTATION:
+• Review prior MOLST, Advance Directives, HCP forms (in Epic: Advance Care Planning Activity tab or Media tab)
+• POLST/MOLST: look for prior documentation; prior decisions can be changed if patient has capacity
+• Determine if patient has capacity for current decision (see Capacity template)
+• Identify surrogate decision-maker if patient lacks capacity
+• CARES mortality calculator or Walter Index (Epic): 1-year inpatient mortality estimate to guide prognostic framing`,
+    management: `PAIN MANAGEMENT — STEPWISE:
+STEP 1 (MILD PAIN):
+• Acetaminophen 500-1000mg PO/IV q6h (max 4g/day; 2-3g in liver disease)
+• NSAIDs: ibuprofen 400-600mg PO q6-8h (avoid if GIB risk, CAD, renal disease, IBD); ketorolac 10-15mg IV/IM (no benefit at higher doses; limit ≤5 days)
+• Topicals: lidocaine patch, diclofenac gel, capsaicin (neuropathic/musculoskeletal)
+STEP 2 (MODERATE PAIN — ADD PRN SHORT-ACTING OPIOID):
+• Oxycodone IR 5-10mg PO q4h PRN (opioid-naïve)
+• Hydromorphone 2-4mg PO q4h PRN (alternative; renally cleared — caution in CKD)
+• Morphine IR 15-30mg PO q4h PRN (note: active metabolites accumulate in renal failure — prefer hydromorphone in CKD)
+STEP 3 (SEVERE PAIN — ADD SCHEDULED LONG-ACTING):
+• Convert previous 24h total opioid use to OME → establish baseline scheduled dose
+• Breakthrough (PRN) = 10-20% of TDD (short-acting, same opioid)
+• Long-acting options: oxycodone ER, morphine ER (MS Contin), hydromorphone ER, transdermal fentanyl patch (do NOT use for opioid-naïve or fluctuating pain)
+• AVOID ER opioids if pain source is expected to resolve (post-procedural, fracture healing)
+OPIOID DOSE ESCALATION:
+• If >3-4 PRN rescue doses/day: increase TDD by 25-50% (add previous rescue dose used in 24h to baseline)
+• If opioid ≥3mg/h morphine equivalent IV with dose-limiting side effects: rotate opioids
+OPIOID ROTATION (reduce new opioid by 25-50% for incomplete cross-tolerance):
+1. Calculate 24h TDD of current opioid in OME
+2. Convert to equianalgesic dose of new opioid
+3. Reduce new opioid dose by 25-50% (incomplete cross-tolerance)
+4. Establish scheduled + PRN (10-20% of new TDD)
+EQUIANALGESIC TABLE (oral unless noted):
+• Morphine 30mg PO = morphine 10mg IV = oxycodone 20mg = hydromorphone 7.5mg PO = hydromorphone 1.5mg IV = fentanyl patch 25 mcg/h (= morphine PO 50mg/day)
+
+PAIN CRISIS (ACUTE SEVERE PAIN):
+• Opioid-naïve: morphine 2-5mg IV OR hydromorphone 0.2-0.4mg IV; repeat q15-30 min until pain ≤4/10
+• Opioid-tolerant: give 10-20% of TDD as IV bolus; reassess in 15-30 min; titrate PRN
+• Goal: ≥50% pain score reduction
+• Sickle Cell VOE: follow patient's Acute Care Plan; engage SCD team early if not improving
+
+ADJUVANT ANALGESICS:
+• Neuropathic: gabapentin 100-300mg TID (titrate to effect; reduce in CKD); duloxetine 30-60mg qday; nortriptyline 10-25mg QHS (avoid in elderly/cardiac)
+• Bony pain: dexamethasone 4-8mg BID (short course); NSAIDs; palliative radiation
+• Visceral pain/hepatic capsule: dexamethasone; octreotide (malignant bowel obstruction)
+• Muscle spasm: cyclobenzaprine 5mg TID (watch sedation); baclofen; tizanidine
+
+OPIOID SIDE EFFECTS — PREVENTION AND TREATMENT:
+• Constipation (universal — NEVER tolerates): senna 2 tabs PO BID + miralax 17g qday; increase as needed; methylnaltrexone if refractory (avoid if GI obstruction concern)
+• Nausea (first few days): scheduled prochlorperazine or metoclopramide for 3-5 days; tolerance usually develops; avoid ondansetron (constipating)
+• Pruritus: not histamine-mediated (Benadryl ineffective); opioid rotation; nalbuphine 5mg IV q6h PRN; low-dose naloxone gtt
+• Sedation: reduce dose or rotate opioid; hold other sedating meds; methylphenidate 2.5-5mg PO qAM-noon (stimulant) if persistent
+• Delirium: reduce opioid dose or rotate; haloperidol 0.5-1mg IV/PO q6-8h PRN; olanzapine 2.5-5mg PO qday-BID
+• Myoclonus: reduce dose or rotate opioid; increase hydration; lorazepam 0.5-1mg PRN
+
+SERIOUS ILLNESS CONVERSATIONS (SIC):
+Framework: REMAP mnemonic
+• Reframe: "We need to talk about where things stand with your illness..."
+• Expect emotion: pause, acknowledge, use empathic statements ("That sounds really hard...")
+• Map values: "What matters most to you?" "What are you hoping for?"
+• Align: "Given what you've told me about what matters most, it sounds like..."
+• Plan: "Based on your values, I'd recommend..."
+MGH Continuum Project SIC Guide: available on MGH intranet (scripted conversations, training videos)
+
+MOLST (MA Medical Orders for Life-Sustaining Treatment):
+• Complete when: DNR/DNI, goals focused on comfort, discharge to SNF/rehab, serious illness with care preferences documented
+• Includes: CPR (yes/no), intubation (yes/no), hospital transfer (yes/no/trial), nutrition/hydration, dialysis
+• Pink form, available on all medical units; scan into Epic; transferable to SNF/rehab
+• MOLST ≠ code status discussion alone — comprehensive goals document
+
+HOSPICE CRITERIA (Medicare Hospice Benefit):
+• Prognosis ≤6 months if illness runs its natural course (two physicians certify)
+• Patient and family agree goals are focused on comfort (not curative treatment)
+• Common diagnoses: advanced cancer, ESLD, ESRD (off dialysis), end-stage HF, advanced COPD, advanced dementia
+• Provides: 24/7 nursing support, medications for comfort, chaplaincy, social work, bereavement support for family
+• NOT required: DNR (can choose hospice AND maintain DNR-pending further discussion)`,
+    monitoring: `• Pain scores every 4-8h; reassess adequacy of PRN use — if >4 PRN doses/day, escalate scheduled dose
+• Bowel function daily: last bowel movement, document; escalate bowel regimen if no BM ×3 days
+• Opioid side effects: sedation, respiratory rate, myoclonus — if RR <8 + somnolence → hold opioid + naloxone 0.04-0.08mg IV
+• Goals of care: reassess with clinical changes; code status documentation in Epic after each discussion
+• Functional status trajectory: ECOG performance status monthly — decline signals disease progression or treatment toxicity`,
+    disposition: `• Palliative Care consult: complex pain refractory to standard management, goals of care conversations when team is struggling, transition to CMO, family conflict, psychosocial or spiritual distress
+• Hospice referral: prognosis ≤6 months + comfort-focused goals; social work coordinates
+• Pain Service/Chronic Pain: complex cancer pain requiring intrathecal pump, nerve block, epidural, or ketamine
+• Social Work: advance directive completion, family meetings, discharge planning to SNF/home with hospice`
+  },
+
+  // ════════════════════ ONCOLOGY — ADDITIONAL TEMPLATES ════════════════════
+
+  {
+    id: "acute-leukemia",
+    system: "onc",
+    title: "Acute Leukemia / MDS / MPN — Inpatient Management",
+    keywords: ["AML","ALL","acute myeloid leukemia","acute lymphoblastic leukemia","MDS","myelodysplastic","MPN","myeloproliferative","leukemia induction","7+3","venetoclax azacitidine","APL","ATRA","FLT3","NPM1","TLS leukemia","blasts","bone marrow biopsy","polycythemia vera","essential thrombocythemia","myelofibrosis","CML"],
+    source: { chapter: "Oncology", section: "Acute Leukemia / MDS / MPN", pages: "137–141", authors: "Jessica Nino de Rivera, Eashwar Somasundaram",
+      keyFacts: [
+        "AML diagnosis: ≥20% blasts in BM OR characteristic cytogenetic translocation; risk stratification by genetics: favorable (t(8;21), inv(16), mutated NPM1 without FLT3-ITD) → chemotherapy alone; adverse (TP53, complex karyotype, FLT3-ITDhigh) → allo-HCT preferred",
+        "APL (acute promyelocytic leukemia, t(15;17)/PML-RARα): HEMATOLOGIC EMERGENCY — start ATRA immediately at any clinical concern (DIC, WBC <10k with hypergranular promyelocytes); ATRA + arsenic trioxide ± gemtuzumab ozogamicin; differentiating syndrome: fever/dyspnea/weight gain during ATRA → steroids",
+        "AML induction: 7+3 (cytarabine × 7 days + anthracycline × 3 days) for fit patients; venetoclax + azacitidine (Ven/Aza) for older/unfit — VIALE-A trial (NEJM 2020;383:617); day 28 BM biopsy: CR in 70-80% if <60yo",
+        "Inpatient AML admission: Leukemia Admission Order Set; neutropenic precautions; TLS prophylaxis (allopurinol 300mg daily); GI ppx; HSV/VZV prophylaxis (acyclovir); NO VTE ppx (thrombocytopenia); check G6PD before rasburicase",
+        "MDS: prognosis by IPSS-R/IPSS-M; low-risk → supportive (ESAs, TPO-RA, lenalidomide for del5q, luspatercept); high-risk → hypomethylating agents (azacitidine/decitabine) ± venetoclax; allo-HCT only curative option"
+      ]
+    },
+    assessment: `#Acute Leukemia / MDS / MPN — Inpatient Assessment
+DIAGNOSIS:
+Peripheral blasts: ***% | BM blasts: ***% | Auer rods: [ ] Yes  [ ] No (→ myeloid origin)
+Flow cytometry: *** | Cytogenetics/FISH: *** | Molecular: ***
+Type: [ ] AML  [ ] APL (t(15;17)) — START ATRA NOW  [ ] ALL (B-cell / T-cell)  [ ] MDS  [ ] MPN
+APL CONCERN: DIC [ ] / hypergranular promyelocytes [ ] / WBC <10k [ ] → ATRA 45mg/m²/day until diagnosis confirmed
+RISK (AML): [ ] Favorable (NPM1+/FLT3-ITD-low; t(8;21); inv(16))
+             [ ] Intermediate  [ ] Adverse (TP53, complex karyotype, FLT3-ITDhigh)
+COMPLICATIONS:
+TLS risk: WBC *** | LDH *** | Uric acid *** | Allopurinol ordered: [ ] Yes (300mg qday)
+DIC (APL): PT/INR *** | Fibrinogen *** | D-dimer *** | Plt ***
+Leukostasis concern: WBC >50k [ ] | Neuro/pulm sx [ ] | Hydroxyurea ordered: ***
+Febrile neutropenia: ANC *** | T *** | Blood cultures drawn: [ ] Yes | Cefepime started: ***
+Epic Leukemia Admission Order Set used: [ ] Yes  [ ] No`,
+    ddx: `AML SUBTYPE RECOGNITION:
+• APL (acute promyelocytic, t(15;17)/PML-RARα): hypergranular promyelocytes; WBC often low; DIC present; bilobed "butterfly" nuclei; EMERGENCY — ATRA immediately prevents fatal DIC; PML-RARA FISH/RT-PCR confirms
+• AML with FLT3-ITD: high WBC leukocytosis, rapid doubling time; FLT3 inhibitor (midostaurin with induction; gilteritinib for relapse)
+• AML with IDH1/IDH2: often normal karyotype; IDH inhibitors for relapsed disease (ivosidenib IDH1; enasidenib IDH2)
+• Secondary/therapy-related AML (t-AML, s-AML): from prior chemo/radiation or antecedent MDS/MPN; worse prognosis; allo-HCT preferred
+ALL SUBTYPES:
+• B-ALL: Philadelphia chromosome (BCR-ABL1, t(9;22)) in 20-30% of adults → TKI + chemo (dasatinib/blinatumomab); Philadelphia-like ALL (Ph-like) also has targetable alterations
+• T-ALL: anterior mediastinal mass; T-cell immunophenotype; NOTCH1/FBXW7 mutations = favorable
+• AYA ALL (age 15-39): pediatric-inspired regimens with asparaginase have superior outcomes vs adult regimens
+MDS vs MPN vs OVERLAP:
+• MDS: cytopenias + dysplasia + <20% blasts; ineffective hematopoiesis; risk of progression to AML
+• MPN: clonal expansion of myeloid cells; generally hypercellular; PV (JAK2 V617F 95-97%), ET (JAK2/CALR/MPL), MF (JAK2/CALR/MPL), CML (BCR-ABL1)
+• CHIP (Clonal Hematopoiesis of Indeterminate Potential): no cytopenias, <5% BM blasts; 0.5-1%/year progression to AML; cardiovascular disease risk
+INPATIENT ADMISSION DDx:
+• New leukemia diagnosis → admit for induction
+• Relapsed/refractory disease → admit for salvage therapy
+• Complication of chemotherapy: febrile neutropenia, TLS, DIC (APL), leukostasis, mucositis`,
+    workup: `ACUTE LEUKEMIA ADMISSION WORKUP:
+• CBC with differential + PERIPHERAL SMEAR (always — blasts first appear as "Other cells" in differential with lab comment)
+• Peripheral flow cytometry: yellow top tube; Epic order "Flow cytometry labs (blood)" → fill in clinical hx → select "Leukemia Panel"; RUSH if new diagnosis (page Hematopathology p21867)
+• BMP, LFTs, LDH, uric acid, phosphate, Mg, iCal (TLS monitoring baseline)
+• PT/INR, PTT, fibrinogen, D-dimer (DIC workup — critical in APL)
+• Urine pregnancy test (pre-menopausal females; date of LMP), G6PD (before rasburicase)
+• HBV/HCV/HIV serology, CMV IgG, B12, folate
+• Peripheral blood banking (biorepository — with patient consent)
+BONE MARROW BIOPSY (coordinate with Hematology):
+• Core biopsy + aspirate: immunohistochemistry, flow cytometry, cytogenetics, FISH, molecular panel
+• MGH Rapid Heme Panel (BWH): rapid molecular diagnostics (FLT3-ITD, NPM1, TP53, IDH1/2, DNMT3A, etc.)
+• FISH panel: PML-RARA (APL), t(8;21), inv(16), BCR-ABL1
+• Day 28 BM biopsy: confirms CR after induction (goal <5% blasts + normalized CBC)
+MPN/MDS WORKUP:
+• JAK2 V617F + JAK2 exon 12 (PV); JAK2/CALR/MPL (ET/MF); BCR-ABL1 FISH/RT-PCR (CML)
+• EPO level (low in PV — body appropriately suppresses EPO in face of erythrocytosis)
+• IPSS-R/IPSS-M scoring: online calculator or consult Hematology
+HLA TYPING (initiate allo-HCT workup if ≤80 yo): Epic order "HLA Lab" → Specimen: Blood, Patient: Recipient, Test: Bone Marrow/HSC allotransplant initial workup — coordinate with RN (difficult to confirm pending in Epic)`,
+    management: `APL (ACUTE PROMYELOCYTIC LEUKEMIA) — HEMATOLOGIC EMERGENCY:
+• ATRA (all-trans retinoic acid) 45mg/m²/day PO in 2 divided doses — START IMMEDIATELY at any clinical suspicion (DIC, blast morphology suggesting APL)
+• Standard risk (WBC <10k at diagnosis): ATRA + arsenic trioxide (ATO) × 4 cycles (APL0406, NEJM 2013); no cytotoxic chemotherapy
+• High risk (WBC ≥10k): ATRA + ATO + gemtuzumab ozogamicin (Mylotarg) OR ATRA + idarubicin/daunorubicin
+• DIC management: keep fibrinogen >150 (cryoprecipitate), plt >30-50k, INR <1.5 (FFP); do NOT anticoagulate
+• Differentiating syndrome (fever + dyspnea + weight gain + infiltrates during ATRA): dexamethasone 10mg IV BID × ≥3 days; continue ATRA unless Grade IV
+AML INDUCTION:
+Fit patients (<75 or good functional status):
+• 7+3: cytarabine 100-200mg/m² continuous infusion × 7 days + idarubicin 12mg/m² or daunorubicin 60-90mg/m² IV days 1-3
+• Add targeted agents based on molecular profile: midostaurin (FLT3-mutated) + 7+3; gemtuzumab ozogamicin (CD33+, favorable/intermediate risk)
+Older/unfit patients (≥75 or comorbidities precluding 7+3):
+• Venetoclax 400mg PO days 1-28 + azacitidine 75mg/m² SQ/IV days 1-7 (Ven/Aza) — 28-day cycles (VIALE-A, NEJM 2020)
+• Venetoclax + decitabine or LDAC as alternatives
+Consolidation:
+• Favorable risk: high-dose cytarabine (HiDAC) × 3-4 cycles
+• Intermediate/adverse risk: allo-HCT preferred if eligible
+ALL TREATMENT:
+• Multiagent induction (hyper-CVAD or POMP-based); CNS prophylaxis (intrathecal MTX/cytarabine)
+• Ph+ ALL: TKI (dasatinib or ponatinib) + chemotherapy; allo-HCT in first CR for high-risk
+• Blinatumomab (bispecific T-cell engager, CD19 × CD3): elderly/unfit + Ph+ ALL; MRD+ after chemo → improves outcomes
+• Inotuzumab ozogamicin (anti-CD22 ADC): relapsed/refractory B-ALL
+MPN MANAGEMENT:
+PV: phlebotomy (goal HCT <45); ASA 81mg; if age >60 or high thrombosis risk → hydroxyurea; ruxolitinib (JAK2 inhibitor) second-line; ropeginterferon alpha-2b
+ET: ASA 81mg; if age >60 or high risk → hydroxyurea > interferon-α > anagrelide (weaker); avoid ASA if vWF syndrome (check vWF)
+MF: ruxolitinib (reduces splenomegaly and symptoms, NEJM 2012); momelotinib or fedratinib if anemia; allo-HCT only curative option
+CML: TKI (imatinib 400mg, dasatinib 100mg, nilotinib 300mg BID): target molecular response (BCR-ABL1 <0.01%); T315I mutation → ponatinib or asciminib
+INPATIENT CHEMOTHERAPY ORDERS (Epic Leukemia Admission Order Set):
+• Neutropenic precautions; TLS prophylaxis (allopurinol 300mg qday); GI ppx (omeprazole); HSV/VZV ppx (acyclovir 400mg BID); Hibiclens daily; Peridex (chlorhexidine) mouthwash; NO VTE ppx`,
+    monitoring: `• CBC + electrolytes (BMP, phos, uric acid) every 4-8h during induction (TLS monitoring)
+• APL: PT/INR, fibrinogen, D-dimer every 6-12h until DIC resolved; ATRA level not routinely monitored
+• Day 28 BM biopsy: defines complete remission; guides consolidation decision
+• MRD (measurable residual disease): flow cytometry or molecular assay; MRD negativity = improved PFS
+• Peripheral smear daily: blast count, monocyte recovery (early sign of engraftment)
+• Organ function: LFTs, Cr, electrolytes daily during active chemotherapy
+• AML relapse surveillance: CBC every 1-3 months for 2 years, then every 3-6 months for 5 years`,
+    disposition: `• Hematology/Oncology (mandatory): ALL acute leukemia, MDS with high IPSS-R, MPN with thrombotic events or blast crisis — all require subspecialty management
+• ICU: APL with DIC + hemodynamic compromise, leukostasis with respiratory/neurological failure, severe TLS with cardiac arrhythmia or AKI
+• Blood Bank/Apheresis: leukapheresis for symptomatic leukostasis (WBC >50-100k with neuro/pulm symptoms)
+• HLA typing coordinator: initiate within 48h of new AML/ALL/high-risk MDS diagnosis for allo-HCT evaluation`
+  },
+
+  {
+    id: "lymphoma",
+    system: "onc",
+    title: "Lymphoma — Hodgkin & Non-Hodgkin",
+    keywords: ["lymphoma","DLBCL","diffuse large B-cell","follicular lymphoma","Hodgkin lymphoma","NHL","CLL","SLL","mantle cell lymphoma","Burkitt lymphoma","R-CHOP","ABVD","lymphadenopathy","staging PET","biopsy lymph node","B symptoms","IPI","FLIPI","Reed-Sternberg","CAR-T lymphoma"],
+    source: { chapter: "Oncology", section: "Lymphoma / Lymphadenopathy", pages: "138–139", authors: "Eashwar Somasundaram",
+      keyFacts: [
+        "Lymphoma staging (Ann Arbor/Lugano): Stage I (1 region) → II (≥2 same side of diaphragm) → III (above + below diaphragm) → IV (disseminated extralymphatic organ); add 'B' for B symptoms (fever, night sweats, >10% weight loss in 6 months)",
+        "Biopsy strategy: excisional biopsy (cells + nodal architecture) > core needle (molecular studies) > FNA (high false negative, inadequate for lymphoma workup); empiric steroids reduce biopsy yield — avoid before tissue obtained",
+        "DLBCL (35% of NHL): aggressive; R-CHOP × 6 cycles for most; double-hit lymphoma (MYC + BCL2 or BCL6 translocations) = worse prognosis → R-EPOCH; CAR-T (CD19-directed) for relapsed/refractory after ≥2 lines",
+        "Hodgkin lymphoma: bimodal distribution; Reed-Sternberg cells (CD15+ CD30+ CD20− CD45−); Stage I-II = ABVD ± XRT; Stage III-IV = ABVD vs BV-AVD (NEJM 2018; fewer pulmonary toxicity with BV-AVD vs ABVD with bleomycin)",
+        "CLL treatment trigger (not at diagnosis): cytopenia, bulky disease, progressive lymphocytosis >50% in 2 months, autoimmune complications, B symptoms — BTKi (zanubrutinib, ibrutinib) ± rituximab + venetoclax"
+      ]
+    },
+    assessment: `#Lymphoma — Inpatient Assessment
+LYMPHADENOPATHY:
+Location: *** | Size: *** cm | Duration: *** | Character: mobile/fixed/matted: ***
+B symptoms: fever [ ] / night sweats [ ] / weight loss >10% in 6mo [ ]
+Malignancy features: age >40 [ ] / >4 weeks [ ] / firm/matted nodes [ ] / supraclavicular [ ] / painless [ ]
+Biopsy: [ ] Not yet — avoid empiric steroids before tissue obtained  [ ] Done (type: excisional/core/FNA)
+STAGING (Lugano/Ann Arbor):
+  [ ] Stage I (1 region)  [ ] Stage II (≥2 same side)  [ ] Stage III (both sides diaphragm)  [ ] Stage IV (extralymphatic)
+  B symptoms: [ ] Present (stage ___B)  [ ] Absent
+PET/CT: *** | CT C/A/P: ***
+LDH: *** | β2-microglobulin: *** | Uric acid: *** (TLS risk)
+DIAGNOSIS:
+  Type: DLBCL [ ] / Follicular [ ] / Hodgkin [ ] / CLL/SLL [ ] / MCL [ ] / Burkitt [ ] / T-cell [ ] / Other: ***
+  IPI score (DLBCL): age >60 [ ] / LDH >ULN [ ] / ECOG ≥2 [ ] / Ann Arbor III-IV [ ] / >1 extranodal site [ ] = ___
+  FLIPI score (FL): age >60 [ ] / Ann Arbor III-IV [ ] / Hgb <12 [ ] / >4 LN regions [ ] / LDH >ULN [ ] = ___
+Current treatment regimen: *** | Cycle: ***`,
+    ddx: `NON-HODGKIN LYMPHOMA SUBTYPES (WHO Classification):
+AGGRESSIVE (curable but rapidly progressive):
+• DLBCL (35%): most common lymphoma; GCB (germinal center B-cell) vs ABC (activated B-cell) subtypes; IPI prognostic; double-hit (MYC + BCL2 or BCL6) → R-EPOCH; primary CNS lymphoma (PCNSL) = ring-enhancing lesion, vitreoretinal lymphoma
+• Burkitt (1%): highly aggressive; t(8;14) cMYC; endemic (jaw in Africa), sporadic (ileocecal), HIV-associated; very high spontaneous TLS risk; aggressive treatment (R-EPOCH, R-CODOX-M/IVAC, R-HyperCVAD)
+• Mantle Cell (5%): t(11;14) cyclin D1; wide spectrum (leukemic-indolent to aggressive); MIPI prognostic; BTKi (zanubrutinib, ibrutinib) + chemo; auto-HCT for younger patients
+INDOLENT (incurable but better prognosis; monitor for transformation):
+• Follicular Lymphoma (25%): t(14;18) BCL2; FLIPI prognostic; watch-and-wait if asymptomatic; R-bendamustine or R-CHOP for symptomatic disease; monitor for transformation to DLBCL (rapid LN growth, ↑LDH, B symptoms)
+• CLL/SLL (5%): indolent; lymphocytosis + LAD; Rai/Binet staging; Rai stage 0 = lymphocytosis only → watchful waiting; Rai IV = anemia/thrombocytopenia → treat; BTKi (zanubrutinib preferred over ibrutinib); venetoclax (BCL-2 inhibitor) ± obinutuzumab
+• Marginal zone lymphoma: MALT (gastric — H. pylori eradication 70-80% CR), splenic, nodal
+T-CELL LYMPHOMAS:
+• PTCL (peripheral T-cell lymphoma) NOS: most common; aggressive; CHOP-based; auto-HCT in CR1
+• ALCL (anaplastic large cell): ALK+ (younger, better prognosis) vs ALK− (older, worse); brentuximab vedotin for ALK−
+HODGKIN LYMPHOMA:
+• Bimodal age distribution (20s, 60s); Reed-Sternberg cells (CD15+ CD30+ CD20− CD45−); EBV association (mixed cellularity)
+• Subtypes: nodular sclerosis (70%), mixed cellularity (25%), lymphocyte-rich (5%), lymphocyte-depleted (<1%)
+• Long-term toxicity risk: cardiotoxicity (anthracyclines + mediastinal RT), pulmonary toxicity (bleomycin), secondary AML
+LYMPHADENOPATHY DIFFERENTIAL:
+Reactive: URI/pharyngitis (cervical), STI (inguinal), cat scratch (axillary/cervical), EBV/CMV mononucleosis (generalized)
+Autoimmune: SLE, sarcoid, RA, Kikuchi disease
+Malignant: lymphoma, metastatic cancer (supraclavicular → GI/pulm/GU; axillary → breast)`,
+    workup: `LYMPHADENOPATHY WORKUP:
+Labs: CBC/differential, LDH, β2-microglobulin, HIV, HBV, HCV; ESR/CRP; consider T-spot, syphilis, ANA, EBV/CMV/toxo serologies
+Imaging: CT C/A/P with contrast + PET/CT (preferred for staging and identifying biopsy site); response assessment at interim and end of treatment (Deauville score)
+LYMPHOMA STAGING WORKUP (do before biopsy if possible):
+• PET/CT: staging, ideal biopsy site selection, interim response (Deauville 1-2 = complete metabolic response; 4-5 = progressive disease)
+• CT C/A/P with contrast: if PET not immediately available
+• Bone marrow biopsy: indicated if affects staging; often replaced by PET/CT for DLBCL staging
+• Echocardiogram: before anthracycline-based chemotherapy
+• PFTs + DLCO: before bleomycin-containing regimens (ABVD)
+• HBV core antibody and surface antigen: before rituximab (risk of HBV reactivation → prophylaxis with entecavir)
+• Fertility preservation consultation: before any lymphoma chemotherapy in reproductive-age patients
+• CNS evaluation: MRI brain + LP + CSF flow cytometry for CNS-IPI ≥4 (DLBCL) or Burkitt
+BIOPSY APPROACH:
+• Excisional biopsy preferred: preserves nodal architecture (required for lymphoma diagnosis); avoid if accessing single deep node
+• Core needle biopsy: acceptable for accessible superficial nodes; molecular studies feasible
+• FNA: NOT adequate for lymphoma diagnosis (high false negative, cannot assess architecture)
+• AVOID empiric steroids before obtaining tissue (reduces biopsy yield)
+• Send for: H&E histology, IHC (cell surface markers), flow cytometry, cytogenetics, FISH (specific translocations)`,
+    management: `HODGKIN LYMPHOMA:
+Stage I-II (early favorable): 2-4 cycles ABVD + involved-site RT; or 3-4 cycles ABVD if RT-ineligible
+Stage III-IV: ABVD × 6 cycles (bleomycin + doxorubicin + vinblastine + dacarbazine) OR BV-AVD × 6 cycles (brentuximab vedotin + doxorubicin + vinblastine + dacarbazine — omits bleomycin, reduces pulmonary toxicity; ECHELON-1 NEJM 2018) ± XRT
+Interim PET/CT (after 2 cycles): Deauville 1-2 → de-escalate; Deauville 4-5 → escalate to BEACOPP
+Relapsed/refractory: salvage chemo (ICE, DHAP, GDP) → high-dose chemo + auto-HCT; brentuximab vedotin; nivolumab or pembrolizumab (PD-1 blockade — HL highly responsive due to 9p24.1 amplification → PD-L1 overexpression); allo-HCT for multiply relapsed
+DLBCL:
+Limited stage (I-II, non-bulky): R-CHOP × 4 + RT; or R-CHOP × 6 without RT
+Advanced stage (III-IV) or bulky: R-CHOP × 6 cycles (rituximab + cyclophosphamide + doxorubicin + vincristine + prednisone); add polatuzumab vedotin if IPI ≥2 (POLARIX trial, NEJM 2022)
+Double-hit/High-grade (MYC + BCL2 or BCL6): R-EPOCH × 6 cycles (more intensive than R-CHOP)
+CNS prophylaxis: intrathecal MTX ± systemic high-dose MTX for CNS-IPI ≥4; primary CNS lymphoma (PCNSL) → HD-MTX-based regimens
+Relapsed/refractory (after ≥2 lines): CAR-T cell therapy (axicabtagene ciloleucel [Yescarta], tisagenlecleucel [Kymriah], lisocabtagene maraleucel [Breyanzi]) — Lancet 2022, NEJM 2022; polatuzumab vedotin + BR; loncastuximab tesirine
+FOLLICULAR LYMPHOMA:
+Asymptomatic (Grade 1-2): watchful waiting; no survival benefit from early treatment; median survival >10-15 years
+Treatment when symptomatic: R-bendamustine (rituximab + bendamustine) or R-CHOP + R maintenance; lenalidomide + rituximab (R²)
+Transformation to DLBCL: treat as DLBCL
+CLL/SLL:
+Treatment trigger (active disease required): cytopenias, bulky disease (>5cm), rapidly progressive lymphocytosis, autoimmune complications (AIHA, ITP), B symptoms, significant constitutional symptoms
+First-line: zanubrutinib (BTK inhibitor, NEJM 2023) or acalabrutinib; venetoclax (BCL-2 inhibitor) + obinutuzumab; ibrutinib (first BTKi, but more toxicities)
+Rai Stage III-IV at diagnosis: treat regardless of symptoms
+BURKITT:
+Highly aggressive; hospitalize for TLS prophylaxis; aggressive multiagent therapy (R-EPOCH, R-CODOX-M/IVAC, R-HyperCVAD); CNS prophylaxis required; excellent outcome with treatment if given rapidly
+INPATIENT SUPPORTIVE CARE:
+• All patients on rituximab: HBV prophylaxis (entecavir or tenofovir) — check HBcAb/HBsAg pre-rituximab
+• All patients with aggressive lymphoma: TLS monitoring + prophylaxis (allopurinol, IVF)
+• Neutropenic fever: cefepime empiric (see Febrile Neutropenia template)
+• Growth factors: pegfilgrastim day +2 (or day after completion of chemo) — reduces duration of neutropenia`,
+    monitoring: `• Interim PET/CT after 2 cycles: Deauville score 1-2 = CR; 3 = adequate response; 4-5 = insufficient response → treatment modification
+• End-of-treatment PET/CT: Deauville 1-2 = complete metabolic response; 3 = observation in HL (adequate); 4-5 = residual disease → consider biopsy
+• CBC + metabolic panel before each chemotherapy cycle; LDH + β2M for response monitoring
+• Echocardiogram after anthracyclines (every 2-5 cycles if borderline EF); PFTs if bleomycin (DLCO decline = pulmonary toxicity)
+• HBV viral load: monthly if HBV+; quarterly if HBcAb+/HBsAg− on rituximab
+• CLL: CBC every 3-6 months (watch-and-wait); CAR-T: see checkpoint inhibitor template for CRS/ICANS monitoring`,
+    disposition: `• Hematology/Oncology: all lymphoma diagnoses — outpatient treatment for most; admit for: aggressive histology induction (Burkitt, DLBCL with poor performance status), febrile neutropenia, TLS, disease complications (SVC syndrome, spinal cord compression)
+• Radiation Oncology: early-stage HL (after ABVD), involved-site RT for DLBCL, palliation
+• Fertility preservation (Reproductive Endocrinology/Urology): before initiating any lymphoma chemotherapy in reproductive-age patients`
+  },
+
+  {
+    id: "hsct-gvhd",
+    system: "onc",
+    title: "HSCT / BMT — Transplant Complications & GVHD",
+    keywords: ["HSCT","bone marrow transplant","BMT","allogeneic","autologous","GVHD","graft versus host","veno-occlusive disease","SOS","sinusoidal obstruction","engraftment syndrome","CMV reactivation","BK virus","typhlitis","neutropenic enterocolitis","tacrolimus","MMF","ruxolitinib GVHD","defibrotide","transplant complications"],
+    source: { chapter: "Oncology", section: "Hematopoietic Stem Cell Transplantation", pages: "141–145", authors: "Daniel Ikeda, Ellen Kendall",
+      keyFacts: [
+        "Allogeneic HSCT: graft-versus-tumor (GVT) effect is therapeutic goal; GVHD is the major complication; always curative intent; indications: high-risk AML/ALL, MDS, MF, CML-blast, aplastic anemia, sickle cell, SCID",
+        "Acute GVHD (day 0 to +100): skin (rash → desquamation), liver (cholestasis), GI (diarrhea — graded by volume/day); treat Grade II-IV with IV methylprednisolone 1-2 mg/kg; refractory → ruxolitinib (REACH1/REACH2 trials, NEJM 2020)",
+        "Sinusoidal Obstruction Syndrome (SOS/VOD): RUQ pain + jaundice + weight gain (sudden >5% in 24h or >2-5% at baseline body weight) within day +21-30; ultrasound with reversed hepatic venous flow; defibrotide for treatment; ursodiol prophylaxis",
+        "Post-transplant infection timeline: early (<day +30, pre-engraftment) = GNRs/GPCs, HSV; intermediate (day 30-100) = CMV (#1 cause of morbidity), aspergillus, adenovirus; late (>day +100) = encapsulated bacteria (vaccinate), VZV, PJP",
+        "CMV management: universal prophylaxis with letermovir (480mg qday; dose-reduce with cyclosporine) for CMV-seropositive recipients; CMV PCR weekly × 100 days for seronegative recipients; pre-emptive ganciclovir/valganciclovir if viremia detected"
+      ]
+    },
+    assessment: `#HSCT / BMT Transplant Assessment
+Type: [ ] Allogeneic  [ ] Autologous | Day post-transplant: D+***
+Indication: *** | Conditioning: [ ] Myeloablative (MAC)  [ ] Reduced-Intensity (RIC)  [ ] Non-Myeloablative
+Donor: MRD (matched related) [ ] / MUD (matched unrelated) [ ] / Haplo (haploidentical) [ ] / Auto [ ]
+GRAFT STATUS:
+Engraftment: [ ] Yes (ANC >500 × 3d: Day +___)  [ ] Not yet | Chimerism: ***%
+GVHD prophylaxis: tacrolimus *** + MMF *** | Tacrolimus level: *** (goal 5-15 for allo; 8-12 for haplo)
+CURRENT CONCERN:
+[ ] Fever/infection: ANC *** | Cultures drawn *** | Day of neutropenia: *** | Antibiotics: ***
+[ ] Acute GVHD: skin *** (% BSA) / liver (bili ***) / GI (stool volume ***mL/24h) | Grade: I/II/III/IV
+[ ] Chronic GVHD: organs involved: *** | NIH global score: mild/moderate/severe
+[ ] SOS/VOD: weight gain *** kg (>5% in 24h) | bili *** | ascites [ ] | RUQ pain [ ] | Defibrotide: ***
+[ ] CMV: CMV PCR *** copies | Letermovir: [ ] Yes  [ ] No | Treatment: ***`,
+    ddx: `FEVER IN TRANSPLANT — BY TIMING:
+PRE-ENGRAFTMENT (Day 0 to +30, ANC <500):
+• Bacterial: GPCs (CoNS from CVC, MSSA/MRSA, viridans strep from mucositis), GNRs (E. coli, Klebsiella, PsA) — empiric cefepime
+• Viral: HSV (mucositis — acyclovir prophylaxis prevents), adenovirus
+• Engraftment syndrome: fever + rash + pulmonary infiltrates days 7-14 post-auto or 14-21 post-allo; steroids responsive
+• Drug reactions: extensive medications; review MAR
+POST-ENGRAFTMENT (Day +30 to +100):
+• CMV reactivation (#1 morbidity post-allo): fever + interstitial pneumonitis (CMV PNA) + colitis + retinitis; CMV PCR weekly surveillance; treat with ganciclovir IV or valganciclovir
+• Aspergillus: pulmonary nodules + halo sign; galactomannan (serum + BAL); prophylaxis with micafungin or voriconazole
+• Adenovirus, RSV, parainfluenza, EBV (PTLD risk in heavily immunosuppressed)
+LATE (>Day +100):
+• Encapsulated bacteria: S. pneumoniae, H. influenzae, N. meningitidis (functional asplenia from chronic GVHD); prophylactic vaccinations post-transplant
+• VZV reactivation: continue acyclovir for 1 year post-allo; lifetime if ongoing chronic GVHD
+• PJP: TMP-SMX prophylaxis while on immunosuppression; dapsone or atovaquone if sulfa allergy
+• JC virus (PML): progressive multifocal leukoencephalopathy in heavy immunosuppression
+GVHD ORGAN INVOLVEMENT DDx:
+• Skin (rash): aGVHD vs drug reaction vs viral exanthem vs engraftment syndrome; biopsy for Grade ≥2
+• Liver (cholestasis/elevated LFTs): aGVHD vs SOS/VOD vs drug hepatotoxicity vs viral hepatitis vs TPN cholestasis
+• GI (diarrhea): aGVHD vs C. difficile vs CMV colitis vs adenovirus vs neutropenic enterocolitis
+• Lung: aGVHD vs cGVHD (bronchiolitis obliterans) vs fungal vs viral vs engraftment syndrome vs TRALI
+SOS/VOD DIFFERENTIAL: acute cholecystitis/choledocholithiasis, liver GVHD, drug hepatotoxicity, right heart failure (hepatic congestion)`,
+    workup: `FEVER IN TRANSPLANT:
+• Blood cultures × 2 (from each lumen of CVC + peripheral); CMV PCR; respiratory viral panel (FilmArray); stool for C. difficile PCR; galactomannan (serum)
+• CBC with differential (ANC trend — key for timing and treatment decisions)
+• BMP, LFTs (GVHD/SOS assessment), coagulation (DIC if septic)
+• CT chest (nodular infiltrates → fungal; interstitial pattern → viral/PJP/CMV PNA)
+• CMV PCR (weekly post-allo; more frequent if viremia)
+• HHV6, EBV, adenovirus PCR if clinical concern (especially in cord blood or haploidentical transplant)
+GVHD WORKUP:
+Skin: punch biopsy (Grade ≥2); satellite cell necrosis + basal vacuolar change = acute GVHD
+Liver: LFTs (alkaline phosphatase + direct bilirubin predominance); rule out infection (viral hepatitis, CMV, drug); biopsy if unclear
+GI: stool cultures (C. diff, bacterial), stool CMV PCR, stool adenovirus PCR; endoscopy + biopsy for Grade ≥2 (colonoscopy preferred; crypt apoptosis on pathology = GVHD)
+CHRONIC GVHD: NIH Consensus Criteria scoring; Schirmer's test (eye); PFTs + DLCO (bronchiolitis obliterans)
+SOS/VOD:
+• Liver function tests (direct bilirubin + transaminases)
+• Ultrasound with Doppler: reversal of hepatic venous flow (portal hypertension pattern); ascites; hepatomegaly
+• TIPS if severe portal HTN (rarely needed but available)
+• Weight daily: sudden weight gain (>5% in 24h or >2-5% from baseline body weight) is diagnostic criterion`,
+    management: `GVHD PROPHYLAXIS (allogeneic HSCT):
+• Tacrolimus + mycophenolate mofetil (MMF) or methotrexate (short-course MTX days +1, +3, +6, +11)
+• Post-transplant cyclophosphamide (PTCy): haploidentical transplant (days +3, +4); then tacrolimus + MMF starting day +5
+• Goal tacrolimus level: 5-15 ng/mL (MRD/MUD); 8-12 ng/mL (haploidentical)
+ACUTE GVHD TREATMENT:
+• Grade I (skin only): topical steroids; continue or intensify prophylaxis immunosuppression
+• Grade II-IV: methylprednisolone 1-2 mg/kg/day IV or prednisone 1mg/kg/day PO; taper over 4-8 weeks
+• Steroid-refractory (no improvement in 3-7 days): ruxolitinib 10mg BID (FDA approved; REACH1 [skin] + REACH2 [2nd line]; NEJM 2020); vedolizumab (GI-specific); MMF; ruxolitinib → ATG for severe refractory
+• Do NOT increase steroids beyond 2 mg/kg — not more effective and increases infection risk
+CHRONIC GVHD TREATMENT:
+• Mild: topical agents (steroids, calcineurin inhibitors), observation
+• Moderate-severe: prednisone 1mg/kg/day + tacrolimus; ibrutinib (FDA approved, cGVHD); belumosudil (ROCK2 inhibitor, FDA approved 2021); photopheresis for skin manifestations; rituximab for B-cell–mediated chronic GVHD
+• Bronchiolitis obliterans (BOS): early inhaled steroids + budesonide-formoterol; azithromycin (anti-inflammatory)
+SOS/VOD:
+• Defibrotide 6.25 mg/kg IV q6h (25 mg/kg/day) × ≥21 days: FDA approved; reduces mortality (Bone Marrow Transplant 2016); hepatoprotective mechanism via adenosine receptor modulation
+• IVF (avoid excess volume — ascites risk); diuretics for symptomatic ascites; serial abdominal girths
+• Hold nephrotoxic drugs; adjust calcineurin inhibitor levels
+• Prophylaxis: ursodiol 300mg TID (day -14 to day +90; reduces SOS incidence)
+CMV:
+• Universal prophylaxis (CMV R+): letermovir 480mg PO/IV qday (dose: 240mg if with cyclosporine) × day +14 to +100 (or +200 for high risk)
+• Pre-emptive therapy (CMV R−/D+, or CMV PCR >150 IU/mL): ganciclovir 5mg/kg IV q12h or valganciclovir 900mg PO BID for 2 weeks; then 5mg/kg IV qday (for 7-21 additional days); monitor CMV PCR weekly
+INFECTION PROPHYLAXIS (post-allo):
+• Bacterial: ciprofloxacin 500mg BID or levofloxacin 500mg qday (day -1 to ANC >500)
+• Antifungal: micafungin 50mg IV qday or voriconazole 200mg BID (day -1 to day +75, or until off steroids)
+• HSV/VZV: acyclovir 400mg BID (day -1 to +365 post-allo; lifetime if chronic GVHD or ongoing IS)
+• PJP: TMP-SMX 1 DS tab PO BID (day +30 to +180 minimum; continue until off immunosuppression); dapsone or atovaquone if sulfa allergy
+• Vaccinations: restarted at day +12 months (post-transplant vaccination schedule per NCCN/IDSA)
+NEUTROPENIC ENTEROCOLITIS (TYPHLITIS):
+• Broad-spectrum antibiotics: piperacillin-tazobactam vs cefepime + metronidazole; add antifungal coverage if fevers >72h
+• Surgery consultation: perforation or severe progressive disease
+• Bowel rest + IVF; analgesics; add Clostridioides difficile treatment if PCR positive`,
+    monitoring: `• CBC + differential daily until engraftment (ANC); then per clinical status
+• Chimerism (engraftment testing): day +30, +60, +100; falling donor chimerism → graft failure or relapse
+• CMV PCR: weekly × 100 days post-allo; bi-weekly if receiving letermovir
+• Tacrolimus level: 3× per week during dose adjustment; weekly when stable; target 5-15 ng/mL
+• LFTs + BMP daily during induction/post-transplant period; weight daily (SOS detection)
+• GVHD assessment: skin (BSA%), GI (stool volume 24h), liver (daily bili) — formal grading tool in Epic`,
+    disposition: `• BMT/HSCT Service: all inpatient transplant complications — dedicated service at MGH (Daniel Ikeda attending service); direct admissions to BMT unit when possible
+• ICU: severe acute GVHD Grade IV (respiratory failure, GI hemorrhage), SOS/VOD with hepatic failure, CMV pneumonitis with respiratory failure, invasive fungal infection with hemodynamic compromise
+• GI (endoscopy): GVHD staging — colonoscopy + biopsy for Grade ≥2 GI GVHD; urgent if GI hemorrhage
+• Ophthalmology: cGVHD dry eyes (sicca syndrome) — artificial tears, cyclosporine eye drops, scleral lenses`
+  },
+
+  {
+    id: "solid-tumors",
+    system: "onc",
+    title: "Solid Tumors — Inpatient Approach (Breast / Lung / GI / Melanoma)",
+    keywords: ["solid tumor","breast cancer","lung cancer","colorectal cancer","pancreatic cancer","melanoma","prostate cancer","NSCLC","SCLC","EGFR","ALK","PD-L1","BRCA","HER2","hormone receptor","tamoxifen","aromatase inhibitor","cancer staging","tumor markers","unknown primary"],
+    source: { chapter: "Oncology", section: "Solid Organ Malignancies", pages: "146–147", authors: "Emma Kurz, Adam Gross",
+      keyFacts: [
+        "NSCLC molecular testing mandatory before systemic therapy: EGFR (osimertinib 1st-line), ALK/ROS1 (alectinib), BRAF V600E (dabrafenib+trametinib), KRAS G12C (sotorasib), NTRK (larotrectinib), MET exon14 skip, RET (selpercatinib), PD-L1 (pembrolizumab ± chemo) — obtain before initiating first-line therapy",
+        "Breast cancer subtypes drive treatment: ER/PR+ → endocrine therapy (tamoxifen or aromatase inhibitor ± CDK4/6 inhibitor); HER2+ → trastuzumab-based regimens; Triple negative (TNBC) → chemotherapy ± pembrolizumab ± PARP inhibitor (BRCA1/2)",
+        "Colorectal cancer: MSI-H/dMMR → pembrolizumab (first-line metastatic; NEJM 2020 KEYNOTE-177); RAS wild-type → add anti-EGFR (cetuximab or panitumumab); BRAF V600E → encorafenib + cetuximab; KRAS/NRAS mutated → no anti-EGFR",
+        "Unknown primary: CT C/A/P + PET; biopsy with IHC; CK7/CK20 pattern; SPEP/SFLC; tumor markers (PSA for prostate, AFP/β-hCG for germ cell, CA-125 for ovarian, CEA for colorectal, CA 19-9 for pancreatic); next-generation sequencing (NGS) for targeted therapy",
+        "Inpatient solid tumor admission common reasons: cancer-related pain, malignant bowel obstruction, malignant pleural/pericardial effusion, spinal cord compression, hypercalcemia of malignancy, chemotherapy toxicity"
+      ]
+    },
+    assessment: `#Solid Tumor — Inpatient Assessment
+Primary cancer type: *** | Histology: *** | Stage at diagnosis: *** | Date of diagnosis: ***
+Current stage (restaged): *** | Metastatic sites: ***
+Molecular/biomarkers: ***
+  Breast: ER ***% / PR ***% / HER2 *** / Ki67 *** / BRCA1/2 mutation ***
+  Lung: EGFR *** / ALK *** / ROS1 *** / KRAS *** / PD-L1 TPS ***% / BRAF *** / MET ***
+  Colon: MSI/MMR status *** / KRAS *** / NRAS *** / BRAF ***
+  Other: ***
+Current treatment regimen: *** | Cycle: *** | Last treatment: ***
+Performance status: ECOG *** (0=fully active; 1=restricted; 2=ambulatory >50% awake; 3=limited; 4=bedridden)
+INPATIENT REASON:
+[ ] Cancer-related pain  [ ] Febrile neutropenia  [ ] Chemotherapy toxicity: ***
+[ ] Malignant effusion (pleural [ ] / pericardial [ ] / peritoneal [ ])
+[ ] Bowel obstruction  [ ] MESCC  [ ] Hypercalcemia (Ca: ***)
+[ ] New metastatic disease  [ ] Unknown primary workup
+Tumor markers: CEA *** / CA 19-9 *** / CA-125 *** / PSA *** / AFP *** / β-hCG ***`,
+    ddx: `BREAST CANCER (SUBTYPES DRIVE TREATMENT):
+HR+ HER2− (65% of breast cancer): indolent; endocrine therapy backbone; CDK4/6 inhibitors (palbociclib, ribociclib, abemaciclib) + AI/fulvestrant doubled PFS in metastatic disease (MONARCH, PALOMA, MONALEESA trials)
+HER2+ (20%): aggressive; trastuzumab + pertuzumab + taxane (THP) first-line metastatic; T-DM1 or tucatinib for relapsed; ADC fam-trastuzumab deruxtecan (T-DXd) for HER2-low metastatic
+Triple Negative (TNBC, 15%): most aggressive; pembrolizumab + chemo if PD-L1 CPS ≥10; olaparib/talazoparib if BRCA1/2 mutation; capecitabine adjuvant after neoadjuvant non-response
+LUNG CANCER:
+NSCLC (84%): adeno >> SCC >> large cell; molecular profiling BEFORE treatment — all targetable alterations have approved agents; EGFR exon 19/21 most common (35% Asian, 12% white) → osimertinib 80mg qday (FLAURA trial) longest duration; immunotherapy (PD-L1 ≥50% → pembrolizumab first-line; PD-L1 <50% → chemo+IO)
+SCLC (13%): limited (confined to ipsilateral hemithorax) → surgery/chemoRT ± prophylactic cranial irradiation; extensive → chemo + atezolizumab or durvalumab; para-neoplastic syndromes common (SIADH, Lambert-Eaton, ectopic ACTH, antibodies)
+COLORECTAL CANCER (CRC):
+Molecular testing essential: MSI-H/dMMR (15% of CRC) → pembrolizumab 1st-line metastatic; KRAS/NRAS wild-type → add anti-EGFR; BRAF V600E (10%) → encorafenib + cetuximab; HER2 amp → tucatinib + trastuzumab
+Adjuvant chemo: Stage III + high-risk Stage II → FOLFOX or CAPOX × 6 months; oxaliplatin peripheral neuropathy is dose-limiting
+PANCREATIC CANCER:
+Mostly unresectable at diagnosis (80%); median OS 6-11 months metastatic; FOLFIRINOX (fitter patients) or gem + nab-paclitaxel; BRCA1/2 germline → olaparib maintenance (POLO trial); MSI-H → pembrolizumab; NTRK fusion → TRK inhibitors; KRAS G12D mutation → RAS-targeted therapy (active trials)
+MELANOMA:
+Localized (Stage I-II): wide excision; sentinel LN biopsy for >T1b; adjuvant pembrolizumab/nivolumab for Stage III-IV after resection
+Metastatic: BRAF V600E (50%) → dabrafenib + trametinib (BRAF/MEK inhibition) with rapid response; immunotherapy: ipi + nivo (CHECKMATE 067) or pembrolizumab/nivolumab; brain mets → SRS ± systemic therapy
+CANCER OF UNKNOWN PRIMARY (CUP):
+• CK7+/CK20−: lung, breast, ovarian, thyroid, cholangiocarcinoma
+• CK7−/CK20+: colorectal cancer; CK7+/CK20+: urothelial, gastric, pancreatic
+• Favorable subsets: peritoneal carcinomatosis (treat as ovarian), axillary adenopathy in woman (treat as breast), PSA+ (treat as prostate), AFP/β-hCG+ (treat as germ cell)
+• NGS molecular profiling: identifies targetable alterations and tissue of origin (Caris, Foundation One)`,
+    workup: `INPATIENT SOLID TUMOR WORKUP:
+New diagnosis / staging:
+• CT C/A/P with IV contrast (staging, identify biopsy site); PET/CT for lymphoma/selected solid tumors; MRI brain for NSCLC/melanoma/breast staging
+• Biopsy of most accessible site: preserve adequate tissue for IHC + NGS molecular profiling
+• Tumor markers: CEA (CRC/lung/breast), CA 19-9 (pancreas), CA-125 (ovarian), AFP + β-hCG (germ cell/HCC), PSA (prostate), LDH (melanoma, lymphoma)
+• NGS (next-generation sequencing): FoundationOne CDx, Guardant360 (liquid biopsy) — sends from Oncology; identifies targetable mutations and guides systemic therapy
+• Germline genetic testing: BRCA1/2 (breast/ovarian/pancreatic/prostate), Lynch syndrome (CRC/endometrial), hereditary syndromes
+MOLECULAR TESTING FOR LUNG CANCER (required before 1st-line systemic therapy):
+• EGFR, ALK, ROS1, BRAF, NTRK1/2/3, MET exon 14 skip, RET, KRAS G12C, PD-L1 (TPS %)
+• Can run as NGS panel (FoundationOne) rather than individual tests; liquid biopsy (Guardant360) for insufficient tissue
+MALIGNANT EFFUSIONS:
+• Pleural: thoracentesis (cytology + cell count + protein/LDH/pH/glucose); cytology positive in 60-70% first tap; repeat if malignant cells found
+• Pericardial: pericardiocentesis (echo-guided); cytology; drain vs. pericardiectomy for recurrent malignant pericarditis
+• Peritoneal (ascites): paracentesis (cytology + cell count + albumin/protein; SAAG <1.1 = malignant effusion)
+HYPERCALCEMIA OF MALIGNANCY:
+• PTH (suppressed), PTHrP (elevated in HHM), 1,25-OH2D (lymphoma), SPEP/SFLC (myeloma)
+• See Calcium Disorders and Oncologic Emergencies templates for management`,
+    management: `COMMON INPATIENT SOLID TUMOR MANAGEMENT:
+MALIGNANT BOWEL OBSTRUCTION (MBO):
+• NG tube decompression; IVF; bowel rest; pain management (morphine/hydromorphone)
+• Octreotide 200-400 mcg SQ TID or 25-50 mcg/h IV (reduces GI secretions → symptom relief without surgery)
+• Dexamethasone 4-8mg IV BID (reduces peritumoral edema); anti-emetics (metoclopramide, haloperidol)
+• Surgery: if patient has good performance status, localized obstruction, proximal obstruction; palliative stenting as alternative
+• Medical management preferred for distal/diffuse obstruction with poor prognosis
+MALIGNANT PLEURAL EFFUSION:
+• Therapeutic thoracentesis: first episode, diagnostic, symptomatic relief
+• Tunneled pleural catheter (PleurX): for recurrent symptomatic malignant effusions; outpatient drainage; preferred for poor performance status
+• Pleurodesis (talc): chemical sclerosis; requires lung re-expansion; for good performance status patients with life expectancy >3 months
+MALIGNANT PERICARDIAL EFFUSION:
+• Pericardiocentesis: echo-guided for diagnosis + relief; cytology
+• Pericardial window: surgical for recurrent malignant pericardial effusion; prevents tamponade
+• Systemic therapy: treat underlying malignancy
+NAUSEA/VOMITING — CHEMOTHERAPY-INDUCED (CINV):
+High-emetogenic risk (cisplatin, AC regimen, cyclophosphamide >1.5g/m²): triple therapy: 5-HT3 antagonist (ondansetron 8mg or granisetron) + NK1 antagonist (aprepitant 125mg day 1 then 80mg days 2-3 or fosaprepitant 150mg day 1) + dexamethasone 12mg
+Moderate-emetogenic risk: 5-HT3 antagonist + dexamethasone; add olanzapine or aprepitant if break-through
+Low/minimal risk: dexamethasone or prochlorperazine PRN
+Breakthrough CINV: olanzapine 10mg PO qHS (highly effective; NEJM 2016 — olanzapine ≥ metoclopramide for breakthrough); lorazepam for anticipatory nausea; prochlorperazine/haloperidol for maintenance
+CANCER PAIN: see Palliative Care template; multimodal approach; palliative radiation for bone pain
+MALIGNANCY-ASSOCIATED VTE: see Anticoagulation Management template; DOAC preferred (apixaban/rivaroxaban) except GI/GU tumors → LMWH`,
+    monitoring: `• Tumor markers: every 1-3 cycles (CEA, CA 19-9, CA-125, AFP, β-hCG as appropriate to histology)
+• CT C/A/P restaging: every 2-3 cycles for metastatic disease; MRI brain if CNS involvement
+• Cardiac monitoring: echocardiogram before and during anthracyclines (HER2-positive breast) and trastuzumab
+• Peripheral neuropathy: CIPN grading (oxaliplatin in CRC, taxanes in breast/lung) — grade ≥2 → dose reduce or hold
+• Bone marrow suppression: CBC before each cycle; dose reductions/growth factors per protocol`,
+    disposition: `• Oncology/Hematology-Oncology: all solid tumor admissions; coordinate with outpatient Oncology team for treatment decisions
+• Interventional Radiology: CT-guided biopsy of inaccessible lesions, tunneled pleural catheter placement (PleurX), pericardiocentesis
+• Radiation Oncology: palliative radiation for bone pain, MESCC, brain mets, hemostasis (GI bleeding from tumor)
+• Surgery: malignant bowel obstruction (selected cases), pericardial window, palliative resection`
+  },
+
+  // ════════════════════ RHEUMATOLOGY TEMPLATES ════════════════════
+
+  {
+    id: "septic-arthritis-gout",
+    system: "rheum",
+    title: "Approach to Arthritis (Gout / CPPD / Septic / RA / OA / SpA)",
+    keywords: ["septic arthritis","gout","CPPD","pseudogout","crystal arthropathy","arthrocentesis","synovial fluid","colchicine","allopurinol","febuxostat","rheumatoid arthritis","RF","anti-CCP","osteoarthritis","spondyloarthritis","ankylosing spondylitis","psoriatic arthritis","reactive arthritis","joint aspiration","uric acid","podagra"],
+    source: { chapter: "Rheumatology", section: "Arthritis", pages: "162–164", authors: "Maxwell Green, Alec Ohanian",
+      keyFacts: [
+        "Septic arthritis: arthrocentesis BEFORE antibiotics if possible; synovial WBC 50,000-150,000/µL + PMN predominance + Gram stain/culture; empiric vancomycin + ceftriaxone; urgent orthopedic consult for joint washout",
+        "Gout: GOLD STANDARD = arthrocentesis showing negatively birefringent needle-shaped MSU crystals; ACR-EULAR criteria if aspiration not feasible; acute flare → colchicine 1.2mg then 0.6mg 1h later OR NSAIDs OR prednisone; do NOT stop urate-lowering therapy during acute attack",
+        "Urate-lowering therapy indications: ≥2 gout attacks/year, disabling attacks, tophi, or radiographic erosions; allopurinol first-line (start low, titrate to serum uric acid <6 mg/dL); febuxostat if allopurinol intolerant; check HLA-B*5801 in SE Asian/Black patients (allopurinol SJS/TEN risk)",
+        "CPPD (pseudogout): positively birefringent rhomboid calcium pyrophosphate crystals; knee and wrist most common; chondrocalcinosis on X-ray; treat acute flare same as gout (colchicine, NSAIDs, steroids); check metabolic causes (hyperPTH, hemochromatosis, hypoMg, hypoP)",
+        "Rheumatoid Arthritis: symmetric small joint polyarthritis (MCP/PIP/wrists) + AM stiffness >30 min; RF + anti-CCP (anti-CCP more specific for RA); MTX first-line DMARD; add biologic (anti-TNF/abatacept/tocilizumab) or JAKi if inadequate response"
+      ]
+    },
+    assessment: `#Arthritis Assessment
+Pattern: [ ] Monoarthritis (1 joint)  [ ] Oligoarthritis (2-4)  [ ] Polyarthritis (≥5)
+Distribution: symmetric [ ] / asymmetric [ ] | Joints: ***
+Acuity: [ ] Acute (hours-days)  [ ] Subacute (weeks)  [ ] Chronic (months-years)
+AM stiffness: <30 min [ ] (OA/crystal) / >30 min [ ] (inflammatory: RA/SpA) / improved with activity [ ] (SpA)
+INFLAMMATORY vs MECHANICAL: fever [ ] / warm/swollen joints [ ] / elevated ESR/CRP [ ] / worse with rest [ ]
+SEPTIC ARTHRITIS SCREEN: fever [ ] / WBC elevated [ ] / single hot swollen joint [ ] / recent bacteremia [ ]
+  → Arthrocentesis STAT (before antibiotics if possible): [ ] Ordered  [ ] Done
+  Synovial WBC: *** | PMN: ***% | Gram stain: *** | Culture: ***
+CRYSTAL ARTHROPATHY: uric acid: *** | prior gout diagnosis [ ] | chondrocalcinosis on XR [ ]
+RA SCREEN: RF: *** | anti-CCP: *** | morning stiffness >30 min [ ] | symmetric small joints [ ]
+SpA SCREEN: inflammatory back pain [ ] / enthesitis [ ] / dactylitis [ ] / skin psoriasis [ ] / uveitis [ ] / IBD [ ]
+Current medications: *** | Allergies: ***`,
+    ddx: `ACUTE MONOARTHRITIS — MUST RULE OUT:
+1. Septic (pyogenic) bacterial arthritis: staphylococci/streptococci/GNR; immunocompromised + RA = higher risk; WBC >50,000 (often 100,000+); Gram stain + culture gold standard; risk in prosthetic joints; do NOT delay washout
+2. Gout: urate crystals; 1st MTP (podagra), ankle, knee; WBC 10,000-100,000 (can mimic septic); triggers: purine-rich foods, diuretics, illness, alcohol, contrast, initiation of urate-lowering therapy, trauma
+3. CPPD (calcium pyrophosphate deposition): positively birefringent rhomboid crystals; knee/wrist most common; often oligo; chondrocalcinosis on XR; crowning sign on knee US/CT
+4. Hemarthrosis: blood on arthrocentesis; trauma, anticoagulation, hemophilia, pigmented villonodular synovitis (PVNS)
+5. Reactive arthritis (formerly Reiter syndrome): asymmetric oligoarthritis 1-4 weeks after GU (Chlamydia) or GI (Salmonella, Shigella, Campylobacter, Yersinia) infection; "can't see, can't pee, can't climb a tree"
+SYNOVIAL FLUID INTERPRETATION:
+• Normal: WBC <200, <25% PMN, clear
+• Non-inflammatory (OA, trauma): WBC 200-2,000, <25% PMN, yellow, viscous
+• Inflammatory (RA, crystal, reactive): WBC 2,000-75,000, >50% PMN, cloudy, low viscosity
+• Septic: WBC >50,000 (often >100,000), >75% PMN, turbid, + culture (negative Gram stain does not rule out infection)
+• Crystal: identify under polarized light — gout (negative birefringence, needle) vs CPPD (positive birefringence, rhomboid)
+CHRONIC ARTHRITIS DDx:
+• Rheumatoid arthritis (RA): symmetric, small joint, destructive; RF/anti-CCP; extra-articular (nodules, ILD, scleritis, pericarditis, vasculitis)
+• Spondyloarthritis (SpA): HLA-B27 associated; inflammatory back pain; enthesitis; asymmetric oligoarthritis; subtypes: ankylosing spondylitis (AS), psoriatic arthritis (PsA), reactive arthritis, IBD-associated
+• Osteoarthritis (OA): asymmetric, weight-bearing joints (knee/hip/spine) + DIP/PIP/1st CMC; Heberden's (DIP) and Bouchard's (PIP) nodes; XR: joint space narrowing, osteophytes, sclerosis, subchondral cysts
+• Crystalline arthropathy (chronic tophaceous gout): tophi (ears, olecranon, feet); erosive joint disease
+• Palindromic rheumatism: episodic acute mono/oligo without erosive damage; may progress to RA
+• Hemochromatosis arthropathy: MCP2/3 (hook osteophytes); check ferritin/transferrin sat; associated with CPPD`,
+    workup: `ARTHROCENTESIS (joint aspiration) — cornerstone of acute arthritis workup:
+• Send: cell count + differential, Gram stain + culture, crystal analysis (polarized microscopy)
+• Technique: sterile field; image-guided (US) for hip, shoulder, small joints; send simultaneously with blood cultures if septic arthritis suspected
+• Normal cell count does not rule out septic arthritis in early infection
+INFLAMMATORY ARTHRITIS LABS:
+• CBC with differential, ESR/CRP (systemic inflammation), BMP, LFTs (drug monitoring)
+• RF (IgM) + anti-CCP (both for RA; anti-CCP more specific); ANA (connective tissue disease screen if clinical features)
+• Uric acid: >6.8 mg/dL associated with gout; normal level does NOT rule out acute gout flare
+• HLA-B27: positive in ~90% of AS; 60-70% of reactive arthritis; ordered by Rheumatology
+• Calcium, PTH, TSH, iron studies (hemochromatosis): screen for secondary causes of CPPD
+IMAGING:
+• X-ray (joint): bony erosions (RA/gout), joint space narrowing (OA), chondrocalcinosis (CPPD); XR often normal early in inflammatory arthritis
+• MRI: erosions/synovitis (RA), sacroiliitis (SpA, more sensitive than plain film), avascular necrosis
+• Ultrasound: tophus detection, synovitis, effusion, guided aspiration; "double contour sign" for gout; "snowstorm" for CPPD
+• CT dual-energy (DECT): confirms MSU crystal deposition; useful when arthrocentesis not feasible`,
+    management: `SEPTIC ARTHRITIS:
+• Empiric antibiotics: vancomycin 15-20mg/kg IV q8-12h (Gram-positive coverage including MRSA) + ceftriaxone 1-2g IV q24h (Gram-negative coverage)
+• Gonococcal arthritis: ceftriaxone 1g IV/IM qday ×7-14 days; GU NAAT + blood/joint cultures; treat partner
+• Orthopedic surgery URGENT: joint washout (arthroscopic or open); drain daily if closed aspiration approach
+• Duration: 3-4 weeks for most; 4-6 weeks for prosthetic joint infection or osteomyelitis
+• Prosthetic joint infection: ID + orthopedic surgery; DAIR (debridement, antibiotics, implant retention) vs 2-stage exchange per ID/Ortho
+ACUTE GOUT:
+• Arthrocentesis for definitive diagnosis if first presentation; remove as much fluid as possible (reduces pressure and crystals)
+• Colchicine 1.2mg PO × 1, then 0.6mg 1h later, then 0.6mg BID (continue 2-3 days after resolution); renally dose; reduce if CYP3A4/P-glycoprotein inhibitors (clarithromycin, diltiazem)
+• NSAIDs: naproxen 500mg BID or indomethacin 50mg TID ×5-7 days (avoid if CKD, GI risk, CHF, on anticoagulation)
+• Prednisone 40mg PO qday until resolved then taper over 5-7 days (good alternative if colchicine/NSAIDs contraindicated)
+• Intra-articular steroids: triamcinolone 10-40mg into affected joint (1-2 joint disease)
+• Anti-IL-1 (anakinra, canakinumab): if above contraindicated; expensive
+• DO NOT stop allopurinol/urate-lowering therapy during acute attack (destabilizes tissue stores)
+CHRONIC GOUT (urate-lowering therapy — start when flare resolved, with colchicine prophylaxis):
+Indications: ≥2 attacks/year, disabling attacks, tophi, radiographic erosions, CKD stage ≥3
+• Allopurinol first-line: start 100mg qday → titrate by 100mg every 2-4 weeks (target uric acid <6 mg/dL); max 800mg/day (300-400mg most tolerated); renally dose; check HLA-B*5801 in East/Southeast Asian and Black patients before starting (SJS/TEN risk)
+• Febuxostat (Uloric) 40-80mg qday: alternative if allopurinol-intolerant; caution in CAD/cerebrovascular disease (FDA warning)
+• Prophylaxis during ULT initiation: colchicine 0.6mg qday × 3-6 months (prevents mobilization flares)
+• Dietary counseling: reduce purine-rich foods (red meat, organ meats, shellfish), alcohol (especially beer), fructose; encourage hydration
+• Pegloticase (Krystexxa) IV q2 weeks: severe refractory tophaceous gout; uricolyic enzyme; check G6PD first; insurance/specialist required
+CPPD:
+• Acute flare: same as gout (colchicine, NSAIDs, or intra-articular/systemic steroids); aspiration alone may reduce pain
+• Chronic: no disease-modifying therapy; colchicine 0.6mg qday for prophylaxis; NSAIDs
+• Screen for secondary metabolic causes: hemochromatosis, hyperPTH, hypoMg, hypoPhos, hypothyroidism — treat underlying cause
+RA MANAGEMENT:
+• Prednisone or NSAIDs: bridge during acute flare or DMARD initiation
+• MTX (methotrexate) first-line DMARD: 10-25mg PO/SQ weekly; add folic acid 1mg daily (reduces toxicity); titrate based on disease activity
+• Combination DMARDs: MTX + hydroxychloroquine + sulfasalazine (triple therapy) if inadequate response to MTX alone
+• Biologics (if insufficient response to ≥1 DMARD): anti-TNF first-line (etanercept, adalimumab, infliximab, certolizumab, golimumab); abatacept (T-cell co-stimulation blocker); tocilizumab/sarilumab (anti-IL6); rituximab (for seropositive RA)
+• JAK inhibitors (tofacitinib, baricitinib, upadacitinib, filgotinib): oral; used after DMARD failure; cardiovascular/thromboembolic risk monitoring required (FDA box warning)
+OA MANAGEMENT:
+• Non-pharmacologic: PT, exercise (Tai Chi, aquatic), weight loss, assistive devices, braces
+• Topical NSAIDs (diclofenac gel): preferred for knee/hand OA; less systemic risk
+• Oral NSAIDs (ibuprofen, naproxen, celecoxib): short-term for moderate symptoms; GI/cardiovascular/renal risk
+• Intra-articular steroids: knee, hip, shoulder; effect 4-12 weeks; limit to 3-4 per year per joint
+• Intra-articular hyaluronic acid: modest benefit for knee OA; most benefit for mild-moderate OA
+• Duloxetine: for widespread OA pain with central sensitization
+• Orthopedic referral: for severe OA with functional limitation and inadequate medical management
+SpA (ANKYLOSING SPONDYLITIS, PSORIATIC ARTHRITIS):
+• NSAIDs (first-line AS): full-dose naproxen or indomethacin; continuous use slows radiographic progression
+• Physical therapy: critical for AS — extension exercises, posture; pool therapy
+• TNF inhibitors (severe AS or axSpA after NSAID failure): adalimumab, etanercept, infliximab, golimumab, certolizumab; rapidly effective for axial disease; imaging surveillance (MRI SI joints)
+• IL-17 inhibitors (secukinumab, ixekizumab): first-line for axSpA; preferred for psoriasis-dominant PsA; avoid in IBD-associated SpA
+• IL-23 inhibitors (guselkumab, risankizumab): PsA; avoid in axSpA with MRI inflammation
+• JAK inhibitors (tofacitinib, upadacitinib): for PsA and axSpA; oral; after biologic failure`,
+    monitoring: `• Septic arthritis: joint exam and WBC daily; repeat arthrocentesis if clinical deterioration; inflammatory markers (ESR/CRP) trend
+• Gout urate-lowering therapy: serum uric acid every 2-4 weeks during dose titration; target <6 mg/dL (consider <5 mg/dL for tophaceous disease); CBC + renal function every 3-6 months
+• RA/DMARDs: CBC + CMP every 3-6 months (MTX, leflunomide); LFTs (MTX, leflunomide); ophthalmology annually (hydroxychloroquine — retinopathy screening); DAS28 or CDAI disease activity scores
+• Biologics: TB screening (IGRA or TST) before initiation; hepatitis B serology; live vaccines contraindicated with biologics; JAKi: lipid panel + CBC monitoring`,
+    disposition: `• Rheumatology consult: all suspected new inflammatory arthritis (RA, SpA, CTD), complex crystal arthropathy, rheumatoid disease exacerbation, biologic/DMARD initiation or toxicity
+• Orthopedic surgery: septic arthritis (urgent washout), prosthetic joint infection, severe OA requiring joint replacement
+• ID consult: prosthetic joint infection, septic arthritis with MRSA or unusual organisms, immunocompromised host with septic arthritis`
+  },
+
+  {
+    id: "inflammatory-arthritis",
+    system: "rheum",
+    title: "Connective Tissue Diseases (SLE / Sjogren's / Scleroderma / Myositis)",
+    keywords: ["SLE","lupus","systemic lupus erythematosus","Sjogren syndrome","systemic sclerosis","scleroderma","myositis","dermatomyositis","polymyositis","MCTD","connective tissue disease","ANA","anti-dsDNA","anti-Smith","anti-RNP","Ro La","SCL-70","hydroxychloroquine","MMF lupus","cyclophosphamide lupus","lupus nephritis","Raynaud","interstitial lung disease CTD"],
+    source: { chapter: "Rheumatology", section: "Connective Tissue Diseases / Vasculitis / Medications", pages: "164–169", authors: "Heba Altarawneh, Maxwell Green",
+      keyFacts: [
+        "SLE: ANA >95% sensitive (not specific — false positives common); anti-dsDNA (~70%, specific, correlates with activity/nephritis); anti-Sm (30%, highly specific for SLE, remains elevated in remission); C3/C4 consumption in active disease (especially nephritis); all SLE patients on hydroxychloroquine (reduces flares, thrombosis, mortality)",
+        "Lupus nephritis: anti-dsDNA + ↓C3/C4 + proteinuria/hematuria → kidney biopsy; Class III/IV (proliferative) → induction with MMF 2-3g/day + prednisone OR cyclophosphamide IV; maintenance with MMF + hydroxychloroquine; belimumab and voclosporin as adjuncts",
+        "Systemic sclerosis (SSc): Raynaud's present in almost all; anti-centromere (limited/CREST); anti-Scl70/topoisomerase I (diffuse, a/w ILD); anti-RNA polymerase III (diffuse, a/w renal crisis); scleroderma renal crisis → captopril (ACEi — NOT ARB)",
+        "Inflammatory myopathy (DM/PM): CK markedly elevated; anti-Jo-1 (antisynthetase syndrome — myositis + ILD + mechanic's hands); MDA-5 (clinically amyopathic DM, rapidly progressive ILD); HMGCR (statin-associated immune necrotizing myopathy — IMNM — does not improve with statin discontinuation); TIF1γ (DM with malignancy association)",
+        "Sjogren's syndrome: sicca (dry eyes/mouth) + Ro/SS-A + La/SS-B antibodies; extraglandular: arthritis, fatigue, peripheral neuropathy, lymphoma risk (MALT lymphoma 5-10×); parotid swelling; hydroxychloroquine + pilocarpine for sicca; rituximab for severe extraglandular"
+      ]
+    },
+    assessment: `#Connective Tissue Disease Assessment
+DISEASE:
+[ ] SLE  [ ] Sjogren's  [ ] SSc (diffuse / limited/CREST)  [ ] DM/PM  [ ] MCTD  [ ] UCTD  [ ] Overlap
+Presenting features: *** | Duration: ***
+SEROLOGIES (order ANA first; if positive, reflex to disease-specific antibodies):
+ANA: *** (titer *** / pattern: ***)
+If ANA positive:
+  SLE panel: anti-dsDNA *** / anti-Sm *** / anti-RNP *** / anti-Ro(SSA) *** / anti-La(SSB) ***
+  C3: *** / C4: *** (↓ = active lupus/immune complex consumption)
+  APLAS: lupus anticoagulant *** / anti-cardiolipin *** / anti-β2GP1 ***
+  SSc panel: anti-Scl70 *** / anti-centromere *** / anti-RNApol III ***
+  Myositis panel: CK *** / aldolase *** / anti-Jo-1 *** / MDA-5 *** / HMGCR *** / TIF1γ ***
+ORGAN INVOLVEMENT:
+Renal: UA (proteinuria: *** / RBC/casts: ***) | 24h urine protein: *** | Cr: ***
+Pulm: CXR *** | CT chest: *** | PFTs + DLCO: *** (ILD screen)
+Cardiac: EKG *** | echo (pericarditis/PAH): ***
+Heme: CBC (cytopenia: ***)
+Current immunosuppression: *** | Side effects: ***`,
+    ddx: `SLE CLINICAL MANIFESTATIONS (SLICC 2012 / ACR-EULAR 2019 criteria):
+Constitutional: fever, fatigue, weight loss (common; r/o infection/malignancy as precipitant)
+Skin: malar rash (butterfly, spares nasolabial folds), discoid lupus (scarring), photosensitivity, oral/nasal ulcers (usually painless), alopecia, livedo reticularis, Raynaud's
+Musculoskeletal: non-erosive arthritis (Jaccoud's arthropathy — reducible deformity without erosion)
+Renal: class I-V lupus nephritis; Class III/IV (proliferative) most severe → ESRD risk; Class V (membranous) → nephrotic syndrome; Class I/II mild
+Hematologic: hemolytic anemia (positive DAT), leukopenia <4,000, lymphopenia <1,000, thrombocytopenia <100k
+Neuropsychiatric: seizures, psychosis, cerebral vasculitis, mononeuritis multiplex, transverse myelitis, cognitive impairment
+Serositis: pleuritis, pericarditis (pleuritic chest pain, pericardial rub)
+Vascular: venous/arterial thrombosis (APLAS coexistence in 15-30%)
+SLE FLARE vs INFECTION: critical distinction (infection mimics lupus flare); both cause fever + cytopenias; fever in lupus is typically low grade; infection should be excluded before increasing immunosuppression
+SJOGREN'S SYNDROME:
+Primary Sjogren's: sicca syndrome without underlying CTD; Ro/SS-A (75%) + La/SS-B (50%)
+Secondary Sjogren's: complicates RA, SLE, SSc; more common than primary
+Extraglandular: fatigue, arthralgia/arthritis, peripheral neuropathy (sensory), interstitial nephritis (RTA Type 1), hypergammaglobulinemia, cryoglobulinemia, lymphoma (5-10× increased MALT lymphoma risk)
+SYSTEMIC SCLEROSIS (SCLERODERMA):
+Limited SSc (CREST): Calcinosis cutis, Raynaud's, Esophageal dysmotility, Sclerodactyly, Telangiectasias; anti-centromere antibody; PAH most common complication
+Diffuse SSc: widespread skin thickening (proximal and distal limbs + trunk); anti-Scl70 (topoisomerase I) → ILD risk; anti-RNA polymerase III → diffuse rapid skin progression + renal crisis risk; scleroderma renal crisis in 10%
+Raynaud's phenomenon: vasospasm → color change (white → blue → red); ALL SSc patients; protect from cold; nifedipine first-line; phosphodiesterase-5 inhibitors (sildenafil) for severe digital ischemia
+SSc ILD (40-60% of diffuse): CT shows UIP or NSIP pattern; PFTs + DLCO; MMF (first-line) or CYC (both NEJM 2006 for CYC; SENSCIS trial 2019 for nintedanib); TOT (treprostinil for PAH-SSc)
+Scleroderma renal crisis: sudden hypertension (often severe) + AKI in diffuse SSc; captopril or enalapril IV/PO immediately; do NOT use ARBs; avoid ACEi prophylactically (may worsen prognosis if used before crisis)
+INFLAMMATORY MYOPATHY (DM/PM/IMNM/IBM):
+Dermatomyositis (DM): proximal muscle weakness + skin findings (heliotrope rash periorbital, Gottron's papules over MCP/PIP, V-sign on chest, shawl sign on back, mechanic's hands); anti-MDA-5 (amyopathic DM + rapidly progressive ILD)
+Polymyositis (PM): proximal weakness without skin findings; diagnosis of exclusion (rule out IBM, IMNM, metabolic myopathy)
+Immune-mediated necrotizing myopathy (IMNM): very high CK; statin-associated (HMGCR antibody); does NOT resolve with statin discontinuation (unlike statin myopathy); steroid-dependent; IVIG often needed
+Inclusion body myositis (IBM): most common myopathy in >50yo; finger flexors + knee extensors; NO response to steroids; anti-cN1A antibody
+Antisynthetase syndrome (anti-Jo-1/others): myositis + ILD + polyarthritis + mechanic's hands + Raynaud's + fever; poor prognosis for ILD
+Malignancy screening: DM (especially TIF1γ) warrants systematic cancer screen; PM requires age-appropriate screening`,
+    workup: `SLE WORKUP:
+• ANA (order first; if positive at ≥1:80, order specific antibodies)
+• Specific antibodies: anti-dsDNA, anti-Sm, anti-RNP, anti-Ro, anti-La; complement C3/C4 (low in active SLE, complement-consuming disease)
+• APLAS panel: lupus anticoagulant (send to coag lab, draw off anticoagulation if possible), anti-cardiolipin IgG/IgM, anti-β2GP1 IgG/IgM
+• UA + microscopy + urine protein:Cr ratio (lupus nephritis screening); 24h urine protein if nephrotic range
+• Kidney biopsy: if proteinuria >0.5g/day OR hematuria + proteinuria + active sediment + SLE — required for WHO class (guides treatment)
+• CBC + differential (cytopenias), BMP (renal), LFTs, ESR/CRP, ferritin
+SSc WORKUP:
+• ANA, anti-Scl70, anti-centromere, anti-RNA polymerase III
+• HRCT chest (ILD screen — recommended at diagnosis for diffuse SSc)
+• PFTs + DLCO (ILD and PAH — reduced DLCO early sign of PAH)
+• Echocardiogram: PAH screening (right heart catheterization for confirmation)
+• Barium swallow/esophageal manometry: esophageal dysmotility
+• Nailfold capillaroscopy: vascular pattern abnormalities (giant loops, avascular areas) — highly specific for CTD-associated Raynaud's
+MYOSITIS WORKUP:
+• CK (markedly elevated; 1000s-10,000s), aldolase, LDH, AST/ALT (can be elevated from muscle not liver)
+• Myositis-specific antibodies panel (Mayo or equivalent): Jo-1, MDA-5, Mi-2, TIF1γ, SRP, HMGCR, PL-7, PL-12, others
+• MRI muscle (STIR sequence): active myositis shows hyperintensity; guides biopsy site
+• EMG: myopathic changes (short duration, small amplitude MUPs, early recruitment); helps distinguish from neuropathy
+• Muscle biopsy: needed for definitive diagnosis in most cases
+• CT chest/abdomen/pelvis: ILD + malignancy screening (especially DM)
+• PFTs + DLCO: ILD screening (mandatory in antisynthetase syndrome and MDA-5)`,
+    management: `SLE MANAGEMENT:
+ALL SLE patients:
+• Hydroxychloroquine (HCQ) 200-400mg qday (5mg/kg/day max): backbone of ALL SLE therapy; reduces flares (50%), thrombosis, and mortality; annual ophthalmology (retinopathy screening); baseline EKG (QTc prolongation rare)
+• Sun protection: photosensitivity is universal; UVA/UVB-blocking sunscreen SPF 50+
+Mild-moderate (skin/joints/serositis): NSAIDs for serositis; topical/intralesional steroids for skin; methotrexate or azathioprine for steroid-sparing
+Moderate-severe: prednisone 0.5-1mg/kg/day for acute flares with taper; MTX, AZA (azathioprine), or MMF for steroid-sparing maintenance
+LUPUS NEPHRITIS (Class III/IV — proliferative):
+Induction: methylprednisolone 0.5-1g IV × 3 days → prednisone 0.5mg/kg/day + MMF 2-3g/day (preferred) OR IV CYC (NIH: 0.5-1g/m² monthly × 6); duration 6 months
+Adjuncts: belimumab (anti-BLyS) reduces relapse and need for CYC; voclosporin (calcineurin inhibitor) reduces proteinuria rapidly
+Maintenance (2+ years): MMF 1-2g/day + HCQ; azathioprine if MMF not tolerated; target: proteinuria <0.5g/day + stable renal function
+BIOLOGICS FOR SLE:
+• Belimumab (anti-BLyS, Benlysta): moderately active SLE despite HCQ + steroids; reduces flares; avoid in severe active nephritis/CNS SLE
+• Anifrolumab (anti-interferon receptor): musculoskeletal/cutaneous SLE; reduces flares; FDA approved 2021
+• Rituximab: for severe/refractory SLE (ANCA vasculitis, Class III/IV nephritis, cytopenias); off-label but widely used
+SSc MANAGEMENT:
+ILD: MMF 2-3g/day first-line (SENSCIS); nintedanib (anti-fibrotic, FDA approved for SSc-ILD); CYC for severe/progressive (NEJM 2006 SLS); tocilizumab may slow ILD progression
+PAH: endothelin receptor antagonists (ambrisentan, macitentan), PDE-5 inhibitors (sildenafil, tadalafil), prostacyclins (treprostinil, iloprost); combination; refer to PAH specialist
+Raynaud's: warm gloves, avoid cold; nifedipine 10-30mg TID; sildenafil for digital ulcers; IV epoprostenol for critical digital ischemia
+Esophageal dysmotility: PPI; prokinetics (metoclopramide); small frequent meals; elevate HOB
+Scleroderma renal crisis: captopril or enalapril (titrate aggressively); may require dialysis; do NOT use ARBs (less effective); some patients recover renal function after months on ACEi
+INFLAMMATORY MYOPATHY:
+Prednisone 1mg/kg/day: initial therapy; taper over months guided by CK + strength
+Steroid-sparing DMARDs: azathioprine 2-3mg/kg/day or MMF 2-3g/day; MTX 10-25mg weekly (avoid in ILD — pulmonary toxicity risk)
+Severe/refractory: rituximab (NEJM 2013 RIM trial); IVIG 2g/kg over 2-5 days (especially IMNM and DM); CYC if rapidly progressive ILD
+Statin-associated IMNM (HMGCR-positive): stopping statin does NOT resolve → requires immunosuppression (steroids + IVIG first-line)
+SJOGREN'S:
+Sicca symptoms: artificial tears (preservative-free) 4-6×/day; Restasis (cyclosporine 0.05% eye drops); pilocarpine 5mg QID (stimulates secretion; avoid in asthma/narrow angle glaucoma); sugar-free gum/lozenges; dental care (severe dental caries risk)
+Systemic: HCQ 400mg qday; prednisone for acute flares; rituximab for severe extraglandular (neuropathy, cryoglobulinemia, lymphoma)`,
+    monitoring: `• SLE: anti-dsDNA + C3/C4 every 3-6 months (↑dsDNA + ↓complement = predicts flare/nephritis); CBC, BMP, UA (monthly while on CYC; every 3-6 months on MMF/AZA); ophthalmology annually (HCQ)
+• SSc: DLCO + PFTs every 6-12 months; echo every 1-2 years (PAH); HRCT chest if symptomatic or DLCO declining; BP monitoring (renal crisis)
+• Myositis: CK trend with treatment (should normalize with treatment); strength assessment; PFTs for ILD (DLCO); watch for steroid myopathy (CK normal but weakness progresses on steroids — reduce steroids)
+• Sjogren's: LFTs annually (primary biliary cholangitis association); lymphoma surveillance (persistent swelling, B symptoms, rising LDH, weight loss)`,
+    disposition: `• Rheumatology consult: all new CTD diagnosis, lupus nephritis, SSc renal crisis, rapidly progressive myopathy with ILD, any severe organ-threatening manifestation
+• Nephrology: lupus nephritis (kidney biopsy coordination, immunosuppression co-management)
+• Pulmonology: CTD-associated ILD, SSc-PAH evaluation
+• Ophthalmology: hydroxychloroquine monitoring (annual), Sjogren's dry eyes management, SLE retinal vasculitis`
+  },
+
+  {
+    id: "vasculitis",
+    system: "rheum",
+    title: "Vasculitis (GCA / PMR / GPA / MPA / EGPA / IgA / PAN)",
+    keywords: ["vasculitis","giant cell arteritis","GCA","temporal arteritis","polymyalgia rheumatica","PMR","GPA","granulomatosis polyangiitis","Wegener","MPA","microscopic polyangiitis","EGPA","Churg Strauss","ANCA","PR3","MPO","IgA vasculitis","Henoch Schonlein purpura","polyarteritis nodosa","PAN","temporal artery biopsy","vision loss GCA","alveolar hemorrhage","DAH"],
+    source: { chapter: "Rheumatology", section: "Vasculitis", pages: "165–167", authors: "Maxwell Green",
+      keyFacts: [
+        "Giant cell arteritis (GCA): start prednisone 1mg/kg/day IMMEDIATELY for visual symptoms (do NOT wait for temporal artery biopsy — irreversible blindness risk); temporal artery biopsy can be done up to 2 weeks after starting steroids (granulomatous changes persist); ESR typically >50 (often >100)",
+        "GCA + visual symptoms: immediate high-dose steroids (methylprednisolone 1g IV × 3 days then prednisone 1mg/kg); ophthalmology same day; tocilizumab (Actemra, anti-IL6) added for long-term steroid-sparing (GiACTA trial, NEJM 2017) — significantly reduces relapse rate and cumulative steroid dose",
+        "ANCA-associated vasculitis (GPA/MPA): PR3-ANCA (c-ANCA) in 90% of GPA; MPO-ANCA (p-ANCA) in 70% of MPA; severe disease induction: rituximab > cyclophosphamide (RAVE trial, NEJM 2010); maintenance: rituximab > azathioprine (MAINRITSAN, Arthritis Care 2021)",
+        "Alveolar hemorrhage (DAH) in ANCA vasculitis: hemoptysis + bilateral infiltrates + hypoxia + bronchoscopy showing progressively bloodier BAL; high-dose methylprednisolone + rituximab + consider plasmapheresis if concurrent anti-GBM or renal failure",
+        "Polymyalgia rheumatica (PMR): proximal shoulder and hip girdle pain/stiffness in >50yo; elevated ESR/CRP; no muscle weakness (distinguishes from myositis); dramatic response to prednisone 15-20mg/day (diagnostic/therapeutic); 10-15% develop GCA"
+      ]
+    },
+    assessment: `#Vasculitis Assessment
+VESSEL SIZE:
+[ ] Large vessel (aorta/branches): GCA, Takayasu — limb claudication, asymmetric BP, visual changes, HA
+[ ] Medium vessel: PAN — renal/mesenteric/hepatic arteries — digital gangrene, livedo reticularis, mononeuritis multiplex, renovascular HTN
+[ ] Small vessel: ANCA vasculitis (GPA/MPA/EGPA), IgA, cryovasculitis — palpable purpura, glomerulonephritis, alveolar hemorrhage
+GCA SCREEN: age >50 [ ] / new HA [ ] / jaw claudication (most specific) [ ] / visual disturbance [ ] / scalp tenderness [ ] / PMR symptoms [ ] / ESR >50 [ ]
+  → START PREDNISONE IMMEDIATELY if visual symptoms (DO NOT wait for biopsy)
+ANCA VASCULITIS SCREEN:
+  PR3-ANCA (c-ANCA): *** | MPO-ANCA (p-ANCA): ***
+  Upper airway: sinusitis [ ] / saddle nose [ ] / subglottic stenosis [ ] / otitis [ ] (→ GPA)
+  Renal: UA (RBCs/casts): *** | Cr: *** | DAH screen: hemoptysis [ ] / hypoxia [ ] / bilateral infiltrates [ ]
+  Lung: nodules/cavities (GPA) [ ] / fleeting infiltrates (EGPA) [ ] | BAL: ***
+INFLAMMATORY MARKERS: ESR: *** | CRP: *** | CBC: ***
+Biopsy planned: site *** | Imaging: CTA/MRA/PET: ***`,
+    ddx: `LARGE VESSEL VASCULITIS:
+Giant Cell Arteritis (GCA): most common primary systemic vasculitis; age >50 (mean 70s); 3:1 F:M
+• Classic: new/different HA (temporal, often with scalp tenderness) + jaw claudication + visual disturbance
+• Visual complications: anterior ischemic optic neuropathy (AION) most common (disc pallor + swelling); central retinal artery occlusion; diplopia; permanent if not treated immediately
+• Differential for HA + vision loss in elderly: GCA until proven otherwise; also consider increased ICP, TIA/stroke, herpes zoster ophthalmicus
+Polymyalgia Rheumatica (PMR): bilateral proximal shoulder and hip girdle aching + stiffness >45 min in morning; systemic symptoms (fever, fatigue, weight loss); elevated ESR/CRP; NORMAL muscle strength and CK (distinguishes from myositis); dramatic response to prednisone 15-20mg
+GCA-PMR overlap: 50% of GCA have PMR; 10-15% of PMR eventually develop GCA
+Takayasu Arteritis: large vessel vasculitis in patients <40yo (often young women); aorta and branches; claudication, asymmetric BP, bruits; "pulseless disease"
+MEDIUM VESSEL VASCULITIS:
+Polyarteritis Nodosa (PAN): medium-sized visceral arteries; NO glomerulonephritis (distinguishes from ANCA); NO pulmonary involvement; ANCA negative; HBV-associated in some; mononeuritis multiplex; renal/mesenteric/hepatic involvement; dx: angiogram (microaneurysms, stenoses, segmental arterial narrowing)
+SMALL VESSEL VASCULITIS (ANCA-associated):
+GPA (Granulomatosis with Polyangiitis, formerly Wegener's): upper + lower airways + kidney; PR3-ANCA (c-ANCA) 90%; saddle nose deformity, subglottic stenosis, sinus erosions, pulmonary nodules with cavitation, crescentic GN
+MPA (Microscopic Polyangiitis): small vessels; no ENT/upper airway; MPO-ANCA (p-ANCA) 70%; most common cause of pulmonary-renal syndrome
+EGPA (Eosinophilic GPA, Churg-Strauss): asthma precedes vasculitis by years; >10% peripheral eosinophilia; MPO-ANCA 50%; mononeuritis multiplex; cardiac involvement (major cause of mortality) — screen TTE at diagnosis
+IgA VASCULITIS (Henoch-Schonlein Purpura): children > adults; follows URTI; IgA immune complexes; palpable purpura (lower extremities/buttocks) + arthralgias + GI (colicky pain, bloody diarrhea) + renal (hematuria/proteinuria); biopsy shows IgA deposits
+Cryoglobulinemic vasculitis: HCV-associated (>90%); palpable purpura + glomerulonephritis + neuropathy; cryocrit, HCV RNA; treat underlying HCV
+IMMUNE COMPLEX SMALL VESSEL:
+Drug-induced vasculitis: hydralazine, PTU, minocycline, cocaine (levamisole), immunotherapy; ANCA often positive with hydralazine/PTU; stop culprit drug first`,
+    workup: `GCA/PMR:
+• ESR + CRP (ESR typically >50, often >100; CRP often very elevated; normal ESR does not rule out GCA)
+• CBC (normocytic anemia, thrombocytosis), BMP, LFTs
+• Temporal artery biopsy (TAB): gold standard; 2-3cm segment; bilateral if unilateral negative and high suspicion; delay in steroids (up to 2 weeks) does not significantly decrease yield
+• Vascular ultrasound (temporal + axillary arteries): halo sign = thickened wall; increasingly used as first test; non-invasive
+• PET/CT: large-vessel GCA (aortic/subclavian involvement); Takayasu
+• Ophthalmology same-day: if visual symptoms — dilated fundus exam, optical coherence tomography
+ANCA VASCULITIS:
+• ANCA (send as "ANCA panel" — yields both PR3 and MPO):
+  - PR3-ANCA (c-ANCA): GPA (90%); MPA (rare)
+  - MPO-ANCA (p-ANCA): MPA (70%); EGPA (50%); drug-induced vasculitis
+• Urinalysis + microscopy: RBCs, RBC casts (glomerulonephritis); 24h urine protein or spot PCR
+• BMP (creatinine — renal involvement), CBC, ESR, CRP
+• Anti-GBM antibody: always check if DAH or rapidly progressive GN (10-30% of ANCA also positive for anti-GBM)
+• Chest CT: pulmonary nodules (GPA), infiltrates (EGPA/MPA)
+• Sinus CT: bone erosions, mucosal thickening (GPA)
+• Bronchoalveolar lavage: progressively bloodier return = DAH; cultures + stains (exclude infection)
+• Tissue biopsy: skin (LCV pattern, IgA deposits), kidney (pauci-immune glomerulonephritis = gold standard), sinus, lung; key for definitive diagnosis
+• Complement C3/C4: normal in ANCA vasculitis; low in immune complex vasculitis (SLE, cryoglobulinemia, IgA)
+• HBV, HCV, HIV, SPEP/SFLC, TTE (cardiac involvement in EGPA/GCA aorta)`,
+    management: `GIANT CELL ARTERITIS:
+WITHOUT VISUAL SYMPTOMS: prednisone 1mg/kg/day (max 60mg) → taper over 12-24 months; prevent relapse
+WITH VISUAL SYMPTOMS (EMERGENCY): methylprednisolone 1g IV qday × 3 days → prednisone 1mg/kg/day; ophthalmology same day; do NOT wait for biopsy
+STEROID-SPARING (to reduce cumulative steroid dose):
+• Tocilizumab (Actemra) 162mg SQ weekly: anti-IL6; GiACTA trial (NEJM 2017) — significantly reduces relapse rate and allows 26-week prednisone taper; start at diagnosis or with first relapse; check LFTs + lipids
+• Aspirin 81mg: low-dose ASA reduces ischemic complications in GCA (posterior circulation, aortic aneurysm); widely used though evidence limited
+POLYMYALGIA RHEUMATICA: prednisone 15-20mg PO qday → rapid clinical improvement within 1-3 days (diagnostic and therapeutic); taper: reduce by 2.5mg every 2-4 weeks to 10mg, then by 1mg/month; total duration 12-24 months; tocilizumab for steroid-resistant/recurrent PMR (NEJM 2023)
+ANCA-ASSOCIATED VASCULITIS (GPA/MPA/EGPA):
+SEVERE DISEASE (organ-threatening: GN, DAH, CNS):
+Induction (6 months):
+• Rituximab 375mg/m² IV weekly × 4 OR 1g IV × 2 (2 weeks apart) — preferred over CYC in new diagnosis; AND methylprednisolone 1g IV × 3 days → prednisone 1mg/kg/day with taper
+• Cyclophosphamide 15mg/kg IV every 2-3 weeks (or 2mg/kg/day PO): older protocol; use when rituximab unavailable or specific contraindication; most toxic
+• Avacopan (anti-C5a receptor): add to steroid-sparing regimen; allows complete steroid taper; FDA approved 2021 (NEJM 2021)
+• Plasmapheresis: consider for concurrent anti-GBM antibodies, severe renal failure requiring dialysis, or severe DAH (evidence limited)
+Maintenance (18-24+ months): rituximab 500mg IV every 6 months (preferred over azathioprine per MAINRITSAN trial)
+EGPA SPECIFIC:
+• Steroids + CYC or RTX for organ-threatening features (cardiac, GN, mononeuritis multiplex)
+• Mepolizumab (anti-IL5, Nucala) 300mg SQ q4 weeks: for non-organ-threatening EGPA (NEJM 2017 MIRRA trial); significantly reduces oral steroid dose
+• Cardiac EGPA: always TTE at new diagnosis; eosinophilic endomyocarditis → anticoagulation; poor cardiac prognosis
+IgA VASCULITIS: supportive (NSAIDs for arthralgias); steroids for severe GI or renal involvement; most adults have renal sequelae
+PAN: steroids ± CYC; if HBV-associated → antiviral treatment + plasma exchange
+HEALTHCARE MAINTENANCE (ALL IMMUNOSUPPRESSION):
+• TB screening (IGRA) before biologics/immunosuppressants
+• Vaccinations: pneumococcal, influenza, COVID before starting biologics (no live vaccines while on biologics/high-dose steroids)
+• Prophylaxis on prednisone ≥20mg for ≥4 weeks: TMP-SMX SS daily (PJP) + Ca/Vit D + PPI (GI protection)
+• Bone density (DEXA): chronic steroid use → osteoporosis; bisphosphonate if T-score ≤-2.5 or fracture risk elevated`,
+    monitoring: `• GCA: ESR + CRP every 4-6 weeks during steroid taper (rising = relapse); PET/CT annually for large-vessel GCA (aortic aneurysm)
+• ANCA vasculitis: PR3/MPO ANCA titers (poor correlation with GPA activity; better correlation in MPA); UA + Cr monthly during active treatment; CBC + CMP every 4-8 weeks on CYC
+• Rituximab: CD19+ B-cell count (should be depleted after RTX; re-dosing when B cells reconstitute); ANCA titers rising before relapse
+• CYC toxicity: CBC every 2 weeks (myelosuppression); UA (hemorrhagic cystitis — mesna prophylaxis if IV CYC); LFTs; cumulative dose limit (bladder cancer risk)
+• PMR: ESR/CRP + clinical assessment at each steroid taper; must screen for GCA at every visit`,
+    disposition: `• Rheumatology STAT: GCA with visual symptoms (do NOT discharge — admit + ophthalmology + high-dose steroids); new ANCA vasculitis with renal or pulmonary involvement
+• Ophthalmology SAME DAY: GCA with any visual symptom — irreversible blindness can occur within hours
+• Nephrology: ANCA GN (crescentic GN on biopsy — aggressive co-management with Rheumatology)
+• Pulmonology/ICU: DAH (alveolar hemorrhage) with respiratory failure — mechanical ventilation + bronchoscopy + emergent immunosuppression`
+  },
+
+  {
+    id: "rheum-medications",
+    system: "rheum",
+    title: "Rheumatologic Serology / Medications / Misc (IgG4 / Sarcoid / Fibromyalgia / APLAS)",
+    keywords: ["rheumatologic medications","DMARDs","methotrexate","hydroxychloroquine","azathioprine","mycophenolate","leflunomide","anti-TNF","biologics","JAK inhibitor","tofacitinib","baricitinib","ANA interpretation","rheumatoid factor","anti-CCP","APLAS","antiphospholipid","IgG4","sarcoidosis","fibromyalgia","VEXAS","FMF","colchicine toxicity","biologic screening"],
+    source: { chapter: "Rheumatology", section: "Medications / Serology / Misc", pages: "162–169", authors: "Maxwell Green, Heba Altarawneh, Alec Ohanian",
+      keyFacts: [
+        "ANA interpretation: order only when clinical suspicion for CTD; low titer ANA (≤1:160) often false positive; ANA positive in 5% of healthy population, IBD, thyroid, malaria, HIV; if ANA positive (>1:80), reflex to specific antibodies guided by clinical presentation",
+        "Methotrexate (MTX): first-line DMARD for RA, PsA, vasculitis; dose 10-25mg weekly PO/SQ; ALWAYS add folic acid 1mg daily (reduces mucositis/LFT elevation without reducing efficacy); baseline CXR (pneumonitis monitoring); contraindicated in pregnancy (abortifacient) and significant liver disease or alcohol use",
+        "Biologic pre-screening: IGRA or TST before ALL biologics (TNFi, rituximab, JAKi — TB reactivation risk); HBV serology (HBsAg, HBcAb) before rituximab (HBV reactivation); no live vaccines while on biologics; hold biologics 2-4 weeks before/after elective surgery",
+        "Antiphospholipid syndrome (APLAS): antibody-mediated hypercoagulable state; thrombotic APLAS (venous/arterial clots) → long-term anticoagulation with warfarin (INR 2-3; INR 3-4 for recurrent arterial thrombosis); obstetric APLAS (recurrent pregnancy loss) → aspirin + LMWH during pregnancy; DOACs inferior to warfarin for APLAS",
+        "Sarcoidosis inpatient: neurosarcoidosis, cardiac sarcoidosis (heart block — pacemaker; ventricular arrhythmias — ICD), hypercalcemia (granulomas produce calcitriol — treat with prednisone 40mg/day); biopsy for definitive diagnosis (non-caseating granulomas); ACE level not sensitive or specific"
+      ]
+    },
+    assessment: `#Rheumatologic Serology / Medications Assessment
+SEROLOGY INTERPRETATION:
+ANA: titer *** / pattern *** — order disease-specific antibodies if ≥1:80
+  Pattern guide: homogenous (dsDNA/histone); speckled (anti-Sm/RNP/Ro/La/centromere); nucleolar (SSc: RNApol3/nucleolar)
+RF: *** (positive in RA 70%, Sjogren's 75%, also: cryoglobulinemia, SBE, Hep C, healthy elderly)
+anti-CCP: *** (most SPECIFIC for RA; does NOT track disease activity — use for diagnosis only)
+ANCA: PR3-c-ANCA *** / MPO-p-ANCA ***
+APLAS panel (order together, send warm for lupus anticoagulant):
+  Lupus anticoagulant: *** | anti-cardiolipin IgG/IgM: *** | anti-β2GP1 IgG/IgM: ***
+  APLAS diagnosis requires: positive on ≥2 occasions, ≥12 weeks apart
+MEDICATIONS:
+Current DMARDs: *** | Biologics: *** | JAKi: ***
+TB screening (IGRA) before biologics: [ ] Done (result: ***)  [ ] Not done → order before starting
+HBV screening before rituximab: HBsAg *** / HBcAb *** / HBsAb ***
+Folic acid with MTX: [ ] Yes  [ ] No → add immediately
+Safety labs due: CBC + CMP q*** months`,
+    ddx: `SEROLOGIC INTERPRETATION:
+ANA (antinuclear antibodies): highly SENSITIVE but NOT SPECIFIC for CTD
+• Positive in: SLE (98%), drug-induced lupus (90%), SSc (90%), MCTD (100%), Sjogren's (60%), myositis (50%), RA (25-30%), autoimmune hepatitis, PBC, Graves', healthy population (5-15% at low titer)
+• Pattern matters: homogenous (anti-dsDNA, anti-histone); fine speckled (anti-Ro, anti-La, anti-Sm, anti-RNP, anti-centromere); coarse speckled (anti-Sm, anti-RNP); nucleolar (anti-Scl70, anti-RNApol III); cytoplasmic (anti-Jo-1, anti-SRP, anti-ribosomal P)
+RF (Rheumatoid Factor): IgM antibody against Fc of IgG
+• Positive in: RA (70-80%), Sjogren's (75-95%), cryoglobulinemia (40-100%), SBE, HCV, HBV, HIV, elderly (10-15%)
+• High titer (>1:160) more specific for RA
+• NOT a disease activity marker — does not change with treatment
+ANTIPHOSPHOLIPID SYNDROME (APLAS) CATEGORIES:
+Thrombotic APLAS: any arterial or venous thrombosis + positive APLAS antibodies on ≥2 occasions ≥12 weeks apart
+Obstetric APLAS: ≥3 unexplained pregnancy losses <10 weeks OR ≥1 death ≥10 weeks of morphologically normal fetus OR ≥1 premature birth ≤34 weeks for placental insufficiency
+Catastrophic APLAS (CAPS): rare; thrombotic microangiopathy affecting ≥3 organs within 1 week; high mortality; anticoagulation + high-dose steroids + plasma exchange ± IVIG
+Seronegative APLAS: clinical APLAS but persistently negative antibodies — consider other antibodies (anti-prothrombin, anti-phosphatidylserine)
+IgG4-RELATED DISEASE: fibro-inflammatory condition; mean age 60; M>F; affects pancreas/bile ducts/salivary/lacrimal glands/retroperitoneum/orbits
+Sarcoidosis DDx: TB (caseating granulomas), NTM, fungal (histo/coccidio), lymphoma, Crohn's, GPA, IgG4-RD, CVID, berylliosis
+VEXAS Syndrome: UBA1 somatic mutation; vacuolated myeloid/erythroid precursors on BM biopsy; relapsing polychondritis features + MDS + cytopenias + recurrent fever; X-linked (almost all men); poor prognosis
+Fibromyalgia: central sensitization pain disorder; chronic widespread MSK pain + fatigue + sleep disturbance + multiple somatic symptoms; normal labs (ESR, CRP, CBC normal — if elevated, consider inflammatory condition); FM can coexist with RA/SLE`,
+    workup: `SEROLOGIC WORKUP APPROACH:
+DO NOT order ANA as a "screening test" for general fatigue/pain — high false positive rate in low-pretest probability populations; order ONLY when ≥2 clinical features suggest CTD
+APLAS PANEL — ORDER TOGETHER; SEND WARM (lupus anticoagulant is unstable):
+• Lupus anticoagulant (PTT-based, send to coagulation lab)
+• Anti-cardiolipin IgG + IgM
+• Anti-β2 glycoprotein I IgG + IgM
+• Positive result requires confirmation on second occasion ≥12 weeks later (transient positivity = antiphospholipid antibodies without clinical significance)
+NOTE: therapeutic anticoagulation (warfarin) interferes with lupus anticoagulant — check PTT ratio before starting anticoagulation if APLAS suspected
+IgG4-RD WORKUP:
+• Serum IgG subclasses (IgG4 level): elevated in 90% — Sn 90%, Sp 60%; NPV 96% for ruling out IgG4-RD
+• CT/MRI: organ-specific involvement (pancreatic enlargement, biliary strictures, orbital pseudotumor, retroperitoneal fibrosis)
+• Tissue biopsy: storiform fibrosis + lymphoplasmacytic infiltrate with ↑IgG4+ plasma cells + obliterative phlebitis + tissue eosinophilia
+SARCOIDOSIS WORKUP:
+• Non-caseating granulomas on biopsy: skin, peripheral LN, EBUS-guided bronchoscopy (most accessible in pulmonary sarcoid)
+• Serum ACE: NOT sensitive or specific; elevated in only 60%; can track treatment response in elevated cases
+• Calcium (elevated — macrophage calcitriol production), 24h urine calcium, 25-OH Vit D
+• CXR/CT chest: bilateral hilar LAD ± pulmonary infiltrates (Stage I-IV)
+• Ophthalmology (uveitis — check in all new sarcoid)
+• EKG/Holter/echo: cardiac sarcoidosis (heart block, ventricular arrhythmia, CM)
+• MRI brain/spine: neurosarcoidosis
+MEDICATION MONITORING:
+• MTX: CBC + CMP every 4-8 weeks initially then every 3 months when stable; LFTs (hepatotoxicity); hold if significant infection; stop if WBC <3,000 or Cr rising
+• HCQ: ophthalmology annually (retinopathy — risk increases after 5 years and cumulative dose >5mg/kg/lean body weight/day)
+• AZA (azathioprine): check TPMT genotype before starting (TPMT-deficient patients have myelosuppression risk); CBC monthly × 3, then every 3 months
+• Leflunomide: LFTs every 4-8 weeks; teratogenic — cholestyramine washout procedure required before pregnancy
+• Anti-TNF: IGRA before starting; HBV serology; LDCT chest if at risk for endemic fungal; eye exam (uveitis); hold for serious infections; risk of demyelination, lupus-like reactions, paradoxical psoriasis
+• JAK inhibitors: CBC monthly × 6, then every 3 months; lipid panel; VTE risk (FDA black box warning — especially tofacitinib ≥10mg BID); MACE risk in older patients with CV risk factors; herpes zoster — vaccine (Shingrix) before starting`,
+    management: `APLAS MANAGEMENT:
+Thrombotic APLAS (venous thrombosis): warfarin INR 2-3 indefinitely; LMWH as bridge during warfarin initiation; DOACs inferior to warfarin (higher recurrence rate) — avoid, especially for triple-positive APLAS (positive all 3 antibody types)
+Thrombotic APLAS (arterial thrombosis): warfarin INR 3-4 OR warfarin INR 2-3 + aspirin 81mg; consider adding hydroxychloroquine (antithrombotic properties)
+Obstetric APLAS: aspirin 81mg qday before conception → add LMWH prophylactic dose once pregnant; continue LMWH until 6 weeks postpartum
+Catastrophic APLAS (CAPS): anticoagulation (heparin IV) + high-dose steroids + plasma exchange ± IVIG; rituximab and eculizumab for refractory cases
+IgG4-RELATED DISEASE:
+• First-line: prednisone 0.6mg/kg/day × 2-4 weeks → taper over 3-6 months; most patients respond dramatically; relapse common during taper
+• Steroid-sparing/maintenance: rituximab (most effective for maintenance; NEJM 2021 — superior to azathioprine); azathioprine or MMF if rituximab not available
+• Monitor: serum IgG4 levels + imaging response
+SARCOIDOSIS:
+Pulmonary sarcoid (Stage II-IV with symptoms or progressive): prednisone 20-40mg/day × 8-12 weeks → taper to maintenance 5-10mg/day; duration depends on response
+Extrapulmonary:
+• Cardiac sarcoid (heart block): pacemaker; high-dose steroids (prednisone 1mg/kg); ICD if sustained VT/EF <35%; EP study for risk stratification
+• Neurosarcoid: high-dose steroids; MTX/AZA for steroid-sparing; rituximab/infliximab for refractory
+• Hypercalcemia: prednisone 40mg/day (suppresses calcitriol production by macrophages); avoid Vit D supplementation
+• Ocular: steroids (topical or systemic depending on severity); ophthalmology
+• Lofgren syndrome (hilar LAD + arthritis + erythema nodosum): often self-limited; NSAIDs; steroids if severe
+Steroid-sparing for sarcoid: MTX 10-15mg weekly; AZA 2mg/kg/day; hydroxychloroquine (for skin/arthritis); infliximab (refractory pulmonary/neuro/cardiac)
+FIBROMYALGIA:
+Non-pharmacologic (first-line): patient education, cognitive-behavioral therapy (CBT) for pain, graduated aerobic exercise program, sleep hygiene
+Pharmacologic: amitriptyline 10-25mg QHS, duloxetine 30-60mg qday, milnacipran 50-100mg BID; cyclobenzaprine; gabapentin/pregabalin (evidence weaker, combination < monotherapy)
+AVOID opioids: ineffective for fibromyalgia + risk of opioid use disorder + worsen central sensitization
+HEALTHCARE MAINTENANCE FOR RHEUMATOLOGY PATIENTS:
+All chronic steroids: Ca 1200mg/day + Vit D 800-1000 IU/day; PPI (GI protection with NSAIDs or steroids); DEXA scan; A1c (DM risk); blood pressure (CV risk)
+Prolonged steroids (≥20mg prednisone ×≥4 weeks): TMP-SMX 1 SS tab qday or dapsone 100mg qday (PJP prophylaxis)
+Reproductive counseling: MTX (abortifacient, stop 3 months before conception), leflunomide (teratogenic, washout required), mycophenolate (teratogenic), cyclophosphamide (gonadotoxic, fertility preservation)
+Immunizations: influenza annually; pneumococcal (PCV-20 or PCV-15 + PPSV23); hepatitis B; shingles vaccine (Shingrix) before JAKi; NO LIVE VACCINES on biologics or JAKi
+Sun protection: methotrexate + UV exposure → skin cancer risk; anti-TNF → lymphoma/skin cancer risk; SLE → photosensitivity`,
+    monitoring: `• DMARD safety labs (CBC + CMP): every 3-6 months for MTX/AZA/MMF/leflunomide; annual LFTs + CBC for hydroxychloroquine
+• Anti-TNF: no routine labs required (lipids at baseline); TB testing annually (or per risk); hold for active infection
+• JAK inhibitors: CBC + lipids every 6 months; VTE surveillance; herpes zoster monitoring
+• APLAS: INR every 3-7 days during warfarin initiation; every 4-6 weeks when stable; platelets (APLAS can cause thrombocytopenia)
+• IgG4-RD: serum IgG4 every 3-6 months; imaging response at 3-6 months on steroids
+• Sarcoid: PFTs/DLCO every 3-6 months; EKG annually; serum Ca and 24h urine Ca every 6 months`,
+    disposition: `• Rheumatology outpatient: all stable CTD, APLAS on warfarin, fibromyalgia, sarcoidosis (pulmonary stage I-II without symptoms)
+• Rheumatology inpatient consult: complex serology interpretation, acute CTD flare requiring steroids, severe APLAS (CAPS), active sarcoidosis with organ involvement
+• Cardiology: cardiac sarcoidosis (EP study, pacemaker/ICD implantation); APLAS with arterial thrombosis; tocilizumab initiation (LFT/lipid monitoring)
+• Hematology: catastrophic APLAS (plasma exchange), anticoagulation management, thrombocytopenia workup in APLAS`
+  },
+
 ];
 
 // ─── DDX SYSTEM PROMPT ─────────────────────────────────────────────────────
