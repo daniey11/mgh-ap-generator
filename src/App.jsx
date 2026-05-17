@@ -679,6 +679,10 @@ const SYSTEMS = [
   { id: "heme",  label: "Hematology",              color: "#ec4899" },
   { id: "onc",   label: "Oncology",                color: "#a16207" },
   { id: "rheum", label: "Rheumatology",            color: "#0891b2" },
+  { id: "allergy", label: "Allergy & Immunology",   color: "#7c3aed" },
+  { id: "derm",   label: "Dermatology",              color: "#db2777" },
+  { id: "consult", label: "Consultants",             color: "#475569" },
+  { id: "pc",     label: "Primary Care",              color: "#059669" },
 ];
 
 // ─── TEMPLATE DATA (sourced exclusively from MGH White Book 2025-26) ────────
@@ -11275,7 +11279,7 @@ PROPHYLAXIS:
 
   {
     id: "drug-hypersensitivity",
-    system: "pulm",
+    system: "allergy",
     title: "Drug Allergy / Hypersensitivity / Anaphylaxis / SJS-TEN",
     keywords: ["drug allergy","drug hypersensitivity","anaphylaxis","SJS","Stevens Johnson","TEN","toxic epidermal necrolysis","DRESS","drug reaction eosinophilia","penicillin allergy","beta-lactam allergy","contrast allergy","drug desensitization","epinephrine anaphylaxis","CIOMS","urticaria","angioedema","delayed hypersensitivity","immediate hypersensitivity"],
     source: { chapter: "Allergy & Immunology", section: "Drug & Contrast Allergy", pages: "182–183", authors: "Gita Bhattacharya, Jessica Bourque",
@@ -13376,7 +13380,7 @@ LICE:
   // ════════ ALLERGY & IMMUNOLOGY ════════
   {
     id: "common-allergy-problems",
-    system: "pulm",
+    system: "allergy",
     title: "Common Allergy Problems — Rhinitis / Urticaria / Atopic Derm / Angioedema / Anaphylaxis",
     keywords: ["allergic rhinitis","urticaria","hives","atopic dermatitis","eczema","angioedema","anaphylaxis","hereditary angioedema","HAE","ACE inhibitor angioedema","C1 inhibitor","food allergy","anaphylaxis epinephrine","omalizumab urticaria","antihistamine","nasal corticosteroid","cetirizine","fexofenadine","tryptase","biphasic anaphylaxis","allergy & immunology"],
     source: { chapter: "Allergy & Immunology", section: "Common Allergy Problems / Angioedema & Anaphylaxis", pages: "181–182", authors: "Gita Bhattacharya, Jessica Bourque",
@@ -13476,7 +13480,7 @@ ATOPIC DERMATITIS (eczema):
   // ════════ CONSULTANTS ════════
   {
     id: "dermatology-consult",
-    system: "pulm",
+    system: "derm",
     title: "Dermatology — Inpatient Rashes, Drug Eruptions & Topical Therapy",
     keywords: ["dermatology","drug rash","exanthematous","morbilliform rash","DRESS","SJS TEN","AGEP","purpura fulminans","erythroderma","erythema multiforme","contact dermatitis","pressure ulcer","psoriasis inpatient","GVHD skin","immunotherapy rash","herpes zoster","zoster ophthalmicus","cellulitis mimicker","topical steroids","skin biopsy","stasis dermatitis","vasculitis skin"],
     source: { chapter: "Consultants", section: "Dermatology", pages: "233", authors: "Sepideh Ashrafzadeh, Olivia Davies",
@@ -13560,7 +13564,7 @@ Immunotherapy skin toxicity: topical steroid grade 1-2; systemic steroid grade 3
 
   {
     id: "ophthalmology-consult",
-    system: "pulm",
+    system: "consult",
     title: "Ophthalmology — Inpatient Eye Emergencies & Common Conditions",
     keywords: ["ophthalmology","visual loss","red eye","acute vision loss","angle closure glaucoma","retinal artery occlusion","retinal detachment","optic neuritis","endophthalmitis","uveitis","corneal ulcer","viral conjunctivitis","chemical eye injury","intraocular pressure","afferent pupillary defect","RAPD","diplopia","papilledema","MEEI","visual acuity","eye emergency"],
     source: { chapter: "Consultants", section: "Ophthalmology", pages: "239", authors: "Marta Stevanovic",
@@ -13639,7 +13643,7 @@ Glaucoma drops: do NOT stop inpatient glaucoma drops (prostaglandin analogs, bet
 
   {
     id: "obgyn-consult",
-    system: "pulm",
+    system: "consult",
     title: "OB/GYN — Obstetric Emergencies / Hypertension / AUB / Pelvic Pain",
     keywords: ["obstetrics","preeclampsia","eclampsia","HELLP","gestational hypertension","ectopic pregnancy","abnormal uterine bleeding","AUB","pelvic pain","ovarian torsion","labetalol pregnancy","hydralazine pregnancy","magnesium eclampsia","postpartum hemorrhage","placental abruption","placenta previa","OB emergency","MFM consult","hCG ectopic","pregnancy hypertension","fibroid","endometrial cancer"],
     source: { chapter: "Consultants", section: "OB/GYN", pages: "240", authors: "Alexandria Young",
@@ -13735,7 +13739,7 @@ IMAGING IN PREGNANCY: US (no radiation); MRI without gadolinium (safe); CT accep
 
   {
     id: "urology-consult",
-    system: "pulm",
+    system: "consult",
     title: "Urology — Urinary Retention / Hematuria / Obstruction / Tubes & Drains",
     keywords: ["urology","urinary retention","acute urinary retention","hematuria","gross hematuria","ureteral obstruction","kidney stone","hydronephrosis","Foley catheter","suprapubic tube","SPT","ureteral stent","nephrostomy","urinary incontinence","BPH","alpha blocker tamsulosin","urinary tract stone","bladder irrigation","catheter care","bladder cancer hematuria","urosepsis obstruction","priapism"],
     source: { chapter: "Consultants", section: "Urology", pages: "237", authors: "Christina Kottooran, Chandler Bronkema",
@@ -13833,6 +13837,482 @@ Overflow: catheterize (intermittent preferred) + address obstruction`,
     disposition: `• Urology EMERGENT (p11300): gross hematuria, Foley/SPT issues, urosepsis with obstruction, priapism (>4h = emergency → ice packs + phenylephrine injection by Urology), urethral trauma, testicular torsion (ischemia within 4-8h → surgical emergency)
 • Urology non-urgent (p10300): new hydronephrosis, urinary retention not resolving, suspected stone requiring intervention, catheter exchange
 • IR: PCN placement (urosepsis with failed ureteral stenting, patient too unstable for OR), SPT placement, first PCN exchange`
+  },
+
+  // ════════════════════ PRIMARY CARE ════════════════════
+
+  {
+    id: "health-screening",
+    system: "pc",
+    title: "Health Screening & Maintenance",
+    keywords: ["health screening","preventive care","cancer screening","colorectal cancer screening","breast cancer","cervical cancer","lung cancer screening","LDCT","colonoscopy","mammogram","Pap smear","HPV testing","lipid screening","diabetes screening","HIV screening","hepatitis C screening","blood pressure screening","USPSTF","immunizations","vaccines","ASCVD risk","BMI screening","osteoporosis screening","DEXA"],
+    source: { chapter: "Primary Care", section: "Health Screening & Maintenance", pages: "208", authors: "Margaret Park",
+      keyFacts: [
+        "Colorectal cancer screening (age 45-75, USPSTF grade A/B): colonoscopy q10y (gold standard — therapeutic); or annual FIT/gFOBT; or stool DNA (Cologuard) q1-3y; or CT colonography q5y; or flexible sigmoidoscopy q5y; age 76-85: individualize; age >85: do not screen",
+        "Breast cancer screening (USPSTF 2024, grade B): biennial mammogram age 40-74 (ACS recommends starting at 40, annual); stop if <10yr life expectancy; assess BRCA risk using family history tool — if elevated risk, offer genetic counseling",
+        "Lung cancer screening: low-dose CT (LDCT) annually for adults age 50-80 with ≥20 pack-year smoking history who currently smoke or quit within the past 15 years (USPSTF 2021, grade B); link to smoking cessation counseling",
+        "ASCVD 10-year risk calculation: use Pooled Cohort Equations (PCE, ACC/AHA) q4-6 years for adults 40-75 without established CVD; PREVENT calculator (race-free) will replace PCE; statin therapy if 10yr risk ≥10% (Grade B); discuss in 7.5-10% range (borderline risk); CAC score can reclassify borderline risk patients",
+        "Immunization schedule (adult key vaccines): influenza annually (high-dose age ≥65); COVID-19 per current CDC formula; Tdap ×1 then Td q10y; pneumococcal (PCV-20 or PCV-15 + PPSV23); Shingrix (RZV) age ≥50 ×2 doses; HPV (through age 26; consider 27-45); hepatitis B for all unvaccinated adults; RSV vaccine age ≥60"
+      ]
+    },
+    assessment: `#Health Screening & Maintenance
+PATIENT: Age *** | Sex assigned at birth: *** | Insurance: *** | PCP: ***
+CANCER SCREENING DUE:
+[ ] Colorectal (age 45-75): last colonoscopy *** / FIT last year / Cologuard ***
+[ ] Breast (mammogram, age 40-74): last mammogram *** | BRCA risk assessment done: ***
+[ ] Cervical (Pap ± HPV): last Pap *** / last hrHPV *** | On correct interval: ***
+[ ] Lung LDCT (age 50-80, ≥20 pack-yr, current/quit <15yr): ordered: ***
+[ ] Colorectal: ordered/up to date: ***
+CV/METABOLIC:
+[ ] ASCVD 10yr risk calculated: *** % | Statin indicated: *** | ASA primary ppx: ***
+[ ] Lipid panel (q5y age 20+, more often if risk): last ***
+[ ] BP checked (q1y or q3-5y if normal): ***
+[ ] DM screening (A1c or FPG, age ≥35 or BMI ≥25 + RF): last ***
+[ ] HIV (at least once age 15-65, more often if risk): done: ***
+[ ] Hepatitis C (≥18yo, at least once): done: ***
+BONE / OTHER:
+[ ] DEXA (women ≥65 or postmenopausal <65 with FRAX risk; men ≥70): last ***
+[ ] Osteoporosis FRAX risk: ***
+IMMUNIZATIONS:
+Flu (annual) [ ] | COVID [ ] | Tdap/Td [ ] | Pneumococcal [ ] | Shingrix [ ] | HPV [ ] | HBV [ ]`,
+    ddx: `SCREENING RECOMMENDATIONS BY CONDITION:
+CARDIOVASCULAR:
+• Blood pressure: q1y for adults; q3-5y if consistently normal and no risk factors; home BP monitoring for confirmation
+• Lipids: fasting lipid panel q5y age ≥20 as baseline; more frequent if abnormal or high risk; non-fasting acceptable unless TG measurement needed
+• ASCVD risk: PCE (ACC/AHA Pooled Cohort Equations) q4-6y for primary prevention adults 40-75; PREVENT calculator (race-free, includes eGFR/UACR, BMI, HbA1c) will replace PCE; statin discussion for 10-yr risk ≥7.5% (risk calculator at tools.acc.org/ASCVD-Risk-Estimator)
+• ECG: NOT recommended for screening in asymptomatic adults
+DIABETES:
+• All adults age ≥35: screen with A1c or fasting plasma glucose; if normal, repeat q3y
+• BMI ≥25 (≥23 Asian) + any 1 risk factor: screen at any age; if pre-DM (A1c 5.7-6.4%), screen annually
+• Gestational DM: screen with 1-hr glucose challenge at 24-28 weeks
+CANCER SCREENING:
+• Colorectal (age 45-75): colonoscopy q10y preferred; FIT annually; CT colonography q5y; stool DNA q1-3y; flexible sigmoidoscopy q5y; earlier/more frequent with FHx or IBD
+• Breast: biennial mammogram 40-74 (USPSTF 2024) — individualize starting age based on patient values; annual for high-risk (BRCA+, prior chest RT, dense breasts + other risk)
+• Cervical: Pap + hrHPV co-test q5y (ages 30-65, preferred) OR hrHPV alone q5y OR Pap alone q3y; can stop after age 65 if adequate negative screening history
+• Lung: LDCT annually for age 50-80, ≥20 pack-year history, currently smoke or quit <15 years ago; link to tobacco cessation
+• Prostate: individualized shared decision-making for PSA at age 50-55 (earlier for Black men, BRCA2 carriers); no routine screening — discuss benefits/harms
+• Skin: no USPSTF recommendation for routine whole-body skin exam; primary prevention with sun protection
+• Thyroid: no evidence for screening in asymptomatic adults
+ADDITIONAL SCREENINGS:
+• HIV: at least once for all adults 15-65; more frequently for high-risk (MSM, PWID, multiple partners, STI history): q3-6 months
+• Hepatitis C: all adults ≥18 at least once; repeat if high-risk (PWID, incarcerated, born 1945-1965)
+• HBV: screen all adults not known to be immune or infected; vaccinate if HBsAb negative
+• STIs: GC/Chlamydia annually for sexually active women ≤24yo; risk-based screening in older women and in men
+• Vision: dilated fundal exam annually in DM; annually ≥65 for glaucoma/cataracts
+• Hearing: at least once ≥60; audiometry if failed screen
+• Abdominal aortic aneurysm (AAA): one-time abdominal US in male smokers age 65-75 (USPSTF grade B)
+• Osteoporosis: DEXA for women ≥65; postmenopausal women <65 if FRAX 10yr hip fracture risk ≥9.3%; men ≥70 or 50-69 with risk factors`,
+    workup: `RISK CALCULATORS (bookmark these):
+• ASCVD 10-yr risk: tools.acc.org/ASCVD-Risk-Estimator (or Epic BPA)
+• PREVENT calculator (newer, race-free): ACC/AHA Circulation 2024
+• FRAX (osteoporosis fracture risk): shef.ac.uk/FRAX
+• BRCA pre-test probability: Tyrer-Cuzick, BOADICEA (for referral decision)
+• Lung cancer: LDCT eligibility per USPSTF 2021
+• CAC score (coronary artery calcium): for reclassifying borderline ASCVD risk (7.5-20%) — consult cardiology for ordering
+ANNUAL WELLNESS VISIT (preventive visit, billed as G0438/G0439):
+• Review all screening due dates (Epic HealthMaintenance tab)
+• Update medication list, allergies, family history
+• Depression (PHQ-2/9), anxiety (GAD-7), domestic violence (HITS), social determinants of health (SDOH)
+• Advance care planning discussion (document in Epic)
+• Substance use (AUDIT-C for alcohol, DAST for drugs, tobacco assessment)`,
+    management: `STATIN THERAPY FOR PRIMARY PREVENTION:
+• 10yr ASCVD risk ≥10%: initiate statin (moderate- to high-intensity)
+• 7.5-9.9%: patient-clinician discussion; consider statin especially with risk-enhancing factors (LDL ≥160, hsCRP ≥2, ABI <0.9, premature menopause, pre-eclampsia history, chronic inflammatory condition, elevated Lp(a))
+• CAC score: if CAC = 0 in borderline risk patient → defer statin (NNT too high); if CAC ≥100 → statin favored
+• Preferred statins: rosuvastatin 20-40mg (high-intensity), atorvastatin 40-80mg (high-intensity), rosuvastatin 5-10mg or atorvastatin 10-20mg (moderate)
+BLOOD PRESSURE MANAGEMENT (non-pharmacologic first):
+Weight loss (goal BMI <25): each kg lost = ~1 mmHg SBP decrease; DASH diet: ↓8-14 mmHg; sodium restriction <2.3g/day: ↓2-8 mmHg; aerobic exercise 90-150 min/week: ↓5-8 mmHg; limit alcohol: ↓2-4 mmHg
+TOBACCO CESSATION: most important modifiable cardiovascular risk factor; varenicline first-line (see Other Substance Use template)
+IMMUNIZATION CATCH-UP APPROACH:
+• Use Immunization Manager in Epic or cdc.gov/vaccines/schedules
+• Influenza: high-dose or adjuvanted for age ≥65 (enhanced immune response)
+• Shingrix: 2 doses 2-6 months apart, age ≥50; do NOT use if active shingles; can give if prior ZVL (old vaccine) — still recommend Shingrix
+• Pneumococcal: PCV-20 × 1 (preferred) OR PCV-15 + PPSV23 (at least 1 year apart); age ≥65 or high risk (DM, CKD, CHF, COPD, smoking)
+• HPV: complete 3-dose series through age 26; shared decision-making 27-45; not recommended >45`,
+    monitoring: `• Epic HealthMaintenance tab: tracks all screening due dates and immunization status automatically
+• Update cancer screening, immunizations, and lab results at each preventive care visit
+• ASCVD risk: recalculate every 4-6 years or with significant change in risk factors (new DM, smoking status change, new HTN)
+• A1c monitoring: q3 months if changing therapy; q6 months if at goal`,
+    disposition: `• Gastroenterology: colonoscopy (screening and surveillance), abnormal CRC screening result
+• Breast surgery/Radiology: abnormal mammogram (BI-RADS 4/5) or abnormal ultrasound
+• Pulmonology: abnormal LDCT (Lung-RADS 3-4), prior to enrollment in lung cancer screening program
+• Genetics: BRCA+ or strong family history of hereditary cancer syndromes (Lynch syndrome, FAP)`
+  },
+
+  {
+    id: "womens-mens-health",
+    system: "pc",
+    title: "Women's & Men's Health — Reproductive / Hormonal / Sexual Health",
+    keywords: ["women's health","men's health","PCOS","polycystic ovary syndrome","secondary amenorrhea","contraception","preconception","BPH","lower urinary tract symptoms","erectile dysfunction","PDE5 inhibitor","testosterone","hypogonadism","menopause","HRT","hormone replacement therapy","fertility","vaginitis","vaginal discharge","bacterial vaginosis","HPV vaccine","Pap smear"],
+    source: { chapter: "Primary Care", section: "Women's Health / Men's Health", pages: "210–213", authors: "Emily Stephens, Anika Agarwal",
+      keyFacts: [
+        "PCOS (affects 5-10% of reproductive-age women): Rotterdam criteria = 2/3 of: oligo/anovulation, clinical/biochemical hyperandrogenism, polycystic ovaries on US; exclude other causes (17-OHP, TSH, PRL, hCG); treat: weight loss + exercise, combined OCP (first-line for menstrual irregularity and hyperandrogenism), spironolactone (hirsutism/acne), metformin (if insulin resistant); screen for DM, HTN, HLD annually",
+        "Vaginitis: three most common causes are bacterial vaginosis (BV — fishy odor, clue cells, pH >4.5, treat with metronidazole 500mg BID × 7d or gel × 5d or clindamycin vaginal cream), trichomoniasis (motile trichomonads on wet mount, NAAT preferred, metronidazole 2g × 1), and vulvovaginal candidiasis (curd-like discharge, KOH microscopy, fluconazole 150mg × 1 or miconazole vaginal × 7d)",
+        "BPH/LUTS: IPSS score guides severity; alpha-blockers (tamsulosin 0.4mg qday) first-line for moderate-severe LUTS — onset in 1-2 weeks; 5-alpha reductase inhibitors (finasteride 5mg qday) for prostate >30-40g — onset 3-6 months, reduces prostate volume and progression; combination for high-risk patients (prostate >40g or PSA >1.5)",
+        "Erectile dysfunction (ED): 40% of men over 40; evaluate for underlying CVD (exercise tolerance history — if cannot tolerate moderate activity without angina, sexual activity is also high risk); lifestyle modifications first (weight loss, exercise, alcohol, smoking); PDE-5 inhibitors (sildenafil, tadalafil, vardenafil) first-line — CONTRAINDICATED with nitrates or alpha-blockers (orthostatic hypotension risk); refer to urology if young age, primary ED, or pharmacotherapy failure",
+        "Contraception counseling: most effective methods are LARC (long-acting reversible): IUD (copper or hormonal — Mirena, Kyleena) and subdermal implant (Nexplanon); hormonal OCP effective if taken correctly; emergency contraception: levonorgestrel (Plan B) most effective within 72h; ulipristal acetate (ella) within 120h (more effective BMI >75kg); copper IUD within 5d (most effective, also ongoing contraception)"
+      ]
+    },
+    assessment: `#Women's & Men's Health Assessment
+WOMEN'S HEALTH:
+Menstrual hx: LMP *** | Regular: *** | Cycle length: *** | Dysmenorrhea: [ ]
+Pregnant/planning: [ ] | Contraception: *** | Pap/HPV current: ***
+Vaginitis: discharge (color/odor): *** | Pruritis: [ ] | Dyspareunia: [ ]
+  → wet mount ordered: [ ] | pH: *** | Amine (whiff) test: [ ] | NAAT sent: [ ]
+PCOS screen (if amenorrhea/irregular): hCG *** / FSH *** / LH *** / TSH *** / PRL *** / 17-OHP ***
+Postmenopausal: vasomotor sx [ ] | on HRT: *** | DEXA last: ***
+PRECONCEPTION: folic acid started [ ] | Vaccines updated [ ] | Chronic meds reviewed for teratogenicity [ ]
+MEN'S HEALTH:
+LUTS/BPH: IPSS score: *** | Nocturia: *** | PVR: *** | PSA: ***
+  Alpha-blocker: *** | 5-ARI: *** | Tamsulosin started: [ ]
+ED: onset *** | Severity (IIEF score): *** | Cardiovascular risk assessment done: [ ]
+  Nitrates or alpha-blockers: [ ] Yes → PDE-5i CONTRAINDICATED
+  PDE-5 inhibitor prescribed: *** | Testosterone level: ***
+Testicular exam: normal [ ] / abnormal: *** | Testicular US ordered: ***`,
+    ddx: `SECONDARY AMENORRHEA DIFFERENTIAL (cessation >3 months with prior regular menses):
+Pregnancy (#1 — always check hCG first), hypothalamic (eating disorder, excessive exercise, stress, illness, weight loss — FSH/LH low), pituitary (hyperprolactinemia from adenoma or medications, apoplexy — FSH/LH low), primary ovarian insufficiency (FSH elevated, estradiol low, age <40), PCOS (oligo-ovulation + hyperandrogenism), uterine (Asherman syndrome from prior instrumentation — diagnosis: progestin challenge → no withdrawal bleed), thyroid disease (TSH), Cushing's
+VAGINITIS DIFFERENTIAL:
+BV: pH >4.5, amine (whiff) test positive, clue cells on wet mount (squamous cells with bacteria coating), no WBCs; polymicrobial (Gardnerella + anaerobes); treat all symptomatic patients + all pregnant patients; partner treatment NOT needed
+Trichomoniasis: motile flagellated organisms on wet mount (60-70% Sn); NAAT preferred (>95% Sn/Sp); male partners: treat simultaneously; STI: screen for concurrent GC/Chlamydia
+Vulvovaginal candidiasis: curd-like white discharge, vulvar erythema + pruritus, pH normal (3.5-4.5), KOH wet mount (hyphae/pseudohyphae); complicated (recurrent ≥4×/yr or severe or non-albicans): culture for species + susceptibility
+MALE SEXUAL HEALTH:
+ED causes: psychogenic (sudden onset, situational, younger patients), vasculogenic (most common organic cause — gradual onset, DM, HTN, smoking, CVD), neurogenic (DM neuropathy, MS, spinal cord, post-pelvic surgery), hormonal (hypogonadism — low testosterone, check AM total testosterone ×2), medication-induced (SSRIs, antihypertensives, antipsychotics, finasteride, opioids)
+BPH grading (IPSS): mild (0-7), moderate (8-19), severe (20-35); PSA: not a great cancer screening tool alone; elevated PSA → urology referral
+Testicular torsion (EMERGENCY): acute scrotal pain + absent cremasteric reflex + surgical emergency within 4-6h for testicular viability; Doppler US if immediate OR not available`,
+    workup: `AMENORRHEA WORKUP:
+• urine hCG (first always), then serum FSH, LH, estradiol, TSH, prolactin, 17-OHP (8AM, to r/o CAH)
+• Progestin challenge (medroxyprogesterone acetate 10mg × 10 days): if no withdrawal bleed → uterine cause (Asherman) or estrogen deficiency
+• Pelvic ultrasound (ovarian morphology for PCOS)
+VAGINITIS WORKUP:
+• MGH: send "genital culture female" (rayon swab) + trichomonas NAAT; at least 3 separate swabs for GC/Chlamydia NAAT, genital culture, trichomonas
+• pH paper (>4.5 = BV or trichomonas; 3.5-4.5 = candida)
+• Wet mount: clue cells (BV), motile flagellated organisms (trichomonas), hyphae on KOH (candida)
+• Recurrent BV/candidiasis: culture for antibiotic sensitivity; HIV test
+MALE SEXUAL HEALTH WORKUP:
+• ED: morning total testosterone × 2 (if low: LH + FSH + prolactin); fasting lipid panel + glucose (cardiovascular risk); CBC + CMP; PSA (if age ≥50 or risk factors, shared decision-making)
+• BPH: urinalysis + urine culture; PSA (if ≥10yr life expectancy, shared decision-making); bladder scan PVR; renal US (if CKD concern)
+• Testicular mass: scrotal US (urgent if testicular cancer suspected — AFP, beta-hCG, LDH tumor markers)`,
+    management: `WOMEN'S REPRODUCTIVE HEALTH:
+PCOS: combined OCP (1st line for menstrual irregularity + androgen excess); spironolactone 50-100mg qday (hirsutism/acne — teratogenic, requires contraception); metformin 500mg BID → 1000mg BID (insulin resistance, adjunct for ovulation induction); weight loss (5-7% improves cycle regularity and fertility); clomiphene or letrozole (anovulatory infertility — refer to OB/GYN)
+VAGINITIS:
+• BV: metronidazole 500mg PO BID × 7d OR metronidazole gel 0.75% × 5d OR clindamycin vaginal cream × 7d; recurrent (≥3× per year): suppressive therapy (boric acid vaginal capsules, metronidazole gel 2×/week × 6 months); no partner treatment needed (male); female partners: treat
+• Trichomoniasis: metronidazole 2g PO × 1 dose (preferred) OR tinidazole 2g × 1; treat ALL partners; test-of-cure at 3 months (high re-infection rate); avoid alcohol 24h (metronidazole) or 72h (tinidazole)
+• Candidiasis (uncomplicated): fluconazole 150mg PO × 1; topical miconazole 7d if pregnant; recurrent: fluconazole 150mg q72h × 3 doses then weekly maintenance × 6 months; partner treatment only if symptomatic
+CONTRACEPTION COUNSELING:
+LARC (most effective, <1% failure): LNG-IUD (Mirena 5-8yr, Kyleena 5yr) → oligo/amenorrhea; copper IUD (10yr) → may worsen dysmenorrhea; etonogestrel implant (Nexplanon, 3yr) → arm; initiate any time
+Combined OCP: start any day; backup 7 days; check for estrogen contraindications (migraine with aura, VTE, smoking >35yo, HTN, known thrombophilia, active liver disease)
+Emergency contraception: LNG EC (Plan B) within 72h; ulipristal acetate (ella) within 120h (superior efficacy BMI >75kg or >72h); copper IUD within 5 days (most effective, prevents implantation)
+MENOPAUSE: vasomotor symptoms — lowest effective dose HRT for shortest duration (avoid if breast CA, VTE, CVD, endometrial CA); transdermal preferred; vaginal estrogen for genitourinary syndrome: safe regardless of systemic HRT use; non-hormonal: venlafaxine, desvenlafaxine, gabapentin, fezolinetant (Veozah, neurokinin B antagonist)
+PRECONCEPTION: folic acid 400-800 mcg starting at reproductive age; optimize chronic diseases; review all medications for teratogenicity; update rubella, varicella, HBV, COVID vaccines before pregnancy; RSV vaccine at 32-36 weeks of pregnancy
+MEN'S HEALTH:
+BPH/LUTS:
+• Lifestyle: scheduled voiding, limit evening fluids, caffeine/alcohol reduction
+• Alpha-blockers (tamsulosin 0.4mg, alfuzosin 10mg, silodosin 8mg qday): symptom relief within 1-2 weeks; first-line for most; orthostatic hypotension risk; avoid silodosin before cataract surgery (IFIS)
+• 5-alpha reductase inhibitors (finasteride 5mg or dutasteride 0.5mg qday): prostate >30-40mL; onset 3-6 months; reduces prostate volume + risk of urinary retention; teratogenic (avoid handling crushed tablets if pregnant partner)
+• Combination therapy (alpha-blocker + 5-ARI): for high-risk patients (large prostate, elevated PSA, significant LUTS); MTOPS trial
+• Urology referral: failure of medical therapy, hematuria, recurrent UTIs, AKI from obstruction, PSA elevation concerning for cancer
+ERECTILE DYSFUNCTION:
+• Lifestyle first: weight loss, aerobic exercise, smoking cessation, alcohol reduction, testosterone optimization
+• PDE-5 inhibitors (first-line pharmacotherapy):
+  Sildenafil (Viagra): 25-100mg, take 1h before sex (empty stomach); variable duration 4-6h
+  Tadalafil (Cialis): 10mg taken before sex (anytime with food), OR 5mg qday (daily dosing for BPH + ED); lasts 24-36h; safest with alpha-blockers (at lower doses)
+  Vardenafil: 10-20mg; similar to sildenafil
+  CONTRAINDICATED with: nitrates (risk of severe hypotension — NO exceptions), alpha-blockers except tamsulosin (at stable low doses)
+• If testosterone low (total T <300 ng/dL AM, ×2): testosterone replacement (IM, transdermal, intranasal) + discuss fertility implications (exogenous T suppresses spermatogenesis)
+• Urology: young age, primary ED, pharmacotherapy failure, penile prosthesis consideration`,
+    monitoring: `• PCOS: A1c/OGTT q1-2y, lipid panel q1-2y, BP at each visit; weight; monitor OCP use for DVT risk in obese patients
+• Recurrent BV: test for concurrent STIs (HIV, trichomoniasis, GC/Chlamydia); boric acid suppression success
+• BPH: IPSS score at each visit; PVR yearly; PSA per shared decision-making; UOP assessment
+• ED/testosterone therapy: testosterone level (target mid-normal range), hematocrit (polycythemia risk on testosterone), PSA before and after starting testosterone`,
+    disposition: `• OB/GYN: abnormal Pap/HPV, infertility workup, persistent PCOS despite primary care management, fibroids, endometriosis, pelvic mass
+• Urology: primary or refractory ED, BPH with complications, testicular mass or suspected torsion, hematuria workup
+• Endocrinology: PCOS with fertility concerns, hypogonadism (primary vs secondary), complex testosterone management`
+  },
+
+  {
+    id: "transgender-lgbtqia-health",
+    system: "pc",
+    title: "Transgender & LGBTQIA+ Health — Gender-Affirming Care & Sexual Health",
+    keywords: ["transgender health","gender-affirming care","LGBTQIA","gender dysphoria","hormone therapy","estradiol transgender","testosterone transgender","gender-affirming hormone therapy","GAHT","MSM","WSW","trans masculine","trans feminine","nonbinary","PrEP","chosen name","pronouns","gender identity","sexual orientation","DoxyPEP MSM","HRT transgender"],
+    source: { chapter: "Primary Care", section: "Transgender Health / LGBTQIA+ Health", pages: "214–215", authors: "Emma Clapp, Seth Lewis, Margot Manning",
+      keyFacts: [
+        "Gender-affirming hormone therapy (GAHT): initiate with informed consent and shared decision-making (WPATH standard); full effects take 1-5 years; feminizing (trans women/transfeminine): 17-beta estradiol + testosterone blocker (spironolactone 100-200mg or bicalutamide 25-50mg); masculinizing (trans men/transmasculine): testosterone cypionate/enanthate IM, or topical testosterone gel",
+        "Feminizing GAHT monitoring: estradiol level (goal 100-200 pg/mL), testosterone level (goal <50 ng/dL on blocker), LFTs (estradiol hepatotoxicity), electrolytes (spironolactone hyperkalemia and diuresis), hematocrit, prolactin, lipids annually",
+        "Masculinizing GAHT monitoring: testosterone level (goal 400-700 ng/dL mid-injection cycle or goal mid-normal range for topical), hematocrit (polycythemia — hold if >50%), LFTs, lipids; testosterone causes oligomenorrhea/amenorrhea within 3-6 months (does NOT eliminate pregnancy risk — contraception still needed if any genital sex with someone who produces sperm)",
+        "Screening adaptations for transgender patients: apply screening based on anatomy present, not gender identity; trans men with cervix → Pap smears per female guidelines; trans women with prostate → PSA screening discussion per male guidelines; note testosterone use on Pap orders (Pap cells may be 'unsatisfactory' — self-collected vaginal swab equally sensitive)",
+        "LGBTQIA+ health considerations: use patient's chosen name and pronouns; update Epic 'Sexual Orientation/Gender ID' and 'Demographics' fields; MSM health: STI screening at all exposed sites (genital + rectal + pharyngeal) q3-6 months if active; PrEP counseling; DoxyPEP (doxycycline 200mg within 72h of condomless sex) reduces gonorrhea/chlamydia/syphilis ~80% in MSM"
+      ]
+    },
+    assessment: `#Transgender / LGBTQIA+ Health Assessment
+DOCUMENTATION (update Epic first):
+Chosen name: *** | Pronouns: *** | Sexual orientation: *** | Gender identity: ***
+Update via "Sexual Orientation/Gender ID" and "Demographics" tabs in Epic
+GENDER-AFFIRMING CARE:
+Current GAHT: *** | Duration of GAHT: *** | Prescribing provider: ***
+Feminizing therapy: estradiol *** mg (route: ***) | Testosterone blocker: *** mg
+Masculinizing therapy: testosterone *** (IM/topical) | Last injection: *** | Dose: ***
+GAHT MONITORING LABS DUE:
+Estradiol level: *** (goal 100-200 pg/mL) | Total testosterone: *** (goal <50 ng/dL)
+LFTs: *** | Hematocrit: *** | K+ (spironolactone): *** | Prolactin: *** | Lipids: ***
+ANATOMY-BASED SCREENING:
+Cervix present: [ ] Yes → Pap ± HPV per guidelines (note: on testosterone = specify in Epic)
+Prostate present: [ ] Yes → PSA discussion per male guidelines
+Breast tissue present: [ ] Yes → mammogram per guidelines
+SEXUAL HEALTH:
+Sexual practices: *** | Exposed sites: genital [ ] rectal [ ] pharyngeal [ ]
+STI screening (3-site NAAT if MSM or exposed): *** | Last screen: ***
+PrEP: on [ ] / offered [ ] / declined [ ] | DoxyPEP discussed: [ ]`,
+    ddx: `GENDER-AFFIRMING HORMONE THERAPY OPTIONS:
+FEMINIZING THERAPY (trans women, transfeminine):
+Estrogen: 17-beta estradiol (preferred over conjugated estrogens — lower VTE risk)
+• Oral: estradiol 2-4mg qday (suboptimal due to hepatic first-pass; higher VTE risk)
+• Transdermal: estradiol patch 0.05-0.1mg/24h (preferred — lowest VTE risk; target E2 100-200 pg/mL)
+• Sublingual: estradiol 2mg SL qday or BID (good absorption, avoids first pass)
+• IM: estradiol valerate or cypionate 5-40mg q2 weeks
+Androgen blockers (to suppress endogenous testosterone):
+• Spironolactone 100-200mg qday: most common in US; diuretic (monitor K+, BP); NOT appropriate if pregnancy possible
+• Bicalutamide 25-50mg qday: androgen receptor blocker; less diuretic effect; monitor LFTs
+• GnRH agonists (leuprolide): most effective; expensive; usually added when spiro inadequate
+Effects timeline: breast development (3-6mo), skin changes (3-6mo), fat redistribution (3-6mo-3yr), reduction in body hair (1-3yr), reduced genital size; irreversible: breast growth
+MASCULINIZING THERAPY (trans men, transmasculine):
+• Testosterone cypionate/enanthate IM: 50-100mg q1-2 weeks OR 200mg q2-3 weeks; target mid-normal male range (400-700 ng/dL mid-cycle)
+• Testosterone gel (AndroGel, Testim): 1-2 pumps to skin qday; lower peak/trough variation; risk of skin transfer to partners/children (cover application site)
+• Subdermal pellet: q3-6 months
+Effects timeline: clitoral growth + vaginal atrophy (3-6mo), increased body/facial hair (6mo-5yr), voice deepening (irreversible, 3-6mo), acne, menstrual changes (oligomenorrhea → amenorrhea, 3-6mo); irreversible: voice deepening, clitoral growth, facial hair
+LGBTQIA+ HEALTH CONSIDERATIONS:
+Documentation in Epic: use "Sexual Orientation/Gender ID" tab; use patient-specified chosen name and pronouns in all communications; apologize for errors and correct immediately
+STI screening (MSM/WSW/high-risk):
+• MSM: 3-site GC/Chlamydia NAAT (genital + rectal + pharyngeal) q3-6 months; syphilis RPR q3-6 months; HIV q3-6 months; Hep B/C screening; hepatitis A vaccine
+• WSW: Pap smear per guidelines; STI screen based on exposures and risk
+Mental health: higher rates of depression, anxiety, PTSD, and suicidality in LGBTQIA+ patients (discrimination, stigma, minority stress); affirming mental health resources; 988 (Suicide and Crisis Lifeline)`,
+    workup: `GAHT MONITORING SCHEDULE:
+First year (q3 months): hormone levels, hematocrit, LFTs, electrolytes, BP, weight
+After 1 year (q6-12 months): same labs; bone density (DEXA) if risk factors
+FEMINIZING THERAPY LABS:
+• Estradiol level: draw midway between doses; goal 100-200 pg/mL
+• Total testosterone: goal <50 ng/dL (on androgen blocker)
+• Serum K+ (spironolactone — hyperkalemia risk, especially with ACEi/ARB or CKD)
+• LFTs q6-12 months
+• Prolactin: annually (estrogen can cause hyperprolactinemia)
+• Lipid panel, glucose, HbA1c annually (estrogen changes lipid profile)
+MASCULINIZING THERAPY LABS:
+• Total testosterone: draw mid-cycle (5-7 days after IM injection); goal 400-700 ng/dL; topical: any time
+• Hematocrit: q3 months first year; annually when stable; hold testosterone if Hct >50% (polycythemia)
+• LFTs q6-12 months
+• Lipid panel annually (testosterone lowers HDL)
+ANATOMY-BASED SCREENING (apply based on anatomy present, not gender marker):
+• Pap smear in trans men: document testosterone use in Epic order (cells may be 'unsatisfactory' — acceptable on testosterone); continue per guidelines as long as cervix present; self-collected vaginal swab equally sensitive and less dysphoria-provoking`,
+    management: `GAHT INITIATION AND MANAGEMENT:
+• Refer to MGH Transgender Health Program (617-726-2700) or community-affirming providers for GAHT initiation
+• Informed consent model (WPATH Standards of Care v8): discuss expected changes, irreversible effects, fertility implications, emotional changes; document in detail
+• Fertility preservation: discuss before GAHT (sperm banking for trans women; oocyte/embryo freezing for trans men); testosterone is NOT reliable contraception
+• Surgery referrals: gender-affirming surgery (GAS) at MGH — requires WPATH letters from mental health providers; types: chest reconstruction (mastectomy, augmentation), vaginoplasty, phalloplasty, orchiectomy, hysterectomy
+SEXUAL HEALTH INTERVENTIONS:
+PrEP: tenofovir/emtricitabine (Truvada/Descovy) qday for HIV prevention; q3-6 months monitoring (HIV test, Cr, STI screen, adherence); reduces HIV risk >95% with daily use
+DoxyPEP: doxycycline 200mg PO within 72h of condomless sex; reduces gonorrhea/chlamydia/syphilis ~80% in MSM (NEJM 2023;388:1296); prescribe alongside PrEP for eligible patients
+HPV vaccine: through age 26 regardless of sexual orientation or prior exposure; shared decision-making 27-45
+AFFIRMING CLINICAL ENVIRONMENT:
+• Address patients by chosen name and pronouns throughout encounter
+• Trauma-informed approach to physical exams (especially GU/GI exams)
+• Explain purpose of each exam element before performing
+• Offer self-swabs when possible (reduce dysphoria)
+• Document preferred terms in chart; use dot phrase .PRONOMENS or Epic pronoun fields`,
+    monitoring: `• GAHT: q3 months labs first year, then q6-12 months; track bone density if amenorrheic >5 years on testosterone (low estrogen → osteoporosis risk), or on anti-androgen therapy for trans women
+• STI: q3-6 months for sexually active MSM; q6-12 months for lower-risk patients
+• Mental health: PHQ-9 + GAD-7 at each visit; higher prevalence of mood disorders in trans population — low threshold for referral to LGBTQIA+-affirming mental health providers`,
+    disposition: `• MGH Transgender Health Program (617-726-2700): GAHT initiation, surgical referrals, complex cases
+• Endocrinology: complex hormone management, fertility preservation coordination
+• Urology/Urogynecology: gender-affirming surgery consultation, genitourinary complications
+• Mental health (LGBTQIA+-affirming): gender dysphoria, depression/anxiety, suicidality`
+  },
+
+  {
+    id: "sleep-heent-primary",
+    system: "pc",
+    title: "Sleep Medicine / HEENT Concerns — Insomnia / OSA / Cough / Pharyngitis / Hearing",
+    keywords: ["insomnia","sleep medicine","OSA","obstructive sleep apnea","STOP-BANG","CBT-I","melatonin","suvorexant","zolpidem","chronic cough","UACS","upper airway cough syndrome","pharyngitis","strep throat","centor criteria","tonsillitis","otitis media","hearing loss","epistaxis","sinusitis","CPAP","sleep hygiene","doxepin insomnia","trazodone sleep"],
+    source: { chapter: "Primary Care", section: "Sleep Medicine / HEENT Concerns", pages: "217–218", authors: "Shraddha Damaraju, various",
+      keyFacts: [
+        "Chronic cough (>8 weeks) causes: upper airway cough syndrome/UACS (most common — allergic/non-allergic rhinitis, sinusitis; treat with nasal corticosteroid + antihistamine), asthma (episodic wheeze + dyspnea; spirometry; treat with ICS + PRN bronchodilator), GERD (often silent; treat with PPI empirically); these three account for 90% of chronic cough — treat sequentially then add to regimen until resolved",
+        "OSA (obstructive sleep apnea): STOP-BANG score ≥3 = high risk (Snoring, Tired, Observed apnea, high blood Pressure, BMI >35, Age >50, Neck >40cm, Male gender); diagnose with home sleep apnea test (HSAT) or polysomnogram (PSG); treatment: CPAP (most effective), weight loss (10% weight loss → 26% AHI decrease), positional therapy, mandibular advancement device (mild-moderate OSA or CPAP intolerant)",
+        "Insomnia treatment: CBT-I (cognitive behavioral therapy for insomnia) is first-line — more effective than medications long-term; sleep hygiene (regular schedule, cool/dark room, no screens, limit caffeine/alcohol/evening fluids); medications: melatonin 2-5mg 1-2h before bed (low evidence, safe), trazodone 25-50mg QHS (widely used), suvorexant (Belsomra, DORA) approved with moderate evidence; avoid benzodiazepines/Z-drugs (zolpidem, eszopiclone) long-term — dependence risk; goal is hypnotics <4 weeks",
+        "Strep pharyngitis (group A Strep): Centor criteria = exudates, LAD, no cough, fever; 0-1: no testing; 2-3: rapid antigen test; 4+: treat without testing; treat with amoxicillin 500mg BID × 10d (PCN for PCN-sensitive) to prevent rheumatic fever; azithromycin if PCN allergy",
+        "Epistaxis management: lean forward + pinch soft nasal tissue (NOT bony bridge) × 20 min (do NOT peek); generously spray oxymetazoline (Afrin) 3-4 sprays each nostril + hold pressure 20 more min; control SBP <140; most are anterior (Kiesselbach's plexus 90%); ENT if still bleeding after above — cauterization, resorbable/non-resorbable packing"
+      ]
+    },
+    assessment: `#Sleep Medicine / HEENT Assessment
+SLEEP:
+Chief complaint: difficulty falling asleep [ ] / staying asleep [ ] / early awakening [ ] / daytime sleepiness [ ]
+Duration of insomnia: *** | Daytime function impairment: [ ]
+STOP-BANG (OSA screen): Snore [ ] Tired [ ] Observed apnea [ ] BP high [ ] BMI >35 [ ] Age >50 [ ] Neck >40cm [ ] Male [ ]  Score: /8 (≥3 = high risk → sleep study)
+Sleep study: [ ] None [ ] HSAT: *** | PSG: *** | AHI: ***
+CPAP: prescribed [ ] | Adherent (>4h/night, >70% nights): [ ]
+Insomnia meds: *** | CBT-I: offered [ ] / in progress [ ] / completed [ ]
+HEENT:
+COUGH: duration *** weeks | Productive: *** | Associated sx: postnasal drip [ ] / wheeze [ ] / GERD [ ]
+Empiric UACS treatment started: [ ] | GERD treatment: [ ] | Asthma evaluation: ***
+PHARYNGITIS: exudates [ ] | Anterior cervical LAD [ ] | No cough [ ] | Fever [ ]
+  Centor score: /4 | Rapid strep test: *** | Treatment: ***
+EPISTAXIS (if active): pinching + Afrin given [ ] | Oxymetazoline applied: [ ] | ENT consulted: ***`,
+    ddx: `CHRONIC COUGH CAUSES (>8 weeks):
+Three most common account for 90% — treat sequentially, adding each to regimen:
+1. UACS (Upper Airway Cough Syndrome): formerly "post-nasal drip"; most common cause; diagnose clinically (throat cobblestoning, secretions in posterior pharynx); treat: intranasal corticosteroid + 1st-gen antihistamine/decongestant; allow 2-8 weeks for response
+2. Asthma (cough-variant asthma): only symptom may be cough; spirometry with bronchodilator; treat with ICS ± PRN SABA
+3. GERD: "silent" GERD without classic heartburn; treat empirically with PPI × 8 weeks; if non-responsive → pH monitoring
+Other: ACEi-induced (switch to ARB), chronic eosinophilic bronchitis (BAL eosinophilia, ICS responsive), COPD, TB, malignancy, aspiration (swallowing dysfunction), drug-induced
+PHARYNGITIS DIFFERENTIAL:
+Viral (most common): rhinovirus, adenovirus, EBV (mono — prominent posterior LAD, splenomegaly, atypical lymphocytes), CMV, COVID; treatment is supportive
+Group A Strep (GAS): 10-15% of adult pharyngitis; exudates + anterior LAD + no cough + fever; treat to prevent rheumatic fever
+Gonococcal pharyngitis: oral sex exposure; tonsillar exudate; send GC NAAT; treat with ceftriaxone 500mg IM
+Peritonsillar abscess: trismus + uvular deviation + muffled voice → ENT (drainage)
+Lemierre syndrome (see Viral Respiratory template)
+OSA DIFFERENTIAL:
+Central sleep apnea (CSA): apneas without airway obstruction (no effort on polysomnogram); causes: CHF, opioids, high altitude; treat: CPAP (often worsens CSA initially), adaptive servoventilation (ASV — avoid if EF <45), oxygen
+Upper airway resistance syndrome (UARS): symptoms like OSA but AHI normal; CPAP still helpful
+Narcolepsy: excessive daytime sleepiness + cataplexy (sudden muscle weakness with emotion) + sleep paralysis; treat with modafinil or sodium oxybate`,
+    workup: `OSA WORKUP:
+• STOP-BANG screening: ≥3 points → refer for sleep study; ≥5 points = high probability OSA
+• Home sleep apnea test (HSAT): preferred first test for uncomplicated suspected OSA in adults without comorbid sleep disorders; HSAT shows AHI 5-15 = mild, 15-30 = moderate, >30 = severe
+• Polysomnogram (PSG): if HSAT negative with high clinical suspicion, complex comorbidities (CHF, COPD, neuromuscular), suspected central apnea, narcolepsy evaluation, pediatric OSA
+• CBC (secondary polycythemia from hypoxia), TFTs (hypothyroidism causes OSA)
+CHRONIC COUGH WORKUP:
+• CXR if cough >8 weeks, any concerning features, or smoker
+• Spirometry with bronchodilator (asthma evaluation)
+• Nasal endoscopy or sinus CT (if UACS not responding to empiric therapy)
+• Esophageal pH monitoring or GI referral (if GERD refractory)
+• If all three treated and cough persists: CT chest, speech-language therapy (laryngeal hypersensitivity), referral to pulmonology
+STREP PHARYNGITIS:
+• Centor score 0-1: no testing needed, symptomatic treatment only
+• Centor score 2-3: rapid strep antigen test (90% Sn, 95-99% Sp); if negative and high clinical suspicion → throat culture (takes 24-48h)
+• Centor score 4: treat empirically without testing (high enough pretest probability)`,
+    management: `INSOMNIA — STEPWISE:
+1. Sleep hygiene counseling (all patients): consistent wake time 7 days/week; avoid naps >20 min; bedroom for sleep/sex only; limit caffeine (stop by noon), alcohol, nicotine; no screens 1h before bed or use warm/red light; cool dark quiet room; avoid heavy meals 2-3h before bed; limit fluids after 6pm
+2. CBT-I (first-line therapy): stimulus control, sleep restriction, relaxation techniques; more effective than medications long-term; available via digital CBT-I apps (Sleepio) or referral to behavioral sleep medicine
+3. Medications (short-term, <4 weeks if possible):
+• Melatonin 2-5mg PO 1-2h before bedtime: circadian rhythm regulation; safe, low efficacy; best for circadian disorders and jet lag
+• Trazodone 25-100mg QHS: widely used off-label; antihistaminergic sedation; low addiction potential; minimal next-day sedation at low doses
+• Suvorexant (Belsomra) 10-20mg QHS: dual orexin receptor antagonist (DORA); FDA approved; moderate evidence; CYP3A4 interactions; expensive
+• Doxepin 3-6mg QHS: for sleep maintenance; FDA approved low-dose formulation
+• Z-drugs (zolpidem, eszopiclone, zaleplon): short-term only (<4 weeks); dependence risk; avoid in elderly (Beers criteria); risk of complex sleep behaviors
+• Ramelteon 8mg QHS: melatonin receptor agonist; for sleep onset; safe in elderly; minimal abuse potential
+AVOID long-term benzodiazepines for insomnia: physical dependence, rebound insomnia, falls in elderly
+OSA TREATMENT:
+• CPAP: gold standard; titrate pressure via autoCPAP (APAP) or manual PSG titration; adherence goal >4h/night on >70% nights; insurance requires adherence documentation at 30-90 days
+• Weight loss: strongly encourage — 10% weight loss → ~26% reduction in AHI; GLP-1 RA significantly improves OSA
+• Positional therapy: avoidance of supine position (tennis ball technique or positional alarm device) for position-dependent OSA
+• Mandibular advancement device (MAD): mild-moderate OSA or CPAP intolerant; dental referral
+• Hypoglossal nerve stimulation (Inspire): for moderate-severe OSA intolerant to CPAP; BMI <32; surgical implant; dramatically effective
+STREP PHARYNGITIS:
+• Amoxicillin 500mg PO BID × 10 days OR 1g PO qday × 10 days (preferred — superior to penicillin V)
+• PCN allergy: azithromycin 500mg qday × 5 days OR clindamycin 300mg TID × 10 days
+• Analgesia: acetaminophen or NSAIDs, cool liquids, OTC throat lozenges
+• Corticosteroids: dexamethasone 10mg IM × 1 for severe odynophagia (not routine)
+EPISTAXIS: lean forward + pinch + oxymetazoline 3-4 sprays + hold 20 min; SBP control; if persists → ENT for cauterization or packing`,
+    monitoring: `• OSA: CPAP adherence data download at 30-90 days (required for insurance); AHI residual on CPAP (goal <5); follow-up PSG if symptoms persist on CPAP
+• Insomnia: sleep diary (7-10 days before and during treatment); Insomnia Severity Index (ISI) score; medication taper plan at 4 weeks
+• Chronic cough: symptom response q4-8 weeks per intervention; Leicester Cough Questionnaire for severity tracking`,
+    disposition: `• Sleep medicine/pulmonology: HSAT or PSG ordering, complex OSA, CPAP titration, narcolepsy evaluation, refractory insomnia
+• ENT: refractory or recurrent epistaxis, chronic sinusitis, peritonsillar abscess, recurrent pharyngitis, hearing loss evaluation, cochlear implant candidacy
+• Speech-language therapy: vocal cord dysfunction, laryngeal hypersensitivity (chronic refractory cough), swallowing dysfunction`
+  },
+
+  {
+    id: "nodules-msk-obesity",
+    system: "pc",
+    title: "Nodules / Musculoskeletal Pain / Obesity / Outpatient CV / SDOH",
+    keywords: ["adrenal nodule","thyroid nodule","lung nodule","adrenal incidentaloma","pheochromocytoma workup","Cushing workup","shoulder pain","rotator cuff","back pain","knee pain","osteoarthritis knee","obesity BMI","GLP-1 weight loss","semaglutide obesity","tirzepatide","bariatric surgery","Wegovy","Zepbound","statin therapy","outpatient hypertension","lipid management","PCSK9 inhibitors","social determinants of health","SDOH","immigrant health","disability"],
+    source: { chapter: "Primary Care", section: "Nodules / MSK Pain / Obesity / Outpatient CV / SDOH", pages: "220–229", authors: "Various MGH Primary Care Faculty",
+      keyFacts: [
+        "Adrenal incidentaloma (>1cm): always evaluate for functional activity (pheo + Cushing's + hyperaldosteronism if HTN/hypoK) AND malignancy risk; pheo workup: 24h urine metanephrines/catecholamines OR plasma metanephrines (preferred — more sensitive); Cushing's: 1mg overnight dexamethasone suppression test (DST) — if positive, send 24h UFC + midnight salivary cortisol; size >4cm + suspicious CT features (>10 HU, heterogeneous) = adrenalectomy",
+        "Thyroid nodule: ultrasound-based ACR TI-RADS classification guides FNA decision (FNA recommended for TI-RADS 5 ≥1cm, TI-RADS 4 ≥1.5cm, TI-RADS 3 ≥2.5cm); check TSH first (if low, do radionuclide scan — hot nodule rarely malignant); most thyroid nodules are benign; papillary thyroid cancer is most common (excellent prognosis)",
+        "Obesity pharmacotherapy (BMI ≥30 or ≥27 + weight-related comorbidity): semaglutide 2.4mg SQ weekly (Wegovy) = ~15% weight loss (STEP trials); tirzepatide 15mg SQ weekly (Zepbound) = ~22% weight loss (SURMOUNT trials — greatest available); orlistat, naltrexone/bupropion, phentermine/topiramate also approved but less effective; medications work best combined with lifestyle intervention",
+        "Outpatient HTN management: lifestyle first (DASH diet −8-14 mmHg, sodium restriction −2-8 mmHg, aerobic exercise −5-8 mmHg, weight loss −1 mmHg/kg); first-line pharmacotherapy: thiazide (chlorthalidone preferred over HCTZ), CCB, or ACEi/ARB; Black patients: thiazide or CCB preferred (ACEi less effective as monotherapy); CKD + proteinuria: ACEi/ARB preferred",
+        "Lung nodule management (Fleischner Society 2017): <6mm in low-risk patient → no routine follow-up; 6-8mm → CT at 6-12 months; >8mm → CT at 3 months OR PET/CT OR tissue sampling; solid vs subsolid (pure ground-glass vs part-solid) have different thresholds; smoking history, nodule density, and growth rate are key factors"
+      ]
+    },
+    assessment: `#Nodules / MSK / Obesity / Outpatient CV / SDOH
+NODULES:
+Adrenal nodule size: *** cm | CT density: *** HU | Suspicious features: [ ]
+  Pheo workup: plasma metanephrines ordered [ ] / result: ***
+  Cushing's: 1mg o/n DST ordered [ ] / result: cortisol ***
+  HTN + HypoK: aldosterone:renin ratio (8AM) ordered: ***
+Thyroid nodule: size *** cm | TI-RADS: *** | TSH: *** | FNA needed (TI-RADS 4 ≥1.5cm or 5 ≥1cm): ***
+Lung nodule: size *** mm | Density: solid / GGO / part-solid | Smoking hx: *** | Fleischner follow-up: ***
+MUSCULOSKELETAL PAIN:
+Location: shoulder [ ] / low back [ ] / knee [ ] / other: ***
+Trauma: [ ] | Duration: *** | Radiculopathy: *** | Red flags: fever/weight loss [ ] / bowel-bladder [ ]
+OBESITY / WEIGHT:
+BMI: *** | Waist circumference: *** | Weight loss goal: ***
+Pharmacotherapy eligible (BMI ≥30 or ≥27+comorbidity): [ ] | Agent: ***
+Bariatric surgery referral: MGH Weight Center [ ]
+OUTPATIENT CV:
+ASCVD risk: *** % | LDL: *** | BP: *** / *** | Statin: *** | Target met: ***
+SDOH SCREEN:
+Housing [ ] | Food security [ ] | Transportation [ ] | Safety [ ] | Referral to MGH SDH Services: ***`,
+    ddx: `ADRENAL NODULE FUNCTIONAL EVALUATION:
+Pheochromocytoma (~5%): episodic HTN, headache, diaphoresis, palpitations; plasma metanephrines (Sn 97-99% for symptomatic pheo) OR 24h urine metanephrines/catecholamines; if positive → adrenalectomy with preop alpha-blockade (phenoxybenzamine × 10-14d) then beta-blockade
+Cortisol excess/Cushing's (~10%): central obesity, proximal weakness, facial plethora, HTN, DM, striae; 1mg overnight DST (if cortisol >1.8 µg/dL → further testing: 24h UFC + midnight salivary cortisol); mild autonomous cortisol secretion (MACS) common — monitor metabolic comorbidities
+Hyperaldosteronism: HTN + hypokalemia + adrenal nodule; plasma aldosterone:renin ratio (8AM, off interfering meds); if positive → CT + adrenal vein sampling (AVS); treat unilateral disease with adrenalectomy; bilateral: spironolactone
+Size + malignancy risk: <4cm + <10 HU CT → low malignancy risk, monitor; >4cm or suspicious → adrenalectomy; lipid-rich adenoma (<10 HU) = characteristic benign CT appearance
+MUSCULOSKELETAL PAIN RED FLAGS (warrant urgent imaging):
+• Bowel/bladder dysfunction (cauda equina syndrome — MRI spine STAT)
+• Fever + back pain + injection drug use (vertebral osteomyelitis — MRI spine)
+• Cancer history + new back pain (metastatic disease — MRI spine)
+• Neurological deficits (stroke, cord compression)
+• Trauma + elderly or osteoporotic (vertebral fracture — XR/CT)
+SHOULDER PAIN: rule out shoulder mimics (cervical/neck, biceps pathology, cardiac, GI) first; rotator cuff most common (painful arc, impingement signs, external/internal lag tests, Neer/Hawkins); subacromial bursitis; OA (AC joint tenderness, XR); adhesive capsulitis (frozen shoulder — restricted ROM all planes)
+LOW BACK PAIN: >90% self-limited (3-4 weeks); imaging rarely needed within 6 weeks unless red flags; causes: muscle strain, disc herniation (radiculopathy — sciatic distribution), degenerative disc, spinal stenosis (neurogenic claudication — walking → bilateral LE pain, relieved by sitting or leaning forward)
+KNEE PAIN: ACL (Lachman test — tibia translated anteriorly on femur), meniscus (McMurray/Thessaly — clicking or pain with rotation), OA (crepitus, XR joint space narrowing), prepatellar bursitis (point tenderness over patella), patellofemoral syndrome
+OBESITY PHARMACOTHERAPY (eligibility: BMI ≥30 or ≥27 + comorbidity):
+GLP-1 agonists (best efficacy): semaglutide 2.4mg SQ weekly (Wegovy) ~15% weight loss; tirzepatide 15mg SQ weekly (Zepbound) ~22% weight loss; liraglutide 3mg (Saxenda) ~5% weight loss; start at lowest dose, uptitrate monthly to minimize GI side effects; FDA black box warning: MTC/MEN2 personal or family history
+Others: orlistat (lipase inhibitor, steatorrhea SE); phentermine/topiramate ER (Qsymia); naltrexone/bupropion ER (Contrave); bupropion + naltrexone
+Bariatric surgery: BMI ≥40 or ≥35 + severe comorbidity; most effective long-term weight loss (RYGB 31%, sleeve gastrectomy 25% at 1yr); refer to MGH Weight Center`,
+    workup: `NODULE WORKUP ALGORITHMS:
+Adrenal: plasma metanephrines (1st) + 1mg overnight DST (1st) + aldosterone:renin ratio (if HTN/hypoK); CT washout characteristics; adrenal biopsy ONLY after pheo excluded (risk of hypertensive crisis)
+Thyroid: TSH first (if low → thyroid scan for hot/cold nodule determination before FNA); US with TI-RADS grading; FNA (US-guided) for appropriate TI-RADS level and size
+Lung (Fleischner 2017): solid nodules <6mm low-risk: no follow-up; 6-8mm: CT 6-12 months; >8mm: CT 3 months OR PET/CT; subsolid (GGO): CT at 3-6 months (GGOs grow slowly; may need longer follow-up); part-solid: CT at 3-6 months (solid component drives malignancy risk)
+MSK WORKUP:
+Shoulder: XR (calcific tendinitis, OA, fracture); MRI (rotator cuff tear — if surgery being considered, or failure to improve after PT/injection); diagnostic/therapeutic steroid injection under US
+Low back pain: XR only if red flags; MRI within 6 weeks if neurological deficits or cauda equina concern; EMG/nerve conduction for radiculopathy characterization
+Knee: XR (OA — standing weight-bearing view, MRI (ACL, meniscus tears — if surgery or diagnosis uncertain)
+LIPID MANAGEMENT:
+• Baseline lipid panel (fasting): LDL-C, HDL-C, TG, total cholesterol
+• Calculate ASCVD 10yr risk (ACC/AHA calculator) → statin threshold
+• If TG >400: direct LDL measurement; if TG >500: triglyceride management priority
+• ApoB and Lp(a): add if borderline risk or family history of premature ASCVD (Lp(a) is genetic — check once)
+• If LDL goal not reached on maximum statin: ezetimibe 10mg qday (first add-on); PCSK9 inhibitors (evolocumab/alirocumab — expensive, injectable, for very high-risk/FH)`,
+    management: `ADRENAL INCIDENTALOMA:
+• Pheo confirmed → laparoscopic adrenalectomy after alpha-blockade (phenoxybenzamine 10mg BID → titrate to BP control) × 10-14d, then beta-blockade × 3-7d
+• Cushing's (mild): monitor metabolic comorbidities; adrenalectomy if significant clinical impact (DM, osteoporosis, HTN); pituitary Cushing's → transsphenoidal surgery (see Pituitary template)
+• Hyperaldo (unilateral on AVS) → adrenalectomy; bilateral → spironolactone 25-100mg qday
+• Imaging surveillance: no functional activity + <4cm + benign CT appearance → CT at 6-12 months, then annually × 5 years if stable
+MSK PAIN MANAGEMENT:
+Shoulder: PT (first-line for most causes); NSAIDs; subacromial corticosteroid injection under US (for bursitis/impingement — not for full-thickness rotator cuff tears); rotator cuff repair for full-thickness tears + functional limitation
+Low back pain: stay active (bed rest harmful); NSAIDs/acetaminophen; ice/heat; PT; muscle relaxants (cyclobenzaprine, methocarbamol) short-term; epidural steroid injection for radiculopathy with disc herniation; avoid opioids for non-specific LBP; gabapentin/pregabalin for radiculopathy with limited evidence; surgery: short-term benefit for disc herniation, debatable for spinal stenosis
+Knee: RICE (rest, ice, compression, elevation); NSAIDs/topical diclofenac; PT (quad strengthening); intra-articular steroid injection (OA — 3-4 per year per joint); OA: duloxetine for central sensitization; knee replacement for severe OA
+OBESITY:
+• Lifestyle: 150 min/week moderate aerobic activity + resistance training 2-3×/week; 500-750 kcal/day deficit; structured program (Weight Watchers, DPP)
+• Pharmacotherapy: start GLP-1 RA (semaglutide 0.25mg × 4wk → 0.5mg × 4wk → 1mg → 1.7mg → 2.4mg qweekly); hold pre-surgery 1 week
+• Bariatric surgery referral: MGH Weight Center (617-726-4400)
+OUTPATIENT LIPID MANAGEMENT:
+• High-intensity statin: rosuvastatin 20-40mg or atorvastatin 40-80mg; if ASCVD or very high risk
+• Moderate-intensity: rosuvastatin 10mg or atorvastatin 10-20mg or simvastatin 20-40mg
+• Add-on if LDL goal not met: ezetimibe 10mg qday (add to statin — further ~23% LDL reduction, IMPROVE-IT trial)
+• PCSK9 inhibitors (evolocumab 140mg q2w or alirocumab 75-150mg q2w): very high-risk CVD + LDL >70 on max statin + ezetimibe; covers FH; expensive; inject SQ
+• Triglyceride management (TG >500): omega-3 FA (icosapentaenoic acid/EPA, Vascepa 4g qday — reduces CV events in high-risk with TG 135-499 on statin, REDUCE-IT); fibrates (fenofibrate — avoid with statin myopathy risk)
+SDOH SCREENING AND RESOURCES:
+• Screen using Epic .SDOHSCREEN dot phrase or PRAPARE tool at preventive visits
+• Actionable interventions: PT-1 for transportation assistance; GoodRx/manufacturer coupons for medications; SNAP/WIC for food insecurity; MGH SDH Navigation referral for comprehensive assistance
+• Immigrant/refugee health: interpreter services (in-person: x66966 or phone: 617-643-3344 pin 1050); trauma-informed care; screen for PTSD (RHS-15 tool); mandatory reporting considerations (immigration status NOT reported by clinicians)`,
+    monitoring: `• Adrenal: biochemical re-evaluation at 12 months for all adrenal incidentalomas; CT at 6-12 months (indeterminate) or 3-6 months (high-suspicion); repeat functional labs if new hypertension or weight gain
+• Thyroid nodule: per TI-RADS follow-up intervals (typically 1-2 years if FNA benign); annual US for ≥6 months growth rate monitoring
+• Obesity pharmacotherapy: weight at each visit; A1c, lipids, BP (track improvement); GI side effects (main reason for discontinuation); pause GLP-1 RA before scheduled procedures (gastric retention concern)
+• Statin: lipid panel q6-12 months; LFTs and CK if myopathy symptoms; add ezetimibe or PCSK9 inhibitor if LDL goal not reached`,
+    disposition: `• Endocrinology: adrenal incidentaloma with functional activity, complex thyroid nodule management, pituitary Cushing's
+• Surgery/Endocrine Surgery: adrenalectomy, thyroid surgery (FNA showing malignancy or indeterminate)
+• Pulmonology/Thoracic Surgery: lung nodule with high malignancy concern (Lung-RADS 3-4 on LDCT)
+• Orthopedics: rotator cuff full-thickness tear, ACL tear, meniscal tear requiring surgery, severe OA for joint replacement
+• MGH Weight Center (617-726-4400): bariatric surgery evaluation, medically supervised weight management program`
   },
 
 ];
