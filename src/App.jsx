@@ -59,7 +59,7 @@ const GLOBAL_CSS = `
   }
   .header-logo {
     display: flex; align-items: center; gap: 7px;
-    font-family: var(--mono); font-size: 12.5px; font-weight: 700;
+    font-family: var(--sans); font-size: 12.5px; font-weight: 700;
     color: var(--ink); letter-spacing: 0.1em; text-transform: uppercase;
   }
   .header-logo-icon {
@@ -79,7 +79,7 @@ const GLOBAL_CSS = `
   .specialty-dot { width: 7px; height: 7px; border-radius: 99px; background: var(--green); }
   .header-spacer { flex: 1; }
   .header-badge {
-    font-family: var(--mono); font-size: 10.5px;
+    font-family: var(--sans); font-size: 10.5px;
     padding: 3px 9px; border-radius: 99px;
     border: 1px solid var(--border-md);
     color: var(--ink-muted); background: var(--bg);
@@ -135,7 +135,7 @@ const GLOBAL_CSS = `
   .search-input::placeholder { color: var(--ink-subtle); }
   .search-input:focus { border-color: var(--ink-subtle); }
   .search-meta {
-    font-family: var(--mono); font-size: 11px; color: var(--ink-subtle);
+    font-family: var(--sans); font-size: 11px; color: var(--ink-subtle);
     white-space: nowrap;
   }
 
@@ -201,7 +201,7 @@ const GLOBAL_CSS = `
     padding: 7px 13px; border-radius: 8px;
     border: 1px solid var(--border-md);
     background: var(--card);
-    color: var(--ink-mid); font-family: var(--mono);
+    color: var(--ink-mid); font-family: var(--sans);
     font-size: 11px; cursor: pointer;
     transition: all 0.15s; white-space: nowrap;
     box-shadow: var(--shadow-sm);
@@ -224,21 +224,21 @@ const GLOBAL_CSS = `
     border-bottom: 1px solid var(--border-md);
   }
   .ap-section-label {
-    font-family: var(--mono); font-size: 10px; font-weight: 700;
+    font-family: var(--sans); font-size: 10px; font-weight: 700;
     color: var(--ink-muted); letter-spacing: 0.1em; text-transform: uppercase;
   }
   .copy-section-btn {
     display: flex; align-items: center; gap: 4px;
     padding: 3px 8px; border-radius: 4px;
     background: transparent; border: 1px solid var(--border-md);
-    color: var(--ink-muted); font-family: var(--mono);
+    color: var(--ink-muted); font-family: var(--sans);
     font-size: 9px; cursor: pointer; transition: all 0.15s;
   }
   .copy-section-btn:hover { background: var(--ink); color: var(--card); border-color: var(--ink); }
   .copy-section-btn.copied { background: #16a34a; color: #fff; border-color: #16a34a; }
   .ap-content {
     padding: 13px; background: var(--card);
-    font-family: var(--mono); font-size: 12.5px;
+    font-family: var(--sans); font-size: 12.5px;
     color: var(--ink-mid); line-height: 1.85;
     white-space: pre-wrap; word-break: break-word;
   }
@@ -261,11 +261,11 @@ const GLOBAL_CSS = `
   }
   .source-header-icon { font-size: 12px; color: var(--card); }
   .source-header-title {
-    font-family: var(--mono); font-size: 10.5px; font-weight: 700;
+    font-family: var(--sans); font-size: 10.5px; font-weight: 700;
     color: var(--card); letter-spacing: 0.08em; text-transform: uppercase;
   }
   .source-page-badge {
-    font-family: var(--mono); font-size: 9px; font-weight: 700;
+    font-family: var(--sans); font-size: 9px; font-weight: 700;
     padding: 2px 8px; border-radius: 99px;
     background: rgba(255,255,255,0.12);
     color: rgba(255,255,255,0.85);
@@ -278,7 +278,7 @@ const GLOBAL_CSS = `
     background: rgba(255,255,255,0.12);
     border: 1px solid rgba(255,255,255,0.2);
     color: rgba(255,255,255,0.9);
-    font-family: var(--mono); font-size: 9.5px; font-weight: 700;
+    font-family: var(--sans); font-size: 9.5px; font-weight: 700;
     cursor: pointer; transition: all 0.15s; letter-spacing: 0.04em;
     text-transform: uppercase;
   }
@@ -301,12 +301,12 @@ const GLOBAL_CSS = `
   }
   .source-meta-item { display: flex; flex-direction: column; gap: 2px; }
   .source-meta-label {
-    font-family: var(--mono); font-size: 10px; font-weight: 700;
+    font-family: var(--sans); font-size: 10px; font-weight: 700;
     color: var(--ink-muted); letter-spacing: 0.06em; text-transform: uppercase;
   }
   .source-meta-value { font-size: 13.5px; font-weight: 600; color: var(--ink); }
   .source-facts-label {
-    font-family: var(--mono); font-size: 10px; font-weight: 700;
+    font-family: var(--sans); font-size: 10px; font-weight: 700;
     color: var(--ink-muted); letter-spacing: 0.08em; text-transform: uppercase;
     margin-bottom: 8px;
   }
@@ -317,7 +317,7 @@ const GLOBAL_CSS = `
     background: var(--bg); border: 1px solid var(--border);
   }
   .source-fact-bullet {
-    font-family: var(--mono); font-size: 10px; font-weight: 700;
+    font-family: var(--sans); font-size: 10px; font-weight: 700;
     color: var(--ink-muted); flex-shrink: 0; margin-top: 1px;
   }
   .source-fact-text { font-size: 13px; color: var(--ink-mid); line-height: 1.6; }
@@ -330,7 +330,7 @@ const GLOBAL_CSS = `
   /* result card page badge */
   .rc-page-badge {
     display: inline-flex; align-items: center; gap: 4px;
-    font-family: var(--mono); font-size: 9px;
+    font-family: var(--sans); font-size: 9px;
     color: var(--ink-muted); margin-top: 4px;
   }
 
@@ -341,7 +341,7 @@ const GLOBAL_CSS = `
     padding: 7px 13px; border-radius: 8px;
     border: 1px solid var(--border-md);
     background: var(--bg);
-    color: var(--ink-mid); font-family: var(--mono);
+    color: var(--ink-mid); font-family: var(--sans);
     font-size: 11px; cursor: pointer;
     transition: all 0.15s; white-space: nowrap;
     box-shadow: var(--shadow-sm);
@@ -365,7 +365,7 @@ const GLOBAL_CSS = `
   }
   .summary-block-title {
     display: flex; align-items: center; gap: 7px;
-    font-family: var(--mono); font-size: 10.5px; font-weight: 700;
+    font-family: var(--sans); font-size: 10.5px; font-weight: 700;
     color: var(--card); letter-spacing: 0.08em; text-transform: uppercase;
   }
   .summary-block-actions { display: flex; align-items: center; gap: 6px; }
@@ -375,7 +375,7 @@ const GLOBAL_CSS = `
     background: rgba(255,255,255,0.12);
     border: 1px solid rgba(255,255,255,0.2);
     color: rgba(255,255,255,0.9);
-    font-family: var(--mono); font-size: 9.5px; font-weight: 700;
+    font-family: var(--sans); font-size: 9.5px; font-weight: 700;
     cursor: pointer; transition: all 0.15s;
   }
   .summary-copy-btn:hover { background: rgba(255,255,255,0.22); color: #fff; }
@@ -392,7 +392,7 @@ const GLOBAL_CSS = `
   .summary-content {
     padding: 14px 16px;
     background: var(--card);
-    font-family: var(--mono); font-size: 12.5px;
+    font-family: var(--sans); font-size: 12.5px;
     color: var(--ink); line-height: 1.9;
     white-space: pre-wrap; word-break: break-word;
   }
@@ -485,7 +485,7 @@ const GLOBAL_CSS = `
   .ddx-welcome-title { font-size: 13.5px; font-weight: 700; color: var(--ink); }
   .ddx-welcome-sub { font-size: 11.5px; color: var(--ink-muted); line-height: 1.55; }
   .ddx-chips-label {
-    font-family: var(--mono); font-size: 9px; color: var(--ink-subtle);
+    font-family: var(--sans); font-size: 9px; color: var(--ink-subtle);
     letter-spacing: 0.1em; text-transform: uppercase;
   }
   .ddx-chips-grid { display: flex; flex-direction: column; gap: 5px; width: 100%; }
@@ -552,7 +552,7 @@ const GLOBAL_CSS = `
     border-bottom: 1px solid var(--border-md);
   }
   .ddx-rank {
-    font-family: var(--mono); font-size: 10px; font-weight: 700;
+    font-family: var(--sans); font-size: 10px; font-weight: 700;
     width: 20px; height: 20px; border-radius: 5px;
     display: flex; align-items: center; justify-content: center;
     background: var(--card); border: 1px solid var(--border-md);
@@ -560,7 +560,7 @@ const GLOBAL_CSS = `
   }
   .ddx-item-title { flex: 1; font-size: 12px; font-weight: 600; color: var(--ink); }
   .ddx-urgency {
-    font-family: var(--mono); font-size: 8.5px;
+    font-family: var(--sans); font-size: 8.5px;
     padding: 2px 7px; border-radius: 99px; border: 1px solid;
     letter-spacing: 0.05em; font-weight: 700;
   }
@@ -671,9 +671,9 @@ const SYSTEMS = [
   { id: "all",   label: "All Topics",            color: "#94a3b8" },
   { id: "cv",    label: "Cardiology",             color: "#ef4444" },
   { id: "pulm",  label: "Pulm / Critical Care",   color: "#3b82f6" },
-  { id: "gi",    label: "Gastroenterology",        color: "#f59e0b" },
-  { id: "neph",  label: "Nephrology",              color: "#8b5cf6" },
-  { id: "id",    label: "Infectious Disease",      color: "#10b981" },
+  { id: "gi",    label: "Gastroenterology",        color: "#16a34a" },
+  { id: "neph",  label: "Nephrology",              color: "#ea580c" },
+  { id: "id",    label: "Infectious Disease",      color: "#92400e" },
   { id: "endo",  label: "Endocrinology",           color: "#f97316" },
   { id: "neuro",  label: "Neurology / Psych",      color: "#06b6d4" },
   { id: "heme",  label: "Hematology",              color: "#ec4899" },
@@ -10687,7 +10687,7 @@ HEALTHCARE MAINTENANCE (ALL IMMUNOSUPPRESSION):
     id: "rheum-medications",
     system: "rheum",
     title: "Rheumatologic Serology / Medications / Misc (IgG4 / Sarcoid / Fibromyalgia / APLAS)",
-    keywords: ["rheumatologic medications","DMARDs","methotrexate","hydroxychloroquine","azathioprine","mycophenolate","leflunomide","anti-TNF","biologics","JAK inhibitor","tofacitinib","baricitinib","ANA interpretation","rheumatoid factor","anti-CCP","APLAS","antiphospholipid","IgG4","sarcoidosis","fibromyalgia","VEXAS","FMF","colchicine toxicity","biologic screening"],
+    keywords: ["rheumatologic medications","DMARDs","methotrexate","hydroxychloroquine","azathioprine","mycophenolate","leflunomide","anti-TNF","biologics","JAK inhibitor","tofacitinib","baricitinib","upadacitinib","NSAIDs rheumatology","colchicine","ibuprofen rheum","naproxen rheum","celecoxib","secukinumab","ixekizumab","guselkumab","risankizumab","belimumab","anifrolumab","anakinra","canakinumab","abatacept","avacopan","mepolizumab","benralizumab","sarilumab","IVIG rheumatology","ANA interpretation","rheumatoid factor","anti-CCP","APLAS","antiphospholipid","IgG4","sarcoidosis","fibromyalgia","VEXAS","FMF","colchicine toxicity","biologic screening","biologic pre-screening","medication monitoring rheumatology"],
     source: { chapter: "Rheumatology", section: "Medications / Serology / Misc", pages: "162–169", authors: "Maxwell Green, Heba Altarawneh, Alec Ohanian",
       keyFacts: [
         "ANA interpretation: order only when clinical suspicion for CTD; low titer ANA (≤1:160) often false positive; ANA positive in 5% of healthy population, IBD, thyroid, malaria, HIV; if ANA positive (>1:80), reflex to specific antibodies guided by clinical presentation",
@@ -10779,6 +10779,63 @@ FIBROMYALGIA:
 Non-pharmacologic (first-line): patient education, cognitive-behavioral therapy (CBT) for pain, graduated aerobic exercise program, sleep hygiene
 Pharmacologic: amitriptyline 10-25mg QHS, duloxetine 30-60mg qday, milnacipran 50-100mg BID; cyclobenzaprine; gabapentin/pregabalin (evidence weaker, combination < monotherapy)
 AVOID opioids: ineffective for fibromyalgia + risk of opioid use disorder + worsen central sensitization
+RHEUMATOLOGIC MEDICATIONS REFERENCE TABLE (WB p.170):
+NSAIDS (COX-1/2 inhibitors):
+• Ibuprofen/naproxen (non-selective): OA, SpA, RA, gout, CPPD, SSc, SLE serositis; gastropathy (add PPI/misoprostol if RFs: age, DAPT, anticoagulation, prior GI bleed); AKI/AIN/papillary necrosis (avoid in CKD); CV mortality (naproxen may ↓ risk vs others); avoid in CHF, asthma (aspirin-sensitive), 3rd trimester pregnancy
+• Celecoxib (COX-2 selective): same CV risk as traditional NSAIDs (NEJM 2016;375:2519); lower GI risk; same renal risk; preferred in low-risk GI patients; avoid if sulfonamide allergy
+• Diclofenac topical: OA of hands/knees; minimal systemic absorption; fewer GI/renal/CV side effects
+
+COLCHICINE:
+Indications: acute gout, CPPD, FMF, Behcet's disease, pericarditis
+Dosing: gout flare = 1.2mg PO then 0.6mg 1h later; prophylaxis = 0.6mg qday-BID; FMF = 0.6-1.8mg qday
+Dose-reduce in: GFR <30 (0.6mg qday max); severe liver disease (Child-Pugh C)
+Toxicities: diarrhea/nausea (most common); myopathy (CK elevation); myelosuppression; neurotoxicity (at toxic levels)
+CRITICAL drug interactions: P-glycoprotein + CYP3A4 inhibitors → significantly increase colchicine levels → toxicity risk; major culprits: clarithromycin, erythromycin, cyclosporine, ketoconazole, diltiazem, verapamil, amiodarone; reduce colchicine dose 50% or avoid concurrent use
+
+ADDITIONAL BIOLOGICS:
+IL-17 INHIBITORS (secukinumab/ixekizumab/bimekizumab):
+• Indications: ankylosing spondylitis (AS)/axSpA, psoriatic arthritis (PsA), psoriasis; secukinumab also approved for GCA
+• Key toxicities: infection risk (TB reactivation — screen before use), IBD EXACERBATION (avoid in active IBD), neutropenia (ixekizumab), injection site reactions
+• Secukinumab preferred in PsA with IBD? → No — AVOID IL-17 inhibitors in IBD; use IL-23 inhibitors or JAKi instead
+
+IL-23 INHIBITORS (guselkumab/risankizumab/ustekinumab):
+• Indications: PsA, psoriasis, IBD (ustekinumab); safer in IBD-associated SpA than IL-17 inhibitors
+• Not proven for axSpA (ankylosing spondylitis) — avoid for axial disease
+
+IL-6 INHIBITORS (tocilizumab/sarilumab):
+• GCA: tocilizumab + steroids (GiACTA trial NEJM 2017); reduce steroid dose; check LFTs/lipids
+• PMR: sarilumab sustained remission and reduced glucocorticoids (NEJM 2023;389:1263)
+• RA: tocilizumab or sarilumab after DMARD failure
+
+IL-1 INHIBITORS:
+• Anakinra (Kineret): IL-1R antagonist; gout/CPPD (refractory acute flares), Adult-onset Still's disease/MAS; very short half-life (daily SQ injection); injection site reactions; neutropenia; can be used in CKD
+• Canakinumab (Ilaris): anti-IL-1β; gout (refractory), Adult Still's/MAS; monthly SQ injection; very expensive
+
+T-CELL COSTIMULATION BLOCKER:
+• Abatacept (Orencia): CTLA4-Ig fusion protein; RA (after MTX failure); PsA; prevents T-cell activation; infection risk; avoid live vaccines; weekly SQ or monthly IV; no liver toxicity
+
+ANTI-CD20 (RITUXIMAB AND VARIANTS):
+• Rituximab: RA (anti-CCP+/RF+), ANCA vasculitis, SLE nephritis/severe, DM/PM, Sjogren's (extraglandular); pre-screen HBV (hepatitis B reactivation risk — antivirals if HBsAg+ or anti-HBc+); repeat q6 months for ANCA vasculitis maintenance (MAINRITSAN trial)
+• Obinutuzumab: SSc-ILD (emerging evidence); anti-CD20 IgG4 subtype
+
+ANTI-BLyS (BELIMUMAB):
+• Belimumab (Benlysta): SLE (moderate-severe, on HCQ+steroids with ongoing activity); reduces flares; avoid in severe active nephritis or CNS SLE; also approved for lupus nephritis adjunct (with MMF)
+
+TYPE I INTERFERON RECEPTOR INHIBITOR:
+• Anifrolumab: SLE (musculoskeletal/cutaneous predominant); reduces flares; FDA approved 2021; does not reduce anti-dsDNA
+
+ANTI-C5aR (AVACOPAN):
+• Avacopan (Tavneos): ANCA vasculitis (GPA/MPA); add to standard induction (RTX + steroids); allows steroid taper; FDA approved 2021 (ADVOCATE NEJM 2021); side effects: HA, N/V/D, hepatotoxicity, HTN
+
+ANTI-IL-5/IL-5R (MEPOLIZUMAB/BENRALIZUMAB):
+• Mepolizumab (Nucala): EGPA (non-organ-threatening); 300mg SQ q4 weeks; reduces oral steroid dose (MIRRA NEJM 2017); injection site reactions; HA
+• Benralizumab (Fasenra): EGPA (emerging data); anti-IL-5R
+
+IVIG:
+• Indications: DM/PM (IMNM, refractory disease), AIHA, ITP, post-transfusion purpura, MAS, Kawasaki disease, GBS, CIDP, toxic shock syndrome, myasthenia gravis, acquired vWS
+• Dosing: 2g/kg over 2-5 days (rheum/neuro); adjust for obesity
+• Toxicities: transfusion reactions/anaphylaxis (IgA deficiency → use IgA-depleted IVIG), hemolysis, aseptic meningitis, hyperosmolar renal tubular injury, thromboembolism, HA
+
 HEALTHCARE MAINTENANCE FOR RHEUMATOLOGY PATIENTS:
 All chronic steroids: Ca 1200mg/day + Vit D 800-1000 IU/day; PPI (GI protection with NSAIDs or steroids); DEXA scan; A1c (DM risk); blood pressure (CV risk)
 Prolonged steroids (≥20mg prednisone ×≥4 weeks): TMP-SMX 1 SS tab qday or dapsone 100mg qday (PJP prophylaxis)
@@ -10795,6 +10852,2987 @@ Sun protection: methotrexate + UV exposure → skin cancer risk; anti-TNF → ly
 • Rheumatology inpatient consult: complex serology interpretation, acute CTD flare requiring steroids, severe APLAS (CAPS), active sarcoidosis with organ involvement
 • Cardiology: cardiac sarcoidosis (EP study, pacemaker/ICD implantation); APLAS with arterial thrombosis; tocilizumab initiation (LFT/lipid monitoring)
 • Hematology: catastrophic APLAS (plasma exchange), anticoagulation management, thrombocytopenia workup in APLAS`
+  },
+
+  // ════════════════════ GI — MISSING ════════════════════
+
+  {
+    id: "lgib",
+    system: "gi",
+    title: "Lower GI Bleeding (LGIB)",
+    keywords: ["LGIB","lower GI bleed","hematochezia","diverticular bleed","angioectasia","ischemic colitis","rectal bleeding","colonoscopy LGIB","CTA bleeding","Oakland score","hemorrhoid","post-polypectomy","colon cancer bleeding","bloody diarrhea"],
+    source: { chapter: "Gastroenterology", section: "Lower GI Bleeding", pages: "57", authors: "Vivek Charu",
+      keyFacts: [
+        "LGIB = bleeding distal to ligament of Treitz; hematochezia (bright red or maroon blood) is typical; BRBPR can be seen with BRISK UGIB — always exclude upper source in hemodynamically unstable patients",
+        "Oakland score <8 predicts low-risk LGIB suitable for outpatient management (JAMA 2020;3:e209630); ABC score predicts 30-day mortality",
+        "CTA angiography: diagnostic test of choice for hemodynamically significant LGIB (shock index HR/SBP >1) — localizes bleeding site; colonoscopy preferred for stable patients (therapeutic + diagnostic)",
+        "Most common causes: diverticulosis (30-65%), hemorrhoids (5-20%), angioectasia (5-10%), ischemic colitis (5-20%), IBD (3-5%), post-polypectomy (2-7%), malignancy (2-15%)",
+        "Ischemic colitis: most common in watershed areas (splenic flexure, rectosigmoid); association with atrial fibrillation, LVAD, ESRD; CT shows thumbprinting (submucosal edema); usually self-limited; avoid vasoconstrictors"
+      ]
+    },
+    assessment: `#Lower GI Bleeding Assessment
+Presentation: hematochezia [ ] / maroon stool [ ] / BRBPR [ ] / melena [ ]
+Hemodynamics: BP *** / HR *** | Shock index (HR/SBP): *** (>1 = hemodynamically significant)
+Hgb: *** | Baseline Hgb: *** | Active bleeding: [ ] Yes  [ ] No
+Oakland Score: *** (<8 = low risk, consider outpatient)
+Volume resuscitation: NS/LR *** mL bolus | Transfusion threshold: Hgb <7 [ ] / <8 (CAD) [ ]
+Anticoagulation: *** | Antiplatelets: *** | NSAIDs: ***
+History: prior diverticulosis [ ] / radiation [ ] / recent colonoscopy [ ] / LVAD/AF [ ] / IBD [ ] / liver disease [ ]
+Upper GI source excluded: [ ] Yes (EGD ordered if hemodynamically unstable/melena/BUN:Cr >20)
+Imaging: CTA abdomen/pelvis ordered: [ ] Yes  [ ] No (order if shock index >1 or rapid transfusion needs)
+GI consult: [ ] Yes (for urgent colonoscopy)  [ ] No | IR consult: [ ] Yes (if CTA +)`,
+    ddx: `LGIB ETIOLOGY BY PRESENTATION:
+PAINLESS: diverticulosis (#1 cause, 30-65%), angioectasia (5-10% — associated with AS, ESRD, LVAD [Heyde syndrome], cirrhosis, older age), hemorrhoids (internal = painless; external = painful), post-polypectomy (2-7%), radiation proctopathy/colitis, malignancy (2-15%)
+ABDOMINAL PAIN: ischemic colitis (5-20% — crampy left-sided pain + hematochezia + diarrhea; watershed areas: splenic flexure + rectosigmoid), IBD (3-5%), infectious colitis (2-5%), stercoral ulceration
+FEVER + DIARRHEA: IBD flare, infectious colitis (C. diff, Shigella, E. coli O157:H7, CMV in immunocompromised), acute mesenteric ischemia
+WEIGHT LOSS: malignancy (colon cancer, polyp)
+AFTER PROCEDURE: post-polypectomy bleed (days 1-14 post-procedure), anastomotic ulcer (post-surgical)
+SPECIAL POPULATIONS:
+• AS/ESRD/LVAD/cirrhosis: angioectasia (shear stress depletes vWF multimers — Heyde syndrome with high-flow AS)
+• Post-radiation: radiation proctopathy/colitis (bright red blood from rectal neovascularization)
+• Prior abdominal aortic surgery: aortoenteric fistula (life-threatening — UGIB or LGIB; pulsatile abdominal mass + GIB = aortoenteric fistula until proven otherwise)
+UPPER SOURCE MIMICKING LGIB: brisk UGIB (BUN:Cr >20; nasogastric lavage; EGD if unstable + maroon stool)`,
+    workup: `• CBC, BMP, coagulation (PT/INR, PTT), type and crossmatch (T&C)
+• BUN:Cr ratio: >20 suggests UGIB source (proximal bleeding → protein absorption)
+• Nasogastric lavage or EGD: if hemodynamically unstable + LGIB presentation (exclude upper source)
+• CTA abdomen/pelvis with IV contrast (CT angiography): diagnostic test of choice for hemodynamically significant LGIB (shock index >1); localizes bleeding site for IR embolization or surgical guidance
+• Colonoscopy (preferred for stable patients): therapeutic + diagnostic; perform within 24h for high-risk or ongoing LGIB; bowel prep if possible (1-2L GoLytely)
+• Flexible sigmoidoscopy: if rectal source suspected (hemorrhoid, radiation proctopathy); faster than full colonoscopy
+• Tagged RBC scan: more sensitive than CTA for slow intermittent bleeding; poor localization (rarely used)
+• Upper endoscopy (EGD): if melena, hematemesis, hemodynamic instability, or BUN:Cr >20 (excludes UGIB)
+• Lower GI risk stratification: Oakland score (age, sex, prior LGIB, DRE, heart rate, SBP, hemoglobin)`,
+    management: `RESUSCITATION (ALL patients):
+• 2 large-bore IV access or central line; type and crossmatch 4 units pRBC
+• pRBC transfusion: Hgb <7 (general); Hgb <8 (CAD or active ischemia); 1 unit then reassess
+• IVF (NS or LR) for hemodynamic stabilization; avoid overresuscitation
+• Reverse anticoagulation: hold warfarin + Vitamin K/4-factor PCC if Hgb falling; hold DOACs; hold antiplatelets (discuss with GI/cardiology — aspirin in high-risk CAD/stent may be continued)
+COLONOSCOPY (stable patients — gold standard):
+• Perform within 24h for hospitalized high-risk LGIB (active bleeding, hemodynamic instability, ongoing transfusion requirement)
+• Bowel preparation: 4-6L Go-Lytely over 4h for inpatient urgent colonoscopy
+• Therapeutic options: hemostatic clips, injection therapy (epinephrine), thermal coagulation (for diverticula, angioectasia, post-polypectomy)
+INTERVENTIONAL RADIOLOGY (CTA positive = active extravasation):
+• Selective mesenteric angiography + embolization: hemostasis in 80-90%; re-bleeding rate 15-20%
+• Preferred for hemodynamically unstable patients or failed colonoscopic hemostasis
+SURGERY:
+• Segmental colectomy: for refractory/recurrent severe bleeding not amenable to colonoscopy or IR
+• Total abdominal colectomy: if unlocalized bleeding requiring emergency surgery
+SPECIFIC CAUSES:
+• Diverticular bleed: 80% self-limited; colonoscopic clip or epinephrine; IR embolization if large vessel; recurrence rate 25-40% at 4 years
+• Ischemic colitis: NPO + IVF; avoid vasoconstrictors; antibiotics (amoxicillin-clavulanate or ciprofloxacin + metronidazole) for moderate-severe or immunosuppressed; most resolve in 24-48h; surgery for full-thickness necrosis/perforation
+• Hemorrhoidal bleed: sitz baths + fiber + topical anesthetics; rubber band ligation (most effective) or sclerotherapy; surgery for Grade IV or refractory
+• Post-polypectomy bleed: hold anticoagulation; urgent colonoscopy + endoscopic therapy; most respond to endoscopic management
+• Radiation proctopathy: argon plasma coagulation (APC) by endoscopy; sucralfate enemas; hyperbaric O2`,
+    monitoring: `• Vital signs q1-2h during active bleeding; continuous cardiac monitoring
+• CBC every 4-6h while actively bleeding; Hgb post-transfusion 15-30 min (confirm increment ~1g/dL per unit)
+• Coagulation studies: repeat PT/INR/PTT if anticoagulated or coagulopathy suspected
+• Serial abdominal exams: peritoneal signs suggest ischemia/perforation → urgent surgery
+• If no source found on initial colonoscopy: repeat colonoscopy vs. deep enteroscopy (for small bowel source) vs. video capsule endoscopy (after bleeding cessation)`,
+    disposition: `• ICU: hemodynamic instability, shock index >1, ongoing transfusion requirement (≥4 units pRBC in 24h), suspected aortoenteric fistula
+• GI (urgent colonoscopy): all inpatient LGIB not meeting low-risk criteria for outpatient management
+• Interventional Radiology: CTA positive for active extravasation, failed colonoscopic hemostasis
+• Surgery: ischemic colitis with peritoneal signs, perforation, refractory hemorrhage not amenable to endoscopic/IR management`
+  },
+
+  // ════════════════════ ID — MISSING ════════════════════
+
+  {
+    id: "tickborne",
+    system: "id",
+    title: "Tickborne Diseases / Travel Medicine",
+    keywords: ["Lyme disease","RMSF","Rocky Mountain spotted fever","Ehrlichia","Anaplasmosis","Babesia","tickborne","erythema migrans","doxycycline tick","traveler's diarrhea","malaria prophylaxis","travel medicine","returning traveler","tropical infection","dengue","typhoid"],
+    source: { chapter: "Infectious Disease", section: "Tickborne Diseases / Travel Medicine", pages: "119", authors: "Daniel Restifo",
+      keyFacts: [
+        "Empiric doxycycline 100mg BID for ALL suspected tickborne illness (covers Lyme, RMSF, Ehrlichia, Anaplasmosis); check babesia smear separately (NOT covered by doxycycline); coinfection is common in Ixodes-endemic areas",
+        "Lyme disease: most common tickborne illness in US; Ixodes scapularis (Northeast/Midwest); early localized = erythema migrans (3-30 days, ≥5cm expanding rash); early disseminated = facial nerve palsy, AV block, radiculopathy; late = monoarthritis (knee), encephalopathy; AVOID serologic testing without specific objective signs/symptoms",
+        "RMSF (Rickettsia rickettsii): Dermacentor tick; 3-5 day prodrome → macular rash → petechial rash on palms/soles; START DOXYCYCLINE EMPIRICALLY — treatment delays increase mortality; serology not detectable until 7-10 days after onset",
+        "Babesia: Ixodes tick; hemolytic anemia + fever; diagnosis by blood smear (Maltese cross/tetrad); atovaquone + azithromycin (mild-moderate); clindamycin + quinine (severe); exchange transfusion if parasitemia >10% or severe hemolysis; NOT covered by doxycycline",
+        "Returning traveler evaluation: consider malaria (Africa/Asia/Central America), dengue (tropical), typhoid (South Asia), tickborne, TB, STIs, common infections (CAP/UTI); incubation period + geography + exposures guide workup (NEJM 2017;376:548)"
+      ]
+    },
+    assessment: `#Tickborne Disease / Travel Medicine Assessment
+TICK EXPOSURE: known tick bite [ ] | outdoor activity (spring-fall) [ ] | geography: ***
+50-80% of patients do NOT recall tick bite
+Symptoms: fever *** | myalgias [ ] | arthralgias [ ] | rash (location/description): ***
+Labs: WBC *** (↓ in RMSF/Ehrlichia) | Plt *** (↓ in most tickborne) | AST/ALT *** (↑ in most tickborne) | Hgb ***
+DISEASE-SPECIFIC SCREEN:
+[ ] RMSF concern: petechial/macular rash + fever + ↓PLT → START DOXYCYCLINE NOW (mortality with delay)
+[ ] Lyme concern: EM rash [ ] / facial palsy [ ] / AV block [ ] / monoarthritis (knee) [ ]
+[ ] Babesia: hemolytic anemia (LDH *** / haptoglobin ***) | Blood smear ordered: [ ] Yes  [ ] No
+[ ] Ehrlichia/Anaplasma: leukopenia + thrombocytopenia + elevated LFTs
+Empiric doxycycline started: [ ] Yes  [ ] No | Babesia smear ordered separately: [ ] Yes
+TRAVEL HISTORY (if relevant): destination *** | duration *** | exposures: *** | prophylaxis taken: ***`,
+    ddx: `TICKBORNE DISEASE BY TICK VECTOR:
+IXODES SCAPULARIS (black-legged tick, Northeast/Midwest US):
+• Lyme disease (Borrelia burgdorferi): most common US tickborne; requires >36-48h attachment for transmission; erythema migrans (5cm + expanding, ± central clearing, ± bull's eye); early disseminated: Bell's palsy, other cranial neuropathies, AV block (Lyme carditis — pacemaker if symptomatic), radiculopathy; late: mono/oligoarthritis (knee most common), Lyme encephalopathy
+• Anaplasma phagocytophilum (Anaplasmosis): fever + leukopenia + thrombocytopenia + ↑LFTs; morulae in neutrophils on smear (20-80%); doxycycline 100mg BID × 10 days
+• Babesia microti: can coinfect with Lyme; hemolytic anemia + fever + chills; "Maltese cross" on thick smear; parasitemia %; NO rash; not covered by doxycycline
+• Ehrlichia: morulae in mononuclear cells (1-20% on smear); doxycycline 100mg BID × 7-10 days
+DERMACENTOR (American dog tick):
+• RMSF (Rickettsia rickettsii): Southeast US primarily; fever 3-5 day prodrome → macular rash → petechiae on palms/soles (characteristic but LATE finding); can cause meningoencephalitis, DIC, ARDS, organ failure; START DOXYCYCLINE EMPIRICALLY for any age (preferred over chloramphenicol)
+AMBLYOMMA AMERICANUM (lone star tick):
+• Ehrlichia chaffeensis, STARI, tularemia; widespread in eastern/southeastern US
+RETURNING TRAVELER DDx (by symptom + geography):
+Fever: malaria (P. falciparum most dangerous, Sub-Saharan Africa/SE Asia — thick + thin smears x3; can be life-threatening; treat emergently), dengue (SE Asia/Caribbean/Americas — fever + thrombocytopenia + rash + retro-orbital pain), typhoid (South Asia/Latin America — "rose spots"), viral hemorrhagic fevers (consider if West Africa + fever)
+Diarrhea: traveler's diarrhea (ETEC most common; azithromycin first-line; rifaximin if not febrile/bloody), giardia, cryptosporidiosis, amebiasis
+Rash: dengue, chikungunya, Zika, rickettsial disease, scabies
+Eosinophilia: parasitic infection (strongyloides, filaria, toxocara, schistosomiasis)`,
+    workup: `TICK DISEASE WORKUP:
+• CBC with differential: ↓WBC + ↓PLT = hallmark of Ehrlichia/Anaplasma/RMSF; Hgb (Babesia-hemolysis)
+• LFTs: elevated AST/ALT in most tickborne illnesses (especially RMSF, Ehrlichia, Anaplasma)
+• Blood smear (Giemsa-stained THICK + THIN): BABESIA (mandatory) — "Maltese cross" tetrad; ring forms outside RBC; % parasitemia; also useful for malaria
+• Lyme serology (two-tier testing): only order with objective clinical signs/symptoms (EM, facial palsy, AV block, arthritis); ELISA screen → if positive, reflex to Western blot (IgM + IgG); do NOT use serology for EM diagnosis (clinical, not serologic diagnosis)
+• RMSF: serology (IFA) — UNDETECTABLE until day 7-10; START DOXYCYCLINE EMPIRICALLY without waiting for confirmation; serial titers confirm retrospectively
+• PCR panels: Lyme PCR (blood, or synovial fluid for Lyme arthritis); Ehrlichia/Anaplasma PCR (blood — best early in illness)
+• Lumbar puncture: if neurologic symptoms (Lyme meningitis, RMSF encephalitis)
+• EKG: Lyme carditis (PR prolongation, AV block); telemetry for 2nd/3rd degree AV block
+MALARIA WORKUP: thick + thin blood smears x3 (q12-24h); rapid diagnostic test (RDT); CBC + BMP + LFTs + bili; G6PD (before primaquine/tafenoquine)
+TRAVELER'S WORKUP: stool O+P + culture; HIV/STI screen; CBC (eosinophilia = parasites); serology (dengue NS1/IgM; typhoid culture/Widal)`,
+    management: `EMPIRIC DOXYCYCLINE (for ALL suspected tickborne illness):
+• Doxycycline 100mg PO BID: Lyme (variable duration), RMSF (5-7 days minimum + 3 days afebrile), Ehrlichia (7-10 days), Anaplasmosis (10 days)
+• Pediatric and pregnant patients: doxycycline is STILL preferred for RMSF (mortality risk outweighs dental risk); chloramphenicol alternative in pregnancy (not preferred — worse outcomes for RMSF)
+• ADD specific Babesia treatment alongside doxycycline if Babesia coinfection confirmed
+LYME DISEASE:
+Early localized (EM only): doxycycline 100mg PO BID × 10 days OR amoxicillin 500mg PO TID × 14 days (preferred in pregnancy/age <8)
+Early disseminated (neurologic-facial palsy without meningitis, mild): doxycycline × 14-21 days
+Meningitis/radiculopathy: ceftriaxone 2g IV qday × 14-21 days
+Lyme carditis (PR >300ms or 2nd/3rd degree AV block): ceftriaxone 2g IV qday × 14-21 days; telemetry monitoring; temporary pacer if hemodynamically unstable
+Lyme arthritis: doxycycline × 28 days; if refractory → ceftriaxone IV
+Do NOT repeat antibiotics for "post-Lyme syndrome" — symptoms persist without evidence of active infection
+RMSF: doxycycline 100mg PO/IV BID × ≥5 days + ≥3 days afebrile; START EMPIRICALLY — every hour of delay increases mortality
+BABESIA: mild-moderate: atovaquone 750mg PO BID + azithromycin 500mg PO qday × 7-10 days; severe (parasitemia >10%, severe hemolysis, asplenia): clindamycin 1200mg IV q8h + quinine 650mg PO TID × 7-10 days; exchange transfusion if parasitemia >10% or severe hemolysis
+MALARIA: P. falciparum (uncomplicated): artemether-lumefantrine or atovaquone-proguanil (Malarone); severe/complicated: IV artesunate (first-line, available through CDC; call 770-488-7100 nights/weekends) → oral therapy when improving; P. vivax/ovale: chloroquine + primaquine (check G6PD first)
+TRAVELER'S DIARRHEA: mild: loperamide; severe (fever, bloody, interfering with travel): azithromycin 1g × 1 (first-line) > rifaximin (non-invasive organisms only) > FQ (increasing resistance)
+TICK BITE PROPHYLAXIS: Lyme high-risk exposure (Ixodes tick attached ≥36h, endemic area): single-dose doxycycline 200mg within 72h of removal`,
+    monitoring: `• Lyme: AV block monitoring (EKG daily if 1st degree, continuous telemetry if 2nd/3rd degree); Lyme serology at 4-6 weeks (post-treatment for disseminated disease) — IgG may remain positive for years after treatment (not a marker of active infection)
+• RMSF: platelet + liver function daily; clinical improvement expected within 24-48h of doxycycline (no improvement = wrong diagnosis or resistant organism)
+• Babesia: blood smear every 24-48h until parasitemia <1%; CBC for hemolytic anemia (LDH, bili, haptoglobin)
+• Malaria: blood smear every 12-24h × 3 for P. falciparum to confirm clearance`,
+    disposition: `• ID consult: severe RMSF (organ failure, ARDS, DIC), severe babesia (exchange transfusion), complicated malaria (IV artesunate availability through CDC), Lyme carditis with high-degree AV block, unusual travel-related illness
+• Cardiology: Lyme carditis with AV block (temporary pacer if hemodynamically unstable)
+• ICU: RMSF with multi-organ failure, cerebral malaria, severe dengue with organ involvement, severe Babesia`
+  },
+
+  {
+    id: "stis",
+    system: "id",
+    title: "Sexually Transmitted Infections (STIs)",
+    keywords: ["STI","sexually transmitted infection","gonorrhea","chlamydia","syphilis","HSV","herpes","trichomoniasis","PID","pelvic inflammatory disease","urethritis","cervicitis","chancre","NAAT","ceftriaxone STI","doxycycline chlamydia","RPR","syphilis stages","PrEP","DoxyPEP"],
+    source: { chapter: "Infectious Disease", section: "STIs & Travel Medicine", pages: "118–119", authors: "Alexis Strahan",
+      keyFacts: [
+        "Gonorrhea treatment (2021 CDC): ceftriaxone 500mg IM × 1 (if ≥150kg: 1g); if pharyngeal GC: add azithromycin 1g; test-of-cure in 1-2 weeks for pharyngeal GC; dual therapy with doxycycline no longer recommended as first-line for uncomplicated GC due to high azithromycin resistance",
+        "Chlamydia: doxycycline 100mg PO BID × 7 days (preferred; superior to azithromycin for rectal chlamydia and reduced resistance); azithromycin 1g × 1 alternative for uncomplicated urogenital chlamydia or when doxycycline compliance concern",
+        "Syphilis: dark-field microscopy of painless ulcer (primary) or RPR/VDRL screening then FTA-ABS/TPPA confirmation; primary/secondary/early latent (<1yr) → benzathine PCN G 2.4 million units IM × 1; late latent or unknown duration → benzathine PCN G 2.4 million units IM weekly × 3",
+        "Neurosyphilis: CSF-VDRL (specific), CSF FTA-ABS (sensitive), CSF WBC/protein; aqueous PCN G 3-4 million units IV q4h × 10-14 days; always check HIV status (HIV + syphilis → LP to rule out neurosyphilis)",
+        "DoxyPEP (post-exposure prophylaxis): doxycycline 200mg PO within 72h of sexual exposure reduces gonorrhea, chlamydia, and syphilis by ~80% in MSM and transgender women; prescribe with PrEP for eligible patients (NEJM 2023;388:1296)"
+      ]
+    },
+    assessment: `#STI Assessment
+Sexual history: partners (# and sex): *** | last sexual contact: *** | condom use: ***
+Symptoms: urethral/vaginal discharge [ ] / dysuria [ ] / genital lesions/ulcers [ ] / pelvic pain [ ] / rash [ ] / pharyngitis [ ]
+SITES EXPOSED (3-site screening for MSM/bisexual): genital [ ] / rectal [ ] / pharyngeal [ ]
+ULCER (if present): painful [ ] (herpes/chancroid) / painless [ ] (syphilis/LGV) | lymphadenopathy [ ]
+RPR: *** | Titer: *** | FTA-ABS/TPPA (if RPR positive): ***
+NAAT testing ordered (gonorrhea + chlamydia): genital [ ] / rectal [ ] / pharyngeal [ ]
+HIV status: *** | Last HIV test: *** | On PrEP: [ ] Yes  [ ] No
+Pregnancy status (if applicable): ***
+Partners notified/treated: [ ] Yes  [ ] No | EPT (expedited partner therapy) given: ***`,
+    ddx: `STI BY PRESENTATION:
+GENITAL ULCER (painful): herpes simplex virus (HSV-1 or HSV-2) — multiple grouped vesicles → ulcers; prodrome tingling; recurrent; type-specific HSV IgG serology + culture/PCR from lesion; chancroid (Haemophilus ducreyi) — painful ulcer + inguinal buboes; rare in US; tropical
+GENITAL ULCER (painless): primary syphilis (Treponema pallidum) — firm, clean-based indurated ulcer (chancre); typically single; heals spontaneously in 3-6 weeks; LGV (Lymphogranuloma venereum, Chlamydia trachomatis L1-L3) — small ulcer + unilateral inguinal/femoral LAD ("groove sign")
+URETHRAL/CERVICAL DISCHARGE:
+• Gonorrhea (Neisseria gonorrhoeae): purulent discharge; dysuria; pharyngitis (common if oral sex); rectal: tenesmus/discharge; NAAT on urine + swab; blood cultures if DGI (disseminated gonococcal infection)
+• Chlamydia (C. trachomatis): often asymptomatic; mucoid discharge; post-inflammatory infertility risk; NAAT
+• Mycoplasma genitalium: consider if GC/CT-negative urethritis/cervicitis; vaginal/urethral PCR (send-out test); doxycycline 100mg BID × 7 days → moxifloxacin 400mg qday × 7 days
+• Trichomoniasis (T. vaginalis): malodorous discharge + pruritus; NAAT (>95% Sn/Sp) > wet mount; treat male partners
+PELVIC INFLAMMATORY DISEASE (PID): cervical motion tenderness + uterine tenderness + adnexal tenderness; outpatient (mild-moderate): ceftriaxone 500mg IM × 1 + doxycycline 100mg BID × 14 days + metronidazole 500mg BID × 14 days; inpatient (severe, Tubo-Ovarian Abscess, pregnant, failed PO): cefoxitin + doxycycline IV then PO completion
+SYPHILIS STAGES:
+Primary: painless ulcer (chancre) + regional LAD; RPR may be negative (repeat in 2-4 weeks if high suspicion)
+Secondary: maculopapular rash (including palms/soles), condyloma lata, fever, LAD, mucous patches; RPR positive (high titer)
+Latent: asymptomatic + positive serology; early latent = acquired <1 year (high risk transmission); late latent = >1 year
+Tertiary: gummas, cardiovascular (aortitis), neurosyphilis (tabes dorsalis, general paresis)
+Neurosyphilis: can occur at ANY stage; any neurologic/ocular symptoms + positive syphilis serology → LP`,
+    workup: `SCREENING (ALL sexually active patients):
+• HIV testing: all adults 15-65 regardless of risk; every 3-6 months for high-risk (MSM, multiple partners, PWID)
+• Syphilis (RPR): annually for sexually active MSM; 3-site NAAT for gonorrhea/chlamydia for MSM (genital + rectal + pharyngeal)
+• Hepatitis B surface Ag + Ab; Hepatitis C Ab (all adults 18-79 per USPSTF)
+SYMPTOMATIC STI WORKUP:
+• NAAT (nucleic acid amplification test): gonorrhea + chlamydia — urine (male), vaginal or cervical swab (female); rectal + pharyngeal swabs for at-risk patients
+• RPR/VDRL (syphilis screen): if positive → reflex to treponemal confirmation (FTA-ABS or TPPA)
+• HSV: viral culture from active lesion (vesicle/ulcer base); PCR preferred; type-specific IgG serology (counseling for asymptomatic partners)
+• Wet mount/NAAT: trichomonas
+• Urinalysis: assess for urethritis (WBC, bacteria)
+• Pregnancy test: prior to all STI treatment in females
+• LP (neurosyphilis): any neurologic/ocular/otic symptoms + syphilis serology positive; HIV positive + syphilis; treatment failure
+• LFTs + CBC: if DGI (disseminated gonococcal infection) with fever/joint involvement`,
+    management: `GONORRHEA:
+Uncomplicated urogenital/rectal: ceftriaxone 500mg IM × 1 (1g if weight ≥150kg)
+Pharyngeal: ceftriaxone 500mg IM × 1 + azithromycin 1g PO × 1 (pharyngeal GC harder to eradicate)
+DGI (bacteremia/arthritis-dermatitis): ceftriaxone 1g IV/IM qday × 7 days; drain septic joints
+Test-of-cure: pharyngeal GC → retest in 1-2 weeks; recurrent exposure → retest in 3 months
+Expedited partner therapy (EPT): cefixime 800mg PO × 1 + azithromycin 1g (for patients who cannot bring partner to clinic)
+CHLAMYDIA:
+Uncomplicated: doxycycline 100mg PO BID × 7 days (preferred; superior efficacy for rectal chlamydia vs azithromycin)
+Alternative: azithromycin 1g PO × 1 (lower efficacy for rectal, use only if doxycycline compliance concern or pregnancy [preferred in pregnancy])
+Test-of-cure: 3 months after treatment (re-infection risk)
+SYPHILIS:
+Primary/secondary/early latent (<1 year): benzathine PCN G 2.4 million units IM × 1
+Late latent or unknown duration: benzathine PCN G 2.4 million units IM weekly × 3 (total 7.2 million units)
+Neurosyphilis: aqueous penicillin G 3-4 million units IV q4h (18-24 million units/day) × 10-14 days
+PCN allergy (non-anaphylaxis): doxycycline 100mg BID × 14 days (early latent) or × 28 days (late latent); anaphylaxis → PCN desensitization required
+Jarisch-Herxheimer reaction: fever/chills/myalgias within 24h of treatment (especially secondary syphilis); reassure; acetaminophen; does not indicate allergy
+HSV: primary genital herpes: acyclovir 400mg PO TID × 7-10 days OR valacyclovir 1g BID × 7-10 days; recurrent: acyclovir 400mg TID × 5 days or valacyclovir 500mg BID × 3 days; suppression: valacyclovir 500mg qday (reduces transmission by 50%)
+TRICHOMONIASIS: metronidazole 500mg PO BID × 7 days (female); metronidazole 2g PO × 1 (male); treat all sex partners
+PID: outpatient (mild): ceftriaxone 500mg IM × 1 + doxycycline 100mg BID × 14 days + metronidazole 500mg BID × 14 days; inpatient (moderate-severe or TOA): cefoxitin 2g IV q6h + doxycycline 100mg q12h → PO completion
+PrEP (HIV pre-exposure prophylaxis): tenofovir-emtricitabine (Truvada or Descovy) daily; reduces HIV risk >95% with daily adherence; monitor Cr/BMP + HIV + STI every 3 months
+DoxyPEP: doxycycline 200mg PO within 72h of condomless sex; reduces gonorrhea/chlamydia/syphilis ~80% in MSM (NEJM 2023;388:1296)`,
+    monitoring: `• Test-of-cure: gonorrhea pharyngeal (1-2 weeks post-treatment); chlamydia and gonorrhea (3 months for re-infection surveillance)
+• Syphilis: RPR titers at 6 and 12 months (4-fold titer decline = treatment success); LP for neurologic symptoms or treatment failure
+• HIV: all new STI diagnosis → HIV test; if positive → initiate ART
+• Hepatitis B/C: vaccination for HBV-nonimmune patients; link to HCV treatment if positive`,
+    disposition: `• STI clinic/Sexual health: all new STI diagnoses; PrEP/DoxyPEP initiation; expedited partner therapy coordination
+• ID consult: neurosyphilis, DGI, HIV seroconversion illness, complicated PID (TOA not responding to antibiotics)
+• Gynecology: TOA (tubo-ovarian abscess) — drainage if no improvement with antibiotics in 72h`
+  },
+
+  // ════════════════════ PULM — MISSING ════════════════════
+
+  {
+    id: "acute-asthma",
+    system: "pulm",
+    title: "Acute Severe Asthma / Status Asthmaticus",
+    keywords: ["asthma","status asthmaticus","acute severe asthma","bronchospasm","SABA","albuterol","ipratropium","Magnesium asthma","heliox","peak flow","FEV1","asthma exacerbation","near-fatal asthma","ventilator asthma","air trapping","intrinsic PEEP","dynamic hyperinflation","steroid asthma"],
+    source: { chapter: "Pulmonary & Critical Care", section: "Respiratory Distress / Asthma", pages: "37–38", authors: "Lauren Nguyen",
+      keyFacts: [
+        "Status asthmaticus: severe bronchospasm not responding to initial bronchodilator therapy; key features: pulsus paradoxus >25 mmHg, silent chest (no wheeze = worsening air movement), RR >30, SpO2 <90%, inability to complete sentences, altered mental status, PaCO2 normalizing (signs of impending arrest)",
+        "Decreasing wheeze in status asthmaticus can portend respiratory collapse (sign of worsening air trapping, NOT improvement) — do NOT be reassured by decreased wheeze without clinical improvement",
+        "Magnesium sulfate 2g IV over 20 min: bronchodilator (inhibits calcium-dependent bronchospasm); use for severe/life-threatening exacerbations not responding to initial SABA/SAMA therapy",
+        "Intubation in asthma is HIGH RISK: permissive hypercapnia strategy (pH >7.2); low RR (10-14/min) + low I:E ratio (1:3 to 1:5); high PEEP is harmful (increases air trapping) — start with low PEEP (0-5) or PEEP-zero; sedation + paralysis to prevent patient-ventilator dyssynchrony; aggressive bronchodilator therapy continues",
+        "Triggers to identify: allergens (pollens, pets, dust mites, cockroach), NSAID/aspirin (AERD — asthma + nasal polyps + aspirin sensitivity), GERD, vocal cord dysfunction (mimics asthma), sulfites, exercise, viral URI, occupational exposures"
+      ]
+    },
+    assessment: `#Acute Severe Asthma
+Vital signs: RR *** | SpO2 *** | HR *** | BP *** / ***
+Severity assessment:
+[ ] Mild (speaks in sentences, RR <25, SpO2 ≥95%, PEFR ≥70%)
+[ ] Moderate (speaks in phrases, RR 25-30, SpO2 90-94%, PEFR 40-70%)
+[ ] Severe (speaks in words only, RR >30, SpO2 <90%, PEFR <40%)
+[ ] CRITICAL: silent chest [ ] / cyanosis [ ] / altered mental status [ ] / paradoxical breathing [ ]
+PEFR or FEV1: *** | % predicted: ***
+Pulsus paradoxus: *** mmHg (>12 = significant; >25 = severe)
+ABG/VBG: pH *** | pCO2 *** | pO2 ***
+  Note: RISING pCO2 (even toward normal) in severe exacerbation = IMPENDING RESPIRATORY FAILURE
+Triggers identified: viral URI [ ] / allergen [ ] / NSAID/ASA [ ] / exercise [ ] / other: ***
+Prior intubation for asthma: [ ] Yes  [ ] No | ICU admission for asthma: [ ] Yes
+Current medications: controller *** | last rescue inhaler: ***`,
+    ddx: `ASTHMA EXACERBATION TRIGGERS:
+• Viral URTI: most common trigger; rhinovirus #1; influenza; COVID-19
+• Allergens: pollens, pet dander, dust mites, cockroach, mold
+• NSAID/aspirin (AERD — Aspirin-Exacerbated Respiratory Disease): asthma + chronic rhinosinusitis + nasal polyps + aspirin/NSAID sensitivity; avoid NSAIDs; leukotriene modifiers + biologics (omalizumab, mepolizumab, dupilumab) for persistent disease
+• GERD: chronic microaspiration worsens airway inflammation; treat even without GI symptoms in refractory asthma
+• Exercise-induced: bronchospasm 5-20 min after exercise; pre-treatment with SABA or montelukast
+• Occupational exposures: isocyanates, flour, latex, animal proteins
+• Medications: beta-blockers (even eye drops), ACE inhibitors (cough ≠ bronchoconstriction), aspirin/NSAIDs
+ASTHMA MIMICS (must exclude):
+• Vocal cord dysfunction (VCD): inspiratory stridor, normal SpO2, normal spirometry, "I can't breathe in" — laryngoscopy confirms; treat with speech therapy/breathing exercises
+• COPD exacerbation: smoking history; irreversible obstruction on spirometry; may have overlap (ACOS — asthma-COPD overlap)
+• Cardiac asthma: pulmonary edema causing bronchospasm; bibasilar crackles; BNP elevated; diffuse bilateral infiltrates on CXR
+• Anaphylaxis: urticaria + angioedema + bronchospasm; epinephrine first-line
+• Foreign body aspiration: unilateral wheeze; acute onset without prodrome; CXR shows air-trapping or radio-opaque object
+• Endobronchial tumor: unilateral persistent wheeze; fixed obstruction on spirometry`,
+    workup: `• PEFR (peak expiratory flow rate) or FEV1: <40% predicted = severe; reassess after each treatment to track response
+• SpO2 and ABG/VBG: rising pCO2 toward "normal" = impending respiratory failure (asthma causes hypoCO2 initially from hyperventilation; normalization = fatigue and hypoventilation)
+• CXR: exclude pneumonia, pneumothorax, foreign body; hyperinflation (flattened diaphragms); lobar atelectasis (mucus plug)
+• EKG: right heart strain, atrial/ventricular arrhythmia in severe cases
+• CBC: leukocytosis (steroids or infection); eosinophilia (allergic/eosinophilic asthma)
+• Basic metabolic panel: theophylline level if on theophylline; lactic acid if on salbutamol (albuterol-induced lactic acidosis)
+• Respiratory viral panel (in ICU-level exacerbations): influenza/COVID/RSV — may change management
+• Sputum eosinophils (if chronic uncontrolled asthma): high count → IL-5 pathway therapies (mepolizumab)
+• Spirometry (outpatient, after stabilization): FEV1/FVC <0.7 confirms obstruction; reversibility >12% = asthma`,
+    management: `IMMEDIATE (all patients):
+• Position: upright (reduces work of breathing); supplemental O2 to SpO2 ≥93%
+• SABA (short-acting beta-agonist): albuterol 2.5-5mg nebulized q20 min × 3 doses (stacked) OR MDI 4-8 puffs q20 min × 3 doses
+• SAMA (short-acting muscarinic antagonist): ipratropium 0.5mg nebulized q20 min × 3 doses (add to SABA in ED/first hour; less benefit after initial treatment)
+• Systemic corticosteroids: methylprednisolone 125mg IV OR prednisone 40-60mg PO; start early (begin within 1h); no benefit IV over PO if tolerating PO
+• Magnesium sulfate 2g IV over 20 min: for moderate-severe not responding to initial SABA × 3 doses; single dose; DO NOT repeat (no additional benefit)
+MODERATE-SEVERE (ongoing therapy):
+• Continue nebulized albuterol 2.5-5mg q1-4h (or continuous 10-15mg/h nebulization for severe)
+• Heliox (helium-oxygen 70:30 or 80:20): reduces gas density → less turbulence → more effective aerosol delivery to distal airways; use with nebulized albuterol if not improving; NOT if O2 requirement >40% (need too much FiO2 to maintain O2 saturation)
+• Parenteral beta-agonist: terbutaline 0.25mg SQ q15-30 min × 3 doses (if cannot inhale effectively); IV albuterol (ICU setting)
+• Consider IV theophylline (limited use in US; aminophylline 5mg/kg loading + 0.5mg/kg/h maintenance) — rarely used; toxicity (arrhythmia, seizures) limits use
+• Consider IV ketamine 0.5-2mg/kg: bronchodilator + allows safe sedation if pre-intubation
+BIPAP TRIAL: if SpO2 <92% on NRB or severe work of breathing; maintain if CO2 not rising; BiPAP may avert intubation in select patients
+INTUBATION (indications: AMS, respiratory arrest, severe fatigue, rising pCO2, SpO2 <90% despite maximal therapy):
+RISKS OF INTUBATION: dynamic hyperinflation → auto-PEEP → hemodynamic compromise → cardiovascular collapse
+• RSI: ketamine 1-1.5mg/kg IV (preferred — bronchodilator, analgesic, amnestic) + succinylcholine or rocuronium
+• Ventilator settings: LOW RR (10-14/min), HIGH tidal volume (7-8 mL/kg) to push expiratory flow, HIGH FiO2 initially, LOW/ZERO PEEP (0-5 cmH2O), prolonged expiratory time (I:E 1:3 to 1:5); permissive hypercapnia (pH goal >7.20)
+• Measure auto-PEEP: pause expiration for 5 seconds, measure plateau pressure — auto-PEEP >10 cmH2O = significant air trapping → reduce RR or disconnect circuit to allow passive expiration
+• Continue aggressive bronchodilators through ventilator circuit
+• Heavy sedation ± neuromuscular blockade (cisatracurium) to prevent patient-ventilator dyssynchrony
+STEP-UP CONTROLLER THERAPY (at discharge/on improvement):
+Step 1 (mild intermittent): PRN SABA only
+Step 2 (mild persistent): low-dose ICS daily
+Step 3 (moderate): low-dose ICS + LABA or medium-dose ICS
+Step 4 (severe): medium-dose ICS + LABA; consider montelukast, theophylline, or long-acting muscarinic (LAMA)
+Step 5 (uncontrolled): high-dose ICS + LABA + biologics (omalizumab [anti-IgE], mepolizumab [anti-IL5], dupilumab [anti-IL4/13], tezepelumab [anti-TSLP])`,
+    monitoring: `• PEFR every 1-4h during acute exacerbation; clinical improvement expected after SABA × 3 doses
+• SpO2 continuous; ABG if pCO2 rising or SpO2 <90% despite treatment
+• Intubated asthma: continuous waveform capnography (normal exponential decay = no air trapping; rising plateau = dynamic hyperinflation); auto-PEEP check every 2-4h; plateau pressure <30 cmH2O target
+• Admit if: PEFR <70% predicted after 1h of treatment, persistent SpO2 <93%, prior intubation for asthma, high-risk patient (poor access, prior life-threatening exacerbation)
+• Discharge: PEFR >70%, SpO2 ≥95%, able to complete sentences, step-up controller prescribed, trigger education provided, follow-up within 1-2 weeks`,
+    disposition: `• ICU: status asthmaticus not responding to initial therapy, rising pCO2, AMS, intubation, silent chest, pulsus paradoxus >25 mmHg
+• Pulmonology/Allergy follow-up: all hospitalizations for asthma; biologic therapy consideration for ≥2 severe exacerbations/year or steroid-dependent disease
+• Respiratory therapy: intensive nebulization protocol, heliox administration, ventilator management`
+  },
+
+  // ════════════════════ CV — MISSING ════════════════════
+
+  {
+    id: "perioperative-medicine",
+    system: "cv",
+    title: "Perioperative Medicine — Cardiac Risk & Medication Management",
+    keywords: ["perioperative","preoperative","cardiac risk","RCRI","METS","surgical risk","beta blocker perioperative","anticoagulation perioperative","DOAC perioperative","bridging perioperative","statin perioperative","antiplatelet surgery","cardiac evaluation","CPEX","Revised Cardiac Risk Index","non-cardiac surgery"],
+    source: { chapter: "Cardiology", section: "Perioperative Medicine", pages: "20–21", authors: "Michael Lubitz",
+      keyFacts: [
+        "Revised Cardiac Risk Index (RCRI): 1 point each for high-risk surgery, ischemic heart disease, HF, cerebrovascular disease, DM on insulin, Cr >2; score 0-1 = low (<1%), score ≥2 = elevated (>1%); scores ≥3 = high risk (>10%)",
+        "Pre-op cardiac testing is NOT routinely indicated unless it would change management; test only if active cardiac conditions (unstable angina, decompensated HF, significant arrhythmia, severe valvular disease) OR functional capacity <4 METs AND surgery is high-risk AND results would change management",
+        "Beta-blockers perioperative: DO NOT initiate new beta-blocker within 24h of surgery (POISE trial — increased stroke and death); if already on beta-blocker, CONTINUE perioperatively; do NOT stop chronically prescribed beta-blockers",
+        "DOAC perioperative management: most procedures → stop 24-48h before (CrCl-dependent); HIGH bleeding risk → stop 48-72h before; resume 24-48h after hemostasis achieved; NO bridging needed for AF patients on DOAC (BRIDGE trial — no benefit, higher bleeding)",
+        "Dual antiplatelet therapy (DAPT) and surgery: bare metal stent → wait ≥30 days before elective surgery; drug-eluting stent → wait ≥6 months; if must operate → maintain aspirin if at all possible; discuss with cardiology"
+      ]
+    },
+    assessment: `#Perioperative Cardiac Risk Assessment
+Proposed surgery: *** | Surgeon: *** | Planned date: ***
+Surgical risk category: [ ] Low (<1%): cataract, superficial, endoscopy | [ ] Intermediate (1-5%): orthopedic, GI/abdominal, head/neck | [ ] High (>5%): aortic/major vascular, prolonged procedures with large fluid shifts
+RCRI Score:
+[ ] High-risk surgery (1)  [ ] Ischemic HD (1)  [ ] HF (1)  [ ] CVD/TIA history (1)  [ ] Insulin-dependent DM (1)  [ ] Cr >2 mg/dL (1)
+RCRI Total: ___  (0-1 = low; ≥2 = elevated; ≥3 = high >10% MACE)
+Functional capacity: *** METs (<4 = poor; 4-10 = adequate; >10 = excellent)
+  Examples: 4 METs = climb one flight stairs; 7 METs = singles tennis; 10 METs = running >10mph
+ACTIVE CARDIAC CONDITIONS (require evaluation before elective surgery):
+Unstable angina/ACS: [ ] Yes  | Decompensated HF: [ ] Yes  | Significant arrhythmia: [ ] Yes  | Severe valvular disease: [ ] Yes
+Cardiac stents: *** (type: BMS/DES, date: ***) | DAPT: *** (drugs + duration)
+Current anticoagulation: *** | INR: *** | Last DOAC dose: *** | Bridging needed: [ ] Yes  [ ] No`,
+    ddx: `PERIOPERATIVE RISK STRATIFICATION APPROACH:
+Step 1: Emergency surgery → proceed (no time for cardiac evaluation)
+Step 2: Active cardiac conditions (unstable angina, decompensated HF, severe AS, high-grade arrhythmia) → postpone elective surgery + evaluate
+Step 3: Low-risk surgery (<1% MACE) → proceed without further testing
+Step 4: Assess functional capacity:
+  ≥4 METs and no active cardiac conditions → proceed without further testing (even for high-risk surgery)
+  <4 METs AND high-risk surgery AND results would change management → consider non-invasive testing
+Step 5: Pharmacologic stress testing or coronary evaluation only if revascularization would improve outcomes
+RISK FACTORS FOR PERIOPERATIVE CARDIAC EVENTS:
+Known CAD/prior MI, HF, cerebrovascular disease, insulin-dependent DM, CKD (Cr >2), high-risk surgery type, age >75, emergency surgery, long procedure duration, large blood loss/fluid shifts, prolonged anesthesia
+SPECIAL CONSIDERATIONS:
+• Aortic stenosis: severe AS (valve area <1 cm², gradient >40 mmHg) → high risk; consider TAVR or SAVR first if symptomatic severe AS
+• HFrEF: optimize before surgery; BNP/NT-proBNP elevated = higher risk; avoid metformin/diuretics on day of surgery
+• AFib: rate control maintained; anticoagulation managed per bridging algorithm`,
+    workup: `STANDARD PRE-OP WORKUP:
+• EKG: required for intermediate-high risk surgery (vascular, major abdominal); optional for low-risk surgery and young healthy patients
+• Chest X-ray: indicated for known heart/lung disease; not routine for asymptomatic patients
+• CBC: baseline; especially for major surgery with expected blood loss
+• BMP: creatinine (RCRI scoring, DOAC dosing, medication adjustments); electrolytes; glucose
+• Coagulation (PT/INR, PTT): if on anticoagulation, liver disease, or bleeding history
+• Echo (TTE): active HF, new murmur, suspected valvular disease, unexplained dyspnea; NOT routine
+• Stress testing (only if changes management): consider if RCRI ≥2 + functional capacity <4 METs + high-risk surgery; CPEX (cardiopulmonary exercise testing) most objective measure of functional capacity
+• BNP/NT-proBNP: baseline for high-risk patients; significantly elevated BNP = higher perioperative MACE risk`,
+    management: `BETA-BLOCKERS:
+• Continue if currently prescribed (DO NOT stop)
+• DO NOT initiate new beta-blocker within 24h of surgery (POISE trial: increased stroke and death)
+• If initiating for high-risk reasons: start at least 1 week before surgery, titrate, verify HR and BP response
+STATINS: CONTINUE perioperatively (cardioprotective; abrupt withdrawal increases MI risk)
+ACEi/ARBs: HOLD on morning of surgery (causes intraoperative hypotension); restart 24-48h post-op once euvolemic
+DIURETICS: HOLD on day of surgery; restart when PO intake and volume status allow
+SGLT2 INHIBITORS: HOLD 3-5 days before surgery (euglycemic DKA risk with fasting/surgical stress); restart when eating
+METFORMIN: HOLD if IV contrast, major surgery, or risk of AKI; restart when Cr stable
+INSULIN: complex perioperative protocols (see Inpatient Diabetes Management template); avoid hypoglycemia; target BG 140-180 intra/post-op
+ANTICOAGULATION (PERIOPERATIVE):
+DOAC MANAGEMENT:
+Low-moderate bleeding risk: stop DOAC 24-48h before (CrCl-dependent half-life); no bridging needed; resume 24h after
+High bleeding risk (major surgery): stop 48-72h before; resume 48-72h after confirmed hemostasis
+CrCl <30 with dabigatran: stop 4-5 days before
+WARFARIN: hold 5 days before surgery (allow INR to normalize); restart evening of surgery
+BRIDGING (LMWH): ONLY for high VTE/thromboembolic risk (mechanical MV, CHA2DS2-VASc ≥7, VTE within 3 months, severe thrombophilia); most AFib patients on warfarin do NOT need bridging (BRIDGE trial, NEJM 2015)
+ANTIPLATELET THERAPY AND STENTS:
+• Bare metal stent (BMS): wait ≥30 days before elective non-cardiac surgery; maintain aspirin if possible
+• Drug-eluting stent (DES): wait ≥6 months before elective surgery (ideally 12 months); maintain aspirin
+• If early surgery required after stent: maintain aspirin; stop P2Y12 inhibitor 5-7 days pre-op; resume P2Y12 ASAP post-op (24-48h); MUST discuss with cardiologist + surgeon
+• Aspirin for PRIMARY prevention: HOLD perioperatively (increased bleeding, no benefit)
+• Aspirin for SECONDARY prevention (CAD/prior ACS): continue in most cases; discuss high-bleeding-risk procedures with cardiologist
+PROPHYLAXIS:
+• DVT prophylaxis: LMWH (enoxaparin 40mg SQ qday) + SCDs starting post-op
+• Antibiotic prophylaxis: per surgical site and patient risk factors (prophylaxis guidelines)
+• Glucose management: target BG 140-180 mg/dL perioperatively; check BG q2-4h`,
+    monitoring: `• Troponin: do NOT routinely check post-op troponin (MINS — myocardial injury after non-cardiac surgery — may be detected incidentally; management unclear; testing in asymptomatic patients causes anxiety without clear benefit); check only if symptoms suggestive of ACS
+• EKG: if new symptoms (chest pain, dyspnea, arrhythmia) post-op
+• BMP: renal function post-op (ACEi/ARB held peri-op; resume when creatinine stable)
+• INR: warfarin-bridged patients — check INR 2-3 days after restarting warfarin to adjust dose`,
+    disposition: `• Cardiology pre-op consult: active cardiac conditions requiring evaluation before surgery; severe valvular disease; recent ACS or coronary stenting with early surgery needed; new HF or cardiomyopathy; complex anticoagulation decisions
+• Anesthesia pre-op clinic: all high-risk patients; patients with multiple comorbidities; unusual medications or complex management needs
+• Postpone elective surgery: active unstable angina, decompensated HF, significant arrhythmia, severe uncorrected valvular disease`
+  },
+
+  // ════════════════════ PULM — ALLERGY ════════════════════
+
+  {
+    id: "drug-hypersensitivity",
+    system: "pulm",
+    title: "Drug Allergy / Hypersensitivity / Anaphylaxis / SJS-TEN",
+    keywords: ["drug allergy","drug hypersensitivity","anaphylaxis","SJS","Stevens Johnson","TEN","toxic epidermal necrolysis","DRESS","drug reaction eosinophilia","penicillin allergy","beta-lactam allergy","contrast allergy","drug desensitization","epinephrine anaphylaxis","CIOMS","urticaria","angioedema","delayed hypersensitivity","immediate hypersensitivity"],
+    source: { chapter: "Allergy & Immunology", section: "Drug & Contrast Allergy", pages: "182–183", authors: "Gita Bhattacharya, Jessica Bourque",
+      keyFacts: [
+        "Anaphylaxis: acute onset multisystem reaction (skin + cardiorespiratory OR severe hypotension or bronchospasm alone); EPINEPHRINE 0.3mg IM (1:1000) in LATERAL THIGH is the ONLY first-line treatment — antihistamines and steroids are ADJUNCTS only; biphasic reaction in ~5% (mainly high-risk features: hypotension, severe initial presentation, required ≥2 epi doses)",
+        "SJS/TEN: life-threatening mucocutaneous reaction (SJS <10% BSA, TEN >30%); target lesions + mucosal involvement + epidermal detachment; STOP OFFENDING DRUG IMMEDIATELY; burn unit care; IVIG and/or cyclosporine for TEN; steroids controversial (may worsen TEN); mortality 10% (SJS) to 30%+ (TEN)",
+        "DRESS (Drug Reaction with Eosinophilia and Systemic Symptoms): fever + morbilliform rash + lymphadenopathy + internal organ involvement (liver most common) + eosinophilia; onset 2-8 weeks after drug; STOP drug; systemic steroids; prolonged taper over months needed",
+        "Penicillin allergy: only 1-5% of PCN allergy-labeled patients have confirmed IgE-mediated allergy; cross-reactivity with cephalosporins is <2% (not 10%); inpatient test dose protocol in Epic (Penicillin Cephalosporin Hypersensitivity Pathway) — verify and de-label when appropriate",
+        "Contrast allergy pre-medication (elective): 13-hour protocol at MGH: prednisone 50mg PO at 13h, 7h, and 1h before contrast + diphenhydramine 50mg PO/IV 1h before; emergent: methylprednisolone 40mg IV q4h × 3 doses; pre-medication does NOT prevent non-allergic reactions"
+      ]
+    },
+    assessment: `#Drug Allergy / Hypersensitivity Assessment
+DRUG REACTION:
+Offending drug: *** | Date started: *** | Date of reaction: *** | Days into course: ***
+Reaction description: *** | Severity: outpatient [ ] / ED [ ] / hospitalized [ ] / ICU [ ]
+Type: immediate (<1h) [ ] / accelerated (1-72h) [ ] / delayed (>72h) [ ]
+Mucosal involvement (oral/conjunctival/genital): [ ] Yes (→ SJS/TEN concern)  [ ] No
+BSA affected (%): *** | Skin detachment: [ ] Yes (→ SJS/TEN emergent dermatology)  [ ] No
+DRESS screen: fever [ ] / morbilliform rash [ ] / lymphadenopathy [ ] / onset 2-8 weeks post-drug [ ]
+  Eosinophilia: *** | LFTs: ***
+ANAPHYLAXIS:
+Skin/mucosal involvement: urticaria [ ] / angioedema [ ] / flushing [ ]
+Cardiorespiratory: bronchospasm [ ] / hypotension [ ] / syncope [ ]
+Onset: *** min after exposure
+Epinephrine given: [ ] Yes (dose/time: ***)  [ ] No → give IMMEDIATELY if anaphylaxis
+DRUG-SPECIFIC ALLERGY:
+PCN/beta-lactam allergy: prior reaction description: *** | test dose candidate: [ ] Yes  [ ] No
+Contrast allergy: prior reaction: *** | Pre-medication ordered: [ ] Yes  [ ] No`,
+    ddx: `DRUG REACTION CLASSIFICATION (Gell-Coombs):
+Type I (IgE-mediated, immediate): urticaria, angioedema, bronchospasm, anaphylaxis; onset minutes-1h; mast cell degranulation via IgE cross-linking; PCN, cephalosporins, neuromuscular blockers, biologics
+Type II (cytotoxic antibody): hemolytic anemia, thrombocytopenia, drug-induced leukopenia; onset days; drug acts as hapten on cell surface
+Type III (immune complex): serum sickness-like reaction (fever, rash, arthralgias 7-21d after drug); immune complexes activate complement
+Type IV (T-cell mediated, delayed): maculopapular exanthema (most common), SJS/TEN, DRESS, fixed drug eruption, contact dermatitis; onset >48h; not IgE-mediated
+SEVERE CUTANEOUS ADVERSE REACTIONS (SCARs):
+MORBILLIFORM EXANTHEM: most common drug reaction (>90%); maculopapular rash; onset 7-14d; usually resolves with drug discontinuation; benign if NO mucosal involvement, NO fever, NO blistering
+SJS (Stevens-Johnson Syndrome): <10% BSA epidermal detachment + mucosal involvement (at least 2 sites) + target lesions ± atypical lesions; mortality 10%; common drugs: allopurinol, AEDs (lamotrigine, carbamazepine, phenytoin), sulfonamides, NSAIDs, nevirapine
+TEN (Toxic Epidermal Necrolysis): >30% BSA detachment; SJS-TEN overlap 10-30%; mortality 30%+; same drug triggers as SJS; SCORTEN score guides ICU admission
+DRESS: Drug Reaction with Eosinophilia and Systemic Symptoms; onset 2-8 weeks; morbilliform rash + fever + lymphadenopathy + liver (most common)/kidney/lung/heart involvement + eosinophilia ± atypical lymphocytes; prolonged course (months); common drugs: carbamazepine, phenytoin, lamotrigine, allopurinol, sulfonamides, vancomycin, minocycline, anti-retroviral drugs
+Fixed drug eruption: same site each re-exposure; hyperpigmented lesion; NSAIDs, tetracyclines, trimethoprim, barbiturates
+Anaphylaxis DDx: vasovagal syncope (no urticaria/angioedema), panic attack, scombroid fish poisoning (histamine — resembles anaphylaxis; after fish consumption), carcinoid syndrome (serotonin — flushing), idiopathic urticaria, C1 esterase inhibitor deficiency (hereditary angioedema — NO urticaria, positive family history, recurrent angioedema)`,
+    workup: `ACUTE ANAPHYLAXIS:
+• Serum tryptase (within 1-3h of reaction onset): elevated in anaphylaxis; confirms mast cell degranulation; not always elevated; obtain STAT
+• CBC + CMP: baseline; eosinophilia suggests allergic cause
+• EKG: arrhythmia or ischemia as trigger or complication
+DRUG REACTION WORKUP:
+• CBC: eosinophilia (DRESS, drug hypersensitivity), thrombocytopenia (Type II), hemolytic anemia (Type II)
+• LFTs: hepatotoxicity (DRESS — liver most common organ), drug-induced hepatitis
+• BMP: nephritis (DRESS, interstitial nephritis), renal failure
+• Skin biopsy: URGENT for SJS/TEN (confirms diagnosis, guides management); also for bullous pemphigoid, pemphigus
+• SCORTEN score (SJS/TEN): age >40 + malignancy + HR >120 + BSA detachment >10% + BUN >10 + glucose >14 + HCO3 <20 → guides ICU triage
+• Allergy skin testing (outpatient): evaluated by Allergy specialist; IgE-mediated reactions; NOT indicated for morbilliform reactions or SCARs
+• Drug lymphocyte stimulation test (DLST): research tool for delayed hypersensitivity; not routine
+PENICILLIN ALLERGY EVALUATION:
+• <5% of PCN-labeled patients have true IgE-mediated allergy; appropriate de-labeling improves antibiotic stewardship
+• Inpatient test dose: "Antibiotic Test Dose" in Epic order set → automatic rescue medications, nursing orders; test dose = 1/10 of full IV dose or 1/4 of oral dose; if no reaction → patient NOT allergic to that drug; update allergy list
+• Contraindications to test dose: severe non-IgE reactions (SJS, TEN, DRESS, serum sickness) — NEVER rechallenge`,
+    management: `ANAPHYLAXIS (treat immediately):
+1. EPINEPHRINE 0.3mg IM (1:1000 solution) in LATERAL THIGH — GIVE FIRST (NOT antihistamines/steroids)
+   → Repeat q5-15 min if no improvement; if no response: epinephrine infusion (1-4 mcg/min IV)
+2. Supine position + elevate legs (unless bronchospasm = sit upright)
+3. High-flow O2 (NRB); IV access; 1L NS bolus for hypotension
+4. Nebulized albuterol: for bronchospasm (adjunct, NOT substitute for epinephrine)
+5. Diphenhydramine 25-50mg IV/PO + famotidine 20mg IV: H1+H2 antihistamines (adjuncts — do NOT delay epinephrine)
+6. Methylprednisolone 40-80mg IV (if <120kg) or 80mg IV (if ≥120kg): prevents biphasic reaction (evidence weak but widely used)
+7. Glucagon 1-5mg IV over 5 min: for patients on beta-blockers (reverses refractory hypotension/bronchospasm)
+8. Observation ≥6h: risk of biphasic reaction (~5%); high-risk features (severe, required ≥2 epi, hypotension) → 24h observation/admission
+Discharge: EpiPen × 2 prescribed + trained + allergy referral + medical alert bracelet
+SJS/TEN (DERMATOLOGY EMERGENCY):
+1. STOP offending drug IMMEDIATELY — most important step
+2. Dermatology + Ophthalmology + Burn surgery STAT consultation (if TEN or BSA >10%)
+3. Wound care: non-adherent dressings; wound care nursing; minimize shear forces
+4. Ophthalmology: daily exam (SJS/TEN can cause permanent eye complications — corneal scarring, symblepharon)
+5. IVIG 1g/kg/day × 3 days: for TEN (evidence limited but used for immunomodulation in severe cases)
+6. Cyclosporine 3-5mg/kg/day: may reduce progression of TEN (small studies; anti-T cell effect)
+7. Steroids (controversial in TEN): may worsen TEN and delay wound healing; avoid in TEN; some evidence for early SJS
+8. Supportive care: pain management, nutrition (NGT if severe oral mucosal involvement), IVF, electrolytes
+9. Prophylactic antibiotics: NOT routine; treat documented infections
+10. AVOID future exposure to causative drug — document clearly in medical record; screen for HLA-B alleles if relevant (HLA-B*5701 for abacavir, HLA-B*5801 for allopurinol in Asian/Black patients)
+DRESS:
+1. STOP offending drug immediately
+2. Topical steroids: mild-moderate skin disease
+3. Prednisone 1-2mg/kg/day: for moderate-severe internal organ involvement; TAPER SLOWLY over months (abrupt stop → DRESS relapse)
+4. Monitor LFTs, CBC, eosinophils monthly for 6 months (DRESS can relapse or evolve to autoimmune hepatitis)
+CONTRAST ALLERGY:
+Elective (13-hour protocol at MGH): prednisone 50mg PO at 13h, 7h, 1h pre-contrast + diphenhydramine 50mg PO/IV 1h pre-contrast
+Emergent: methylprednisolone 40mg IV q4h × 3 doses (time permitting) + diphenhydramine
+Note: pre-medication does NOT reliably prevent non-IgE-mediated (pseudo-allergic/physiologic) reactions to contrast; does NOT protect against acute kidney injury`,
+    monitoring: `• Anaphylaxis: q15 min vital signs during resuscitation; repeat tryptase at 24h (elevated tryptase persisting at 24h = anaphylaxis vs baseline elevation = mastocytosis)
+• SJS/TEN: daily Nikolsky sign, BSA assessment, ophthalmology exam; SCORTEN at admission and day 3; urine output (fluid losses through skin)
+• DRESS: LFTs + CBC weekly × 4 weeks, then monthly × 6 months; watch for relapse or autoimmune sequelae (thyroiditis, Type 1 DM, autoimmune hepatitis appearing months later)`,
+    disposition: `• Burn unit/ICU: TEN >10% BSA or SJS with severe organ involvement, anaphylaxis requiring epinephrine drip
+• Dermatology URGENT: any suspected SJS/TEN (same-day biopsy + consultation)
+• Allergy/Immunology: all patients post-anaphylaxis (tryptase, venom testing, EpiPen training), PCN allergy de-labeling program, complex drug allergies requiring desensitization
+• Ophthalmology: SJS/TEN ocular involvement (corneal ulcers, symblepharon — can cause permanent vision loss)`
+  },
+
+  // ════════════════════ NEURO — GERIATRICS ════════════════════
+
+  {
+    id: "geriatrics",
+    system: "neuro",
+    title: "Geriatrics — Assessment, Falls, Dementia & Polypharmacy",
+    keywords: ["geriatrics","frailty","falls","dementia","Alzheimer","cognitive impairment","MoCA","Mini-Cog","polypharmacy","deprescribing","Beers criteria","geriatric assessment","5Ms","delirium prevention","fall prevention","anticholinergic","elder abuse","functional status","activities of daily living","ADL","IADL"],
+    source: { chapter: "Geriatrics & Palliative Care", section: "Geriatric Assessment & Frailty / Polypharmacy", pages: "159–161", authors: "Elaine Luterstein, Felicita Kuperwasser",
+      keyFacts: [
+        "Geriatric 5Ms framework: Mind (cognition, mood, delirium), Mobility (gait, falls, function), Medications (polypharmacy, deprescribing), Matters Most (goals, values, advance directives), Multicomplexity (multiple conditions, social determinants) — comprehensive geriatric assessment (CGA) using 5Ms improves outcomes at 3-12 months",
+        "Frailty (Fried criteria): ≥3 of: unintentional weight loss >4.5kg in past year, exhaustion, weakness (grip strength), slow gait speed, low physical activity — predicts hospitalization, disability, and death independently of age; frailty is potentially REVERSIBLE with exercise + nutrition",
+        "Falls: multifactorial risk assessment required — intrinsic (gait/balance, vision, cognitive impairment, medications, orthostatic hypotension) + extrinsic (environmental hazards); STEADI tool; Timed Up and Go test (TUG) >12s = abnormal; vitamin D 800-1000 IU/day reduces falls risk",
+        "Delirium prevention (HELP — Hospital Elder Life Program): orientation aids (large clock/calendar), mobility (daily ambulation), vision/hearing aids, sleep protocol (reduce nighttime interruptions), hydration, avoid anticholinergics/benzodiazepines/opioids in high-risk patients; multicomponent interventions reduce delirium incidence by 33%",
+        "Beers Criteria (JAGS 2023): medications to AVOID in older adults: first-generation antihistamines (diphenhydramine — cognitive impairment, falls), benzodiazepines, non-benzodiazepine hypnotics (zolpidem), TCAs, antipsychotics in dementia (increased mortality), peripheral alpha-blockers (orthostatic hypotension), muscle relaxants (cyclobenzaprine)"
+      ]
+    },
+    assessment: `#Geriatric Assessment — 5Ms Framework
+PATIENT: Age *** | Living situation: *** | Caregiver: *** | Functional baseline: independent [ ] / with assistance [ ] / dependent [ ]
+MIND:
+  Cognitive screen: Mini-Cog *** / MoCA *** / MOCA baseline *** | Confusion/delirium: [ ] Yes  [ ] No
+  PHQ-2 / GDS (depression screen): *** | Vision/hearing impairment: [ ] Yes  [ ] No
+MOBILITY:
+  Gait: normal [ ] / slow [ ] / unsteady [ ] | Assistive device: ***
+  TUG (Timed Up and Go) test: *** seconds (>12s = abnormal fall risk)
+  Falls in past year: *** | Circumstances: *** | Injury: [ ] Yes  [ ] No
+  Orthostatic hypotension screen: supine BP/HR: *** | 1-min standing: *** (drop >20 SBP or >10 DBP = positive)
+MEDICATIONS:
+  Total medications: *** | High-risk meds identified (Beers): ***
+  Anticholinergics: [ ] Yes (see list below)  | Benzodiazepines: [ ] Yes | Opioids: [ ] Yes
+MATTERS MOST:
+  Code status: *** | HCP: *** | Goals/values: *** | MOLST: [ ] Yes  [ ] No
+MULTICOMPLEXITY: # active diagnoses: *** | Social determinants of health: *** | Discharge plan: ***`,
+    ddx: `FRAILTY vs NORMAL AGING vs DISEASE:
+Frailty (Fried Phenotype, ≥3 of 5): weight loss >4.5kg/year, exhaustion, weakness (grip <20kg F/30kg M), slow gait (<0.8m/s), low physical activity; present in 11% age 50-59, 51% age 90+
+Pre-frailty (1-2 criteria): modifiable — exercise and nutrition interventions can prevent transition to frailty
+Normal aging: gradual decline in physiologic reserve; not equivalent to frailty
+Disease-accelerated frailty: CHF, COPD, malignancy, DM, depression accelerate frailty; treat underlying conditions
+FALLS RISK ASSESSMENT (STEADI Framework):
+Intrinsic: cognitive impairment, depression, lower extremity weakness/deconditioning, gait/balance disorder, poor vision, hypotension (orthostatic), urinary urgency/incontinence
+Medications: polypharmacy ≥4 medications, psychotropics (benzodiazepines, antipsychotics, opioids, antihistamines, muscle relaxants), antihypertensives, diuretics
+Extrinsic: poor lighting, loose rugs, no grab bars in bathroom, slippery floors, poor footwear
+DEMENTIA vs DELIRIUM vs DEPRESSION (3Ds):
+• Dementia: insidious onset over months-years; persistent; typically ATTENTION PRESERVED initially; memory + other cognitive domains affected; language, executive function, visuospatial
+• Delirium (see AMS/Delirium template): ACUTE onset over hours-days; FLUCTUATING; inattention is hallmark; reversible; often superimposed on dementia (delirium triples dementia risk)
+• Depression: anhedonia + low mood; may mimic cognitive impairment (pseudodementia); improves with treatment; PHQ-9 screen
+DEMENTIA TYPES:
+• Alzheimer's disease (60-70%): memory first; amyloid + tau pathology; insidious, progressive; risk factors: age, APOE ε4, family history
+• Vascular dementia (15-20%): stepwise decline; association with CVD/stroke risk factors; MRI white matter changes + cortical infarcts
+• Lewy body dementia (DLB): visual hallucinations + parkinsonism + fluctuating cognition + REM sleep behavior disorder; AVOID antipsychotics (severe sensitivity — haloperidol can cause irreversible parkinsonism)
+• Frontotemporal dementia (FTD): personality/behavior change + executive dysfunction (frontal) OR language predominant (temporal); relatively preserved memory early; younger onset
+• Normal pressure hydrocephalus (NPH): TRIAD = magnetic gait + urinary incontinence + dementia (Hakim triad); MRI shows enlarged ventricles; LP or VP shunt may improve`,
+    workup: `COMPREHENSIVE GERIATRIC ASSESSMENT:
+Cognitive screening (step-wise):
+1. Mini-Cog: 3-word recall + clock drawing (5 minutes; validated in low literacy + non-English speakers); score 0-2 = positive screen
+2. RUDAS (Rowland Universal Dementia Assessment Scale): minimizes educational/cultural/language effects on testing
+3. MoCA (Montreal Cognitive Assessment): 30-point scale; <26 = mild impairment; best for mild-moderate dementia
+4. MMSE: 30-point scale; less sensitive for MCI; copyright-restricted
+DELIRIUM SCREENING: CAM (Confusion Assessment Method): acute onset/fluctuating + inattention + (disorganized thinking OR altered consciousness) = delirium
+FALLS WORKUP:
+• Orthostatic blood pressure: supine → standing at 1 min and 3 min; drop ≥20 SBP or ≥10 DBP = orthostatic hypotension
+• TUG (Timed Up and Go): >12s = increased fall risk; >20s = high fall risk requiring PT/OT
+• Review medications: Beers list — especially psychotropics, antihypertensives, diuretics, alpha-blockers
+• Vision check: visual acuity; ophthalmology referral if significantly impaired
+• ECG: syncope-related falls (arrhythmia, heart block)
+DEMENTIA WORKUP (new cognitive complaints):
+• CBC, BMP, TSH, B12 (reversible causes of cognitive decline: hypothyroidism, B12 deficiency, anemia)
+• RPR, HIV (if risk factors); fasting glucose; LFTs
+• MRI brain (preferred over CT): structural lesions, vascular changes, hydrocephalus, atrophy pattern
+• Consider referral to memory clinic (Geriatrics or Neurology): formal neuropsychological testing, PET amyloid imaging (for diagnostic uncertainty or early-onset), CSF biomarkers (Aβ42, tau — for research/clinical trials)
+POLYPHARMACY REVIEW:
+• Epic → Chart Review → Misc Reports → Medication Dispense History: confirms what patient is actually taking
+• Medication Appropriateness Index (MAI): structured review for each medication (indication, effectiveness, dose, interactions, side effects, practical use)
+• STOPP/START criteria: lists medications to stop and start in older adults; used alongside Beers`,
+    management: `FRAILTY INTERVENTIONS:
+• Exercise: structured PT + resistance training; Tai Chi reduces falls by 29%; best evidence = 3x/week × 12+ weeks
+• Nutrition: dietitian referral for weight loss; protein supplementation; correct micronutrient deficiencies (B12, Vitamin D, iron, zinc)
+• Social engagement: occupational therapy; community programs; isolation intervention
+• Treat comorbidities: depression, pain, sleep disturbance amplify frailty; optimal chronic disease management
+FALLS PREVENTION:
+• Medications: deprescribe high-risk medications (benzodiazepines, anticholinergics, sedative-hypnotics, alpha-blockers); review antihypertensives if orthostatic hypotension
+• Vitamin D: 800-1000 IU/day (reduces falls risk; especially important if vitamin D deficient)
+• Exercise: balance training (PT); tai chi; hip flexor and ankle strengthening
+• Environment: occupational therapy home assessment; grab bars, remove trip hazards, non-slip mats, adequate lighting, bed and toilet height adjustment
+• Orthostatic hypotension: review medications; elevation of head of bed; compression stockings; fludrocortisone; midodrine
+• Vision: annual eye exam; optimize correction
+DELIRIUM PREVENTION (HELP Program — Hospital Elder Life Program):
+• Orientation: large clock + calendar in room; familiar objects; daylight + night differentiation
+• Mobility: ambulate or range-of-motion exercises twice daily; minimize bed rest; early PT
+• Sensory: ensure hearing aids and glasses available; communicate face-to-face; adequate lighting
+• Sleep: non-pharmacologic (warm milk, relaxation, minimize nighttime interruptions, avoid TV); melatonin 0.5-3mg QHS (evidence for delirium prevention in ICU)
+• Avoid: benzodiazepines, diphenhydramine, anticholinergics, opioids in high-risk patients; minimize physical restraints (worsens delirium)
+DEMENTIA MANAGEMENT:
+• Cholinesterase inhibitors (Alzheimer's mild-moderate): donepezil 5-10mg qHS (most used), rivastigmine, galantamine; modest benefit; GI side effects
+• Memantine (Alzheimer's moderate-severe, or add-on): 5-20mg qday; N-methyl-D-aspartate antagonist; modest benefit
+• Behavioral symptoms of dementia: non-pharmacologic FIRST (structured routines, caregiver training, engagement activities); avoid antipsychotics (↑mortality in dementia — FDA black box warning); quetiapine or risperidone at lowest effective dose if severe agitation/psychosis + safety risk
+• Levodopa: DLB with significant parkinsonism (modest benefit); AVOID antipsychotics in DLB (catastrophic parkinsonism)
+• Caregiver support: education, support groups (Alzheimer's Association), respite care, caregiver burnout assessment
+POLYPHARMACY / DEPRESCRIBING:
+BEERS CRITERIA HIGH-PRIORITY DEPRESCRIBING:
+• Antihistamines (diphenhydramine/promethazine): substitute loratadine or fexofenadine; avoid for sleep
+• Benzodiazepines/non-BZD hypnotics (zolpidem): taper slowly; substitute CBT-I for insomnia, buspirone or SSRI for anxiety
+• TCAs (amitriptyline, imipramine): substitute SNRIs or SSRIs for depression; nortriptyline if low-dose needed for pain (lower anticholinergic)
+• Antipsychotics in dementia: gradual dose reduction every 2-4 weeks; increased falls + mortality; behavioral interventions instead
+• PPIs: reassess indication; step down to H2 blocker if still needed; attempt discontinuation trial
+• Peripheral alpha-blockers (doxazosin, tamsulosin): orthostatic hypotension + falls; reassess BPH indications
+MEDICATION RECONCILIATION at ALL transitions of care: admission, transfers, discharge; identify omissions, duplications, and inappropriate medications; involve pharmacist + patient/family`,
+    monitoring: `• MoCA at each follow-up (trend cognitive function); transition from mild to moderate dementia changes management
+• TUG test at each hospitalization and outpatient visit for falls-risk patients; PT/OT referral if worsening
+• Orthostatic vitals: check at each admission (common cause of falls and dizziness in elderly)
+• Medication review: every 3-6 months in outpatient setting; at every hospitalization — use Beers or STOPP/START criteria
+• Caregiver status assessment: caregiver burnout is a major contributor to nursing home placement; refer to social work`,
+    disposition: `• Geriatrics consult inpatient: complex frailty with multiple competing conditions, delirium workup and management in complicated cases, advance care planning in seriously ill elderly, perioperative risk in frail patients (CGA predicts surgical outcomes)
+• Geriatrics outpatient clinic: comprehensive geriatric assessment, dementia management, polypharmacy review, falls program
+• PT/OT: all patients with new falls, gait instability, functional decline, pre-surgical deconditioning
+• Social work: caregiver support, elder abuse screening, discharge planning (SNF vs home with services vs assisted living)`
+  },
+
+  // ════════════════════ GI — MISSING TEMPLATES ════════════════════
+
+  {
+    id: "pancreatitis",
+    system: "gi",
+    title: "Pancreatitis & Pancreatic Mass",
+    keywords: ["pancreatitis","acute pancreatitis","AP","lipase","BISAP score","gallstone pancreatitis","necrotizing pancreatitis","pancreatic necrosis","walled off necrosis","WON","ERCP pancreatitis","chronic pancreatitis","pancreatic mass","IPMN","pancreatic adenocarcinoma","CA 19-9","exocrine insufficiency","Ranson criteria","fluid resuscitation pancreatitis","pseudocyst"],
+    source: { chapter: "Gastroenterology", section: "Pancreatitis & Pancreatic Mass", pages: "77", authors: "Lucas Cofer",
+      keyFacts: [
+        "Diagnosis requires 2/3: (1) consistent clinical presentation (epigastric pain radiating to back), (2) lipase >3× ULN, (3) characteristic imaging; do NOT need to trend lipase — no correlation with severity",
+        "BISAP score (quick superior severity predictor): BUN >25, impaired mental status, SIRS criteria ≥2, age >60, pleural effusion — score ≥3 predicts severe disease with increased mortality",
+        "IV fluids (WATERFALL trial, NEJM 2022): aggressive (3mL/kg/h) vs. moderate resuscitation showed NO benefit and higher fluid overload; current recommendation is moderate resuscitation with LR (not NS) 1.5 mL/kg/h; reassess frequently",
+        "Gallstone pancreatitis: ERCP if persistent biliary obstruction (bili not improving, cholangitis, CBD stone on imaging); cholecystectomy during same hospitalization if mild AP (reduces recurrence from 18% to <3%)",
+        "Infected necrotizing pancreatitis: suspect at day 7-10 if clinical deterioration; assume infected if gas on CT or positive blood cultures; antibiotics (cefepime + flagyl or pip/tazo); drainage/necrosectomy — delay >4 weeks if stable"
+      ]
+    },
+    assessment: `#Pancreatitis Assessment
+Presentation: epigastric/LUQ pain to back [ ] | N/V [ ] | Onset: *** hours ago
+Lipase: *** (>3x ULN = ***) | ALT: *** (ALT >3.5x ULN has 95% PPV for gallstone etiology)
+BISAP Score (≥3 = severe):
+  BUN >25 [ ] | Mental status impaired [ ] | SIRS (≥2 criteria) [ ] | Age >60 [ ] | Pleural effusion [ ]
+  BISAP Total: ___ | Severity: mild [ ] / moderate [ ] / severe (organ failure >48h) [ ]
+Etiology: gallstones [ ] / EtOH [ ] / hypertriglycerides (TG: ***) [ ] / medications [ ] / post-ERCP [ ] / idiopathic [ ]
+IV Fluids: Rate *** mL/h | Type: LR [ ] NS [ ] (LR preferred) | Total in: ***
+Diet: NPO [ ] / clear liquids trialing [ ] / EN via NGT [ ]
+Prior episodes: *** | CT ordered: [ ] Yes (at ~48h if not improving or severe)  [ ] No — avoid if mild improving
+RUQUS: gallstones [ ] | CBD dilation *** mm | Peripancreatic fluid [ ]
+Infected necrosis concern (day 7-10, clinical worsening): [ ] Yes  [ ] No`,
+    ddx: `ETIOLOGY (I GET SMASHED mnemonic):
+Idiopathic (10-25%), Gallstones (#1 in US — ALT >3.5x ULN 95% PPV), Ethanol (#2), Trauma, Steroids, Mumps/viral (Coxsackie, EBV, CMV, HAV, HBV, HIV), Autoimmune (Type 1: elevated IgG4; Type 2: IgG4 normal), Scorpion/spider bites, Hypercalcemia (Ca²⁺ activates pancreatic enzymes), Hypertriglyceridemia (TG >1000 mg/dL), ERCP (1-30% post-ERCP), Drugs (furosemide, azathioprine, 6-MP, pentamidine, didanosine, valproate, tetracyclines, sulfonamides)
+Biliary obstruction: tumor, stricture, divisum, parasites
+SEVERITY (Revised Atlanta Classification):
+Mild: no organ failure, no local/systemic complications; most cases; can trial diet quickly
+Moderate: organ failure resolving within 48h OR local complications (fluid collections, necrosis)
+Severe: persistent organ failure >48h; mortality 22%; ICU level care required
+COMPLICATIONS:
+Acute peripancreatic fluid collection (APFC): first 4 weeks; no wall; most resolve spontaneously
+Pseudocyst: encapsulated fluid collection >4 weeks; no solid material; drain if symptomatic
+Acute necrotic collection (ANC): contains solid necrosis; first 4 weeks; drain if infected
+Walled-off necrosis (WON): encapsulated necrosis >4 weeks; treat only if infected or symptomatic
+Infected necrosis: gas on CT (pathognomonic) OR positive blood cultures; need drainage
+Pseudoaneurysm: erosion of splenic/GDA artery into fluid collection → GIB; CT arteriography → IR embolization
+LGIB MIMICS: acute cholecystitis, choledocholithiasis, perforated PUD, mesenteric ischemia, aortic dissection`,
+    workup: `INITIAL LABS:
+• CBC, BMP (Ca, Cr, BUN), LFTs (ALT — gallstone etiology), lipid panel (TG — hypertriglyceridemia etiology), glucose
+• Lipase (no need to trend — does not correlate with severity; false low in CKD and DKA)
+• HCT and BUN at presentation and at 6-8h: hemoconcentration (HCT >44, BUN >20) predicts severe disease
+IMAGING:
+• RUQUS: all patients — assess for gallstones, CBD dilation, biliary sludge
+• CT abdomen/pelvis with IV contrast: do NOT do routinely on admission — get at 48-72h if severe or not improving (to assess for necrosis; CT done too early underestimates necrosis); pancreatic protocol CT for masses
+• MRI/MRCP: preferred if concern for necrosis, duct disruption, bile duct stone with negative US, or avoidance of contrast
+• Endoscopic ultrasound (EUS): evaluate for occult microlithiasis if no etiology found after MRCP
+MONITORING:
+• Repeat HCT + BUN at 6-8h from presentation (hemoconcentration = high risk)
+• BMP daily: renal function, electrolytes, calcium
+• BISAP score: calculate at admission and at 48h
+• Imaging for infected necrosis: if clinical deterioration at day 7-10 → CT (gas in necrosis = infected); discuss CT-guided FNA with GI if diagnostic uncertainty`,
+    management: `MILD PANCREATITIS (most patients):
+• IVF: moderate resuscitation with LR 1.5 mL/kg/h (not aggressive hydration — WATERFALL NEJM 2022 showed no benefit and increased fluid overload); reassess every 6-8h and adjust based on BUN + HCT trend + UOP
+• Electrolyte repletion: Ca, Mg, K as needed
+• Pain control: ketorolac or acetaminophen first-line; opioids if inadequate (hydromorphone preferred over morphine)
+• NPO only until pain resolves and nausea controlled → then trial of solid food early (not clear liquids first — no difference, NEJM 2023;389:1779); advance diet based on tolerance
+• Treat hypertriglyceridemia: if TG >500 → hold lipid-containing medications (propofol), insulin drip (if diabetic), plasmapheresis if TG >2000 or rapid lowering needed
+SEVERE/NECROTIZING PANCREATITIS:
+• ICU-level care: continuous monitoring, arterial line for frequent labs
+• IVF: moderate resuscitation (avoid aggressive hydration — worsens abdominal compartment syndrome, ARDS)
+• Early enteral nutrition (EN) within 24-48h: nasogastric or nasojejunal tube; reduces infected necrosis and mortality; total parenteral nutrition (TPN) only if EN not tolerated for >3-5 days
+• Antibiotics: NOT routine; only if infected necrosis confirmed or strongly suspected (imipenem, meropenem, or cefepime + metronidazole; pip/tazo alternative)
+• Infected necrosis (drainage/necrosectomy):
+  - Urgent if hemodynamically unstable → percutaneous or endoscopic drainage
+  - If stable → delay ≥4 weeks for WON to mature (step-up approach: endoscopic → percutaneous → surgical necrosectomy)
+  - Endoscopic transmural drainage preferred to surgery when feasible
+• Pseudoaneurysm: CT arteriography if unexplained GIB + pancreatitis → IR embolization before draining fluid collection
+GALLSTONE PANCREATITIS:
+• ERCP: indicated if cholangitis, persistent biliary obstruction (bilirubin not improving, CBD stone on imaging), or pancreatitis not resolving
+• Cholecystectomy: during same hospitalization if mild AP (reduces recurrence from 18% to <3%); after clinical resolution for moderate-severe AP (NEJM 2023;389:1779)
+CHRONIC PANCREATITIS:
+• Pancreatic enzyme replacement (Creon): with every meal/snack to treat exocrine insufficiency
+• Fat-soluble vitamins (ADEK) supplementation
+• Pain management: acetaminophen, NSAIDs, then opioids; celiac plexus block (EUS-guided); endoscopic/surgical decompression
+• Brittle DM management: insulin (with awareness of hypoglycemia risk from concurrent glucagon deficiency)
+• Refer to MGH Pancreas Center: 617-726-5523`,
+    monitoring: `• HCT + BUN every 6-8h first 24h (hemoconcentration predicts severity); BMP daily
+• Daily clinical assessment: pain, nausea, appetite, UOP, fever — guides diet advancement
+• BISAP at 48h: if ≥3 or worsening → CT, ICU consideration
+• Infected necrosis surveillance: if fever returns after initial improvement at day 7-10 → CT; check blood cultures
+• Post-pancreatitis: lipid panel at 4-6 weeks (if hypertriglyceridemia etiology); check Ca, PTH (if hypercalcemia etiology); MRCP 4-6 weeks (if no clear etiology — assess for IPMN, divisum, stricture)`,
+    disposition: `• ICU: severe AP (organ failure >48h), infected necrosis with hemodynamic instability, pseudoaneurysm
+• GI/Hepatology: ERCP for gallstone pancreatitis with persistent obstruction or cholangitis; endoscopic drainage of WON
+• IR: pseudoaneurysm embolization; percutaneous drainage if endoscopic approach not feasible
+• Surgery: surgical necrosectomy (last resort after endoscopic/percutaneous step-up fails)
+• MGH Pancreas Center (617-726-5523): chronic pancreatitis, pancreatic masses, cystic lesions`
+  },
+
+  {
+    id: "biliary-disease",
+    system: "gi",
+    title: "Biliary Disease (Cholecystitis / Cholangitis / Choledocholithiasis / PBC / PSC)",
+    keywords: ["cholecystitis","acute cholecystitis","cholangitis","ascending cholangitis","choledocholithiasis","CBD stone","biliary colic","gallstones","cholelithiasis","ERCP","cholecystectomy","Charcot triad","Murphy sign","RUQUS","HIDA scan","PBC","PSC","primary biliary cholangitis","primary sclerosing cholangitis","ursodiol","acalculous cholecystitis","ALP elevated"],
+    source: { chapter: "Gastroenterology", section: "Biliary Disease", pages: "79", authors: "Lucas Cofer",
+      keyFacts: [
+        "Acute cholangitis (Charcot's triad: RUQ pain + fever + jaundice; Reynolds' pentad adds shock + AMS): broad-spectrum antibiotics (pip/tazo or CTX + flagyl) + urgent ERCP for biliary decompression within 24-48h for severe cases",
+        "Cholecystitis diagnosis: RUQUS (GB wall thickening >4mm, pericholecystic fluid, sonographic Murphy's sign) — if RUQUS negative, HIDA scan (given 2mg IV morphine at MGH by nuclear radiology to increase sensitivity); Tokyo Guidelines grade severity",
+        "Acalculous cholecystitis: GB stasis/ischemia without obstruction; seen in critically ill (ICU, TPN, burns, major surgery, sepsis); diagnosed by RUQUS or HIDA; can perforate rapidly; treat with percutaneous cholecystostomy if too ill for surgery",
+        "Choledocholithiasis: CBD dilation >7mm on RUQUS + elevated ALP/bili → MRCP (gold standard for diagnosis) or EUS; ERCP for stone removal + interval cholecystectomy",
+        "PBC diagnosis (≥2 of 3): ALP ≥1.5× ULN, antimitochondrial antibody (AMA) >1:40 (present 95%), or biopsy; first-line treatment is ursodiol 13-15 mg/kg/day; obeticholic acid second-line"
+      ]
+    },
+    assessment: `#Biliary Disease Assessment
+ACUTE PRESENTATION:
+Pain: RUQ [ ] / epigastric [ ] | Radiation: back [ ] / shoulder [ ] | N/V [ ] | Fever: ***
+Murphy's sign (US or clinical): [ ] Positive  [ ] Negative
+CHOLECYSTITIS: WBC: *** | ALP: *** | Bili: *** | RUQUS: GB wall *** mm / pericholecystic fluid [ ] / stone [ ]
+HIDA ordered: [ ] Yes  [ ] No (if RUQUS negative and high clinical suspicion)
+CHOLANGITIS SCREEN:
+  Charcot's Triad: RUQ pain [ ] + fever [ ] + jaundice [ ] = CHOLANGITIS → ERCP URGENTLY
+  Reynolds' Pentad: + shock [ ] + AMS [ ] = SEVERE CHOLANGITIS → ICU + emergent ERCP
+  Tokyo Grade: I (mild) [ ] / II (moderate: age >75/WBC>18k/bili>4/bili trend) [ ] / III (severe: organ failure) [ ]
+CHOLEDOCHOLITHIASIS: CBD dilation *** mm | ALP *** / Total Bili *** | MRCP ordered: ***
+CHRONIC BILIARY: ALP elevation pattern: *** | AMA: *** | MRCP imaging: ***
+Antibiotics started: *** | ERCP planned: [ ] Yes  [ ] No | Surgery: ***`,
+    ddx: `GALLSTONE DISEASE SPECTRUM:
+Cholelithiasis (asymptomatic): observe; CCY only if high-risk for GB cancer (stone >3cm, porcelain GB, GB adenoma) or acute cholecystitis
+Biliary colic: transient stone in cystic duct → intermittent RUQ/epigastric pain 30min-6h, postprandial; no fever/elevated WBC; treat with elective CCY
+Acute cholecystitis: stone obstruction in cystic duct → GB wall inflammation ± infection; fever, WBC elevation, positive Murphy's sign; CCY or percutaneous cholecystostomy
+Choledocholithiasis: stone in CBD → elevated ALP + bili ± AST/ALT; can cause cholangitis and pancreatitis
+Acute ascending cholangitis: biliary obstruction + infection (E. coli, Klebsiella, Enterococcus most common); causes: stone (most common), stricture (malignancy, PSC, AIDS cholangiopathy), liver fluke; EMERGENCY
+ACALCULOUS CHOLECYSTITIS: ICU patients, TPN, burns, major trauma/surgery, sepsis; gallbladder stasis/ischemia without obstructing stone; can perforate rapidly without obvious findings; high index of suspicion in ICU
+AUTOIMMUNE BILIARY DISEASE:
+PBC (Primary Biliary Cholangitis): autoimmune destruction of intrahepatic small bile ducts; F > M (9:1); AMA positive (95%); elevated ALP; progressive to cirrhosis; associated with Sjogren's, thyroid disease, CREST
+PSC (Primary Sclerosing Cholangitis): intra- + extrahepatic bile duct inflammation/fibrosis → strictures; M > F; IBD association (>70%, UC > Crohn's); MRCP shows "beaded" appearance; high cholangiocarcinoma risk (160-400×); no effective medical therapy
+IgG4-related cholangitis: mimics PSC; diagnosed by IgG4 level + tissue biopsy; responds dramatically to steroids (unlike PSC)
+MALIGNANT BILIARY: cholangiocarcinoma (hilar Klatskin tumor or distal), GB carcinoma (risk factors: large stones, porcelain GB, PSC), ampullary carcinoma`,
+    workup: `ACUTE BILIARY (all patients):
+• CBC, BMP, LFTs (ALP, GGT, direct/total bili, AST/ALT), lipase (pancreatitis)
+• Blood cultures × 2 before antibiotics (if fever/cholangitis concern)
+• RUQUS: first-line imaging — GB stones, CBD dilation (>7mm = abnormal; diameter increases with age), wall thickening, pericholecystic fluid, sonographic Murphy's sign
+• HIDA scan (hepatobiliary iminodiacetic acid scan): if RUQUS negative but high clinical suspicion for cholecystitis; pre-treat with 2mg IV morphine (increases Sn at MGH); non-visualization of GB = cystic duct obstruction = cholecystitis
+CHOLEDOCHOLITHIASIS WORKUP:
+• MRCP (MRI cholangiopancreatography): gold standard for CBD stones, strictures; non-invasive; 95% sensitive
+• EUS (endoscopic ultrasound): alternative to MRCP; can also biopsy adjacent structures
+• ERCP: therapeutic (stone removal, stent placement) — not purely diagnostic due to procedure risks
+CHRONIC BILIARY / CHOLESTATIC LIVER:
+• ALP + GGT (confirm hepatic source); ALT/AST; total + direct bilirubin; albumin + INR (synthetic function)
+• AMA (antimitochondrial antibody): ≥1:40 highly specific for PBC; check in ANY patient with elevated ALP + negative cause
+• pANCA + ANA: PSC (pANCA positive ~65%); check AMA to exclude PBC
+• IgG4 level: if PSC morphology — r/o IgG4-related cholangitis (responds to steroids)
+• MRCP: PSC diagnosis (intrahepatic and extrahepatic strictures, "beaded" appearance); biliary stricture evaluation
+• Liver biopsy: if diagnosis remains uncertain after serologies + imaging; small-duct PSC (normal MRCP); PBC (AMA negative)
+• CA 19-9: annual cholangiocarcinoma surveillance in PSC patients; MRCP annually for CCA surveillance`,
+    management: `ACUTE CHOLECYSTITIS:
+• NPO, IVF, IV analgesics (ketorolac + opioids PRN)
+• Antibiotics: pip/tazo 3.375g IV q6h OR ceftriaxone 2g IV q24h + metronidazole 500mg IV q8h (gram-negative + anaerobic coverage)
+• Cholecystectomy (CCY): standard treatment; early laparoscopic CCY (<7d of symptoms) superior to delayed (reduced complications, shorter hospital stay); if surgery delayed, complete antibiotics
+• Acalculous/High surgical risk: percutaneous cholecystostomy tube (IR-placed) for decompression; drain cystic duct obstruction; bridge to definitive CCY when patient stabilized
+• Tokyo Guidelines Grade III (organ failure): ICU + emergent drainage (percutaneous or endoscopic)
+ACUTE ASCENDING CHOLANGITIS:
+• Antibiotics IMMEDIATELY: pip/tazo 3.375g IV q6h OR ceftriaxone 2g q24h + metronidazole 500mg q8h
+• Biliary decompression (ERCP): 
+  - Grade I (mild): antibiotics, can defer ERCP 24-48h if responding
+  - Grade II (moderate): ERCP within 24-48h
+  - Grade III (severe — organ failure, shock): ICU + emergent ERCP or percutaneous transhepatic cholangiography (PTC) within hours
+• ERCP approach: sphincterotomy + stone extraction + biliary stent (if complete stone clearance not achieved or stricture)
+• Duration antibiotics: 3-5 days total (extend to 7 days if gram-positive or resistant organism)
+• Cholecystectomy: interval (4-6 weeks after ERCP) to prevent recurrent cholangitis
+CHOLEDOCHOLITHIASIS (WITHOUT CHOLANGITIS):
+• ERCP + sphincterotomy + stone extraction: indicated if CBD stone confirmed on imaging or clinical features (jaundice + CBD dilation)
+• MRCP first if diagnosis uncertain (preferred before ERCP)
+• Interval cholecystectomy after ERCP (unless high surgical risk)
+PBC:
+• Ursodiol (ursodeoxycholic acid) 13-15 mg/kg/day PO: first-line; reduces ALP, improves liver biochemistries, slows histological progression; must take indefinitely
+• Obeticholic acid (Ocaliva) 5-10mg qday: second-line after ursodiol failure; FXR agonist; AVOID in decompensated cirrhosis/portal HTN (associated with severe liver injury)
+• Fibrates (fenofibrate, bezafibrate): off-label third-line alternative
+• Cholestyramine 4g QD-QID: pruritus management; separate from ursodiol by 2-4h
+• Modafinil: fatigue management
+• Ca + Vit D supplementation: osteoporosis (malabsorption of fat-soluble vitamins)
+• Liver transplant: 22% recurrence at 5 years
+PSC:
+• No effective disease-modifying therapy (ursodiol does NOT improve outcomes in PSC)
+• Dominant stricture: ERCP + dilation/stent for symptomatic strictures causing jaundice or cholangitis
+• Cholangitis: same management as acute cholangitis (antibiotics + ERCP decompression)
+• CCA surveillance: annual MRCP + CA 19-9; brush cytology during ERCP of suspicious strictures
+• IBD management: standard IBD therapy (PSC does not respond to IBD treatment)
+• Liver transplant: definitive treatment; 20% recurrence at 5 years post-LT; MELD exceptions for recurrent cholangitis`,
+    monitoring: `• Acute cholecystitis/cholangitis: WBC + bili trend daily; temperature curve; clinical response to antibiotics (expect fever to defervese in 24-48h)
+• Post-ERCP: amylase/lipase 4-6h post-procedure (post-ERCP pancreatitis risk — use rectal indomethacin prophylaxis)
+• PBC: ALP + bili every 3-6 months; DEXA scan (osteoporosis); ophthalmology (sicca syndrome); thyroid screen annually; HCC surveillance if cirrhosis
+• PSC: annual MRCP + CA 19-9 (CCA surveillance); LFTs every 3-6 months; colonoscopy annually (IBD-associated colorectal cancer — highest risk of all IBD patients)`,
+    disposition: `• GI/ERCP: all cholangitis (urgent), choledocholithiasis, suspected bile leak or duct injury, biliary stricture evaluation
+• Surgery (General Surgery): all cholecystitis (early CCY preferred), biliary injury repair, biliary malignancy resection
+• Hepatology: PBC and PSC management, decompensated biliary cirrhosis, liver transplant referral
+• IR: percutaneous cholecystostomy (high surgical risk), PTC (failed ERCP), biliary drainage`
+  },
+
+  {
+    id: "esld-complications",
+    system: "gi",
+    title: "ESLD — Ascites / Hepatic Encephalopathy / SBP / HRS / Varices / ALF / HCC",
+    keywords: ["cirrhosis","ESLD","ascites","hepatic encephalopathy","HE","SBP","spontaneous bacterial peritonitis","hepatorenal syndrome","HRS","varices","portal hypertension","lactulose","rifaximin","terlipressin","albumin","MELD","Child-Pugh","TIPS","acute liver failure","ALF","NAC","hepatocellular carcinoma","HCC","LVP","paracentesis cirrhosis","diuretics cirrhosis","spironolactone","furosemide ESLD"],
+    source: { chapter: "Gastroenterology", section: "ESLD (pp. 84–88) & Acute Liver Failure (p.80)", authors: "Sophie Pan, Lucas Cofer, Andie Gong",
+      keyFacts: [
+        "ESLD decompensation precipitants (always look for): infection (SBP, UTI, PNA — #1 cause), GI bleeding, alcohol, medications (diuretics, NSAIDs, lactulose change), constipation, electrolyte disturbance, hepatic vein thrombosis, HCC — address precipitant before escalating HE treatment",
+        "SBP diagnosis: ascitic fluid PMN ≥250/µL (treat even if culture negative); empiric ceftriaxone 1g IV qday × 5-7 days; albumin 1.5g/kg IV on day 1 + 1g/kg IV on day 3 reduces HRS/mortality (NEJM 1999;341:403); secondary prophylaxis: norfloxacin 400mg qday or TMP-SMX DS qday indefinitely",
+        "HRS-AKI (terlipressin): first-line vasoconstrictor at MGH is terlipressin 0.85mg IV q6h; assess at day 4 — if Cr drops <30% from initiation, increase to 1.7mg q6h; albumin 25g IV q24h as adjunct; midodrine/octreotide no longer part of MGH HRS algorithm",
+        "Acute variceal hemorrhage: octreotide 50mcg IV bolus → 50mcg/h × 2-5 days + ceftriaxone 1g IV q24h × 5 days + early EGD; goal Hgb 7 (avoid overtransfusion — worsens portal HTN); preemptive TIPS (<72h) for high-risk patients",
+        "APAP-induced acute liver failure (most common ALF in US): N-acetylcysteine (NAC) 150mg/kg/h × 1h → 12.5mg/kg/h × 4h → 6.25mg/kg/h × 16h; continue beyond 21-hour protocol if transaminases still rising or INR not improving"
+      ]
+    },
+    assessment: `#ESLD Complications Assessment — VIBES Framework
+VIBES (systematic approach to cirrhosis):
+VOLUME (Ascites/Edema):
+  Ascites grade: none [ ] / mild (only on US) [ ] / moderate (clinically apparent) [ ] / tense [ ]
+  Prior LVPs: *** | Last LVP date: *** | Refractory: [ ] Yes  [ ] No
+  Current diuretics: spironolactone *** mg + furosemide *** mg | Weight today: *** kg
+INFECTION:
+  SBP history: [ ] Yes | On ppx: norfloxacin [ ] / TMP-SMX [ ]
+  Paracentesis done: [ ] Yes — PMN: *** | Culture: *** | Cell count: ***
+  SBP diagnosis (PMN ≥250): [ ] Yes → Ceftriaxone started: *** | Albumin day 1 (1.5g/kg): *** | Day 3 (1g/kg): ***
+BLEEDING (Varices):
+  Prior variceal bleed: [ ] Yes | Prior banding/sclerotherapy: *** | On beta-blocker: *** mg
+  Active bleed: octreotide [ ] / ceftriaxone [ ] / EGD planned: ***
+ENCEPHALOPATHY:
+  HE Grade: I (attention deficit) [ ] / II (confusion/somnolence) [ ] / III (stupor) [ ] / IV (coma) [ ]
+  Precipitant identified: infection [ ] / GIB [ ] / constipation [ ] / medications [ ] / hypoK [ ]
+  Lactulose: *** doses/day | Goal: 3-4 soft BM/day | Rifaximin: 550mg BID [ ]
+STAGING:
+  MELD-3.0: *** | Child-Pugh class: A [ ] / B [ ] / C [ ] | Listed for transplant: [ ] Yes  [ ] No
+ACUTE LIVER FAILURE (if applicable):
+  HE Grade: *** | INR: *** | Timeline: *** weeks | Cause: APAP [ ] / viral [ ] / other: ***
+  NAC started: [ ] Yes (rate: ***)  [ ] No | Hepatology OLT consultation: [ ] Yes`,
+    ddx: `DECOMPENSATION TYPES AND PRECIPITANTS:
+Ascites: portal hypertension (SAAG ≥1.1 = portal HTN) → splanchnic vasodilation → RAAS activation → Na/water retention; rule out SBP in all new ascites or clinical deterioration
+Hepatic encephalopathy (HE): ammonia accumulation → astrocyte swelling + cerebral edema; ALWAYS look for precipitant before escalating treatment
+HE PRECIPITANTS (mnemonic FAIL): Failure to take lactulose/rifaximin, Acute bleed (GI), Infection (SBP, UTI, PNA), Lytes (hypoK, hypoNa, dehydration), + constipation, medications (opioids, benzodiazepines, sedatives), kidney failure (AKI), dietary protein overload
+SBP: spontaneous bacterial peritonitis from translocation of GI bacteria into ascitic fluid; E. coli + Klebsiella (most common); consider secondary peritonitis (free perf) if multiple organisms on culture, glucose <50, protein >1g/dL → CT/surgery
+Variceal hemorrhage: portal HTN → portosystemic collaterals → esophageal/gastric varices; risk increases with Child-Pugh C, varices size (red wale signs), HVPG >12mmHg
+HRS: functional renal failure from splanchnic vasodilation → renal vasoconstriction; Type 1 (HRS-AKI, rapid) vs Type 2 (slower, diuretic-resistant ascites); diagnosis of exclusion after albumin challenge fails to improve Cr
+Hepatopulmonary syndrome (HPS): intrapulmonary vascular dilation → V/Q mismatch → hypoxia; diagnose by TTE bubble study (late bubbles 3-6 cycles = intrapulmonary shunt); OLT is only treatment
+Portopulmonary HTN: pulmonary hypertension in portal HTN; TTE screening → RHC confirmation; OLT if mPAP <35; mPAP ≥50 = transplant contraindication
+HCC: most common liver cancer; 2-4% annual risk in cirrhosis; screen with RUQUS ± AFP q6 months; LI-RADS classification for suspicious lesions
+ACUTE LIVER FAILURE (ALF): encephalopathy + coagulopathy (INR >1.5) of <26 weeks WITHOUT pre-existing cirrhosis; APAP = #1 cause in US; viral (HAV, HBV, HEV), autoimmune hepatitis, ischemia (Budd-Chiari, shock), Wilson's`,
+    workup: `ALL ADMITTED CIRRHOSIS PATIENTS:
+• CBC, CMP, PT/INR, albumin, ammonia (if HE concern)
+• RUQUS with Doppler: ascites, portal vein patency, splenomegaly, HCC surveillance
+• Blood cultures × 2 (if febrile or SBP suspected)
+• Urinalysis + culture (UTI as HE precipitant)
+PARACENTESIS (MANDATORY if: any new ascites, all hospitalizations of known cirrhosis, clinical deterioration):
+• Ascitic fluid: cell count + differential, culture in blood culture bottles (increases yield from 40% to 80%), protein, albumin (calculate SAAG = serum albumin − ascites albumin)
+• SAAG ≥1.1 g/dL = portal hypertension; SAAG <1.1 g/dL = non-portal hypertension cause (malignancy, TB, pancreatitis)
+• SBP: PMN ≥250/µL → treat (even if culture negative); secondary peritonitis if multiple organisms + glucose <50 + protein >1 g/dL → CT abdomen, surgical consult
+HRS WORKUP:
+• Urine sediment + FeNa + renal U/S: exclude ATN (granular casts + FeNa >2%), obstruction, and structural causes
+• Albumin challenge: 1g/kg/day × 48h of 25% albumin → if Cr improves = ATN/prerenal, not HRS; if no improvement = confirmed HRS
+• Daily Cr monitoring after albumin challenge
+ACUTE LIVER FAILURE WORKUP:
+• APAP level (most important — treat if elevated regardless of reported dose)
+• Urine/serum tox screen, blood EtOH, PETH
+• Viral serologies: HAV IgM, HBsAg + core IgM, HCV Ab + RNA, HSV PCR, EBV, CMV, VZV
+• Autoimmune: ANA, ASMA, IgG levels (AIH)
+• Wilson's disease if young: serum ceruloplasmin, 24h urine copper, slit-lamp exam
+• ABG + arterial ammonia (>150 μmol/L = high cerebral edema risk), factor V level
+• Urgent Hepatology + OLT workup consultation if Grade 3-4 HE`,
+    management: `ASCITES:
+• Sodium restriction: <2g/day; fluid restriction only if Na <125 mEq/L
+• Diuretics (5:2 ratio of spiro:lasix):
+  - Initiation: spironolactone 100mg + furosemide 40mg qAM (5:2 ratio maintains normokalemia)
+  - Titration: increase every 3-5 days if inadequate diuresis (maintain 5:2 ratio); max: spironolactone 400mg + furosemide 160mg qday
+  - Goal weight loss: 0.5 kg/day if no peripheral edema; 1 kg/day if edema present
+  - Avoid IV diuretics (increase azotemia risk)
+  - Eplerenone or amiloride: if gynecomastia with spironolactone
+• Therapeutic LVP: tense or refractory ascites; if >5L removed → albumin 6-8g per liter removed (prevents PPCD)
+• Refractory ascites (10% of patients): discontinue NSAIDs, ACEi/ARB, beta-blockers (if MAP <82); serial LVPs q2 weeks; TIPS (if MELD <18 + no severe HE); indwelling peritoneal catheter (palliative/EOL)
+• AVOID: NSAIDs (precipitate HRS), ACEi/ARB (hypotension + AKI), nephrotoxins, aminoglycosides
+SBP (ascitic PMN ≥250/µL):
+• Ceftriaxone 1g IV q24h × 5-7 days (or pip/tazo if nosocomial)
+• Albumin 1.5g/kg IV on Day 1 + 1g/kg IV on Day 3 (reduces HRS and 90-day mortality — NEJM 1999;341:403)
+• Secondary prophylaxis (after first SBP — indefinitely): norfloxacin 400mg qday OR TMP-SMX 1 DS tab qday
+• Primary prophylaxis: if ascitic protein <1.5g/dL + MELD ≥15 or Cr ≥1.2 or BUN ≥25 or Na ≤130 or Child-Pugh ≥9
+HEPATIC ENCEPHALOPATHY:
+• TREAT PRECIPITANT FIRST (infection, GIB, constipation, electrolytes, medications)
+• Lactulose 30mL q1-2h until bowel movement → titrate to 3-4 soft BM/day; NGT if unable to take PO
+• Rifaximin 550mg PO BID: adjunct to lactulose for secondary prophylaxis (reduces HE hospitalizations by 58% — NEJM 2010;362:1071)
+• Hold opioids, benzodiazepines, sedating medications
+• Grade III-IV HE: intubation for airway protection; 3% saline to Na 145-155 (prevent cerebral edema); avoid: PEEP, overhydration, sedation (worsens ammonia clearance); CRRT (clears ammonia, reduces cerebral edema)
+• Lactulose enemas: 300mL + 700mL NS PR as retention enema if NPO/unable to tolerate NG
+VARICEAL HEMORRHAGE:
+• Airway first: intubation in Grade III-IV HE or massive hematemesis
+• Octreotide 50mcg IV bolus → 50mcg/h continuous × 2-5 days (reduces portal pressure, splanchnic blood flow)
+• Ceftriaxone 1g IV q24h × 5 days (SBP prophylaxis + survival benefit in variceal bleed — NEJM 2000;342:443)
+• IV PPI (for esophagitis from banding)
+• Resuscitate with IVF/pRBC — goal Hgb 7 (avoid overtransfusion — worsens portal pressure and rebleeding)
+• Erythromycin 250mg IV 30-60 min before EGD (gastric emptying → better visualization)
+• Emergency EGD: endoscopic variceal ligation (EVL) + injection sclerotherapy; balloon tamponade (Sengstaken-Blakemore) as bridge if cannot perform EGD
+• TIPS (transjugular intrahepatic portosystemic shunt): preemptive early TIPS <72h if Child-Pugh B+active bleeding or Child-Pugh C <13 (reduces rebleeding and mortality); rescue TIPS if uncontrolled or refractory rebleeding
+• Secondary prophylaxis: carvedilol 6.25-12.5mg qday (most effective NSβB) + EVL every 2-4 weeks until obliteration
+HEPATORENAL SYNDROME (MGH algorithm):
+• Stop all nephrotoxins + vasodilators (NSAIDs, ACEi/ARB, diuretics, beta-blockers)
+• Albumin challenge: 1g/kg/day IV 25% albumin × 48h (max 100g/day in divided doses) → if Cr improves = not HRS
+• If no response to albumin challenge → vasoconstrictors:
+  First-line (MGH): terlipressin 0.85mg IV q6h + albumin 25g IV qday
+    → Day 4 assessment: if Cr drops ≥30% → continue; if <30% → increase terlipressin to 1.7mg q6h
+    → Success (Cr ≤1.5 on 2 consecutive measures) → stop terlipressin; discuss TIPS
+    → No reversal by Day 14 → discontinue; multidisciplinary discussion (transplant, RRT, palliative)
+  Second-line: norepinephrine 0.5-3mcg/min IV (requires ICU + central access)
+  Note: midodrine + octreotide no longer recommended at MGH
+ACUTE LIVER FAILURE (ALF):
+• Hepatology + OLT workup IMMEDIATELY (most urgent if Grade 3-4 HE)
+• N-Acetylcysteine (NAC): ALL APAP toxicity (150mg/kg/h × 1h → 12.5mg/kg/h × 4h → 6.25mg/kg/h × 16h); continue beyond 21h if transaminases still rising, INR not improving, or ongoing HE
+  NAC also beneficial for non-APAP ALF with Grade 1-2 HE (improves transplant-free survival)
+• Hemodynamics: IVF (NS) for goal MAP ≥75 (cerebral perfusion); norepinephrine ± vasopressin if pressors needed
+• HE management (as above) — cerebral edema risk at Grade 3-4; intubate Grade ≥3
+• Cerebral edema prevention: 3% NaCl for goal Na 145-155; HOB 30°; avoid PEEP, overhydration; minimal stimulation; check arterial ammonia (>150 = high risk)
+• Treat cerebral edema: IV mannitol 0.5-1g/kg bolus (× 1-3 PRN); CRRT lowers ammonia (Hepatology 2018;67:711)
+• Avoid lactulose in ALF (bowel distension; may worsen outcomes)
+• Coagulopathy: do NOT correct INR prophylactically (used for prognostication); give FFP/vitamin K only for invasive procedures or active bleeding; avoid platelet transfusion unless <10k or active bleeding
+• Hypoglycemia: dextrose infusion + q1-2h glucose checks (liver cannot maintain gluconeogenesis)
+• Phosphate: frequently low in recovery phase (refeeding-like syndrome); replete carefully
+• Antibiotics: broad-spectrum if infection suspected (high threshold — infections are common)
+• TRANSPLANT: list immediately if Grade 3-4 HE or worsening prognosis (King's College Criteria or ALFSG PELD score); contact transplant team
+HCC:
+• Screening: RUQUS ± AFP q6 months (all cirrhosis patients except Child-Pugh C not listed for transplant)
+• Workup: LI-RADS classification on CT/MRI; multiphase CT/MRI if lesion ≥1cm or AFP rising
+• Multidisciplinary tumor board: curative vs palliative intent
+• Curative: surgical resection (Child-Pugh A + T1-T2) ± adjuvant ICI; OLT (if within Milan criteria)
+• Locoregional (bridge/downstaging): TACE, TARE, ablation; bridge to OLT; downstage to within Milan criteria
+• Systemic: atezolizumab + bevacizumab (first-line advanced HCC, NEJM 2020); tremelimumab + durvalumab (alternative)`,
+    monitoring: `• Cirrhosis inpatient: daily weight + fluid balance; BMP daily (Cr, Na, K); CBC + LFTs every 1-3 days; clinical HE grade every shift
+• SBP: repeat paracentesis at 48h (PMN should fall >25% from baseline); blood cultures result; Cr at days 1 and 3 (albumin efficacy)
+• HRS: Cr daily; urine output hourly; electrolytes; terlipressin response at Day 4
+• Variceal hemorrhage: Hgb every 4-6h; coagulation daily; blood cultures (SBP development); repeat EGD if rebleeding
+• ALF: q2h neuro checks; coagulation + ammonia every 4-8h; glucose q1-2h; ABG daily; MELD trajectory every 12h`,
+    disposition: `• Hepatology consult (MANDATORY): all ESLD decompensation, HRS, ALF, variceal hemorrhage — Hepatology pager via main MGH operator
+• ICU/MICU: Grade 3-4 HE, hemodynamic compromise (HRS on vasoconstrictors or septic shock), massive variceal hemorrhage, ALF with cerebral edema risk
+• GI (ERCP): SBP workup requiring diagnostic paracentesis (routine), balloon tamponade placement, TIPS coordination
+• IR: TIPS placement (variceal hemorrhage, refractory ascites), percutaneous drainage (infected necrosis)
+• Liver transplant team: all Grade 3-4 HE in ALF, MELD ≥15 with decompensation, refractory HRS, HCC within Milan criteria`
+  },
+
+  // ════════════════════ PULM — MISSING TEMPLATES ════════════════════
+
+  {
+    id: "ards",
+    system: "pulm",
+    title: "ARDS — Diagnosis, Lung Protective Ventilation & Rescue Therapies",
+    keywords: ["ARDS","acute respiratory distress syndrome","Berlin criteria","P:F ratio","low tidal volume","LTVV","prone positioning","PROSEVA","driving pressure","PEEP","conservative fluid ARDS","paralysis ARDS","inhaled nitric oxide","iNO","VV-ECMO ARDS","dexamethasone ARDS","ventilator-induced lung injury","VILI","FACTT trial","ARDSnet"],
+    source: { chapter: "Pulmonary & Critical Care", section: "ARDS", pages: "52–53", authors: "Emma Kurz, Adam Gross",
+      keyFacts: [
+        "Berlin criteria (2012): acute onset within 1 week of known insult OR new/worsening respiratory symptoms + bilateral infiltrates on imaging + NOT fully explained by heart failure/fluid overload + P:F ratio <300 on PEEP ≥5 cmH2O; Mild 200-300 (27% mortality), Moderate 100-200 (32%), Severe ≤100 (45%)",
+        "Lung Protective Ventilation (LTVV) — cornerstone of ARDS management: VT 4-8 cc/kg predicted body weight (goal 6 cc/kg), Pplat ≤30 cmH2O, driving pressure (ΔP = Pplat − PEEP) ≤15 cmH2O; reduced mortality 31% vs 39.8% vs traditional VT (ARDSnet NEJM 2000)",
+        "Prone positioning (PROSEVA NEJM 2013): start early (<36h) if P:F <150; maintain ≥12h/day; mortality in moderate-severe ARDS; contraindications: hemodynamic instability, ICP, unstable C-spine, 3rd trimester pregnancy, recent sternotomy",
+        "Rescue therapies — 6 Ps (in order when P:F <150): Pee (conservative fluid if possible), PEEP optimization, Prone positioning, Pulmonary vasodilators (iNO 40ppm trial — improves P:F but no mortality benefit; add inhaled epoprostenol if effective), Paralysis (cisatracurium if P:F <100 under deep sedation), Perfusion (VV-ECMO if P:F ≤80 + pH <7.25 — CESAR/EOLIA trials)",
+        "Steroids for ARDS: Dexa-ARDS (Lancet RM 2020): dexamethasone 20mg qday ×5d → 10mg qday ×5d for moderate-severe ARDS (P:F ≤200) — reduced ventilator-free days and mortality; avoid if ARDS >14 days (Chest 2007); COVID-19 ARDS: dexamethasone 6mg qday ×10d (RECOVERY trial, NEJM 2021)"
+      ]
+    },
+    assessment: `#ARDS Assessment
+BERLIN CRITERIA:
+Acute onset: [ ] Yes (within 1 week of known insult or new/worsening respiratory sx)
+Bilateral infiltrates: [ ] Yes (not fully explained by effusion, collapse, or nodules)
+Not fully cardiac: [ ] ECHO performed  [ ] No clinical HF evident  [ ] BNP/proBNP: ***
+P:F Ratio: PaO2 *** / FiO2 *** = *** on PEEP *** cmH2O
+ARDS Severity: [ ] Mild (P:F 200-300, 27% mortality)  [ ] Moderate (P:F 100-200, 32%)  [ ] Severe (P:F ≤100, 45%)
+VENTILATOR SETTINGS:
+VT: *** mL | PBW: *** kg | VT/PBW: *** cc/kg (goal ≤6, max 8)
+PEEP: *** | FiO2: *** | RR: *** | Mode: ***
+Pplat (pause): *** cmH2O (goal ≤30)
+Driving pressure (ΔP = Pplat − PEEP): *** cmH2O (goal ≤15)
+SpO2: *** (goal 88-94%) | pH: ***
+RESCUE THERAPIES NEEDED (if P:F <150):
+[ ] Prone — initiated: *** | Duration: *** h (goal ≥12h/day)
+[ ] Paralysis (P:F <100): cisatracurium ordered: ***
+[ ] Pulmonary vasodilator: iNO *** ppm | inhaled epoprostenol: ***
+[ ] VV-ECMO consult (P:F ≤80 + pH <7.25): ECMO team contacted: ***
+STEROIDS: dexamethasone ordered: *** | COVID ARDS: ***`,
+    ddx: `CAUSES OF ARDS (direct vs indirect):
+DIRECT LUNG INJURY:
+• Pneumonia (#1 — bacterial, viral, fungal, PJP; COVID-19 most common recent cause)
+• Aspiration of gastric contents
+• Near-drowning, smoke inhalation, chemical inhalation
+• Pulmonary contusion (trauma)
+• Reperfusion injury after lung transplant
+• Diffuse alveolar hemorrhage (DAH) — see Bronchiectasis/Hemoptysis template
+INDIRECT (extrapulmonary):
+• Sepsis (most common non-pulmonary cause — 30-50% of ARDS)
+• Major trauma/burns
+• Pancreatitis (severe acute)
+• Massive transfusion / transfusion-related acute lung injury (TRALI)
+• Drug overdose (heroin, barbiturates, cocaine, salicylates)
+• Post-cardiopulmonary bypass
+• Cerebral herniation (neurogenic pulmonary edema)
+MIMICS (ensure NOT present before diagnosing ARDS):
+• Cardiogenic pulmonary edema (ARDS ≠ heart failure; check ECHO + BNP; PCWP >18 more consistent with cardiogenic)
+• Bilateral pleural effusions (exudative)
+• Diffuse alveolar hemorrhage (can coexist with ARDS criteria)
+• Malignant infiltration (rare, check cytology)
+• Acute interstitial pneumonia (AIP/Hamman-Rich) — fulminant ILD that meets Berlin criteria
+NON-INTUBATED ARDS: mild ARDS (P:F 200-300) may be managed with HFNC (FLORALI: NEJM 2015; face mask NIV inferior in hypoxemic resp failure) — trial while monitoring closely; intubate if worsening`,
+    workup: `ALL SUSPECTED ARDS:
+• ABG: confirm P:F ratio (PaO2/FiO2) on current settings; serial ABGs to track progression
+• CBC, BMP, LFTs, lactate, procalcitonin — multiorgan failure common in severe ARDS
+• Blood cultures × 2, sputum gram stain + culture, urine Legionella/pneumococcal antigen, respiratory viral panel (FilmArray)
+• BNP or NT-proBNP + ECHO: exclude cardiogenic pulmonary edema (PCWP measurement if PA catheter placed)
+• CXR: bilateral infiltrates (not diagnostic alone — required for Berlin but HRCT better for characterization)
+• CT chest: identifies ARDS pattern (diffuse alveolar pattern, gravity-dependent consolidation), excludes alternative diagnoses
+• BAL (bronchoscopy): if immunocompromised, diagnostic uncertainty, or non-infectious cause suspected; neutrophil-predominant lavage with >75% PMNs typical of ARDS
+VENTILATOR MONITORING:
+• Plateau pressure (Pplat): set RR 0 for 0.5 seconds → read plateau (static compliance = VT/[Pplat − PEEP])
+• Driving pressure (ΔP): calculate Pplat − PEEP at each vent check (goal ≤15 cmH2O — strongest predictor of mortality independent of VT or PEEP, NEJM 2015)
+• Auto-PEEP: pause expiration 5s to detect intrinsic PEEP (air trapping)
+PRONE POSITIONING MONITORING:
+• Pressure areas q2h (forehead, chin, shoulders, knees, toes — use foam padding)
+• Eyes closed and protected
+• ETT position confirmed before/after prone
+• Reassess P:F 1-4h into first prone session`,
+    management: `IMMEDIATE MANAGEMENT:
+• Treat underlying cause (antibiotics for pneumonia/sepsis, source control)
+• Intubation indications: P:F <200 not improving on HFNC, inability to protect airway, hemodynamic instability
+LUNG PROTECTIVE VENTILATION (LTVV) — START IMMEDIATELY:
+Step 1 — Set VT:
+• Calculated from PREDICTED BODY WEIGHT (PBW) — not actual weight:
+  Males: PBW (kg) = 50 + 2.3 × (height in inches − 60)
+  Females: PBW (kg) = 45.5 + 2.3 × (height in inches − 60)
+• Start VT at 8 cc/kg PBW → reduce by 1 cc/kg q2h to target 6 cc/kg PBW
+Step 2 — Set PEEP and FiO2:
+• ARDSnet low-PEEP/FiO2 table (start here):
+  FiO2 0.3→Peeep 5; FiO2 0.4→PEEP 5-8; FiO2 0.5→PEEP 8-10; FiO2 0.6→PEEP 10; FiO2 0.7→PEEP 10-14; FiO2 0.8→PEEP 14; FiO2 0.9→PEEP 14-18; FiO2 1.0→PEEP 18-24
+• Target SpO2 88-94% (PaO2 55-80 mmHg) — avoid excessive FiO2 (worsens VILI)
+Step 3 — Check pressures:
+• Check Pplat every 4h: if >30 → reduce VT by 1 cc/kg (min 4 cc/kg)
+• Check ΔP: if >15 → reduce VT and/or adjust PEEP
+• Permissive hypercapnia: allow PaCO2 to rise if needed to maintain VT goal; pH goal ≥7.20-7.25
+  Contraindications to hypercapnia: elevated ICP, severe RV failure, TCA/ASA overdose, pregnancy
+RESCUE THERAPIES (P:F <150, escalate in order):
+1. PRONE POSITIONING (start early, <36h):
+   • Requires ≥5 trained staff; use prone team/protocol
+   • Maintain ≥12-16h per cycle; return supine if P:F >150 and ΔP ≤15 for >4h in supine
+   • Contraindications: spinal instability, open chest/abdomen, elevated ICP, unstable vasopressors, facial trauma
+2. OPTIMIZE PEEP:
+   • PEEP titration trial: stepwise increase PEEP while monitoring compliance and hemodynamics (target: highest compliance, lowest ΔP)
+   • HFOV not recommended (no mortality benefit, potential harm)
+3. PULMONARY VASODILATORS (P:F <150, no response to prone):
+   • Inhaled nitric oxide (iNO) 20-40ppm via ventilator circuit: test dose → assess PaO2 improvement >20%
+   • If effective → switch to inhaled epoprostenol (Veletri) — similar efficacy, more cost-effective for maintenance
+   • No mortality benefit proven — bridge therapy only; watch for methemoglobinemia (iNO) and rebound hypoxia on discontinuation
+4. NEUROMUSCULAR BLOCKADE (P:F <100 with dyssynchrony despite deep sedation):
+   • Cisatracurium 0.1-0.2 mg/kg IV bolus → 0-5 mcg/kg/min infusion
+   • Only use if already at RASS −4 to −5; monitor depth with BIS (target 40-60)
+   • Do NOT wean sedation while paralyzed
+5. VV-ECMO (P:F ≤80 + pH <7.25 + pCO2 >60, refractory to above):
+   • Call ECMO consult: MGH STAT App, directory "ECMO Consult" p24252 or 857-310-0335
+   • Absolute contraindications: unrecoverable multiorgan failure, unwitnessed arrest >30 min without ROSC, active severe bleeding
+   • Bridge to recovery (most common) or lung transplant
+STEROIDS FOR ARDS:
+• Moderate-severe ARDS (P:F ≤200), early (<7-14 days): dexamethasone 20mg IV/PO qday × 5 days → 10mg qday × 5 days (Dexa-ARDS, Lancet RM 2020)
+• COVID-19 ARDS: dexamethasone 6mg IV/PO qday × 10 days (RECOVERY, NEJM 2021)
+• AVOID if ARDS >14 days (may worsen outcomes) or active untreated infection
+CONSERVATIVE FLUID MANAGEMENT (FACTT trial, NEJM 2006):
+• Goal: euvolemia after initial resuscitation (CVP 4-8, neutral/negative fluid balance)
+• Daily furosemide PRN to maintain neutral or negative fluid balance once hemodynamically stable
+• Improved ventilator-free days and ICU LOS; no difference in mortality
+• Note: does NOT apply to the initial resuscitation phase (e.g., septic shock requiring IVF)`,
+    monitoring: `• ABG every 2-6h in initial phase; adjust FiO2, PEEP, and RR based on PaO2/SpO2 and pH
+• Plateau pressure and driving pressure with each vent setting change and at least q4-8h
+• Prone sessions: P:F 1-4h into each session; clinical assessment of pressure areas, ETT, eyes q2h
+• iNO/inhaled epo: P:F 30-60 min after initiation (assess response); methemoglobin levels if iNO
+• ECMO: daily CBC, BMP, coagulation; ECMO circuit check; sweep gas and flow titration; daily echo
+• Liberation assessment (REMIX daily checklist): Reason for intubation resolving, Exchange improving, Mechanics acceptable (Pplat <30, ΔP <15), ID/infection treated, eXtubation barriers assessed`,
+    disposition: `• MICU: all ARDS requiring intubation — ARDS requires ICU-level care for continuous monitoring, vent management, prone positioning, rescue therapies
+• ECMO team (ECMO consult): call early in refractory severe ARDS — do not wait until P:F <80 to discuss; early consultation allows planning and cannulation before hemodynamic deterioration
+• Pulmonology / Critical Care attending: all ARDS — vent management decisions require attending-level expertise; prone positioning protocol requires nursing and respiratory therapy coordination`
+  },
+
+  {
+    id: "pfts-spirometry",
+    system: "pulm",
+    title: "PFTs & Spirometry — Interpretation and Patterns",
+    keywords: ["PFTs","pulmonary function tests","spirometry","FEV1","FVC","FEV1/FVC","TLC","RV","DLCO","obstructive","restrictive","mixed","FRC","GOLD staging","COPD staging","asthma diagnosis","bronchodilator response","methacholine challenge","flow volume loop","spirometry interpretation","lung volumes","diffusion capacity"],
+    source: { chapter: "Pulmonary & Critical Care", section: "PFTs & Asthma", pages: "43", authors: "Mirai Matsuura",
+      keyFacts: [
+        "Obstructive pattern: FEV1/FVC <0.70 (or <LLN) — post-bronchodilator; FEV1% predicted reflects severity: ≥80% = mild, 50-80% = moderate, 30-50% = severe, <30% = very severe (GOLD COPD grading); seen in COPD, asthma, bronchiectasis, BO, tracheomalacia",
+        "Restrictive pattern: FEV1/FVC ≥0.70 (ratio normal or elevated) + TLC <80% predicted (measured by plethysmography, NOT spirometry alone); FVC reduced and FEV1 reduced proportionally; seen in ILD, obesity, neuromuscular disease, pleural disease, kyphoscoliosis",
+        "Mixed obstructive + restrictive: FEV1/FVC <0.70 + TLC <80%; requires full lung volume measurement to confirm; seen in combined emphysema + fibrosis, obesity + COPD, sarcoidosis",
+        "DLCO (diffusing capacity for CO): measures gas transfer efficiency; reduced in emphysema (loss of alveolar surface), ILD (thickened membrane), pulmonary hypertension (vascular disease), anemia, pulmonary embolism; elevated in: asthma, polycythemia, intrapulmonary hemorrhage (DAH), obesity with supine restriction",
+        "Bronchodilator response (BDR): ≥12% AND >200 mL increase in FEV1 or FVC after SABA = significant; confirms reversible obstruction (asthma); absent BDR does not exclude asthma (may need methacholine challenge); COPD has fixed obstruction (minimal BDR)"
+      ]
+    },
+    assessment: `#PFT / Spirometry Interpretation
+RAW SPIROMETRY VALUES:
+FVC: *** L (***% predicted) | FEV1: *** L (***% predicted) | FEV1/FVC ratio: ***
+Step 1 — FEV1/FVC ratio: [ ] <0.70 (obstructive) or <LLN [ ] ≥0.70 (normal ratio — go to Step 2)
+Step 2 (if FEV1/FVC <0.70) — Severity by FEV1% predicted:
+  ≥80% = mild [ ] | 50-80% = moderate [ ] | 30-50% = severe [ ] | <30% = very severe [ ]
+Step 3 (if FEV1/FVC ≥0.70) — Is FVC low? FVC: ***% predicted
+  [ ] FVC <80% → ORDER LUNG VOLUMES to confirm restrictive (TLC)
+  [ ] FVC normal → Normal spirometry (does not rule out early restriction — check DLCO)
+FULL LUNG VOLUMES (plethysmography):
+TLC: *** L (***% predicted) | RV: *** | RV/TLC ratio: *** | FRC: ***
+TLC <80% = restrictive  confirmed [ ]
+TLC ≥80% with low FVC → pseudo-restriction (check effort, air trapping)
+DIFFUSION CAPACITY:
+DLCO (corrected for Hgb): *** (***% predicted) | KCO (DLCO/VA): ***
+≥80% = normal | 60-80% = mildly reduced | 40-60% = moderately reduced | <40% = severely reduced
+BRONCHODILATOR RESPONSE (post-albuterol):
+FEV1 pre: *** → post: *** (Δ ***% and *** mL) | FVC pre: *** → post: *** (Δ ***% and *** mL)
+Significant BDR: ≥12% AND >200 mL change in FEV1 or FVC: [ ] Yes  [ ] No
+DIAGNOSIS: [ ] Normal [ ] Obstructive [ ] Restrictive [ ] Mixed [ ] Nonspecific
+Clinical diagnosis:`,
+    ddx: `SPIROMETRY PATTERN TABLE:
+PATTERN | FEV1/FVC | FEV1 | FVC | TLC | DLCO
+Normal | ≥0.70 | ≥80% | ≥80% | ≥80% | ≥80%
+Obstructive | <0.70 | ↓↓ | Normal or ↓ | Normal or ↑ | ↓ (emphysema) or normal (asthma)
+Restrictive | ≥0.70 | ↓ | ↓ | ↓↓ (TLC<80%) | ↓ (ILD) or normal (neuromuscular)
+Mixed | <0.70 | ↓↓ | ↓ | ↓ | Variable
+Nonspecific | ≥0.70 | ↓ | ↓ | Normal | Variable
+
+OBSTRUCTIVE DISEASES:
+• COPD (chronic bronchitis/emphysema): GOLD grade by FEV1% predicted after BD; no significant BDR; low DLCO (emphysema-predominant); hyperinflation (TLC ↑, RV ↑, RV/TLC ↑)
+• Asthma: FEV1/FVC <0.70 + significant BDR (≥12% + >200 mL); may have normal PFTs between attacks; methacholine challenge for diagnosis if spirometry normal; DLCO usually normal or elevated
+• Bronchiectasis: fixed obstruction + reduced FEV1/FVC + air trapping
+• Bronchiolitis obliterans (post-transplant/autoimmune): fixed obstruction, irreversible, air trapping
+• Upper airway obstruction (tracheal stenosis, vocal cord paralysis): flow-volume loop — flattening of inspiratory loop (variable extrathoracic) or expiratory loop (intrathoracic); both loops (fixed)
+RESTRICTIVE DISEASES (TLC <80%):
+• ILD: low TLC + low DLCO; FVC reduced; FEV1/FVC normal or elevated
+• Neuromuscular disease (ALS, GBS, MG, myopathy): low TLC + FVC; DLCO often normal (no intrinsic lung disease); supine FVC drop >20% = diaphragm weakness
+• Obesity: reduced FRC + ERV but TLC usually preserved; low-normal DLCO
+• Kyphoscoliosis/thoracic deformity: restrictive with low TLC
+• Pleural disease (large effusion, fibrothorax, mesothelioma): restrictive
+DLCO PATTERNS:
+• Low DLCO with obstructive: emphysema (alveolar destruction), or pulmonary hypertension in COPD
+• Low DLCO with restrictive: ILD (fibrosis, sarcoid, HP) — most common combination
+• Low DLCO with normal spirometry: early ILD, pulmonary vascular disease (PAH), pulmonary embolism (chronic), anemia (correct for Hgb)
+• Elevated DLCO: polycythemia, pulmonary hemorrhage (DAH), asthma, obesity (supine), left-to-right shunt
+FLOW-VOLUME LOOP PATTERNS:
+• Normal: smooth arc; FEF25-75% preserved
+• Obstructive: scooped-out expiratory limb (concave); effort-independent portion reduced
+• Restrictive: small loop (narrow); preserved normal shape but reduced in all dimensions
+• Fixed obstruction (intrathoracic/extrathoracic): flat plateau in inspiratory + expiratory loops
+• Variable extrathoracic (tracheal stenosis, vocal cord dysfunction): flattened inspiratory loop only
+• Variable intrathoracic (dynamic tracheal compression): flattened expiratory loop only`,
+    workup: `ORDERING PFTs:
+• Pre-bronchodilator spirometry: standard first step
+• Post-bronchodilator spirometry: mandatory in COPD evaluation + any obstructive pattern (assess reversibility)
+• Full lung volumes (body plethysmography): when TLC needed (suspected restriction, air trapping confirmation, emphysema severity); cannot assess TLC from spirometry alone
+• DLCO (diffusing capacity): adds information about gas transfer — order when suspecting ILD, emphysema, PAH, chronic PE, anemia contributing to dyspnea
+• Methacholine challenge: for diagnosis of asthma when spirometry is normal; PC20 <4 mg/mL = hyperresponsive (high sensitivity); positive test + clinical symptoms = asthma; avoid if FEV1 <60% (risk of severe bronchoconstriction)
+• Inspiratory/expiratory flow-volume loops: suspected upper airway obstruction, vocal cord dysfunction, tracheomalacia
+• Cardiopulmonary exercise testing (CPEX): unexplained dyspnea where resting PFTs are inconclusive; determine if cardiac vs pulmonary vs deconditioning/vascular
+• Fractional exhaled nitric oxide (FeNO): marker of eosinophilic airway inflammation; >50 ppb = high eosinophil load → likely asthma; useful for biologic therapy selection
+SEVERITY CLASSIFICATION:
+COPD Severity (GOLD Grade — post-BD FEV1% predicted):
+Grade 1 (Mild): FEV1 ≥80%
+Grade 2 (Moderate): 50% ≤ FEV1 < 80%
+Grade 3 (Severe): 30% ≤ FEV1 < 50%
+Grade 4 (Very Severe): FEV1 < 30%
+Asthma Severity (GINA stepwise, in clinic):
+Step 1 (infrequent): ≤2 episodes/month, no nighttime awakenings, FEV1 normal
+Step 2 (mild): >2/month; Step 3 (moderate): symptoms most days; Steps 4-5 (severe): daily, FEV1 <60-80%`,
+    management: `PFT INTERPRETATION GUIDES MANAGEMENT — USE TO:
+OBSTRUCTIVE:
+Significant BDR (≥12% + >200 mL FEV1 or FVC):
+• Suggests reversible airflow obstruction → asthma until proven otherwise
+• Start ICS ± LABA; avoid SABA monotherapy (GINA 2024 — ICS-formoterol preferred over SABA alone)
+• If no BDR but symptomatic → methacholine challenge to exclude asthma
+Fixed obstruction (no significant BDR):
+• Confirms COPD diagnosis (requires clinical context + smoking history)
+• GOLD COPD Group (ABE) by symptoms + exacerbations guides pharmacotherapy:
+  - Group A (low risk, low sx): SABA or SAMA PRN
+  - Group B (low risk, high sx): LAMA preferred (or LAMA+LABA)
+  - Group E (high exacerbation risk): LAMA+LABA; if eos ≥300/µL → add ICS
+RESTRICTIVE:
+Neuromuscular (supine FVC drop >20%): spirometry q3-6 months; NIV initiation when FVC <50% or nocturnal hypoventilation; respiratory failure risk
+ILD + DLCO <40%: advanced disease; referral for lung transplant evaluation (FVC <50% or DLCO <40% at MGH)
+PAH screening: normal spirometry + isolated low DLCO + low KCO → TTE for PA pressures → RHC confirmation
+MONITORING WITH SERIAL PFTs:
+• COPD: annual PFTs if considering dose escalation or step-down of therapy; pre-procedure assessment
+• ILD: PFTs every 3-6 months (FVC trend is best predictor of IPF mortality — FVC decline >10% = poor prognosis)
+• Asthma: pre/post bronchodilator at each visit to assess control; peak flow diary for self-monitoring
+• Neuromuscular disease: FVC every 3-6 months; MIP/MEP for respiratory muscle strength; refer for NIV when FVC <50%`,
+    monitoring: `• No inpatient monitoring needed for PFT itself — these are outpatient diagnostic tests
+• If using PFTs to guide acute inpatient management: FVC + NIF (negative inspiratory force) q4-6h for neuromuscular disease (see Neuromuscular template — intubation if FVC <20 cc/kg or NIF worse than −25 cmH2O)
+• Post-methacholine challenge: monitor FEV1 until returns to ≥90% of baseline; have bronchodilator available`,
+    disposition: `• Pulmonology outpatient: all new obstructive/restrictive/mixed patterns requiring further workup, ILD diagnosis, asthma poorly controlled on Step 3+, COPD with FEV1 <50% for optimization
+• Pulmonary Function Lab (PFT Lab at MGH: 617-726-3005): order full PFTs through Epic — include spirometry, lung volumes, DLCO, and BDR in single order; request same-day if inpatient and clinically needed`
+  },
+
+  // ══════════════════ NEPHROLOGY — MISSING ══════════════════
+
+  {
+    id: "iv-fluids-repletion",
+    system: "neph",
+    title: "IV Fluids & Electrolyte Repletion",
+    keywords: ["IV fluids","fluid selection","lactated Ringer","normal saline","LR vs NS","maintenance fluids","albumin infusion","potassium repletion","magnesium repletion","phosphorus repletion","calcium repletion","electrolyte replacement","hypokalemia treatment","hypomagnesemia treatment","hypophosphatemia treatment","fluid resuscitation","crystalloid","colloid"],
+    source: { chapter: "Nephrology", section: "IV Fluids & Electrolyte Repletion", pages: "101", authors: "Dustin Shaw",
+      keyFacts: [
+        "LR (lactated Ringer's) preferred over NS for most resuscitation — LR reduces hyperchloremic NAGMA and need for RRT vs NS (NEJM 2018;378:819; SMART trial NEJM 2018;378:829); exceptions where NS preferred: elevated ICP (LR is slightly hypotonic), severe hyperkalemia with renal impairment (LR contains 4 mEq/L K), advanced liver disease (LR contains lactate)",
+        "Maintenance fluid rate 60-100 mL/h of D5NS or LR; daily losses = urine (800-1500 mL) + stool (250 mL) + insensible losses (600-900 mL); increase insensible losses by 2.5 mL/kg/day per degree F above 98.6; intubation/humidified vent decreases insensible losses",
+        "Albumin 25% (12.5g/50mL) indications: SBP (1.5g/kg Day 1 + 1g/kg Day 3), LVP >5L (6-8g per liter removed), HRS; NOT for routine resuscitation; NOT helpful for decompensated cirrhosis without above indications (NEJM 2021;384:808)",
+        "Potassium repletion: goal ≥3.5 (≥4 for CAD/arrhythmia); PO preferred (KCl IR powder or ER pills); peripheral IV max 10 mEq/h, central IV max 20 mEq/h with telemetry; each 10 mEq IV KCl raises serum K by ~0.1 mEq/L",
+        "Magnesium repletion: goal ≥1.7 (≥2 for CAD/arrhythmia); Mg sulfate 2g IV over 15-60 min; PO Mg oxide 400mg TID ×1 day; always replete Mg first in hypokalemia — hypoMg causes renal K wasting and makes hypoK refractory to correction"
+      ]
+    },
+    assessment: `#IV Fluids & Electrolyte Repletion Assessment
+FLUID NEED:
+Indication: [ ] Resuscitation  [ ] Maintenance  [ ] Replacement of ongoing losses  [ ] Other: ***
+Volume status: hypovolemic [ ] / euvolemic [ ] / hypervolemic [ ]
+Current IVF: type *** | rate *** mL/h | total in past 24h: *** mL
+ELECTROLYTE GOALS:
+K goal: *** (≥3.5 general; ≥4 if CAD/arrhythmia) | Current K: ***
+Mg goal: *** (≥1.7 general; ≥2 if CAD/arrhythmia) | Current Mg: ***
+Phos goal: *** (replete if <2; IV if <1 or symptomatic) | Current Phos: ***
+Ca goal: *** (replete if Ca <7.5 or iCal <1.15 with sx) | Current Ca: *** | iCal: ***
+ALBUMIN INDICATION:
+[ ] SBP: 1.5g/kg Day 1 + 1g/kg Day 3 — ordered: ***
+[ ] LVP >5L: *** L removed → *** g albumin 25% ordered
+[ ] HRS: part of terlipressin protocol
+ACTIVE REPLETION ORDERED:
+K: *** | Mg: *** | Phos: *** | Ca: ***`,
+    ddx: `IV FLUID SELECTION:
+RESUSCITATION (acute volume expansion):
+• Lactated Ringer's (LR, Hartmann's): isotonic (273 mOsm/L); pH 6.5; composition: Na 130, Cl 109, K 4, Ca 1.5, lactate 28 mEq/L; preferred for most resuscitation (SMART/SALT-ED trials); avoid in hyperK with renal failure, elevated ICP, advanced liver disease
+• Normal Saline (NS, 0.9% NaCl): isotonic (308 mOsm/L); pH 5.5; composition: Na 154, Cl 154 mEq/L; preferred in: hyperkalemia with renal failure, ICP management, alkalosis correction; large volumes cause hyperchloremic NAGMA
+• PlasmaLyte 148: isotonic (294 mOsm/L); composition: Na 140, Cl 98, K 5, Mg 1.5, acetate 27, gluconate 23; most physiologic; no advantage shown over LR in SMART trial
+• D5W (5% dextrose in water): hypotonic (253 mOsm/L) — NOT for resuscitation; useful for free water replacement (hypernatremia), medication delivery
+• D5NS: isotonic for initial tonicity but provides free water after glucose metabolism; standard maintenance fluid
+• 3% hypertonic saline: for hyponatremia correction (severe/symptomatic), ICP management (goal Na 145-155); central line required; bolus 100-150 mL for severe symptomatic hypoNa
+COLLOIDS:
+• Albumin 5% (250 mL = 12.5g): similar tonicity to plasma; volume expander; NO benefit over crystalloid in sepsis resuscitation (NEJM 2004;350:2247); use for specific indications only
+• Albumin 25% (50 mL = 12.5g): concentrated; used for SBP, LVP, HRS as above
+• Colloid vs crystalloid: NOT superior for shock resuscitation (JAMA 2013;310:1809); no benefit in sepsis (SAFE study)
+HYPOTONIC/HYPERTONIC: see Sodium template for detailed management`,
+    workup: `FLUID ASSESSMENT:
+• Volume status: JVP, daily weights, fluid balance, skin turgor, orthostatic BPs, BUN/Cr ratio
+• Urine output: goal >0.5 mL/kg/h (0.3-0.5 acceptable with monitoring)
+• Urine lytes: UNa, UCl, UK, UOsm when guiding fluid type
+• Daily BMP: electrolyte monitoring during aggressive repletion
+ELECTROLYTE LABS:
+• Check Mg FIRST in any hypokalemia — hypoMg causes renal K wasting, making K repletion futile until Mg corrected
+• Ionized Ca (iCal): preferred in critically ill, acid-base disturbance, hypoalbuminemia (total Ca unreliable)
+• BMP q4-6h during active IV repletion (K, Phos)`,
+    management: `FLUID SELECTION GUIDE:
+Sepsis/distributive shock: LR 30 mL/kg bolus (reassess after each 500 mL); dynamic responsiveness (pulse pressure variation, PLR)
+Hypovolemia (GI losses): LR preferred; NS if metabolic alkalosis (replace Cl)
+DKA/HHS: NS initially (free water deficit), then LR once K >3.5
+Burns/trauma: LR (Parkland formula for burns: 4 mL/kg/%BSA over 24h; give half first 8h)
+ICP management: NS (hypotonic fluids contraindicated), 3% saline for acute ICP crisis
+Hyperkalemia with oliguria: NS preferred (avoids additional K in LR)
+MAINTENANCE FLUID CALCULATION:
+Rate: 60-100 mL/h of D5NS or LR; adjust for comorbidities (CHF, SIADH, CKD)
+4-2-1 rule (pediatric): 4 mL/kg/h for first 10 kg + 2 mL/kg/h for next 10 kg + 1 mL/kg/h for each kg thereafter
+Daily free water deficit (hypernatremia): FWD = total body water × (current Na/140 − 1); correct at 0.5-1 mEq/L/h max
+ALBUMIN DOSING:
+SBP: Albumin 25% 1.5g/kg IV within 6h of diagnosis (max 100g), then 1g/kg Day 3 (max 100g)
+LVP: Albumin 25% 6-8g per liter removed if >5L removed
+HRS (terlipressin protocol): albumin 25g IV q24h as adjunct (see ESLD template)
+Post-ERCP pancreatitis: NOT indicated
+ELECTROLYTE REPLETION PROTOCOLS:
+POTASSIUM:
+Goals: K ≥3.5 (general); K ≥4 (CAD, arrhythmia, digitalis toxicity); hold repletion if on HD or K ≥5
+PO: KCl IR powder 20-40 mEq q4-6h (faster absorption, powder in water); KCl ER tablets if tolerating
+IV peripheral: 10 mEq/h max (extravasation risk); IV central: 20 mEq/h with continuous telemetry
+Dosing: each 10 mEq raises K ~0.1 mEq/L; for K 3.0-3.5: 40-60 mEq; for K <3.0: 60-100 mEq or more
+Recheck K after every 40-60 mEq of repletion; simultaneous Mg repletion if Mg <1.7
+MAGNESIUM:
+Goals: Mg ≥1.7 (general); Mg ≥2 (CAD, arrhythmia, pre-eclampsia, TdP)
+PO: Mg oxide 400mg (240mg elemental Mg) TID × 1 day; GI absorption limited; unreliable in severe hypoMg
+IV: Mg sulfate 2g (16.2 mEq) over 15-60 min; can repeat × 2-3 doses q4-6h for severe depletion; monitor DTRs (loss = first sign of toxicity)
+Cardiac arrhythmia/TdP: Mg sulfate 2g IV push over 5 min
+Note: if renal wasting (persistent hypoMg despite repletion): K-sparing diuretic (amiloride) or SGLT2i
+PHOSPHORUS:
+Goals: Phos ≥2 (general); immediate repletion if <1.0 or symptomatic (rhabdo, respiratory failure, encephalopathy)
+PO: Phos-NaK 1 packet QID (7 mEq K, 7 mEq Na per packet); K-Phos-Neutral if needs Na-free
+IV: 15-45 mmol phosphate over 6h (K-Phos or Na-Phos depending on K level); repeat BMP in 2-6h after IV
+Severe (Phos <1): IV 45 mmol over 6h; avoid calcium-containing IV (precipitate)
+CALCIUM:
+Goals: Ca >8.5 (general), iCal >1.12; symptomatic or Ca <7.5: urgent IV repletion
+PO: calcium carbonate 1250mg BID (with food, requires acid for absorption) or calcium citrate (does not require acid)
+IV: Ca gluconate 1-2g IV over 10-20 min (preferred — less tissue injury if extravasates); Ca chloride in cardiac arrest only (via central line due to severe extravasation risk)
+Pre-eclampsia/TdP with hyperMg: Ca gluconate 1g IV push to antagonize Mg effects
+Do NOT mix Ca and Phosphate IV — precipitates`,
+    monitoring: `• Check BMP q4-6h during active IV repletion of K or Phos (overshoot hyperkalemia/hyperphosphatemia)
+• Mg levels q12-24h during repletion; check DTRs if giving >4g Mg IV in 4h
+• Fluid balance and daily weight; UOP hourly in critically ill
+• Recheck albumin Day 3 in SBP patients (confirm response — Cr should not worsen)
+• Ca gluconate at bedside when giving large Mg doses (treat hypermagnesemia toxicity)`,
+    disposition: `• Nephrology consult: severe persistent electrolyte disturbances (K <2.5, Phos <1 despite repletion, severe hyperMg requiring HD), IV Mg protocol in pre-eclampsia (coordinate with OB)
+• ICU transfer: severe electrolyte abnormalities with cardiac/respiratory manifestations (K <2.5 with arrhythmia, severe hypophos with respiratory failure, TdP requiring Mg IV push)`
+  },
+
+  {
+    id: "ua-nephrolithiasis",
+    system: "neph",
+    title: "Urinalysis & Nephrolithiasis",
+    keywords: ["urinalysis","UA","urine dipstick","urine microscopy","casts","pyuria","hematuria","proteinuria","nitrite","leukocyte esterase","urine sediment","nephrolithiasis","kidney stones","renal calculi","ureteral stone","flank pain","hematuria","calcium oxalate","uric acid stone","struvite","alpha blocker stones","lithotripsy","ureteroscopy","24 hour urine","CTAP stone"],
+    source: { chapter: "Nephrology", section: "Urinalysis & Nephrolithiasis", pages: "102", authors: "Ekelemnna Obiejesie",
+      keyFacts: [
+        "UA dipstick interpretation: protein (albumin only — misses light chains, Bence-Jones; send urine protein:Cr for quantification); blood (detects intact RBCs AND free Hgb/myoglobin — positive blood without RBCs on micro = myoglobinuria or hemoglobinuria); nitrite (Enterobacterales convert nitrate → nitrite, Sn ~50%); leukocyte esterase (PMN marker, Sn 75-90%); both nitrite + LE positive Sn 68-88% for UTI",
+        "Urine casts: hyaline (normal, concentrated urine); granular/muddy brown = ATN; RBC casts = glomerulonephritis (PATHOGNOMONIC); WBC casts = pyelonephritis or interstitial nephritis; waxy/broad casts = advanced CKD; fatty casts = nephrotic syndrome (oval fat bodies, Maltese cross under polarized light)",
+        "Nephrolithiasis most common type: calcium oxalate > calcium phosphate > uric acid = struvite > cystine; initial imaging: non-contrast CT abdomen/pelvis (preferred) > renal US; US preferred in pregnancy, children, radiation-sensitive patients",
+        "Acute stone management: IVF + ketorolac (preferred to opioids for ureteral spasm); alpha-blockers (tamsulosin 0.4mg qday) for stones 5-10mm to facilitate passage; urologic intervention if >10mm, infected stone, AKI, single kidney, unrelenting pain, or anuria",
+        "Chronic stone prevention: fluid >2.5L/day, low Na diet (<2g/day), normal Ca intake (restriction worsens oxalate absorption), low oxalate diet for Ca-oxalate stones; thiazide diuretics for hypercalciuria; allopurinol for hyperuricosuria; potassium citrate for hypocitraturia and uric acid stones (alkalinizes urine)"
+      ]
+    },
+    assessment: `#Urinalysis & Nephrolithiasis Assessment
+URINALYSIS:
+Color: *** | Clarity: *** | Specific gravity: *** | pH: ***
+DIPSTICK:
+Protein: *** | Blood: *** | Nitrite: *** | Leukocyte esterase: *** | Glucose: *** | Ketones: ***
+MICROSCOPY (if UA abnormal):
+RBCs: ***/HPF | Dysmorphic RBCs: [ ] Yes → nephritis | WBCs: ***/HPF | Bacteria: ***
+Casts: hyaline [ ] / granular/muddy brown [ ] / RBC cast [ ] / WBC cast [ ] / fatty [ ] / waxy [ ]
+Crystals: calcium oxalate (envelope/dumbbell) [ ] / uric acid (rhomboid) [ ] / struvite (coffin lid) [ ] / cystine (hexagonal) [ ]
+QUANTITATIVE PROTEIN: urine protein:Cr ratio: *** | 24h urine protein: *** g/day (if ordered)
+NEPHROLITHIASIS (if applicable):
+Presentation: flank pain [ ] / hematuria [ ] / N/V [ ] | Pain severity: ***
+Imaging: CT non-contrast [ ] — Stone size: *** mm | Location: *** | Hydronephrosis: ***
+Bilateral obstruction or single kidney: [ ] Yes → urgent urology
+Signs of infected stone (fever/pyuria/bacteriuria + obstruction): [ ] Yes → URGENT (sepsis risk)
+Alpha blocker started: tamsulosin 0.4mg qday [ ] Yes  [ ] No (if stone 5-10mm)
+Urology consulted: [ ] Yes  [ ] No`,
+    ddx: `URINE DIPSTICK INTERPRETATION:
+PROTEINURIA:
+Trace-1+: transient (fever, exercise, orthostatic) vs. early chronic kidney disease
+2-3+: glomerular disease vs. tubular disease (lower grade in tubular)
+Nephrotic range: >3.5g/24h — spot PCR >3000 mg/g; causes: diabetic nephropathy, membranous, FSGS, minimal change
+Nephritic range: <3.5g/24h with hematuria/casts; causes: IgA, ANCA, lupus nephritis, anti-GBM
+Note: dipstick detects albumin ONLY — misses Bence-Jones protein (light chains in myeloma), myoglobin, lysozyme
+HEMATURIA:
+Glomerular (dysmorphic RBCs, RBC casts): IgA nephropathy, ANCA vasculitis, anti-GBM, lupus nephritis, thin basement membrane
+Non-glomerular (isomorphic RBCs): nephrolithiasis, tumor (renal cell, TCC), infection, trauma, BPH, coagulopathy, polycystic kidneys
+False positive dipstick blood (no RBCs on micro): myoglobinuria (rhabdomyolysis — CK markedly elevated, red-brown urine) or hemoglobinuria (hemolysis — positive DAT, LDH elevated, haptoglobin low)
+PYURIA (WBC >5/HPF):
+UTI/CAUTI: bacteria + WBCs; culture to guide treatment
+Sterile pyuria: UTI with fastidious organisms (TB — classic "sterile pyuria," Chlamydia, Ureaplasma), AIN (eosinophiluria, drug reaction), GN, nephrolithiasis
+Eosinophiluria: historically associated with AIN but poor sensitivity and specificity (J Hosp Med 2017;12:343)
+CAST INTERPRETATION:
+RBC casts: PATHOGNOMONIC for glomerulonephritis; send ANA, ANCA, anti-GBM, complement immediately
+WBC casts: pyelonephritis (bacteria present) OR interstitial nephritis (no bacteria, eosinophils possible)
+Granular "muddy brown" casts: ATN (ischemic or toxic); together with fractional excretion of Na >2%
+Waxy/broad casts: advanced CKD with dilated nephrons
+Fatty casts with Maltese cross (polarized): nephrotic syndrome
+NEPHROLITHIASIS TYPE BY URINE pH AND CRYSTAL:
+Calcium oxalate (most common, 60-80%): pH variable; envelope or dumbbell-shaped crystals; CT dense; causes: hypercalciuria, hyperoxaluria, hypocitraturia
+Calcium phosphate: alkaline urine (pH >6.5); causes: distal RTA, hyperparathyroidism, Sjogren's
+Uric acid (10-15%): acidic urine (pH <5.5); radiolucent on plain XR (visible on CT); causes: hyperuricosuria, DM, metabolic syndrome, gout, diarrhea
+Struvite (infection stones, 5-10%): alkaline urine; coffin-lid crystals; Proteus, Klebsiella, Pseudomonas (urease-producing organisms); staghorn calculi; recurrent UTIs
+Cystine (<1%): hexagonal crystals; genetic (cystinuria); alkaline urine pH >7.5 to prevent`,
+    workup: `URINALYSIS WORKUP APPROACH:
+1. Dipstick: screen for protein, blood, nitrite, LE, glucose, ketones, pH, specific gravity
+2. Microscopy: if any abnormality — quantify RBC, WBC, casts, crystals, bacteria
+3. Urine protein:Cr ratio (spot): for proteinuria quantification (>30 mg/g = microalbuminuria; >300 = macroalbuminuria; >3000 = nephrotic range)
+4. Urine Na/K/Cr: when evaluating AKI etiology (FENa), SIADH, or electrolyte disorders
+5. Urine culture: if pyuria or bacteriuria on UA
+NEPHROLITHIASIS WORKUP:
+• Non-contrast CT abdomen/pelvis (NCCT): gold standard; sensitivity >97%; shows size, location, density (HU for stone composition), degree of obstruction, hydronephrosis
+• Renal ultrasound: preferred in pregnancy, children, radiation-sensitive patients; lower sensitivity for small stones; good for hydronephrosis
+• Plain KUB (kidney-ureter-bladder): misses uric acid stones (radiolucent); rarely used alone
+• Urine strain: strain all urine to collect stone for composition analysis
+• Basic labs: BMP (Cr, Ca), uric acid, CBC (infection screen if fever), UA + culture
+• 24-hour urine ("Litholink"): collect at home before and after dietary interventions; measures volume, Ca, oxalate, citrate, uric acid, Na, K, Cr — guides targeted prevention therapy; order after first recurrent stone or for metabolic workup of high-risk patients
+• PTH: if hypercalcemia or calcium phosphate stones (primary hyperparathyroidism)`,
+    management: `ACUTE STONE MANAGEMENT:
+Step 1 — Analgesia and IVF:
+• Ketorolac 15-30mg IV/IM q6h (preferred — reduces ureteral spasm directly) OR ibuprofen 600-800mg PO q6-8h
+• Opioids if NSAIDs contraindicated (CKD, allergy, bleeding risk): hydromorphone 0.2-0.4mg IV q3-4h PRN
+• IVF: aggressive hydration (NS or LR at 1-2 L/h initially) — promotes spontaneous passage; no benefit to hyperhydration once resuscitated
+Step 2 — Alpha-blocker (stones 5-10mm):
+• Tamsulosin 0.4mg qday: smooth muscle relaxation → ureter dilation → facilitates passage; NNT ~4; most effective for distal ureteral stones
+• Continue 4-6 weeks or until passage confirmed
+Step 3 — Anti-emetics: ondansetron 4mg IV/PO q6h PRN
+Step 4 — Disposition based on stone size:
+• <5mm: 68-85% pass spontaneously; discharge with alpha-blocker + analgesia; follow up in 4 weeks
+• 5-10mm: 50-60% pass; alpha-blocker + observation; follow up in 2-4 weeks; urology referral
+• >10mm: unlikely to pass spontaneously; urgent urology referral
+URGENT UROLOGY INDICATIONS (do NOT discharge without urology):
+• Obstructing stone + fever/sepsis (infected obstruction — surgical emergency: percutaneous nephrostomy or ureteral stent)
+• AKI from bilateral obstruction or obstruction in solitary kidney
+• Stone >10mm (unlikely to pass)
+• Intractable pain, N/V despite medications
+• Anuria
+STONE TYPE–SPECIFIC PREVENTION:
+Calcium oxalate: fluid >2.5L/day; low Na <2g/day (decreases urinary Ca); low oxalate diet (avoid nuts, chocolate, spinach); NORMAL Ca intake (low Ca diet worsens oxalate absorption); thiazide diuretics if hypercalciuria; potassium citrate if hypocitraturia
+Uric acid: fluid >2.5L/day; low purine diet; allopurinol if hyperuricosuria; potassium citrate to alkalinize urine (target pH 6.5-7.0 — dissolves uric acid stones); treat metabolic syndrome/insulin resistance
+Struvite: treat underlying infection; urologic procedure for staghorn calculi (cannot clear with medical therapy alone); long-term antibiotics sometimes required
+Calcium phosphate: treat underlying RTA; avoid alkali supplementation (worsens Ca-phosphate precipitation)
+Cystine: aggressive hydration >3L/day; alkalize urine to pH >7.5 (K citrate); D-penicillamine or tiopronin (chelates cystine) for refractory cases`,
+    monitoring: `• Stone passage: strain urine with every void; repeat imaging at 4 weeks if no spontaneous passage
+• Renal function: BMP q24-48h if obstruction; creatinine trend guides urgency of intervention
+• Infection: temperature + UA culture if any fever — infected obstruction requires URGENT decompression
+• Post-intervention: UA + culture 5-7 days after procedure; BMP at 2-4 weeks; stone sent for composition analysis if captured`,
+    disposition: `• Urology (urgent): obstructing stone + fever/sepsis, AKI from bilateral obstruction, stone >10mm, intractable pain, anuria
+• Nephrology: new proteinuria >1g/day, RBC casts (GN), unexplained hematuria without stone, nephrotic syndrome
+• Urology outpatient: 4-6 week follow-up for all stones; 24h urine Litholink after recurrent stone; ESWL or ureteroscopy for stones not passing with medical management`
+  },
+
+  // ══════════════════ ID — MISSING ══════════════════
+
+  {
+    id: "viral-respiratory",
+    system: "id",
+    title: "Viral Respiratory / Head & Neck Infections",
+    keywords: ["viral respiratory","influenza","COVID-19","RSV","rhinovirus","viral URI","oseltamivir","Tamiflu","baloxavir","COVID treatment","nirmatrelvir","ritonavir","Paxlovid","respiratory viral panel","Ludwig angina","Lemierre syndrome","deep neck space infection","peritonsillar abscess","retropharyngeal abscess","head neck infection","odontogenic","sinusitis"],
+    source: { chapter: "Infectious Disease", section: "Viral Respiratory/Head & Neck Infections", pages: "108", authors: "Alexandra Miller, Amanda Ward",
+      keyFacts: [
+        "Respiratory viral panel (MGH): NP swab PCR for COVID-19, Flu A/B, RSV; collect within 5 days of symptom onset; extended respiratory viral panel for immunocompromised; rapid antigen test for influenza has 62% Sn, 98% Sp — negative during peak season does NOT rule out flu",
+        "Influenza treatment: oseltamivir 75mg BID × 5 days (extend in severely ill/immunocompromised); indications: ALL hospitalized patients, any patient with risk factors (age >65, immunosuppressed, pregnant, CKD, CHF, COPD, BMI >40, long-term care facility) regardless of illness duration; community outpatients: benefit within 48h",
+        "COVID-19 treatment: nirmatrelvir-ritonavir (Paxlovid) for high-risk patients — CHECK DDIs before prescribing (CYP3A4 interactions with immunosuppressants, anticoagulants, statins); remdesivir for hospitalized patients; see MGB Handbook for most current guidance as recommendations evolve",
+        "Ludwig angina (submandibular space infection): bilateral submandibular swelling, 'double tongue' (tongue pushed up/back), dysphagia, drooling; sources: odontogenic (periodontal) most common; organisms: polymicrobial, viridans streptococci, oral anaerobes; airway compromise risk is HIGH — early ENT and anesthesia consultation",
+        "Lemierre syndrome (internal jugular septic thrombophlebitis): septic thrombophlebitis of internal jugular vein following pharyngitis; organism: Fusobacterium necrophorum; presents with neck pain/swelling + septic pulmonary emboli (lung cavities); treat with pip-tazo OR CTX + metronidazole + anticoagulation"
+      ]
+    },
+    assessment: `#Viral Respiratory / Head & Neck Assessment
+VIRAL RESPIRATORY:
+Symptoms: fever *** / cough [ ] / congestion [ ] / myalgias [ ] / dyspnea [ ] | Duration: *** days
+Risk factors: age >65 [ ] / immunocompromised [ ] / pregnant [ ] / CKD [ ] / CHF [ ] / COPD [ ] / BMI >40 [ ]
+Testing ordered: respiratory viral panel (NP swab PCR) [ ] | Rapid flu Ag [ ] | COVID [ ]
+  Results: COVID *** | Flu A *** | Flu B *** | RSV ***
+Oseltamivir started: *** (if flu or flu-like illness with risk factors)
+COVID treatment: [ ] Nirmatrelvir-ritonavir (check DDIs) [ ] Remdesivir [ ] See MGB Handbook
+HEAD & NECK INFECTION:
+Location: peritonsillar [ ] / submandibular (Ludwig) [ ] / retropharyngeal [ ] / deep neck [ ] / IJ (Lemierre) [ ]
+Airway: patent [ ] / partial obstruction [ ] / HIGH RISK for compromise [ ] → ENT STAT
+CT neck with contrast: [ ] Ordered  [ ] Result: ***
+Blood cultures: [ ] Yes | ENT consult: [ ] Yes | Airway plan: ***`,
+    ddx: `VIRAL RESPIRATORY INFECTIONS:
+UPPER RESPIRATORY TRACT (URI/URTI): rhinovirus (#1 cause), coronavirus, parainfluenza, RSV, adenovirus; nasal congestion, rhinorrhea, sore throat, mild cough; NO antibiotic indication; symptomatic treatment only
+INFLUENZA: fever + myalgias + headache + cough (rapid onset distinguishes from URI); complications: secondary bacterial PNA (worsens after initial improvement — S. pneumo, S. aureus, H. flu), ARDS, myocarditis, encephalitis; can trigger COPD/asthma exacerbation; oseltamivir if any hospitalized patient or risk factor (see keyFacts)
+COVID-19 (SARS-CoV-2): wide spectrum from URI to severe ARDS; high-risk features for severe disease: age >65, immunocompromised, DM, obesity, CAD, CKD, COPD; complications: cytokine storm, thrombosis (hypercoagulable), MIS-C (children), PASC (long COVID); treatment evolves — see MGB Handbook
+RSV: significant morbidity in elderly and immunocompromised (not just infants); presents like influenza; RSV-associated pneumonia; palivizumab (prophylaxis in high-risk infants); nirsevimab (prophylaxis); no established adult antiviral treatment
+HEAD AND NECK INFECTIONS:
+PERITONSILLAR ABSCESS: most common deep neck infection; unilateral tonsillar swelling, uvular deviation, "hot potato voice," trismus; organisms: Streptococcus, Fusobacterium, oral anaerobes; treatment: needle aspiration or I&D + antibiotics (amp-sulbactam OR CTX + metronidazole); ENT consult
+LUDWIG ANGINA: bilateral submandibular space infection — rapidly progressive; "double tongue" (floor of mouth swelling pushes tongue up/back), trismus, drooling, dysphagia, dyspnea; can cause rapid airway compromise; organisms: polymicrobial (viridans strep, oral anaerobes); odontogenic source (90%); treat: airway protection FIRST then amp-sulbactam or CTX + metronidazole + dental/oral surgery consult
+LEMIERRE SYNDROME: septic thrombophlebitis of internal jugular vein after pharyngitis; Fusobacterium necrophorum; neck swelling/tenderness + high fever + septic emboli (pulmonary cavities/abscesses); CT neck shows IJV thrombosis; treatment: pip-tazo or CTX + metronidazole + anticoagulation (low-molecular weight heparin)
+RETROPHARYNGEAL ABSCESS: space between posterior pharynx and prevertebral fascia; children > adults; fever, neck stiffness/pain, dysphagia, "hot potato voice"; CT neck diagnostic; ENT for I&D + broad antibiotics
+DEEP NECK SPACE INFECTION: retropharyngeal/"danger"/paravertebral spaces; can progress to carotid sheath involvement, mediastinitis, vertebral osteomyelitis, paravertebral abscess; empiric treatment varies by source: odontogenic (amp-sulbactam or CTX + MNZ), otogenic (cefepime + MNZ), sinogenic (vanco + CTX + MNZ)
+SINUSITIS (bacterial): <2% of URIs are complicated by bacterial sinusitis; suspect if >10 days without improvement OR worsening after initial improvement; amoxicillin-clavulanate first-line; add intranasal steroids; complications: orbital cellulitis (see preseptal/orbital template), meningitis, brain abscess (rare but life-threatening)`,
+    workup: `VIRAL RESPIRATORY:
+• Respiratory viral panel (NP swab PCR — Flu A/B + COVID + RSV at MGH): collect within 5 days of symptom onset; extended panel for immunocompromised
+• Rapid influenza Ag test: results in <15 min; negative does NOT rule out flu during flu season (62% sensitivity)
+• SARS-CoV-2 PCR: most sensitive; antigen tests acceptable if clinically appropriate
+• CXR: if lower respiratory tract symptoms, hypoxia, or fever >38.5; distinguish viral pneumonitis from bacterial PNA
+• For COVID complications: CBC (lymphopenia), D-dimer, ferritin, LDH, CRP, troponin, pro-BNP if cardiac involvement
+HEAD AND NECK INFECTIONS:
+• CT neck with IV contrast: imaging of choice for all suspected deep neck infections, retropharyngeal abscess, Ludwig angina extent; helps distinguish cellulitis from abscess
+• Blood cultures × 2: before antibiotics; positive in ~50% of deep neck infections; always in Lemierre syndrome
+• MRI neck: superior for soft tissue planes, osteomyelitis, cavernous sinus thrombosis (if neurologic signs)
+• CBC, BMP, CRP/ESR: baseline and monitoring
+• Panorex (dental X-ray): if odontogenic source suspected
+• Bedside US: can assess peritonsillar area; limited for deep spaces`,
+    management: `INFLUENZA:
+Hospitalized patients + high-risk outpatients: oseltamivir 75mg PO BID × 5 days; renally dose (CrCl 10-30: 30mg BID; CrCl <10: 30mg qday); extend course if severely ill or immunocompromised
+Post-exposure prophylaxis: oseltamivir 75mg qday × 7 days (within 48h of exposure); extend to 14 days for long-term care facility outbreaks
+Baloxavir marboxil (Xofluza): 40mg (or 80mg if >80kg) × 1 dose; alternative; avoid in pregnancy; higher barrier to resistance
+Peramivir: 600mg IV × 1 dose; if cannot take PO; option for hospitalized patients
+NOTE: adamantanes (amantadine/rimantadine) no longer recommended — near-universal resistance
+COVID-19 (current MGH guidance — CHECK MGB Handbook for updates):
+High-risk outpatients (non-hospitalized): nirmatrelvir-ritonavir (Paxlovid) 300/100mg PO BID × 5 days; check CRITICAL drug-drug interactions before prescribing; start within 5 days of symptom onset
+Hospitalized + requiring O2: remdesivir 200mg IV Day 1 → 100mg IV Days 2-5; add dexamethasone 6mg qday × 10 days if requiring supplemental O2
+Hospitalized + severe (ICU/invasive MV): dexamethasone 6mg qday × 10 days; baricitinib or tocilizumab for cytokine storm; anticoagulation per institutional protocol
+GENERAL VIRAL URI: decongestants (oxymetazoline nasal spray ×3 days, pseudoephedrine), nasal saline irrigation, NSAIDs/acetaminophen for fever/myalgias; NO antibiotics for viral URI
+HEAD AND NECK INFECTIONS:
+Ludwig angina: (1) AIRWAY FIRST — call ENT/anesthesia immediately; awake fiberoptic intubation preferred if any respiratory distress; tracheostomy may be needed; (2) antibiotics: amp-sulbactam 3g IV q6h OR CTX 2g + metronidazole 500mg IV q8h; (3) surgical drainage if abscess present; (4) dental consultation; (5) IV dexamethasone if severe edema
+Lemierre syndrome: pip-tazo 3.375g IV q8h OR ceftriaxone 2g IV qday + metronidazole 500mg IV q8h; duration 3-6 weeks; anticoagulation: LMWH → warfarin (evidence limited but commonly used); ENT or IR for thrombosis management
+Peritonsillar abscess: ENT for needle aspiration or incision and drainage; amoxicillin-clavulanate 875/125mg PO BID OR amp-sulbactam 3g IV q6h; tonsillectomy for recurrent cases
+Retropharyngeal abscess: ENT for surgical drainage + IV antibiotics (amp-sulbactam or pip-tazo); NPO, IV access, airway monitoring
+Deep neck space: broad antibiotics based on source; ENT for surgical drainage; blood cultures; ID consultation for complex cases`,
+    monitoring: `• Influenza: resolution of fever/symptoms within 48-72h of oseltamivir; worsening after initial improvement suggests secondary bacterial PNA (CXR + cultures + antibiotics)
+• COVID: pulse oximetry trend; serial labs if cytokine storm concern (CRP, ferritin, D-dimer); watch for iatrogenic hyperglycemia with dexamethasone
+• Ludwig/deep neck infections: daily airway reassessment; imaging in 48-72h if not improving; serial WBC/CRP; ENT examination`,
+    disposition: `• MICU/ICU: Ludwig angina with airway compromise, deep neck space infections with mediastinal extension, COVID with ARDS, influenza with ARDS or myocarditis
+• ENT URGENT: all deep neck infections, peritonsillar abscess, Ludwig angina — ENT must be involved early for airway management and surgical drainage
+• ID consult: Lemierre syndrome, complicated head/neck infections, immunocompromised patients with viral respiratory infections, COVID requiring advanced therapies`
+  },
+
+  {
+    id: "transplant-id",
+    system: "id",
+    title: "Transplant ID — Solid Organ & HSCT Infections",
+    keywords: ["transplant ID","solid organ transplant","SOT","HSCT","hematopoietic stem cell transplant","CMV","BK virus","PJP prophylaxis","transplant prophylaxis","immunosuppression infection","opportunistic infection transplant","valganciclovir","letermovir","calcineurin inhibitor","tacrolimus","mycophenolate","fungal prophylaxis","transplant timeline","rejection infection","pre-emptive CMV","BK nephropathy"],
+    source: { chapter: "Infectious Disease", section: "Transplant ID", pages: "118", authors: "Daniel Restifo",
+      keyFacts: [
+        "Transplant infection timeline: <1 month = donor-derived, nosocomial, surgical site (same as non-immunocompromised); 1-6 months = peak immunosuppression — CMV, PJP, Aspergillus, Nocardia, Listeria, endemic fungi, reactivation of latent infections (TB, HSV, VZV, HBV, Toxo); >6 months = community-acquired infections (same as HIV with CD4 <200 if IS not tapered)",
+        "CMV (most common serious infection after SOT): D+/R- highest risk; presents as fever + leukopenia +/- end-organ disease (CMV colitis, pneumonitis, hepatitis, retinitis); diagnose with serum PCR + tissue biopsy for end-organ disease; treat with valganciclovir (oral) or IV ganciclovir; pre-emptive monitoring strategy vs. universal prophylaxis",
+        "HSCT prophylaxis at MGH: fluconazole 400mg daily (Candida, d0-365); famciclovir/valacyclovir (HSV/VZV, d0-365); TMP-SMX DS MWF or SS qday (PJP + Toxo + Nocardia + Listeria, d0-180 or 365); letermovir for CMV ppx in high-risk (NEJM 2017;377:2433); HBV prophylaxis with entecavir/tenofovir if high-risk reactivation",
+        "BK virus: polyomavirus causing BK nephropathy in renal transplant recipients (5-10%); presents as rising creatinine +/- hematuria; BK viremia (urine first, then plasma); diagnosis: BK PCR plasma >10,000 copies/mL + transplant biopsy showing polyomavirus inclusion bodies; treatment: reduce immunosuppression (no antiviral proven effective)",
+        "Pre-transplant evaluation: check CMV/EBV/HAV/HBV/HCV/VZV/Toxo serology, TST/IGRA (treat latent TB before transplant), dental clearance, update vaccinations (all LIVE vaccines BEFORE immunosuppression — cannot give after)"
+      ]
+    },
+    assessment: `#Transplant ID Assessment
+TRANSPLANT TYPE: [ ] Solid organ (organ: ***) | [ ] HSCT (autologous / allogeneic)
+Time post-transplant: *** months | Donor CMV status (D): *** | Recipient CMV status (R): ***
+Current immunosuppression: tacrolimus *** / MMF *** / prednisone *** / other: ***
+Trough levels: tacrolimus: *** (goal: ***) | cyclosporine: ***
+INFECTION TIMELINE RISK:
+[ ] <1 month — nosocomial/surgical/donor-derived pathogens
+[ ] 1-6 months — peak immunosuppression: CMV, PJP, Aspergillus, Nocardia, Listeria, endemic fungi
+[ ] >6 months — community-acquired; late viral (EBV-PTLD, CMV, BK)
+CURRENT PROPHYLAXIS:
+PJP: TMP-SMX DS [ ] / atovaquone [ ] / dapsone [ ] | CMV: valganciclovir [ ] / letermovir [ ]
+Antifungal: fluconazole [ ] / voriconazole [ ] / micafungin [ ]
+HSV/VZV: acyclovir [ ] / valacyclovir [ ] / famciclovir [ ]
+PRESENTING CONCERN:
+Fever: *** | Leukopenia: *** | Organ-specific sx: *** | BK PCR plasma: *** | CMV PCR: ***`,
+    ddx: `INFECTION BY TRANSPLANT TIMELINE:
+<1 MONTH POST-TRANSPLANT:
+Same as any surgical/ICU patient — donor-derived infections, surgical site infections, HAP/VAP, CLABSI, Candida, C. difficile, nosocomial pathogens; NOT typically PJP or CMV (insufficient time for reactivation)
+Donor-derived: rabies, West Nile virus, LCMV, unexpected TB, Strongyloides, T. cruzi — report to organ procurement organization
+1-6 MONTHS (peak net state of immunosuppression):
+CMV: most common serious infection (D+/R- or D+/R+ highest risk); fever + leukopenia +/- end-organ disease; serum PCR + tissue biopsy
+PJP: atypical PNA with diffuse bilateral infiltrates + hypoxia; BAL with PJP stains (DFA/GMS); beta-D-glucan elevated; TMP-SMX (prophylaxis and treatment)
+Aspergillus: sinopulmonary (cavitary, nodules, halo sign on CT), disseminated; galactomannan + beta-D-glucan
+Nocardia: pulmonary (nodules/cavities) or disseminated; TMP-SMX prophylaxis also covers Nocardia
+Listeria monocytogenes: bacteremia or meningitis; ampicillin; CNS infection common
+Toxoplasma: reactivation in D+/R- cardiac transplant; CNS (ring-enhancing lesions) or disseminated; TMP-SMX prophylaxis
+Endemic fungi (Histoplasma, Coccidioides, Blastomyces): disseminated disease even with low inoculum
+>6 MONTHS:
+Community-acquired infections predominate; viral infections (late CMV, EBV-associated PTLD, BK nephropathy in renal Tx, adenovirus)
+EBV-PTLD (post-transplant lymphoproliferative disorder): fever + lymphadenopathy + rising EBV VL; reduce IS + rituximab; CT chest/abdomen/pelvis; PET scan; hematology consultation
+BK nephropathy (renal Tx only): rising Cr + BK PCR plasma >10,000 copies/mL; reduce IS; cidofovir/leflunomide limited evidence
+HSCT-SPECIFIC:
+Pre-engraftment (<30d): bacterial (Gram-positive CLABSI, Gram-negative from gut translocation), Candida, HSV
+Post-engraftment (30-100d): CMV, PJP, Aspergillus, HHV-6
+Late (>100d): community-acquired, VZV, EBV-PTLD, late CMV; chronic GVHD increases infection risk
+Engraftment syndrome: PMN recovery cytokine storm — fever + rash + weight gain within 96h of engraftment; non-infectious but mimics infection`,
+    workup: `STANDARD WORKUP FOR FEVER IN TRANSPLANT:
+• Blood cultures × 2 (peripheral + central if CVC in place); urine culture; CXR
+• CBC with differential (leukopenia is key sign of CMV/viral infection)
+• CMV PCR (serum): quantitative; repeat q1-2 weeks if monitoring; threshold for treatment varies by organ/protocol
+• BK PCR (urine first, then plasma if urine positive; plasma >10,000 copies/mL = nephropathy risk)
+• EBV PCR: if lymphadenopathy, mass lesion, cytopenias, or rising VL
+• Beta-D-glucan + galactomannan: for fungal screening in HSCT or high-risk SOT
+• Tacrolimus/cyclosporine trough levels: subtherapeutic = rejection risk, supratherapeutic = toxicity + infection risk
+SYMPTOM-DIRECTED WORKUP:
+SOB: CXR + CT chest + NP swab (viral panel), BAL (PJP stains, Aspergillus culture + galactomannan, CMV PCR, legionella), Legionella urine antigen; if nodules → beta-D-glucan/galactomannan/sCrAg
+Diarrhea: stool C. diff + CMV PCR + O&P; if HSCT: consider GI biopsy for viral colitis (CMV/adenovirus) + GVHD
+AMS/HA: CT head, LP (glucose, protein, GS/Cx, CMV PCR, HSV PCR, CrAg, JC virus PCR, save extra tube); brain biopsy if ring-enhancing lesions not responding to empiric toxo treatment
+Rash: skin biopsy (path + culture); GVHD, HSV/VZV (PCR from lesion), drug reaction, fungal
+Hepatitis: viral hepatitis panel + CMV PCR + EBV PCR + consider hepatic VOD if HSCT
+AKI (renal Tx): BK PCR plasma + transplant biopsy (Banff criteria; polyomavirus inclusion bodies)`,
+    management: `CMV DISEASE:
+Pre-emptive strategy: monitor PCR q1-2 weeks; treat when VL rises above threshold (center-specific; typically >500-1000 IU/mL for D+/R- or symptomatic)
+Treatment: valganciclovir 900mg PO BID (mild-moderate) OR IV ganciclovir 5mg/kg BID (moderate-severe, CNS, GI involvement); duration until PCR undetectable ×2 consecutive measurements; renally dose; confirm ganciclovir susceptibility if VL not declining after 2 weeks
+Prophylaxis (SOT): valganciclovir 900mg qday for 3-6 months (D+/R- often requires longer); letermovir for HSCT (CMV-specific; no anti-HSV activity)
+Foscarnet or cidofovir: ganciclovir-resistant CMV (check UL97/UL54 mutations)
+PJP TREATMENT: TMP-SMX 15-20mg/kg/day of trimethoprim component (divided TID-QID) × 21 days; add prednisone if PaO2 <70 mmHg or A-a gradient >35
+PROPHYLAXIS:
+PJP + Toxo + Nocardia + Listeria: TMP-SMX (1 DS tab qday or 1 DS MWF or 1 SS qday); alternatives: atovaquone 1500mg qday or dapsone 100mg qday (check G6PD)
+Duration: lifelong in HSCT/high-risk SOT; 6-12 months minimum; resume if IS increased
+HBV reactivation prevention: all HBsAg+ patients → entecavir or tenofovir; HBsAg-/anti-HBc+ → check with hepatology; prophylaxis before rituximab/anti-CD20
+Fungal (HSCT): fluconazole 400mg daily d0-365; voriconazole or isavuconazole if mold-active coverage needed
+REDUCING IMMUNOSUPPRESSION: key intervention for CMV disease refractory to antivirals, BK nephropathy, EBV-PTLD, resistant fungal infections; always discuss with transplant team before reducing IS (rejection risk)
+BK NEPHROPATHY: reduce MMF first, then reduce tacrolimus to minimum acceptable level; leflunomide or ciprofloxacin (limited evidence); no proven antiviral
+EBV-PTLD: reduce IS + rituximab; chemotherapy for aggressive histology; PET-CT staging; hematology referral`,
+    monitoring: `• CMV: PCR q1-2 weeks while on treatment; VL should decline by 1 log every 1-2 weeks on ganciclovir; if not → check resistance
+• BK: plasma PCR q4-6 weeks in first year post-renal transplant; rising plasma PCR → biopsy
+• CBC weekly in HSCT (cytopenias from medications, CMV, marrow suppression); tacrolimus/CsA levels q1-2 weeks when stable, more frequently if dose changes
+• Tacrolimus: target drug levels vary by organ, time post-transplant, rejection history — discuss with transplant team`,
+    disposition: `• ID consult ALWAYS for serious infections in transplant patients — complex pharmacokinetics, drug-drug interactions with IS, resistance patterns
+• Transplant team co-management: all infections requiring IS reduction (BK, CMV, PTLD) — rejection risk must be weighed
+• Hematology: EBV-PTLD (chemotherapy decisions)
+• Ophthalmology: CMV retinitis (end-organ disease requiring urgent intravitreal and systemic treatment)`
+  },
+
+  {
+    id: "fuo",
+    system: "id",
+    title: "Fever of Unknown Origin (FUO)",
+    keywords: ["FUO","fever of unknown origin","prolonged fever","PET CT FUO","CT FUO","drug fever","FUO workup","FUO etiology","infectious FUO","rheumatologic FUO","malignant FUO","factitious fever","adult Still disease","GCA elderly FUO","lymphoma FUO","endocarditis FUO","nosocomial FUO","neutropenic FUO"],
+    source: { chapter: "Infectious Disease", section: "Fever of Unknown Origin", pages: "122", authors: "Matthew Adan",
+      keyFacts: [
+        "Classic FUO definition: temperature >38.3°C on multiple occasions for ≥3 weeks persisting without diagnosis despite ≥3 days of inpatient investigation or 3 outpatient visits; in US: infectious > rheumatologic > malignant > other; no diagnosis found in up to 50% of cases",
+        "FUO workup — initial: CBC, BMP, LFTs, ESR/CRP (non-specific but high values useful), UA/UCx, blood cultures × 2 (with CVC: draw from each lumen), CXR, HIV; directed by H&P including travel, animal/arthropod exposures, occupational hx, dental hx, immunocompromise, medications, valvular disease, family hx",
+        "Imaging in FUO: CT chest/abdomen/pelvis 71% Sn, 71% Sp; FDG-PET/CT highest sensitivity (86%) — scan vertex to toes with IV contrast preferred; LENIs (DVT/PE can cause low-grade fever); TTE/TEE if valvular disease or bacteremia risk; maxillofacial CT if dental caries or sinus symptoms",
+        "Drug fever: diagnosis of exclusion; occurs at ANY time during drug course; resolution after drug discontinuation (may take up to 1 week); often high fever (>102°F); rarely accompanied by rash, eosinophilia, or elevated LFTs; common culprits: beta-lactams, sulfonamides, macrolides, AEDs, dexmedetomidine, chemotherapy",
+        "Empiric antibiotics generally AVOIDED in FUO without hemodynamic instability or immunocompromise — treat the specific diagnosis rather than empirically; exception: strong GCA suspicion → start steroids immediately to prevent irreversible vision loss"
+      ]
+    },
+    assessment: `#Fever of Unknown Origin Assessment
+FEVER CHARACTERIZATION:
+Temperature pattern: *** (quotidian / hectic / continuous / relapsing) | Duration: *** weeks
+Max temp: *** | Timing: *** (AM/PM; continuous; episodic)
+CLASSIC FUO CRITERIA: T >38.3°C [ ] × multiple occasions [ ] | ≥3 weeks duration [ ] | No diagnosis after ≥3d inpatient workup [ ]
+SUBTYPE: [ ] Classic  [ ] Nosocomial (fever >24h into hospitalization)  [ ] Immunodeficient/neutropenic  [ ] HIV-associated
+HISTORY (complete FUO history):
+Travel (region, duration): *** | Animal/pet exposures: *** | Arthropod bites: ***
+Occupational: *** | Dental hx (recent work/caries): *** | Sexual hx: ***
+Medications (ALL, including supplements/herbals): *** | Recent procedures/hardware: ***
+Valvular disease/cardiac device: *** | Immunosuppression: *** | TB risk factors: ***
+EXAM FINDINGS:
+Temporal artery tenderness (GCA): [ ] | Murmur (endocarditis): [ ] | Lymphadenopathy: ***
+Hepatosplenomegaly: [ ] | Skin/nail changes: *** | Fundoscopic: ***
+LABS: CBC/diff *** | ESR *** | CRP *** | LFTs *** | UA/UCx *** | HIV ***
+Blood cultures: *** (number and incubation duration: ***)
+IMAGING: CT C/A/P: *** | FDG-PET/CT: *** | TTE/TEE: ***`,
+    ddx: `FUO ETIOLOGY BY CATEGORY (US distribution):
+INFECTIOUS (14-59%):
+High-yield: endocarditis (fastidious/HACEK organisms, nutritionally variant Strep, HACEK — long incubation cultures), occult abscess (perianal, brain, dental, psoas, subphrenic), HIV, EBV/CMV (mononucleosis), HHV6-8, HBV/HCV
+Extrapulmonary TB: lymphadenitis, vertebral (Pott's disease), miliary — IGRA + chest CT ± bone marrow biopsy
+Tickborne: Ehrlichia, Anaplasma, Babesia, RMSF (seasonal, exposure history)
+Hardware-related: prosthetic valve endocarditis, CIED infection, joint prosthesis
+Tropical/travel: malaria (#1 cause in returning traveler), typhoid, brucellosis, visceral leishmaniasis, schistosomiasis, melioidosis
+Other: Q fever (Coxiella), cat-scratch disease (Bartonella), tularemia, leptospirosis, Whipple's disease
+RHEUMATOLOGIC (2-36%):
+Adult-onset Still's disease: quotidian fever + evanescent salmon-colored rash + arthritis + leukocytosis + markedly elevated ferritin (>10,000 mcg/L in >70%); diagnosis of exclusion; treat with NSAIDs, steroids, anakinra, tocilizumab
+GCA/PMR: age >50; most common rheumatologic FUO in elderly; ESR often >100; start steroids immediately if visual symptoms (vision loss risk)
+SLE: multisystem; ANA + anti-dsDNA; low complement
+Vasculitis (PAN, GPA, EGPA): constitutional symptoms + organ-specific
+Reactive/inflammatory: Kikuchi disease (necrotizing lymphadenitis in young women), HLH (hemophagocytic lymphohistiocytosis — massive ferritin elevation), Behcet's, adult JIA/MAS
+MALIGNANCY (3-28%):
+Lymphoma (Hodgkin and non-Hodgkin): most common malignant FUO; B symptoms (fever, night sweats, weight loss); CT/PET + lymph node biopsy
+Leukemia: bone marrow biopsy
+Solid tumors: RCC (paraneoplastic fever), hepatoma, atrial myxoma (embolization + constitutional)
+Hypernephroma (renal cell carcinoma): classic paraneoplastic fever + polycythemia
+MISCELLANEOUS:
+Drug fever: always review ALL medications including OTCs; discontinue and observe (resolution within 3-7 days)
+DVT/PE: inflammatory cytokines cause low-grade fever (usually <38.5°C)
+Factitious/self-induced: inconsistent fever patterns; healthcare workers; discordant oral vs. core temps
+Subacute thyroiditis: tender thyroid + fever + elevated T4; self-limited
+Periodic fever syndromes: familial Mediterranean fever (FMF), hyper-IgD, TRAPS, Schnitzler syndrome
+Sarcoidosis: bilateral hilar LAD + uveitis + skin granulomas + hypercalcemia
+HLH: triggers include viral infection (EBV most common), malignancy, autoimmune disease; ferritin >500 (usually >10,000), cytopenias, splenomegaly, hypertriglyceridemia, low fibrinogen; bone marrow biopsy`,
+    workup: `INITIAL WORKUP (ALL FUO):
+• CBC with differential, CMP, LFTs, ESR, CRP, UA/UCx, HIV
+• Blood cultures × 2 (5-day incubation minimum; longer for HACEK — inform lab); if CVC: draw from all lumens simultaneously plus peripheral
+• CXR (then CT if abnormal or inadequate)
+• TSH (thyroiditis); ANA/dsDNA (SLE); ferritin (HLH/Adult Still's)
+TARGETED HISTORY-GUIDED WORKUP:
+Valvular disease / new murmur: TTE (then TEE if negative and high suspicion); 3 sets blood cultures; HACEK culture protocol
+Dental caries / periodontal disease: maxillofacial CT
+Elevated ESR >100 + age >50: temporal artery biopsy (up to 2 weeks after starting steroids); consider empiric steroids if visual symptoms
+Travel/animal exposure: thick + thin blood smears (malaria), serology (brucella, Q fever, Bartonella), O&P, dengue NS1 + antibodies
+TB risk factors: IGRA + CXR; CT chest; urine AFB × 3; bone marrow biopsy if miliary pattern
+ADVANCED WORKUP (if initial negative):
+• CT chest/abdomen/pelvis with IV contrast: 71% Sn — abscess, lymphoma, occult malignancy, vascular infection
+• FDG-PET/CT (recommended if CT negative): highest sensitivity (86%); scan vertex to toes; IV contrast recommended; excellent for vascular graft infection, large vessel vasculitis, lymphoma, occult abscess
+• TTE/TEE: always for suspected endocarditis; TEE if TTE negative and high suspicion
+• LENI ultrasound: DVT/PE (subclinical)
+• Bone marrow biopsy: lymphoma, leukemia, miliary TB, histoplasmosis, visceral leishmaniasis, HLH
+• Serology panel (directed by exposure): Bartonella, Brucella, Q fever, Coxiella, EBV/CMV (IgM + IgG), HHV-6, Toxoplasma, Histoplasma urine antigen
+• LDH, triglycerides, fibrinogen, NK cell activity: if HLH suspected (ferritin >500)`,
+    management: `GENERAL PRINCIPLES:
+• DO NOT start empiric antibiotics without hemodynamic instability or specific indication — broad empiric ABX obscure diagnosis and cause drug fever themselves
+• Discontinue non-essential medications: drug fever is common and underdiagnosed; observe for 3-7 days after discontinuation
+• Order tests with good diagnostic yield; avoid shotgun serology panels
+• If suspicion for GCA (elderly, ESR >100, jaw claudication, headache, visual symptoms): start prednisone 1mg/kg/day IMMEDIATELY — irreversible vision loss can occur; temporal artery biopsy can wait up to 2 weeks
+SPECIFIC TREATMENTS (after diagnosis established):
+• Endocarditis: 4-6 weeks antibiotics (see Bacteremia/Endocarditis template)
+• Lymphoma: chemotherapy (oncology referral)
+• Adult Still's: NSAIDs first → glucocorticoids → anakinra or tocilizumab for refractory
+• HLH: treat triggering cause + dexamethasone + etoposide (HLH-94 protocol); HSCT for relapsed/refractory
+• Occult abscess: percutaneous or surgical drainage + antibiotics
+PROGNOSIS: if extensive workup negative, most cases defervesce without specific diagnosis; overall prognosis is good in classic FUO with no diagnosis; poor prognosis associated with: identified malignancy, HLH, disseminated infection in immunocompromised`,
+    monitoring: `• Daily temperature chart: pattern of fever (quotidian/hectic) can guide diagnosis
+• Serial ESR/CRP and ferritin: tracking inflammatory markers guides response to treatment
+• Repeat blood cultures: 48-72h after antibiotic initiation (for endocarditis); send at peak of fever (highest bacteremia burden)
+• After starting empiric steroids for GCA: ophthalmology referral; temporal artery biopsy within 2 weeks; taper steroids based on symptom response + ESR/CRP`,
+    disposition: `• ID consult: most FUO cases (complex diagnostic evaluation, exposure-guided serology, empiric antibiotic decisions)
+• Rheumatology: suspected vasculitis (GCA, PAN), Adult Still's disease, HLH, inflammatory causes
+• Hematology/oncology: suspected lymphoma, leukemia, HLH, bone marrow evaluation
+• Ophthalmology: GCA with visual symptoms (same-day referral), uveitis (sarcoidosis, Behcet's, reactive arthritis)`
+  },
+
+  // ══════════════════ ENDOCRINOLOGY — MISSING ══════════════════
+
+  {
+    id: "outpatient-t2dm",
+    system: "endo",
+    title: "Outpatient Type 2 Diabetes — Medications & Management",
+    keywords: ["type 2 diabetes","T2DM","outpatient diabetes","metformin","SGLT2 inhibitor","empagliflozin","dapagliflozin","canagliflozin","GLP-1","semaglutide","dulaglutide","liraglutide","tirzepatide","DPP-4 inhibitor","sitagliptin","sulfonylurea","glipizide","glimepiride","insulin algorithm","A1c goal","diabetes screening","prediabetes","SGLT2 heart failure","GLP-1 weight loss","diabetes management","cardiovascular benefit diabetes"],
+    source: { chapter: "Endocrinology", section: "Outpatient Type 2 Diabetes Mellitus", pages: "171–172", authors: "Emily Stephens, Anika Agarwal",
+      keyFacts: [
+        "T2DM diagnosis: A1c ≥6.5%, fasting plasma glucose ≥126 mg/dL, 75g OGTT 2h glucose ≥200, or random BG ≥200 with symptoms; confirm with repeat test unless unambiguous symptoms + BG ≥200; A1c unreliable with high RBC turnover (sickle cell, hemolysis, G6PD, HD, 2nd/3rd trimester pregnancy)",
+        "Metformin: first-line for T2DM; decreases hepatic glucose production; A1c ↓1-2%; do NOT initiate if eGFR <45, discontinue if <30; hold if IV contrast, major surgery, AKI risk; always add folic acid (B12 deficiency risk with chronic use); GI side effects decrease over time — titrate slowly",
+        "SGLT2 inhibitors (empagliflozin, dapagliflozin, canagliflozin): strong cardiovascular benefit (reduce MACE, CV death, HF hospitalization — EMPA-REG, CANVAS, DECLARE trials); reduce CKD progression; START if eGFR ≥20 mL/min; HOLD 3-5 days pre-surgery and post-op until eating (euglycemic DKA risk); UTI + GU fungal infection risk",
+        "GLP-1 receptor agonists (semaglutide, dulaglutide, liraglutide, tirzepatide): reduce CV events (LEADER, SUSTAIN trials); significant weight loss (semaglutide > dulaglutide > liraglutide); injectable (weekly preferred over daily); GI side effects (N/V, constipation); avoid if history of MTC or MEN2 (FDA black box warning); tirzepatide (GLP-1/GIP dual agonist) greatest A1c reduction and weight loss",
+        "Insulin algorithm: basal insulin (glargine/detemir) at bedtime — start 10 units qHS; titrate by 1-2U/day every 3 days until fasting BG 80-130; if A1c still uncontrolled → add rapid-acting insulin (lispro/aspart) before largest meal; insulin in DKA/HHS uses different inpatient algorithm (see DKA template)"
+      ]
+    },
+    assessment: `#Outpatient T2DM Assessment
+DIAGNOSIS:
+A1c: *** (goal: <7% general; <8-8.5% if elderly/limited life expectancy/high hypo risk)
+Last A1c: *** | Trend: *** | Duration of DM: *** years
+Fasting glucose: *** | Postprandial glucose: *** | CGM data: ***
+CURRENT REGIMEN:
+Metformin: *** mg (eGFR: *** — do not initiate if <45, discontinue if <30)
+SGLT2i: *** | GLP-1 RA: *** | DPP-4i: *** | Sulfonylurea: *** | Insulin: type *** / dose ***
+COMORBIDITIES (guide drug selection):
+CVD/ASCVD: [ ] Yes → SGLT2i or GLP-1 RA preferred (CV benefit proven)
+HF (HFrEF or HFpEF): [ ] Yes → SGLT2i preferred (dapagliflozin/empagliflozin proven)
+CKD (eGFR <60 or albuminuria): [ ] Yes → SGLT2i or GLP-1 RA (renal protection)
+Obesity: [ ] Yes → GLP-1 RA preferred (significant weight loss)
+High hypoglycemia risk: [ ] Yes → avoid sulfonylureas; prefer SGLT2i/DPP-4i/GLP-1 RA
+Cost concern: [ ] Yes → metformin + sulfonylurea + NPH insulin (most affordable)
+MONITORING:
+DEXA/ophthalmology/podiatry/dental/nephrology: *** (annual schedule)
+LDL: *** (goal <70 if ASCVD) | BP: *** (goal <130/80)`,
+    ddx: `T2DM DRUG COMPARISON TABLE:
+METFORMIN: A1c ↓1-2% | Weight: neutral/↓ | Hypoglycemia: none | Cost: cheap | Renal: hold eGFR <45 | Notes: B12 deficiency; GI SE; first-line
+SGLT2 INHIBITORS (empagliflozin/dapagliflozin/canagliflozin): A1c ↓0.8-0.9% | Weight: ↓2-3kg | Hypo: none | Cost: expensive | Renal: start ≥20 mL/min | Notes: UTI/GU fungal infection; euglycemic DKA; hold pre-surgery; CV + renal benefit
+GLP-1 RECEPTOR AGONISTS (semaglutide/dulaglutide/liraglutide): A1c ↓0.5-2.6% (tirzepatide highest) | Weight: ↓3-15kg | Hypo: none | Cost: expensive | Notes: GI side effects (nausea, constipation); weekly injection preferred; avoid if MTC/MEN2 hx; CV benefit proven; weight loss greatest with semaglutide/tirzepatide
+DPP-4 INHIBITORS (sitagliptin/linagliptin): A1c ↓0.5-0.8% | Weight: neutral | Hypo: none | Cost: moderate | Renal: linagliptin preferred in CKD (dose-adjusted: others); saxagliptin/alogliptin avoid in CHF (hospitalization risk) | Notes: well-tolerated; joint pain
+SULFONYLUREAS (glipizide/glimepiride): A1c ↓1-2% | Weight: ↑2kg | Hypo: YES (significant) | Cost: very cheap | Renal: caution | Notes: stimulate beta-cell insulin release; glyburide avoid in elderly/CKD (active metabolites); hypoglycemia risk in renally impaired
+INSULIN (various): A1c ↓any | Weight: ↑ | Hypo: YES | Cost: expensive | Notes: most effective at any glucose level; injection training required; type 1 DM: insulin mandatory; last resort in T2DM only if other agents fail
+THIAZOLIDINEDIONES (pioglitazone): A1c ↓0.8% | Weight: ↑ | Hypo: none | Cost: moderate | Notes: CV concern (edema, HF exacerbation); bladder cancer concern; avoid in HF; NOT first-line
+SELECTING AGENT BY COMORBIDITY:
+ASCVD established: GLP-1 RA (liraglutide, semaglutide, dulaglutide) OR SGLT2i — both reduce MACE
+Heart failure (HFrEF/HFpEF): SGLT2i first (dapagliflozin, empagliflozin — reduced HF hospitalization regardless of A1c)
+CKD (eGFR 20-60 + albuminuria): SGLT2i (slows CKD progression) OR GLP-1 RA
+Obesity: GLP-1 RA (semaglutide 2.4mg/wk or tirzepatide for weight loss > A1c lowering)
+Cost constraint: metformin → glipizide → NPH insulin (affordable regimen)`,
+    workup: `DIAGNOSIS AND MONITORING:
+• A1c: diagnosis + monitoring; q3 months if uncontrolled/changing therapy; q6 months if at goal; UNRELIABLE in: sickle cell, hemolytic anemia, G6PD, recent transfusion, pregnancy (use plasma glucose criteria instead)
+• Fasting plasma glucose or 75g OGTT (2h glucose): alternative diagnostic criteria; confirm abnormal result on separate day
+• Prediabetes screening: all adults ≥35 years (ADA 2025); repeat q3 years if normal, q1 year if prediabetes; earlier/more frequent if risk factors (BMI ≥25 + family hx, nonwhite ethnicity, prior gestational DM, HTN, dyslipidemia, PCOS, acanthosis nigricans, MASLD, HIV pre-ART)
+ANNUAL DIABETES CARE STANDARDS (ADA 2025):
+• A1c q3-6 months; lipid panel (LDL goal <70 if ASCVD, <100 if no ASCVD); urine ACR (microalbuminuria screen); eGFR
+• Blood pressure at every visit (goal <130/80)
+• Ophthalmology exam (annual dilated fundus exam — diabetic retinopathy)
+• Foot exam (annual comprehensive: sensation, pulses, deformity, skin integrity)
+• Dental referral (periodontal disease worsens glycemic control)
+• Immunizations: flu annually, pneumococcal, hepatitis B, COVID
+• Screen for depression (PHQ-2/9) and diabetes distress
+• DEXA if at osteoporosis risk (diabetes is a risk factor)`,
+    management: `TREATMENT ALGORITHM (ADA/PCOI):
+Step 1: Lifestyle modification (always first): 5-7% weight loss + 150 min/week moderate exercise → A1c ↓1-2%; refer to dietitian; structured DPP (Diabetes Prevention Program) for prediabetes
+Step 2: Start metformin 500mg PO BID with food → titrate by 500mg/week to 1000mg BID (max 2550mg/day); use XR formulation to reduce GI side effects
+Step 3 (A1c >1.5% above goal OR comorbidities present): add second agent based on comorbidities:
+• ASCVD/HF/CKD → SGLT2i or GLP-1 RA (BEFORE considering A1c lowering effect — CV/renal benefit is a metabolic drug benefit independent of glucose lowering)
+• Obesity + no ASCVD → GLP-1 RA (weight loss benefit)
+• A1c control primary concern → GLP-1 RA (greatest A1c lowering after SGLT2i) or sulfonylurea (cheap)
+• Cost constraint → glipizide or glimepiride
+Step 4: If A1c >1.5% above goal → DUAL combination (e.g., metformin + SGLT2i + GLP-1 RA)
+Step 5: Basal insulin initiation: add glargine (Lantus/Basaglar) or detemir (Levemir) at bedtime — start 10 units qHS; titrate up by 1-2U every 3 days until fasting BG 80-130 mg/dL
+SELF-TITRATION RULE: increase by 2U if FBG >130 for 3 consecutive mornings; decrease by 2U if FBG <80 any morning
+MEDICATION SPECIFICS:
+SGLT2i perioperative: hold 3-5 days before elective surgery → resume when patient tolerating PO post-op; if holding, switch to alternative DM management (insulin sliding scale); hold if eGFR <20
+GLP-1 RA initiation: start lowest dose; up-titrate every 4 weeks (nausea improves with time); do NOT use rapid titration; check DDIs (slows gastric emptying — affects oral medication absorption)
+Metformin + IV contrast/procedures: hold on day of procedure; restart 48h after if Cr stable
+PREDIABETES: lifestyle intervention most effective (58% reduction in progression to DM vs 31% with metformin in DPP); metformin for high-risk (BMI ≥35, age <60, prior GDM); check A1c q6-12 months`,
+    monitoring: `• A1c q3 months until at goal, then q6 months; intensify if A1c rises
+• SGLT2i: eGFR + urine ACR at initiation and q6-12 months; genital hygiene counseling
+• GLP-1 RA: weight, A1c; check for pancreatitis symptoms; thyroid nodule monitoring (rare)
+• Sulfonylurea: hypoglycemia monitoring (especially with exercise, fasting, or CKD)
+• Insulin: fasting glucose log; hypoglycemia episodes; injection site rotation; CGM if recurrent hypoglycemia
+• Lipid panel + BP at each visit; intensify statin if LDL >70 with ASCVD
+• Annual: ophthalmology, podiatry, ACR + eGFR, dental; immunizations`,
+    disposition: `• Endocrinology referral: T1DM, T2DM on insulin with suboptimal control, recurrent DKA/HHS, need for CGM/pump initiation, pregnancy + DM, suspected secondary DM (MODY, CFRD, post-pancreatectomy)
+• Primary care/diabetes education: all new T2DM diagnoses — refer to certified diabetes care and education specialist (CDCES) and dietitian
+• Cardiology: T2DM + ASCVD for risk stratification; SGLT2i/GLP-1 RA may be initiated by cardiologist for CV indication`
+  },
+
+  {
+    id: "pituitary-disorders",
+    system: "endo",
+    title: "Pituitary Disorders — Hypopituitarism / Adenomas / AVP Deficiency",
+    keywords: ["pituitary","hypopituitarism","pituitary adenoma","Cushing disease","acromegaly","prolactinoma","hyperprolactinemia","ACTH deficiency","GH deficiency","central hypothyroidism","diabetes insipidus","AVP deficiency","nephrogenic DI","desmopressin","DDAVP","pituitary apoplexy","Sheehan syndrome","transsphenoidal surgery","cabergoline","bromocriptine","water deprivation test","MRI pituitary"],
+    source: { chapter: "Endocrinology", section: "Pituitary Disorders", pages: "176", authors: "Margot Manning",
+      keyFacts: [
+        "Hypopituitarism — treat ACTH deficiency (2° adrenal insufficiency) BEFORE TSH deficiency (central hypothyroidism) — starting thyroid replacement first in combined deficiency can precipitate adrenal crisis by increasing cortisol metabolism; cortisol/thyroid replacement is most critical; if both deficient, replace hydrocortisone first, then add levothyroxine",
+        "Prolactinoma: most common functioning pituitary adenoma; FIRST-LINE treatment is dopamine agonist (cabergoline preferred over bromocriptine — better tolerated, more effective); surgery NOT first-line for prolactinoma (unlike all other hypersecretory adenomas); if PRL >100 ng/mL with large mass → likely macroprolactinoma; if PRL <100 with large mass → consider stalk effect",
+        "Cushing's disease (ACTH-secreting adenoma): confirms with 3 tests: 24h urinary free cortisol, late-night salivary cortisol, overnight 1mg dex suppression test; if all abnormal → pituitary MRI then CRH stimulation test or bilateral inferior petrosal sinus sampling (IPSS) to distinguish pituitary vs ectopic ACTH; treatment: transsphenoidal surgery",
+        "AVP deficiency (central diabetes insipidus — formerly central DI): polyuria (>3L/day) + dilute urine (UOsm <300) + hypernatremia; causes: pituitary surgery (#1), traumatic brain injury, craniopharyngioma, metastases, Langerhans cell histiocytosis; treatment: desmopressin (DDAVP) intranasal or oral; if impaired thirst — HIGH risk of hypernatremia on DDAVP (must monitor Na carefully)",
+        "Nephrogenic AVP resistance (formerly nephrogenic DI): UOsm does not concentrate despite adequate ADH stimulus; causes: lithium (most common drug), CKD, hypercalcemia, hypokalemia, demeclocycline; treatment: treat underlying cause + HCTZ + amiloride (lithium-induced) + low-solute diet; partial cases may respond to high-dose DDAVP"
+      ]
+    },
+    assessment: `#Pituitary Disorders Assessment
+PRESENTATION: headache [ ] / visual field defect (bitemporal hemianopia) [ ] / polyuria/polydipsia [ ] / hypogonadism sx [ ] / hypercortisolism sx [ ] / acromegalic features [ ]
+HYPOPITUITARISM SCREEN (hormone by hormone):
+ACTH axis: AM cortisol: *** | Cort stim test: *** | ACTH level: ***
+  → If low: replace hydrocortisone BEFORE thyroid
+TSH axis: TSH: *** | Free T4: *** (note: TSH low/normal in central hypothyroidism — do NOT use TSH alone)
+LH/FSH: LH: *** | FSH: *** | Estradiol (F): *** / AM Testosterone (M): ***
+GH: IGF-1: ***
+Prolactin: ***
+HYPERPITUITARISM SCREEN:
+Prolactin: *** (>100 ng/mL likely macroprolactinoma; <100 + large mass = check for stalk effect)
+Cushing's disease: 24h UFC: *** | Late-night salivary cortisol: *** | 1mg overnight dex: ***
+Acromegaly: IGF-1: *** | GH after glucose load: ***
+DIABETES INSIPIDUS (AVP-D or AVP-R):
+24h urine volume: *** | Serum Na: *** | Serum Osm: *** | Urine Osm: ***
+Water deprivation test: [ ] Ordered  [ ] Result: *** (AVP-D / AVP-R / primary polydipsia)
+MRI pituitary: *** | Ophthalmology (visual fields): ***`,
+    ddx: `PITUITARY ADENOMA TYPES:
+NON-FUNCTIONING (most common): gonadotroph cells; clinically silent; presents with mass effect (headache, bitemporal hemianopia, hypopituitarism); diagnosis: MRI pituitary; treatment: surgery if symptomatic/large
+FUNCTIONING ADENOMAS:
+Prolactinoma (most common): amenorrhea/galactorrhea/infertility (F), erectile dysfunction/decreased libido (M); PRL >100 almost always adenoma (vs stalk effect at lower levels); treatment: dopamine agonist (cabergoline) — DO NOT do surgery first
+Corticotroph (ACTH → Cushing's disease): central obesity + wide violaceous striae + proximal weakness + easy bruising + hypertension + DM + osteoporosis + depression; diagnosis: 3 elevated screening tests (UFC, late-night salivary cortisol, 1mg dex suppression) → pituitary MRI → IPSS for confirmation; treatment: transsphenoidal surgery; adjuncts: ketoconazole, metyrapone, mifepristone, pasireotide, osilodrostat
+Somatotroph (GH → Acromegaly): enlarged hands/feet/jaw, coarse features, hyperhidrosis, OSA, arthropathy, DM, HTN, cardiomegaly; diagnosis: IGF-1 elevated → GH after glucose load (not suppressed <0.4 ng/mL); treatment: surgery → octreotide/lanreotide if residual disease → radiation
+Thyrotroph (TSH → 2° hyperthyroidism): rare; TSH inappropriate for T4/T3 level; diagnosis: alpha-subunit elevation, pituitary MRI
+HYPOPITUITARISM (by cause):
+Pituitary tumors (adenoma, craniopharyngioma): compression of normal pituitary or stalk
+Post-surgical: transsphenoidal surgery → immediate and delayed hormone deficiencies
+Radiation-induced: delayed (months-years after radiation; most common late effect)
+Infiltrative: sarcoidosis, hemochromatosis, LCH, lymphocytic hypophysitis (especially post-partum, immune checkpoint inhibitors)
+Sheehan syndrome: postpartum pituitary infarction from obstetric hemorrhage/hypotension → failure to lactate + amenorrhea
+Pituitary apoplexy: sudden hemorrhage or infarction into adenoma → severe headache + visual loss + hormonal crisis; treat as emergency (steroids + ophthalmology + neurosurgery)
+AVP DEFICIENCY (CENTRAL DI):
+Post-surgical (transsphenoidal): most common cause; triphasic response (DI → SIADH → DI)
+Trauma (TBI): develops within days; head CT/MRI
+Craniopharyngioma: most common cause in children
+Metastases (breast, lung): common malignancy involving posterior pituitary
+Langerhans cell histiocytosis, sarcoidosis, autoimmune hypophysitis
+Idiopathic: autoimmune destruction of AVP neurons
+AVP RESISTANCE (NEPHROGENIC DI):
+Lithium (#1 drug cause): blocks ENaC → amiloride; often irreversible even after stopping lithium
+CKD: tubular dysfunction
+Hypercalcemia: direct tubular toxicity (treat underlying cause)
+Hypokalemia: functional (correct K)
+Primary polydipsia (psychogenic/dipsogenic): low UOsm but normalizes with water deprivation; serum Na normal or low (not hypernatremic); treat with behavioral modification; psychiatric evaluation`,
+    workup: `PITUITARY FUNCTION TESTS:
+Hypopituitarism screen: AM cortisol + ACTH + TSH + free T4 + LH + FSH + estradiol (F) or AM testosterone (M) + IGF-1 + prolactin
+Cort stim test (gold standard for ACTH deficiency): cosyntropin 250mcg IV → cortisol at 0, 30, 60 min; peak cortisol <18 µg/dL = insufficient; can perform any time of day
+Hyperprolactinemia workup: rule out secondary causes first (pregnancy, hypothyroidism, medications — dopamine antagonists, metoclopramide, haloperidol, risperidone, methadone, estrogen); check TFTs; MRI pituitary if PRL >100 or not explained by medications
+Cushing's screening tests (need 2/3 abnormal):
+• 24h urinary free cortisol (UFC): collect × 2; >3× ULN is highly suggestive
+• Late-night salivary cortisol (LNSC): 11pm sample × 2; easy to collect at home
+• Overnight 1mg dex suppression test: dexamethasone 1mg at 11pm → AM cortisol at 8am; >1.8 µg/dL = fail to suppress
+• CRH stimulation test or IPSS: to distinguish pituitary vs ectopic ACTH (after imaging)
+Acromegaly: IGF-1 (elevated); if elevated → GH after 75g oral glucose (not suppressed <0.4 ng/mL = acromegaly)
+DIABETES INSIPIDUS EVALUATION:
+Water deprivation test: fluid restriction → check UOsm, serum Na, UVol q2h; if UOsm >700 mOsm/kg = primary polydipsia (appropriate ADH response); if serum Na ≥145 or SOsm ≥295 → give desmopressin 4mcg IV → check UOsm at 30 and 60 min; UOsm rise >100% from base = complete AVP-D; 15-100% = partial AVP-D or AVP-R
+MRI pituitary (mandatory for all suspected pituitary pathology): with and without gadolinium; request pituitary protocol (thin cuts through sella)
+Visual fields: formal Humphrey visual field testing if macroadenoma or lesion near chiasm`,
+    management: `HYPOPITUITARISM REPLACEMENT:
+RULE: replace cortisol BEFORE thyroid hormone in combined deficiency (avoid adrenal crisis)
+ACTH deficiency (2° adrenal insufficiency): hydrocortisone 15-20mg/day in 2-3 divided doses (e.g., 10mg AM + 5mg noon + 5mg PM); sick day rules: double dose for fever/illness; if vomiting/NPO → switch to IV hydrocortisone 50-100mg q8h
+TSH deficiency (central hypothyroidism): levothyroxine 1.6 mcg/kg/day; monitor free T4 (NOT TSH — unreliable in central hypothyroidism); titrate to maintain free T4 in mid-upper normal range
+LH/FSH deficiency: women → estrogen/progesterone replacement; men → testosterone IM/gel; fertility: FSH/LH replacement with gonadotropins
+GH deficiency: recombinant GH if symptomatic and other axes replaced; specialist-managed
+PROLACTINOMA:
+Micro (<10mm): cabergoline 0.5mg twice/week → titrate to normalize PRL; may stop after 2 years if PRL normal + tumor shrunken; MRI q6-12 months
+Macro (≥10mm): cabergoline; add estrogen/testosterone if hypogonadal; ophthalmology; MRI q3-6 months initially; pregnancy: stop cabergoline when pregnant (discuss with endocrinology)
+Cabergoline: 0.5mg 2×/week → titrate to target PRL; SE: nausea, dizziness, constipation, impulse control disorders; cardiac valve monitoring if high cumulative dose
+CUSHING'S DISEASE:
+Transsphenoidal surgery: first-line; cure rate 65-85% for microadenomas; lower for macroadenomas
+Medical bridge (if surgery delayed or failed): ketoconazole 200mg TID → titrate; metyrapone; osilodrostat; mifepristone (does not normalize cortisol, clinical improvement + glucose); monitor adrenal insufficiency risk
+Post-op: cortisol suppression confirms cure; replace steroids and taper over 6-12 months
+ACROMEGALY:
+Surgery: transsphenoidal; cure rate varies by tumor size
+Somatostatin analogs: octreotide LAR or lanreotide autogel; indicated if surgery not curative or patient not surgical candidate; pegvisomant (GH receptor antagonist) for resistance
+AVP DEFICIENCY (Central DI):
+Desmopressin (DDAVP): intranasal 10-40mcg qday-TID; PO 0.1-1.2mg qday-TID; IV/SC 0.5-4mcg qday; start low and titrate
+KEY RISKS: hyponatremia from DDAVP overuse (dilutional hyponatremia) — especially at night; advise patient to allow "breakthrough" polyuria 1×/week to prevent water intoxication; if impaired thirst or cognitive impairment → prescribe water intake and monitor Na closely
+Adjust timing for nocturnal polyuria vs daytime frequency
+NEPHROGENIC DI (AVP Resistance):
+Treat underlying cause: stop lithium if possible; correct hypercalcemia; correct hypokalemia; treat CKD
+HCTZ 12.5-25mg qday: paradoxical antidiuresis (volume depletion → increased proximal Na/water reabsorption → less water delivered to collecting duct)
+Amiloride: particularly for lithium-induced (blocks Li entry via ENaC)
+NSAIDs: enhance renal response to residual ADH; use cautiously in CKD
+Indomethacin: most effective adjunct for nephrogenic DI; monitor renal function`,
+    monitoring: `• Prolactinoma: PRL level q3-6 months on cabergoline; MRI q6-12 months initially; if PRL normal × 2 years and MRI stable → consider stopping cabergoline (50% remain in remission off treatment)
+• Cushing's: post-op morning cortisol (should be <2 µg/dL for cure); UFC normalization; bone density (DEXA); glucose (remission often improves DM)
+• AVP-D on desmopressin: serum Na weekly initially, then monthly once stable; urine output diary; warn patient about hyponatremia risk
+• Hypopituitarism replacement: free T4 (mid-upper normal range), morning cortisol or cort stim at 6 months post-start, IGF-1 (GH replacement), morning testosterone (M) or estradiol (F); MRI pituitary q1-2 years`,
+    disposition: `• Endocrinology: all pituitary disorders — complex hormonal evaluation and management
+• Neurosurgery: macroadenoma with visual compromise, pituitary apoplexy, Cushing's disease, acromegaly (surgery first-line), craniopharyngioma
+• Ophthalmology: macroadenoma or visual symptoms — formal visual field testing before and after surgery; annual if adenoma near chiasm
+• Endocrinology URGENT: pituitary apoplexy (sudden headache + visual loss + hormonal crisis — IV hydrocortisone 100mg q8h + neurosurgery consultation STAT)`
+  },
+
+  // ════════════════════ NEURO / PSYCH — MISSING TEMPLATES ════════════════════
+
+  {
+    id: "headache-vertigo",
+    system: "neuro",
+    title: "Headache & Vertigo — Approach, Migraine, BPPV, Central vs Peripheral",
+    keywords: ["headache","migraine","tension headache","POUND criteria","thunderclap headache","SAH headache","secondary headache","red flags headache","inpatient migraine","ketorolac headache","prochlorperazine","metoclopramide","valproate IV","vertigo","BPPV","benign positional paroxysmal vertigo","Epley maneuver","vestibular neuritis","Meniere disease","HINTS exam","peripheral vertigo","central vertigo","dizziness","meclizine","vestibular migraine"],
+    source: { chapter: "Neurology", section: "Headache & Vertigo", pages: "188", authors: "Hendrik Greve",
+      keyFacts: [
+        "Headache red flags (secondary HA — requires neuroimaging): thunderclap (worst HA of life — SAH until proven otherwise), new HA >50yo or immunocompromised, positional HA, HA with fever/nuchal rigidity/papilledema, HA with focal neuro deficit/AMS, HA in patient with cancer/HIV/VPS, progressive worsening over weeks",
+        "Migraine diagnosis (POUND criteria, ≥3/5): Pulsating quality, 4-72 hOurs, Unilateral (though ~50% bilateral), Nausea, Disabling severity; migraine with aura = reversible focal neuro symptoms (visual scotoma, sensory, language, motor) preceding HA by minutes",
+        "Inpatient migraine management (stepwise): Step 1: IV fluids 1L + Mg sulfate 2g IV + ketorolac 15-30mg IV + antiemetic (prochlorperazine 10mg IV or metoclopramide 10mg IV) + diphenhydramine 25mg (prevents EPS); Step 2 (if no improvement at 60 min): valproate 500-750mg IV (negative pregnancy test first) or droperidol 2.5-5mg IV/IM or haloperidol 5mg IM",
+        "HINTS exam for acute vertigo (3 components — ALL three must be low-risk for peripheral diagnosis): Head Impulse test (corrective saccade present = peripheral/reassuring; absent = central/alarming), Nystagmus (unidirectional = peripheral; direction-changing or vertical = CENTRAL), Test of Skew (vertical eye misalignment = central); HINTS more sensitive than MRI at <24-48h for posterior fossa stroke",
+        "Peripheral vs central vertigo: peripheral (BPPV, labyrinthitis, vestibular neuritis) = severe nausea/vomiting, hearing symptoms, positional — if exam reassuring, no imaging needed; central (vertebrobasilar ischemia/TIA, cerebellar/brainstem hemorrhage, MS) = severe imbalance, few hearing symptoms, direction-changing nystagmus — MRI with thin brainstem cuts + DWI + MRA head/neck"
+      ]
+    },
+    assessment: `#Headache / Vertigo Assessment
+HEADACHE:
+Onset: *** | Quality: *** | Severity (/10): *** | Location: *** | Duration: ***
+POUND criteria (migraine): Pulsating [ ] | 4-72h [ ] | Unilateral [ ] | Nausea [ ] | Disabling [ ] | Score: /5
+Aura: visual scotoma/scintillating [ ] / sensory [ ] / speech [ ] / motor [ ] | Preceding HA by: *** min
+RED FLAGS (secondary HA — imaging needed):
+[ ] Thunderclap/worst HA of life → CT non-contrast head STAT (SAH)
+[ ] New HA >50yo or immunocompromised
+[ ] Focal neuro deficit/AMS/papilledema
+[ ] Fever + nuchal rigidity → LP after CT
+[ ] Postural component or worse with Valsalva
+[ ] Cancer/HIV/VPS history
+[ ] Progressive worsening over days-weeks
+CT head ordered: [ ] Yes  [ ] No | LP ordered: [ ] Yes  [ ] No
+VERTIGO:
+Type: episodic [ ] / continuous [ ] | Positional component: [ ] Yes  [ ] No
+HINTS EXAM (for acute constant vertigo):
+Head Impulse: corrective saccade [ ] (peripheral) / no saccade [ ] (central — alarming)
+Nystagmus: unidirectional [ ] (peripheral) / direction-changing [ ] / vertical [ ] (central — alarming)
+Test of Skew: no deviation [ ] / vertical deviation [ ] (central — alarming)
+Hearing loss/tinnitus: [ ] Yes (→ labyrinthitis/Meniere's) | Duration of vertigo episode: ***
+NIHSS: *** | Gait: normal [ ] / unable to walk [ ] (→ central concern)`,
+    ddx: `HEADACHE CLASSIFICATION:
+PRIMARY HEADACHES (no secondary cause):
+MIGRAINE: POUND ≥3/5; unilateral pulsating ± aura ± N/V/photophobia/phonophobia; triggers: menstruation, sleep changes, stress, foods; functional disability; MOST COMMON cause of severe episodic HA in young women
+TENSION-TYPE: band-like bilateral pressure, mild-moderate intensity, 30min-7 days, no nausea; treat with NSAIDs/acetaminophen; chronic (>15 days/month) requires preventive therapy
+CLUSTER: unilateral severe periorbital/temporal pain + ipsilateral autonomic features (tearing, rhinorrhea, ptosis, miosis, conjunctival injection); 15-180 min; 1-8 attacks/day for weeks; mostly men; 100% O2 + sumatriptan SC for acute; verapamil for prevention
+SECONDARY HEADACHES (red flags — must exclude):
+THUNDERCLAP (WORST HA OF LIFE): SAH until proven otherwise → CT non-contrast head STAT (97% Sn within 6h); if CT negative + high suspicion → LP (xanthochromia 12h after onset); also consider: RCVS (reversible cerebral vasoconstriction syndrome), cerebral venous sinus thrombosis (CVST), posterior reversible encephalopathy syndrome (PRES)
+ELEVATED ICP: worse with lying flat, Valsalva, position changes; papilledema; progressive worsening; causes: tumor, pseudotumor cerebri (IIH), hydrocephalus
+MENINGITIS/ENCEPHALITIS: fever + nuchal rigidity + HA → LP (see Meningitis template)
+CEREBRAL VENOUS SINUS THROMBOSIS (CVST): gradual onset; venous sinus pattern on CT venography/MRI; risk factors: OCP, pregnancy/postpartum, hypercoagulable; treat with anticoagulation
+GIANT CELL ARTERITIS (GCA): >50yo; temporal headache + jaw claudication + scalp tenderness; ESR >50; treat empirically immediately if visual symptoms
+IDIOPATHIC INTRACRANIAL HYPERTENSION (IIH, pseudotumor cerebri): obese women of childbearing age; daily HA + pulsatile tinnitus + vision changes; papilledema; LP opening pressure >25 cmH2O; treatment: acetazolamide + weight loss + serial LPs if refractory
+VERTIGO DDx:
+PERIPHERAL (inner ear/vestibular nerve):
+• BPPV: most common; brief (seconds-1min), intense positional vertigo; Dix-Hallpike positive (upbeat-torsional nystagmus); treat with Epley maneuver (89% cure rate)
+• Vestibular neuritis/labyrinthitis: constant moderate-severe vertigo for hours-days after viral URI; no positional component; labyrinthitis also has hearing loss; HINTS exam: corrective saccade on head impulse (peripheral); no imaging needed if HINTS reassuring
+• Meniere's disease: episodic vertigo (20min-12h) + unilateral low-frequency hearing loss + tinnitus + aural fullness; audiogram confirms; low-sodium diet + hydrochlorothiazide/acetazolamide; intratympanic steroid/gentamicin for refractory
+• Herpes zoster oticus (Ramsay Hunt): auricular vesicles + facial nerve palsy + vertigo; treat with acyclovir + steroids
+CENTRAL (brainstem/cerebellum — REQUIRES IMAGING):
+• Posterior fossa stroke/TIA: abrupt onset; severe gait instability; absent catch-up saccade on head impulse (most alarming sign); direction-changing nystagmus; MRI DWI + MRA head/neck; HINTS exam: ANY ONE of absent head impulse saccade, direction-changing nystagmus, or vertical skew = central
+• Cerebellar hemorrhage: severe ataxia, inability to walk, headache; CT non-contrast immediately
+• MS: young patient; other demyelinating history; MRI white matter lesions
+• Vestibular migraine: history of migraines; episodic vertigo without hearing loss; treat as migraine`,
+    workup: `SECONDARY HEADACHE WORKUP:
+• CT non-contrast head: FIRST for thunderclap, AMS, focal deficit, trauma (non-contrast to detect blood)
+• CT with contrast: if tumor, abscess, or meningitis concern
+• MRI brain: superior for posterior fossa, parenchymal lesions, CVST (with MRV), white matter disease, PRES
+• LP: if CT negative and subarachnoid hemorrhage still suspected (xanthochromia detected 12h post onset); also for suspected meningitis/encephalitis (see Meningitis template); opening pressure for IIH
+• ESR/CRP/temporal artery biopsy: if GCA suspected (>50yo + headache + jaw claudication)
+• MRV (MR venography): if CVST suspected (postpartum, OCP, prothrombotic state, subacute HA)
+• Ophthalmologic exam: papilledema assessment in IIH; visual field deficits
+VERTIGO WORKUP:
+• HINTS exam (by exam): head impulse + nystagmus + skew; if ANY central feature → MRI
+• MRI brain (thin cuts through posterior fossa + coronal DWI): if HINTS suggests central pattern, cannot walk, new severe headache, focal deficit, or elderly with vascular risk factors
+• MRA head + neck: if posterior fossa stroke suspected
+• Audiogram: if hearing loss or tinnitus (Meniere's evaluation)
+• Dix-Hallpike test: if episodic positional vertigo (BPPV evaluation)`,
+    management: `INPATIENT MIGRAINE (step-up protocol per WB):
+Step 1 (all patients, simultaneously):
+1. IV fluids: 1L NS or LR (adjust for comorbidities)
+2. Magnesium sulfate 2g IV over 15-20 min (acute abortive effect)
+3. Analgesic: ketorolac 15-30mg IV OR naproxen 500mg PO OR ibuprofen 400-800mg PO OR indomethacin 25mg PO
+4. Antiemetic (choose one): prochlorperazine 10mg IV/PO OR metoclopramide 10mg IV OR chlorpromazine 25mg IV/PO
+5. Diphenhydramine 25mg IV/PO (prevents EPS from dopamine antagonists AND promotes sleep)
+Step 2 (if no improvement at 60 minutes):
+1. Valproate (VPA) 500-750mg IV (check pregnancy test first — TERATOGENIC; category X)
+2. OR droperidol 2.5-5mg IV/IM (check QTc — EKG before administering)
+3. OR haloperidol 5mg IM/IV (check QTc)
+NOTE: triptans (sumatriptan 6mg SC) effective but avoid in hemiplegic migraine, basilar migraine, severe cardiovascular disease, or within 24h of ergotamine
+Recurrent headache prevention (if ≥2 hospital admissions or ≥4 HA days/month): neurology referral; oral options — topiramate, propranolol, amitriptyline, venlafaxine, CGRP monoclonal antibodies (erenumab, fremanezumab)
+BPPV:
+Dix-Hallpike + Epley maneuver: turn head 45° to affected side, lie back quickly with head extended 30°, wait 1 min for nystagmus, rotate head 90° opposite, rotate body 90° further in same direction, sit up; 89% effective in one session; advise to sleep semi-recumbent for 48h
+If Epley fails or particles in horizontal canal: modified Epley, Semont maneuver, or referral to vestibular PT
+VESTIBULAR NEURITIS/LABYRINTHITIS:
+Acute (first 48-72h): vestibular suppressants for severe symptoms — meclizine 12.5-25mg PO TID (use ≤2 weeks to avoid impeding central compensation), lorazepam 0.5-1mg PO PRN, or diazepam 2-5mg PO PRN; metoclopramide or prochlorperazine for N/V
+Labyrinthitis: methylprednisolone 100mg qday × 3 days then taper (reduces hearing loss); valacyclovir 1g TID × 7 days if herpes zoster suspected
+Vestibular PT: start as soon as acute phase controlled — promotes central compensation
+MENIERE'S DISEASE:
+Dietary: low-sodium diet <2g/day; limit caffeine and alcohol
+Medical: hydrochlorothiazide 25-50mg qday or acetazolamide 250mg BID (reduces endolymphatic pressure)
+Acute attacks: vestibular suppressants (meclizine, diazepam); intratympanic steroid injection for refractory
+Refractory: intratympanic gentamicin (ablative), endolymphatic sac surgery, labyrinthectomy (last resort)`,
+    monitoring: `• Thunderclap HA: serial neuro checks after CT + LP negative; 6-week follow-up MRI/MRA if diagnosis unclear (occasional false-negative initial imaging)
+• Migraine inpatient: reassess at 1h (pain scale, nausea); if not improving by step 2 → neurology consult
+• BPPV: reassess Dix-Hallpike after Epley; most patients improve same day; ENT/neurology if refractory after 3 Epley maneuvers
+• Central vertigo: hourly neuro exam; serial NIHSS; MRI DWI within 24-72h if initial MRI negative and posterior fossa stroke still suspected (cerebellar DWI can be falsely negative early)`,
+    disposition: `• Neurology STAT: any central vertigo features on HINTS, new focal neuro deficits, thunderclap with negative CT (LP needed), suspected GCA with visual symptoms, papilledema/IIH
+• Neurosurgery: SAH on CT, large cerebellar hemorrhage (>3cm or obstructing 4th ventricle), hydrocephalus
+• ENT: Meniere's disease refractory to medical management, Ramsay Hunt syndrome with facial nerve involvement
+• Outpatient neurology: migraine requiring preventive therapy, IIH, recurrent unexplained vertigo`
+  },
+
+  {
+    id: "neuroprognostication",
+    system: "neuro",
+    title: "Neuroprognostication / Brain Death",
+    keywords: ["neuroprognostication","brain death","death by neurologic criteria","apnea test","EEG neuroprognostication","SSEP","NSE","post cardiac arrest","CPC scale","cerebral performance category","brainstem reflexes","corneal reflex","oculocephalic reflex","cold calorics","pupillary reflex","TTM neuroprognostication","post anoxic encephalopathy","ancillary testing brain death","electrocerebral silence","coma prognosis"],
+    source: { chapter: "Neurology", section: "Neuroprognostication", pages: "194", authors: "Brenda Varriano",
+      keyFacts: [
+        "Neuroprognostication is inherently uncertain and should NEVER be the sole driver of goals-of-care decisions — use multimodal approach and avoid self-fulfilling prophecy bias; early withdrawal of life-sustaining treatment before adequate assessment can lead to poor outcomes in patients who would have recovered (MGH Neuroprognostication Guidelines)",
+        "Multimodal post-cardiac arrest prognostication (≥72h, or ≥72h after rewarming from TTM): clinical exam (most specific — bilateral absent corneal or pupillary reflexes at 72h have ~99% specificity for poor outcome) + EEG + SSEP + NSE + CT/MRI; use ≥2 concordant poor-prognostic findings before recommending withdrawal",
+        "EEG poor prognosis markers: absence of EEG reactivity, burst-suppression, generalized seizures/status epilepticus, alpha/delta coma patterns, electrocerebral silence; EEG reactivity to stimuli is a positive prognostic sign",
+        "Brain death (death by neurologic criteria): requires irreversible catastrophe + absence of metabolic/drug confounders + 3 clinical criteria: coma + absent brainstem reflexes + apnea (pCO2 rise ≥20 mmHg to >60 mmHg without spontaneous respiration); confirmatory ancillary testing (EEG, cerebral angiography, TCD, CTP) if apnea test cannot be completed",
+        "Apnea test protocol: pre-oxygenate FiO2 100% + PEEP 5 for 10 min → ABG → disconnect ventilator → deliver O2 6L/min via catheter → observe for 5-10 min → ABG; positive apnea test (confirms brain death): NO spontaneous respirations + pCO2 ≥60 mmHg AND increase ≥20 mmHg from baseline"
+      ]
+    },
+    assessment: `#Neuroprognostication / Brain Death Assessment
+INDICATION:
+[ ] Post-cardiac arrest prognostication (≥72h or ≥72h after TTM rewarming)
+[ ] Traumatic brain injury (TBI) prognostication
+[ ] Brain death evaluation (suspected irreversible loss of all brain function)
+CONFOUNDERS — must be absent before prognostication:
+Metabolic: Na *** | Glucose *** | Temp *** | pH *** | NH3 ***
+Sedative/medications: last benzodiazepine *** | last opioid *** | last NMB *** | 5 half-lives cleared: [ ] Yes
+Tox screen: *** | Hypothermia: *** (must be normothermic for brain death determination)
+CLINICAL EXAM (document time and examiner):
+Coma: GCS motor *** | Response to noxious stimuli: *** (absent decorticate/decerebrate posturing)
+Brainstem reflexes:
+  Pupils: R *** mm / L *** mm | Light reflex: R [ ] present [ ] absent | L [ ] present [ ] absent
+  Corneal reflex: R [ ] present [ ] absent | L [ ] present [ ] absent
+  Oculocephalic (doll's eyes): [ ] present [ ] absent | Oculovestibular (cold calorics): [ ] present [ ] absent
+  Gag reflex: [ ] present [ ] absent | Cough: [ ] present [ ] absent
+Status myoclonus (spontaneous, generalized, repetitive): [ ] Yes (poor prognosis)  [ ] No
+PROGNOSTIC TESTS:
+EEG: ordered *** | Result: *** | Reactivity: [ ] present [ ] absent
+SSEP (bilat. N20): ordered *** | Result: *** | Bilateral absence: [ ] Yes (poor prognosis)
+NSE (serial 24h, 48h, 72h): *** / *** / *** | >70 mcg/L = poor prognosis
+CT head (24-72h): *** | MRI (2-6d): *** | Diffuse DWI restriction: [ ] Yes (poor prognosis)
+BRAIN DEATH CHECKLIST (if applicable):
+Prerequisite conditions met: [ ] Yes | Apnea test: [ ] Completed (result: ***)
+Ancillary test (if apnea test incomplete): type *** | Result: ***`,
+    ddx: `POST-CARDIAC ARREST PROGNOSIS FRAMEWORK:
+CPC SCALE (Cerebral Performance Category):
+CPC 1 (Good): able to work; may have mild neurologic deficits
+CPC 2 (Moderate disability): capable of independent ADLs; sheltered work possible
+CPC 3 (Severe disability): conscious but dependent on others; severe dementia or paralysis
+CPC 4 (Vegetative state): coma or wakefulness without awareness
+CPC 5 (Brain death): apnea, areflexia, EEG silence
+Note: CPC 1-2 considered "good neurologic outcome" in cardiac arrest studies; however, patient/family values matter — some may not view CPC 1-2 as acceptable
+SELF-FULFILLING PROPHECY BIAS: All prognostic tests have FPR > 0 (will be "positive" in some patients who would have recovered); early withdrawal based on single test → death → "confirms" poor prognosis. Use multimodal approach with ≥2 concordant findings
+TIMING OF ASSESSMENT (critical):
+• All neurologic exam and biomarker tests must be performed ≥72h after cardiac arrest OR ≥72h after completion of TTM (rewarming)
+• MRI: not useful before 48h post-arrest (DWI may underestimate injury acutely); perform at 2-6 days
+• EEG: start immediately post-arrest, continue 24h post-rewarming; suppression-burst pattern early may improve
+• SSEP: perform at 48h post-arrest or rewarming
+MYOCLONUS vs. LANCE-ADAMS SYNDROME:
+Status myoclonus (<48h post-arrest): repetitive, generalized, unrelenting, involves face/limbs/axial → associated with poor prognosis
+Lance-Adams syndrome (post-anoxic action myoclonus): intention tremor/myoclonus upon voluntary movement; COMPATIBLE with good neurologic recovery; important to distinguish from status myoclonus
+BRAIN DEATH DDx (before declaring brain death — MUST EXCLUDE):
+Drug-induced coma: barbiturates, benzodiazepines, propofol, opioids; allow 5 half-lives or confirm subtherapeutic levels
+Locked-in syndrome: EEG activity present; voluntary vertical eye movements intact; NOT brain death
+Severe Guillain-Barré: absent brainstem reflexes can mimic brain death but EEG shows cortical activity; ancillary testing required
+Severe hypothermia: must be normothermic (≥36°C) before brain death determination
+Metabolic/endocrine: severe hyponatremia, hyperglycemia, hepatic encephalopathy, hypothyroidism (myxedema coma)`,
+    workup: `POST-CARDIAC ARREST MULTIMODAL ASSESSMENT:
+All tests should be performed at appropriate timepoints; use ≥2 concordant poor prognostic findings:
+1. CLINICAL EXAM (≥72h post-arrest or TTM rewarming):
+   • Status myoclonus within 48h: poor prognosis (specificity >90%)
+   • Bilateral absent pupillary or corneal reflexes at 72h: poor prognosis (~99% specificity)
+   • GCS motor 1-2 at 72h: poor sensitivity alone; use with other tests
+2. EEG (start immediately, continue for 24h after rewarming):
+   • Poor prognosis: electrocerebral silence, burst-suppression, alpha coma, absence of EEG reactivity to stimuli
+   • Status epilepticus post-arrest: independent predictor of poor outcome
+   • Continuous EEG preferred to 30-min routine EEG
+3. SSEP (Somatosensory Evoked Potentials) at 48h:
+   • Poor prognosis: bilateral absence of cortical N20 response (95-100% specificity for poor outcome in multiple studies)
+   • Bilateral N20 absence = thalamocortical pathway disruption
+4. NSE (Neuron-Specific Enolase) — serial at 24h, 48h, 72h:
+   • Poor prognosis: NSE >70 mcg/L at 24-48h; >59 mcg/L at 48-72h (Neurology 2022)
+   • Non-specific — elevated with RBC/platelet hemolysis; interpret cautiously with hemolysis
+5. CT HEAD at 48h post-arrest:
+   • Poor prognosis: widespread hypodensity (gray-white differentiation loss) in combination with poor clinical exam
+6. MRI BRAIN (DWI + ADC) at 2-6 days:
+   • Poor prognosis: extensive DWI restriction (restricted diffusion = cytotoxic edema = irreversible injury) in combination with other findings
+   • MRI not useful <48h (underestimates injury acutely)
+BRAIN DEATH EVALUATION:
+Prerequisites (ALL must be met):
+• Irreversible CNS catastrophe with known etiology
+• Absence of severe metabolic/electrolyte/endocrine abnormality
+• Normothermia (≥36°C)
+• Negative toxicology screen + clearance of CNS depressants (5 half-lives or subtherapeutic level confirmed)
+• Absence of neuromuscular blocking agents
+• Eucapnia (pCO2 35-45 mmHg at baseline) and euvolemia
+Clinical Exam (must be performed by Neurology/Neurosurgery attending or Neurocritical care fellow at MGH):
+• Coma: no response to noxious stimuli in extremities or head; no decorticate/decerebrate posturing
+• Absent brainstem reflexes: pupils (direct + consensual light reflex), corneal (bilateral), oculocephalic (doll's eyes), oculovestibular (cold calorics — 50mL ice water, watch for eye deviation), gag, cough
+Apnea Test (requires RT + Neurology/Neurosurgery attending):
+1. Pre-oxygenate: FiO2 100% + PEEP 5 cmH2O × 10 minutes
+2. Draw baseline ABG: must have pCO2 35-45 mmHg + pO2 ≥200 mmHg before disconnecting
+3. Disconnect ventilator
+4. Deliver O2 6 L/min via suction catheter down ETT
+5. Observe 5-10 minutes for spontaneous respirations
+6. Draw ABG: positive apnea test = NO spontaneous respirations AND (pCO2 ≥60 mmHg AND pCO2 rise ≥20 mmHg from baseline)
+7. Stop test if: SpO2 <90% × 3, cardiac arrhythmia, hemodynamic instability
+Ancillary Testing (if apnea test cannot be completed or clinical exam incomplete):
+• EEG: electrocerebral silence (flat EEG) confirms no cortical activity
+• Cerebral angiography: no intracranial blood flow (gold standard)
+• Transcranial Doppler (TCD): reverberating flow or systolic spikes only (no net forward flow)
+• CT perfusion (CTP): no cerebral perfusion`,
+    management: `POST-CARDIAC ARREST MANAGEMENT:
+• TTM/Temperature management: see Cardiac Arrest/TTM template; maintain 32-36°C × 24h; avoid fever >37.7°C for 72h
+• Avoid prognostication before 72h post-arrest (or 72h post-rewarming); medications affect exam
+• Continuous EEG for all comatose patients: treat seizures/status epilepticus aggressively (levetiracetam + fosphenytoin; propofol/midazolam for refractory SE)
+• Neurology consult for all post-arrest patients at 48-72h for prognostication assessment
+• Multimodal assessment approach — involve Neurology, critical care, palliative care, and social work in goals-of-care discussions
+• Document all prognostic findings with timestamps; re-examine over serial days
+• Involve family in discussions about CPC goals — what does meaningful recovery mean to the patient?
+BRAIN DEATH:
+• Neurology/Neurosurgery attending required for brain death declaration at MGH
+• Two clinical exams + apnea test required (or one exam + apnea test + confirmatory ancillary test)
+• Complete documentation in medical record
+• Notify organ procurement organization (OPO/New England Donor Services) BEFORE declaration for donation counseling
+• Brain death is LEGAL DEATH in all US states — maintain physiologic support only until declaration complete or donation logistics arranged
+• Family meeting: brain death education; translator if needed; social work support; chaplain`,
+    monitoring: `• Post-arrest: continuous EEG monitoring until at least 24h post-rewarming; daily clinical neuro exam with documentation of prognostic signs; serial NSE; monitor for fever (worsens prognosis)
+• Brain death evaluation: document time of each clinical exam; RT presence for apnea test; ancillary test report in chart`,
+    disposition: `• Neurology (urgent): all comatose post-arrest patients for prognostication at 48-72h; any clinical exam suggesting brain death; EEG interpretation
+• Neurocritical care: complex neuroprognostication, need for multimodal assessment
+• Palliative care / social work: all post-arrest comatose patients — goals of care, family support, code status discussions
+• New England Donor Services (OPO): contact when brain death suspected, BEFORE declaration — to counsel family about donation options`
+  },
+
+  {
+    id: "other-substance-use",
+    system: "neuro",
+    title: "Other Substance Use — Cocaine / Stimulants / Cannabis / Tobacco / Xylazine",
+    keywords: ["cocaine","stimulant","amphetamine","methamphetamine","MDMA","cannabis","cannabinoid hyperemesis","marijuana","tobacco","smoking cessation","varenicline","nicotine replacement","xylazine","stimulant intoxication","cocaine toxicity","cocaine chest pain","cocaine stroke","bupropion smoking","NRT","Section 35","involuntary commitment substance"],
+    source: { chapter: "Psychiatry", section: "Other Substance Use / Stimulants", pages: "203–207", authors: "Christopher Radcliffe",
+      keyFacts: [
+        "Cocaine/stimulant toxicity: sympathomimetic toxidrome — hypertension, tachycardia, hyperthermia, agitation, mydriasis; cocaine + chest pain → ACS must be excluded (troponin + EKG) but cocaine-induced coronary vasospasm is the most common mechanism; AVOID beta-blockers in cocaine toxicity (unopposed alpha stimulation worsens hypertension/vasospasm) — use benzodiazepines + CCBs (amlodipine/diltiazem) for BP control",
+        "Cocaine-induced cardiovascular: coronary vasospasm (most common cause of MI in young patients without CAD), aortic dissection (extreme HTN), STEMI (thrombus from endothelial damage), arrhythmias (VT/VF from Na+ channel blockade — widened QRS, Brugada-like pattern); if cocaine-induced Brugada pattern → sodium bicarbonate (1-2 mEq/kg IV)",
+        "Methamphetamine/amphetamine: longer-acting stimulant (t1/2 ~12h vs cocaine t1/2 ~1h); severe agitation, hyperthermia (rhabdomyolysis risk), cardiomyopathy (chronic use), psychosis (florid, indistinguishable from schizophrenia), dental decay (meth mouth); treat acute toxicity with high-dose benzodiazepines; cooling for hyperthermia",
+        "Cannabinoid hyperemesis syndrome (CHS): recurrent episodic N/V in chronic heavy cannabis users; pathognomonic relief with hot showers/baths; often misdiagnosed for years; confirm with cannabis cessation (sx resolve); treat acute: haloperidol 5-10mg IM/IV (superior to ondansetron per RCT), capsaicin cream applied topically to abdomen, IV fluids, lorazepam; cure = cannabis cessation",
+        "Tobacco cessation: varenicline (Champix/Chantix) is first-line (partial nicotinic receptor agonist); 0.5mg qday × 3d → 0.5mg BID × 4d → 1mg BID × 12 weeks; start 1-2 weeks before quit date; also effective BEFORE patient is ready to quit; combination NRT (patch + short-acting) + counseling; bupropion SR 150mg qday × 3d → 150mg BID × 12 weeks is an alternative"
+      ]
+    },
+    assessment: `#Other Substance Use Assessment
+SUBSTANCE(S): cocaine [ ] / amphetamine/meth [ ] / MDMA [ ] / cannabis [ ] / tobacco [ ] / xylazine [ ] / other: ***
+Last use: *** | Route: IV [ ] / intranasal [ ] / smoked [ ] / oral [ ]
+TOXIDROME (acute intoxication):
+Sympathomimetic: HR *** | BP *** | Temp *** | Pupils *** | Agitation [ ] | Diaphoresis [ ]
+COCAINE CARDIOVASCULAR SCREEN:
+Chest pain: [ ] Yes → EKG: *** | Troponin: *** | ST changes: ***
+QRS widened (>120ms) / Brugada pattern: [ ] Yes → sodium bicarbonate
+AVOID BETA-BLOCKERS in cocaine toxicity (unopposed alpha → BP + vasospasm)
+CANNABIS HYPEREMESIS:
+Chronic heavy cannabis use [ ] | Recurrent N/V [ ] | Relief with hot shower [ ] (pathognomonic)
+TOBACCO:
+Current smoker: *** packs/day × *** years | Ready to quit: [ ] Yes  [ ] No
+On cessation therapy: varenicline [ ] / bupropion [ ] / NRT [ ] | FTND score: ***
+RHABDOMYOLYSIS (hyperthermia/stimulant use):
+CK: *** | Cr: *** | UA for myoglobinuria: ***`,
+    ddx: `COCAINE/STIMULANT TOXICITY — DIFFERENTIAL:
+SYMPATHOMIMETIC TOXIDROME (cocaine/amphetamines/MDMA/bath salts/phenylephrine):
+• Hyperthermia + agitation + tachycardia + hypertension + diaphoresis + mydriasis
+• Cocaine: short-acting (t1/2 ~1h); nasal vasoconstriction → nasal septum perforation; local anesthetic (Na+ channel blocker → QRS widening, Brugada)
+• Methamphetamine: longer-acting (t1/2 ~12h); severe and prolonged sympathomimetic effects; psychosis persists days-weeks; higher rhabdomyolysis risk; cardiomyopathy with chronic use
+• MDMA (Ecstasy): euphoria + empathy + hyperthermia + hyponatremia (excessive water intake + SIADH from MDMA itself); serotonin syndrome features; cardiac arrhythmias
+Mimics: serotonin syndrome (clonus, hyperreflexia, tremor), NMS (rigidity, hyperthermia), anticholinergic toxidrome (dry skin, urinary retention, flushed), thyroid storm
+COCAINE CARDIOVASCULAR COMPLICATIONS:
+• ACS/MI: coronary vasospasm (#1 mechanism in young patients) + thrombus from endothelial injury; EKG + troponin; treat with NTG + ASA + CCB; AVOID beta-blockers
+• Aortic dissection: extreme HTN with cocaine → aortic tear; CTA chest
+• Arrhythmias: VF/VT from Na+ channel blockade; Brugada-like pattern on EKG; treat with NaHCO3 if wide QRS
+• Cocaine-induced pulmonary vasoconstriction: pulmonary hypertension with chronic use; crack lung (ARDS-like from crack cocaine inhalation)
+CANNABIS:
+• Acute intoxication: euphoria + relaxation + tachycardia + conjunctival injection + dry mouth + impaired cognition; psychosis with high-THC strains
+• Cannabinoid hyperemesis syndrome (CHS): cyclic vomiting in chronic heavy users; pathognomonic hot shower relief; treated incorrectly for years as gastroparesis or cyclic vomiting syndrome
+• EVALI (e-cigarette/vaping-associated lung injury): <90 days after e-cig/vape use; bilateral GGOs on CT; BAL with lipid-laden macrophages; possibly Vitamin E acetate in THC cartridges; diagnosis of exclusion
+XYLAZINE ("tranq"): veterinary alpha-2 agonist found in fentanyl supply (adulterant); bradycardia + respiratory depression + hypothermia; does NOT respond to naloxone (for the xylazine component); characteristic skin wounds (black eschar/necrosis); treat concomitant opioid OD with naloxone; wound care essential`,
+    workup: `COCAINE/STIMULANT TOXICITY:
+• Serum toxicology screen (MGH): quantitative EtOH, salicylates, APAP; qualitative TCAs; turnaround 2h
+• Urine drug screen (VDAU): amphetamines, cocaine, opiates, BZDs, oxycodone; does NOT include THC, buprenorphine, barbiturates, methadone, LSD, PCP; confirmation with mass spectrometry if clinical suspicion high with negative screen
+• EKG: QRS width (cocaine Na+ channel block → Brugada-like → NaHCO3), QTc (MDMA, droperidol used for treatment), ST changes (ACS)
+• Troponin: chest pain + cocaine use — ALWAYS check; elevated = ACS workup
+• CK, BMP: rhabdomyolysis screen with hyperthermia; AKI from rhabdo; hyperkalemia
+• LFTs: cocaine-induced hepatotoxicity (rare); MDMA liver failure (serotonin/hyperthermia)
+• Temperature: core temp for hyperthermia assessment
+• ABG: metabolic acidosis from hyperthermia/cocaine-induced lactic acidosis
+CANNABIS:
+• Urine THC: positive up to 30 days in chronic users (not diagnostic of acute intoxication)
+• EVALI: CT chest (bilateral GGOs, lower lobe predominance), BAL (lipid-laden macrophages), respiratory viral panel, BAL cultures, ferritin, ESR/CRP
+TOBACCO CESSATION WORKUP:
+• FTND (Fagerström Test for Nicotine Dependence): 0-2 = low; 3-4 = moderate; 5-6 = high; 7-10 = very high dependence; guides NRT dosing
+• Spirometry: COPD assessment in heavy smokers
+• Chest imaging: lung cancer screening CT for ≥20 pack-year smokers age 50-80 (USPSTF 2021)`,
+    management: `COCAINE/SYMPATHOMIMETIC TOXIDROME:
+Benzodiazepines (first-line): lorazepam 1-2mg IV/IM q10-15 min; escalate for agitation, HTN, tachycardia, seizures; HIGH doses may be needed; do NOT under-treat agitation (worsens hyperthermia)
+Hyperthermia: CRITICAL — active cooling measures (ice packs, evaporative cooling, cooling blanket); target temp <38.5°C; avoid dantrolene (not indicated for stimulant-induced hyperthermia)
+HTN management: benzodiazepines first; if inadequate → phentolamine (alpha-blocker, 5mg IV), nitroprusside, nitroglycerin; CCBs (diltiazem, amlodipine) for coronary vasospasm; AVOID BETA-BLOCKERS (unopposed alpha stimulation worsens HTN + coronary vasospasm)
+Cocaine-associated chest pain: EKG + troponin + aspirin 325mg; nitroglycerin SL/IV (coronary vasospasm); CCB if vasospasm; if confirmed STEMI → emergent PCI (coronary vasospasm vs thrombus often requires angiography); AVOID beta-blockers
+QRS widening/Brugada pattern: sodium bicarbonate 1-2 mEq/kg IV (reverses Na+ channel blockade); may repeat to narrow QRS
+Rhabdomyolysis: aggressive IVF (NS 1-2 mL/kg/h); goal UOP >200 mL/h; monitor K+ and Cr closely
+AMPHETAMINE/METH TOXICITY:
+High-dose benzodiazepines: diazepam preferred for longer half-life; lorazepam alternative; do NOT use haloperidol (QTc risk + lowers seizure threshold in stimulant toxicity)
+Psychosis: antipsychotics after agitation controlled; quetiapine or olanzapine; haloperidol if no other option (QTc monitoring)
+Hyperthermia: aggressive cooling; CK monitoring for rhabdomyolysis
+MDMA:
+Hyponatremia: 3% NaCl 100-150mL bolus if severe/symptomatic (Na <125 or AMS); symptomatic patients → ICU
+Hyperthermia: cooling; dantrolene if serotonin syndrome features
+Serotonin syndrome features: cyproheptadine 12mg PO then 4mg q4h; benzos for agitation
+CANNABINOID HYPEREMESIS SYNDROME:
+Acute: haloperidol 5mg IM/IV (superior to ondansetron — 1 RCT); capsaicin cream applied topically to abdomen (endocannabinoid receptor mechanism); lorazepam 1-2mg IV; IV fluids; antiemetics (ondansetron, metoclopramide, prochlorperazine) for comfort
+Cure: cannabis cessation (only definitive treatment)
+TOBACCO CESSATION:
+Varenicline (Chantix): 0.5mg qday × 3d → 0.5mg BID × 4d → 1mg BID × 12 weeks; start 1-2 weeks before quit date (or before patient is ready); NNT 5-6 (most effective pharmacotherapy); monitor for neuropsychiatric symptoms; caution with hx PTSD/SI (though recommended in other comorbid psych conditions)
+Combination NRT: long-acting (patch: 21mg/14mg/7mg in 6-week steps) + short-acting (gum 2mg or 4mg, lozenge, nasal spray); combination more effective than single NRT
+Bupropion SR: 150mg qday × 3d → 150mg BID × 12 weeks; start 1-2 weeks before quit date; CI: seizure disorder; relative CI: eating disorder, MAOI use
+Counseling: individual or group + medication is most effective; quit date in 2-4 weeks; telephone quitline (1-800-QUIT-NOW); abrupt cessation more effective than gradual taper (Annals 2016)
+EVALI: steroids (prednisone 40-60mg qday) if moderate-severe; e-cig/vape cessation; supportive care
+XYLAZINE:
+Acute OD: naloxone for concomitant opioid effect (titrate to RR >10 and SpO2 >90%, NOT normal consciousness); naloxone does NOT reverse xylazine component — supportive care for bradycardia/hypotension
+Wounds: standard wound care; refer to wound care clinic or plastic surgery for severe necrosis
+Section 35 (MA-specific — involuntary commitment for SUD): can be petitioned by MD, blood relative, spouse, guardian, police officer, or court official; for patients with "immediate likelihood of serious harm" due to SUD; court commits to involuntary inpatient SUD treatment`,
+    monitoring: `• Cocaine/stimulant: temperature q1h during active treatment; CK, BMP, EKG (QTc with antipsychotics); troponin at 6h if chest pain; urine output with rhabdomyolysis
+• CHS: dietary cessation in-hospital; follow N/V improvement; confirm cannabis abstinence at follow-up
+• Tobacco cessation: follow-up in 1-2 weeks; assess compliance, side effects, withdrawal symptoms; CO exhalation monitoring; A1c improvement in diabetics who quit; lipid panel improvement`,
+    disposition: `• ICU: cocaine-induced STEMI/arrhythmia, severe hyperthermia (>40°C), rhabdomyolysis with AKI, severe hyponatremia from MDMA (<120 mEq/L), EVALI with respiratory failure
+• Addiction Consultation Team (ACT at MGH): all patients with active SUD — tobacco cessation counseling, buprenorphine/methadone for OUD, substance-specific counseling; low-barrier Bridge Clinic
+• Dermatology/Wound care: xylazine wounds with necrosis/eschar
+• Outpatient: tobacco cessation follow-up at 1-2 weeks; SUD treatment linkage (outpatient methadone clinic, buprenorphine prescriber, SAMHSA locator)`
+  },
+
+  {
+    id: "rheum-autoantibodies",
+    system: "rheum",
+    title: "Rheumatologic Autoantibodies — Complete Reference",
+    keywords: ["autoantibodies","ANA","anti-dsDNA","anti-Sm","anti-RNP","anti-Ro","anti-La","SSA","SSB","anti-centromere","anti-Scl70","anti-RNA polymerase","Jo-1","Mi-2","MDA-5","TIF1 gamma","SRP","HMGCR","PR3 ANCA","MPO ANCA","anti-GBM","antiphospholipid","RF","anti-CCP","lupus anticoagulant","anti-cardiolipin","beta 2 glycoprotein","myositis panel","antisynthetase","MCTD","mixed connective tissue"],
+    source: { chapter: "Rheumatology", section: "Autoantibodies", pages: "168", authors: "Folake Adegboye",
+      keyFacts: [
+        "ANA (antinuclear antibodies): 5% of healthy people test positive at low titer (≤1:160 often false positive); positive in MCTD (100%), SLE (98%), SSc (90%), drug-induced lupus (90%), Sjogren's (60%), PM/DM (50%); order only when ≥2 clinical features suggest CTD — NOT as a general screening test; if positive at ≥1:80 → order disease-specific antibodies guided by clinical presentation",
+        "Anti-dsDNA (~70% SLE sensitivity, ~95% specific): correlates with SLE disease activity and nephritis — use to MONITOR disease (unlike anti-Sm which stays positive in remission); low complement (C3/C4) + rising anti-dsDNA = impending flare/nephritis",
+        "Myositis-specific antibodies (MSAs): anti-Jo-1 = antisynthetase syndrome (myositis + ILD + polyarthritis + mechanic's hands + Raynaud's + fever); anti-MDA-5 = clinically amyopathic DM + rapidly progressive ILD (high mortality); anti-TIF1γ = dermatomyositis + malignancy association (cancer screen in ALL adults); anti-HMGCR = immune-mediated necrotizing myopathy (IMNM) from statin exposure — does NOT resolve with statin discontinuation; anti-SRP = rapidly progressive, steroid-refractory IMNM",
+        "SSc antibodies predict phenotype: anti-centromere = limited SSc/CREST (calcinosis, Raynaud's, esophageal dysmotility, sclerodactyly, telangiectasias) + PAH risk; anti-Scl70 (topoisomerase I) = diffuse SSc + ILD risk; anti-RNA polymerase III = diffuse SSc + rapid skin thickening + scleroderma renal crisis risk",
+        "APLAS panel: order all three together; send warm (lupus anticoagulant is heat-labile); positive result must be confirmed ≥12 weeks later (transient positivity ≠ APLAS diagnosis); triple-positive APLAS (all 3 antibody types) = highest thrombotic risk; DOACs inferior to warfarin for APLAS"
+      ]
+    },
+    assessment: `#Autoantibody Interpretation Guide
+WHEN TO ORDER ANA:
+Order ONLY when ≥2 clinical features suggest CTD (inflammatory arthritis, photosensitivity, serositis, Raynaud's, oral ulcers, unexplained cytopenias, rash, sicca, unexplained ILD)
+Do NOT order as a "screening test" for fatigue, myalgias, or non-specific symptoms
+If ANA POSITIVE (≥1:80):
+  Pattern: homogeneous → anti-dsDNA, anti-histone (drug-induced lupus)
+  Pattern: speckled → anti-Sm, anti-RNP, anti-Ro/La, anti-centromere
+  Pattern: nucleolar → anti-Scl70, anti-RNA pol III, anti-nucleolar
+  Pattern: cytoplasmic → anti-Jo-1, anti-SRP, anti-ribosomal P
+Next: order disease-specific antibodies guided by ANA pattern + clinical features
+ANA NEGATIVE but CTD suspected:
+  ANCA-associated vasculitis (GPA/MPA): order PR3 + MPO ANCA directly
+  Seronegative myositis: order myositis panel
+  APLAS: order lupus anticoagulant + anti-cardiolipin + anti-β2GP1 directly`,
+    ddx: `FULL AUTOANTIBODY REFERENCE TABLE:
+ANTIBODY | ANTIGEN | DISEASE ASSOCIATION | CLINICAL PEARLS
+
+RF (IgM anti-Fc) | Fc-gamma region | RA (70-90%), Sjogren's (75-95%), cryoglobulinemia (40-100%), SBE, HCV, HBV, healthy elderly (10-15%) | Positive in 5-10% healthy people; seropositive RA = more erosive disease + extra-articular manifestations; high titer (>1:160) more specific for RA; does NOT track disease activity
+
+anti-CCP | Citrullinated peptides | RA (50-75%) | Most SPECIFIC test for RA; a/w erosive disease and extra-articular manifestations; does NOT track disease activity; used for diagnosis only
+
+ANA | Multiple nuclear antigens | CTD screen (SLE 98%, MCTD 100%, SSc 90%, Sjogren's 60%, DM/PM 50%, RA 25-30%) | False positive in: autoimmune hepatitis, PBC, IBD, myasthenia gravis, thyroid disease; 5% healthy people; PPV is LOW in low-pretest populations; titer and pattern guide next test
+
+anti-dsDNA | Double-stranded DNA | SLE (~70% Sn, ~95% Sp) | Correlates with disease ACTIVITY (rises before flare, falls in remission) — use to monitor; associated with lupus nephritis; consumable with complement (C3/C4 low when active)
+
+anti-Sm | Smith antigen (snRNP) | SLE (30%) | Highly SPECIFIC for SLE (~99%); does NOT track disease activity (stays positive in remission); used for diagnosis only; anti-Sm positive → confirms SLE regardless of other serology
+
+anti-RNP | U1-snRNP protein | MCTD (100%), SLE (30-50%), SSc, Sjogren's | High-titer anti-RNP = MCTD (mixed CTD features: Raynaud's + puffy fingers + myositis + arthritis + esophageal dysmotility); required for MCTD diagnosis; lower titers in overlap CTD
+
+anti-Ro (SS-A) | Ro60/Ro52 RNA-protein | Sjogren's (70-75%), SLE (35%), neonatal lupus, congenital heart block | Associated with: sicca symptoms, neonatal lupus (skin rash + heart block in baby), congenital complete heart block (anti-Ro crosses placenta); can be present in ANA-negative lupus
+
+anti-La (SS-B) | La RNA-binding protein | Sjogren's (50%), SLE (15%) | Less sensitive than anti-Ro; almost always occurs WITH anti-Ro; highly specific for Sjogren's when anti-Ro present
+
+anti-Scl70 (anti-topoisomerase I) | DNA topoisomerase I | Diffuse SSc (30%) | Predicts DIFFUSE SSc phenotype (widespread skin thickening); associated with ILD risk (NSIP/UIP pattern); poor prognosis for ILD; higher prevalence in Black patients with SSc
+
+anti-centromere | Centromere proteins (CENP-A/B/C) | Limited SSc/CREST (60-90%) | Predicts LIMITED SSc (calcinosis, Raynaud's, esophageal dysmotility, sclerodactyly, telangiectasias); associated with PAH risk; protective against ILD compared to anti-Scl70
+
+anti-RNA pol III | RNA polymerase III | Diffuse SSc (25%) | Predicts RAPID skin thickening in diffuse SSc; associated with SCLERODERMA RENAL CRISIS risk (monitor BP closely); may overlap with anti-cancer Ab (occult malignancy)
+
+MYOSITIS-SPECIFIC ANTIBODIES (MSAs):
+anti-Jo-1 | tRNA synthetase (His) | DM/PM (~20%), antisynthetase syndrome | Antisynthetase syndrome = myositis + ILD (70%) + polyarthritis + mechanic's hands + Raynaud's + fever; most common MSA; ILD can be severe
+
+anti-Mi-2 | Mi-2 HDAC complex | DM (15-20%) | Classic dermatomyositis phenotype (V-sign, shawl sign, Gottron's papules); acute onset; good response to steroids; correlates with disease activity
+
+anti-MDA-5 | MDA-5 dsRNA helicase | DM (amyopathic) | Clinically amyopathic DM (skin findings without significant muscle weakness) + RAPIDLY PROGRESSIVE ILD (poor prognosis); palmar papules; ulcerating skin lesions; high mortality from ILD
+
+anti-TIF1γ | TIF1-gamma transcription factor | Adult DM | Strong association with MALIGNANCY in adult DM (~25% have new cancer within 3 years of dx); mandatory cancer screening (CT C/A/P + mammogram + colonoscopy + pelvic US)
+
+anti-SRP | Signal recognition particle | PM (necrotizing) | Immune-mediated necrotizing myopathy (IMNM); very high CK; rapidly progressive; often steroid-refractory; IVIG + rituximab often needed
+
+anti-HMGCR | HMG-CoA reductase | Necrotizing myopathy | Statin-associated IMNM (70% statin exposure); very high CK; does NOT resolve with statin discontinuation (unlike statin myopathy); IVIG + immunosuppression required; non-statin cases also occur
+
+VASCULITIS ANTIBODIES:
+PR3-ANCA (c-ANCA) | Proteinase 3 | GPA (90%) | Cytoplasmic staining pattern; GPA = granulomatosis with polyangiitis (upper airways + lungs + kidneys); poor correlation of TITER with disease activity; use for diagnosis; check for relapse with clinical features
+
+MPO-ANCA (p-ANCA) | Myeloperoxidase | MPA (70%), EGPA (50%) | Perinuclear staining pattern; MPA = microscopic polyangiitis (pulmonary-renal syndrome); better titer-activity correlation than PR3; drug-induced AAV (hydralazine, PTU, minocycline — often both PR3 and MPO positive)
+
+anti-GBM | Glomerular basement membrane (type IV collagen) | Anti-GBM disease (Goodpasture's) | Rapidly progressive GN + pulmonary hemorrhage (alveolar hemorrhage); 10-30% of ANCA also have anti-GBM (double-positive = worse prognosis); ALWAYS check anti-GBM if DAH or RPGN
+
+ANTIPHOSPHOLIPID ANTIBODIES:
+Lupus anticoagulant (LA) | Phospholipid-binding proteins | APLAS | Paradoxically PROLONGS clotting time (PTT) in vitro despite causing thrombosis in vivo; most potent predictor of thrombosis in APLAS; send in citrate tube and send WARM to coagulation lab
+
+anti-cardiolipin (aCL) | Cardiolipin | APLAS | IgG isotype most clinically relevant; can be transiently positive with infections (syphilis, malaria, EBV, COVID); must confirm ≥12 weeks later
+
+anti-β2GP1 | Beta-2 glycoprotein I | APLAS | Anti-β2GP1 IgG = strongest predictor of arterial thrombosis in APLAS; triple positive APLAS (all 3 positive) = highest thrombotic and obstetric risk
+
+OTHER:
+anti-histone | Histones | Drug-induced lupus (DIL) (90%) | DIL: milder than SLE, usually no nephritis; drugs: procainamide, hydralazine, isoniazid, methyldopa; resolves with drug discontinuation; anti-Sm and anti-dsDNA usually negative in DIL
+
+anti-ribosomal P | Ribosomal P protein | SLE (neuropsychiatric) | Associated with neuropsychiatric lupus (psychosis, depression); low sensitivity; supports lupus diagnosis in seronegative setting
+
+anti-topoisomerase II | Topo II | Rare SSc | Rare; differentiate from Topo I (Scl-70)
+
+cryoglobulins | IgG/IgM immune complexes | Cryoglobulinemia (HCV, lymphoma, CTD) | Send warm (37°C tube); cryocrit; associated with palpable purpura + GN + neuropathy; HCV underlying in >90%`,
+    workup: `ANTIBODY ORDERING STRATEGY:
+Step 1 — ANA screening (only if ≥2 CTD features):
+  If ≥1:80: order pattern-specific antibodies
+  If negative but CTD strongly suspected: consider direct ordering of specific antibodies
+Step 2 — Pattern-directed specific antibodies:
+  Homogeneous: anti-dsDNA + anti-histone
+  Speckled (fine/coarse): anti-Sm, anti-RNP, anti-Ro/La, anti-Scl70, anti-centromere
+  Nucleolar: anti-Scl70, anti-RNA pol III
+  Cytoplasmic: myositis panel (Jo-1, Mi-2, MDA-5, TIF1γ, SRP, HMGCR)
+Step 3 — Disease-specific panels:
+  Suspected SLE: anti-dsDNA + anti-Sm + anti-RNP + anti-Ro + anti-La + C3/C4 + APLAS panel
+  Suspected SSc: anti-Scl70 + anti-centromere + anti-RNA pol III + anti-Ro
+  Suspected myositis: FULL myositis panel (Jo-1, Mi-2, MDA-5, TIF1γ, SRP, HMGCR, PL-7, PL-12)
+  Suspected Sjogren's: anti-Ro + anti-La (+ minor salivary gland biopsy for definitive dx)
+  Suspected ANCA vasculitis: ANCA panel (PR3 + MPO by ELISA) + anti-GBM
+  Suspected APLAS: lupus anticoagulant + anti-cardiolipin IgG/IgM + anti-β2GP1 IgG/IgM (all 3, send together, warm)
+COMMON PITFALLS:
+• ANA is NOT a disease activity marker for SLE — use anti-dsDNA + C3/C4 to monitor
+• anti-CCP is NOT a disease activity marker for RA — use CRP/ESR + DAS28
+• Low titer ANA (≤1:160) is often clinically insignificant; avoid reflexive specific antibody panels
+• Cryoglobulins: must transport immediately to lab at 37°C or tube kept warm in pocket
+• APLAS: lupus anticoagulant is falsely positive with therapeutic anticoagulation (warfarin/heparin); draw before starting AC when possible`,
+    management: `ANTIBODY RESULTS — CLINICAL IMPLICATIONS:
+Rising anti-dsDNA + falling C3/C4 + worsening urinalysis → impending lupus nephritis → consult nephrology, consider kidney biopsy, do NOT increase immunosuppression without biopsy confirmation
+Positive anti-TIF1γ in adult with DM → mandatory malignancy screening (CT C/A/P, mammogram, pelvic US, colonoscopy, PSA) even if no clinical suspicion
+Positive anti-MDA-5 + ILD + amyopathic DM → urgent pulmonology + rheumatology; rapidly progressive ILD (high mortality) — early aggressive immunosuppression
+Positive anti-HMGCR in patient on statin → stop statin (this is not sufficient alone) + start immunosuppression (steroids + IVIG)
+Double-positive ANCA + anti-GBM → emergent plasmapheresis discussion + cyclophosphamide + high-dose steroids (worse prognosis than either alone)
+Triple-positive APLAS → warfarin (NOT DOAC) indefinitely; highest thrombotic risk category
+New positive anti-RNA pol III in diffuse SSc → monitor BP very closely for scleroderma renal crisis; hold ACEi as prophylaxis until crisis occurs (controversial); educate patient on BP self-monitoring`,
+    monitoring: `• Anti-dsDNA + C3/C4: follow q3-6 months in SLE (rising dsDNA + low complement = disease activity/nephritis)
+• RF: does not correlate with RA activity — do not re-order after diagnosis is established
+• anti-CCP: does not correlate with RA activity — order once for diagnosis, do not repeat
+• ANCA titers: modest correlation with activity in MPA (MPO-ANCA); poor correlation in GPA (PR3-ANCA); clinical features drive treatment decisions more than titer alone
+• APLAS: confirm positive result on second occasion ≥12 weeks later before diagnosing APLAS`,
+    disposition: `• Rheumatology: all new positive antibody results with clinical features — guidance on disease-specific implications, biopsy decisions, and immunosuppression
+• Nephrology: positive anti-dsDNA + urinalysis abnormalities (nephritis evaluation), positive anti-GBM (emergent RPGN evaluation)
+• Oncology/Hematology: positive anti-TIF1γ (malignancy screen), APLAS with catastrophic features`
+  },
+
+  // ════════ HEMATOLOGY ════════
+  {
+    id: "eosinophilia",
+    system: "heme",
+    title: "Eosinophilia — Approach, HES & Organ Complications",
+    keywords: ["eosinophilia","hypereosinophilia","HES","AEC","eosinophilic esophagitis","EoE","ABPA","eosinophilic pneumonia","Loeffler","eosinophilic myocarditis","helminth","strongyloides","DRESS eosinophilia","EGPA","mastocytosis","mepolizumab HES","imatinib HES","FIP1L1-PDGFRA"],
+    source: { chapter: "Hematology", section: "Eosinophilia", pages: "129", authors: "Nicolas Trad",
+      keyFacts: [
+        "Eosinophilia: AEC >500/µL; Hypereosinophilia: AEC >1500/µL; Hypereosinophilic Syndrome (HES): AEC >1500 + end-organ dysfunction; eosinophils are rapidly eliminated by steroids — eosinophilia may be unmasked as patients taper off chronic glucocorticoids",
+        "Primary (clonal) eosinophilia: FIP1L1-PDGFRA fusion gene (imatinib-sensitive HES — dramatic response); eosinophilic leukemia, CML, NHL, HL, mastocytosis; secondary (reactive) is far more common — always exclude parasites, drugs, allergic disease, and rheumatologic conditions first",
+        "Helminthic infections: most common worldwide cause of eosinophilia; strongyloidiasis most dangerous (hyperinfection syndrome in immunocompromised — treat with ivermectin empirically before steroids); other: toxocariasis, schistosomiasis, filariasis, hookworm, ascaris; send stool O&P, serology, strongyloides IgG",
+        "Drug-induced eosinophilia: penicillins/cephalosporins, NSAIDs, aspirin, allopurinol, phenytoin, ranitidine, tetracyclines; DRESS is the most serious (2-8 weeks after drug start — fever + rash + eosinophilia + organ involvement); suspect if drug started within 6 weeks",
+        "Urgent treatment: eosinophilia with cardiac, neurologic, or thromboembolic complications, AEC >100,000 or rapidly rising — methylprednisolone 1mg/kg to 1g/day PLUS empiric ivermectin 200 mcg/kg if any potential Strongyloides exposure; obtain HES diagnostics before starting treatment"
+      ]
+    },
+    assessment: `#Eosinophilia Assessment
+AEC (absolute eosinophil count): *** /µL
+Severity: mild (500-1500) [ ] / hypereosinophilia (>1500) [ ] / HES (>1500 + organ damage) [ ]
+SYMPTOM SCREEN (organ damage):
+Cardiac: dyspnea/chest pain/CHF [ ] → TTE ordered: ***
+Pulmonary: SOB/wheeze/cough [ ] → CXR/CT ordered: ***
+GI: dysphagia/food impaction/diarrhea [ ] → EGD considered: ***
+Neuro: focal deficits/thrombosis [ ] | Skin: urticaria/angioedema/rash [ ]
+ETIOLOGY SCREEN:
+Meds (<6 weeks): *** | Travel/exposure history: *** | Atopy/asthma: [ ]
+DRESS concern (drug + fever + rash + LFTs): [ ] | Helminth risk: ***
+Primary HES concern (AEC >1500, no reactive cause): FIP1L1-PDGFRA send-out ordered [ ]`,
+    ddx: `CAUSES BY CATEGORY:
+INFECTIONS: Helminths — strongyloidiasis (#1 dangerous), toxocariasis, schistosomiasis, filariasis, trichinellosis, hookworm, ascaris, fascioliasis (travel + rural exposure); Fungal — ABPA, coccidioidomycosis, histoplasmosis; Viral — HIV, HTLV-1/2
+MALIGNANCY (primary HES): FIP1L1-PDGFRA fusion HES (imatinib-sensitive), eosinophilic leukemia, CML, NHL/HL, mastocytosis; less common with solid tumors
+AUTOIMMUNE/INFLAMMATORY: EGPA (see Vasculitis), PAN, RA, IBD, EoE, IgG4-related, sarcoidosis, GVHD, blistering skin diseases (bullous pemphigoid)
+ALLERGIC/DRUG: atopic disease, ABPA, asthma; drugs (PCN/cephalosporins most common — any drug within 6 weeks); DRESS (drug + fever + lymphadenopathy + rash + organ involvement 2-8 weeks after start)
+MISCELLANEOUS: adrenal insufficiency, cholesterol emboli syndrome, radiation, familial (chr 5q mutation)
+ORGAN-SPECIFIC COMPLICATIONS:
+Cardiac: eosinophilic endomyocarditis (necrosis → thrombus → fibrosis → restrictive CM + valve involvement); diagnose with TTE (apical dysfunction, thrombus) + cardiac MRI + endomyocardial biopsy; treat with high-dose steroids + remove offending agent
+Pulmonary: acute eosinophilic PNA (<7d, smoking-associated, BAL eos ≥25%, steroids); chronic eosinophilic PNA (>4w, bilateral upper-lobe, steroids); ABPA (asthma + elevated IgE + Aspergillus IgE/IgG + central bronchiectasis); Loeffler syndrome (transient migratory opacities from helminth larvae)
+GI: EoE (dysphagia, food impaction — EGD with biopsy showing ≥15 eos/HPF; dietary elimination or PPI or topical steroids); eosinophilic gastroenteritis/colitis`,
+    workup: `INITIAL:
+• CBC with differential (AEC trending), CMP, LFTs, ESR/CRP, IgE level
+• Stool O&P × 3 (separate days) + Strongyloides IgG serology (send even if stool negative)
+• HIV, HTLV-1/2 serology
+• Tryptase (mastocytosis screen); ANA, ANCA (autoimmune)
+• CXR + spirometry (pulmonary eosinophilia screen)
+• TTE (cardiac screen — ALL patients with AEC >1500)
+• Peripheral blood flow cytometry + periph smear review (clonal screen)
+IF NO REACTIVE CAUSE FOUND (primary HES workup):
+• FIP1L1-PDGFRA fusion gene (PCR send-out — imatinib-sensitive HES)
+• Bone marrow biopsy with cytogenetics and FISH
+• T-cell immunophenotype/TCR rearrangement (lymphocytic HES variant)
+• Cardiac MRI: if TTE abnormal or AEC >1500 (subendocardial LGE = fibrosis)
+TARGETED WORKUP:
+• ABPA concern: total IgE, Aspergillus-specific IgE + IgG, chest CT (central bronchiectasis)
+• GI symptoms: EGD ± colonoscopy with biopsies (EoE/eosinophilic GI disease)
+• DRESS: LFTs, CBC, renal function — do not restart culprit drug`,
+    management: `SECONDARY (REACTIVE) EOSINOPHILIA:
+• Treat underlying cause — stop offending drug, treat helminth, manage allergic disease
+• Strongyloides: ivermectin 200 mcg/kg PO × 2 days (repeat in 14 days); treat BEFORE immunosuppression to avoid hyperinfection
+• DRESS: stop offending drug immediately; topical steroids for skin; systemic prednisone 1-2mg/kg for organ involvement with slow taper over months
+• ABPA: prednisone 0.5mg/kg × 2 weeks then taper over 3-6 months + itraconazole 200mg BID × 16 weeks
+URGENT/HES (AEC >100,000 or organ involvement):
+• Methylprednisolone 1mg/kg to 1g/day IV (reduce rapidly rising AEC, prevent further organ damage)
+• Empiric ivermectin 200 mcg/kg if ANY potential Strongyloides exposure before steroids
+• Hydroxyurea 500-1000mg BID: cytoreduction for very high AEC (>100,000) while awaiting diagnosis
+CLONAL/PRIMARY HES:
+• FIP1L1-PDGFRA positive: imatinib 100mg qday (dramatic response — often within days); maintenance therapy required
+• FIP1L1-PDGFRA negative: mepolizumab 300mg SQ q4 weeks (anti-IL-5, FDA-approved for HES; NEJM 2008)
+• PDGFRA/B or FGFR1 rearrangements: specific TKIs per Hematology; some require HSCT`,
+    monitoring: `• AEC every 1-4 weeks during treatment to assess response
+• LFTs monthly for 6 months in DRESS (autoimmune hepatitis may emerge)
+• TTE every 3-6 months if cardiac involvement; cardiac MRI at 6 months after treatment
+• Strongyloides: follow-up stool O&P and serology 6 months after treatment`,
+    disposition: `• Hematology consult: AEC >1500 without clear reactive cause, suspected primary/clonal HES, need for bone marrow biopsy
+• Allergy/Immunology: ABPA, DRESS, EoE, allergic eosinophilia
+• Gastroenterology: EoE (EGD + dietary management)
+• ICU: cardiac or neurologic HES complications (eosinophilic myocarditis, stroke)`
+  },
+
+  // ════════ ID ════════
+  {
+    id: "mpox-ectoparasites",
+    system: "id",
+    title: "Mpox & Ectoparasites (Scabies / Lice)",
+    keywords: ["mpox","monkeypox","orthopoxvirus","tecovirimat","TPOXX","JYNNEOS vaccine","mpox lesions","proctitis mpox","MSM mpox","scabies","permethrin","ivermectin scabies","crusted scabies","head lice","pubic lice","pediculosis","ectoparasites","mpox prophylaxis","mpox treatment"],
+    source: { chapter: "Infectious Disease", section: "Mpox & Ectoparasites", pages: "121", authors: "Azfar Hossain, Alexis Strahan",
+      keyFacts: [
+        "Mpox (monkeypox): orthopoxvirus; two clades — Clade I (Central Africa, ~10% mortality) and Clade IIb (2022 global outbreak, low mortality, 98% MSM, 40% HIV+); incubation 3-34 days (mean 13d); prodrome: fever + lymphadenopathy (distinguishes mpox from other pox viruses) → eruptive phase with well-circumscribed umbilicated lesions progressing from macules → papules → vesicles → pseudopustules → crusts",
+        "Diagnosis: PCR swab from lesion base or roof (preferred); Clade I and Clade IIb distinguished by PCR — REPORT ALL SUSPECTED CASES to MGH Infection Control AND Boston Public Health (617-534-5611) immediately",
+        "Treatment: tecovirimat (TPOXX) 600mg PO BID × 14 days for severe mpox (extensive lesions, immunocompromised, proctitis, pharyngitis limiting oral intake, ocular involvement); available through CDC Strategic National Stockpile via ID consult; also consider cidofovir or brincidofovir for refractory cases",
+        "JYNNEOS vaccine (mpox/smallpox): two doses 4 weeks apart; post-exposure prophylaxis within 14 days of exposure; pre-exposure for MSM/trans/non-binary patients with recent STI, multiple partners, or sex at commercial venues in past 6 months; safe in immunocompromised (unlike ACAM2000)",
+        "Scabies: intensely pruritic (worse at night) papulovesicles ± burrows in interdigital spaces, wrists, waist, genitals; treat with 5% permethrin cream from neck down (remove after 8-14h, repeat at 7 days) OR ivermectin 200 mcg/kg PO (repeat at 14 days); treat ALL household contacts simultaneously; hot wash clothing/bedding >130°F or seal in bag for 1 week"
+      ]
+    },
+    assessment: `#Mpox / Ectoparasites Assessment
+MPOX SCREEN:
+Risk: MSM/trans/sexual contact with mpox [ ] | Travel to endemic area [ ] | Animal contact [ ]
+Prodrome: fever [ ] | lymphadenopathy [ ] | myalgias [ ] | Onset: *** days ago
+Lesion characteristics: well-circumscribed [ ] / umbilicated [ ] / all same stage [ ]
+Location: face [ ] / palms/soles [ ] / trunk [ ] / anogenital [ ] / oral/pharyngeal [ ]
+HIV status: *** | CD4: *** | On PrEP: [ ] | Concurrent STIs: ***
+Severity (indicates tecovirimat):
+[ ] Immunocompromised  [ ] Proctitis (rectal pain/bleeding/tenesmus)
+[ ] Pharyngitis limiting PO  [ ] Ocular involvement  [ ] Extensive lesions (>25)
+Isolation: Contact + Droplet precautions placed [ ] | Infection Control notified [ ] | BPHD notified [ ]
+ECTOPARASITES:
+Scabies: pruritus (worse at night) [ ] | interdigital burrows [ ] | household contacts affected [ ]
+Lice: scalp (head lice) [ ] / pubic (pubic lice/crabs) [ ] / body lice [ ]`,
+    ddx: `MPOX DIFFERENTIAL:
+Classic mpox features (vs. other pox): lymphadenopathy (distinguishing feature — not present in smallpox or chickenpox), deep-seated umbilicated lesions, all lesions at same stage simultaneously
+Mpox mimics: varicella (chickenpox) — different stages simultaneously, centripetal distribution; herpes simplex (HSV) — grouped vesicles, smaller distribution; syphilis (secondary) — non-pruritic, non-vesicular, no fever prodrome; molluscum contagiosum — umbilicated but smaller, no fever; hand-foot-mouth — enterovirus, different distribution
+2022 outbreak pattern: anogenital lesions predominant, often without systemic prodrome; proctitis (receptive anal sex), pharyngitis/tonsillitis; STI co-infection in 30%
+2024 Clade I: household transmission, more severe, emerging in Central/Eastern Africa; rare US travel-associated cases
+ECTOPARASITES:
+Scabies: classic burrows (pathognomonic) in interdigital spaces, wrists, umbilicus, genitals, nipples; generalized in immunocompromised (crusted/Norwegian scabies — hyperinfestation, extremely contagious); avoid in family members/sexual contacts simultaneously
+Head lice (Pediculus humanus capitis): schoolchildren most common; scalp pruritus; nits on hair shafts (viable nits within 1cm of scalp); live lice must be visualized
+Pubic lice (Phthirus pubis): STI; pubic/axillary/eyelash hair; "blue macules" (maculae ceruleae) at bite sites; partner notification essential`,
+    workup: `MPOX WORKUP:
+• PCR swab from lesion: swab base/roof of multiple lesions (>2); send to State Lab or commercial lab with mpox PCR
+• Order "mpox PCR" in Epic; collect with Dacron swab in VTM (viral transport media)
+• HIV test (CD4 + VL if known HIV+)
+• STI screen: GC/Chlamydia NAAT (3-site), syphilis RPR, hepatitis B
+• CXR if respiratory symptoms
+• LFTs (cidofovir hepatotoxicity monitoring if used)
+REPORTING (MANDATORY):
+• Infection Control pager (all suspected/confirmed mpox)
+• Boston Public Health Department (BPHD): 617-534-5611
+ECTOPARASITES WORKUP:
+• Scabies: clinical diagnosis; dermoscopy (triangle sign = scabies mite); skin scraping + mineral oil → microscopy (shows mite/eggs/feces) if uncertain
+• Lice: visualize live lice; wet combing with fine-tooth comb; nits confirm infestation but empty nits do not require treatment`,
+    management: `MPOX TREATMENT:
+Mild (healthy, <25 lesions, no special site involvement): supportive care (wound care, pain management, antihistamines for pruritus)
+Severe or special populations → TECOVIRIMAT (TPOXX): contact ID consult; available via CDC SNS or expanded access IND
+• Tecovirimat: 600mg PO BID (if ≥40kg) × 14-21 days; take with high-fat meal
+• Indications: immunocompromised (HIV CD4 <200, on immunosuppression), proctitis, pharyngitis limiting oral intake, ocular involvement, extensive lesions (>25 or rapid progression), hospitalized
+• Cidofovir or brincidofovir: alternative/adjunct for refractory or severe cases (nephrotoxicity with cidofovir — prehydrate with NS + probenecid)
+• Ocular mpox: trifluridine/vidarabine eye drops Q4h × 7-10 days + IV tecovirimat; urgent ophthalmology
+• CNS involvement: high-dose steroids for demyelinating encephalitis/myelitis + neurology consult
+ISOLATION: contact + droplet precautions; private room; N95 for aerosol-generating procedures; PPE for all interactions with lesions/lesion material; maintain until ALL lesions crusted and scabs shed
+PROPHYLAXIS (JYNNEOS VACCINE):
+Post-exposure (within 14 days of close/sexual contact): JYNNEOS 2 doses 4 weeks apart; efficacy highest within 4 days, still beneficial up to 14 days
+Pre-exposure: MSM/trans/non-binary with STI within 6 months, multiple partners, or sex at commercial venues → 2 doses 4 weeks apart
+SCABIES:
+• Permethrin 5% cream: apply from neck to toes (include under nails); leave 8-14 hours; wash off; repeat in 7 days; treat all household members and close contacts simultaneously
+• Ivermectin 200 mcg/kg PO × 1; repeat in 14 days (alternative or adjunct for crusted scabies; preferred if extensive or treatment failure)
+• Crusted/Norwegian scabies: ivermectin × multiple doses + topical permethrin; contact isolation
+• Pruritus persists 2-4 weeks after successful treatment (dead mites and eggs) — reassure and treat with antihistamines ± low-potency topical steroid
+• Clothing/bedding: hot wash (>130°F) + high heat dry OR seal in plastic bag for 1 week
+LICE:
+• Head lice: 1% permethrin shampoo (leave 10 min, rinse; repeat in 7-10 days) OR malathion 0.5% lotion OR ivermectin PO
+• Pubic lice: permethrin 1% cream rinse × 10 min OR malathion; treat partner simultaneously; screen for STIs
+• Body lice: laundering/discarding clothing is sufficient (lice live in clothing seams, not skin)`,
+    monitoring: `• Mpox: lesion count and progression daily while inpatient; LFTs weekly if on cidofovir; HIV viral load if immunocompromised
+• Scabies: reassess at 2 and 4 weeks (pruritus improvement expected; live mites or new burrows at 4 weeks = treatment failure → re-treat or ivermectin)`,
+    disposition: `• ID consult: all hospitalized mpox, immunocompromised with mpox, tecovirimat request (CDC SNS access), severe ectoparasite infestations
+• Infection Control + BPHD (617-534-5611): mandatory reporting for all suspected mpox cases
+• Sexual health clinic: STI co-infection management, partner notification, PrEP/DoxyPEP counseling, JYNNEOS vaccination
+• Ophthalmology: any ocular mpox involvement (same-day)`
+  },
+
+  // ════════ ALLERGY & IMMUNOLOGY ════════
+  {
+    id: "common-allergy-problems",
+    system: "pulm",
+    title: "Common Allergy Problems — Rhinitis / Urticaria / Atopic Derm / Angioedema / Anaphylaxis",
+    keywords: ["allergic rhinitis","urticaria","hives","atopic dermatitis","eczema","angioedema","anaphylaxis","hereditary angioedema","HAE","ACE inhibitor angioedema","C1 inhibitor","food allergy","anaphylaxis epinephrine","omalizumab urticaria","antihistamine","nasal corticosteroid","cetirizine","fexofenadine","tryptase","biphasic anaphylaxis","allergy & immunology"],
+    source: { chapter: "Allergy & Immunology", section: "Common Allergy Problems / Angioedema & Anaphylaxis", pages: "181–182", authors: "Gita Bhattacharya, Jessica Bourque",
+      keyFacts: [
+        "Anaphylaxis diagnosis (≥1 of 3 criteria): (1) acute onset skin/mucosal involvement + respiratory or hypotension; (2) two or more of: skin/mucosal, respiratory, hypotension, GI after likely allergen exposure; (3) SBP <90 or >30% drop after known allergen — epinephrine IM lateral thigh is the ONLY first-line treatment; antihistamines/steroids are adjuncts only",
+        "Angioedema classification: HISTAMINE-MEDIATED (urticaria + pruritis + responds to epi/steroids/antihistamines) vs BRADYKININ-MEDIATED (ACEi-induced OR hereditary angioedema — NO urticaria, NO pruritis, does NOT respond to epinephrine/antihistamines/steroids → TXA 1g IV for acute, or C1-inhibitor/icatibant/ecallantide for HAE)",
+        "ACE inhibitor angioedema: 0.1-0.7% of ACEi users; can occur at ANY time during treatment or up to 4-6 weeks after stopping; tongue and laryngeal angioedema most dangerous (airway); stop ACEi permanently; add to allergy list; ARBs and DPP-4 inhibitors can also cause bradykinin-mediated angioedema",
+        "Chronic urticaria (>6 weeks): CBC, ESR, CRP, TPO-IgG, total IgE; stepwise: 2nd-generation antihistamine (cetirizine/fexofenadine) → increase dose → add omalizumab (Xolair, anti-IgE, FDA approved for chronic spontaneous urticaria) → add cyclosporine",
+        "Allergic rhinitis treatment: intranasal corticosteroids (fluticasone, mometasone) are MOST EFFECTIVE for congestion and sneezing (more effective than antihistamines alone); 2nd-generation antihistamines (cetirizine, fexofenadine, loratadine) for sneezing/rhinorrhea; allergen avoidance; subcutaneous immunotherapy for refractory disease"
+      ]
+    },
+    assessment: `#Common Allergy Assessment
+PRESENTATION: rhinitis [ ] / urticaria [ ] / angioedema [ ] / atopic dermatitis [ ] / anaphylaxis [ ]
+ANAPHYLAXIS SCREEN (requires immediate epinephrine):
+Diagnostic criteria met: [ ] Yes (→ EPINEPHRINE IM LATERAL THIGH IMMEDIATELY)
+Skin/mucosal: urticaria [ ] / angioedema [ ] / flushing [ ] / pruritis [ ]
+Respiratory: bronchospasm [ ] / stridor [ ] / hoarseness [ ]
+Cardiovascular: BP *** / HR *** | Hypotension [ ]
+GI: nausea/vomiting [ ] / cramping [ ]
+Epinephrine given: dose *** at *** | Repeat doses: ***
+ANGIOEDEMA SUBTYPE:
+Urticaria/pruritis present (→ histamine-mediated): [ ] Yes → treat as anaphylaxis/allergic
+No urticaria/pruritis (→ consider bradykinin): [ ] Yes → TXA or C1-inhibitor
+ACEi/ARB/DPP-4i use: *** | HAE family history: [ ] | C4 level: ***
+RHINITIS: seasonal [ ] / perennial [ ] | Triggers: *** | On intranasal steroid: ***
+URTICARIA: acute (<6w) [ ] / chronic (>6w) [ ] | Triggers identified: ***`,
+    ddx: `ANGIOEDEMA CLASSIFICATION (critical distinction — treatment differs):
+HISTAMINE-MEDIATED (IgE/mast cell):
+• Urticaria + angioedema + pruritis → responds to epinephrine, antihistamines, steroids
+• Triggers: foods (peanut, tree nuts, shellfish, milk, egg, wheat, soy), drugs (β-lactams, NSAIDs, opiates), latex, insect venom, exercise, idiopathic
+• Anaphylaxis: most severe form — multisystem + hemodynamic compromise
+BRADYKININ-MEDIATED (NO urticaria, NO pruritis — does NOT respond to epinephrine/steroids):
+• ACEi-induced: 0.1-0.7% of users; any time during treatment; tongue/laryngeal involvement → airway emergency; stop ACEi; consider ARB/DPP-4i as cause too
+• Hereditary Angioedema (HAE): C1 inhibitor deficiency (Type I: low C1-inh level; Type II: low function with normal level) → C4 always low (screening test); begins in childhood, worsens with estrogen/stress; prodrome (erythema marginatum); abdominal attacks mimic surgical abdomen
+• Acquired C1-inh deficiency: lymphoproliferative disorder (screen with C1q level, SPEP, flow)
+ALLERGIC RHINITIS DDx:
+Allergic (IgE-mediated): seasonal (tree/grass/weed pollens) or perennial (dust mite, pet dander, mold, cockroach)
+NARES (non-allergic rhinitis with eosinophilia): skin testing negative; responds to intranasal steroids
+Vasomotor (non-allergic): triggered by irritants (smoke, cold air, perfume); not IgE-mediated
+Atrophic: elderly, prior nasal surgery
+URTICARIA DDx:
+Acute (<6 weeks): infection (viral most common), drug (β-lactam, NSAID), food, insect, contact
+Chronic spontaneous (>6 weeks): autoimmune (anti-FcεRI or anti-IgE antibodies — majority); thyroid disease (TPO Ab); malignancy (rare)
+Physical: cold, cholinergic (heat/exercise/sweating), pressure, solar, dermatographism`,
+    workup: `ANAPHYLAXIS:
+• Serum tryptase: within 15 min-3h of symptom onset; repeat at 24h (baseline); ≥1.2×baseline + 2 ng/mL = mast cell activation; normal levels do not exclude anaphylaxis (normal in 37%)
+• Plasma histamine: peaks 5-15 min after anaphylaxis; short window for collection
+• Consider mastocytosis workup if recurrent unexplained anaphylaxis (baseline tryptase >11.4 ng/mL)
+ANGIOEDEMA:
+• C4 level (low in ALL types of HAE and acquired C1-inh deficiency; best screening test)
+• C1-inhibitor level + function (if C4 low)
+• C1q level (low = acquired C1-inh deficiency → lymphoproliferative workup)
+• CBC, BMP, LFTs, ESR, CRP, tryptase
+CHRONIC URTICARIA:
+• CBC with differential, ESR, CRP, TSH, TPO-IgG (thyroid autoimmunity), IgE
+• Rarely needed: skin testing (unhelpful in chronic urticaria), biopsy only if urticarial vasculitis suspected (painful, purpuric, lasting >24h)
+ALLERGIC RHINITIS:
+• Skin allergen testing (prick/intradermal) — gold standard for identifying specific allergens; typically outpatient Allergy referral
+• Specific IgE testing (ImmunoCAP) — blood test alternative if skin testing not feasible`,
+    management: `ANAPHYLAXIS — IMMEDIATE:
+1. EPINEPHRINE 0.3mg IM (1:1000) lateral thigh — FIRST LINE; repeat q5-15 min if no response
+2. Position: supine + legs elevated (unless bronchospasm → upright); IV access; O2
+3. Normal saline 1-2L for hypotension
+4. Diphenhydramine 25-50mg IV + famotidine 20mg IV (H1+H2 — adjuncts only, do NOT delay epi)
+5. Methylprednisolone 40-80mg IV (adjunct — does NOT prevent biphasic reaction reliably)
+6. Albuterol nebulized for bronchospasm
+7. Glucagon 1-5mg IV: for beta-blocker refractory anaphylaxis
+8. Observation ≥6 hours (biphasic reaction 1-72h later in 4-20% patients)
+Discharge: prescribe EpiPen × 2, Allergy referral, medical alert bracelet
+BRADYKININ ANGIOEDEMA:
+ACEi-induced: STOP ACEi immediately + add to allergy list; 1g TXA (tranexamic acid) IV/PO for acute attack (off-label); supportive care; airway management if laryngeal involvement (anesthesia + ENT immediately)
+HAE (hereditary angioedema): page Allergy (p31037 or consult team)
+• Acute attack: C1-inhibitor concentrate (Berinert 20 U/kg IV) OR icatibant (Firazyr 30mg SQ) OR ecallantide (Kalbitor 30mg SQ); FFP if specific agents unavailable
+• Long-term prophylaxis: C1-inh concentrate, lanadelumab (Takhzyro), berotralstat, tranexamic acid
+ALLERGIC RHINITIS:
+• Intranasal corticosteroid (most effective — fluticasone 2 sprays each nostril qday or mometasone): start 1-2 weeks before season; may take 1-2 weeks for full effect
+• 2nd-generation antihistamine: cetirizine 10mg qday OR fexofenadine 180mg qday OR loratadine 10mg qday (non-sedating preferred)
+• Intranasal antihistamine (azelastine): faster onset than nasal steroids; adds benefit when combined
+• Allergen avoidance + HEPA air filters for indoor allergens
+• Subcutaneous immunotherapy (SCIT): for refractory disease; Allergy referral
+URTICARIA:
+Acute (<6w): identify and avoid trigger; 2nd-generation antihistamine; short prednisone course only if severe
+Chronic (>6w) — stepwise: 2nd-generation antihistamine (cetirizine, fexofenadine) × regular dosing → increase to 2-4× standard dose → add omalizumab 300mg SQ q4 weeks (FDA-approved for chronic spontaneous urticaria) → add cyclosporine (cyclosporine 4mg/kg/day) for refractory
+ATOPIC DERMATITIS (eczema):
+• Emollients: 2× daily and after bathing (foundational treatment for all); plain petrolatum, Cetaphil, CeraVe
+• Topical steroids: mid-to-super-potent BID × 2 weeks for affected areas (low/mid-potency for face)
+• Tacrolimus 0.1% cream (non-steroidal): preferred for face (avoids steroid atrophy risk)
+• Dupilumab (Dupixent): biologic for moderate-severe atopic dermatitis not controlled with topicals; Allergy/Derm referral`,
+    monitoring: `• Anaphylaxis: q15-min vitals during resuscitation; repeat tryptase at 24h; discharge with EpiPen + Allergy follow-up at 1-2 weeks
+• HAE: monitor airway; C4 level at follow-up; titrate prophylactic therapy with Allergy
+• Chronic urticaria: monthly UAS7 (urticaria activity score) to assess response; omalizumab response assessed at 3 months`,
+    disposition: `• Allergy/Immunology: all anaphylaxis post-discharge follow-up, HAE diagnosis/management, chronic urticaria on omalizumab, allergic rhinitis requiring immunotherapy
+• ENT: laryngeal angioedema with airway compromise (immediate), nasal polyposis, refractory rhinitis surgical evaluation
+• ICU: anaphylaxis requiring epinephrine infusion, laryngeal angioedema with imminent airway loss`
+  },
+
+  // ════════ CONSULTANTS ════════
+  {
+    id: "dermatology-consult",
+    system: "pulm",
+    title: "Dermatology — Inpatient Rashes, Drug Eruptions & Topical Therapy",
+    keywords: ["dermatology","drug rash","exanthematous","morbilliform rash","DRESS","SJS TEN","AGEP","purpura fulminans","erythroderma","erythema multiforme","contact dermatitis","pressure ulcer","psoriasis inpatient","GVHD skin","immunotherapy rash","herpes zoster","zoster ophthalmicus","cellulitis mimicker","topical steroids","skin biopsy","stasis dermatitis","vasculitis skin"],
+    source: { chapter: "Consultants", section: "Dermatology", pages: "233", authors: "Sepideh Ashrafzadeh, Olivia Davies",
+      keyFacts: [
+        "Before consulting Dermatology: upload photos of rash to media tab in Epic using Haiku (ideally pre-treatment); document exact timing of rash onset, all suspect medications and their start dates; note skin tone (erythema in darker skin = violaceous or dark brown hue; textural changes and gentle pressure to blanch may accentuate)",
+        "Drug eruption timing helps identify culprit: exanthematous/morbilliform = 4-14 days; DRESS = 2-8 weeks; SJS/TEN = 4-28 days; AGEP (acute generalized exanthematous pustulosis) = 1-5 days; fixed drug eruption = hours to 2 days after re-exposure — note exact date each medication was started in consult note",
+        "Purpura fulminans = DIC in skin — TRUE EMERGENCY; retiform (net-like) non-blanching purpura from microvascular thrombosis; causes: meningococcemia, other sepsis (Staph/H.flu/Capnocytophaga), catastrophic APLAS, protein C/S deficiency; workup: DIC labs + blood cultures + skin biopsy with GS/culture; consult Hematology immediately",
+        "Cellulitis mimickers in 30% of cases: bilateral lower extremity cellulitis is EXTREMELY RARE; stasis dermatitis, lipodermatosclerosis, contact dermatitis, DVT-associated edema, and lymphedema are common mimics; ALT-70 score ≥5-7 = 82% likely true cellulitis; Derm consult reduces unnecessary antibiotics",
+        "Topical steroid selection: face/intertriginous = hydrocortisone 2.5% or hydrocortisone valerate 0.2% (least potent); body with mild symptoms = fluocinolone 0.025% cream; severe/extensive = clobetasol 0.05% ointment; prefer ointments (more potent, less irritating) over creams; counsel: apply BID × 2 weeks then 1 week 'off'; avoid mid-high potency on face (atrophy risk)"
+      ]
+    },
+    assessment: `#Dermatology Assessment
+RASH DESCRIPTION:
+Distribution: *** | Pattern: macular [ ] / papular [ ] / vesicular [ ] / pustular [ ] / urticarial [ ] / purpuric [ ]
+Blanching: yes [ ] / no (purpura/petechiae) [ ] | Mucosal involvement: [ ] Yes → SJS/TEN concern
+BSA involved: ***% | Symmetry: [ ] Yes | Evolution: expanding [ ] / stable [ ] / resolving [ ]
+DRUG ERUPTION TIMING:
+Suspect drug(s): *** | Date started: *** | Rash onset: *** | Days from drug start to rash: ***
+  Exanthematous (4-14d) [ ] / DRESS (2-8w) [ ] / SJS/TEN (4-28d) [ ] / AGEP (1-5d) [ ]
+EMERGENCY SCREEN:
+[ ] Purpura fulminans: non-blanching retiform purpura → DIC labs + Hematology NOW
+[ ] SJS/TEN: mucosal involvement + blistering/skin detachment → Derm + Ophtho STAT
+[ ] Erythroderma: >90% BSA redness → Derm consult
+Skin biopsy needed: [ ] Yes (ordered via Epic — Derm or primary team can order)
+Photos uploaded to Epic (Haiku): [ ] Yes`,
+    ddx: `DRUG ERUPTION TABLE (by timing from drug start):
+AGEP (Acute Generalized Exanthematous Pustulosis) — 1-5 days: pustules on erythematous base; fever; neutrophilia; mainly antibiotics (β-lactams, macrolides) and calcium channel blockers; usually self-limited; topical steroids
+FIXED DRUG ERUPTION — hours to 2 days after RE-EXPOSURE: same site each exposure; hyperpigmented oval macule or bulla; NSAIDs, tetracyclines, trimethoprim; avoid culprit drug
+EXANTHEMATOUS/MORBILLIFORM — 4-14 days: most common drug reaction; pruritic erythematous macules/papules starting trunk spreading centrifugally; antibiotics (PCN, sulfa), allopurinol, phenytoin; topical steroids + antihistamines; resolves 7-14d after stopping drug
+SJS/TEN — 4-28 days: mucosal involvement + target lesions + epidermal detachment (see Drug Hypersensitivity template); EMERGENCY
+DRESS — 2-8 weeks: fever + facial edema + lymphadenopathy + rash + eosinophilia + organ injury; carbamazepine, allopurinol, sulfonamides; STOP drug + steroids + slow taper
+COMMON INPATIENT RASHES:
+Herpes zoster: dermatomal painful vesicular eruption; treat with valacyclovir 1g TID × 7-10d (or IV acyclovir if disseminated); ZOSTER OPHTHALMICUS (vesicle on nasal tip = Hutchinson sign) → urgent ophthalmology; post-herpetic neuralgia: gabapentin 300mg (titrate)
+Erythema multiforme: target lesions (3 color zones + central bulla/crust) on palms/soles; triggered by HSV (90%) or drugs; treat underlying infection; NSAIDs + topical steroids
+Erythroderma (>90% BSA erythema): psoriasis flare, atopic dermatitis, cutaneous T-cell lymphoma (Sézary syndrome), pityriasis rubra pilaris, drugs; derm consult; emollients + fluids/electrolytes
+Purpura fulminans: non-blanching retiform purpura → DIC in skin → EMERGENCY (see keyFacts)
+Cellulitis mimickers (30% of "cellulitis" cases): stasis dermatitis (bilateral, chronic), lipodermatosclerosis, contact dermatitis, DVT edema, drug reaction, lymphedema
+GVHD skin: acute = follicular erythematous papules (acral → central; stage 1-3); chronic = lichenoid/sclerodermoid; discuss with Oncology for immunosuppression adjustment
+Cutaneous vasculitis: palpable purpura; biopsy for leucocytoclastic vasculitis (LCV); workup for systemic vasculitis (ANCA, cryoglobulins, hepatitis serologies)
+Psoriasis inpatient: avoid systemic steroids (rebound flare); topical steroids + calcipotriene; moisturizing; biologics for long-term (outpatient dermatology)`,
+    workup: `WHEN TO BIOPSY (order via Epic — Derm can perform same day):
+• Suspected DRESS or SJS/TEN (confirms diagnosis, guides management)
+• Purpura fulminans (path + GS + culture)
+• Undiagnosed rash not responding to initial treatment
+• Suspected cutaneous vasculitis, cutaneous T-cell lymphoma
+• Cellulitis not improving at 48h (rule out mimicker)
+STANDARD WORKUP FOR DRUG RASH:
+• CBC with differential (eosinophilia → DRESS; neutrophilia → AGEP)
+• LFTs (DRESS hepatitis)
+• BMP (renal involvement in DRESS)
+• DIC labs if purpura (PT, PTT, fibrinogen, D-dimer)
+• Blood cultures if purpura fulminans or febrile
+WOUND/SKIN DOCUMENTATION:
+• Pressure injuries: document in H&P with Haiku photos; stage (I-IV); involve wound care nurse (WCN)
+• Upload pre-treatment rash photos to media tab in Epic using Haiku app (critical for Derm consult)`,
+    management: `TOPICAL STEROID GUIDE (MGH formulary):
+Super-potent: clobetasol 0.05% ointment, betamethasone dipropionate ointment 0.05%
+Potent: fluocinonide 0.05% emollient
+Upper-mid: betamethasone valerate ointment 0.1%
+Mid-strength: fluocinolone ointment 0.025%
+Lower-mid: fluocinolone cream 0.025%, betamethasone valerate cream 0.1%
+Mild: hydrocortisone valerate 0.2%, fluocinolone oil 0.01%
+Least potent (face): hydrocortisone 2.5% cream or ointment 1.0%
+OTC: hydrocortisone 0.5%, 1.0%
+Application guide: BID × 2 weeks then 1 week "off"; prefer ointment (more potent, less irritating); use LEAST potent effective on face/intertriginous (skin atrophy risk); prefer non-steroidal tacrolimus 0.1% for face when possible
+SPECIFIC MANAGEMENT:
+Contact dermatitis (ACD): identify and remove trigger (EKG leads, tape, CHG wipes); high potency topical steroid for limited BSA; prednisone taper (>1 week) for extensive BSA
+Cellulitis: if not improving at 48h → derm consult to exclude mimicker; ALT-70 score helps (bilateral LE "cellulitis" is almost never true cellulitis)
+Stasis dermatitis: LE compression + elevation; mid-to-super potent steroid ointment BID × 1-2 weeks; intensive moisturization
+Herpes zoster: valacyclovir 1g PO TID × 7-10d (or IV acyclovir 10mg/kg q8h if disseminated/immunocompromised); contact precautions until all lesions crusted; gabapentin for pain
+Psoriasis (avoid systemic steroids — rebound risk): topical steroids + calcipotriene; moisturizing; phototherapy if available; outpatient biologics for long-term
+Immunotherapy skin toxicity: topical steroid grade 1-2; systemic steroid grade 3; stop immunotherapy grade 4 + Derm + SIC (Skin Immune Clinic) consult`,
+    monitoring: `• Drug eruptions: daily BSA documentation and mucosal exam; LFTs + CBC weekly in DRESS (autoimmune hepatitis emerges months later)
+• Pressure injuries: staging and photo at each nursing assessment; wound care nurse consult for stage ≥2
+• Zoster ophthalmicus: ophthalmology follow-up within 24h`,
+    disposition: `• Dermatology SAME DAY: SJS/TEN (skin detachment + mucositis), purpura fulminans, erythroderma, undiagnosed rapidly evolving rash, blistering disease
+• Ophthalmology URGENT: herpes zoster ophthalmicus (Hutchinson sign), SJS/TEN ocular involvement
+• Wound Care Nurse: all pressure injuries stage ≥2, chronic ulcers, complex wound management
+• Derm outpatient: chronic skin conditions (psoriasis biologic initiation, atopic dermatitis on dupilumab, chronic urticaria management)`
+  },
+
+  {
+    id: "ophthalmology-consult",
+    system: "pulm",
+    title: "Ophthalmology — Inpatient Eye Emergencies & Common Conditions",
+    keywords: ["ophthalmology","visual loss","red eye","acute vision loss","angle closure glaucoma","retinal artery occlusion","retinal detachment","optic neuritis","endophthalmitis","uveitis","corneal ulcer","viral conjunctivitis","chemical eye injury","intraocular pressure","afferent pupillary defect","RAPD","diplopia","papilledema","MEEI","visual acuity","eye emergency"],
+    source: { chapter: "Consultants", section: "Ophthalmology", pages: "239", authors: "Marta Stevanovic",
+      keyFacts: [
+        "MEEI (Mass Eye and Ear) consult: general inpatient consult — page/call listed number in directory; MEEI ED desk 617-573-4063; perform basic eye exam BEFORE calling — visual acuity, pupils, confrontational visual fields, extraocular movements, IOP estimate",
+        "Acute vision loss = ophthalmologic emergency: central retinal artery occlusion (CRAO — painless, sudden, unilateral; cherry-red spot on fundus; ocular massage + anterior chamber paracentesis + call MEEI immediately; treatment window <4-6h); acute angle closure glaucoma (painful, N/V, halos, rock-hard eye; IOP >40; acetazolamide + timolol + pilocarpine + MEEI STAT); retinal detachment (flashing lights + floaters + curtain visual field defect; MEEI urgent)",
+        "Basic eye exam ('ocular vital signs'): visual acuity (VA) with glasses on — use Snellen chart or reading card; pupils — size, direct/consensual reaction, relative afferent pupillary defect (rAPD swinging flashlight test — asymmetric RAPD = optic nerve or retinal disease); confrontational visual fields; extraocular movements; intraocular pressure (normal 10-20 mmHg — Tono-Pen available on floors)",
+        "Redness without vision change/pain: bacterial conjunctivitis (mucopurulent discharge — antibiotic drops); viral conjunctivitis (watery discharge, pre-auricular LAD — self-limited, supportive); subconjunctival hemorrhage (painless, benign, resolves spontaneously); episcleritis (sectoral redness, mild discomfort — NSAIDs); refer to MEEI if no improvement",
+        "Uveitis: inflammatory cells in anterior chamber (anterior uveitis/iritis — pain + photophobia + ciliary flush) or vitreous/retina (posterior uveitis); causes: sarcoidosis, HLA-B27 (AS/reactive), syphilis, TB, HSV/CMV (immunocompromised), SLE, IBD; urgent MEEI consult — treat with prednisolone acetate eye drops + cycloplegic (cyclopentolate)"
+      ]
+    },
+    assessment: `#Ophthalmology Assessment
+PERFORM BASIC EYE EXAM BEFORE CALLING MEEI:
+Visual Acuity (VA — with glasses if available):
+  Right eye (OD): *** | Left eye (OS): *** (20/__, CF, HM, LP, NLP)
+Pupils: OD *** mm → *** mm with light | OS *** mm → *** mm with light
+  rAPD (relative afferent pupillary defect): [ ] Right [ ] Left [ ] None (→ optic nerve/retinal pathology)
+Confrontational visual fields: OD *** | OS ***
+Extraocular movements (EOM): full [ ] / restricted: ***
+Intraocular pressure (if Tono-Pen available): OD *** mmHg | OS *** mmHg (nl 10-20)
+EMERGENCY SCREEN:
+[ ] Acute vision loss → MEEI STAT (617-573-4063)
+[ ] Severe eye pain + red eye + N/V → acute angle closure glaucoma → MEEI STAT
+[ ] Curtain/shadow in visual field + flashes/floaters → retinal detachment → MEEI urgent
+[ ] Systemic disease with eye involvement (GCA, sarcoid, SLE, lupus, CMV in HIV)
+Photos of eye uploaded to Epic: [ ]`,
+    ddx: `ACUTE VISION LOSS (ophthalmologic emergencies — call MEEI immediately):
+PAINLESS sudden vision loss:
+• Central retinal artery occlusion (CRAO): sudden, unilateral, painless; fundus: pale retina + cherry-red spot at fovea; box-car segmentation of vessels; ocular emboli from carotid or cardiac source; treatment window <4-6h: ocular massage (sustained pressure × 15 seconds, repeat), anterior chamber paracentesis; workup: carotid ultrasound, TTE, cardiac monitoring, stroke workup; neuroimaging for DWI (concurrent stroke in 25%)
+• Central retinal vein occlusion (CRVO): painless; fundus: disc edema + flame hemorrhages in all quadrants; causes: hypertension, hypercoagulable; MEEI for treatment (anti-VEGF injections)
+• Retinal detachment: flashing lights → new floaters → curtain/shadow expanding across visual field; PAINLESS; urgent MEEI for surgical repair
+• Vitreous hemorrhage: sudden onset floaters + vision loss; diabetes or vascular disease; MEEI
+• Anterior ischemic optic neuropathy (AION): painless vision loss + afferent pupillary defect; arteritic (GCA — ESR >100, jaw claudication → steroids IMMEDIATELY) vs non-arteritic
+PAINFUL acute vision loss:
+• Acute angle-closure glaucoma: severe eye pain + ipsilateral headache + N/V + halos around lights; rock-hard eye on palpation; mid-dilated non-reactive pupil; IOP >40-60 mmHg; MEEI STAT; initial management: acetazolamide 500mg IV + timolol 0.5% + pilocarpine 2% + supine (avoid prone/Trendelenburg); definitive: laser iridotomy
+• Corneal ulcer: severe pain + photophobia + purulent discharge; fluorescein staining shows epithelial defect; urgent MEEI; empiric tobramycin drops + MEEI same day
+• Endophthalmitis: severe pain + vision loss + hypopyon; post-surgical (days) or endogenous (bacteremia/fungemia — Candida, S. aureus); MEEI STAT + intravitreal antibiotics
+RED EYE (less urgent):
+Viral conjunctivitis: watery discharge, pre-auricular lymphadenopathy, self-limited (adenovirus most common); contagious; artificial tears, cool compresses; frequent handwashing
+Bacterial conjunctivitis: mucopurulent discharge; erythromycin ointment or polymyxin-trimethoprim drops; gonorrheal conjunctivitis → MEEI + systemic ceftriaxone
+Subconjunctival hemorrhage: painless, no vision change; resolves spontaneously; reassure
+Episcleritis: sectoral redness, mild ache; NSAIDs or mild steroid drops; resolves in 2-3 weeks
+Scleritis: severe boring pain, tender globe, associated with RA/IBD/ANCA vasculitis; MEEI urgent
+Uveitis (iritis): ciliary flush (redness concentrated at limbus), pain + photophobia + cells in anterior chamber; MEEI same day; prednisolone acetate 1% + cyclopentolate 1%
+SYSTEMIC DISEASE EYE COMPLICATIONS:
+GCA: AION → optic nerve ischemia → permanent blindness without immediate steroids (methylprednisolone 1g IV × 3 days)
+CMV retinitis (HIV/immunocompromised): fluffy white retinal lesions with hemorrhage; ganciclovir 5mg/kg BID or valganciclovir; MEEI for intravitreal injections
+Diabetic retinopathy: NPDR → PDR (neovascularization → vitreous hemorrhage); annual DFE; ophthalmology referral for treatment
+Optic neuritis: painful EOM + monocular blurry vision + central scotoma + rAPD; MS, sarcoid, NMO, autoimmune; MRI brain/orbits with/without contrast + neurology + ophthalmology`,
+    workup: `PERFORM BEFORE CALLING MEEI: visual acuity + pupils (rAPD) + confrontational fields + EOM + IOP
+ACUTE VISION LOSS WORKUP:
+• ESR + CRP (GCA — if >50yo + vision loss → steroids BEFORE biopsy)
+• CXR (sarcoidosis, TB with uveitis)
+• CBC, BMP, coagulation (endophthalmitis workup)
+• Blood cultures × 2 (endogenous endophthalmitis)
+• HIV + CD4 (CMV retinitis)
+• HbA1c (diabetic retinopathy screening)
+• Carotid ultrasound + TTE + cardiac monitoring (CRAO — cardioembolic source)
+• MRI brain DWI (concurrent stroke in 25% of CRAO) + MRA
+• ANA, ANCA, syphilis serology, ACE level (uveitis workup)`,
+    management: `ALWAYS CALL MEEI for vision-threatening emergencies — do not delay:
+MEEI contact: General inpatient consult — paging directory; MEEI ED desk: 617-573-4063
+CRAO (acute): Ocular massage (sustained pressure 10-15 seconds × 5-10 minutes); position patient supine; acetazolamide 500mg IV; emergency anterior chamber paracentesis (MEEI); IPA (isopropyl alcohol) inhalation (vasodilatory, controversial); concurrent stroke workup; cardiology for source
+Acute angle closure: Acetazolamide 500mg IV + timolol 0.5% 1 drop + pilocarpine 2% 1 drop (every 15 min × 2 then hourly) + avoid prone/Trendelenburg; MEEI for definitive laser iridotomy
+Endophthalmitis: intravitreal antibiotics (MEEI) + systemic antibiotics if endogenous; blood cultures + blood cultures
+Uveitis (iritis): prednisolone acetate 1% drops 4-8× daily + cyclopentolate 1% (cycloplegic for pain) + MEEI
+Zoster ophthalmicus (Hutchinson sign — vesicle on nasal tip): valacyclovir 1g TID × 7-10d OR IV acyclovir if severe; URGENT ophthalmology (ocular involvement risk); trifluridine/vidarabine eye drops if corneal involvement
+Glaucoma drops: do NOT stop inpatient glaucoma drops (prostaglandin analogs, beta-blockers, carbonic anhydrase inhibitors, alpha-2 agonists all lower IOP); if brand-name unavailable → pharmacy substitution; always verify patient's home drops are continued`,
+    monitoring: `• Acute vision loss: daily VA monitoring; fundus exam; IOP if glaucoma
+• CMV retinitis: weekly ophthalmology follow-up during active treatment; CD4 recovery with ART
+• Diabetic retinopathy: annual dilated fundal exam in all diabetics; more frequent if PDR or macular edema`,
+    disposition: `• MEEI STAT (617-573-4063): CRAO, acute angle closure glaucoma, endophthalmitis, corneal ulcer with severe pain, penetrating trauma
+• MEEI same day/urgent: retinal detachment, uveitis, zoster ophthalmicus, vision loss from any cause
+• MEEI routine consult: medication-related eye toxicity (hydroxychloroquine retinopathy annual screen, ethambutol optic neuropathy), chronic glaucoma management, diabetic retinopathy follow-up`
+  },
+
+  {
+    id: "obgyn-consult",
+    system: "pulm",
+    title: "OB/GYN — Obstetric Emergencies / Hypertension / AUB / Pelvic Pain",
+    keywords: ["obstetrics","preeclampsia","eclampsia","HELLP","gestational hypertension","ectopic pregnancy","abnormal uterine bleeding","AUB","pelvic pain","ovarian torsion","labetalol pregnancy","hydralazine pregnancy","magnesium eclampsia","postpartum hemorrhage","placental abruption","placenta previa","OB emergency","MFM consult","hCG ectopic","pregnancy hypertension","fibroid","endometrial cancer"],
+    source: { chapter: "Consultants", section: "OB/GYN", pages: "240", authors: "Alexandria Young",
+      keyFacts: [
+        "Consult guide: MFM (Maternal-Fetal Medicine) for known IUP — page p17977 or call L&D 617-724-9410; GYN Oncology for known GYN malignancy — page p31037; GYN for all others (undifferentiated hCG, pelvic mass, abnormal bleeding) — page ectopic pager p22346 if hCG without confirmed IUP; obtain pelvic transvaginal ultrasound BEFORE calling",
+        "Hypertensive emergency in pregnancy: ANY BP >160/110 in pregnancy is OB EMERGENCY; treatment goal BP <160/110 within 60 minutes; IV labetalol 20mg (repeat 40mg, 80mg q10 min, max 220mg) or IV hydralazine 5-10mg q20 min OR oral nifedipine 10mg (if BP not immediately dangerous); magnesium sulfate 4-6g IV loading dose for seizure prophylaxis in severe preeclampsia and eclampsia",
+        "Preeclampsia spectrum: gestational HTN (BP >140/90 after 20 weeks, no proteinuria) → preeclampsia (new HTN + proteinuria or HTN >160/110) → severe features (unrelenting HA, visual changes, RUQ/epigastric pain, thrombocytopenia <100k, LFTs >2× ULN, Cr >1.1, pulmonary edema) → eclampsia (seizure) → HELLP (hemolysis + elevated liver enzymes + low platelets)",
+        "Ectopic pregnancy: all patients with hCG AND no confirmed IUP on ultrasound should be on ectopic pager (p22346); risk factors: prior STI/PID, prior ectopic, IUD, IVF, tubal surgery, smoking; if peritoneal signs or hemodynamic instability → RUPTURED ECTOPIC = surgical emergency (call GYN immediately); serial serum hCG q48h: should rise 35-50%",
+        "Imaging in pregnancy: ultrasound preferred (no radiation); MRI safe (no gadolinium — risk of fetal hypothyroidism); CT acceptable if absolutely indicated (teratogenesis requires >200 mGy in early first trimester; iodinated IV contrast has risk of fetal hypothyroidism — benefits usually outweigh risks); NO gadolinium MRI contrast in pregnancy"
+      ]
+    },
+    assessment: `#OB/GYN Assessment
+CONSULT ROUTING:
+[ ] Known IUP → MFM (p17977) or L&D (617-724-9410)
+[ ] GYN malignancy → GYN Onc (p31037)
+[ ] hCG without confirmed IUP → Ectopic pager (p22346) — obtain TVUS first
+[ ] Other GYN (AUB, pelvic mass, bleeding) → GYN on call
+PREGNANCY STATUS:
+hCG: *** | TVUS: IUP confirmed [ ] / no IUP [ ] | Gestational age: *** weeks
+HYPERTENSIVE EMERGENCY SCREEN (ANY BP >160/110 = OB EMERGENCY):
+BP: *** / *** | Sx: HA [ ] / visual changes [ ] / RUQ pain [ ] / N/V [ ]
+Labs: PLT *** | LFTs *** | Cr *** | Proteinuria: ***
+Seizure: [ ] Yes → Magnesium sulfate 4-6g IV NOW
+Treatment: Labetalol IV [ ] / Hydralazine IV [ ] / Nifedipine PO [ ]
+ECTOPIC CONCERN: peritoneal signs [ ] / hemodynamic instability [ ] → surgical emergency
+AUB / PELVIC PAIN: LMP: *** | TVUS ordered [ ] | Speculum exam done [ ]`,
+    ddx: `OBSTETRIC HYPERTENSION SPECTRUM:
+Chronic HTN: hypertension before 20 weeks gestation (or preexisting)
+Gestational HTN: new HTN (≥140/90) at ≥20 weeks WITHOUT proteinuria or severe features
+Preeclampsia: new HTN + proteinuria (≥300mg/24h or protein:Cr ≥0.3) OR new HTN with severe features
+Severe preeclampsia features: unrelenting HA not responsive to medications, visual changes, RUQ/epigastric pain, PLT <100k, LFTs >2× ULN, Cr >1.1 mg/dL (or doubling), pulmonary edema, new-onset headache
+Eclampsia: new-onset seizure in preeclampsia patient
+HELLP: Hemolysis + Elevated Liver enzymes + Low Platelets; may present WITHOUT hypertension; diagnose: hemolysis (LDH >600, indirect bili, low haptoglobin, schistocytes), AST/ALT >2× ULN, PLT <100k
+ABNORMAL UTERINE BLEEDING (AUB) — differential by pregnancy status:
+PREGNANT: ectopic (before 20 weeks — most critical), miscarriage (threatened/incomplete/complete/septic), subchorionic hematoma, placental abruption (painful), placenta previa (painless), vasa previa, trophoblastic disease
+NOT PREGNANT (PALM-COEIN): Polyp, Adenomyosis, Leiomyoma/fibroid, Malignancy (endometrial — postmenopausal bleeding always concerning) Coagulopathy, Ovulatory dysfunction, Endometrial dysfunction, Iatrogenic, Not otherwise classified (thyroid, hyperprolactinemia)
+PELVIC PAIN DDx:
+Ectopic (first trimester): peritoneal signs or hemodynamic instability = RUPTURED ECTOPIC → surgical emergency
+Adnexal pathology: hemorrhagic cyst (very common, self-limited), ovarian torsion (sudden severe pain, N/V, absent Doppler flow — surgical emergency), ovarian abscess (TOA — antibiotics ± drainage)
+Non-gynecologic: appendicitis, UTI, nephrolithiasis, IBD, musculoskeletal`,
+    workup: `ALL OB/GYN PRESENTATIONS:
+• Urine or serum hCG (all women of reproductive age)
+• Pelvic transvaginal ultrasound (preferred) — before calling GYN
+• CBC (anemia, thrombocytopenia), BMP, LFTs, coagulation including fibrinogen
+• Type and screen (blood bank for bleeding or surgical cases)
+PREECLAMPSIA/HELLP WORKUP:
+• CBC + peripheral smear (schistocytes, thrombocytopenia)
+• LFTs, LDH, haptoglobin, indirect bili (hemolysis panel)
+• Cr, BMP (renal function)
+• Urine protein:Cr ratio (spot) or 24h urine protein
+• CBC + labs trending q6-12h in HELLP
+ECTOPIC WORKUP:
+• Quantitative serum hCG (serial q48h — should rise 35-50%; non-rising or falling = abnormal)
+• Transvaginal ultrasound (IUP confirmed at hCG >1500-2000 mIU/mL discriminatory zone)
+• Blood type and crossmatch
+AUB WORKUP:
+• Urine hCG → if positive: serum hCG + TVUS
+• CBC (anemia from blood loss)
+• Coagulation panel (platelet, PT, PTT, fibrinogen, vWF — if coagulopathy suspected)
+• TSH, prolactin (if anovulatory bleeding suspected)
+• Pelvic TVUS
+• Endometrial biopsy: postmenopausal bleeding (lining >4mm on TVUS); or concerning for malignancy — GYN performs`,
+    management: `OBSTETRIC HYPERTENSIVE EMERGENCY (BP >160/110 — target <160/110 within 60 min):
+Labetalol IV (preferred): 20mg IV → wait 10 min → 40mg → wait 10 min → 80mg (max total 220mg)
+Hydralazine IV: 5mg IV → repeat 5-10mg q20 min (max 20mg total IV)
+Nifedipine IR 10mg PO: if BP not immediately dangerous and patient can take PO; onset 15-30 min
+Magnesium sulfate: 4-6g IV over 15-20 min (loading dose) → 1-2g/h maintenance; for seizure prophylaxis in severe preeclampsia AND treatment of eclamptic seizures; antidote: calcium gluconate 1g IV (for Mg toxicity — loss of DTRs, respiratory depression)
+ECLAMPSIA SEIZURE:
+• Magnesium sulfate 4-6g IV over 5 min (first-line)
+• If ongoing: additional 2g Mg IV; diazepam/lorazepam if refractory
+• Call MFM + OB anesthesia + L&D
+• Delivery is definitive treatment for severe preeclampsia/HELLP (timing per MFM)
+RUPTURED ECTOPIC (surgical emergency):
+• 2 large-bore IVs + type & crossmatch + fluid resuscitation
+• Call GYN immediately (pager 22346 or OR emergently)
+• DO NOT delay surgery for imaging if hemodynamically unstable
+Unruptured ectopic: GYN to manage (MTX if appropriate; surgery if MTX contraindicated)
+POSTPARTUM HEMORRHAGE:
+• Oxytocin 10-40 units in IVF (first-line uterotonic)
+• Methylergonovine (Methergine): contraindicated in HTN
+• Carboprost (Hemabate): bronchoconstriction risk — avoid in asthma
+• Misoprostol 800-1000 mcg PR/sublingual
+• Call MFM/OB + Anesthesia + Blood bank (massive transfusion)
+IMAGING IN PREGNANCY: US (no radiation); MRI without gadolinium (safe); CT acceptable (discuss with MFM); NO gadolinium contrast`,
+    monitoring: `• Severe preeclampsia/HELLP: BP every 15 min; CBC + LFTs + Cr + LDH q6-12h; urine output hourly; fetal monitoring (continuous CTG); magnesium levels if clinical concern (DTR checks hourly)
+• Ectopic: serial hCG q48h until declining; TVUS to confirm IUP before MTX or to monitor unruptured ectopic
+• AUB: pad count for quantification; Hgb trend; vital signs`,
+    disposition: `• L&D (617-724-9410) or MFM (p17977): ALL obstetric emergencies (eclampsia, HELLP, abruption, preterm labor, ruptured ectopic)
+• GYN (p22346 ectopic pager): undifferentiated hCG without IUP, ovarian torsion (surgical emergency), TOA
+• GYN Oncology (p31037): known or suspected GYN malignancy
+• OB Anesthesia: all pregnant patients needing intubation, epidural/spinal for delivery, procedural sedation`
+  },
+
+  {
+    id: "urology-consult",
+    system: "pulm",
+    title: "Urology — Urinary Retention / Hematuria / Obstruction / Tubes & Drains",
+    keywords: ["urology","urinary retention","acute urinary retention","hematuria","gross hematuria","ureteral obstruction","kidney stone","hydronephrosis","Foley catheter","suprapubic tube","SPT","ureteral stent","nephrostomy","urinary incontinence","BPH","alpha blocker tamsulosin","urinary tract stone","bladder irrigation","catheter care","bladder cancer hematuria","urosepsis obstruction","priapism"],
+    source: { chapter: "Consultants", section: "Urology", pages: "237", authors: "Christina Kottooran, Chandler Bronkema",
+      keyFacts: [
+        "Urology consult routing at MGH: page 11300 for EMERGENCIES, Foley/SPT issues, and gross hematuria; page 10300 for other non-urgent inpatient consults; describe urine color using food comparisons ('pink lemonade,' 'fruit punch,' 'cranberry juice,' 'merlot') to characterize gross hematuria; note urine color in TUBE not bag (bag urine appears darker due to volume concentration)",
+        "Ureteral obstruction + infection = urology/IR emergency: fever + pyuria/bacteriuria + obstruction (stone or malignancy) = urosepsis; order non-contrast CT A/P STAT, blood cultures + urine cultures, broad IV antibiotics (GNR coverage + enterococcus), urgent urology consult for decompression (ureteral stent by Urology OR percutaneous nephrostomy by IR)",
+        "Urinary retention causes: BPH (#1 in men), UTI, constipation, neurogenic (MS, cord injury, DM), immobility, anticholinergic medications, opioids, benzodiazepines, pelvic surgery; treatment: catheterize (clean intermittent preferred long-term), bowel regimen, minimize opioids/anticholinergics, (re)start tamsulosin 0.4mg qday",
+        "Gross hematuria — three-glass test clinical: initial = urethral/prostate source; terminal = bladder neck/trigone; total (all glasses) = bladder/upper tract; check urine color in tube not bag; 3-way Foley + continuous bladder irrigation (CBI) if clot retention; Urology page 11300 for all gross hematuria",
+        "Ureteral stents cause symptoms: bladder spasms, urinary frequency/urgency — treat with tamsulosin, oxybutynin/solifenacin, acetaminophen, diclofenac; stents require exchange every 3-6 months; do NOT exchange stent in setting of active UTI (new tube → same infected tract); anticoagulation can continue with stent"
+      ]
+    },
+    assessment: `#Urology Assessment
+CONSULT ROUTING: Emergencies / Foley / Gross hematuria → p11300 | Non-urgent → p10300
+URINARY RETENTION:
+PVR (post-void residual) by bladder scan: *** mL (>300 = significant retention)
+Note: bladder scans INACCURATE if patient has ascites
+Symptoms: unable to void [ ] / straining [ ] / overflow incontinence [ ] | Duration: ***
+Exam: suprapubic fullness [ ] / distended bladder percussed: ***
+Catheter placed: size *** Fr, type: standard / Coudé [ ] | UOP on release: *** mL
+HEMATURIA:
+Gross hematuria: color (describe): *** | In TUBE (not bag): ***
+Clots present: [ ] Yes → 3-way Foley + CBI ordered
+Pattern: initial [ ] / terminal [ ] / total [ ] (total = upper tract/bladder)
+Recent procedures (cath/cysto/biopsy): *** | Anticoagulation: ***
+URETERAL OBSTRUCTION:
+CT finding: stone size *** mm at *** | Hydronephrosis: mild/mod/severe
+Signs of infection: fever [ ] / pyuria [ ] / bacteriuria [ ] | → URGENT DECOMPRESSION
+TUBES: Foley [ ] / SPT [ ] / PCN [ ] / Ureteral stent [ ] | Last exchanged: ***`,
+    ddx: `GROSS HEMATURIA DIFFERENTIAL:
+Upper tract (kidney/ureter): nephrolithiasis, renal cell carcinoma, urothelial carcinoma of ureter, glomerulonephritis (dysmorphic RBCs on UA), trauma, renal infarction
+Lower tract (bladder): bladder cancer (most important to exclude in smokers >50yo, painless total hematuria), cystitis (bacterial, viral — BK virus in immunocompromised, radiation cystitis, cyclophosphamide hemorrhagic cystitis), bladder stone, trauma
+Prostate/urethra: BPH, prostate cancer, urethritis, catheter trauma
+Pseudohematuria: myoglobinuria (rhabdo — CK elevated, no RBCs on micro), hemoglobinuria (hemolysis — DAT positive), betanin (beets), rifampin, phenazopyridine
+URINARY RETENTION CAUSES:
+Obstructive: BPH (#1 in men), prostate cancer, urethral stricture, bladder neck contracture, constipation (external compression), pelvic mass
+Neurogenic: MS, spinal cord injury, cauda equina syndrome (EMERGENCY — back pain + saddle anesthesia + urinary retention → MRI spine STAT), diabetic neuropathy, stroke
+Medication-induced: anticholinergics (oxybutynin, diphenhydramine, TCAs), opioids, benzodiazepines, α-agonists (decongestants, nasal sprays), calcium channel blockers
+Postoperative: anesthesia effect, pain, constipation, immobility
+URINARY INCONTINENCE TYPES:
+Stress: Valsalva maneuver (cough/sneeze/laugh); pelvic floor dysfunction
+Urge (overactive bladder): strong urge preceding leakage; treat with anticholinergics (oxybutynin, tolterodine) or β3-agonist (mirabegron — avoid in severe HTN/ESRD/ESLD)
+Mixed: most common; both stress and urge components
+Overflow: large PVR (>150mL); obstruction or neurogenic; requires catheterization
+Functional: unable to reach toilet in time; neurologic or mobility limitation`,
+    workup: `URINARY RETENTION:
+• Bladder scan (PVR): >300mL = significant; note: INACCURATE in patients with ascites
+• Urinalysis + urine culture
+• BMP (Cr, K — post-obstructive diuresis monitoring after catheterization)
+• PSA if BPH suspected (discuss with Urology — PSA may be elevated from retention itself)
+GROSS HEMATURIA:
+• Urinalysis + microscopy (RBC morphology — dysmorphic = glomerular)
+• CBC, BMP, coagulation (INR, PTT)
+• Urine culture
+• CT urogram (CT of kidneys/ureters/bladder in 3 phases) OR CT A/P + cystoscopy: to evaluate upper and lower tract; recommended for all new gross hematuria in patients >35yo or risk factors for malignancy
+• Cystoscopy (by Urology): required to fully evaluate bladder and urethra; performed outpatient after acute episode resolves
+URETERAL OBSTRUCTION:
+• Non-contrast CT abdomen/pelvis: stone protocol (size, location, HU density, degree of hydronephrosis)
+• Urinalysis + urine culture
+• CBC, BMP (Cr, K)
+• Blood cultures × 2 if febrile (urosepsis)`,
+    management: `URINARY RETENTION:
+• Catheterize immediately if >300mL PVR or symptomatic
+• Men >50yo or BPH: 16-20 Fr Coudé catheter (gentle curve for prostatic urethra)
+• Urethral stricture or bladder neck contracture: 12-14 Fr straight catheter
+• Pro-tip: instill 8-10mL lubricant (Urojet) into urethra via syringe before insertion in men (reduces trauma)
+• After catheterization: start tamsulosin 0.4mg qday; trial of void after bladder decompresses (24-48h)
+• Minimize opioids/anticholinergics; bowel regimen; encourage ambulation
+• Post-obstructive diuresis: monitor UOP + BMP after catheterizing for significant retention (can cause large diuresis → electrolyte abnormalities)
+GROSS HEMATURIA / CLOT RETENTION:
+• 3-way Foley catheter + continuous bladder irrigation (CBI) with NS at rate to keep drainage clear
+• Page Urology 11300 for all gross hematuria
+• If clot retention: manual irrigation with large syringe + NS to break up clots before CBI
+• Hold/reverse anticoagulation if hemodynamically significant or severe bleeding
+• Radiation cystitis: hyperbaric oxygen (refer) + intravesical alum irrigation or formalin (Urology)
+• BK virus cystitis (post-transplant): reduce immunosuppression + cidofovir + Urology
+URETERAL OBSTRUCTION:
+• Tamsulosin 0.4mg qday (hold if SBP <90): ureteral relaxation → improved stone passage for 5-10mm stones
+• IVF: bolus + maintenance → increased urine flow to facilitate stone passage
+• Analgesia: ketorolac + acetaminophen + IV opioids if needed; diazepam 2mg q8h PRN for ureteral spasm
+• INFECTED OBSTRUCTION (urosepsis): non-contrast CT A/P STAT + blood/urine cultures + broad IV antibiotics (piperacillin-tazobactam + vancomycin if MRSA risk) + URGENT decompression (ureteral stent by Urology OR PCN by IR within hours)
+• Solitary kidney or transplant kidney + obstruction with AKI: urgent Urology consult regardless of infection
+TUBES AND DRAINS:
+• Foley: NOT indicated for incontinence; appropriate indications: urinary retention, strict I&O in critically ill, wound healing in perineum, obstruction; remove ASAP (CAUTI prevention); change q4 weeks or when malfunctioning
+• Suprapubic tube (SPT): placed by IR; first exchange by IR; then q6-12 weeks (Urology assists PRN)
+• Ureteral stent: placed by Urology in OR; exchange every 3-6 months; stent symptoms (spasms/frequency) → tamsulosin + oxybutynin/solifenacin + tylenol + diclofenac; anticoagulation can continue; do NOT exchange in active UTI
+• PCN (percutaneous nephrostomy): placed by IR; flush if low UOP or blood through PCN → US/CT + call IR
+URINARY INCONTINENCE:
+Lifestyle: bladder training (timed voiding q2-3h), fluid restriction, weight loss, pelvic floor exercises (Kegel)
+Urge: anticholinergics (oxybutynin, tolterodine, solifenacin) — caution in elderly (cognitive effects, constipation, urinary retention) OR β3-agonist (mirabegron 25-50mg qday — avoid if severe HTN, ESRD, ESLD)
+Stress: vaginal estrogen (postmenopausal), pelvic floor PT, pessary, surgical (sling) — outpatient urology/urogynecology
+Overflow: catheterize (intermittent preferred) + address obstruction`,
+    monitoring: `• Post-catheterization for retention: UOP hourly (first 2h) — post-obstructive diuresis risk; BMP at 6h; trial of void at 24-48h with PVR
+• CBI for hematuria: urine output color trending to pale yellow/clear = success; pink/red = adjust CBI rate or recheck for clots
+• Ureteral obstruction: Cr daily; fever curve; repeat CT if Cr not improving after decompression`,
+    disposition: `• Urology EMERGENT (p11300): gross hematuria, Foley/SPT issues, urosepsis with obstruction, priapism (>4h = emergency → ice packs + phenylephrine injection by Urology), urethral trauma, testicular torsion (ischemia within 4-8h → surgical emergency)
+• Urology non-urgent (p10300): new hydronephrosis, urinary retention not resolving, suspected stone requiring intervention, catheter exchange
+• IR: PCN placement (urosepsis with failed ureteral stenting, patient too unstable for OR), SPT placement, first PCN exchange`
   },
 
 ];
@@ -10984,17 +14022,253 @@ export default function App() {
   const threadRef = useRef(null);
   const inputRef = useRef(null);
 
+  // ─── SYNONYM / ALIAS MAP ────────────────────────────────────────
+  // Maps user search terms → canonical keywords already in templates
+  const SYNONYMS = {
+    // Endocrine
+    "pheochromocytoma": ["hypertensive emergency","adrenal","catecholamine","secondary hypertension"],
+    "pheo": ["pheochromocytoma","hypertensive emergency","adrenal"],
+    "cushing": ["adrenal insufficiency","cortisol","steroid","hypercortisolism"],
+    "addison": ["adrenal insufficiency","primary AI","adrenal crisis"],
+    "addisonian": ["adrenal insufficiency","adrenal crisis"],
+    "hypothyroid": ["thyroid","hypothyroidism","myxedema","tsh"],
+    "hyperthyroid": ["thyroid","hyperthyroidism","thyroid storm","graves"],
+    "thyrotoxicosis": ["thyroid storm","hyperthyroidism","thyroid"],
+    "hyperparathyroidism": ["calcium","hypercalcemia","PTH"],
+    "hypoparathyroidism": ["calcium","hypocalcemia","PTH"],
+    "hyperaldosteronism": ["hypertensive emergency","adrenal","hypokalemia"],
+    "diabetes insipidus": ["pituitary","DI","hypernatremia","polyuria"],
+    "siadh": ["hyponatremia","sodium","siadh"],
+    "dm": ["diabetes","insulin","glucose","A1c"],
+    "t1dm": ["type 1 diabetes","insulin","DKA","glucose"],
+    "t2dm": ["type 2 diabetes","metformin","SGLT2","GLP-1"],
+    "acromegaly": ["pituitary","IGF-1","growth hormone"],
+    "prolactinoma": ["pituitary","prolactin","dopamine agonist"],
+    // GI / Liver
+    "pancreatitis": ["pancreatitis","lipase","pancreas"],
+    "cholecystitis": ["cholecystitis","biliary","gallbladder","cholecystitis"],
+    "cholangitis": ["cholangitis","biliary","ERCP","Charcot"],
+    "gallstone": ["cholelithiasis","biliary","gallstone","cholecystitis"],
+    "choledocholithiasis": ["CBD stone","biliary","ERCP","choledocholithiasis"],
+    "pbc": ["primary biliary cholangitis","AMA","ursodiol"],
+    "psc": ["primary sclerosing cholangitis","MRCP","IBD biliary"],
+    "ascites": ["ascites","cirrhosis","portal hypertension","ESLD"],
+    "hepatorenal": ["hepatorenal syndrome","HRS","terlipressin","cirrhosis"],
+    "hrs": ["hepatorenal syndrome","HRS","terlipressin"],
+    "sbp": ["spontaneous bacterial peritonitis","SBP","ascites","ceftriaxone"],
+    "varices": ["esophageal varices","portal hypertension","variceal","octreotide"],
+    "portal hypertension": ["portal hypertension","varices","ascites","cirrhosis"],
+    "hepatic encephalopathy": ["hepatic encephalopathy","HE","lactulose","ammonia"],
+    "cirrhosis": ["cirrhosis","ESLD","MELD","Child-Pugh","portal hypertension"],
+    "meld": ["MELD","cirrhosis","liver transplant","ESLD"],
+    "hcc": ["hepatocellular carcinoma","HCC","liver cancer","AFP","cirrhosis"],
+    "alf": ["acute liver failure","ALF","NAC","acetaminophen liver"],
+    "dili": ["drug-induced liver","hepatotoxicity","DILI","liver injury"],
+    "acute liver failure": ["acute liver failure","ALF","NAC","encephalopathy"],
+    "crohns": ["Crohn's","IBD","inflammatory bowel","fistula"],
+    "ulcerative colitis": ["IBD","UC","inflammatory bowel disease","colitis"],
+    "ibs": ["IBS","irritable bowel","constipation","diarrhea"],
+    "gastroparesis": ["gastroparesis","nausea","gastric emptying","prokinetic"],
+    "celiac": ["celiac","gluten","malabsorption","tissue transglutaminase"],
+    // Nephrology
+    "nephrotic": ["nephrotic syndrome","proteinuria","edema","albumin"],
+    "nephropathy": ["nephropathy","CKD","AKI","proteinuria"],
+    "glomerulonephritis": ["GN","glomerulonephritis","hematuria","casts"],
+    "rhabdomyolysis": ["rhabdomyolysis","CK","myoglobin","AKI"],
+    "myoglobinuria": ["rhabdomyolysis","CK","AKI","myoglobin"],
+    "hyperkalemia": ["hyperkalemia","high potassium","ECG changes"],
+    "hyponatremia": ["hyponatremia","sodium","SIADH"],
+    "metabolic acidosis": ["acid-base","anion gap","metabolic acidosis"],
+    "renal tubular acidosis": ["RTA","acid-base","hypokalemia"],
+    "nephrolithiasis": ["kidney stones","nephrolithiasis","flank pain","hematuria"],
+    "kidney stones": ["kidney stones","nephrolithiasis","flank pain","calcium oxalate"],
+    // Neurology / Psychiatry
+    "migraine": ["migraine","headache","triptan","aura"],
+    "headache": ["headache","migraine","thunderclap","SAH","ICP"],
+    "thunderclap": ["thunderclap headache","SAH","subarachnoid","worst headache"],
+    "vertigo": ["vertigo","BPPV","vestibular","dizziness","Epley"],
+    "bppv": ["BPPV","vertigo","Epley maneuver","benign positional"],
+    "dementia": ["dementia","Alzheimer","cognitive","MoCA","donepezil"],
+    "alzheimer": ["Alzheimer","dementia","cognitive decline","cholinesterase"],
+    "parkinson": ["Parkinson","tremor","dopamine","levodopa"],
+    "catatonia": ["catatonia","NMS","serotonin syndrome","rigidity"],
+    "tardive dyskinesia": ["tardive dyskinesia","antipsychotic","VMAT2","akathisia"],
+    "akathisia": ["akathisia","antipsychotic","propranolol","EPS"],
+    "dystonia": ["dystonia","EPS","benztropine","diphenhydramine","antipsychotic"],
+    "depression": ["depression","MDD","SSRI","antidepressant","PHQ-9"],
+    "anxiety": ["anxiety","GAD","SSRI","benzodiazepine","GAD-7"],
+    "bipolar": ["bipolar","mania","lithium","valproate","mood stabilizer"],
+    "schizophrenia": ["schizophrenia","psychosis","antipsychotic","haloperidol"],
+    "ptsd": ["PTSD","trauma","anxiety","SSRIs","prazosin"],
+    "brain death": ["brain death","neuroprognostication","apnea test","brainstem"],
+    "raised icp": ["ICP","intracranial pressure","herniation","mannitol","hypertonic"],
+    "increased icp": ["ICP","intracranial pressure","herniation","mannitol"],
+    // Hematology / Oncology
+    "iron deficiency": ["iron deficiency","ferritin","anemia","IDA","TIBC"],
+    "b12": ["B12 deficiency","cobalamin","megaloblastic","pernicious anemia"],
+    "folate": ["folate deficiency","megaloblastic","homocysteine","anemia"],
+    "hemolysis": ["hemolysis","AIHA","DAT","haptoglobin","LDH","schistocytes"],
+    "eosinophilia": ["eosinophilia","parasitic","hypereosinophilia","anemia"],
+    "tumor lysis": ["tumor lysis syndrome","TLS","uric acid","rasburicase","Cairo-Bishop"],
+    "tls": ["tumor lysis syndrome","TLS","uric acid","rasburicase"],
+    "svc syndrome": ["SVC syndrome","superior vena cava","mediastinal","radiation"],
+    "brain mets": ["brain metastases","brain mets","dexamethasone","SRS","WBRT"],
+    "brain metastases": ["brain metastases","dexamethasone","SRS","radiation"],
+    "mescc": ["spinal cord compression","MESCC","back pain","dexamethasone"],
+    "spinal cord compression": ["MESCC","spinal cord","dexamethasone","radiation oncology"],
+    "leukostasis": ["leukostasis","hyperleukocytosis","hydroxyurea","leukapheresis"],
+    "febrile neutropenia": ["febrile neutropenia","cefepime","ANC","FN"],
+    "neutropenic fever": ["febrile neutropenia","cefepime","ANC","neutropenic"],
+    "aplastic anemia": ["aplastic anemia","pancytopenia","bone marrow failure"],
+    "myeloma": ["multiple myeloma","CRAB","plasma cell","SPEP","bortezomib"],
+    "lymphoma": ["lymphoma","DLBCL","Hodgkin","R-CHOP","B symptoms"],
+    "leukemia": ["leukemia","AML","ALL","blast","bone marrow"],
+    "aml": ["AML","acute myeloid leukemia","blast","7+3","venetoclax"],
+    "all": ["ALL","acute lymphoblastic leukemia","blast","methotrexate"],
+    "mds": ["MDS","myelodysplastic","azacitidine","bone marrow"],
+    "gvhd": ["GVHD","graft versus host","transplant","tacrolimus","ruxolitinib"],
+    "car-t": ["CAR-T","CRS","ICANS","tocilizumab","cytokine release"],
+    "ici": ["checkpoint inhibitor","immunotherapy","irAE","PD-1","CTLA-4"],
+    "immunotherapy": ["checkpoint inhibitor","immunotherapy","irAE","pembrolizumab"],
+    // Infectious Disease
+    "flu": ["influenza","viral respiratory","oseltamivir","baloxavir"],
+    "influenza": ["influenza","viral respiratory","oseltamivir","antiviral"],
+    "covid": ["COVID-19","SARS-CoV-2","viral respiratory","remdesivir"],
+    "rsv": ["RSV","viral respiratory","respiratory syncytial","palivizumab"],
+    "fuo": ["fever of unknown origin","FUO","diagnostic evaluation","fever workup"],
+    "fever unknown origin": ["FUO","fever of unknown origin","fever workup"],
+    "lyme": ["Lyme disease","tickborne","doxycycline","erythema migrans"],
+    "rmsf": ["Rocky Mountain spotted fever","RMSF","doxycycline","tick"],
+    "babesia": ["Babesia","tickborne","hemolysis","atovaquone","azithromycin"],
+    "gonorrhea": ["gonorrhea","STI","ceftriaxone","NAAT","urethritis"],
+    "chlamydia": ["chlamydia","STI","doxycycline","NAAT","cervicitis"],
+    "syphilis": ["syphilis","RPR","benzathine penicillin","chancre","treponema"],
+    "herpes": ["HSV","herpes","acyclovir","valacyclovir","genital ulcer"],
+    "pid": ["PID","pelvic inflammatory disease","ceftriaxone","doxycycline"],
+    "transplant id": ["transplant ID","CMV","HSCT","immunocompromised","PJP"],
+    "mpox": ["mpox","monkeypox","skin lesion","viral"],
+    "malaria": ["malaria","travel medicine","antimalarial","Plasmodium"],
+    "dengue": ["dengue","travel medicine","thrombocytopenia","tropical fever"],
+    "typhoid": ["typhoid","travel medicine","Salmonella","enteric fever"],
+    // Rheumatology
+    "rheumatoid": ["rheumatoid arthritis","RA","MTX","anti-CCP","RF"],
+    "ra": ["rheumatoid arthritis","RA","MTX","anti-CCP","biologic"],
+    "lupus": ["SLE","lupus","ANA","anti-dsDNA","hydroxychloroquine"],
+    "sle": ["SLE","lupus","ANA","anti-dsDNA","hydroxychloroquine"],
+    "gout": ["gout","uric acid","colchicine","allopurinol","crystal arthropathy"],
+    "pseudogout": ["CPPD","calcium pyrophosphate","crystal arthropathy","chondrocalcinosis"],
+    "gca": ["giant cell arteritis","GCA","temporal arteritis","ESR","prednisone"],
+    "temporal arteritis": ["GCA","giant cell arteritis","ESR","temporal artery biopsy"],
+    "polymyalgia": ["PMR","polymyalgia rheumatica","ESR","prednisone","GCA"],
+    "pmr": ["PMR","polymyalgia rheumatica","ESR","prednisone"],
+    "gpa": ["GPA","granulomatosis polyangiitis","Wegener","ANCA","PR3"],
+    "wegener": ["GPA","ANCA","granulomatosis polyangiitis","cyclophosphamide"],
+    "anca vasculitis": ["ANCA","GPA","MPA","MPO","PR3","cyclophosphamide"],
+    "scleroderma": ["scleroderma","SSc","Raynaud","anti-Scl70","systemic sclerosis"],
+    "dermatomyositis": ["dermatomyositis","myositis","CK","anti-Jo-1","heliotrope"],
+    "polymyositis": ["polymyositis","myositis","CK","proximal weakness"],
+    "sjogren": ["Sjogren","sicca","anti-Ro","anti-La","dry eyes dry mouth"],
+    "aplas": ["antiphospholipid","APLAS","lupus anticoagulant","thrombosis"],
+    "fibromyalgia": ["fibromyalgia","widespread pain","central sensitization","duloxetine"],
+    "ankylosing spondylitis": ["ankylosing spondylitis","AS","axSpA","HLA-B27","TNF inhibitor"],
+    "psoriatic arthritis": ["psoriatic arthritis","PsA","DACTYLITIS","IL-17","ustekinumab"],
+    "reactive arthritis": ["reactive arthritis","Reiter","post-infectious arthritis"],
+    "igg4": ["IgG4","IgG4-RD","fibro-inflammatory","autoimmune pancreatitis"],
+    // Pulm / Critical Care
+    "pleural effusion": ["pleural effusion","thoracentesis","transudate","exudate","Light's criteria"],
+    "pneumothorax": ["pneumothorax","PTX","chest tube","tension pneumothorax"],
+    "copd": ["COPD","obstructive","exacerbation","FEV1","bronchodilator"],
+    "ards": ["ARDS","mechanical ventilation","PEEP","low tidal volume","P:F ratio"],
+    "ventilator": ["mechanical ventilation","intubation","PEEP","tidal volume","IMV"],
+    "intubation": ["intubation","RSI","airway","mechanical ventilation"],
+    "rsi": ["RSI","rapid sequence intubation","ketamine","succinylcholine","airway"],
+    "vasopressor": ["vasopressors","norepinephrine","pressors","MAP","septic shock"],
+    "ecmo": ["ECMO","extracorporeal","VV-ECMO","VA-ECMO","refractory hypoxemia"],
+    "pulmonary hypertension": ["pulmonary hypertension","PAH","PVR","sildenafil","epoprostenol"],
+    "anaphylaxis": ["anaphylaxis","epinephrine","allergic reaction","drug allergy"],
+    "sjs": ["SJS","Stevens Johnson","TEN","toxic epidermal necrolysis","severe cutaneous"],
+    "ten": ["TEN","toxic epidermal necrolysis","Stevens Johnson","SJS","skin blistering"],
+    "dress": ["DRESS","drug reaction eosinophilia","systemic symptoms","drug hypersensitivity"],
+    "asthma": ["asthma","bronchospasm","albuterol","SABA","PFTs","peak flow"],
+    "status asthmaticus": ["status asthmaticus","asthma","magnesium","intubation asthma"],
+    // Cardiology
+    "afib": ["atrial fibrillation","AF","rate control","anticoagulation","cardioversion"],
+    "atrial fib": ["atrial fibrillation","AF","RVR","cardioversion","anticoagulation"],
+    "stemi": ["STEMI","ST elevation MI","PCI","thrombolysis","ACS","cath lab"],
+    "nstemi": ["NSTEMI","ACS","troponin","antiplatelet","PCI","ACS"],
+    "heart failure": ["heart failure","HF","BNP","diuresis","EF"],
+    "hfref": ["HFrEF","systolic heart failure","EF","LVEF","cardiomyopathy"],
+    "hfpef": ["HFpEF","diastolic heart failure","preserved EF","diuresis"],
+    "cardiomyopathy": ["cardiomyopathy","heart failure","EF","echo","LVEF"],
+    "tamponade": ["cardiac tamponade","pericardiocentesis","Beck's triad","pulsus paradoxus"],
+    "aortic dissection": ["aortic dissection","type A","type B","tearing pain"],
+    "hypertensive emergency": ["hypertensive emergency","end organ damage","MAP"],
+    "endocarditis": ["endocarditis","IE","bacteremia","vegetation","Duke criteria"],
+    "svt": ["SVT","narrow complex tachycardia","adenosine","AVNRT","AVRT"],
+    "vt": ["VT","ventricular tachycardia","amiodarone","cardioversion","wide complex"],
+    "complete heart block": ["AV block","heart block","complete heart block","pacing"],
+    "wolff parkinson white": ["WPW","pre-excitation","accessory pathway","delta wave"],
+    "wpw": ["WPW","Wolff-Parkinson-White","delta wave","accessory pathway"],
+    "long qt": ["QTc prolongation","long QT","torsades","TdP"],
+    "torsades": ["torsades de pointes","TdP","QTc","magnesium","polymorphic VT"],
+    "iabp": ["IABP","intra-aortic balloon pump","MCS","cardiogenic shock"],
+    "impella": ["Impella","MCS","mechanical circulatory support","cardiogenic shock"],
+    "tavr": ["TAVR","aortic stenosis","transcatheter","valve replacement"],
+    "mitral valve": ["mitral valve","mitral regurgitation","mitral stenosis","MVR"],
+    "aortic stenosis": ["aortic stenosis","TAVR","SAVR","severe AS","valve gradient"],
+    // General / Misc
+    "steroid": ["steroid","corticosteroid","prednisone","methylprednisolone","adrenal"],
+    "alcohol": ["alcohol","EtOH","withdrawal","cirrhosis","ALD","CIWA"],
+    "smoking": ["tobacco","smoking cessation","varenicline","nicotine replacement"],
+    "obesity": ["obesity","BMI","weight loss","GLP-1","bariatric"],
+    "pregnancy": ["pregnancy","obstetric","eclampsia","HELLP","pre-eclampsia"],
+    "drug overdose": ["overdose","toxicology","naloxone","opioid","acetaminophen"],
+    "acetaminophen overdose": ["acetaminophen","APAP","NAC","hepatotoxicity","toxicology"],
+    "carbon monoxide": ["CO poisoning","carbon monoxide","toxicology","hyperbaric oxygen"],
+    "beta blocker overdose": ["beta blocker","toxicology","glucagon","calcium","overdose"],
+    "methanol": ["methanol","toxicology","anion gap","fomepizole","osmolar gap"],
+    "ethylene glycol": ["ethylene glycol","toxicology","fomepizole","osmolar gap","anion gap"],
+    "fall": ["falls","fall prevention","geriatrics","frailty","balance"],
+    "frailty": ["frailty","geriatrics","frailty index","5Ms","functional decline"],
+    "polypharmacy": ["polypharmacy","deprescribing","Beers criteria","geriatrics","medications"],
+    "periprocedural": ["perioperative","preoperative","cardiac risk","RCRI","bridging"],
+    "preop": ["perioperative","preoperative","cardiac risk","RCRI","surgical risk"],
+    "peri-op": ["perioperative","preoperative","cardiac risk","beta blocker surgery"],
+  };
+
+  const expandQuery = (q) => {
+    const primary = [q];
+    const secondary = [];
+    Object.entries(SYNONYMS).forEach(([alias, expansions]) => {
+      if (q === alias || q.startsWith(alias) || alias.startsWith(q)) {
+        if (expansions[0]) primary.push(expansions[0].toLowerCase());
+        secondary.push(...expansions.slice(1).map(e => e.toLowerCase()));
+      }
+    });
+    return { primary, secondary };
+  };
+
   const filtered = useMemo(() => {
     const q = query.toLowerCase().trim();
+    if (!q) return TEMPLATES.filter(t => activeSystem === "all" || t.system === activeSystem);
+
+    const { primary, secondary } = expandQuery(q);
+
     return TEMPLATES.filter(t => {
       const sysMatch = activeSystem === "all" || t.system === activeSystem;
       if (!sysMatch) return false;
-      if (!q) return true;
-      return (
-        t.title.toLowerCase().includes(q) ||
-        t.keywords.some(k => k.includes(q)) ||
-        q.split(" ").some(word => word && t.title.toLowerCase().includes(word))
+
+      const titleLower = t.title.toLowerCase();
+      const keyFactsText = (t.source?.keyFacts || []).join(" ").toLowerCase();
+      const kws = t.keywords.map(k => k.toLowerCase());
+
+      const allTerms = [...primary, ...secondary];
+      const tier1 = allTerms.some(term =>
+        term && (titleLower.includes(term) || kws.some(k => k.includes(term) || term.includes(k)))
       );
+      if (tier1) return true;
+
+      return primary.some(term => term && keyFactsText.includes(term));
     });
   }, [query, activeSystem]);
 
