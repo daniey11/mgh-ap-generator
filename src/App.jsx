@@ -3582,6 +3582,14 @@ SPECIFIC:
         "Transvenous pacing (TVP): gold standard for symptomatic high-degree AV block not responding to atropine — place via central venous access (IJ preferred)"
       ]
     },
+    sectionLabels: {
+      assessment: "Rhythm Assessment — Energy Selection",
+      ddx: "Indications by Procedure Type",
+      workup: "Pre-Procedure Checklist",
+      management: "Step-by-Step Protocols",
+      monitoring: "Post-Procedure Assessment",
+      disposition: "Consults",
+    },
     assessment: `#Indication for Cardioversion / Defibrillation / Pacing
 CARDIOVERSION/DEFIBRILLATION:
 Rhythm: *** | HR: *** | Hemodynamic status: [ ] Stable  [ ] Unstable
@@ -3658,6 +3666,14 @@ TRANSVENOUS PACING (TVP):
         "RBBB: RSR' ('rabbit ears') in V1-V2 + broad S in I/V5-V6; QRS ≥120ms — can be normal variant",
         "AV blocks: first degree (PR >200ms); Mobitz I/Wenckebach (PR progressively prolongs then dropped QRS — usually benign); Mobitz II (sudden dropped QRS — indicates infranodal block — more dangerous); CHB (P-QRS dissociation)"
       ]
+    },
+    sectionLabels: {
+      assessment: "Systematic EKG Approach",
+      ddx: "Pattern Recognition — Key Findings",
+      workup: "Supporting Tests",
+      management: "Immediate Actions by Pattern",
+      monitoring: "Serial EKG Indications",
+      disposition: "Consults",
     },
     assessment: `#EKG Interpretation — Systematic Analysis
 Rate: *** bpm (regular: 300/large boxes; irregular: count x6)
@@ -3855,6 +3871,14 @@ POST-MI PERICARDITIS:
         "Pseudoaneurysm: pulsatile mass with bruit at access site → US-guided thrombin injection if >2cm; surgery if failing compression"
       ]
     },
+    sectionLabels: {
+      assessment: "Indication & Pre-Cath Assessment",
+      ddx: "Diagnostic vs Interventional Approaches",
+      workup: "Pre-Procedure Requirements",
+      management: "Procedure Overview & Interventions",
+      monitoring: "Post-Procedure Care",
+      disposition: "Consults",
+    },
     assessment: `#Pre-Cardiac Catheterization Assessment / Post-Cath Complication
 Indication: [ ] Stable angina/ischemia evaluation  [ ] ACS/NSTEMI  [ ] STEMI  [ ] Pre-TAVR  [ ] Other: ***
 ACCESS: [ ] Radial (preferred — fewer bleeding complications)  [ ] Femoral
@@ -3916,6 +3940,14 @@ RETROPERITONEAL BLEED: STAT CT A/P → 2 large-bore IVs + IVF + crossmatch + sto
         "Dobutamine stress echo (DSE): contraindicated if HR can be raised but used for: pre-op risk, LF/LG AS evaluation, non-exercising patients; assess for wall motion abnormalities",
         "Contraindications to stress testing: untreated ACS, MI within 2 days, hemodynamically significant arrhythmia, severe AS, uncontrolled HF, BP >200/110"
       ]
+    },
+    sectionLabels: {
+      assessment: "Test Selection Guide",
+      ddx: "Modalities & Clinical Indications",
+      workup: "Pre-Test Preparation",
+      management: "Result Interpretation & Next Steps",
+      monitoring: "Surveillance Intervals",
+      disposition: "Cardiology Referral",
     },
     assessment: `#Non-Invasive Cardiac Testing — Indication and Selection
 Clinical question: [ ] Diagnose CAD  [ ] Evaluate ischemia in known CAD  [ ] Pre-operative risk  [ ] New cardiomyopathy  [ ] Valvular disease
@@ -3981,6 +4013,14 @@ PHARMACOLOGIC STRESS PRECAUTIONS:
         "Point-of-care echo (POCUS): LV function, pericardial effusion, pleural effusion, IVC (volume assessment), B-lines (pulmonary edema) — rapid bedside assessment"
       ]
     },
+    sectionLabels: {
+      assessment: "Indication & Order Guide",
+      ddx: "Key Echo Findings by Clinical Question",
+      workup: "Echo Views & Measurements",
+      management: "Clinical Interpretation & Next Steps",
+      monitoring: "Repeat Echo Indications",
+      disposition: "Cardiology Consult",
+    },
     assessment: `#Echocardiography — Clinical Indication
 Indication:
 [ ] LV function/cardiomyopathy evaluation  [ ] Tamponade / pericardial effusion
@@ -4039,6 +4079,14 @@ RV STRAIN PATTERN: evaluate for PE (CTA chest), ARDS, pulmonary hypertension —
         "VA-ECMO: drains venous blood, oxygenates, returns to arterial system; can support cardiac output up to 5-6 L/min; complications: LV distension, limb ischemia, bleeding",
         "Impella vs IABP: Impella provides more cardiac output support and is preferred for higher-acuity cardiogenic shock; position monitored by waveform + CXR/echo"
       ]
+    },
+    sectionLabels: {
+      assessment: "MCS Selection Guide",
+      ddx: "Device Types — Overview & Hemodynamics",
+      workup: "Pre-Implant Evaluation",
+      management: "Device-Specific Management",
+      monitoring: "Complications & Alarms",
+      disposition: "Advanced Heart Failure / CT Surgery",
     },
     assessment: `#Mechanical Circulatory Support
 Indication: [ ] Cardiogenic shock (CS)  [ ] High-risk PCI  [ ] Refractory VT ablation  [ ] Bridge to recovery/LVAD/transplant
@@ -4099,6 +4147,14 @@ VA-ECMO:
         "Waveform: a wave (atrial contraction), c wave (tricuspid closure), x descent (atrial relaxation), v wave (passive venous filling), y descent (tricuspid opening)"
       ]
     },
+    sectionLabels: {
+      assessment: "Indication & Hemodynamic Profiles",
+      ddx: "Hemodynamic Parameter Interpretation",
+      workup: "PA Catheter Data — Normal Values",
+      management: "Targeted Therapy by Profile",
+      monitoring: "Waveform Troubleshooting",
+      disposition: "Consults",
+    },
     assessment: `#Pulmonary Artery Catheterization — Hemodynamic Profile
 PA Pressures: PA sys/dia/mean *** mmHg (normal 15-25/8-15/12-16)
 PCWP (wedge): *** mmHg (normal 6-12; >18 = cardiogenic pulmonary edema)
@@ -4152,6 +4208,14 @@ PCWP-GUIDED DIURESIS: target PCWP 12-18 with CI >2.0; titrate diuretics to UOP 1
         "PPM indications (Class I): symptomatic sinus bradycardia, Mobitz II or third-degree AV block, symptomatic chronotropic incompetence",
         "ICD indications (Class I): survivors of VF/sustained VT, LVEF ≤35% on GDMT ≥3 months with NYHA II-III symptoms"
       ]
+    },
+    sectionLabels: {
+      assessment: "Device Identification & Interrogation",
+      ddx: "Device Types & Indications",
+      workup: "Troubleshooting — ICD / PPM / CRT",
+      management: "Inpatient Device Management",
+      monitoring: "Device Check Schedule",
+      disposition: "EP / Device Clinic Referral",
     },
     assessment: `#Cardiac Device Assessment
 Device type: [ ] PPM (pacemaker)  [ ] ICD (implantable cardioverter-defibrillator)  [ ] CRT-P  [ ] CRT-D  [ ] Loop recorder
@@ -4217,6 +4281,14 @@ ICD STORM: IV amiodarone 150mg over 10 min then 1mg/min; deep sedation; urgent E
         "Procainamide: WPW + AFib (better than amiodarone for pre-excited AFib); IV only in acute setting; beware QRS prolongation + HoTN; long-term use → drug-induced lupus"
       ]
     },
+    sectionLabels: {
+      assessment: "Quick Reference — Drug Selection",
+      ddx: "Drug Classes & Mechanisms",
+      workup: "Pre-Treatment Checklist",
+      management: "Dosing & Administration",
+      monitoring: "Toxicity & Monitoring",
+      disposition: "Consults",
+    },
     assessment: `#Anti-Arrhythmic Medication Assessment
 Arrhythmia type: [ ] AFib/flutter  [ ] VT  [ ] SVT  [ ] VF  [ ] Pre-excited (WPW)
 Goal: [ ] Rate control  [ ] Rhythm control (maintenance)  [ ] Acute termination
@@ -4278,6 +4350,14 @@ CHRONIC MANAGEMENT:
         "Pulsus paradoxus (>10mmHg BP drop with inspiration): cardiac tamponade, severe asthma, tension PTX — use sphygmomanometer",
         "Murmur grade: I-VI (I barely heard, II easily heard, III without thrill, IV with thrill, V with stethoscope edge on chest, VI without stethoscope); radiation pattern helps localize valve"
       ]
+    },
+    sectionLabels: {
+      assessment: "Physical Exam — Cardiovascular",
+      ddx: "Rhythm Interpretation Guide",
+      workup: "Telemetry Monitoring & Indications",
+      management: "Common Arrhythmia Responses",
+      monitoring: "Telemetry Discontinuation Criteria",
+      disposition: "Consults & Escalation",
     },
     assessment: `#Cardiovascular Physical Exam Documentation
 JVP: *** cm H2O (normal <4-5 cm above sternal angle at 45°)  |  Hepatojugular reflux: [ ] Present  [ ] Absent
@@ -4411,6 +4491,14 @@ CAUSE-SPECIFIC: see individual templates (Asthma, AECOPD, PE, ADHF, ARDS, etc.)`
         "P:F ratio (PaO2/FiO2): normal ≥400; ARDS if <300; surrogate for A-a gradient at bedside without ABG calculation"
       ]
     },
+    sectionLabels: {
+      assessment: "Initial Approach — Classify the Defect",
+      ddx: "Mechanisms of Hypoxemia & Hypercapnia",
+      workup: "ABG Interpretation & Ancillary Tests",
+      management: "Oxygen & Ventilatory Support Strategy",
+      monitoring: "Response Assessment",
+      disposition: "Pulmonology / ICU Escalation",
+    },
     assessment: `#Hypoxemia / Hypercapnia — ABG Interpretation
 SpO2: ***%  (SpO2 90% ≈ PaO2 60 mmHg)
 ABG: pH *** / PaCO2 *** / PaO2 *** / HCO3 *** / FiO2 ***
@@ -4467,6 +4555,14 @@ TYPE 2 (HYPERCAPNIC):
         "BiPAP contraindications: hemodynamic instability, AMS/inability to protect airway, facial trauma, active vomiting, copious secretions, inability to tolerate mask — intubate instead",
         "ROX index = (SpO2/FiO2)/RR: value <4.88 at 2, 6, or 12h on HFNC = high risk of needing intubation"
       ]
+    },
+    sectionLabels: {
+      assessment: "Device Selection Guide",
+      ddx: "Indications & Contraindications by Device",
+      workup: "Settings — Starting Points",
+      management: "Titration & Troubleshooting",
+      monitoring: "Trial Assessment — Failure Criteria",
+      disposition: "ICU / Respiratory Therapy",
     },
     assessment: `#Noninvasive Oxygenation/Ventilation
 Current O2 delivery: ***
@@ -4527,6 +4623,14 @@ BiPAP FOR SPECIFIC INDICATIONS:
         "HRCT patterns: UIP (honeycombing + traction bronchiectasis + basal/subpleural → IPF); NSIP (bilateral GGO + lower lobe → CTD-ILD); crazy paving (GGO + septal thickening → PCP, pulmonary edema, adenocarcinoma)",
         "PA diameter of main pulmonary artery ≥29mm on CT: 97% PPV for pulmonary hypertension"
       ]
+    },
+    sectionLabels: {
+      assessment: "Systematic CXR Approach",
+      ddx: "Pattern Recognition — Key Radiographic Findings",
+      workup: "CT Chest — Indications & Protocols",
+      management: "Clinical Correlation & Next Steps",
+      monitoring: "Repeat Imaging Indications",
+      disposition: "Radiology / Pulmonology Consult",
     },
     assessment: `#Chest Imaging Interpretation
 Film type: [ ] PA  [ ] AP (portable — larger cardiac silhouette, ↑false cardiomegaly)  [ ] Lateral
@@ -5015,6 +5119,14 @@ WEANING (VA-ECMO): ↓ blood flow to 2 L/min (minimum); cardiac output monitorin
         "A2F Bundle reduces ICU mortality and delirium: Assess/Prevent/Manage Pain, Both SAT+SBT, Choice of sedation, Delirium, Early Mobility, Family engagement"
       ]
     },
+    sectionLabels: {
+      assessment: "ABCDEF Bundle Checklist",
+      ddx: "Sedation & Analgesic Agent Comparison",
+      workup: "Delirium Assessment (CAM-ICU / CPOT)",
+      management: "Sedation Targeting & Analgesic Protocols",
+      monitoring: "Daily SAT / SBT & Delirium Reassessment",
+      disposition: "Pharmacy / Palliative Consult",
+    },
     assessment: `#ICU Sedation / Analgesia / Delirium
 RASS: *** (target 0 to −2 for most; −3 to −5 only if NMB or refractory dyssynchrony)
 Pain (CPOT for non-verbal): *** / 8 | NRS (verbal): *** / 10 (goal ≤3)
@@ -5082,6 +5194,14 @@ A2F BUNDLE: implement all 6 elements daily — significantly reduces ICU mortali
         "Dobutamine: β1 > β2 agonist; inotrope/vasodilator; used in cardiogenic shock with low CO; dose 2.5-10 mcg/kg/min; causes tachycardia and arrhythmias",
         "Angiotensin II (ATII, Giapreza): vasopressor via AT1 receptor; add-on in refractory vasodilatory shock; particularly useful with RAS inhibitor therapy or AKI"
       ]
+    },
+    sectionLabels: {
+      assessment: "Shock Classification — Agent Selection",
+      ddx: "Vasopressor & Inotrope Comparison Table",
+      workup: "Hemodynamic Targets & Monitoring",
+      management: "Initiation, Titration & Weaning",
+      monitoring: "Organ Perfusion Endpoints",
+      disposition: "ICU Escalation",
     },
     assessment: `#Vasopressors and Inotropes
 Shock type: [ ] Distributive/Septic  [ ] Cardiogenic  [ ] Hypovolemic  [ ] Obstructive
@@ -6367,6 +6487,14 @@ SPECIFIC TREATMENTS:
         "MUDPILES (AGMA causes): Methanol, Uremia, DKA/starvation ketosis, Propylene glycol/Paracetamol (APAP), Isoniazid/Iron, Lactic acidosis, Ethylene glycol, Salicylates"
       ]
     },
+    sectionLabels: {
+      assessment: "Systematic Approach — Step-by-Step",
+      ddx: "Differential Diagnosis by Disorder Type",
+      workup: "Supporting Labs & Calculations",
+      management: "Disorder-Specific Treatment",
+      monitoring: "Correction Rate & Reassessment",
+      disposition: "Nephrology / ICU Consult",
+    },
     assessment: `#Acid-Base Disorder Analysis
 ABG: pH *** | pCO2 *** | HCO3 *** | PaO2 *** | FiO2 ***
 VBG: pH *** | pCO2 *** | HCO3 *** (VBG pCO2 ≈ ABG pCO2 + 5-6; VBG pH ≈ ABG pH − 0.05)
@@ -6749,6 +6877,14 @@ PD PERITONITIS TREATMENT:
         "Goal diuresis: UOP >100-150 mL/h; daily net negative balance 1-2L; monitor Cr rise (acceptable — often reflects decongestion, not true harm)"
       ]
     },
+    sectionLabels: {
+      assessment: "Diuretic Resistance Assessment",
+      ddx: "Causes of Diuretic Resistance",
+      workup: "Urine Electrolytes & Response Assessment",
+      management: "Step-Up Diuresis Strategy",
+      monitoring: "Daily Weight & Electrolyte Monitoring",
+      disposition: "Nephrology / Heart Failure Consult",
+    },
     assessment: `#Diuretic Resistance / Advanced Diuresis
 Indication: [ ] ADHF  [ ] Cirrhosis/ascites  [ ] Nephrotic syndrome  [ ] AKI/CKD  [ ] Other: ***
 Current diuretic regimen: *** | Dose: *** | Route: PO / IV
@@ -7071,6 +7207,14 @@ PROPHYLAXIS (prolonged neutropenia anticipated):
         "Carbapenem-resistant organisms (CRO/KPC/NDM): call ID immediately; options: ceftazidime-avibactam, meropenem-vaborbactam, imipenem-cilastatin-relebactam; colistin/polymyxin B as last resort",
         "VRE: invasive infection → daptomycin or linezolid; uncomplicated UTI → fosfomycin (1 dose; consider repeat day 4 and 7) or nitrofurantoin"
       ]
+    },
+    sectionLabels: {
+      assessment: "Empiric Selection Guide by Syndrome",
+      ddx: "MDR Organism Profiles & Risk Factors",
+      workup: "Culture & Sensitivity Protocols",
+      management: "Targeted Therapy & De-Escalation",
+      monitoring: "Antibiotic Stewardship & PK/PD",
+      disposition: "ID / Pharmacy Consult",
     },
     assessment: `#MDR Organism Assessment
 Organism identified: *** | Source: *** | Date of culture: ***
@@ -9218,6 +9362,14 @@ VITAMIN K DEFICIENCY / WARFARIN:
         "LMWH monitoring: anti-Xa level 4h after dose (goal 0.6-1.0 for BID therapeutic dosing); routine monitoring NOT needed; check if extremes of weight (BMI ≥40: use 30mg BID), renal failure (CrCl 15-30: reduce dose)"
       ]
     },
+    sectionLabels: {
+      assessment: "Agent Selection & Dosing Guide",
+      ddx: "Anticoagulant Comparison — Mechanisms & Indications",
+      workup: "Monitoring Parameters",
+      management: "Dosing, Reversal & Bridging",
+      monitoring: "Bleeding & Thrombosis Surveillance",
+      disposition: "Hematology / Pharmacy Consult",
+    },
     assessment: `#Anticoagulation Management
 Indication: [ ] AF  [ ] VTE (DVT/PE)  [ ] Mechanical valve  [ ] Malignancy-associated VTE  [ ] Other: ***
 Current anticoagulant: *** | Dose: *** | Route: *** | Last dose: ***
@@ -9308,6 +9460,14 @@ BRIDGING WITH LMWH (warfarin peri-procedurally):
         "Massive Transfusion Protocol (MTP): >10 units pRBC in 24h or ongoing hemorrhage; pRBC:FFP:Plt = 1:1:1 ratio; tranexamic acid 1g IV within 3h of trauma",
         "Febrile Non-Hemolytic Transfusion Reaction (FNHTR): fever ≥1°C rise during transfusion + no hemolysis; most common reaction overall; due to leukocyte cytokines; pretreat with acetaminophen; leukoreduction reduces frequency"
       ]
+    },
+    sectionLabels: {
+      assessment: "Transfusion Threshold & Product Selection",
+      ddx: "Transfusion Reactions — Recognition & Classification",
+      workup: "Pre-Transfusion Testing",
+      management: "Administration, Reactions & Massive Transfusion",
+      monitoring: "Post-Transfusion Assessment",
+      disposition: "Blood Bank / Hematology",
     },
     assessment: `#Transfusion Medicine
 BLOOD PRODUCT ORDERED:
@@ -10701,6 +10861,14 @@ HEALTHCARE MAINTENANCE (ALL IMMUNOSUPPRESSION):
         "Sarcoidosis inpatient: neurosarcoidosis, cardiac sarcoidosis (heart block — pacemaker; ventricular arrhythmias — ICD), hypercalcemia (granulomas produce calcitriol — treat with prednisone 40mg/day); biopsy for definitive diagnosis (non-caseating granulomas); ACE level not sensitive or specific"
       ]
     },
+    sectionLabels: {
+      assessment: "Drug Selection Guide",
+      ddx: "DMARD & Biologic Comparison",
+      workup: "Pre-Treatment Screening",
+      management: "Dosing, Monitoring & Special Situations",
+      monitoring: "Safety Monitoring Schedule",
+      disposition: "Rheumatology Referral",
+    },
     assessment: `#Rheumatologic Serology / Medications Assessment
 SEROLOGY INTERPRETATION:
 ANA: titer *** / pattern *** — order disease-specific antibodies if ≥1:80
@@ -11203,6 +11371,14 @@ Step 5 (uncontrolled): high-dose ICS + LABA + biologics (omalizumab [anti-IgE], 
         "DOAC perioperative management: most procedures → stop 24-48h before (CrCl-dependent); HIGH bleeding risk → stop 48-72h before; resume 24-48h after hemostasis achieved; NO bridging needed for AF patients on DOAC (BRIDGE trial — no benefit, higher bleeding)",
         "Dual antiplatelet therapy (DAPT) and surgery: bare metal stent → wait ≥30 days before elective surgery; drug-eluting stent → wait ≥6 months; if must operate → maintain aspirin if at all possible; discuss with cardiology"
       ]
+    },
+    sectionLabels: {
+      assessment: "Preoperative Cardiac Risk Assessment (RCRI)",
+      ddx: "Risk Stratification & Special Populations",
+      workup: "Pre-Op Testing Indications",
+      management: "Perioperative Medication Management",
+      monitoring: "Post-Operative Surveillance",
+      disposition: "Cardiology Pre-Op Consult",
     },
     assessment: `#Perioperative Cardiac Risk Assessment
 Proposed surgery: *** | Surgeon: *** | Planned date: ***
@@ -11978,6 +12154,14 @@ CONSERVATIVE FLUID MANAGEMENT (FACTT trial, NEJM 2006):
         "Bronchodilator response (BDR): ≥12% AND >200 mL increase in FEV1 or FVC after SABA = significant; confirms reversible obstruction (asthma); absent BDR does not exclude asthma (may need methacholine challenge); COPD has fixed obstruction (minimal BDR)"
       ]
     },
+    sectionLabels: {
+      assessment: "Spirometry Interpretation — Stepwise Approach",
+      ddx: "Pattern Recognition Table (Obstructive / Restrictive / Mixed)",
+      workup: "Full PFT Panel — When to Order What",
+      management: "Clinical Implications by Pattern",
+      monitoring: "Serial PFT Intervals by Disease",
+      disposition: "Pulmonology / PFT Lab Referral",
+    },
     assessment: `#PFT / Spirometry Interpretation
 RAW SPIROMETRY VALUES:
 FVC: *** L (***% predicted) | FEV1: *** L (***% predicted) | FEV1/FVC ratio: ***
@@ -12092,6 +12276,14 @@ MONITORING WITH SERIAL PFTs:
         "Potassium repletion: goal ≥3.5 (≥4 for CAD/arrhythmia); PO preferred (KCl IR powder or ER pills); peripheral IV max 10 mEq/h, central IV max 20 mEq/h with telemetry; each 10 mEq IV KCl raises serum K by ~0.1 mEq/L",
         "Magnesium repletion: goal ≥1.7 (≥2 for CAD/arrhythmia); Mg sulfate 2g IV over 15-60 min; PO Mg oxide 400mg TID ×1 day; always replete Mg first in hypokalemia — hypoMg causes renal K wasting and makes hypoK refractory to correction"
       ]
+    },
+    sectionLabels: {
+      assessment: "Fluid Need & Electrolyte Goals",
+      ddx: "IV Fluid Composition & Selection Guide",
+      workup: "Volume Status Assessment",
+      management: "Fluid & Electrolyte Repletion Protocols",
+      monitoring: "Response & Safety Monitoring",
+      disposition: "Nephrology Consult",
     },
     assessment: `#IV Fluids & Electrolyte Repletion Assessment
 FLUID NEED:
@@ -12875,6 +13067,14 @@ Refractory: intratympanic gentamicin (ablative), endolymphatic sac surgery, laby
         "Apnea test protocol: pre-oxygenate FiO2 100% + PEEP 5 for 10 min → ABG → disconnect ventilator → deliver O2 6L/min via catheter → observe for 5-10 min → ABG; positive apnea test (confirms brain death): NO spontaneous respirations + pCO2 ≥60 mmHg AND increase ≥20 mmHg from baseline"
       ]
     },
+    sectionLabels: {
+      assessment: "Post-Arrest Assessment Checklist",
+      ddx: "Prognostic Marker Interpretation",
+      workup: "Multimodal Testing — Timing & Protocol",
+      management: "Brain Death Evaluation Protocol",
+      monitoring: "Serial Assessment & Documentation",
+      disposition: "Neurology / Palliative / OPO",
+    },
     assessment: `#Neuroprognostication / Brain Death Assessment
 INDICATION:
 [ ] Post-cardiac arrest prognostication (≥72h or ≥72h after TTM rewarming)
@@ -13104,6 +13304,14 @@ Section 35 (MA-specific — involuntary commitment for SUD): can be petitioned b
         "SSc antibodies predict phenotype: anti-centromere = limited SSc/CREST (calcinosis, Raynaud's, esophageal dysmotility, sclerodactyly, telangiectasias) + PAH risk; anti-Scl70 (topoisomerase I) = diffuse SSc + ILD risk; anti-RNA polymerase III = diffuse SSc + rapid skin thickening + scleroderma renal crisis risk",
         "APLAS panel: order all three together; send warm (lupus anticoagulant is heat-labile); positive result must be confirmed ≥12 weeks later (transient positivity ≠ APLAS diagnosis); triple-positive APLAS (all 3 antibody types) = highest thrombotic risk; DOACs inferior to warfarin for APLAS"
       ]
+    },
+    sectionLabels: {
+      assessment: "When & How to Order",
+      ddx: "Complete Autoantibody Reference Table",
+      workup: "Ordering Strategy by Clinical Presentation",
+      management: "Clinical Implications of Positive Results",
+      monitoring: "Follow-Up Serologies",
+      disposition: "Rheumatology Consult",
     },
     assessment: `#Autoantibody Interpretation Guide
 WHEN TO ORDER ANA:
@@ -13854,6 +14062,14 @@ Overflow: catheterize (intermittent preferred) + address obstruction`,
         "ASCVD 10-year risk calculation: use Pooled Cohort Equations (PCE, ACC/AHA) q4-6 years for adults 40-75 without established CVD; PREVENT calculator (race-free) will replace PCE; statin therapy if 10yr risk ≥10% (Grade B); discuss in 7.5-10% range (borderline risk); CAC score can reclassify borderline risk patients",
         "Immunization schedule (adult key vaccines): influenza annually (high-dose age ≥65); COVID-19 per current CDC formula; Tdap ×1 then Td q10y; pneumococcal (PCV-20 or PCV-15 + PPSV23); Shingrix (RZV) age ≥50 ×2 doses; HPV (through age 26; consider 27-45); hepatitis B for all unvaccinated adults; RSV vaccine age ≥60"
       ]
+    },
+    sectionLabels: {
+      assessment: "Screening Due — Checklist by Visit",
+      ddx: "Recommendations by Condition & Age",
+      workup: "Risk Calculators & Screening Tools",
+      management: "Statin, BP & Immunization Protocols",
+      monitoring: "Screening Intervals & Update Schedule",
+      disposition: "Specialist Referrals",
     },
     assessment: `#Health Screening & Maintenance
 PATIENT: Age *** | Sex assigned at birth: *** | Insurance: *** | PCP: ***
@@ -15076,14 +15292,17 @@ export default function App() {
                     </div>
                   )}
 
-                  {[
-                    { label: "Assessment",           key: "assessment",  content: selected.assessment },
-                    { label: "Differential Diagnosis",key: "ddx",        content: selected.ddx },
-                    { label: "Workup",               key: "workup",      content: selected.workup },
-                    { label: "Management",           key: "management",  content: selected.management },
-                    { label: "Monitoring",           key: "monitoring",  content: selected.monitoring },
-                    selected.disposition && { label: "Disposition / Consults", key: "disposition", content: selected.disposition },
-                  ].filter(Boolean).map(section => (
+                  {(() => {
+                    const sl = selected.sectionLabels || {};
+                    return [
+                      { label: sl.assessment  || "Assessment",             key: "assessment",  content: selected.assessment },
+                      { label: sl.ddx         || "Differential Diagnosis", key: "ddx",        content: selected.ddx },
+                      { label: sl.workup      || "Workup",                 key: "workup",      content: selected.workup },
+                      { label: sl.management  || "Management",             key: "management",  content: selected.management },
+                      { label: sl.monitoring  || "Monitoring",             key: "monitoring",  content: selected.monitoring },
+                      selected.disposition && { label: sl.disposition || "Disposition / Consults", key: "disposition", content: selected.disposition },
+                    ].filter(Boolean);
+                  })().map(section => (
                     <div key={section.key} className="ap-section">
                       <div className="ap-section-header">
                         <span className="ap-section-label">{section.label}</span>
